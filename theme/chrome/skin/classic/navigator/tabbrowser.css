@@ -1,0 +1,189 @@
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.tabbrowser-strip {
+  padding-bottom: 0px;
+  border-bottom: 1px solid background;
+  -moz-border-bottom-colors: ThreeDShadow ThreeDShadow;
+}
+
+tabpanels {
+ -moz-appearance: none;
+}
+
+.tabbrowser-tabs {
+  padding-top: 1px;
+  margin-bottom: -1px;
+}
+
+.tabs-left,
+.tabs-right {
+  width: 3px;
+  border-bottom: none;
+}
+
+.tab-icon {
+  margin-top: 0px;
+  margin-right: 3px;
+  width: 16px;
+  height: 16px;
+}
+
+.tabbrowser-tab {
+  margin-bottom: 1px;
+  border-bottom: none;
+  list-style-image: url("moz-icon://stock/gtk-file?size=menu");
+}
+
+.tabbrowser-tab[busy] {
+  list-style-image: url("chrome://global/skin/icons/throbber/gnome/Throbber-small.gif");
+}
+
+.tabbrowser-tab:-moz-lwtheme {
+  text-shadow: none;
+}
+
+.tabbrowser-tab[selected="true"] {
+  margin-bottom: -1px;
+}
+
+.scrollbutton-up:-moz-lwtheme,
+.scrollbutton-down:-moz-lwtheme:not([selected="true"]),
+.tabbrowser-tab:-moz-lwtheme:not([selected="true"]) {
+  opacity: .8;
+}
+
+/* ::::: Tab scrollbox arrow, and all-tabs buttons ::::: */
+/*
+.scrollbutton-up,
+.scrollbutton-down {
+  -moz-appearance: tab;
+  margin: 2px 0px 1px;
+  padding: 0px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  border-left: 2px solid;
+  border-bottom: 1px solid ThreeDHighlight;
+  -moz-border-top-colors: ThreeDHighlight ThreeDLightShadow;
+  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
+  -moz-border-left-colors: ThreeDHighlight ThreeDLightShadow;
+  border-radius: 2px 2px 0px 0px;
+}
+
+@media (-moz-windows-theme: aero) {
+  .scrollbutton-up,
+  .scrollbutton-down {
+    padding: 0px 2px;
+  }
+}
+
+.scrollbutton-up:-moz-locale-dir(rtl),
+.scrollbutton-down:-moz-locale-dir(ltr) {
+  -moz-border-right-colors: ThreeDHighlight ThreeDShadow;
+}
+
+.scrollbutton-up:-moz-locale-dir(ltr),
+.scrollbutton-down:-moz-locale-dir(rtl) {
+  -moz-border-left-colors: ThreeDHighlight ThreeDShadow;
+}
+
+.scrollbutton-up,
+.scrollbutton-down:-moz-locale-dir(rtl) {
+  list-style-image: url("chrome://navigator/skin/icons/tab-arrow-left.gif");
+}
+
+.scrollbutton-down,
+.scrollbutton-up:-moz-locale-dir(rtl) {
+  list-style-image: url("chrome://navigator/skin/icons/tab-arrow-right.gif");
+}
+
+.scrollbutton-up,
+.scrollbutton-down {
+  -moz-image-region: rect(0px, 8px, 12px, 0px);
+}
+
+.scrollbutton-up[disabled="true"],
+.scrollbutton-down[disabled="true"] {
+  -moz-image-region: rect(0px, 16px, 12px, 8px);
+}
+
+.scrollbutton-down {
+  box-shadow: 0px 0px 0px 9px transparent inset;
+  transition: box-shadow 1s ease-out;
+}
+
+.scrollbutton-down:hover,
+.scrollbutton-down[notifybgtab="true"],
+.scrollbutton-down[disabled="true"] {
+  transition: none;
+}
+
+.scrollbutton-up:not([disabled="true"]):hover:active,
+.scrollbutton-down:not([disabled="true"]):hover:active,
+.scrollbutton-down[notifybgtab="true"] {
+  box-shadow: 0px 0px 0px 9px ThreeDShadow inset;
+}
+*/
+.tabs-alltabs-button {
+/*  margin: 2px 0px 1px;*/
+  margin: 0 !important;
+}
+
+.tabs-alltabs-button > .toolbarbutton-icon {
+  margin: 0px !important;
+}
+
+/* All tabs menupopup */
+.alltabs-item {
+  list-style-image: url("moz-icon://stock/gtk-directory?size=menu");
+}
+
+.alltabs-item[selected="true"] {
+  font-weight: bold;
+}
+
+.alltabs-item[busy] {
+  list-style-image: url("chrome://global/skin/icons/throbber/gnome/Throbber-small.gif");
+}
+
+.alltabs-item[tabIsScrolled] {
+  font-style: italic;
+}
+
+/* ::::: close button ::::: */
+
+.tabs-closebutton {
+  margin: 0px;
+  list-style-image: url("moz-icon://stock/gtk-close?size=menu");
+}
+
+.tabs-closebutton > .toolbarbutton-icon {
+  margin: 0;
+}
+
+.tabs-newbutton {
+  list-style-image: url("moz-icon://stock/tab-new?size=menu");
+}
+
+.tabs-newbutton > .toolbarbutton-icon {
+  margin: 0;
+}
+
+.tab-drop-indicator-bar {
+    height: 11px;
+    margin-top: -11px;
+    margin-left: -5px;
+    position: relative;
+}
+
+.tab-drop-indicator {
+    height: 11px;
+    width: 11px;
+    margin-bottom: -5px;
+    position: relative;
+    list-style-image: url("moz-icon://stock/gtk-go-down?size=menu");
+}
+
+tooltip[tabpreview="true"] {
+  max-width: none;
+}

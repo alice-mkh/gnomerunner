@@ -1,0 +1,179 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is Mozilla Communicator client code, released
+ * March 31, 1998.
+ *
+ * The Initial Developer of the Original Code is
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998-2001
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   Joe Hewitt (hewitt@netscape.com)
+ *   Patrick Thompson (sailfish@unforgettable.com)
+ *   Manuel Reimer (Manuel.Reimer@gmx.de)
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either of the GNU General Public License Version 2 or later (the "GPL"),
+ * or the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: primary toolbar buttons ::::: */
+
+#newButton {
+  list-style-image: url("moz-icon://stock/gtk-new?size=toolbar");
+}
+
+
+#newButton[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-new?size=toolbar&state=disabled");
+}
+
+#openButton {
+  /*-moz-image-region: rect(150px 29px 179px 0);*/
+  list-style-image: url("moz-icon://stock/gtk-open?size=toolbar");
+}
+
+#openButton[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-open?size=toolbar&state=disabled");
+}
+
+#saveButton {
+  list-style-image: url("moz-icon://stock/gtk-save?size=toolbar");
+}
+
+#saveButton[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-save?size=toolbar&state=disabled");
+}
+
+#publishButton {
+  list-style-image: url("moz-icon://stock/gtk-network?size=toolbar");
+}
+
+#publishButton[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-network?size=toolbar&state=disabled");
+}
+
+#previewButton {
+  list-style-image: url("chrome://global/skin/icons/24x24/web-browser.png");
+}
+
+#previewButton[disabled="true"] {
+  list-style-image: url("chrome://global/skin/icons/24x24/web-browser.png");
+  opacity: 0.5 !important;
+}
+
+#printButton {
+  list-style-image: url("moz-icon://stock/gtk-print?size=toolbar");
+}
+
+#printButton[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-print?size=toolbar?state=disabled");
+}
+
+#linkButton {
+  list-style-image: url("chrome://global/skin/icons/24x24/insert-link.png");
+}
+
+#linkButton[disabled="true"] {
+  list-style-image: url("chrome://global/skin/icons/24x24/insert-link.png");
+  opacity: 0.5 !important;
+}
+
+#imageButton {
+  list-style-image: url("chrome://global/skin/icons/24x24/insert-image.png");
+}
+
+#imageButton[disabled="true"] {
+  list-style-image: url("chrome://global/skin/icons/24x24/insert-image.png");
+  opacity: 0.5 !important;
+}
+
+#namedAnchorButton {
+  list-style-image: url("chrome://global/skin/icons/24x24/stock_anchor.png");
+}
+
+#namedAnchorButton[disabled="true"] {
+  list-style-image: url("chrome://global/skin/icons/24x24/stock_anchor.png");
+  opacity: 0.5 !important;
+}
+
+#hlineButton {
+  list-style-image: url("chrome://global/skin/icons/24x24/stock_form-line-horizontal.png");
+}
+
+#hlineButton[disabled="true"] {
+  list-style-image: url("chrome://global/skin/icons/24x24/stock_form-line-horizontal.png");
+  opacity: 0.5 !important;
+}
+
+#tableButton {
+  list-style-image: url("chrome://global/skin/icons/24x24/stock_insert-table.png");
+}
+
+#tableButton[disabled="true"] {
+  list-style-image: url("chrome://global/skin/icons/24x24/stock_insert-table.png");
+  opacity: 0.5 !important;
+}
+
+#spellingButton {
+  list-style-image: url("moz-icon://stock/gtk-spell-check?size=toolbar");
+}
+
+#spellingButton[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-spell-check?size=toolbar&state=disabled");
+}
+
+#cutButton {
+  list-style-image: url("moz-icon://stock/gtk-cut?size=toolbar");
+}
+
+#cutButton[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-cut?size=toolbar&state=disabled");
+}
+
+#copyButton {
+  list-style-image: url("moz-icon://stock/gtk-copy?size=toolbar");
+}
+
+#copyButton[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-copy?size=toolbar&state=disabled");
+}
+
+#pasteButton {
+  list-style-image: url("moz-icon://stock/gtk-paste?size=toolbar");
+}
+
+#pasteButton[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-paste?size=toolbar&state=disabled");
+}
+
+#findButton {
+  list-style-image: url("moz-icon://stock/gtk-find?size=toolbar");
+}
+
+#findButton[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-paste?size=toolbar&state=disabled");
+}

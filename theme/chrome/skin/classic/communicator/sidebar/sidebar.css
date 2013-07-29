@@ -1,0 +1,164 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is Mozilla Communicator client code, released
+ * March 31, 1998.
+ *
+ * The Initial Developer of the Original Code is
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998-1999
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   Joe Hewitt <hewitt@netscape.com>
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either of the GNU General Public License Version 2 or later (the "GPL"),
+ * or the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+/* ===== sidebar.css ====================================================
+  == Styles used by the Sidebar panel and Sidebar tabs.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+  
+#sidebar-box {
+  margin:0px -1px 0px 0px;
+}
+
+/* ::::: sidebar header ::::: */
+
+.sidebarheader-main {
+  -moz-appearance: toolbar;
+}
+
+.sidebarheader-main:-moz-lwtheme {
+  -moz-appearance: none;
+}
+
+#sidebar-panel-picker {
+  color: inherit;
+  /** bugzilla 89144 - must be able to access tabs dropdown **/
+  -moz-user-focus:normal !important;
+}
+
+#sidebar-panel-picker > label {
+  margin-top: -2px !important;
+}
+
+#sidebar-panel-picker > .toolbarbutton-dropmarker {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.sidebar-header-text {
+  font-weight: bold;
+}
+
+/* ..... close button ..... */
+
+#sidebar-close-button {
+  -moz-binding: url("chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton-image");
+  list-style-image: url("moz-icon://stock/gtk-close?size=menu");
+}
+
+#sidebar-close-button > .toolbarbutton-icon {
+  margin: -2px !important;
+}
+
+/* ::::: sidebar panel ::::: */
+
+.sidebar-iframe-no-panels,
+.loadarea {
+  background-color: -moz-Field;
+  color: -moz-FieldText;
+}
+
+.iframe-panel, .browser-sidebar {
+ -moz-appearance: listbox;
+}
+
+/* ::::: loading info ::::: */
+
+.text-panel-loading {
+  margin: 5px 0px;
+}
+
+.text-panel-loading[loading="false"] {
+  margin-left: 11px;
+}
+
+.image-panel-loading {
+  margin: 5px;
+  list-style-image: url("chrome://global/skin/icons/throbber/gnome/Throbber-small.png");
+}
+
+/* ::::: sidebar tabs ::::: */
+
+.box-texttab {
+  -moz-binding: url("chrome://communicator/skin/sidebar/sidebarBindings.xml#sbtab");
+  -moz-box-align: center;
+  cursor: pointer;
+  -moz-appearance: tab !important;
+  padding: 2px 1px 2px 0px !important;
+  color: -moz-DialogText !important;
+  text-shadow: none;
+}
+
+.sbtab-label {
+  margin: 0px 0px 0px 0px !important;
+}
+
+.sbtab-twisty {
+  -moz-appearance: button-arrow-next;
+}
+
+.sbtab-texture {
+  margin: 2px 0px;
+  width: 12px;
+  height: 12px;
+}
+
+.box-texttab[selected="true"] {
+  font-weight: bold;
+  cursor: default;
+}
+
+.sbtab-twisty[selected="true"] {
+  -moz-appearance: button-arrow-down;
+}
+
+/* ::::: sidebar navigation buttons ::::: */
+
+.sidebar-nav-button {
+  -moz-binding: url("chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton-image");
+  padding: 5px 0px 5px 0px;
+}
+
+.tab-fwd {
+  list-style-image: url("moz-icon://stock/gtk-go-up?size=menu");
+}
+
+.tab-back {
+  list-style-image: url("moz-icon://stock/gtk-go-down?size=menu");
+}

@@ -1,0 +1,7 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+#back-button .toolbarbutton-text,
+#button-getmsg .toolbarbutton-text,
+#button-newmsg .toolbarbutton-text {
+    display: block !important;
+}

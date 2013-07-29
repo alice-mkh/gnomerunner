@@ -1,0 +1,8 @@
+#!/bin/bash
+
+./build
+THEME_NAME=`grep -oE "THEME_ID=.+$" config.txt`
+OPTIONS_NAME=`grep -oE "OPTIONS_ID=.+$" config.txt`
+mv temp/${THEME_NAME:9}.xpi ~/.mozilla/seamonkey/srt7v2qq.default/extensions/
+mv temp/${OPTIONS_NAME:11}.xpi ~/.mozilla/seamonkey/srt7v2qq.default/extensions/
+seamonkey

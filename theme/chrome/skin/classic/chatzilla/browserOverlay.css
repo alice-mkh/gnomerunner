@@ -1,0 +1,12 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+#tb-chatzilla-open {
+  list-style-image: url("chrome://global/skin/icons/24x24/irc.png");
+}
+
+toolbar[iconsize="small"] > toolbarpaletteitem > #tb-chatzilla-open,
+toolbar[iconsize="small"] > #tb-chatzilla-open {
+  list-style-image: url("chrome://global/skin/icons/16x16/irc.png") !important;
+}

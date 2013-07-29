@@ -1,0 +1,23 @@
+#Theme ID
+THEME_ID={ed492c7d-322b-4da5-bdf1-aeec9fea8bda}
+OPTIONS_ID={1ddafb32-9812-42a4-94e0-db9cc4fc0238}
+INTERNAL_NAME=gnomerunner/1.0
+
+#Theme description
+THEME_DESC=Uses gtk+-stock items and icons from the updated GNOME iconset.
+OPTIONS_DESC=Allows to customize $NAME theme.
+
+#Theme name
+OPTIONS_NAME=$NAME Options
+NAME=GNOMErunner/GTK Revived
+
+#Theme version
+VERSION=0.1
+
+#SeaMonkey version
+MIN_VERSION=2.17
+MAX_VERSION=2.22
+
+#Options
+OPTIONS_PREF_BRANCH="extensions.gnomerunnergtkrevived."
+ENABLE_DEBUG=false
