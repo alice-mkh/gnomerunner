@@ -2,7 +2,7 @@ Components.utils.import("resource://gre/modules/Services.jsm");
 var prefs = Services.prefs.getBranch($OPTIONS_PREF_BRANCH);
 var cssService = Components.classes["@mozilla.org/content/style-sheet-service;1"].getService(Components.interfaces.nsIStyleSheetService);
 
-var prefList = ["visiblegrippies", "hidegrippies", "newtabplus", "urlbarhighlight", "buttontext"];
+var prefList = $PREFS_ARRAY;
 
 function getMaxValue(data){
     if (data == "hidegrippies"){

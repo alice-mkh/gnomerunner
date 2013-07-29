@@ -1,0 +1,24 @@
+TYPE=bool
+PREF=visiblegrippies
+NAME=Visible toolbar grippies
+
+TYPE=radio
+PREF=newtabplus
+NAME=Alternative new tab button
+<radiogroup>
+<radio value="2" label="Hide everywhere"/>
+<radio value="1" label="Hide on menubars"/>
+<radio value="0" label="Don't hide"/>
+</radiogroup>
+
+TYPE=bool
+PREF=urlbarhighlight
+NAME=Address bar highlight on HTTPS
+Causes address bar to become black with some GTK themes, like Ambiance.
+
+TYPE=bool
+PREF=buttontext
+NAME=Always display text on some buttons
+Affected buttons in Navigator: Back.
+Affected buttons in Mail &amp; Newsgroups: Get Msgs, Compose.
+
