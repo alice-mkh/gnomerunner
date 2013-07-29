@@ -3,13 +3,17 @@ PREF=visiblegrippies
 NAME=Visible toolbar grippies
 
 TYPE=radio
-PREF=newtabplus
-NAME=Alternative new tab button
+PREF=hidegrippies
+NAME=Hide toolbar grippies
 <radiogroup>
 <radio value="2" label="Hide everywhere"/>
 <radio value="1" label="Hide on menubars"/>
 <radio value="0" label="Don't hide"/>
 </radiogroup>
+
+TYPE=bool
+PREF=newtabplus
+NAME=Alternative new tab button
 
 TYPE=bool
 PREF=urlbarhighlight

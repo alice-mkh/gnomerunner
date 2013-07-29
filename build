@@ -9,6 +9,17 @@ cp icon.png temp/theme
 cp icon.png temp/options
 cd temp
 
+#Substitute variables
+while read LINE; do
+    if [[ $LINE != [A-Z]* ]]; then
+        continue
+    fi
+    LINE1=`echo $LINE | grep -oE "^[^=]+"`
+    LINE2=`echo $LINE | grep -oE "[^=]+$"`
+    sed "s|\$$LINE1|$LINE2|g" -i `find . -name "*.rdf"` `find . -name "*.js"` `find . -name "*.css"`
+    eval "$LINE1=\"$LINE2\""
+done < "../config.txt"
+
 #Generate options.xul and bootstrap.js pref array
 cd options
 READING=0
@@ -55,17 +66,6 @@ rm options.txt
 PREFS_ARRAY="$PREFS_ARRAY]"
 sed "s|\$PREFS_ARRAY|$PREFS_ARRAY|g" -i bootstrap.js
 cd ..
-
-#Substitute variables
-while read LINE; do
-    if [[ $LINE != [A-Z]* ]]; then
-        continue
-    fi
-    LINE1=`echo $LINE | grep -oE "^[^=]+"`
-    LINE2=`echo $LINE | grep -oE "[^=]+$"`
-    sed "s|\$$LINE1|$LINE2|g" -i `find . -name "*.rdf"` `find . -name "*.js"` `find . -name "*.css"`
-    eval "$LINE1=\"$LINE2\""
-done < "../config.txt"
 
 NAME1="gnomerunner_gtk_revived-$VERSION-sm-linux.xpi"
 NAME2="gnomerunner_gtk_revived-options-$VERSION-sm-linux.xpi"
