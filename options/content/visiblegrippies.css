@@ -8,13 +8,13 @@ toolbargrippy {
 /*     border-right: 2px solid;
     -moz-border-right-colors: ThreeDHighlight ThreeDShadow;
     width: 11px;*/
-    list-style-image: url("chrome://communicator/skin/toolbar/tbgrip-arrow.png");
+    list-style-image: url("chrome://gnomerunner-options/content/icons/tbgrip-arrow.png");
 }
 
 .toolbargrippy-texture {
-    background: url("chrome://communicator/skin/toolbar/tbgrip-texture.png");
+    background: url("chrome://gnomerunner-options/content/icons/tbgrip-texture.png");
 }
 
 toolbargrippy[tbgrippy-collapsed="true"] {
-    list-style-image: url("chrome://communicator/skin/toolbar/tbgrip-arrow-clps.png");
+    list-style-image: url("chrome://gnomerunner-options/content/icons/tbgrip-arrow-clps.png");
 }
