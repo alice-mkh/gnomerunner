@@ -108,7 +108,7 @@
 .console-row[selected="true"] {
 /*    background-image: url("chrome://mozapps/skin/shared/itemSelected.png");*/
     background-color: Highlight;
-    color: white;
+    color: HighlightText;
 }
 
 .console-row-code[selected="true"],
