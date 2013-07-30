@@ -67,12 +67,13 @@ PREFS_ARRAY="$PREFS_ARRAY]"
 sed "s|\$PREFS_ARRAY|$PREFS_ARRAY|g" -i bootstrap.js
 cd ..
 
-NAME1="gnomerunner_gtk_revived-$VERSION-sm-linux.xpi"
-NAME2="gnomerunner_gtk_revived-options-$VERSION-sm-linux.xpi"
+NAME1="theme.xpi"
+NAME2="options.xpi"
+NAME="gnomerunner_gtk_revived-$VERSION-sm-linux.xpi"
 cd theme
 zip ../$NAME1 * -qr
 cd ../options
 zip ../$NAME2 * -qr
 cd ..
-zip ../$NAME1 *.xpi *.rdf -q
+zip ../$NAME *.xpi *.rdf -q
 cd ..

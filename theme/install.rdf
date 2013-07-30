@@ -18,9 +18,9 @@
 
         <em:targetApplication>
             <Description>
-                <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
-                <em:minVersion>$MIN_VERSION</em:minVersion>
-                <em:maxVersion>$MAX_VERSION</em:maxVersion>
+                <em:id>$SM_ID</em:id>
+                <em:minVersion>$SM_MIN_VERSION</em:minVersion>
+                <em:maxVersion>$SM_MAX_VERSION</em:maxVersion>
             </Description>
         </em:targetApplication>
     </Description>

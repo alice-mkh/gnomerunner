@@ -5,11 +5,16 @@
     <Description about="urn:mozilla:install-manifest">
         <em:id>$THEME_ID</em:id>
         <em:type>32</em:type>
+        <em:name>$NAME</em:name>
+        <em:description>$THEME_DESC</em:description>
+        <em:version>$VERSION</em:version>
+        <em:creator>Michael -mld- Doering</em:creator>
+        <em:contributor>Exalm</em:contributor>
         <em:targetApplication>
             <Description>
-                <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
-                <em:minVersion>$MIN_VERSION</em:minVersion>
-                <em:maxVersion>$MAX_VERSION</em:maxVersion>
+                <em:id>$SM_ID</em:id>
+                <em:minVersion>$SM_MIN_VERSION</em:minVersion>
+                <em:maxVersion>$SM_MAX_VERSION</em:maxVersion>
             </Description>
         </em:targetApplication>
     </Description>
