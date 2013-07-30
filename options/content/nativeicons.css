@@ -2,15 +2,175 @@
 
 /* Mail & Newsgroups */
 
+/*
+16x16:
+  mail-message-new.png   security-broken.png
+  mail-outbox.png        sign-ok.png             text-html.png
+  mail-read.png      stock_anchor.png            user-info.png
+  mail-receive.png       stock_form-line-horizontal.png  user-trash-full.png
+  mail-reply-all.png     stock_insert-table.png      web-browser.png
+  mail-reply-sender.png                           x-office-address-book.png
+  mail-sent.png      stock_person.png
+  mail-unread.png        system-lock-screen.png
+
+24x24:
+folder-new.png       format_ul.png      mail-attachment.png   mail-reply-all.png        stock_bring-forward.png     user-info.png
+format_ol.png        insert-image.png   mail-forward.png      mail-reply-sender.png     stock_form-line-horizontal.png  user-trash-full.png
+format-text-larger.png   insert-link.png    mail-mark-read.png    mail-send.png         stock_insert-table.png      utilities-terminal.png
+format-text-mark.png     insert-object.png  mail-message-new.png  stock_anchor.png      stock_person.png            web-browser.png
+format-text-smaller.png  irc.png        mail-receive.png      stock_bring-backward.png  system-users.png            x-office-address-book.png
+
+32x32:
+alacarte.png  contact-new.png  mail-mark-read.png  mail-message-new.png  preferences-desktop-personal.png  preferences-system.png
+*/
+
 #button-getmsg,
 #button-newmsg,
 #button-reply,
 #button-replyall,
 #button-forward,
 #button-mark,
-#button-junk {
+#button-junk,
+#button-newlist,
+#button-attach {
   opacity: 1 !important;
 }
+
+#mini-comp,
+.icon-composer16 {
+    list-style-image: url("moz-icon://stock/accessories-text-editor?size=menu") !important;
+}
+
+#security-button,
+#security-button > image {
+    list-style-image: url("moz-icon://stock/changes-allow?size=menu") !important;
+}
+
+#security-button[level="high"],
+#security-button[level="low"],
+#security-button[level="high"] > image,
+#security-button[level="low"] > image {
+    list-style-image: url("moz-icon://stock/changes-prevent?size=menu") !important;
+}
+
+.readColumnHeader,
+treechildren::-moz-tree-image(unreadButtonColHeader, unread) {
+    list-style-image: url("moz-icon://stock/emblem-generic?size=menu") !important;
+}
+
+#mini-mail,
+.icon-mail16 {
+    list-style-image: url("moz-icon://stock/emblem-mail?size=menu") !important;
+}
+
+.icon-holder[type="folder"][ImapShared="true"],
+treechildren::-moz-tree-image(folderNameCol, imapShared-true) {
+    list-style-image: url("moz-icon://stock/emblem-shared?size=menu") !important;
+}
+
+#mini-nav,
+.icon-navigator16 {
+    list-style-image: url("moz-icon://stock/emblem-web?size=menu") !important;
+}
+
+.bookmark-item[container][query],
+treechildren::-moz-tree-image(title, query) {
+    list-style-image: url("moz-icon://stock/folder-saved-search?size=menu") !important;
+}
+
+#InsertImageItem {
+    list-style-image: url("moz-icon://stock/insert-image?size=menu") !important;
+}
+
+#InsertLinkItem {
+    list-style-image: url("moz-icon://stock/insert-link?size=menu") !important;
+}
+
+/*FIXME: irc*/
+
+.messageImage[value="popup-blocked"],
+#popupIcon {
+    list-style-image: url("moz-icon://stock/lpi-bug?size=menu") !important;
+}
+
+toolbar[iconsize="small"] > #button-attach,
+toolbar[iconsize="small"] > toolbarpaletteitem > #button-attach,
+toolbar[iconsize="small"] > #button-attach[disabled="true"],
+tree[noattachcol="true"] > treechildren::-moz-tree-image(subjectCol, attach, forwarded),
+tree[noattachcol="true"] > treechildren::-moz-tree-image(subjectCol, attach, replied),
+tree[noattachcol="true"] > treechildren::-moz-tree-image(subjectCol, attach, forwarded, replied) {
+    list-style-image: url("moz-icon://stock/mail-attachment?size=menu") !important;
+}
+
+toolbar[iconsize="small"] > #button-attach[disabled="true"] {
+    list-style-image: url("moz-icon://stock/mail-attachment?size=menu&state=disabled") !important;
+}
+
+toolbar[iconsize="small"] > #button-forward,
+toolbar[iconsize="small"] > toolbarpaletteitem > #button-forward,
+treechildren::-moz-tree-image(subjectCol, forwarded) {
+    list-style-image: url("moz-icon://stock/mail-forward?size=menu") !important;
+}
+
+toolbar[iconsize="small"] > #button-forward[disabled="true"] {
+    list-style-image: url("moz-icon://stock/mail-forward?size=menu&state=disabled") !important;
+}
+
+.folderMenuItem[SpecialFolder="Inbox"],
+.folderMenuItem[SpecialFolder="Inbox"][open="true"],
+.icon-holder[type="folder"][SpecialFolder="Inbox"],
+.icon-holder[type="folder"][SpecialFolder="Inbox"][NewMessages="true"],
+treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox),
+treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox, newMessages-true) {
+    list-style-image: url("moz-icon://stock/mail-inbox?size=menu") !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+toolbar[iconsize="small"] > #button-mark,
+toolbar[iconsize="small"] > toolbarpaletteitem > #button-mark {
+    list-style-image: url("moz-icon://stock/mail-mark-read?size=menu") !important;
+}
+
+toolbar[iconsize="small"] > #button-mark[disabled="true"] {
+    list-style-image: url("moz-icon://stock/mail-mark-read?size=menu&state=disabled") !important;
+}
+
+.flagColumnHeader,
+treechildren::-moz-tree-image(flaggedCol, flagged) {
+    list-style-image: url("moz-icon://stock/preferences-desktop-locale?size=menu") !important;
+}
+
+#profiles > treechildren::-moz-tree-image {
+    list-style-image: url("moz-icon://stock/stock_person?size=menu") !important;
+}
+
+toolbar[iconsize="small"] > #button-newlist,
+toolbar[iconsize="small"] > toolbarpaletteitem > #button-newlist {
+    list-style-image: url("moz-icon://stock/system-users?size=menu") !important;
+}
+
+toolbar[iconsize="small"] > #button-newlist[disabled] {
+    list-style-image: url("moz-icon://stock/system-users?size=menu&state=disabled") !important;
+}
+
+
+
+
+
+
+
+
+
+
 
 #button-getmsg {
     list-style-image: url("moz-icon://stock/mail-send-receive?size=toolbar") !important;
@@ -52,20 +212,20 @@
     list-style-image: url("moz-icon://stock/mail-forward?size=toolbar&state=disabled") !important;
 }
 
-#button-mark {
-    list-style-image: url("moz-icon://stock/mail-mark-read?size=toolbar") !important;
-}
-
-#button-mark[disabled="true"] {
-    list-style-image: url("moz-icon://stock/mail-mark-read?size=toolbar&state=disabled") !important;
-}
-
 #button-junk {
     list-style-image: url("moz-icon://stock/mail-mark-junk?size=toolbar") !important;
 }
 
 #button-junk[disabled="true"] {
     list-style-image: url("moz-icon://stock/mail-mark-junk?size=toolbar&state=disabled") !important;
+}
+
+#button-mark {
+    list-style-image: url("moz-icon://stock/mail-mark-read?size=toolbar") !important;
+}
+
+#button-mark[disabled="true"] {
+    list-style-image: url("moz-icon://stock/mail-mark-read?size=toolbar&state=disabled") !important;
 }
 
 toolbar[iconsize="small"] > #button-getmsg,
@@ -104,24 +264,6 @@ toolbar[iconsize="small"] > #button-replyall[disabled="true"] {
     list-style-image: url("moz-icon://stock/mail-reply-all?size=menu&state=disabled") !important;
 }
 
-toolbar[iconsize="small"] > #button-forward,
-toolbar[iconsize="small"] > toolbarpaletteitem > #button-forward {
-    list-style-image: url("moz-icon://stock/mail-forward?size=menu") !important;
-}
-
-toolbar[iconsize="small"] > #button-forward[disabled="true"] {
-    list-style-image: url("moz-icon://stock/mail-forward?size=menu&state=disabled") !important;
-}
-
-toolbar[iconsize="small"] > #button-mark,
-toolbar[iconsize="small"] > toolbarpaletteitem > #button-mark {
-    list-style-image: url("moz-icon://stock/mail-mark-read?size=menu") !important;
-}
-
-toolbar[iconsize="small"] > #button-mark[disabled="true"] {
-    list-style-image: url("moz-icon://stock/mail-mark-read?size=menu&state=disabled") !important;
-}
-
 toolbar[iconsize="small"] > #button-junk,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-junk {
     list-style-image: url("moz-icon://stock/mail-mark-junk?size=menu") !important;
@@ -135,10 +277,6 @@ toolbar[iconsize="small"] > #button-junk[disabled="true"] {
 
 .new-dir-button {
   list-style-image: url("moz-icon://stock/folder-new?size=toolbar") !important;
-}
-
-.messageImage[value="popup-blocked"] {
-  list-style-image: url("moz-icon://stock/lpi-bug?size=menu") !important;
 }
 
 #Console\:modeAll {

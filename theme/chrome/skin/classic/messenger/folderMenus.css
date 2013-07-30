@@ -54,14 +54,9 @@
 
 /* ..... special folders ..... */
 
-.folderMenuItem[SpecialFolder="Inbox"] {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-inbox.png");
-
-}
-
+.folderMenuItem[SpecialFolder="Inbox"],
 .folderMenuItem[SpecialFolder="Inbox"][open="true"] {
-  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
-  -moz-image-region: rect(64px 16px 80px 0px);
+  list-style-image: url("chrome://global/skin/icons/16x16/mail-inbox.png");
 }
 
 .folderMenuItem[SpecialFolder="Sent"] {

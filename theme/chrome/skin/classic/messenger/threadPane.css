@@ -137,14 +137,8 @@ treechildren::-moz-tree-image(unreadButtonColHeader, unread) {
 
 /* ..... attachment column ..... */
 
-.attachmentColumnHeader {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-attachment.png");
-}
-
-treechildren::-moz-tree-image(attachmentCol, attach) {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-attachment.png");
-}
-
+.attachmentColumnHeader,
+treechildren::-moz-tree-image(attachmentCol, attach),
 treechildren::-moz-tree-image(attachmentCol, attach, focus, selected) {
   list-style-image: url("chrome://global/skin/icons/16x16/mail-attachment.png");
 }
@@ -207,11 +201,11 @@ treechildren::-moz-tree-image(subjectCol, forwarded) {
   list-style-image: url("chrome://global/skin/icons/16x16/mail-forward.png");
 }
 
-treechildren::-moz-tree-image(subjectCol, replied) {
+treechildren::-moz-tree-image(subjectCol, replied),
+treechildren::-moz-tree-image(subjectCol, forwarded, replied) {
   list-style-image: url("chrome://global/skin/icons/16x16/mail-read.png");
 }
 
-treechildren::-moz-tree-image(subjectCol, forwarded, replied) {
   list-style-image: url("chrome://global/skin/icons/16x16/mail-read.png");
 }
 
@@ -220,14 +214,8 @@ tree[noattachcol="true"] > treechildren::-moz-tree-image(subjectCol, attach) {
   list-style-image: url("chrome://global/skin/icons/16x16/mail-unread.png");
 }
 
-tree[noattachcol="true"] > treechildren::-moz-tree-image(subjectCol, attach, forwarded) {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-attachment.png");
-}
-
-tree[noattachcol="true"] > treechildren::-moz-tree-image(subjectCol, attach, replied) {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-attachment.png");
-}
-
+tree[noattachcol="true"] > treechildren::-moz-tree-image(subjectCol, attach, forwarded),
+tree[noattachcol="true"] > treechildren::-moz-tree-image(subjectCol, attach, replied),
 tree[noattachcol="true"] > treechildren::-moz-tree-image(subjectCol, attach, forwarded, replied) {
   list-style-image: url("chrome://global/skin/icons/16x16/mail-attachment.png");
 }

@@ -94,17 +94,10 @@ treechildren::-moz-tree-image(folderNameCol, serverType-rss, newMessages-true) {
 /* ..... Inbox ..... */
 
 .icon-holder[type="folder"][SpecialFolder="Inbox"],
-treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox) {
-  /*list-style-image: url("chrome://messenger/skin/icons/folder-inbox.png");*/
-  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
-  -moz-image-region: rect(64px 16px 80px 0px);
-}
-
 .icon-holder[type="folder"][SpecialFolder="Inbox"][NewMessages="true"],
+treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox),
 treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox, newMessages-true) {
-  /*list-style-image: url("chrome://messenger/skin/icons/folder-inbox-new.png");*/
-  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
-  -moz-image-region: rect(64px 16px 80px 0px);
+  list-style-image: url("chrome://global/skin/icons/16x16/mail-inbox.png");
 }
 
 /* ..... Sent ..... */
@@ -189,7 +182,6 @@ treechildren::-moz-tree-image(folderNameCol, biffState-NewMail, isServer-true) {
 
 .icon-holder[type="folder"][ImapShared="true"],
 treechildren::-moz-tree-image(folderNameCol, imapShared-true) {
-  /*list-style-image: url("chrome://messenger/skin/icons/folder-share.png");*/
   list-style-image: url("global://global/skin/icons/16x16/emblem-shared.png");
 }
 
