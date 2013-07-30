@@ -109,19 +109,19 @@ treechildren::-moz-tree-image(container, OrganizerQuery_AllBookmarks) {
 #bookmarksToolbarFolderMenu,
 #BMB_bookmarksToolbarFolderMenu,
 treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksToolbar) {
-  list-style-image: url("chrome://communicator/skin/bookmarks/bookmarksToolbar.png");
+  list-style-image: url("chrome://global/skin/icons/firefox/bookmarksToolbar.png");
   -moz-image-region: auto;
 }
 
 treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksMenu) {
-  list-style-image: url("chrome://communicator/skin/bookmarks/bookmarksMenu.png");
+  list-style-image: url("chrome://global/skin/icons/firefox/bookmarksMenu.png");
   -moz-image-region: auto;
 }
 
 #unsortedBookmarksFolderMenu,
 #BMB_unsortedBookmarksFolderMenu,
 treechildren::-moz-tree-image(container, OrganizerQuery_UnfiledBookmarks) {
-  list-style-image: url("chrome://communicator/skin/bookmarks/unsortedBookmarks.png");
+  list-style-image: url("chrome://global/skin/icons/firefox/unsortedBookmarks.png");
   -moz-image-region: auto;
 }
 
