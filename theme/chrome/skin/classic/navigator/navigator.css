@@ -571,26 +571,26 @@ toolbar[iconsize="small"] > #home-button > .toolbarbutton-icon {
   for the drag/drop UI.
 */
 .bookmarks-toolbar-customize {
-  list-style-image: url("chrome://communicator/skin/bookmarks/bookmarksToolbar.png");
+  list-style-image: url("chrome://global/skin/icons/firefox/bookmarksToolbar.png");
   max-width: 15em !important;
 }
 
 #wrapper-personal-bookmarks[place="palette"] > .toolbarpaletteitem-box {
   width: 16px;
   height: 16px;
-  background: url("chrome://communicator/skin/bookmarks/bookmarksToolbar.png") no-repeat;
+  background: url("chrome://global/skin/icons/firefox/bookmarksToolbar.png") no-repeat;
 }
 
 /* ::::: star button ::::: */
 
 #star-button {
-  list-style-image: url("chrome://communicator/skin/bookmarks/bookmark.png");
+  list-style-image: url("chrome://global/skin/icons/firefox/bookmark.png");
   -moz-image-region: rect(0px 16px 16px 0px);
 }
 
 #star-button[starred="true"],
 #editBookmarkPanelStarIcon {
-  list-style-image: url("chrome://communicator/skin/bookmarks/bookmark.png");
+  list-style-image: url("chrome://global/skin/icons/firefox/bookmark.png");
   -moz-image-region: rect(0px 32px 16px 16px);
 }
 
