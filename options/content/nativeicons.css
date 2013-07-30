@@ -138,5 +138,9 @@ toolbar[iconsize="small"] > #button-junk[disabled="true"] {
 }
 
 .messageImage[value="popup-blocked"] {
-  list-style-image: url("moz-icon://stock/lpi-bug?size=menu");
+  list-style-image: url("moz-icon://stock/lpi-bug?size=menu") !important;
+}
+
+#Console\:modeAll {
+  list-style-image: url("moz-icon://stock/utilities-terminal?size=toolbar") !important;
 }

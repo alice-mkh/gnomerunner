@@ -106,7 +106,9 @@
 /* ..... selected state ..... */
 
 .console-row[selected="true"] {
-    background-image: url("chrome://mozapps/skin/shared/itemSelected.png");
+/*    background-image: url("chrome://mozapps/skin/shared/itemSelected.png");*/
+    background-color: Highlight;
+    color: white;
 }
 
 .console-row-code[selected="true"],
@@ -154,7 +156,7 @@ toolbar#ToolbarMode toolbarbutton {
 }
 
 #Console\:modeAll {
-  list-style-image: url("chrome://global/skin/console/console-toolbar.png");
+  list-style-image: url("chrome://global/skin/icons/24x24/utilities-terminal.png");
 }
 
 #Console\:modeErrors {
