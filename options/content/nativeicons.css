@@ -131,3 +131,8 @@ toolbar[iconsize="small"] > #button-junk[disabled="true"] {
     list-style-image: url("moz-icon://stock/mail-mark-junk?size=menu&state=disabled") !important;
 }
 
+/* Misc */
+
+.new-dir-button {
+  list-style-image: url("moz-icon://stock/folder-new?size=toolbar") !important;
+}

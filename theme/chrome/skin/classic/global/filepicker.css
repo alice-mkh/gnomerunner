@@ -54,7 +54,7 @@ treechildren::-moz-tree-image(FilenameColumn, file) {
 /* new-dir-button */
 
 .new-dir-button {
-  list-style-image: url("chrome://global/skin/Filepicker.png");
+  list-style-image: url("chrome://global/skin/icons/24x24/folder-new.png");
   max-width: 36px;
 }
 
