@@ -56,49 +56,24 @@
 
 #button-getmsg {
   list-style-image: url("chrome://global/skin/icons/24x24/mail-receive.png");
-/*   list-style-image: url("moz-icon://stock/mail-send-receive?size=toolbar"); */
 }
-/*
-#button-getmsg[disabled="true"] {
- list-style-image: url("moz-icon://stock/mail-send-receive?size=toolbar&state=disabled");
-}
-*/
+
 #button-newmsg {
   list-style-image: url("chrome://global/skin/icons/24x24/mail-message-new.png");
-/*   list-style-image: url("moz-icon://stock/mail-message-new?size=toolbar"); */
 }
-/*
-#button-newmsg[disabled="true"] {
-  list-style-image: url("moz-icon://stock/mail-message-new?size=toolbar&state=disabled");
-}
-*/
+
 #button-reply {
   list-style-image: url("chrome://global/skin/icons/24x24/mail-reply-sender.png");
-/*   list-style-image: url("moz-icon://stock/mail-reply-sender?size=toolbar"); */
 }
-/*
-#button-reply[disabled="true"] {
-  list-style-image: url("moz-icon://stock/mail-reply-sender?size=toolbar&state=disabled");
-}
-*/
+
 #button-replyall {
   list-style-image: url("chrome://global/skin/icons/24x24/mail-reply-all.png");
-/*   list-style-image: url("moz-icon://stock/mail-reply-all?size=toolbar"); */
 }
-/*
-#button-replyall[disabled="true"] {
-  list-style-image: url("moz-icon://stock/mail-reply-all?size=toolbar&state=disabled");
-}
-*/
+
 #button-forward {
   list-style-image: url("chrome://global/skin/icons/24x24/mail-forward.png");
-/*   list-style-image: url("moz-icon://stock/mail-forward?size=toolbar"); */
 }
-/*
-#button-forward[disabled="true"] {
-  list-style-image: url("moz-icon://stock/mail-forward?size=toolbar&state=disabled");
-}
-*/
+
 #button-file {
   list-style-image: url("moz-icon://stock/gtk-directory?size=toolbar");
 }
@@ -157,22 +132,12 @@
 
 #button-mark {
   list-style-image: url("chrome://global/skin/icons/24x24/mail-mark-read.png");
-/*   list-style-image: url("moz-icon://stock/mail-mark-read?size=toolbar"); */
 }
-/*
-#button-mark[disabled="true"] {
-  list-style-image: url("moz-icon://stock/mail-mark-read?size=toolbar&state=disabled");
-}
-*/
+
 #button-junk {
   list-style-image: url("chrome://global/skin/icons/24x24/user-trash-full.png");
-/*   list-style-image: url("moz-icon://stock/mail-mark-junk?size=toolbar"); */
 }
-/*
-#button-junk[disabled="true"] {
-  list-style-image: url("moz-icon://stock/mail-mark-junk?size=toolbar&state=disabled");
-}
-*/
+
 #button-print {
   list-style-image: url("moz-icon://stock/gtk-print?size=toolbar");
 }
@@ -223,53 +188,28 @@ toolbarpaletteitem[place="palette"] > #mailviews-container > #viewPicker {
 toolbar[iconsize="small"] > #button-getmsg,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-getmsg {
   list-style-image: url("chrome://global/skin/icons/16x16/mail-receive.png");
-/*   list-style-image: url("moz-icon://stock/mail-send-receive?size=menu"); */
 }
-/*
-toolbar[iconsize="small"] > #button-getmsg[disabled="true"] {
-  list-style-image: url("moz-icon://stock/mail-send-receive?size=menu&state=disabled");
-}
-*/
+
 toolbar[iconsize="small"] > #button-newmsg,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-newmsg {
   list-style-image: url("chrome://global/skin/icons/16x16/mail-message-new.png");
-/*   list-style-image: url("moz-icon://stock/mail-message-new?size=menu"); */
 }
-/*
-toolbar[iconsize="small"] > #button-newmsg[disabled="true"] {
-  list-style-image: url("moz-icon://stock/mail-message-new?size=menu&state=disabled");
-}
-*/
+
 toolbar[iconsize="small"] > #button-reply,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-reply {
   list-style-image: url("chrome://global/skin/icons/16x16/mail-reply-sender.png");
-/*   list-style-image: url("moz-icon://stock/mail-reply-sender?size=menu"); */
 }
-/*
-toolbar[iconsize="small"] > #button-reply[disabled="true"] {
-  list-style-image: url("moz-icon://stock/mail-reply-sender?size=menu&state=disabled");
-}
-*/
+
 toolbar[iconsize="small"] > #button-replyall,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-replyall {
   list-style-image: url("chrome://global/skin/icons/16x16/mail-reply-all.png");
-/*   list-style-image: url("moz-icon://stock/mail-reply-all?size=menu"); */
 }
-/*
-toolbar[iconsize="small"] > #button-replyall[disabled="true"] {
-  list-style-image: url("moz-icon://stock/mail-reply-all?size=menu&state=disabled");
-}
-*/
+
 toolbar[iconsize="small"] > #button-forward,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-forward {
   list-style-image: url("chrome://global/skin/icons/16x16/mail-forward.png");
-/*   list-style-image: url("moz-icon://stock/mail-forward?size=menu"); */
 }
-/*
-toolbar[iconsize="small"] > #button-forward[disabled="true"] {
-  list-style-image: url("moz-icon://stock/mail-forward?size=menu&state=disabled");
-}
-*/
+
 toolbar[iconsize="small"] > #button-file,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-file {
   list-style-image: url("moz-icon://stock/gtk-directory?size=menu");
@@ -336,23 +276,13 @@ toolbar[iconsize="small"] > #button-delete[disabled] {
 toolbar[iconsize="small"] > #button-mark,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-mark {
   list-style-image: url("chrome://global/skin/icons/16x16/mail-mark-read.png");
-/*   list-style-image: url("moz-icon://stock/mail-mark-read?size=menu"); */
 }
-/*
-toolbar[iconsize="small"] > #button-mark[disabled="true"] {
-  list-style-image: url("moz-icon://stock/mail-mark-read?size=menu&state=disabled");
-}
-*/
+
 toolbar[iconsize="small"] > #button-junk,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-junk {
   list-style-image: url("chrome://global/skin/icons/16x16/user-trash-full.png");
-/*   list-style-image: url("moz-icon://stock/mail-mark-junk?size=menu"); */
 }
-/*
-toolbar[iconsize="small"] > #button-junk[disabled="true"] {
-  list-style-image: url("moz-icon://stock/mail-mark-junk?size=menu&state=disabled");
-}
-*/
+
 toolbar[iconsize="small"] > #button-print,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-print {
   list-style-image: url("moz-icon://stock/gtk-print?size=menu");

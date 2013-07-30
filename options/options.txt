@@ -1,4 +1,9 @@
 TYPE=bool
+PREF=nativeicons
+NAME=Always use native icons
+Not all icon themes support that.
+
+TYPE=bool
 PREF=visiblegrippies
 NAME=Visible toolbar grippies
 

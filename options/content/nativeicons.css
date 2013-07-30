@@ -1,0 +1,133 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* Mail & Newsgroups */
+
+#button-getmsg,
+#button-newmsg,
+#button-reply,
+#button-replyall,
+#button-forward,
+#button-mark,
+#button-junk {
+  opacity: 1 !important;
+}
+
+#button-getmsg {
+    list-style-image: url("moz-icon://stock/mail-send-receive?size=toolbar") !important;
+}
+
+#button-getmsg[disabled="true"] {
+    list-style-image: url("moz-icon://stock/mail-send-receive?size=toolbar&state=disabled") !important;
+}
+
+#button-newmsg {
+    list-style-image: url("moz-icon://stock/mail-message-new?size=toolbar") !important;
+}
+
+#button-newmsg[disabled="true"] {
+    list-style-image: url("moz-icon://stock/mail-message-new?size=toolbar&state=disabled") !important;
+}
+
+#button-reply {
+    list-style-image: url("moz-icon://stock/mail-reply-sender?size=toolbar") !important;
+}
+
+#button-reply[disabled="true"] {
+    list-style-image: url("moz-icon://stock/mail-reply-sender?size=toolbar&state=disabled") !important;
+}
+
+#button-replyall {
+    list-style-image: url("moz-icon://stock/mail-reply-all?size=toolbar") !important;
+}
+
+#button-replyall[disabled="true"] {
+    list-style-image: url("moz-icon://stock/mail-reply-all?size=toolbar&state=disabled") !important;
+}
+
+#button-forward {
+    list-style-image: url("moz-icon://stock/mail-forward?size=toolbar") !important;
+}
+
+#button-forward[disabled="true"] {
+    list-style-image: url("moz-icon://stock/mail-forward?size=toolbar&state=disabled") !important;
+}
+
+#button-mark {
+    list-style-image: url("moz-icon://stock/mail-mark-read?size=toolbar") !important;
+}
+
+#button-mark[disabled="true"] {
+    list-style-image: url("moz-icon://stock/mail-mark-read?size=toolbar&state=disabled") !important;
+}
+
+#button-junk {
+    list-style-image: url("moz-icon://stock/mail-mark-junk?size=toolbar") !important;
+}
+
+#button-junk[disabled="true"] {
+    list-style-image: url("moz-icon://stock/mail-mark-junk?size=toolbar&state=disabled") !important;
+}
+
+toolbar[iconsize="small"] > #button-getmsg,
+toolbar[iconsize="small"] > toolbarpaletteitem > #button-getmsg {
+    list-style-image: url("moz-icon://stock/mail-send-receive?size=menu") !important;
+}
+
+toolbar[iconsize="small"] > #button-getmsg[disabled="true"] {
+    list-style-image: url("moz-icon://stock/mail-send-receive?size=menu&state=disabled") !important;
+}
+
+toolbar[iconsize="small"] > #button-newmsg,
+toolbar[iconsize="small"] > toolbarpaletteitem > #button-newmsg {
+    list-style-image: url("moz-icon://stock/mail-message-new?size=menu") !important;
+}
+
+toolbar[iconsize="small"] > #button-newmsg[disabled="true"] {
+    list-style-image: url("moz-icon://stock/mail-message-new?size=menu&state=disabled") !important;
+}
+
+toolbar[iconsize="small"] > #button-reply,
+toolbar[iconsize="small"] > toolbarpaletteitem > #button-reply {
+    list-style-image: url("moz-icon://stock/mail-reply-sender?size=menu") !important;
+}
+
+toolbar[iconsize="small"] > #button-reply[disabled="true"] {
+    list-style-image: url("moz-icon://stock/mail-reply-sender?size=menu&state=disabled") !important;
+}
+
+toolbar[iconsize="small"] > #button-replyall,
+toolbar[iconsize="small"] > toolbarpaletteitem > #button-replyall {
+    list-style-image: url("moz-icon://stock/mail-reply-all?size=menu") !important; 
+}
+
+toolbar[iconsize="small"] > #button-replyall[disabled="true"] {
+    list-style-image: url("moz-icon://stock/mail-reply-all?size=menu&state=disabled") !important;
+}
+
+toolbar[iconsize="small"] > #button-forward,
+toolbar[iconsize="small"] > toolbarpaletteitem > #button-forward {
+    list-style-image: url("moz-icon://stock/mail-forward?size=menu") !important;
+}
+
+toolbar[iconsize="small"] > #button-forward[disabled="true"] {
+    list-style-image: url("moz-icon://stock/mail-forward?size=menu&state=disabled") !important;
+}
+
+toolbar[iconsize="small"] > #button-mark,
+toolbar[iconsize="small"] > toolbarpaletteitem > #button-mark {
+    list-style-image: url("moz-icon://stock/mail-mark-read?size=menu") !important;
+}
+
+toolbar[iconsize="small"] > #button-mark[disabled="true"] {
+    list-style-image: url("moz-icon://stock/mail-mark-read?size=menu&state=disabled") !important;
+}
+
+toolbar[iconsize="small"] > #button-junk,
+toolbar[iconsize="small"] > toolbarpaletteitem > #button-junk {
+    list-style-image: url("moz-icon://stock/mail-mark-junk?size=menu") !important;
+}
+
+toolbar[iconsize="small"] > #button-junk[disabled="true"] {
+    list-style-image: url("moz-icon://stock/mail-mark-junk?size=menu&state=disabled") !important;
+}
+
