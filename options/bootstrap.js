@@ -5,9 +5,7 @@ var cssService = Components.classes["@mozilla.org/content/style-sheet-service;1"
 var prefList = $PREFS_ARRAY;
 
 function getMaxValue(data){
-    if (data == "hidegrippies"){
-        return 2;
-    }
+$PREFS_MAXVALUE
     return 1;
 }
 

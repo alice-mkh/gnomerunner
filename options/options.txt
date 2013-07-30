@@ -5,6 +5,7 @@ NAME=Visible toolbar grippies
 TYPE=radio
 PREF=hidegrippies
 NAME=Hide toolbar grippies
+MAX=2
 <radiogroup>
 <radio value="2" label="Hide everywhere"/>
 <radio value="1" label="Hide on menubars"/>
