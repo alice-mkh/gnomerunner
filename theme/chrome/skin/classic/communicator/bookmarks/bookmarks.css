@@ -135,7 +135,7 @@ treechildren::-moz-tree-image(title, query) {
 .bookmark-item[query][tagContainer],
 treechildren::-moz-tree-image(title, query, tagContainer),
 treechildren::-moz-tree-image(query, OrganizerQuery_Tags) {
-  list-style-image: url("chrome://communicator/skin/bookmarks/tag.png");
+  list-style-image: url("chrome://global/icons/firefox/tag.png");
   -moz-image-region: auto;
 }
 
