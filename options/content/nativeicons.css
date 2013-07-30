@@ -136,3 +136,7 @@ toolbar[iconsize="small"] > #button-junk[disabled="true"] {
 .new-dir-button {
   list-style-image: url("moz-icon://stock/folder-new?size=toolbar") !important;
 }
+
+.messageImage[value="popup-blocked"] {
+  list-style-image: url("moz-icon://stock/lpi-bug?size=menu");
+}

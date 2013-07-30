@@ -53,7 +53,6 @@ treechildren::-moz-tree-image(folderNameCol) {
 
 .icon-holder[type="folder"],
 treechildren::-moz-tree-image(folderNameCol) {
-  /*list-style-image: url("chrome://messenger/skin/icons/folder-closed.png");*/
   list-style-image: url("moz-icon://stock/gtk-directory?size=menu");
 }
 
@@ -67,28 +66,28 @@ treechildren::-moz-tree-image(folderNameCol, newMessages-true) {
 .icon-holder[type="folder"][ServerType="nntp"],
 treechildren::-moz-tree-image(folderNameCol, serverType-nntp) {
   /*list-style-image: url("chrome://messenger/skin/icons/folder-newsgroup-new.png");*/
-  list-style-image: url("chrome://messenger/skin/icons/folder-pane.png");
+  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
   -moz-image-region: rect(208px 16px 224px 0px);
 }
 
 .icon-holder[type="folder"][ServerType="nntp"][NewMessages="true"],
 treechildren::-moz-tree-image(folderNameCol, serverType-nntp, newMessages-true) {
   /*list-style-image: url("chrome://messenger/skin/icons/folder-newsgroup-new.png");*/
-  list-style-image: url("chrome://messenger/skin/icons/folder-pane.png");
+  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
   -moz-image-region: rect(208px 16px 224px 0px);
 }
 
 .icon-holder[type="folder"][ServerType="rss"],
 treechildren::-moz-tree-image(folderNameCol, serverType-rss) {
   /*list-style-image: url("chrome://messenger/skin/icons/folder-newsgroup.png");*/
-  list-style-image: url("chrome://messenger/skin/icons/folder-pane.png");
+  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
   -moz-image-region: rect(112px 16px 128px 0px);
 }
 
 .icon-holder[type="folder"][ServerType="rss"][NewMessages="true"],
 treechildren::-moz-tree-image(folderNameCol, serverType-rss, newMessages-true) {
   /*list-style-image: url("chrome://messenger/skin/icons/folder-newsgroup-new.png");*/
-  list-style-image: url("chrome://messenger/skin/icons/folder-pane.png");
+  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
   -moz-image-region: rect(112px 16px 128px 0px);
 }
 
@@ -97,14 +96,14 @@ treechildren::-moz-tree-image(folderNameCol, serverType-rss, newMessages-true) {
 .icon-holder[type="folder"][SpecialFolder="Inbox"],
 treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox) {
   /*list-style-image: url("chrome://messenger/skin/icons/folder-inbox.png");*/
-  list-style-image: url("chrome://messenger/skin/icons/folder-pane.png");
+  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
   -moz-image-region: rect(64px 16px 80px 0px);
 }
 
 .icon-holder[type="folder"][SpecialFolder="Inbox"][NewMessages="true"],
 treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox, newMessages-true) {
   /*list-style-image: url("chrome://messenger/skin/icons/folder-inbox-new.png");*/
-  list-style-image: url("chrome://messenger/skin/icons/folder-pane.png");
+  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
   -moz-image-region: rect(64px 16px 80px 0px);
 }
 
@@ -113,7 +112,7 @@ treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox, newMessages-tr
 .icon-holder[type="folder"][SpecialFolder="Sent"],
 treechildren::-moz-tree-image(folderNameCol, specialFolder-Sent) {
   /*list-style-image: url("chrome://messenger/skin/icons/folder-sent.png");*/
-  list-style-image: url("chrome://messenger/skin/icons/folder-pane.png");
+  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
   -moz-image-region: rect(144px 16px 160px 0px);
 }
 
@@ -121,7 +120,7 @@ treechildren::-moz-tree-image(folderNameCol, specialFolder-Sent) {
 
 .icon-holder[type="folder"][SpecialFolder="Outbox"],
 treechildren::-moz-tree-image(folderNameCol, specialFolder-Outbox) {
-  list-style-image: url("chrome://messenger/skin/icons/folder-pane.png");
+  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
   -moz-image-region: rect(96px 16px 112px 0px);
 }
 
@@ -130,7 +129,7 @@ treechildren::-moz-tree-image(folderNameCol, specialFolder-Outbox) {
 .icon-holder[type="folder"][SpecialFolder="Drafts"],
 treechildren::-moz-tree-image(folderNameCol, specialFolder-Drafts) {
   /*list-style-image: url("chrome://messenger/skin/icons/folder-draft.png");*/
-  list-style-image: url("chrome://messenger/skin/icons/folder-pane.png");
+  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
   -moz-image-region: rect(48px 16px 64px 0px);
 }
 
@@ -139,7 +138,7 @@ treechildren::-moz-tree-image(folderNameCol, specialFolder-Drafts) {
 .icon-holder[type="folder"][SpecialFolder="Templates"],
 treechildren::-moz-tree-image(folderNameCol, specialFolder-Templates) {
   /*list-style-image: url("chrome://messenger/skin/icons/folder-template.png");*/
-  list-style-image: url("chrome://messenger/skin/icons/folder-pane.png");
+  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
   -moz-image-region: rect(160px 16px 176px 0px);
 }
 
@@ -148,7 +147,7 @@ treechildren::-moz-tree-image(folderNameCol, specialFolder-Templates) {
 .icon-holder[type="folder"][SpecialFolder="Junk"],
 treechildren::-moz-tree-image(folderNameCol, specialFolder-Junk) {
   /*list-style-image: url("chrome://messenger/skin/icons/folder-junk.png");*/
-  list-style-image: url("chrome://messenger/skin/icons/folder-pane.png");
+  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
   -moz-image-region: rect(80px 16px 96px 0px);
 }
 
@@ -156,7 +155,7 @@ treechildren::-moz-tree-image(folderNameCol, specialFolder-Junk) {
 
 .icon-holder[type="folder"][SpecialFolder="Trash"],
 treechildren::-moz-tree-image(folderNameCol, specialFolder-Trash) {
-  list-style-image: url("chrome://messenger/skin/icons/folder-pane.png");
+  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
   -moz-image-region: rect(176px 16px 192px 0px) !important;
 }
 
@@ -165,7 +164,7 @@ treechildren::-moz-tree-image(folderNameCol, specialFolder-Trash) {
 .icon-holder[type="folder"][SpecialFolder="Virtual"],
 treechildren::-moz-tree-image(folderNameCol, specialFolder-Virtual) {
   /*list-style-image: url("chrome://messenger/skin/icons/folder-search.png");*/
-  list-style-image: url("chrome://messenger/skin/icons/folder-pane.png");
+  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
   -moz-image-region: rect(128px 16px 144px 0px) !important;
 }
 
@@ -199,28 +198,28 @@ treechildren::-moz-tree-image(folderNameCol, imapShared-true) {
 .icon-holder[type="folder"][IsServer="true"][ServerType="pop3"][IsSecure="true"],
 treechildren::-moz-tree-image(folderNameCol, isServer-true, serverType-pop3, isSecure-true) {
   /*list-style-image: url("chrome://messenger/skin/icons/server-remote-lock.png");*/
-  list-style-image: url("chrome://messenger/skin/icons/folder-pane.png");
+  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
   -moz-image-region: rect(16px 32px 32px 16px);
 }
 
 .icon-holder[type="folder"][IsServer="true"][ServerType="imap"][IsSecure="true"],
 treechildren::-moz-tree-image(folderNameCol, isServer-true, serverType-imap, isSecure-true) {
   /*list-style-image: url("chrome://messenger/skin/icons/server-remote-lock.png");*/
-  list-style-image: url("chrome://messenger/skin/icons/folder-pane.png");
+  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
   -moz-image-region: rect(16px 32px 32px 16px);
 }
 
 .icon-holder[type="folder"][BiffState="NewMail"][IsServer="true"][ServerType="imap"][IsSecure="true"],
 treechildren::-moz-tree-image(folderNameCol, biffState-NewMail, isServer-true, isSecure-true) {
   /*list-style-image: url("chrome://messenger/skin/icons/server-remote-lock-new.png");*/
-  list-style-image: url("chrome://messenger/skin/icons/folder-pane.png");
+  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
   -moz-image-region: rect(16px 32px 32px 16px);
 }
 
 .icon-holder[type="folder"][IsServer="true"][ServerType="none"],
 treechildren::-moz-tree-image(folderNameCol, isServer-true, serverType-none) {
   /*list-style-image: url("chrome://messenger/skin/icons/server-local.png");*/
-  list-style-image: url("chrome://messenger/skin/icons/folder-pane.png");
+  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
   -moz-image-region: rect(16px 16px 32px 0px);
 }
 
@@ -229,7 +228,7 @@ treechildren::-moz-tree-image(folderNameCol, isServer-true, serverType-none) {
 .icon-holder[type="folder"][ServerType="nntp"],
 treechildren::-moz-tree-image(folderNameCol, serverType-nntp) {
   /*list-style-image: url("chrome://messenger/skin/icons/folder-newsgroup.png");*/
-  list-style-image: url("chrome://messenger/skin/icons/folder-pane.png");
+  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
   -moz-image-region: rect(208px 16px 224px 0px);
 }
 
@@ -249,7 +248,7 @@ treechildren::-moz-tree-image(folderNameCol, isServer-true, serverType-nntp, isS
 
 .icon-holder[type="folder"][IsServer="true"][ServerType="rss"],
 treechildren::-moz-tree-image(folderNameCol, isServer-true, serverType-rss) {
-  list-style-image: url("chrome://messenger/skin/icons/folder-pane.png");
+  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
   -moz-image-region: rect(32px 16px 48px 0px);
 }
 
