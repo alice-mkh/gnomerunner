@@ -21,8 +21,17 @@ NAME=Address bar highlight on HTTPS
 Causes address bar to become black with some GTK themes, like Ambiance.
 
 TYPE=bool
-PREF=buttontext
-NAME=Always display text on some buttons
-Affected buttons in Navigator: Back.
-Affected buttons in Mail &amp; Newsgroups: Get Msgs, Compose.
+PREF=buttontextnav
+NAME=Always display text on Navigator buttons
+Affected buttons: Back.
+
+TYPE=bool
+PREF=buttontextmail
+NAME=Always display text on Mail &amp; Newsgroups buttons
+Affected buttons: Get Msgs, Compose.
+
+TYPE=bool
+PREF=buttontextaddr
+NAME=Always display text on Address Book buttons
+Affected buttons: New Contact, Properties.
 
