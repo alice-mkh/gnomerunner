@@ -4,6 +4,6 @@ AMO listing: https://addons.mozilla.org/en-US/seamonkey/addon/gnomerunnergtk-rev
 
 Credits:
 
-Original: Michael "mld" Doering, Niko Kaiser, Jakub Steiner, Garrett LeSage, Tuomas Kuosmanen, Mark Bokil, Seamonkey team.
+Original: Michael -mld- Doering, Niko Kaiser, Jakub Steiner, Garrett LeSage, Tuomas Kuosmanen, Mark Bokil, Seamonkey team.
 
 Revived: Exalm, everyone above.
