@@ -175,7 +175,7 @@ treecols:-moz-lwtheme {
 }
 
 .messageImage[value="popup-blocked"] {
-  list-style-image: url("chrome://navigator/skin/icons/popup-blocked.png");
+  list-style-image: url("chrome://global/skin/icons/16x16/lpi-bug.png");
 }
 
 
