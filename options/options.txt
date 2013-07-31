@@ -1,7 +1,10 @@
 TYPE=bool
-PREF=nativeicons
-NAME=Always use native icons
+PREF=freedesktopicons
+NAME=Use Freedesktop icon namings
 Not all icon themes support that.
+When this is disabled, the theme
+will only use GTK+ stock icons.
+Missing icons will like in GNOME theme.
 
 TYPE=bool
 PREF=visiblegrippies
@@ -34,7 +37,7 @@ Affected buttons: Back.
 TYPE=bool
 PREF=buttontextmail
 NAME=Always display text on Mail &amp; Newsgroups buttons
-Affected buttons: Get Msgs, Compose.
+Affected buttons: Get Msgs, Compose, Send, Attach.
 
 TYPE=bool
 PREF=buttontextaddr
