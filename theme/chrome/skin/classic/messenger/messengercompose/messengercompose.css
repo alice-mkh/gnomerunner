@@ -52,7 +52,6 @@
 }
 
 #button-send[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/24x24/mail-send.png");
   opacity: 0.5 !important;
 } 
 
@@ -62,7 +61,6 @@
  
 
 #button-address[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/24x24/x-office-address-book.png");
   opacity: 0.5 !important;
 } 
 
@@ -71,7 +69,6 @@
 }
 
 #button-attach[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/24x24/mail-attachment.png");
   opacity: 0.5 !important;
 } 
 
@@ -95,13 +92,12 @@
 
 toolbar[iconsize="small"] > #button-send,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-send {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-sent.png");
+  list-style-image: url("chrome://global/skin/icons/16x16/mail-send.png");
 }
 
 toolbar[iconsize="small"] > #button-send[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-sent.png");
   opacity: 0.5 !important;
-} 
+}
 
 toolbar[iconsize="small"] > #button-address,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-address {

@@ -104,17 +104,14 @@ treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox, newMessages-tr
 
 .icon-holder[type="folder"][SpecialFolder="Sent"],
 treechildren::-moz-tree-image(folderNameCol, specialFolder-Sent) {
-  /*list-style-image: url("chrome://messenger/skin/icons/folder-sent.png");*/
-  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
-  -moz-image-region: rect(144px 16px 160px 0px);
+  list-style-image: url("chrome://global/skin/icons/16x16/mail-send.png");
 }
 
 /* ..... Outbox ..... */
 
 .icon-holder[type="folder"][SpecialFolder="Outbox"],
 treechildren::-moz-tree-image(folderNameCol, specialFolder-Outbox) {
-  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
-  -moz-image-region: rect(96px 16px 112px 0px);
+  list-style-image: url("chrome://global/skin/icons/16x16/mail-outbox.png");
 }
 
 /* ..... Drafts ..... */

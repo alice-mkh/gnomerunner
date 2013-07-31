@@ -100,11 +100,7 @@ treeitem[container="true"][selected="true"] > treerow > .treecell-indent
 }
 */
 
-treeitem[container="true"][id="NC:SiteMapRoot"] > treerow > .treecell-indent 
-{
-    list-style-image: url("chrome://global/skin/icons/16x16/web-browser.png");
-}
-
+treeitem[container="true"][id="NC:SiteMapRoot"] > treerow > .treecell-indent,
 treeitem[container="true"][open="true"][id="NC:SiteMapRoot"] > treerow > .treecell-indent 
 {
     list-style-image: url("chrome://global/skin/icons/16x16/web-browser.png");

@@ -123,12 +123,7 @@
   list-style-image: url("chrome://global/skin/icons/24x24/format_ol.png");
 }
 
-#olButton[checked="true"] {
-  list-style-image: url("chrome://global/skin/icons/24x24/format_ol.png");
-}
-
 #olButton[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/24x24/format_ol.png");
   opacity: 0.2 !important;
 }
 
@@ -212,12 +207,7 @@
   list-style-image: url("chrome://global/skin/icons/24x24/insert-object.png");
 }
 
-#InsertPopupButton[open="true"] {
-  list-style-image: url("chrome://global/skin/icons/24x24/insert-object.png");
-}
-
 #InsertPopupButton[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/24x24/insert-object.png");
   opacity: 0.2 !important;
 }
 

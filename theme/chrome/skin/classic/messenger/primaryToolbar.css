@@ -135,7 +135,7 @@
 }
 
 #button-junk {
-  list-style-image: url("chrome://global/skin/icons/24x24/user-trash-full.png");
+  list-style-image: url("chrome://global/skin/icons/24x24/mail-mark-junk.png");
 }
 
 #button-print {
@@ -280,7 +280,7 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #button-mark {
 
 toolbar[iconsize="small"] > #button-junk,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-junk {
-  list-style-image: url("chrome://global/skin/icons/16x16/user-trash-full.png");
+  list-style-image: url("chrome://global/skin/icons/16x16/mail-mark-junk.png");
 }
 
 toolbar[iconsize="small"] > #button-print,

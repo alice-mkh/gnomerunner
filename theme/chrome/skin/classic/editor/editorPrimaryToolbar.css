@@ -42,10 +42,18 @@
 
 /* ::::: primary toolbar buttons ::::: */
 
+#linkButton[disabled="true"],
+#imageButton[disabled="true"],
+#previewButton[disabled="true"],
+#namedAnchorButton[disabled="true"],
+#hlineButton[disabled="true"],
+#tableButton[disabled="true"] {
+  opacity: 0.5 !important;
+}
+
 #newButton {
   list-style-image: url("moz-icon://stock/gtk-new?size=toolbar");
 }
-
 
 #newButton[disabled="true"] {
   list-style-image: url("moz-icon://stock/gtk-new?size=toolbar&state=disabled");
@@ -80,11 +88,6 @@
   list-style-image: url("chrome://global/skin/icons/24x24/web-browser.png");
 }
 
-#previewButton[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/24x24/web-browser.png");
-  opacity: 0.5 !important;
-}
-
 #printButton {
   list-style-image: url("moz-icon://stock/gtk-print?size=toolbar");
 }
@@ -97,45 +100,20 @@
   list-style-image: url("chrome://global/skin/icons/24x24/insert-link.png");
 }
 
-#linkButton[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/24x24/insert-link.png");
-  opacity: 0.5 !important;
-}
-
 #imageButton {
   list-style-image: url("chrome://global/skin/icons/24x24/insert-image.png");
-}
-
-#imageButton[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/24x24/insert-image.png");
-  opacity: 0.5 !important;
 }
 
 #namedAnchorButton {
   list-style-image: url("chrome://global/skin/icons/24x24/stock_anchor.png");
 }
 
-#namedAnchorButton[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/24x24/stock_anchor.png");
-  opacity: 0.5 !important;
-}
-
 #hlineButton {
   list-style-image: url("chrome://global/skin/icons/24x24/stock_form-line-horizontal.png");
 }
 
-#hlineButton[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/24x24/stock_form-line-horizontal.png");
-  opacity: 0.5 !important;
-}
-
 #tableButton {
   list-style-image: url("chrome://global/skin/icons/24x24/stock_insert-table.png");
-}
-
-#tableButton[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/24x24/stock_insert-table.png");
-  opacity: 0.5 !important;
 }
 
 #spellingButton {

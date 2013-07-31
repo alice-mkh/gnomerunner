@@ -55,7 +55,7 @@
 }
 
 #mini-mail[BiffState="NewMail"] {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-message-new.png");
+  list-style-image: url("chrome://global/skin/icons/16x16/mail-mark-unread.png");
 }
 
 #mini-addr,

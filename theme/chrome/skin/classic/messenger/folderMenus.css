@@ -59,24 +59,14 @@
   list-style-image: url("chrome://global/skin/icons/16x16/mail-inbox.png");
 }
 
-.folderMenuItem[SpecialFolder="Sent"] {
-  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
-  -moz-image-region: rect(144px 16px 160px 0px);
-}
-
+.folderMenuItem[SpecialFolder="Sent"],
 .folderMenuItem[SpecialFolder="Sent"][open="true"] {
-  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
-  -moz-image-region: rect(144px 16px 160px 0px);
+  list-style-image: url("chrome://global/skin/icons/16x16/mail-send.png");
 }
 
-.folderMenuItem[SpecialFolder="Outbox"] {
-  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
-  -moz-image-region: rect(96px 16px 112px 0px);
-}
-
+.folderMenuItem[SpecialFolder="Outbox"],
 .folderMenuItem[SpecialFolder="Outbox"][open="true"] {
-  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
-  -moz-image-region: rect(96px 16px 112px 0px);
+  list-style-image: url("chrome://global/skin/icons/16x16/mail-outbox.png");
 }
 
 .folderMenuItem[SpecialFolder="Drafts"] {

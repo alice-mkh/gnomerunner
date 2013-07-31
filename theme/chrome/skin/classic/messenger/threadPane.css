@@ -160,7 +160,7 @@ treechildren::-moz-tree-image(flaggedCol, flagged) {
 /* ..... junkStatus column ..... */
 
 .junkStatusHeader {
-  list-style-image: url("chrome://global/skin/icons/16x16/user-trash-full.png");
+  list-style-image: url("chrome://global/skin/icons/16x16/mail-mark-junk.png");
   padding: 0px 4px 0px 0px;
 }
 
@@ -172,7 +172,7 @@ treechildren::-moz-tree-image(junkStatusCol) {
 }
 
 treechildren::-moz-tree-image(junkStatusCol, junk) {
-  list-style-image: url("chrome://global/skin/icons/16x16/user-trash-full.png");
+  list-style-image: url("chrome://global/skin/icons/16x16/mail-mark-junk.png");
 }
 
 treechildren::-moz-tree-image(junkStatusCol, notjunk) {
@@ -194,7 +194,7 @@ treechildren::-moz-tree-image(subjectCol) {
 }
 
 treechildren::-moz-tree-image(subjectCol, new) {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-unread.png");
+  list-style-image: url("chrome://global/skin/icons/16x16/mail-mark-unread.png");
 }
 
 treechildren::-moz-tree-image(subjectCol, forwarded) {
@@ -202,16 +202,15 @@ treechildren::-moz-tree-image(subjectCol, forwarded) {
 }
 
 treechildren::-moz-tree-image(subjectCol, replied),
-treechildren::-moz-tree-image(subjectCol, forwarded, replied) {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-read.png");
-}
-
+treechildren::-moz-tree-image(subjectCol, forwarded, replied),
+.icon-holder[type="message"][Attachment="true"],
+tree[noattachcol="true"] > treechildren::-moz-tree-image(subjectCol, attach) {
   list-style-image: url("chrome://global/skin/icons/16x16/mail-read.png");
 }
 
 .icon-holder[type="message"][Attachment="true"],
 tree[noattachcol="true"] > treechildren::-moz-tree-image(subjectCol, attach) {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-unread.png");
+  list-style-image: url("chrome://global/skin/icons/16x16/mail-mark-unread.png");
 }
 
 tree[noattachcol="true"] > treechildren::-moz-tree-image(subjectCol, attach, forwarded),
@@ -231,7 +230,7 @@ treechildren::-moz-tree-image(subjectCol, offline) {
 }
 
 treechildren::-moz-tree-image(subjectCol, new, offline) {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-unread.png");
+  list-style-image: url("chrome://global/skin/icons/16x16/mail-mark-unread.png");
 }
 
 tree[noattachcol="true"] > treechildren::-moz-tree-image(subjectCol, attach, offline) {

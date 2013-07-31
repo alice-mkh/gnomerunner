@@ -53,7 +53,6 @@
 }
 
 #button-newcard[disabled] {
-  list-style-image: url("chrome://global/skin/icons/24x24/stock_person.png");
   opacity: 0.5 !important;
 } 
 
@@ -62,7 +61,6 @@
 }
 
 #button-newlist[disabled] {
-  list-style-image: url("chrome://global/skin/icons/24x24/system-users.png");
   opacity: 0.5 !important;
 } 
 
@@ -71,7 +69,6 @@
 }
 
 #button-editcard[disabled] {
-  list-style-image: url("chrome://global/skin/icons/24x24/user-info.png");
   opacity: 0.5 !important;
 } 
 
@@ -80,7 +77,6 @@
 }
 
 #button-newmessage[disabled] {
-  list-style-image: url("chrome://global/skin/icons/24x24/mail-message-new.png");
   opacity: 0.5 !important;
 }
 
@@ -89,7 +85,6 @@
 }
 
 #button-newim[disabled] {
-  list-style-image: url("chrome://global/skin/icons/24x24/irc.png");
   opacity: 0.5 !important;
 } 
 
