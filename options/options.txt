@@ -1,6 +1,7 @@
 TYPE=bool
 PREF=freedesktopicons
 NAME=Use Freedesktop icon namings
+DEFAULT=false
 Not all icon themes support that.
 When this is disabled, the theme
 will only use GTK+ stock icons.
@@ -9,11 +10,13 @@ Missing icons will like in GNOME theme.
 TYPE=bool
 PREF=visiblegrippies
 NAME=Visible toolbar grippies
+DEFAULT=false
 
 TYPE=radio
 PREF=hidegrippies
 NAME=Hide toolbar grippies
 MAX=2
+DEFAULT=1
 <radiogroup>
 <radio value="2" label="Hide everywhere"/>
 <radio value="1" label="Hide on menubars"/>
@@ -23,24 +26,29 @@ MAX=2
 TYPE=bool
 PREF=newtabplus
 NAME=Alternative new tab button
+DEFAULT=false
 
 TYPE=bool
 PREF=urlbarhighlight
 NAME=Address bar highlight on HTTPS
 Causes address bar to become black with some GTK themes, like Ambiance.
+DEFAULT=false
 
 TYPE=bool
 PREF=buttontextnav
 NAME=Always display text on Navigator buttons
 Affected buttons: Back.
+DEFAULT=false
 
 TYPE=bool
 PREF=buttontextmail
 NAME=Always display text on Mail &amp; Newsgroups buttons
 Affected buttons: Get Msgs, Compose, Send, Attach.
+DEFAULT=false
 
 TYPE=bool
 PREF=buttontextaddr
 NAME=Always display text on Address Book buttons
 Affected buttons: New Contact, Properties.
+DEFAULT=false
 

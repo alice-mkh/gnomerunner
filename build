@@ -44,12 +44,14 @@ while read -r LINE; do
         if [[ $TEMP_OPTION_MAX != "" ]]; then
             PREFS_MAXVALUE="$PREFS_MAXVALUE\n    if (data == \"$TEMP_OPTION_PREF\"){\n        return $TEMP_OPTION_MAX;\n    }"
         fi
+        DEFAULTS="${DEFAULTS}pref(\"$OPTIONS_PREF_BRANCH$TEMP_OPTION_PREF\", $TEMP_OPTION_DEFAULT);\n"
         TEMP_OPTION_CONTENT=""
         TEMP_OPTION_TYPE=""
         TEMP_OPTION_PREF=""
         TEMP_OPTION_NAME=""
         TEMP_OPTION_DESC=""
         TEMP_OPTION_MAX=""
+        TEMP_OPTION_DEFAULT=""
     fi
     if [[ $LINE == [^\<]*=* ]]; then
         LINE1=`echo $LINE | grep -oE "^[^=]+"`
@@ -71,6 +73,8 @@ PREFS_ARRAY="$PREFS_ARRAY]"
 sed "s|\$PREFS_ARRAY|$PREFS_ARRAY|g" -i bootstrap.js
 PREFS_MAXVALUE="${PREFS_MAXVALUE:2}"
 sed "s|\$PREFS_MAXVALUE|$PREFS_MAXVALUE|g" -i bootstrap.js
+mkdir -p defaults/preferences
+echo -e $DEFAULTS > defaults/preferences/defaults.js
 cd ..
 
 NAME1="theme.xpi"
