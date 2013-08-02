@@ -9,9 +9,7 @@
 }
 
 findbar {
-  border-top: 2px solid;
-  -moz-border-top-colors: ThreeDShadow ThreeDHighlight;
-  padding-bottom: 1px;
+  -moz-appearance: toolbar;
   min-width: 1px;
   transition-property: margin-bottom, opacity, visibility;
   transition-duration: 150ms, 150ms, 0s;

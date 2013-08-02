@@ -210,8 +210,7 @@ toolbar[iconsize="small"] > #sync-button[status=active] {
 }
 
 #FindToolbar:-moz-lwtheme {
-  -moz-border-top-colors: transparent;
-  -moz-border-bottom-colors: transparent;
+  -moz-appearance: none;
 }
 
 /* ::::: fullscreen window controls ::::: */

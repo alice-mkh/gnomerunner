@@ -9,10 +9,7 @@
 
 /* style findbar for being on top */
 #FindToolbar {
-  -moz-border-top-colors: ThreeDHighlight;
-  border-top-width: 1px;
-  border-bottom: 2px solid;
-  -moz-border-bottom-colors: ThreeDShadow ThreeDHighlight;
-  padding-top: 1px;
+  -moz-appearance: toolbar !important;
+  padding-top: 0px;
   padding-bottom: 0px;
 }
