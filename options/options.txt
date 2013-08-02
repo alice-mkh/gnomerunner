@@ -5,7 +5,7 @@ DEFAULT=false
 Not all icon themes support that.
 When this is disabled, the theme
 will only use GTK+ stock icons.
-Missing icons will like in GNOME theme.
+Missing icons will be like in GNOME theme.
 
 TYPE=bool
 PREF=visiblegrippies
