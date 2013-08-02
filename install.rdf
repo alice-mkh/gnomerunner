@@ -4,6 +4,8 @@
      xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <Description about="urn:mozilla:install-manifest">
         <em:id>$THEME_ID</em:id>
+        <em:internalName>$INTERNAL_NAME</em:internalName>
+        <em:skinnable>true</em:skinnable>
         <em:type>32</em:type>
         <em:name>$NAME</em:name>
         <em:description>$THEME_DESC</em:description>

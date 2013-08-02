@@ -77,7 +77,7 @@ mkdir -p defaults/preferences
 echo -e $DEFAULTS > defaults/preferences/defaults.js
 cd ..
 
-NAME1="theme.xpi"
+NAME1="theme.jar"
 NAME2="options.xpi"
 NAME="gnomerunner_gtk_revived-$VERSION-sm-linux.xpi"
 cd theme
@@ -85,5 +85,5 @@ zip ../$NAME1 * -qr
 cd ../options
 zip ../$NAME2 * -qr
 cd ..
-zip ../$NAME *.xpi *.rdf -q
+zip ../$NAME *.xpi *.jar *.rdf -q
 cd ..
