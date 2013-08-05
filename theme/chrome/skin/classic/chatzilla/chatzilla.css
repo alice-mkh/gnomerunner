@@ -57,23 +57,23 @@ window {
 #tabs-drop-indicator-bar {
     position: relative;
     margin-top: -3px;
-    -moz-margin-start: -5px;
+    -moz-margin-start: -9px;
     height: 3px;
 }
 
 #tabs-drop-indicator {
     position: relative;
-    margin-right: -11px;
+    margin-right: -16px;
     margin-bottom: -8px;
-    width: 11px;
-    height: 11px;
-    background: url(images/drop-indicator-bottom.png) 50% 50% no-repeat;
+    height: 16px;
+    width: 16px;
+    background: url("moz-icon://stock/gtk-go-up?size=menu") 50% 50% no-repeat;
 }
 
 #view-tabs {
-     padding-left: 2px;
-     box-shadow: ThreeDShadow 0 1px inset;
-     padding-top: 1px;
+    padding-left: 2px;
+    box-shadow: ThreeDShadow 0 1px inset;
+    padding-top: 1px;
 }
 
 .view-button {
