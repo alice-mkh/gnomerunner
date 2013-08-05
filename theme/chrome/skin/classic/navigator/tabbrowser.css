@@ -170,18 +170,18 @@ tabpanels {
 }
 
 .tab-drop-indicator-bar {
-    height: 11px;
-    margin-top: -11px;
-    margin-left: -5px;
+    height: 16px;
+    margin-top: -16px;
+    margin-left: -7px;
     position: relative;
 }
 
 .tab-drop-indicator {
-    height: 11px;
-    width: 11px;
-    margin-bottom: -5px;
+    height: 16px;
+    width: 16px;
+    margin-bottom: -10px;
     position: relative;
-    list-style-image: url("moz-icon://stock/gtk-go-down?size=menu");
+    background: url("moz-icon://stock/gtk-go-down?size=menu") 50% 50% no-repeat;
 }
 
 tooltip[tabpreview="true"] {
