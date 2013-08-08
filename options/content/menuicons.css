@@ -1,0 +1,196 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+#menu_New:-moz-system-metric(images-in-menus) > label,
+/*#menu_newNavigatorTab:-moz-system-metric(images-in-menus) > label,
+#menu_newNavigator:-moz-system-metric(images-in-menus) > label,*/
+#menu_newEditor:-moz-system-metric(images-in-menus) > label,
+#menu_openFile:-moz-system-metric(images-in-menus) > label,
+#savepage:-moz-system-metric(images-in-menus) > label,
+#menu_close:-moz-system-metric(images-in-menus) > label,
+#menu_closeOtherTabs:-moz-system-metric(images-in-menus) > label,
+#menu_closeWindow:-moz-system-metric(images-in-menus) > label,
+menuitem[command="Browser:EditPage"]:-moz-system-metric(images-in-menus) > label,
+#menu_printSetup:-moz-system-metric(images-in-menus) > label,
+#menu_printPreview:-moz-system-metric(images-in-menus) > label,
+#menu_print:-moz-system-metric(images-in-menus) > label,
+#menu_FileQuitItem:-moz-system-metric(images-in-menus) > label,
+#menu_undo:-moz-system-metric(images-in-menus) > label,
+#menu_redo:-moz-system-metric(images-in-menus) > label,
+#menu_cut:-moz-system-metric(images-in-menus) > label,
+#menu_copy:-moz-system-metric(images-in-menus) > label,
+#menu_paste:-moz-system-metric(images-in-menus) > label,
+#menu_delete:-moz-system-metric(images-in-menus) > label,
+#menu_selectAll:-moz-system-metric(images-in-menus) > label,
+#menu_find:-moz-system-metric(images-in-menus) > label,
+#menu_preferences:-moz-system-metric(images-in-menus) > label {
+    padding-left: 21px !important;
+    margin-left: 0px !important;
+}
+
+#menu_New,
+#menu_newEditor {
+    list-style-image: url("moz-icon://stock/gtk-new?size=menu") !important;
+}
+
+#menu_New:-moz-system-metric(images-in-menus) > label,
+#menu_newEditor:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-new?size=menu") 0% 50% no-repeat !important;
+}
+
+/*
+#menu_newNavigatorTab {
+    list-style-image: url("moz-icon://stock/tab-new?size=menu") !important;
+}
+
+#menu_newNavigatorTab:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/tab-new?size=menu") 0% 50% no-repeat !important;
+}
+
+#menu_newNavigator {
+    list-style-image: url("moz-icon://stock/window-new?size=menu") !important;
+}
+
+#menu_newNavigator:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/window-new?size=menu") 0% 50% no-repeat !important;
+}
+*/
+
+#menu_openFile {
+    list-style-image: url("moz-icon://stock/gtk-open?size=menu") !important;
+}
+
+#menu_openFile:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-open?size=menu") 0% 50% no-repeat !important;
+}
+
+#savepage {
+    list-style-image: url("moz-icon://stock/gtk-save-as?size=menu") !important;
+}
+
+#savepage:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-save-as?size=menu") 0% 50% no-repeat !important;
+}
+
+#menu_close,
+#menu_closeOtherTabs,
+#menu_closeWindow {
+    list-style-image: url("moz-icon://stock/gtk-close?size=menu") !important;
+}
+
+#menu_close:-moz-system-metric(images-in-menus) > label,
+#menu_closeOtherTabs:-moz-system-metric(images-in-menus) > label,
+#menu_closeWindow:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-close?size=menu") 0% 50% no-repeat !important;
+}
+
+menuitem[command="Browser:EditPage"] {
+    list-style-image: url("moz-icon://stock/gtk-edit?size=menu") !important;
+}
+
+menuitem[command="Browser:EditPage"]:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-edit?size=menu") 0% 50% no-repeat !important;
+}
+
+#menu_printSetup {
+    list-style-image: url("moz-icon://stock/gtk-properties?size=menu") !important;
+}
+
+#menu_printSetup:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-properties?size=menu") 0% 50% no-repeat !important;
+}
+
+#menu_printPreview {
+    list-style-image: url("moz-icon://stock/gtk-print-preview?size=menu") !important;
+}
+
+#menu_printPreview:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-print-preview?size=menu") 0% 50% no-repeat !important;
+}
+
+#menu_print {
+    list-style-image: url("moz-icon://stock/gtk-print?size=menu") !important;
+}
+
+#menu_print:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-print?size=menu") 0% 50% no-repeat !important;
+}
+
+#menu_FileQuitItem {
+    list-style-image: url("moz-icon://stock/gtk-quit?size=menu") !important;
+}
+
+#menu_FileQuitItem:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-quit?size=menu") 0% 50% no-repeat !important;
+}
+
+#menu_undo {
+    list-style-image: url("moz-icon://stock/gtk-undo?size=menu") !important;
+}
+
+#menu_undo:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-undo?size=menu") 0% 50% no-repeat !important;
+}
+
+#menu_redo {
+    list-style-image: url("moz-icon://stock/gtk-redo?size=menu") !important;
+}
+
+#menu_redo:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-redo?size=menu") 0% 50% no-repeat !important;
+}
+
+#menu_cut {
+    list-style-image: url("moz-icon://stock/gtk-cut?size=menu") !important;
+}
+
+#menu_cut:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-cut?size=menu") 0% 50% no-repeat !important;
+}
+
+#menu_copy {
+    list-style-image: url("moz-icon://stock/gtk-copy?size=menu") !important;
+}
+
+#menu_copy:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-copy?size=menu") 0% 50% no-repeat !important;
+}
+
+#menu_paste {
+    list-style-image: url("moz-icon://stock/gtk-paste?size=menu") !important;
+}
+
+#menu_paste:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-paste?size=menu") 0% 50% no-repeat !important;
+}
+
+#menu_delete {
+    list-style-image: url("moz-icon://stock/gtk-delete?size=menu") !important;
+}
+
+#menu_delete:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-delete?size=menu") 0% 50% no-repeat !important;
+}
+
+#menu_selectAll {
+    list-style-image: url("moz-icon://stock/gtk-select-all?size=menu") !important;
+}
+
+#menu_selectAll:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-select-all?size=menu") 0% 50% no-repeat !important;
+}
+
+#menu_find {
+    list-style-image: url("moz-icon://stock/gtk-find?size=menu") !important;
+}
+
+#menu_find:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-find?size=menu") 0% 50% no-repeat !important;
+}
+
+#menu_preferences {
+    list-style-image: url("moz-icon://stock/gtk-preferences?size=menu") !important;
+}
+
+#menu_preferences:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-preferences?size=menu") 0% 50% no-repeat !important;
+}

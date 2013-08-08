@@ -8,6 +8,11 @@ will only use GTK+ stock icons.
 Missing icons will be like in GNOME theme.
 
 TYPE=bool
+PREF=menuicons
+NAME=Icons in menus
+DEFAULT=true
+
+TYPE=bool
 PREF=visiblegrippies
 NAME=Visible toolbar grippies
 DEFAULT=false
