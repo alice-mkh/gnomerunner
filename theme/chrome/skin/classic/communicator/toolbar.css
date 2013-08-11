@@ -57,7 +57,13 @@ toolbargrippy {
   padding: 2px 1px;
 }
 
-toolbargrippy:not([tbgrippy-collapsed="true"]) {
+toolbar[type="menubar"] toolbargrippy:not([tbgrippy-collapsed="true"]),
+menubar toolbargrippy:not([tbgrippy-collapsed="true"]) {
+   margin-top: 0 !important;
+   margin-bottom: 0 !important;
+}
+
+toolbar:not([type="menubar"]) toolbargrippy:not([tbgrippy-collapsed="true"]) {
    margin-top: -2px;
    margin-bottom: -2px;
 }
