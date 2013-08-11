@@ -54,57 +54,22 @@ tabpanels {
 }
 
 /* ::::: Tab scrollbox arrow, and all-tabs buttons ::::: */
-/*
+
 .scrollbutton-up,
 .scrollbutton-down {
   -moz-appearance: tab;
   margin: 2px 0px 1px;
   padding: 0px;
-  border-top: 2px solid;
-  border-right: 2px solid;
-  border-left: 2px solid;
-  border-bottom: 1px solid ThreeDHighlight;
-  -moz-border-top-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: ThreeDHighlight ThreeDLightShadow;
-  border-radius: 2px 2px 0px 0px;
 }
 
-@media (-moz-windows-theme: aero) {
-  .scrollbutton-up,
-  .scrollbutton-down {
-    padding: 0px 2px;
-  }
+.scrollbutton-up > image,
+.scrollbutton-down:-moz-locale-dir(rtl) > image {
+  -moz-appearance: button-arrow-previous !important;
 }
 
-.scrollbutton-up:-moz-locale-dir(rtl),
-.scrollbutton-down:-moz-locale-dir(ltr) {
-  -moz-border-right-colors: ThreeDHighlight ThreeDShadow;
-}
-
-.scrollbutton-up:-moz-locale-dir(ltr),
-.scrollbutton-down:-moz-locale-dir(rtl) {
-  -moz-border-left-colors: ThreeDHighlight ThreeDShadow;
-}
-
-.scrollbutton-up,
-.scrollbutton-down:-moz-locale-dir(rtl) {
-  list-style-image: url("chrome://navigator/skin/icons/tab-arrow-left.gif");
-}
-
-.scrollbutton-down,
-.scrollbutton-up:-moz-locale-dir(rtl) {
-  list-style-image: url("chrome://navigator/skin/icons/tab-arrow-right.gif");
-}
-
-.scrollbutton-up,
-.scrollbutton-down {
-  -moz-image-region: rect(0px, 8px, 12px, 0px);
-}
-
-.scrollbutton-up[disabled="true"],
-.scrollbutton-down[disabled="true"] {
-  -moz-image-region: rect(0px, 16px, 12px, 8px);
+.scrollbutton-down > image,
+.scrollbutton-up:-moz-locale-dir(rtl) > image {
+  -moz-appearance: button-arrow-next !important;
 }
 
 .scrollbutton-down {
@@ -123,7 +88,7 @@ tabpanels {
 .scrollbutton-down[notifybgtab="true"] {
   box-shadow: 0px 0px 0px 9px ThreeDShadow inset;
 }
-*/
+
 .tabs-alltabs-button {
 /*  margin: 2px 0px 1px;*/
   margin: 0 !important;
