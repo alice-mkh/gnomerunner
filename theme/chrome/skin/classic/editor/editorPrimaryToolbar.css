@@ -153,5 +153,5 @@
 }
 
 #findButton[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-paste?size=toolbar&state=disabled");
+  list-style-image: url("moz-icon://stock/gtk-find?size=toolbar&state=disabled");
 }
