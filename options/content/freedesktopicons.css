@@ -26,12 +26,14 @@
 }
 
 #menu_bookmarkThisPage,
-#menu_bookmarkThisPageAs {
+#menu_bookmarkThisPageAs,
+#newbookmark {
     list-style-image: url("moz-icon://stock/bookmark-new?size=menu") !important;
 }
 
 #menu_bookmarkThisPage:-moz-system-metric(images-in-menus) > label,
-#menu_bookmarkThisPageAs:-moz-system-metric(images-in-menus) > label {
+#menu_bookmarkThisPageAs:-moz-system-metric(images-in-menus) > label,
+#newbookmark:-moz-system-metric(images-in-menus) > label {
     background: url("moz-icon://stock/bookmark-new?size=menu") 0% 50% no-repeat !important;
 }
 
@@ -72,8 +74,13 @@ treechildren::-moz-tree-image(title, query) {
     list-style-image: url("moz-icon://stock/folder-saved-search?size=menu") !important;
 }
 
-#InsertImageItem {
+#InsertImageItem,
+#insertImage {
     list-style-image: url("moz-icon://stock/insert-image?size=menu") !important;
+}
+
+#insertImage:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/insert-image?size=menu") 0% 50% no-repeat !important;
 }
 
 #InsertLinkItem {
@@ -149,13 +156,18 @@ treechildren::-moz-tree-image(subjectCol, new) {
 toolbar[iconsize="small"] > #button-newmessage,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-newmessage,
 toolbar[iconsize="small"] > #button-newmsg,
-toolbar[iconsize="small"] > toolbarpaletteitem > #button-newmsg {
+toolbar[iconsize="small"] > toolbarpaletteitem > #button-newmsg,
+#menu_newMessage {
     list-style-image: url("moz-icon://stock/mail-message-new?size=menu") !important;
 }
 
 toolbar[iconsize="small"] > #button-newmessage[disabled],
 toolbar[iconsize="small"] > #button-newmsg[disabled="true"] {
     list-style-image: url("moz-icon://stock/mail-message-new?size=menu&state=disabled") !important;
+}
+
+#menu_newMessage:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/mail-message-new?size=menu") 0% 50% no-repeat !important;
 }
 
 .folderMenuItem[SpecialFolder="Outbox"],

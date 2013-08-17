@@ -4,6 +4,7 @@
 #menu_newNavigatorTab:-moz-system-metric(images-in-menus) > label,
 #menu_newNavigator:-moz-system-metric(images-in-menus) > label,
 #menu_newEditor:-moz-system-metric(images-in-menus) > label,
+#menu_newMessage:-moz-system-metric(images-in-menus) > label,
 #menu_openFile:-moz-system-metric(images-in-menus) > label,
 #savepage:-moz-system-metric(images-in-menus) > label,
 #menu_close:-moz-system-metric(images-in-menus) > label,
@@ -31,7 +32,20 @@ menuitem[command="Browser:EditPage"]:-moz-system-metric(images-in-menus) > label
 #historyMenuUp:-moz-system-metric(images-in-menus) > label,
 #historyMenuHome:-moz-system-metric(images-in-menus) > label,
 #menu_bookmarkThisPage:-moz-system-metric(images-in-menus) > label,
-#menu_bookmarkThisPageAs:-moz-system-metric(images-in-menus) > label {
+#menu_bookmarkThisPageAs:-moz-system-metric(images-in-menus) > label,
+#newbookmark:-moz-system-metric(images-in-menus) > label,
+#menu_searchWeb:-moz-system-metric(images-in-menus) > label,
+#tasksDataman:-moz-system-metric(images-in-menus) > label,
+#help:-moz-system-metric(images-in-menus) > label,
+#aboutName:-moz-system-metric(images-in-menus) > label,
+#newfolder:-moz-system-metric(images-in-menus) > label,
+#fileRestoreMenu:-moz-system-metric(images-in-menus) > label,
+#menu_fileRevert:-moz-system-metric(images-in-menus) > label,
+#menu_saveCmd:-moz-system-metric(images-in-menus) > label,
+#menu_saveAsCmd:-moz-system-metric(images-in-menus) > label,
+#menu_publish:-moz-system-metric(images-in-menus) > label,
+#menu_checkspelling:-moz-system-metric(images-in-menus) > label,
+#insertImage:-moz-system-metric(images-in-menus) > label {
     padding-left: 21px !important;
     margin-left: 0px !important;
 }
@@ -62,6 +76,14 @@ menuitem[command="Browser:EditPage"]:-moz-system-metric(images-in-menus) > label
     background: url("chrome://global/skin/icons/16x16/window-new.png") 0% 50% no-repeat !important;
 }
 
+#menu_newMessage {
+    list-style-image: url("chrome://global/skin/icons/16x16/mail-message-new.png") !important;
+}
+
+#menu_newMessage:-moz-system-metric(images-in-menus) > label {
+    background: url("chrome://global/skin/icons/16x16/mail-message-new.png") 0% 50% no-repeat !important;
+}
+
 #menu_openFile {
     list-style-image: url("moz-icon://stock/gtk-open?size=menu") !important;
 }
@@ -70,11 +92,13 @@ menuitem[command="Browser:EditPage"]:-moz-system-metric(images-in-menus) > label
     background: url("moz-icon://stock/gtk-open?size=menu") 0% 50% no-repeat !important;
 }
 
-#savepage {
+#savepage,
+#menu_saveAsCmd {
     list-style-image: url("moz-icon://stock/gtk-save-as?size=menu") !important;
 }
 
-#savepage:-moz-system-metric(images-in-menus) > label {
+#savepage:-moz-system-metric(images-in-menus) > label,
+#menu_saveAsCmd:-moz-system-metric(images-in-menus) > label {
     background: url("moz-icon://stock/gtk-save-as?size=menu") 0% 50% no-repeat !important;
 }
 
@@ -287,11 +311,95 @@ menuitem[command="Browser:EditPage"]:-moz-system-metric(images-in-menus) > label
 }
 
 #menu_bookmarkThisPage,
-#menu_bookmarkThisPageAs {
+#menu_bookmarkThisPageAs,
+#newbookmark {
     list-style-image: url("chrome://global/skin/icons/16x16/bookmark-new.png") !important;
 }
 
 #menu_bookmarkThisPage:-moz-system-metric(images-in-menus) > label,
-#menu_bookmarkThisPageAs:-moz-system-metric(images-in-menus) > label {
+#menu_bookmarkThisPageAs:-moz-system-metric(images-in-menus) > label,
+#newbookmark {
     background: url("chrome://global/skin/icons/16x16/bookmark-new.png") 0% 50% no-repeat !important;
+}
+
+#menu_searchWeb {
+    list-style-image: url("moz-icon://stock/gtk-find?size=menu") !important;
+}
+
+#menu_searchWeb:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-find?size=menu") 0% 50% no-repeat !important;
+}
+
+#tasksDataman {
+    list-style-image: url("chrome://communicator/skin/dataman/datamanIcon-16.png") !important;
+}
+
+#tasksDataman:-moz-system-metric(images-in-menus) > label {
+    background: url("chrome://communicator/skin/dataman/datamanIcon-16.png") 0% 50% no-repeat !important;
+}
+
+#help {
+    list-style-image: url("moz-icon://stock/gtk-help?size=menu") !important;
+}
+
+#help:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-help?size=menu") 0% 50% no-repeat !important;
+}
+
+#aboutName {
+    list-style-image: url("moz-icon://stock/gtk-about?size=menu") !important;
+}
+
+#aboutName:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-about?size=menu") 0% 50% no-repeat !important;
+}
+
+#newfolder {
+    list-style-image: url("moz-icon://stock/gtk-directory?size=menu") !important;
+}
+
+#newfolder:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-directory?size=menu") 0% 50% no-repeat !important;
+}
+
+#fileRestoreMenu,
+#menu_fileRevert  {
+    list-style-image: url("moz-icon://stock/gtk-revert-to-saved?size=menu") !important;
+}
+
+#fileRestoreMenu:-moz-system-metric(images-in-menus) > label,
+#menu_fileRevert:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-revert-to-saved?size=menu") 0% 50% no-repeat !important;
+}
+
+#menu_saveCmd {
+    list-style-image: url("moz-icon://stock/gtk-save?size=menu") !important;
+}
+
+#menu_saveCmd:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-save?size=menu") 0% 50% no-repeat !important;
+}
+
+#menu_publish {
+    list-style-image: url("moz-icon://stock/gtk-network?size=menu") !important;
+}
+
+#menu_publish:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-network?size=menu") 0% 50% no-repeat !important;
+}
+
+#menu_checkspelling {
+    list-style-image: url("moz-icon://stock/gtk-spell-check?size=menu") !important;
+}
+
+#menu_checkspelling:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/gtk-spell-check?size=menu") 0% 50% no-repeat !important;
+}
+
+#insertImage {
+    list-style-image: url("chrome://global/skin/icons/16x16/insert-image.png") !important;
+}
+
+#insertImage:-moz-system-metric(images-in-menus) > label {
+    background: url("chrome://global/skin/icons/16x16/insert-image.png") 0% 50% no-repeat !important;
 }
