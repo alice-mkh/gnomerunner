@@ -33,7 +33,9 @@ menuitem[command="Browser:EditPage"]:-moz-system-metric(images-in-menus) > label
 #historyMenuBack:-moz-system-metric(images-in-menus) > label,
 #historyMenuForward:-moz-system-metric(images-in-menus) > label,
 #historyMenuUp:-moz-system-metric(images-in-menus) > label,
-#historyMenuHome:-moz-system-metric(images-in-menus) > label {
+#historyMenuHome:-moz-system-metric(images-in-menus) > label,
+#menu_bookmarkThisPage:-moz-system-metric(images-in-menus) > label,
+#menu_bookmarkThisPageAs:-moz-system-metric(images-in-menus) > label {
     padding-left: 21px !important;
     margin-left: 0px !important;
 }
@@ -290,4 +292,14 @@ menuitem[command="Browser:EditPage"]:-moz-system-metric(images-in-menus) > label
 
 #historyMenuHome:-moz-system-metric(images-in-menus) > label {
     background: url("moz-icon://stock/gtk-home?size=menu") 0% 50% no-repeat !important;
+}
+
+#menu_bookmarkThisPage,
+#menu_bookmarkThisPageAs {
+    list-style-image: url("chrome://global/skin/icons/16x16/bookmark-new.png") !important;
+}
+
+#menu_bookmarkThisPage:-moz-system-metric(images-in-menus) > label,
+#menu_bookmarkThisPageAs:-moz-system-metric(images-in-menus) > label {
+    background: url("chrome://global/skin/icons/16x16/bookmark-new.png") 0% 50% no-repeat !important;
 }

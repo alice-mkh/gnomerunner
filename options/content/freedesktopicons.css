@@ -25,6 +25,16 @@
     list-style-image: url("moz-icon://stock/accessories-text-editor?size=menu") !important;
 }
 
+#menu_bookmarkThisPage,
+#menu_bookmarkThisPageAs {
+    list-style-image: url("moz-icon://stock/bookmark-new?size=menu") !important;
+}
+
+#menu_bookmarkThisPage:-moz-system-metric(images-in-menus) > label,
+#menu_bookmarkThisPageAs:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/bookmark-new?size=menu") 0% 50% no-repeat !important;
+}
+
 #security-button,
 #security-button > image {
     list-style-image: url("moz-icon://stock/changes-allow?size=menu") !important;
