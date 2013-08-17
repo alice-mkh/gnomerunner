@@ -4,5 +4,19 @@ skin editor $INTERNAL_NAME chrome/skin/classic/editor/
 skin communicator $INTERNAL_NAME chrome/skin/classic/communicator/
 skin global $INTERNAL_NAME chrome/skin/classic/global/
 skin messenger $INTERNAL_NAME chrome/skin/classic/messenger/
+
+#Chatzilla
 skin chatzilla $INTERNAL_NAME chrome/skin/classic/chatzilla/
+
+#DOM Inspector
 skin inspector $INTERNAL_NAME chrome/skin/classic/inspector/
+
+# Lightning
+skin calendar $INTERNAL_NAME chrome/skin/classic/calendar/
+skin lightning $INTERNAL_NAME chrome/skin/classic/lightning/
+#style chrome://calendar/content/calendar-event-dialog-attendees.xul chrome://calendar/skin/common/dialogs/calendar-event-dialog.css
+#style chrome://calendar/content/calendar-event-dialog.xul chrome://calendar/skin/common/dialogs/calendar-event-dialog.css
+#style chrome://calendar/content/calendar-event-dialog.xul chrome://communicator/skin/communicator.css
+#style chrome://global/content/customizeToolbar.xul chrome://calendar/skin/calendar-event-dialog.css
+#style chrome://global/content/customizeToolbar.xul chrome://calendar/skin/calendar-task-view.css
+#style chrome://global/content/customizeToolbar.xul chrome://lightning/skin/lightning-toolbar.css
