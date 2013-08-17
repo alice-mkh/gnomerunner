@@ -9,8 +9,6 @@
 #menu_openFile:-moz-system-metric(images-in-menus) > label,
 #savepage:-moz-system-metric(images-in-menus) > label,
 #menu_close:-moz-system-metric(images-in-menus) > label,
-#menu_closeOtherTabs:-moz-system-metric(images-in-menus) > label,
-#menu_closeWindow:-moz-system-metric(images-in-menus) > label,
 menuitem[command="Browser:EditPage"]:-moz-system-metric(images-in-menus) > label,
 #menu_printPreview:-moz-system-metric(images-in-menus) > label,
 #menu_print:-moz-system-metric(images-in-menus) > label,
@@ -82,15 +80,11 @@ menuitem[command="Browser:EditPage"]:-moz-system-metric(images-in-menus) > label
     background: url("moz-icon://stock/gtk-save-as?size=menu") 0% 50% no-repeat !important;
 }
 
-#menu_close,
-#menu_closeOtherTabs,
-#menu_closeWindow {
+#menu_close {
     list-style-image: url("moz-icon://stock/gtk-close?size=menu") !important;
 }
 
-#menu_close:-moz-system-metric(images-in-menus) > label,
-#menu_closeOtherTabs:-moz-system-metric(images-in-menus) > label,
-#menu_closeWindow:-moz-system-metric(images-in-menus) > label {
+#menu_close:-moz-system-metric(images-in-menus) > label {
     background: url("moz-icon://stock/gtk-close?size=menu") 0% 50% no-repeat !important;
 }
 
