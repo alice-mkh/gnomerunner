@@ -136,7 +136,7 @@
 
 #link-last
 {
-  list-style-image: url("moz-icon://stock/gtk-goto-last?size=menu");
+  list-style-image: url("moz-icon://stock/gtk-goto-last-ltr?size=menu");
 }
 
 #link-last[disabled="true"]
