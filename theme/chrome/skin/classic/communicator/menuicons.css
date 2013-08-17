@@ -1,10 +1,8 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
 #menu_New:-moz-system-metric(images-in-menus) > label,
-/*
 #menu_newNavigatorTab:-moz-system-metric(images-in-menus) > label,
 #menu_newNavigator:-moz-system-metric(images-in-menus) > label,
-*/
 #menu_newEditor:-moz-system-metric(images-in-menus) > label,
 #menu_openFile:-moz-system-metric(images-in-menus) > label,
 #savepage:-moz-system-metric(images-in-menus) > label,
@@ -47,23 +45,23 @@ menuitem[command="Browser:EditPage"]:-moz-system-metric(images-in-menus) > label
 #menu_newEditor:-moz-system-metric(images-in-menus) > label {
     background: url("moz-icon://stock/gtk-new?size=menu") 0% 50% no-repeat !important;
 }
-/*
+
 #menu_newNavigatorTab {
-    list-style-image: url("moz-icon://stock/tab-new?size=menu") !important;
+    list-style-image: url("chrome://global/skin/icons/16x16/tab-new.png") !important;
 }
 
 #menu_newNavigatorTab:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/tab-new?size=menu") 0% 50% no-repeat !important;
+    background: url("chrome://global/skin/icons/16x16/tab-new.png") 0% 50% no-repeat !important;
 }
 
 #menu_newNavigator {
-    list-style-image: url("moz-icon://stock/window-new?size=menu") !important;
+    list-style-image: url("chrome://global/skin/icons/16x16/window-new.png") !important;
 }
 
 #menu_newNavigator:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/window-new?size=menu") 0% 50% no-repeat !important;
+    background: url("chrome://global/skin/icons/16x16/window-new.png") 0% 50% no-repeat !important;
 }
-*/
+
 #menu_openFile {
     list-style-image: url("moz-icon://stock/gtk-open?size=menu") !important;
 }
