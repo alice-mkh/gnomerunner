@@ -260,6 +260,15 @@ treechildren::-moz-tree-image(DirCol, IsRemote-true, IsSecure-true) {
     list-style-image: url("moz-icon://stock/system-lock-screen?size=menu") !important;
 }
 
+.tabs-newbutton,
+#menu_newNavigatorTab {
+    list-style-image: url("moz-icon://stock/tab-new?size=menu") !important;
+}
+
+#menu_newNavigatorTab:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/tab-new?size=menu") 0% 50% no-repeat !important;
+}
+
 toolbar[iconsize="small"] > #button-editcard,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-editcard {
     list-style-image: url("moz-icon://stock/user-info?size=menu") !important;
@@ -272,6 +281,14 @@ toolbar[iconsize="small"] > #button-editcard[disabled] {
 treeitem[container="true"][id="NC:SiteMapRoot"] > treerow > .treecell-indent,
 treeitem[container="true"][open="true"][id="NC:SiteMapRoot"] > treerow > .treecell-indent {
     list-style-image: url("moz-icon://stock/web-browser?size=menu") !important;
+}
+
+#menu_newNavigator {
+    list-style-image: url("moz-icon://stock/window-new?size=menu") !important;
+}
+
+#menu_newNavigator:-moz-system-metric(images-in-menus) > label {
+    background: url("moz-icon://stock/window-new?size=menu") 0% 50% no-repeat !important;
 }
 
 #mini-addr,
