@@ -167,11 +167,11 @@ menuitem[command="Browser:EditPage"]:-moz-system-metric(images-in-menus) > label
 }
 
 #menu_selectAll {
-    list-style-image: url("moz-icon://stock/gtk-select-all?size=menu") !important;
+    list-style-image: url("moz-icon://stock/gtk-select-all?size=menu") !important; /*FIXME: Not stock!*/
 }
 
 #menu_selectAll:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-select-all?size=menu") 0% 50% no-repeat !important;
+    background: url("moz-icon://stock/gtk-select-all?size=menu") 0% 50% no-repeat !important; /*FIXME: Not stock!*/
 }
 
 #menu_find {
