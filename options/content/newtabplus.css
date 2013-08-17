@@ -1,5 +1,0 @@
-@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
-
-.tabs-newbutton {
-    list-style-image: url("moz-icon://stock/gtk-add?size=menu") !important;
-}

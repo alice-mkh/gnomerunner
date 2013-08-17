@@ -127,7 +127,7 @@ tabpanels {
 }
 
 .tabs-newbutton {
-  list-style-image: url("moz-icon://stock/tab-new?size=menu");
+  list-style-image: url("moz-icon://stock/gtk-add?size=menu");
 }
 
 .tabs-newbutton > .toolbarbutton-icon {

@@ -24,11 +24,6 @@ DEFAULT=1
 </radiogroup>
 
 TYPE=bool
-PREF=newtabplus
-NAME=Alternative new tab button
-DEFAULT=false
-
-TYPE=bool
 PREF=urlbarhighlight
 NAME=Address bar highlight on HTTPS
 Causes address bar to become black with some GTK themes, like Ambiance.
