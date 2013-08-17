@@ -191,11 +191,11 @@ menuitem[command="Browser:EditPage"]:-moz-system-metric(images-in-menus) > label
 }
 
 #menuitem_fullScreen {
-    list-style-image: url("moz-icon://stock/gtk-fullscreen?size=menu") !important;
+    list-style-image: url("moz-icon://stock/gtk-fullscreen?size=menu") !important; /*FIXME: Not stock!*/
 }
 
 #menuitem_fullScreen:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-fullscreen?size=menu") 0% 50% no-repeat !important;
+    background: url("moz-icon://stock/gtk-fullscreen?size=menu") 0% 50% no-repeat !important; /*FIXME: Not stock!*/
 }
 
 #menuitem-stop {

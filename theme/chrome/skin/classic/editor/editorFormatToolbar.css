@@ -396,15 +396,15 @@
 }
 
 #absolutePositionButton{
-  list-style-image: url("moz-icon://stock/gtk-fullscreen?size=toolbar");
+  list-style-image: url("moz-icon://stock/gtk-fullscreen?size=toolbar"); /*FIXME: Not stock!*/
 }
 
 #absolutePositionButton[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-fullscreen?size=toolbar?state=disabled");
+  list-style-image: url("moz-icon://stock/gtk-fullscreen?size=toolbar?state=disabled"); /*FIXME: Not stock!*/
 }
 
 #absolutePositionButton[checked="true"]{
-  list-style-image: url("moz-icon://stock/gtk-leave-fullscreen?size=toolbar");
+  list-style-image: url("moz-icon://stock/gtk-leave-fullscreen?size=toolbar"); /*FIXME: Not stock!*/
 }
 
 #FormatToolbar > #increaseZIndexButton {

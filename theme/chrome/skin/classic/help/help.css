@@ -157,7 +157,7 @@ menuitem:not([type]) {
 }
 
 #context-selectall {
-  list-style-image: url("moz-icon://stock/gtk-select-all?size=menu");
+  list-style-image: url("moz-icon://stock/gtk-select-all?size=menu"); /*FIXME: Not stock!*/
 }
 
 #zoom-in {

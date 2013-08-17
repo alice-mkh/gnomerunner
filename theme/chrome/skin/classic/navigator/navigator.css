@@ -227,7 +227,7 @@ toolbar[iconsize="small"] > #sync-button[status=active] {
 } 
 
 #restore-button {
-  list-style-image: url("moz-icon://stock/gtk-leave-fullscreen?size=menu");
+  list-style-image: url("moz-icon://stock/gtk-leave-fullscreen?size=menu");/*FIXME: Not stock!*/
 } 
 
 #close-button {
