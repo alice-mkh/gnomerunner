@@ -25,12 +25,12 @@
 
 /* Lightning preferences icon */
 radio[pane=paneLightning] {
-    list-style-image: url("chrome://calendar/skin/cal-icon32.png");
+    list-style-image: url("chrome://global/skin/icons/32x32/x-office-calendar.png");
 }
 
 /* iMIP notification bar */
 #imip-bar > image {
-    list-style-image: url("chrome://calendar/skin/cal-icon32.png");
+    list-style-image: url("chrome://global/skin/icons/32x32/x-office-calendar.png");
     -moz-image-region: rect(0px, 32px, 32px, 0px);
 }
 
