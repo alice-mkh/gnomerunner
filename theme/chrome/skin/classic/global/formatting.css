@@ -126,7 +126,7 @@
     
   .plain 
     {
-      margin: 0px !important;
+      margin: 0px;
       border: none;
       padding: 0px;
     }

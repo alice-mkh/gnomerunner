@@ -8,7 +8,8 @@
 }
 
 tabpanels {
- -moz-appearance: none;
+ -moz-appearance: listbox;
+ margin: -1px !important;
 }
 
 .tabbrowser-tabs {
