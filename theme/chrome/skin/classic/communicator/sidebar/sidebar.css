@@ -49,10 +49,6 @@
 /* ::::: sidebar header ::::: */
 
 .sidebarheader-main {
-  -moz-appearance: toolbar;
-}
-
-.sidebarheader-main:-moz-lwtheme {
   -moz-appearance: none;
 }
 
