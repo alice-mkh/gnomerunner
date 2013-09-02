@@ -466,7 +466,8 @@ toolbar[mode="icons"] #search-button > .button-box > .button-text {
   border-left: none;
   border-right: none;
   min-width: 5px;
-  padding-left: 4px !important;
+  margin-left: 1px !important;
+  padding-left: 3px !important;
   padding-right: 4px !important;
 }
 
