@@ -338,11 +338,11 @@ menuitem[command="Browser:EditPage"]:-moz-system-metric(images-in-menus) > label
     background: url("chrome://communicator/skin/dataman/datamanIcon-16.png") 0% 50% no-repeat !important;
 }
 
-#help {
+menuitem[command="cmd_openHelp"] {
     list-style-image: url("moz-icon://stock/gtk-help?size=menu") !important;
 }
 
-#help:-moz-system-metric(images-in-menus) > label {
+menuitem[command="cmd_openHelp"]:-moz-system-metric(images-in-menus) > label {
     background: url("moz-icon://stock/gtk-help?size=menu") 0% 50% no-repeat !important;
 }
 
