@@ -1,405 +1,49 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
-#menu_New:-moz-system-metric(images-in-menus) > label,
-#menu_newNavigatorTab:-moz-system-metric(images-in-menus) > label,
-#menu_newNavigator:-moz-system-metric(images-in-menus) > label,
-#menu_newEditor:-moz-system-metric(images-in-menus) > label,
-#menu_newMessage:-moz-system-metric(images-in-menus) > label,
-#menu_openFile:-moz-system-metric(images-in-menus) > label,
-#savepage:-moz-system-metric(images-in-menus) > label,
-#menu_close:-moz-system-metric(images-in-menus) > label,
-menuitem[command="Browser:EditPage"]:-moz-system-metric(images-in-menus) > label,
-#menu_printPreview:-moz-system-metric(images-in-menus) > label,
-#menu_print:-moz-system-metric(images-in-menus) > label,
-#menu_FileQuitItem:-moz-system-metric(images-in-menus) > label,
-#menu_undo:-moz-system-metric(images-in-menus) > label,
-#menu_redo:-moz-system-metric(images-in-menus) > label,
-#menu_cut:-moz-system-metric(images-in-menus) > label,
-#menu_copy:-moz-system-metric(images-in-menus) > label,
-#menu_paste:-moz-system-metric(images-in-menus) > label,
-#menu_delete:-moz-system-metric(images-in-menus) > label,
-#menu_selectAll:-moz-system-metric(images-in-menus) > label,
-#menu_find:-moz-system-metric(images-in-menus) > label,
-#menu_preferences:-moz-system-metric(images-in-menus) > label,
-#menuitem_fullScreen:-moz-system-metric(images-in-menus) > label,
-#menuitem-stop:-moz-system-metric(images-in-menus) > label,
-#menuitem_reload:-moz-system-metric(images-in-menus) > label,
-#menu_zoomReduce:-moz-system-metric(images-in-menus) > label,
-#menu_zoomEnlarge:-moz-system-metric(images-in-menus) > label,
-#menuitem_pageInfoCmd:-moz-system-metric(images-in-menus) > label,
-#historyMenuBack:-moz-system-metric(images-in-menus) > label,
-#historyMenuForward:-moz-system-metric(images-in-menus) > label,
-#historyMenuUp:-moz-system-metric(images-in-menus) > label,
-#historyMenuHome:-moz-system-metric(images-in-menus) > label,
-#menu_bookmarkThisPage:-moz-system-metric(images-in-menus) > label,
-#menu_bookmarkThisPageAs:-moz-system-metric(images-in-menus) > label,
-#newbookmark:-moz-system-metric(images-in-menus) > label,
-#menu_searchWeb:-moz-system-metric(images-in-menus) > label,
-#tasksDataman:-moz-system-metric(images-in-menus) > label,
-#help:-moz-system-metric(images-in-menus) > label,
-#aboutName:-moz-system-metric(images-in-menus) > label,
-#newfolder:-moz-system-metric(images-in-menus) > label,
-#fileRestoreMenu:-moz-system-metric(images-in-menus) > label,
-#menu_fileRevert:-moz-system-metric(images-in-menus) > label,
-#menu_saveCmd:-moz-system-metric(images-in-menus) > label,
-#menu_saveAsCmd:-moz-system-metric(images-in-menus) > label,
-#menu_publish:-moz-system-metric(images-in-menus) > label,
-#menu_checkspelling:-moz-system-metric(images-in-menus) > label,
-#insertImage:-moz-system-metric(images-in-menus) > label {
-    padding-left: 21px !important;
-    margin-left: 0px !important;
-}
-
-#menu_New,
-#menu_newEditor {
-    list-style-image: url("moz-icon://stock/gtk-new?size=menu") !important;
-}
-
-#menu_New:-moz-system-metric(images-in-menus) > label,
-#menu_newEditor:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-new?size=menu") 0% 50% no-repeat !important;
-}
-
-#menu_newNavigatorTab {
-    list-style-image: url("chrome://global/skin/icons/16x16/tab-new.png") !important;
-}
-
-#menu_newNavigatorTab:-moz-system-metric(images-in-menus) > label {
-    background: url("chrome://global/skin/icons/16x16/tab-new.png") 0% 50% no-repeat !important;
-}
-
-#menu_newNavigator {
-    list-style-image: url("chrome://global/skin/icons/16x16/window-new.png") !important;
-}
-
-#menu_newNavigator:-moz-system-metric(images-in-menus) > label {
-    background: url("chrome://global/skin/icons/16x16/window-new.png") 0% 50% no-repeat !important;
-}
-
-#menu_newMessage {
-    list-style-image: url("chrome://global/skin/icons/16x16/mail-message-new.png") !important;
-}
-
-#menu_newMessage:-moz-system-metric(images-in-menus) > label {
-    background: url("chrome://global/skin/icons/16x16/mail-message-new.png") 0% 50% no-repeat !important;
-}
-
-#menu_openFile {
-    list-style-image: url("moz-icon://stock/gtk-open?size=menu") !important;
-}
-
-#menu_openFile:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-open?size=menu") 0% 50% no-repeat !important;
-}
-
-#savepage,
-#menu_saveAsCmd {
-    list-style-image: url("moz-icon://stock/gtk-save-as?size=menu") !important;
-}
-
-#savepage:-moz-system-metric(images-in-menus) > label,
-#menu_saveAsCmd:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-save-as?size=menu") 0% 50% no-repeat !important;
-}
-
-#menu_close {
-    list-style-image: url("moz-icon://stock/gtk-close?size=menu") !important;
-}
-
-#menu_close:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-close?size=menu") 0% 50% no-repeat !important;
-}
-
-menuitem[command="Browser:EditPage"] {
-    list-style-image: url("moz-icon://stock/gtk-edit?size=menu") !important;
-}
-
-menuitem[command="Browser:EditPage"]:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-edit?size=menu") 0% 50% no-repeat !important;
-}
-
-#menu_printPreview {
-    list-style-image: url("moz-icon://stock/gtk-print-preview?size=menu") !important;
-}
-
-#menu_printPreview:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-print-preview?size=menu") 0% 50% no-repeat !important;
-}
-
-#menu_print {
-    list-style-image: url("moz-icon://stock/gtk-print?size=menu") !important;
-}
-
-#menu_print:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-print?size=menu") 0% 50% no-repeat !important;
-}
-
-#menu_FileQuitItem {
-    list-style-image: url("moz-icon://stock/gtk-quit?size=menu") !important;
-}
-
-#menu_FileQuitItem:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-quit?size=menu") 0% 50% no-repeat !important;
-}
-
-#menu_undo {
-    list-style-image: url("moz-icon://stock/gtk-undo?size=menu") !important;
-}
-
-#menu_undo:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-undo?size=menu") 0% 50% no-repeat !important;
-}
-
-#menu_redo {
-    list-style-image: url("moz-icon://stock/gtk-redo?size=menu") !important;
-}
-
-#menu_redo:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-redo?size=menu") 0% 50% no-repeat !important;
-}
-
-#menu_cut {
-    list-style-image: url("moz-icon://stock/gtk-cut?size=menu") !important;
-}
-
-#menu_cut:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-cut?size=menu") 0% 50% no-repeat !important;
-}
-
-#menu_copy {
-    list-style-image: url("moz-icon://stock/gtk-copy?size=menu") !important;
-}
-
-#menu_copy:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-copy?size=menu") 0% 50% no-repeat !important;
-}
-
-#menu_paste {
-    list-style-image: url("moz-icon://stock/gtk-paste?size=menu") !important;
-}
-
-#menu_paste:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-paste?size=menu") 0% 50% no-repeat !important;
-}
-
-#menu_delete {
-    list-style-image: url("moz-icon://stock/gtk-delete?size=menu") !important;
-}
-
-#menu_delete:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-delete?size=menu") 0% 50% no-repeat !important;
-}
-
-#menu_selectAll {
-    list-style-image: url("moz-icon://stock/gtk-select-all?size=menu") !important; /*FIXME: Not stock!*/
-}
-
-#menu_selectAll:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-select-all?size=menu") 0% 50% no-repeat !important; /*FIXME: Not stock!*/
-}
-
-#menu_find {
-    list-style-image: url("moz-icon://stock/gtk-find?size=menu") !important;
-}
-
-#menu_find:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-find?size=menu") 0% 50% no-repeat !important;
-}
-
-#menu_preferences {
-    list-style-image: url("moz-icon://stock/gtk-preferences?size=menu") !important;
-}
-
-#menu_preferences:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-preferences?size=menu") 0% 50% no-repeat !important;
-}
-
-#menuitem_fullScreen {
-    list-style-image: url("moz-icon://stock/gtk-fullscreen?size=menu") !important; /*FIXME: Not stock!*/
-}
-
-#menuitem_fullScreen:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-fullscreen?size=menu") 0% 50% no-repeat !important; /*FIXME: Not stock!*/
-}
-
-#menuitem-stop {
-    list-style-image: url("moz-icon://stock/gtk-stop?size=menu") !important;
-}
-
-#menuitem-stop:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-stop?size=menu") 0% 50% no-repeat !important;
-}
-
-#menuitem_reload {
-    list-style-image: url("moz-icon://stock/gtk-refresh?size=menu") !important;
-}
-
-#menuitem_reload:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-refresh?size=menu") 0% 50% no-repeat !important;
-}
-
-#menu_zoomReduce {
-    list-style-image: url("moz-icon://stock/gtk-zoom-out?size=menu") !important;
-}
-
-#menu_zoomReduce:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-zoom-out?size=menu") 0% 50% no-repeat !important;
-}
-
-#menu_zoomEnlarge {
-    list-style-image: url("moz-icon://stock/gtk-zoom-in?size=menu") !important;
-}
-
-#menu_zoomEnlarge:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-zoom-in?size=menu") 0% 50% no-repeat !important;
-}
-
-#menuitem_pageInfoCmd {
-    list-style-image: url("moz-icon://stock/gtk-properties?size=menu") !important;
-}
-
-#menuitem_pageInfoCmd:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-properties?size=menu") 0% 50% no-repeat !important;
-}
-
-#historyMenuBack {
-    list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=menu") !important;
-}
-
-#historyMenuBack:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-go-back-ltr?size=menu") 0% 50% no-repeat !important;
-}
-
-#historyMenuBack:-moz-dir(rtl) {
-    list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=menu") !important;
-}
-
-#historyMenuBack:-moz-system-metric(images-in-menus):-moz-dir(rtl) > label {
-    background: url("moz-icon://stock/gtk-go-back-rtl?size=menu") 0% 50% no-repeat !important;
-}
-
-#historyMenuForward {
-    list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=menu") !important;
-}
-
-#historyMenuForward:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-go-forward-ltr?size=menu") 0% 50% no-repeat !important;
-}
-
-#historyMenuForward:-moz-dir(rtl) {
-    list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=menu") !important;
-}
-
-#historyMenuForward:-moz-system-metric(images-in-menus):-moz-dir(rtl) > label {
-    background: url("moz-icon://stock/gtk-go-forward-rtl?size=menu") 0% 50% no-repeat !important;
-}
-
-#historyMenuUp {
-    list-style-image: url("moz-icon://stock/gtk-go-up?size=menu") !important;
-}
-
-#historyMenuUp:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-go-up?size=menu") 0% 50% no-repeat !important;
-}
-
-#historyMenuHome {
-    list-style-image: url("moz-icon://stock/gtk-home?size=menu") !important;
-}
-
-#historyMenuHome:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-home?size=menu") 0% 50% no-repeat !important;
-}
-
-#menu_bookmarkThisPage,
-#menu_bookmarkThisPageAs,
-#newbookmark {
-    list-style-image: url("chrome://global/skin/icons/16x16/bookmark-new.png") !important;
-}
-
-#menu_bookmarkThisPage:-moz-system-metric(images-in-menus) > label,
-#menu_bookmarkThisPageAs:-moz-system-metric(images-in-menus) > label,
-#newbookmark {
-    background: url("chrome://global/skin/icons/16x16/bookmark-new.png") 0% 50% no-repeat !important;
-}
-
-#menu_searchWeb {
-    list-style-image: url("moz-icon://stock/gtk-find?size=menu") !important;
-}
-
-#menu_searchWeb:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-find?size=menu") 0% 50% no-repeat !important;
-}
-
-#tasksDataman {
-    list-style-image: url("chrome://communicator/skin/dataman/datamanIcon-16.png") !important;
-}
-
-#tasksDataman:-moz-system-metric(images-in-menus) > label {
-    background: url("chrome://communicator/skin/dataman/datamanIcon-16.png") 0% 50% no-repeat !important;
-}
-
-menuitem[command="cmd_openHelp"] {
-    list-style-image: url("moz-icon://stock/gtk-help?size=menu") !important;
-}
-
-menuitem[command="cmd_openHelp"]:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-help?size=menu") 0% 50% no-repeat !important;
-}
-
-#aboutName {
-    list-style-image: url("moz-icon://stock/gtk-about?size=menu") !important;
-}
-
-#aboutName:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-about?size=menu") 0% 50% no-repeat !important;
-}
-
-#newfolder {
-    list-style-image: url("moz-icon://stock/gtk-directory?size=menu") !important;
-}
-
-#newfolder:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-directory?size=menu") 0% 50% no-repeat !important;
-}
-
-#fileRestoreMenu,
-#menu_fileRevert  {
-    list-style-image: url("moz-icon://stock/gtk-revert-to-saved?size=menu") !important;
-}
-
-#fileRestoreMenu:-moz-system-metric(images-in-menus) > label,
-#menu_fileRevert:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-revert-to-saved?size=menu") 0% 50% no-repeat !important;
-}
-
-#menu_saveCmd {
-    list-style-image: url("moz-icon://stock/gtk-save?size=menu") !important;
-}
-
-#menu_saveCmd:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-save?size=menu") 0% 50% no-repeat !important;
-}
-
-#menu_publish {
-    list-style-image: url("moz-icon://stock/gtk-network?size=menu") !important;
-}
-
-#menu_publish:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-network?size=menu") 0% 50% no-repeat !important;
-}
-
-#menu_checkspelling {
-    list-style-image: url("moz-icon://stock/gtk-spell-check?size=menu") !important;
-}
-
-#menu_checkspelling:-moz-system-metric(images-in-menus) > label {
-    background: url("moz-icon://stock/gtk-spell-check?size=menu") 0% 50% no-repeat !important;
-}
-
-#insertImage {
-    list-style-image: url("chrome://global/skin/icons/16x16/insert-image.png") !important;
-}
-
-#insertImage:-moz-system-metric(images-in-menus) > label {
-    background: url("chrome://global/skin/icons/16x16/insert-image.png") 0% 50% no-repeat !important;
-}
+%ICON "moz-icon://stock/gtk-new?size=menu" #menu_New
+%ICON "moz-icon://stock/gtk-new?size=menu" #menu_newEditor
+%ICON "chrome://global/skin/icons/16x16/tab-new.png" #menu_newNavigatorTab
+%ICON "chrome://global/skin/icons/16x16/window-new.png" #menu_newNavigator
+%ICON "chrome://global/skin/icons/16x16/mail-message-new.png" #menu_newMessage
+%ICON "moz-icon://stock/gtk-open?size=menu" #menu_openFile
+%ICON "moz-icon://stock/gtk-save?size=menu" #menu_saveCmd
+%ICON "moz-icon://stock/gtk-save-as?size=menu" #savepage
+%ICON "moz-icon://stock/gtk-save-as?size=menu" #menu_saveAsCmd
+%ICON "moz-icon://stock/gtk-close?size=menu" #menu_close
+%ICON "moz-icon://stock/gtk-edit?size=menu" menuitem[command="Browser:EditPage"]
+%ICON "moz-icon://stock/gtk-print-preview?size=menu" #menu_printPreview
+%ICON "moz-icon://stock/gtk-print?size=menu" #menu_print
+%ICON "moz-icon://stock/gtk-quit?size=menu" #menu_FileQuitItem
+%ICON "moz-icon://stock/gtk-undo?size=menu" #menu_undo
+%ICON "moz-icon://stock/gtk-redo?size=menu" #menu_redo
+%ICON "moz-icon://stock/gtk-cut?size=menu" #menu_cut
+%ICON "moz-icon://stock/gtk-copy?size=menu" #menu_copy
+%ICON "moz-icon://stock/gtk-paste?size=menu" #menu_paste
+%ICON "moz-icon://stock/gtk-delete?size=menu" #menu_delete
+%ICON "moz-icon://stock/gtk-select-all?size=menu" #menu_selectAll
+%ICON "moz-icon://stock/gtk-find?size=menu" #menu_find
+%ICON "moz-icon://stock/gtk-preferences?size=menu" #menu_preferences
+%ICON "moz-icon://stock/gtk-fullscreen?size=menu" #menuitem_fullScreen
+%ICON "moz-icon://stock/gtk-stop?size=menu" #menuitem-stop
+%ICON "moz-icon://stock/gtk-zoom-out?size=menu" #menu_zoomReduce
+%ICON "moz-icon://stock/gtk-zoom-in?size=menu" #menu_zoomEnlarge
+%ICON "moz-icon://stock/gtk-properties?size=menu" #menuitem_pageInfoCmd
+%ICON "moz-icon://stock/gtk-go-back-ltr?size=menu" #historyMenuBack
+%ICON "moz-icon://stock/gtk-go-back-rtl?size=menu" #historyMenuBack:-moz-dir(rtl)
+%ICON "moz-icon://stock/gtk-go-forward-ltr?size=menu" #historyMenuForward
+%ICON "moz-icon://stock/gtk-go-forward-rtl?size=menu" #historyMenuForward:-moz-dir(rtl)
+%ICON "moz-icon://stock/gtk-go-up?size=menu" #historyMenuUp
+%ICON "moz-icon://stock/gtk-home?size=menu" #historyMenuHome
+%ICON "chrome://global/skin/icons/16x16/bookmark-new.png" #menu_bookmarkThisPage
+%ICON "chrome://global/skin/icons/16x16/bookmark-new.png" #menu_bookmarkThisPageAs
+%ICON "chrome://global/skin/icons/16x16/bookmark-new.png" #newbookmark
+%ICON "moz-icon://stock/gtk-find?size=menu" #menu_searchWeb
+%ICON "chrome://communicator/skin/dataman/datamanIcon-16.png" #tasksDataman
+%ICON "moz-icon://stock/gtk-help?size=menu" menuitem[command="cmd_openHelp"]
+%ICON "moz-icon://stock/gtk-about?size=menu" #aboutName
+%ICON "moz-icon://stock/gtk-directory?size=menu" #newfolder
+%ICON "moz-icon://stock/gtk-revert-to-saved?size=menu" #fileRestoreMenu
+%ICON "moz-icon://stock/gtk-revert-to-saved?size=menu" #menu_fileRevert
+%ICON "moz-icon://stock/gtk-network?size=menu" #menu_publish
+%ICON "moz-icon://stock/gtk-spell-check?size=menu" #menu_checkspelling
+%ICON "chrome://global/skin/icons/16x16/insert-image.png" #insertImage
