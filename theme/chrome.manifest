@@ -11,12 +11,17 @@ skin chatzilla $INTERNAL_NAME chrome/skin/classic/chatzilla/
 #DOM Inspector
 skin inspector $INTERNAL_NAME chrome/skin/classic/inspector/
 
-# Lightning
-skin calendar $INTERNAL_NAME chrome/skin/classic/calendar/
-skin lightning $INTERNAL_NAME chrome/skin/classic/lightning/
-#style chrome://calendar/content/calendar-event-dialog-attendees.xul chrome://calendar/skin/common/dialogs/calendar-event-dialog.css
-#style chrome://calendar/content/calendar-event-dialog.xul chrome://calendar/skin/common/dialogs/calendar-event-dialog.css
-#style chrome://calendar/content/calendar-event-dialog.xul chrome://communicator/skin/communicator.css
-#style chrome://global/content/customizeToolbar.xul chrome://calendar/skin/calendar-event-dialog.css
-#style chrome://global/content/customizeToolbar.xul chrome://calendar/skin/calendar-task-view.css
-#style chrome://global/content/customizeToolbar.xul chrome://lightning/skin/lightning-toolbar.css
+# Lightning and Lightbird
+skin $CODE_NAME-calendar $INTERNAL_NAME chrome/skin/classic/extensions/calendar/
+style chrome://global/content/customizeToolbar.xul chrome://$CODE_NAME-calendar/skin/lightning-toolbar.css
+style chrome://lightning/content/lightning-toolbar.xul chrome://$CODE_NAME-calendar/skin/lightning-toolbar.css
+style chrome://sunbird/content/calendar.xul chrome://$CODE_NAME-calendar/skin/lightning-toolbar.css
+style chrome://calendar/content/calendar-unifinder.xul chrome://$CODE_NAME-calendar/skin/calendar-unifinder.css
+style chrome://calendar/content/today-pane.xul chrome://$CODE_NAME-calendar/skin/today-pane.css
+style chrome://calendar/content/today-pane.xul chrome://$CODE_NAME-calendar/skin/common-today-pane.css
+style chrome://lightning/content/lightning-standalone.xul chrome://$CODE_NAME-calendar/skin/lightning.css
+style chrome://lightning/content/messenger-overlay-sidebar.xul chrome://$CODE_NAME-calendar/skin/lightning.css
+style chrome://lightning/content/messenger-overlay-accountCentral.xul chrome://$CODE_NAME-calendar/skin/accountCentral.css
+style chrome://global/content/customizeToolbar.xul chrome://$CODE_NAME-calendar/skin/sunbird-toolbar.css
+style chrome://sunbird/content/calendar.xul chrome://$CODE_NAME-calendar/skin/sunbird-toolbar.css
+style chrome://lightbird/content/lightbirdOverlay.xul chrome://$CODE_NAME-calendar/skin/lightbird.css

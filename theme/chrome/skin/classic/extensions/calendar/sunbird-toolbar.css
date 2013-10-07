@@ -1,0 +1,372 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/*--------------------------------------------------------------------
+ *   Primary toolbar buttons
+ *-------------------------------------------------------------------*/
+
+#calendar-cut-button {
+  list-style-image: url("moz-icon://stock/gtk-cut?size=toolbar") !important;
+  -moz-image-region: auto !important;
+}
+#calendar-cut-button[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-cut?size=toolbar&state=disabled") !important;
+}
+
+/*--------------------------------------------------------------------
+ *   Cut button - small
+ *-------------------------------------------------------------------*/
+
+toolbar[iconsize="small"] #calendar-cut-button {
+  list-style-image: url("moz-icon://stock/gtk-cut?size=menu") !important;
+}
+toolbar[iconsize="small"] #calendar-cut-button[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-cut?size=menu&state=disabled") !important;
+}
+
+/*--------------------------------------------------------------------
+ *   Copy button
+ *-------------------------------------------------------------------*/
+
+#calendar-copy-button {
+  list-style-image: url("moz-icon://stock/gtk-copy?size=toolbar") !important;
+  -moz-image-region: auto !important;
+}
+#calendar-copy-button[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-copy?size=toolbar&state=disabled") !important;
+}
+
+/*--------------------------------------------------------------------
+ *   Copy button - small
+ *-------------------------------------------------------------------*/
+
+toolbar[iconsize="small"] #calendar-copy-button {
+  list-style-image: url("moz-icon://stock/gtk-copy?size=menu") !important;
+}
+toolbar[iconsize="small"] #calendar-copy-button[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-copy?size=menu&state=disabled") !important;
+}
+
+/*--------------------------------------------------------------------
+ *   Paste button
+ *-------------------------------------------------------------------*/
+
+#calendar-paste-button {
+  list-style-image: url("moz-icon://stock/gtk-paste?size=toolbar") !important;
+  -moz-image-region: auto !important;
+}
+#calendar-paste-button[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-paste?size=toolbar&state=disabled") !important;
+}
+
+/*--------------------------------------------------------------------
+ *   Paste button - small
+ *-------------------------------------------------------------------*/
+
+toolbar[iconsize="small"] #calendar-paste-button {
+  list-style-image: url("moz-icon://stock/gtk-paste?size=menu") !important;
+}
+toolbar[iconsize="small"] #calendar-paste-button[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-paste?size=menu&state=disabled") !important;
+}
+
+/*--------------------------------------------------------------------
+ *   Choose date button
+ *-------------------------------------------------------------------*/
+
+#calendar-choose-date-button {
+    -moz-image-region: rect(0px 432px 24px 408px);
+}
+#calendar-choose-date-button[disabled="true"],
+#calendar-choose-date-button[disabled="true"]:hover,
+#calendar-choose-date-button[disabled="true"]:hover:active {
+    -moz-image-region: rect(48px 432px 72px 408px);
+}
+#calendar-choose-date-button:hover {
+    -moz-image-region: rect(24px 432px 48px 408px);
+}
+
+/*--------------------------------------------------------------------
+ *   Choose date button - small
+ *-------------------------------------------------------------------*/
+
+toolbar[iconsize="small"] #calendar-choose-date-button {
+    -moz-image-region: rect(0px 288px 16px 272px);
+}
+toolbar[iconsize="small"] #calendar-choose-date-button[disabled="true"],
+toolbar[iconsize="small"] #calendar-choose-date-button[disabled="true"]:hover,
+toolbar[iconsize="small"] #calendar-choose-date-button[disabled="true"]:hover:active {
+    -moz-image-region: rect(32px 288px 48px 272px);
+}
+toolbar[iconsize="small"] #calendar-choose-date-button:hover {
+    -moz-image-region: rect(16px 288px 32px 272px);
+}
+
+/*--------------------------------------------------------------------
+ *   Remote Reload button
+ *-------------------------------------------------------------------*/
+
+#calendar-remote-reload-button {
+    -moz-image-region: rect(0px 480px 24px 456px);
+}
+#calendar-remote-reload-button[disabled="true"],
+#calendar-remote-reload-button[disabled="true"]:hover,
+#calendar-remote-reload-button[disabled="true"]:hover:active {
+    -moz-image-region: rect(48px 480px 72px 456px);
+}
+#calendar-remote-reload-button:hover {
+    -moz-image-region: rect(24px 480px 48px 456px);
+}
+
+/*--------------------------------------------------------------------
+ *   Remote Reload button - small
+ *-------------------------------------------------------------------*/
+
+toolbar[iconsize="small"] #calendar-remote-reload-button {
+    -moz-image-region: rect(0px 320px 16px 304px);
+}
+toolbar[iconsize="small"] #calendar-remote-reload-button[disabled="true"],
+toolbar[iconsize="small"] #calendar-remote-reload-button[disabled="true"]:hover,
+toolbar[iconsize="small"] #calendar-remote-reload-button[disabled="true"]:hover:active {
+    -moz-image-region: rect(32px 320px 48px 304px);
+}
+toolbar[iconsize="small"] #calendar-remote-reload-button:hover {
+    -moz-image-region: rect(16px 320px 32px 304px);
+}
+
+/*--------------------------------------------------------------------
+ *   Import button
+ *-------------------------------------------------------------------*/
+
+#calendar-import-button {
+    -moz-image-region: rect(0px 264px 24px 240px);
+}
+#calendar-import-button[disabled="true"],
+#calendar-import-button[disabled="true"]:hover,
+#calendar-import-button[disabled="true"]:hover:active {
+    -moz-image-region: rect(48px 264px 72px 240px);
+}
+#calendar-import-button:hover {
+    -moz-image-region: rect(24px 264px 48px 240px);
+}
+
+/*--------------------------------------------------------------------
+ *   Import button - small
+ *-------------------------------------------------------------------*/
+
+toolbar[iconsize="small"] #calendar-import-button {
+    -moz-image-region: rect(0px 176px 16px 160px);
+}
+toolbar[iconsize="small"] #calendar-import-button[disabled="true"],
+toolbar[iconsize="small"] #calendar-import-button[disabled="true"]:hover,
+toolbar[iconsize="small"] #calendar-import-button[disabled="true"]:hover:active {
+    -moz-image-region: rect(32px 176px 48px 160px);
+}
+toolbar[iconsize="small"] #calendar-import-button:hover {
+    -moz-image-region: rect(16px 176px 32px 160px);
+}
+
+/*--------------------------------------------------------------------
+ *   Export button
+ *-------------------------------------------------------------------*/
+
+#calendar-export-button {
+    -moz-image-region: rect(0px 288px 24px 264px);
+}
+#calendar-export-button[disabled="true"],
+#calendar-export-button[disabled="true"]:hover,
+#calendar-export-button[disabled="true"]:hover:active {
+    -moz-image-region: rect(48px 288px 72px 264px);
+}
+#calendar-export-button:hover {
+    -moz-image-region: rect(24px 288px 48px 264px);
+}
+
+/*--------------------------------------------------------------------
+ *   Export button - small
+ *-------------------------------------------------------------------*/
+
+toolbar[iconsize="small"] #calendar-export-button {
+    -moz-image-region: rect(0px 192px 16px 176px);
+}
+toolbar[iconsize="small"] #calendar-export-button[disabled="true"],
+toolbar[iconsize="small"] #calendar-export-button[disabled="true"]:hover,
+toolbar[iconsize="small"] #calendar-export-button[disabled="true"]:hover:active {
+    -moz-image-region: rect(32px 192px 48px 176px);
+}
+toolbar[iconsize="small"] #calendar-export-button:hover {
+    -moz-image-region: rect(16px 192px 32px 176px);
+}
+
+/*--------------------------------------------------------------------
+ *   Subscribe button
+ *-------------------------------------------------------------------*/
+
+#calendar-subscribe-button {
+    -moz-image-region: rect(0px 312px 24px 288px);
+}
+#calendar-subscribe-button[disabled="true"],
+#calendar-subscribe-button[disabled="true"]:hover,
+#calendar-subscribe-button[disabled="true"]:hover:active {
+    -moz-image-region: rect(48px 312px 72px 288px);
+}
+#calendar-subscribe-button:hover {
+    -moz-image-region: rect(24px 312px 48px 288px);
+}
+
+/*--------------------------------------------------------------------
+ *   Subscribe button - small
+ *-------------------------------------------------------------------*/
+
+toolbar[iconsize="small"] #calendar-subscribe-button {
+    -moz-image-region: rect(0px 208px 16px 192px);
+}
+toolbar[iconsize="small"] #calendar-subscribe-button[disabled="true"],
+toolbar[iconsize="small"] #calendar-subscribe-button[disabled="true"]:hover,
+toolbar[iconsize="small"] #calendar-subscribe-button[disabled="true"]:hover:active {
+    -moz-image-region: rect(32px 208px 48px 192px);
+}
+toolbar[iconsize="small"] #calendar-subscribe-button:hover {
+    -moz-image-region: rect(16px 208px 32px 192px);
+}
+
+/*--------------------------------------------------------------------
+ *   Publish button
+ *-------------------------------------------------------------------*/
+
+#calendar-publish-button {
+    -moz-image-region: rect(0px 336px 24px 312px);
+}
+#calendar-publish-button[disabled="true"],
+#calendar-publish-button[disabled="true"]:hover,
+#calendar-publish-button[disabled="true"]:hover:active {
+    -moz-image-region: rect(48px 336px 72px 312px);
+}
+#calendar-publish-button:hover {
+    -moz-image-region: rect(24px 336px 48px 312px);
+}
+
+/*--------------------------------------------------------------------
+ *   Publish button - small
+ *-------------------------------------------------------------------*/
+
+toolbar[iconsize="small"] #calendar-publish-button {
+    -moz-image-region: rect(0px 224px 16px 208px);
+}
+toolbar[iconsize="small"] #calendar-publish-button[disabled="true"],
+toolbar[iconsize="small"] #calendar-publish-button[disabled="true"]:hover,
+toolbar[iconsize="small"] #calendar-publish-button[disabled="true"]:hover:active {
+    -moz-image-region: rect(32px 224px 48px 208px);
+}
+toolbar[iconsize="small"] #calendar-publish-button:hover {
+    -moz-image-region: rect(16px 224px 32px 208px);
+}
+
+/*--------------------------------------------------------------------
+ *   Button: "Multiweek"
+ *-------------------------------------------------------------------*/
+
+#calendar-multiweek-view-tbutton {
+    -moz-image-region: rect(0px 144px 24px 120px);
+}
+#calendar-multiweek-view-tbutton:active {
+    -moz-image-region: rect(24px 144px 48px 120px);
+}
+#calendar-multiweek-view-tbutton:hover:active,
+#calendar-multiweek-view-tbutton[checked="true"] {
+    -moz-image-region: rect(72px 144px 96px 120px);
+}
+
+
+toolbar[iconsize="small"] #calendar-multiweek-view-tbutton {
+    -moz-image-region: rect(0px 96px 16px 80px);
+}
+toolbar[iconsize="small"] #calendar-multiweek-view-tbutton:active {
+    -moz-image-region: rect(16px 96px 32px 80px);
+}
+toolbar[iconsize="small"] #calendar-multiweek-view-tbutton:hover:active,
+toolbar[iconsize="small"] #calendar-multiweek-view-tbutton[checked="true"] {
+    -moz-image-region: rect(48px 96px 64px 80px);
+}
+
+/*--------------------------------------------------------------------
+ *   Button: "Month View"
+ *-------------------------------------------------------------------*/
+
+#calendar-month-view-tbutton {
+    -moz-image-region: rect(0px 168px 24px 144px);
+}
+#calendar-month-view-tbutton:active {
+    -moz-image-region: rect(24px 168px 48px 144px);
+}
+#calendar-month-view-tbutton:hover:active,
+#calendar-month-view-tbutton[checked="true"] {
+    -moz-image-region: rect(72px 168px 96px 144px);
+}
+
+
+toolbar[iconsize="small"] #calendar-month-view-tbutton {
+    -moz-image-region: rect(0px 112px 16px 96px);
+}
+toolbar[iconsize="small"] #calendar-month-view-tbutton:active {
+    -moz-image-region: rect(16px 112px 32px 96px);
+}
+toolbar[iconsize="small"] #calendar-month-view-tbutton:hover:active,
+toolbar[iconsize="small"] #calendar-month-view-tbutton[checked="true"] {
+    -moz-image-region: rect(48px 112px 64px 96px);
+}
+
+/*--------------------------------------------------------------------
+ *   Button: "Week View"
+ *-------------------------------------------------------------------*/
+
+#calendar-week-view-tbutton {
+    -moz-image-region: rect(0px 120px 24px 96px);
+}
+#calendar-week-view-tbutton:active {
+    -moz-image-region: rect(24px 120px 48px 96px);
+}
+#calendar-week-view-tbutton:hover:active,
+#calendar-week-view-tbutton[checked="true"] {
+    -moz-image-region: rect(72px 120px 96px 96px);
+}
+
+
+toolbar[iconsize="small"] #calendar-week-view-tbutton {
+    -moz-image-region: rect(0px 80px 16px 64px);
+}
+toolbar[iconsize="small"] #calendar-week-view-tbutton:active {
+    -moz-image-region: rect(16px 80px 32px 64px);
+}
+toolbar[iconsize="small"] #calendar-week-view-tbutton:hover:active,
+toolbar[iconsize="small"] #calendar-week-view-tbutton[checked="true"] {
+    -moz-image-region: rect(48px 80px 64px 64px);
+}
+
+/*--------------------------------------------------------------------
+ *   Button: "Day View"
+ *-------------------------------------------------------------------*/
+
+#calendar-day-view-tbutton {
+    -moz-image-region: rect(0px 96px 24px 72px);
+}
+#calendar-day-view-tbutton:active {
+    -moz-image-region: rect(24px 96px 48px 72px);
+}
+#calendar-day-view-tbutton:hover:active,
+#calendar-day-view-tbutton[checked="true"] {
+    -moz-image-region: rect(72px 96px 96px 72px);
+}
+
+
+toolbar[iconsize="small"] #calendar-day-view-tbutton {
+    -moz-image-region: rect(0px 64px 16px 48px);
+}
+toolbar[iconsize="small"] #calendar-day-view-tbutton:active {
+    -moz-image-region: rect(16px 64px 48px 48px);
+}
+toolbar[iconsize="small"] #calendar-day-view-tbutton:hover:active,
+toolbar[iconsize="small"] #calendar-day-view-tbutton[checked="true"] {
+    -moz-image-region: rect(48px 64px 64px 48px);
+}

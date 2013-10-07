@@ -88,7 +88,6 @@ NEW+="}\n\n\2:-moz-system-metric(images-in-menus) > label {\n"
 NEW+="    background: url(\"\1\") 0% 50% no-repeat !important;\n"
 NEW+="}\n"
 sed -E "s|$ORIG|$NEW|g" -i `find . -name "*.css"`
-cp theme/chrome/skin/classic/communicator/menuicons.css .
 
 NAME1="theme.jar"
 NAME2="options.xpi"

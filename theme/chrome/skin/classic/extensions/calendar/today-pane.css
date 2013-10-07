@@ -1,0 +1,14 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+.today-closebutton {
+  -moz-appearance: toolbarbutton !important;
+  list-style-image: url("moz-icon://stock/gtk-close?size=menu") !important;
+  padding: 2px !important;
+  -moz-image-region: auto !important;
+}
+
+.today-closebutton > .toolbarbutton-icon {
+  margin: -2px !important;
+}
