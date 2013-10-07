@@ -6,10 +6,10 @@ skin global $INTERNAL_NAME chrome/skin/classic/global/
 skin messenger $INTERNAL_NAME chrome/skin/classic/messenger/
 
 #Chatzilla
-skin chatzilla $INTERNAL_NAME chrome/skin/classic/chatzilla/
+skin chatzilla $INTERNAL_NAME chrome/skin/classic/extensions/chatzilla/
 
 #DOM Inspector
-skin inspector $INTERNAL_NAME chrome/skin/classic/inspector/
+skin inspector $INTERNAL_NAME chrome/skin/classic/extensions/inspector/
 
 # Lightning and Lightbird
 skin $CODE_NAME-calendar $INTERNAL_NAME chrome/skin/classic/extensions/calendar/
