@@ -1,18 +1,18 @@
-skin help $INTERNAL_NAME chrome/skin/classic/help/
-skin navigator $INTERNAL_NAME chrome/skin/classic/navigator/
-skin editor $INTERNAL_NAME chrome/skin/classic/editor/
-skin communicator $INTERNAL_NAME chrome/skin/classic/communicator/
-skin global $INTERNAL_NAME chrome/skin/classic/global/
-skin messenger $INTERNAL_NAME chrome/skin/classic/messenger/
+skin help $INTERNAL_NAME help/
+skin navigator $INTERNAL_NAME navigator/
+skin editor $INTERNAL_NAME editor/
+skin communicator $INTERNAL_NAME communicator/
+skin global $INTERNAL_NAME global/
+skin messenger $INTERNAL_NAME messenger/
 
 #Chatzilla
-skin chatzilla $INTERNAL_NAME chrome/skin/classic/extensions/chatzilla/
+skin chatzilla $INTERNAL_NAME extensions/chatzilla/
 
 #DOM Inspector
-skin inspector $INTERNAL_NAME chrome/skin/classic/extensions/inspector/
+skin inspector $INTERNAL_NAME extensions/inspector/
 
 # Lightning and Lightbird
-skin $CODE_NAME-calendar $INTERNAL_NAME chrome/skin/classic/extensions/calendar/
+skin $CODE_NAME-calendar $INTERNAL_NAME extensions/calendar/
 style chrome://global/content/customizeToolbar.xul chrome://$CODE_NAME-calendar/skin/lightning-toolbar.css
 style chrome://lightning/content/lightning-toolbar.xul chrome://$CODE_NAME-calendar/skin/lightning-toolbar.css
 style chrome://sunbird/content/calendar.xul chrome://$CODE_NAME-calendar/skin/lightning-toolbar.css
