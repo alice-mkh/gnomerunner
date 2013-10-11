@@ -78,6 +78,19 @@ echo -e $DEFAULTS > defaults/preferences/defaults.js
 cd ..
 
 #Generate menu icon rules
+ORIG="\%NATIVE-ICON (.*) (.*)"
+NEW="\2:-moz-system-metric(images-in-menus) > label {\n"
+NEW+="    padding-left: 21px !important;\n"
+NEW+="    margin-left: 0px !important;\n"
+NEW+="}\n\n\2 {\n"
+NEW+="    list-style-image: url(\"moz-icon://stock/\1?size=menu\") !important;\n"
+NEW+="}\n\n\2:-moz-system-metric(images-in-menus) > label {\n"
+NEW+="    background: url(\"moz-icon://stock/\1?size=menu\") 0% 50% no-repeat !important;\n"
+NEW+="}\n\n\2:-moz-system-metric(images-in-menus)[disabled=\"true\"] > label {\n"
+NEW+="    background: url(\"moz-icon://stock/\1?size=menu\&state=disabled\") 0% 50% no-repeat !important;\n"
+NEW+="}\n"
+sed -E "s|$ORIG|$NEW|g" -i `find . -name "*.css"`
+
 ORIG="\%ICON \"(.*)\" (.*)"
 NEW="\2:-moz-system-metric(images-in-menus) > label {\n"
 NEW+="    padding-left: 21px !important;\n"
@@ -85,6 +98,8 @@ NEW+="    margin-left: 0px !important;\n"
 NEW+="}\n\n\2 {\n"
 NEW+="    list-style-image: url(\"\1\") !important;\n"
 NEW+="}\n\n\2:-moz-system-metric(images-in-menus) > label {\n"
+NEW+="    background: url(\"\1\") 0% 50% no-repeat !important;\n"
+NEW+="}\n\n\2:-moz-system-metric(images-in-menus)[disabled=\"true\"] > label {\n"
 NEW+="    background: url(\"\1\") 0% 50% no-repeat !important;\n"
 NEW+="}\n"
 sed -E "s|$ORIG|$NEW|g" -i `find . -name "*.css"`

@@ -25,9 +25,9 @@
     list-style-image: url("moz-icon://stock/accessories-text-editor?size=menu") !important;
 }
 
-%ICON "moz-icon://stock/bookmark-new?size=menu" #menu_bookmarkThisPage
-%ICON "moz-icon://stock/bookmark-new?size=menu" #menu_bookmarkThisPageAs
-%ICON "moz-icon://stock/bookmark-new?size=menu" #newbookmark
+%NATIVE-ICON bookmark-new #menu_bookmarkThisPage
+%NATIVE-ICON bookmark-new #menu_bookmarkThisPageAs
+%NATIVE-ICON bookmark-new #newbookmark
 
 #security-button,
 #security-button > image {
@@ -107,8 +107,8 @@ button[icon="go-forward"][disabled="true"] .button-icon {
   list-style-image: url("moz-icon://stock/go-next?size=menu&state=disabled") !important;
 }
 
-%ICON "moz-icon://stock/go-previous?size=menu" #historyMenuBack
-%ICON "moz-icon://stock/go-next?size=menu" #historyMenuForward:-moz-dir(rtl)
+%NATIVE-ICON go-previous #historyMenuBack
+%NATIVE-ICON go-next #historyMenuForward:-moz-dir(rtl)
 
 
 
@@ -118,7 +118,7 @@ button[icon="go-forward"][disabled="true"] .button-icon {
 
 
 
-%ICON "moz-icon://stock/insert-image?size=menu" #insertImage
+%NATIVE-ICON insert-image #insertImage
 
 #InsertImageItem {
     list-style-image: url("moz-icon://stock/insert-image?size=menu") !important;
@@ -206,7 +206,7 @@ toolbar[iconsize="small"] > #button-newmsg[disabled="true"] {
     list-style-image: url("moz-icon://stock/mail-message-new?size=menu&state=disabled") !important;
 }
 
-%ICON "moz-icon://stock/mail-message-new?size=menu" #menu_newMessage
+%NATIVE-ICON mail-message-new #menu_newMessage
 
 .folderMenuItem[SpecialFolder="Outbox"],
 .folderMenuItem[SpecialFolder="Outbox"][open="true"],
@@ -314,7 +314,7 @@ treechildren::-moz-tree-image(DirCol, IsRemote-true, IsSecure-true) {
     list-style-image: url("moz-icon://stock/tab-new?size=menu") !important;
 }
 
-%ICON "moz-icon://stock/tab-new?size=menu" #menu_newNavigatorTab
+%NATIVE-ICON tab-new #menu_newNavigatorTab
 
 toolbar[iconsize="small"] > #button-editcard,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-editcard {
@@ -330,7 +330,7 @@ treeitem[container="true"][open="true"][id="NC:SiteMapRoot"] > treerow > .treece
     list-style-image: url("moz-icon://stock/web-browser?size=menu") !important;
 }
 
-%ICON "moz-icon://stock/window-new?size=menu" #menu_newNavigator
+%NATIVE-ICON window-new #menu_newNavigator
 
 #mini-addr,
 .icon-addressbook16,
