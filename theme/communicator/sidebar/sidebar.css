@@ -43,7 +43,7 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
   
 #sidebar-box {
-  margin:0px -1px 0px 0px;
+  margin: 0;
 }
 
 /* ::::: sidebar header ::::: */

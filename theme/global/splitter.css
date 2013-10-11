@@ -46,8 +46,23 @@
 
 splitter {
   -moz-appearance: splitter;
+  -moz-box-align: center;
+  -moz-box-pack: center;
   cursor: ew-resize;
+}
 
+splitter[state="collapsed"][collapse="before"],
+splitter[state="collapsed"][substate="before"],
+splitter[state="collapsed"][collapse="after"]:-moz-locale-dir(rtl),
+splitter[state="collapsed"][substate="after"]:-moz-locale-dir(rtl) {
+  cursor: e-resize;
+}
+
+splitter[state="collapsed"][collapse="after"],
+splitter[state="collapsed"][substate="after"],
+splitter[state="collapsed"][collapse="before"]:-moz-locale-dir(rtl),
+splitter[state="collapsed"][substate="before"]:-moz-locale-dir(rtl) {
+  cursor: w-resize;
 }
 
 /* ::::: splitter (horizontal) ::::: */
@@ -56,8 +71,34 @@ splitter[orient="vertical"] {
   cursor: ns-resize;
 }
 
+splitter[orient="vertical"][state="collapsed"][collapse="before"],
+splitter[orient="vertical"][state="collapsed"][substate="before"] {
+  cursor: s-resize;
+}
+
+splitter[orient="vertical"][state="collapsed"][collapse="after"],
+splitter[orient="vertical"][state="collapsed"][substate="after"] {
+  cursor: n-resize;
+}
+
+splitter[disabled="true"] {
+  cursor: default !important;
+}
+
 /* ::::: splitter grippy ::::: */
 
 grippy {
-  display: none;
+  visibility: hidden;
+  cursor: pointer;
+  width: 4px;
+/*   margin-left: -1px; */
+/*   margin-right: -1px; */
+  min-height: 115px;
+}
+
+splitter[orient="vertical"] > grippy {
+  width: 115px;
+  min-height: 4px;
+/*   margin-top: -1px; */
+/*   margin-bottom: -1px; */
 }

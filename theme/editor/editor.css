@@ -50,15 +50,6 @@
   height: 400px;
 } 
 
-#sidebar-splitter {
-  border-left: none;
-  border-right: none;
-  min-width: 5px;
-  margin-left: 1px !important;
-  padding-left: 3px !important;
-  padding-right: 4px !important;
-}
-
 .source-editor,
 .source-editor:focus {
   margin-top: 0px;
