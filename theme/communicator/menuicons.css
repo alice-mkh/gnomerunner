@@ -2,9 +2,6 @@
 
 %NATIVE-ICON gtk-new #menu_New
 %NATIVE-ICON gtk-new #menu_newEditor
-%ICON "chrome://global/skin/icons/16x16/tab-new.png" #menu_newNavigatorTab
-%ICON "chrome://global/skin/icons/16x16/window-new.png" #menu_newNavigator
-%ICON "chrome://global/skin/icons/16x16/mail-message-new.png" #menu_newMessage
 %NATIVE-ICON gtk-open #menu_openFile
 %NATIVE-ICON gtk-save #menu_saveCmd
 %NATIVE-ICON gtk-save-as #savepage
@@ -34,11 +31,7 @@
 %NATIVE-ICON gtk-go-forward-rtl #historyMenuForward:-moz-dir(rtl)
 %NATIVE-ICON gtk-go-up #historyMenuUp
 %NATIVE-ICON gtk-home #historyMenuHome
-%ICON "chrome://global/skin/icons/16x16/bookmark-new.png" #menu_bookmarkThisPage
-%ICON "chrome://global/skin/icons/16x16/bookmark-new.png" #menu_bookmarkThisPageAs
-%ICON "chrome://global/skin/icons/16x16/bookmark-new.png" #newbookmark
 %NATIVE-ICON gtk-find #menu_searchWeb
-%ICON "chrome://communicator/skin/dataman/datamanIcon-16.png" #tasksDataman
 %NATIVE-ICON gtk-help menuitem[command="cmd_openHelp"]
 %NATIVE-ICON gtk-about #aboutName
 %NATIVE-ICON gtk-directory #newfolder
@@ -46,4 +39,3 @@
 %NATIVE-ICON gtk-revert-to-saved #menu_fileRevert
 %NATIVE-ICON gtk-network #menu_publish
 %NATIVE-ICON gtk-spell-check #menu_checkspelling
-%ICON "chrome://global/skin/icons/16x16/insert-image.png" #insertImage
