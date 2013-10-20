@@ -267,7 +267,7 @@ treechildren::-moz-tree-image(flaggedCol, flagged) {
 /* FIXME: stock_form-line-horizontal */
 
 /* FIXME: stock_insert-table */
-
+/*
 .person-icon,
 #profiles > treechildren::-moz-tree-image,
 toolbar[iconsize="small"] > #button-newcard,
@@ -278,7 +278,7 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #button-newcard {
 toolbar[iconsize="small"] > #button-newcard[disabled] {
     list-style-image: url("moz-icon://stock/stock_person?size=menu&state=disabled") !important;
 }
-
+*/
 toolbar[iconsize="small"] > #button-newlist,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-newlist {
     list-style-image: url("moz-icon://stock/system-users?size=menu") !important;
@@ -474,7 +474,7 @@ toolbar[iconsize="small"] > #button-address[disabled="true"] {
 /* FIXME: stock_form-line-horizontal */
 
 /* FIXME: stock_insert-table */
-
+/*
 #button-newcard {
     list-style-image: url("moz-icon://stock/stock_person?size=toolbar") !important;
 }
@@ -482,7 +482,7 @@ toolbar[iconsize="small"] > #button-address[disabled="true"] {
 #button-newcard[disabled] {
     list-style-image: url("moz-icon://stock/stock_person?size=toolbar&state=disabled") !important;
 }
-
+*/
 #button-newlist {
     list-style-image: url("moz-icon://stock/system-users?size=toolbar") !important;
 }
