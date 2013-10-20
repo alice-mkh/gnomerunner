@@ -157,15 +157,6 @@ toolbar[iconsize="small"] > #button-forward[disabled="true"] {
     list-style-image: url("moz-icon://stock/mail-forward?size=menu&state=disabled") !important;
 }
 
-.folderMenuItem[SpecialFolder="Inbox"],
-.folderMenuItem[SpecialFolder="Inbox"][open="true"],
-.icon-holder[type="folder"][SpecialFolder="Inbox"],
-.icon-holder[type="folder"][SpecialFolder="Inbox"][NewMessages="true"],
-treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox),
-treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox, newMessages-true) {
-    list-style-image: url("moz-icon://stock/mail-inbox?size=menu") !important;
-}
-
 .junkStatusHeader,
 treechildren::-moz-tree-image(junkStatusCol, junk),
 toolbar[iconsize="small"] > #button-junk,
@@ -207,13 +198,6 @@ toolbar[iconsize="small"] > #button-newmsg[disabled="true"] {
 }
 
 %NATIVE-ICON mail-message-new #menu_newMessage
-
-.folderMenuItem[SpecialFolder="Outbox"],
-.folderMenuItem[SpecialFolder="Outbox"][open="true"],
-.icon-holder[type="folder"][SpecialFolder="Outbox"],
-treechildren::-moz-tree-image(folderNameCol, specialFolder-Outbox) {
-    list-style-image: url("moz-icon://stock/mail-outbox?size=menu") !important;
-}
 
 treechildren::-moz-tree-image(unreadButtonColHeader),
 .icon-holder[type="message"],
