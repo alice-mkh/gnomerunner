@@ -121,6 +121,18 @@ toolbarbutton.bookmark-item[dragover-top="true"] {
   -moz-border-left-colors: ThreeDDarkShadow;
 }
 
+#PlacesToolbarDropIndicator {
+  -moz-appearance: none;
+  width: 2px;
+  height: 28px;
+  background-color: black;
+}
+
+toolbarbutton.bookmark-item[dragover="true"][open="true"] {
+  background: Highlight !important;
+  color: HighlightText !important;
+}
+
 /* ::::: bookmark menus ::::: */
 
 menu.bookmark-item,
