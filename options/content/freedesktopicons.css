@@ -118,8 +118,6 @@ button[icon="go-forward"][disabled="true"] .button-icon {
 
 
 
-%NATIVE-ICON insert-image #insertImage
-
 #InsertImageItem {
     list-style-image: url("moz-icon://stock/insert-image?size=menu") !important;
 }
