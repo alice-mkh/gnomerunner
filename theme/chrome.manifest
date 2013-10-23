@@ -5,6 +5,11 @@ skin communicator $INTERNAL_NAME communicator/
 skin global $INTERNAL_NAME global/
 skin messenger $INTERNAL_NAME messenger/
 
+#Backwards compatibility
+style chrome://navigator/content/navigator.xul chrome://global/skin/findBar-2.21.css appversion<2.22
+style chrome://communicator/content/viewSourceOverlay.xul chrome://global/skin/findBar-2.21.css appversion<2.22
+style chrome://communicator/content/helpOverlay.xul chrome://global/skin/findBar-2.21.css appversion<2.22
+
 #Chatzilla
 skin chatzilla $INTERNAL_NAME extensions/chatzilla/
 

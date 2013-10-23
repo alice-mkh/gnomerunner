@@ -28,25 +28,16 @@ findbar[hidden] {
 /* find-next button */
 
 .findbar-find-next > .toolbarbutton-icon {
-  -moz-appearance: button-arrow-next;
+  -moz-appearance: button-arrow-up;
 }
 
 /* find-previous button */
 
 .findbar-find-previous > .toolbarbutton-icon {
-  -moz-appearance: button-arrow-previous;
+  -moz-appearance: button-arrow-down;
 }
 
 /* highlight button */
-
-.findbar-highlight {
-  list-style-image: url("chrome://global/skin/icons/find.png");
-  -moz-image-region: rect(0px, 16px, 16px, 0px);
-}
-
-.findbar-highlight[disabled="true"] {
-  -moz-image-region: rect(16px, 16px, 32px, 0px);
-}
 
 .find-status-icon {
   list-style-image: none;
