@@ -5,3 +5,12 @@
 #search-button .button-text {
     display: block !important;
 }
+
+toolbar[mode="icons"] #back-button,
+toolbar[mode="icons"] #back-button > .toolbarbutton-menubutton-button,
+toolbar[mode="icons"] #back-button > hbox > vbox,
+toolbar[mode="icons"] #forward-button,
+toolbar[mode="icons"] #forward-button > .toolbarbutton-menubutton-button,
+toolbar[mode="icons"] #forward-button > hbox > vbox {
+  -moz-box-orient: horizontal !important;
+}
