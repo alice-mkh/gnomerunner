@@ -32,7 +32,7 @@ DEFAULT=false
 TYPE=bool
 PREF=buttontextnav
 NAME=Always display text on Navigator buttons
-Affected buttons: Back.
+Affected buttons: Back, Forward, Search.
 DEFAULT=false
 
 TYPE=bool
