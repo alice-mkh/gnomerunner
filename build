@@ -116,6 +116,104 @@ sed -E "s|$ORIG|$NEW|g" -i `find . -name "*.css"`
 #NEW+="}\n"
 #sed -E "s|$ORIG|$NEW|g" -i `find . -name "*.css"`
 
+#Generate options/content/freedesktopicons.css
+function appendToFdCss() {
+    DISABLED=""
+    IMPORTANT=""
+    SELECTOR="$4"
+    if [[ $4 == "disabled" ]]; then
+        DISABLED="&state=$4"
+        SELECTOR="$5"
+        if [[ $5 == "!important" ]]; then
+            IMPORTANT=" $5"
+            SELECTOR="$6"
+        fi
+    elif [[ $4 == "!important" ]]; then
+        IMPORTANT=" $4"
+        SELECTOR="$5"
+    fi
+    RULE="$SELECTOR {\n"
+    RULE="$RULE    $1: url(\"moz-icon://stock/$2?size=$3$DISABLED\")$IMPORTANT;\n"
+    RULE="$RULE}\n"
+    echo -e $RULE >> "options/content/freedesktopicons.css"
+}
+
+echo -e "@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\n" > "options/content/freedesktopicons.css"
+FILES=`find theme -name "*.css"`
+for F in $FILES; do
+    NUM=`grep -c "%STOCK-ICON-BG" $F`
+    if (( $NUM > 0 )); then
+        for I in `seq -w 1 $NUM`; do
+            SELECTOR=`grep -Pzom 1 "(.*[\,\{] *\n)+(.*;.*\n)*.*%STOCK-ICON-BG" $F`
+            SELECTOR=`echo $SELECTOR | grep -oE "^[^{]+"`
+            LINE=`grep -m 1 "%STOCK-ICON-BG" $F`
+            LINE=`echo $LINE | sed -E "s/^ +//"`
+            LINE=${LINE:15}
+            LINE1=`echo $LINE | grep -oE "^[^ ]+"`
+            ORIG="%STOCK-ICON-BG ($LINE1) .+ ([0-9]+) ?(disabled)?( \!important)?"
+            NEW="background-image: url(\"moz-icon:\/\/stock\/\1?size=\2\&state=\3\")\4;"
+            sed -E "0,/$ORIG/s/$ORIG/$NEW/" -i $F
+            LINE2=`echo $LINE | grep -oE " .+$"`
+            LINE2=${LINE2:1}
+            appendToFdCss "background-image" $LINE2 "$SELECTOR"
+        done
+    fi
+    NUM=`grep -c "%STOCK-ICON" $F`
+    if (( $NUM > 0 )); then
+        for I in `seq -w 1 $NUM`; do
+            SELECTOR=`grep -Pzom 1 "(.*[\,\{] *\n)+(.*;.*\n)*.*%STOCK-ICON" $F`
+            SELECTOR=`echo $SELECTOR | grep -oE "^[^{]+"`
+            LINE=`grep -m 1 "%STOCK-ICON" $F`
+            LINE=`echo $LINE | sed -E "s/^ +//"`
+            LINE=${LINE:12}
+            LINE1=`echo $LINE | grep -oE "^[^ ]+"`
+            ORIG="%STOCK-ICON ($LINE1) .+ ([0-9]+) ?(disabled)?( \!important)?"
+            NEW="list-style-image: url(\"moz-icon:\/\/stock\/\1?size=\2\&state=\3\")\4;"
+            sed -E "0,/$ORIG/s/$ORIG/$NEW/" -i $F
+            LINE2=`echo $LINE | grep -oE " .+$"`
+            LINE2=${LINE2:1}
+            appendToFdCss "list-style-image" $LINE2 "$SELECTOR"
+        done
+    fi
+    NUM=`grep -c "%CUSTOM-ICON-BG" $F`
+    if (( $NUM > 0 )); then
+        for I in `seq -w 1 $NUM`; do
+            SELECTOR=`grep -Pzom 1 "(.*[\,\{] *\n)+(.*;.*\n)*.*%CUSTOM-ICON-BG" $F`
+            SELECTOR=`echo $SELECTOR | grep -oE "^[^{]+"`
+            LINE=`grep -m 1 "%CUSTOM-ICON-BG" $F`
+            LINE=`echo $LINE | sed -E "s/^ +//"`
+            LINE=${LINE:16}
+            LINE1=`echo $LINE | grep -oE "^[^ ]+"`
+            ORIG="%CUSTOM-ICON-BG ($LINE1) ([0-9]+) ?(disabled)?( \!important)?"
+            NEW="background-image: url(\"chrome:\/\/global\/skin\/icons\/\2x\2\/\1.png\")\4;"
+            sed -E "0,/$ORIG/s/$ORIG/$NEW/" -i $F
+            appendToFdCss "background-image" $LINE "$SELECTOR"
+        done
+    fi
+    NUM=`grep -c "%CUSTOM-ICON" $F`
+    if (( $NUM > 0 )); then
+        for I in `seq -w 1 $NUM`; do
+            SELECTOR=`grep -Pzom 1 "(.*[\,\{] *\n)+(.*;.*\n)*.*%CUSTOM-ICON" $F`
+            SELECTOR=`echo $SELECTOR | grep -oE "^[^{]+"`
+            LINE=`grep -m 1 "%CUSTOM-ICON" $F`
+            LINE=`echo $LINE | sed -E "s/^ +//"`
+            LINE=${LINE:13}
+            LINE1=`echo $LINE | grep -oE "^[^ ]+"`
+            ORIG="%CUSTOM-ICON ($LINE1) ([0-9]+) ?(disabled)?( \!important)?"
+            NEW="list-style-image: url(\"chrome:\/\/global\/skin\/icons\/\2x\2\/\1.png\")\4"
+            sed -E "0,/$ORIG/s/$ORIG/$NEW/" -i $F
+            appendToFdCss "list-style-image" $LINE "$SELECTOR"
+        done
+    fi
+    sed -E "s/size=16/size=menu/g" -i $F
+    sed -E "s/size=24/size=toolbar/g" -i $F
+    sed -E "s/size=48/size=dialog/g" -i $F
+    sed -E "s/&state=\"/\"/g" -i $F
+done
+sed -E "s/size=16/size=menu/g" -i "options/content/freedesktopicons.css"
+sed -E "s/size=24/size=toolbar/g" -i "options/content/freedesktopicons.css"
+sed -E "s/size=48/size=dialog/g" -i "options/content/freedesktopicons.css"
+
 NAME1="theme.jar"
 NAME2="options.xpi"
 NAME="gnomerunner_gtk_revived-$VERSION-sm-linux.xpi"
