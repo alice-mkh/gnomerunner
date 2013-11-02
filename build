@@ -141,70 +141,46 @@ function appendToFdCss() {
 echo -e "@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\n" > "options/content/freedesktopicons.css"
 FILES=`find theme -name "*.css"`
 for F in $FILES; do
-    NUM=`grep -c "%STOCK-ICON-BG" $F`
-    if (( $NUM > 0 )); then
-        for I in `seq -w 1 $NUM`; do
-            SELECTOR=`grep -Pzom 1 "(.*[\,\{] *\n)+(.*;.*\n)*.*%STOCK-ICON-BG" $F`
-            SELECTOR=`echo $SELECTOR | grep -oE "^[^{]+"`
-            LINE=`grep -m 1 "%STOCK-ICON-BG" $F`
-            LINE=`echo $LINE | sed -E "s/^ +//"`
-            LINE=${LINE:15}
-            LINE1=`echo $LINE | grep -oE "^[^ ]+"`
-            ORIG="%STOCK-ICON-BG ($LINE1) .+ ([0-9]+) ?(disabled)?( \!important)?"
-            NEW="background-image: url(\"moz-icon:\/\/stock\/\1?size=\2\&state=\3\")\4;"
-            sed -E "0,/$ORIG/s/$ORIG/$NEW/" -i $F
-            LINE2=`echo $LINE | grep -oE " .+$"`
-            LINE2=${LINE2:1}
-            appendToFdCss "background-image" $LINE2 "$SELECTOR"
-        done
-    fi
-    NUM=`grep -c "%STOCK-ICON" $F`
-    if (( $NUM > 0 )); then
-        for I in `seq -w 1 $NUM`; do
-            SELECTOR=`grep -Pzom 1 "(.*[\,\{] *\n)+(.*;.*\n)*.*%STOCK-ICON" $F`
-            SELECTOR=`echo $SELECTOR | grep -oE "^[^{]+"`
-            LINE=`grep -m 1 "%STOCK-ICON" $F`
-            LINE=`echo $LINE | sed -E "s/^ +//"`
-            LINE=${LINE:12}
-            LINE1=`echo $LINE | grep -oE "^[^ ]+"`
-            ORIG="%STOCK-ICON ($LINE1) .+ ([0-9]+) ?(disabled)?( \!important)?"
-            NEW="list-style-image: url(\"moz-icon:\/\/stock\/\1?size=\2\&state=\3\")\4;"
-            sed -E "0,/$ORIG/s/$ORIG/$NEW/" -i $F
-            LINE2=`echo $LINE | grep -oE " .+$"`
-            LINE2=${LINE2:1}
-            appendToFdCss "list-style-image" $LINE2 "$SELECTOR"
-        done
-    fi
-    NUM=`grep -c "%CUSTOM-ICON-BG" $F`
-    if (( $NUM > 0 )); then
-        for I in `seq -w 1 $NUM`; do
-            SELECTOR=`grep -Pzom 1 "(.*[\,\{] *\n)+(.*;.*\n)*.*%CUSTOM-ICON-BG" $F`
-            SELECTOR=`echo $SELECTOR | grep -oE "^[^{]+"`
-            LINE=`grep -m 1 "%CUSTOM-ICON-BG" $F`
-            LINE=`echo $LINE | sed -E "s/^ +//"`
-            LINE=${LINE:16}
-            LINE1=`echo $LINE | grep -oE "^[^ ]+"`
-            ORIG="%CUSTOM-ICON-BG ($LINE1) ([0-9]+) ?(disabled)?( \!important)?"
-            NEW="background-image: url(\"chrome:\/\/global\/skin\/icons\/\2x\2\/\1.png\")\4;"
-            sed -E "0,/$ORIG/s/$ORIG/$NEW/" -i $F
-            appendToFdCss "background-image" $LINE "$SELECTOR"
-        done
-    fi
-    NUM=`grep -c "%CUSTOM-ICON" $F`
-    if (( $NUM > 0 )); then
-        for I in `seq -w 1 $NUM`; do
-            SELECTOR=`grep -Pzom 1 "(.*[\,\{] *\n)+(.*;.*\n)*.*%CUSTOM-ICON" $F`
-            SELECTOR=`echo $SELECTOR | grep -oE "^[^{]+"`
-            LINE=`grep -m 1 "%CUSTOM-ICON" $F`
-            LINE=`echo $LINE | sed -E "s/^ +//"`
-            LINE=${LINE:13}
-            LINE1=`echo $LINE | grep -oE "^[^ ]+"`
-            ORIG="%CUSTOM-ICON ($LINE1) ([0-9]+) ?(disabled)?( \!important)?"
-            NEW="list-style-image: url(\"chrome:\/\/global\/skin\/icons\/\2x\2\/\1.png\")\4"
-            sed -E "0,/$ORIG/s/$ORIG/$NEW/" -i $F
-            appendToFdCss "list-style-image" $LINE "$SELECTOR"
-        done
-    fi
+    PLACEHOLDER[1]="%STOCK-ICON-BG"
+    PLACEHOLDER[2]="%STOCK-ICON"
+    PLACEHOLDER[3]="%CUSTOM-ICON-BG"
+    PLACEHOLDER[4]="%CUSTOM-ICON"
+    TAG[1]="background-image"
+    TAG[2]="list-style-image"
+    TAG[3]=${TAG[1]}
+    TAG[4]=${TAG[2]}
+    LENGTH[1]=15
+    LENGTH[2]=12
+    LENGTH[3]=16
+    LENGTH[4]=13
+    for I in 1 2 3 4; do
+        NUM=`grep -c "${PLACEHOLDER[$I]}" $F`
+        if (( $NUM > 0 )); then
+            for J in `seq -w 1 $NUM`; do
+                SELECTOR=`grep -Pzom 1 "(.*[\,\{] *\n)+(.*;.*\n)*.*${PLACEHOLDER[$I]}" $F`
+                SELECTOR=`echo $SELECTOR | grep -oE "^[^{]+"`
+                LINE=`grep -m 1 "${PLACEHOLDER[$I]}" $F`
+                LINE=`echo $LINE | sed -E "s/^ +//"`
+                LINE=${LINE:${LENGTH[$I]}}
+                LINE1=`echo $LINE | grep -oE "^[^ ]+"`
+                if (( $I < 3 )); then
+                    ORIG="${PLACEHOLDER[$I]} ($LINE1) .+ ([0-9]+) ?(disabled)?( \!important)?"
+                    NEW="${TAG[$I]}: url(\"moz-icon:\/\/stock\/\1?size=\2\&state=\3\")\4;"
+                else
+                    ORIG="${PLACEHOLDER[$I]} ($LINE1) ([0-9]+) ?(disabled)?( \!important)?"
+                    NEW="${TAG[$I]}: url(\"chrome:\/\/global\/skin\/icons\/\2x\2\/\1.png\")\4;"
+                fi
+                sed -E "0,/$ORIG/s/$ORIG/$NEW/" -i $F
+                if (( $I < 3 )); then
+                    LINE2=`echo $LINE | grep -oE " .+$"`
+                    LINE2=${LINE2:1}
+                else
+                    LINE2=$LINE
+                fi
+                appendToFdCss "${TAG[$I]}" $LINE2 "$SELECTOR"
+            done
+        fi
+    done
     sed -E "s/size=16/size=menu/g" -i $F
     sed -E "s/size=24/size=toolbar/g" -i $F
     sed -E "s/size=48/size=dialog/g" -i $F
