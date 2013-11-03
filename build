@@ -123,6 +123,11 @@ function appendToFdCss() {
     if [[ $4 == "disabled" ]]; then
         DISABLED="&state=$4"
         SELECTOR="$5"
+        if [[ $5 == "!important" ]]; then
+            SELECTOR="$6"
+        fi
+    elif [[ $4 == "!important" ]]; then
+        SELECTOR="$5"
     fi
     RULE="$SELECTOR {\n"
     RULE="$RULE    $1: url(\"moz-icon://stock/$2?size=$3$DISABLED\") !important;\n"
