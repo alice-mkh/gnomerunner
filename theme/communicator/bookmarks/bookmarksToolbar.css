@@ -93,8 +93,7 @@ toolbarbutton.bookmark-item[disabled="true"][container="true"] {
   list-style-image: url("%STOCK-ICON gtk-directory folder 16 disabled");
 }
 
-toolbar[iconsize="small"] > toolbarpaletteitem > .bookmark-item > .toolbarbutton-icon,
-toolbar[iconsize="small"] > .bookmark-item > .toolbarbutton-icon {
+.bookmark-item > .toolbarbutton-icon {
   width: 16px;
   height: 16px;
 }
