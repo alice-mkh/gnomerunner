@@ -2,7 +2,7 @@
 THEME_ID_FD={af01d686-dac6-4daf-8132-d49c67ff8da8}
 THEME_ID={ed492c7d-322b-4da5-bdf1-aeec9fea8bda}
 OPTIONS_ID={1ddafb32-9812-42a4-94e0-db9cc4fc0238}
-INTERNAL_NAME_FD=$CODE_NAME-fd/1.0
+INTERNAL_NAME_FD=fd-$CODE_NAME/1.0
 INTERNAL_NAME=$CODE_NAME/1.0
 CODE_NAME=gnomerunner
 
@@ -17,7 +17,7 @@ NAME_FD=$NAME (Freedesktop)
 NAME=GNOMErunner/GTK Revived
 
 #Theme version
-VERSION=0.2
+VERSION=0.3
 
 #SeaMonkey version
 SM_ID={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
