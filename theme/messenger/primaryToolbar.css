@@ -118,7 +118,7 @@
 }
 
 #button-goforward[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 24 sdisabled");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 24 disabled");
 }
 
 #button-goforward[chromedir="rtl"] {
