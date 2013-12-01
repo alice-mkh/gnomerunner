@@ -39,11 +39,11 @@
 
 treechildren::-moz-tree-image(GeneratedName) {
   margin-right: 2px;
-  list-style-image: url("chrome://global/skin/icons/16x16/stock-person.png");
+  list-style-image: url("chrome://global/skin/icons/16x16/stock_person.png");
 }
 
 treechildren::-moz-tree-image(GeneratedName, MailList) {
   margin-right: 2px;
-  list-style-image: url("chrome://global/skin/icons/16x16/stock-people.png");;
+  list-style-image: url("%CUSTOM-ICON system-users 16");
 }
 
