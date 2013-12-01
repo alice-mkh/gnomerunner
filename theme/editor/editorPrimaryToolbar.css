@@ -42,38 +42,34 @@
 
 /* ::::: primary toolbar buttons ::::: */
 
-#linkButton[disabled="true"],
-#imageButton[disabled="true"],
-#previewButton[disabled="true"],
 #namedAnchorButton[disabled="true"],
 #hlineButton[disabled="true"],
 #tableButton[disabled="true"] {
-  opacity: 0.5 !important;
+  opacity: %DISABLED-OPACITY !important;
 }
 
 #newButton {
-  list-style-image: url("moz-icon://stock/gtk-new?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-new document-new 24");
 }
 
 #newButton[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-new?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-new document-new 24 disabled");
 }
 
 #openButton {
-  /*-moz-image-region: rect(150px 29px 179px 0);*/
-  list-style-image: url("moz-icon://stock/gtk-open?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-open document-open 24");
 }
 
 #openButton[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-open?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-open document-open 24 disabled");
 }
 
 #saveButton {
-  list-style-image: url("moz-icon://stock/gtk-save?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-save document-save 24");
 }
 
 #saveButton[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-save?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-save document-save 24 disabled");
 }
 
 #publishButton {
@@ -85,23 +81,38 @@
 }
 
 #previewButton {
-  list-style-image: url("chrome://global/skin/icons/24x24/web-browser.png");
+  list-style-image: url("%CUSTOM-ICON web-browser 24");
+}
+
+#previewButton[disabled="true"] {
+  list-style-image: url("%CUSTOM-ICON web-browser 24 disabled");
+  opacity: %DISABLED-OPACITY !important;
 }
 
 #printButton {
-  list-style-image: url("moz-icon://stock/gtk-print?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-print document-print 24");
 }
 
 #printButton[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-print?size=toolbar?state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-print document-print 24 disabled");
 }
 
 #linkButton {
-  list-style-image: url("chrome://global/skin/icons/24x24/insert-link.png");
+  list-style-image: url("%CUSTOM-ICON insert-link 24");
+}
+
+#linkButton[disabled="true"] {
+  list-style-image: url("%CUSTOM-ICON insert-link 24 disabled");
+  opacity: %DISABLED-OPACITY !important;
 }
 
 #imageButton {
-  list-style-image: url("chrome://global/skin/icons/24x24/insert-image.png");
+  list-style-image: url("%CUSTOM-ICON insert-image 24");
+}
+
+#imageButton[disabled="true"] {
+  list-style-image: url("%CUSTOM-ICON insert-image 24 disabled");
+  opacity: %DISABLED-OPACITY !important;
 }
 
 #namedAnchorButton {
@@ -117,41 +128,41 @@
 }
 
 #spellingButton {
-  list-style-image: url("moz-icon://stock/gtk-spell-check?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-spell-check tools-check-spelling 24");
 }
 
 #spellingButton[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-spell-check?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-spell-check tools-check-spelling 24 disabled");
 }
 
 #cutButton {
-  list-style-image: url("moz-icon://stock/gtk-cut?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-cut edit-cut 24");
 }
 
 #cutButton[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-cut?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-cut edit-cut 24 disabled");
 }
 
 #copyButton {
-  list-style-image: url("moz-icon://stock/gtk-copy?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-copy edit-copy 24");
 }
 
 #copyButton[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-copy?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-copy edit-copy 24 disabled");
 }
 
 #pasteButton {
-  list-style-image: url("moz-icon://stock/gtk-paste?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-paste edit-paste 24");
 }
 
 #pasteButton[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-paste?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-paste edit-paste 24 disabled");
 }
 
 #findButton {
-  list-style-image: url("moz-icon://stock/gtk-find?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-find edit-find 24");
 }
 
 #findButton[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-find?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-find edit-find 24 disabled");
 }

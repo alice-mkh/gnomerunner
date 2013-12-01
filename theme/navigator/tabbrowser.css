@@ -33,7 +33,7 @@ tabpanels {
 .tabbrowser-tab {
   margin-bottom: 1px;
   border-bottom: none;
-  list-style-image: url("moz-icon://stock/gtk-file?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
 }
 
 .tabbrowser-tab[busy] {
@@ -101,7 +101,7 @@ tabpanels {
 
 /* All tabs menupopup */
 .alltabs-item {
-  list-style-image: url("moz-icon://stock/gtk-directory?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
 }
 
 .alltabs-item[selected="true"] {
@@ -120,7 +120,7 @@ tabpanels {
 
 .tabs-closebutton {
   margin: 0px;
-  list-style-image: url("moz-icon://stock/gtk-close?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-close window-close 16");
 }
 
 .tabs-closebutton > .toolbarbutton-icon {
@@ -128,7 +128,7 @@ tabpanels {
 }
 
 .tabs-newbutton {
-  list-style-image: url("moz-icon://stock/gtk-add?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-add list-add 16");
 }
 
 .tabs-newbutton > .toolbarbutton-icon {
@@ -147,7 +147,7 @@ tabpanels {
     width: 16px;
     margin-bottom: -10px;
     position: relative;
-    background: url("moz-icon://stock/gtk-go-down?size=menu") 50% 50% no-repeat;
+    background: url("%STOCK-ICON gtk-go-down go-down 16") 50% 50% no-repeat;
 }
 
 tooltip[tabpreview="true"] {

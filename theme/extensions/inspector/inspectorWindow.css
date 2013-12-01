@@ -33,11 +33,11 @@
 }
 
 #btnFind {
-  list-style-image: url("moz-icon://stock/gtk-find?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-find edit-find 24");
 }
 
 #btnFind[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-find?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-find edit-find 24 disabled");
 }
 
 .viewer-list, .viewer-menu {

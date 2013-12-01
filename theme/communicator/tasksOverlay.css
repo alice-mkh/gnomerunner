@@ -46,26 +46,26 @@
 
 #mini-nav,
 .icon-navigator16 {
-  list-style-image: url("chrome://global/skin/icons/16x16/emblem-web.png");
+  list-style-image: url("%CUSTOM-ICON emblem-web 16");
 }
 
 #mini-mail,
 .icon-mail16 {
-  list-style-image: url("chrome://global/skin/icons/16x16/emblem-mail.png");
+  list-style-image: url("%CUSTOM-ICON emblem-mail 16");
 }
 
 #mini-mail[BiffState="NewMail"] {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-mark-unread.png");
+  list-style-image: url("%CUSTOM-ICON mail-mark-unread 16");
 }
 
 #mini-addr,
 .icon-addressbook16 {
-  list-style-image: url("chrome://global/skin/icons/16x16/x-office-address-book.png");
+  list-style-image: url("%CUSTOM-ICON x-office-address-book 16");
 }
 
 #mini-comp,
 .icon-composer16 {
-  list-style-image: url("chrome://global/skin/icons/16x16/accessories-text-editor.png");
+  list-style-image: url("%CUSTOM-ICON accessories-text-editor 16");
 }
 
 #mini-irc,

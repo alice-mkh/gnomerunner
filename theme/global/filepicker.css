@@ -28,11 +28,11 @@ treechildren::-moz-tree-image(FilenameColumn) {
 }
 
 treechildren::-moz-tree-image(FilenameColumn, directory) {
-  list-style-image: url("moz-icon://stock/gtk-directory?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-directory folder 16");
 }
 
 treechildren::-moz-tree-image(FilenameColumn, file) {
-  list-style-image: url("moz-icon://stock/gtk-file?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
 }
 
 /* ::::: button items ::::: */
@@ -40,21 +40,21 @@ treechildren::-moz-tree-image(FilenameColumn, file) {
 /* up-button */
 
 .up-button {
-  list-style-image: url("moz-icon://stock/gtk-go-up?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-go-up go-up 24");
   max-width: 36px;
 }
 
 /* home-button */
 
 .home-button {
-  list-style-image: url("moz-icon://stock/gtk-home?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-home go-home 24");
   max-width: 36px;
 }
 
 /* new-dir-button */
 
 .new-dir-button {
-  list-style-image: url("chrome://global/skin/icons/24x24/folder-new.png");
+  list-style-image: url("%CUSTOM-ICON folder-new 24");
   max-width: 36px;
 }
 

@@ -1,13 +1,4 @@
 TYPE=bool
-PREF=freedesktopicons
-NAME=Use Freedesktop icon namings
-DEFAULT=false
-Not all icon themes support that.
-When this is disabled, the theme
-will only use GTK+ stock icons.
-Missing icons will be like in GNOME theme.
-
-TYPE=bool
 PREF=visiblegrippies
 NAME=Visible toolbar grippies
 DEFAULT=false

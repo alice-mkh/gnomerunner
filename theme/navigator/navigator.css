@@ -46,67 +46,67 @@
 /* ::::: primary toolbar buttons ::::: */
 
 #back-button {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 24");
 }
 
 #back-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=toolbar&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 24 disabled") !important;
 }
 
 #back-button[chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 24");
 }
 
 #back-button[disabled="true"][chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=toolbar&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 24 disabled") !important;
 }
 
 #forward-button {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 24");
 }
 
 #forward-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=toolbar&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 24 disabled") !important;
 }
 
 #forward-button[chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 24");
 }
 
 #forward-button[chromedir="rtl"][disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=toolbar&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 24 disabled") !important;
 }
 
 #reload-button {
-  list-style-image: url("moz-icon://stock/gtk-refresh?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-refresh view-refresh 24");
 }
 
 #reload-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-refresh?size=toolbar&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-refresh view-refresh 24 disabled") !important;
 }
 
 #stop-button {
-  list-style-image: url("moz-icon://stock/gtk-stop?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-stop process-stop 24");
 }
 
 #stop-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-stop?size=toolbar&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-stop process-stop 24 disabled") !important;
 }
 
 #home-button {
-  list-style-image: url("moz-icon://stock/gtk-home?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-home go-home 24");
 }
 
 #home-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-home?size=toolbar&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-home go-home 24 disabled") !important;
 }
 
 #print-button {
- list-style-image: url("moz-icon://stock/gtk-print?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-print document-print 24");
 }
 
 #print-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-print?size=toolbar&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-print document-print 24 disabled") !important;
 }
 
 #sync-button {
@@ -125,72 +125,72 @@
 
 toolbar[iconsize="small"] > toolbarpaletteitem > #back-button,
 toolbar[iconsize="small"] > #back-button {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 16");
 }
 
 toolbar[iconsize="small"] > #back-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=menu&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 16 disabled") !important;
 }
 
 toolbar[iconsize="small"] > #back-button[chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 16");
 }
 
 toolbar[iconsize="small"] > #back-button[disabled="true"][chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=menu&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 16 disabled") !important;
 }
 
 toolbar[iconsize="small"] > toolbarpaletteitem > #forward-button,
 toolbar[iconsize="small"] > #forward-button {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 16");
 }
 
 toolbar[iconsize="small"] > #forward-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=v&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 16 disabled") !important;
 }
 
 toolbar[iconsize="small"] > #forward-button[chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 16");
 }
 
 toolbar[iconsize="small"] > #forward-button[disabled="true"][chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=menu&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 16 disabled") !important;
 }
 
 toolbar[iconsize="small"] > toolbarpaletteitem > #reload-button,
 toolbar[iconsize="small"] > #reload-button {
-  list-style-image: url("moz-icon://stock/gtk-refresh?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-refresh view-refresh 16");
 }
 
 toolbar[iconsize="small"] > #reload-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-refresh?size=menu&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-refresh view-refresh 16 disabled") !important;
 }
 
 toolbar[iconsize="small"] > toolbarpaletteitem > #stop-button,
 toolbar[iconsize="small"] > #stop-button {
-  list-style-image: url("moz-icon://stock/gtk-stop?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-stop process-stop 16");
 }
 
 toolbar[iconsize="small"] > #stop-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-stop?size=menu&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-stop process-stop 16 disabled") !important;
 }
 
 toolbar[iconsize="small"] > toolbarpaletteitem > #home-button,
 toolbar[iconsize="small"] > #home-button {
-  list-style-image: url("moz-icon://stock/gtk-home?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-home go-home 16");
 }
 
 toolbar[iconsize="small"] > #home-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-home?size=menu&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-home go-home 16 disabled") !important;
 }
 
 toolbar[iconsize="small"] > toolbarpaletteitem > #print-button,
 toolbar[iconsize="small"] > #print-button {
-  list-style-image: url("moz-icon://stock/gtk-print?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-print document-print 16");
 }
 
 toolbar[iconsize="small"] > #print-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-print?size=menu&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-print document-print 16 disabled") !important;
 }
 
 toolbar[iconsize="small"] > toolbarpaletteitem > #sync-button,
@@ -223,15 +223,15 @@ toolbar[iconsize="small"] > #sync-button[status=active] {
 }
 
 #minimize-button {
-  list-style-image: url("moz-icon://stock/gtk-goto-bottom?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-goto-bottom go-bottom 16");
 } 
 
 #restore-button {
-  list-style-image: url("moz-icon://stock/gtk-leave-fullscreen?size=menu");/*FIXME: Not stock!*/
+  list-style-image: url("%STOCK-ICON gtk-leave-fullscreen view-restore 16");/*FIXME: Not stock!*/
 } 
 
 #close-button {
-  list-style-image: url("moz-icon://stock/gtk-close?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-close window-close 16");
 } 
   
 /* ::::: nav-bar-inner ::::: */
@@ -275,7 +275,7 @@ toolbar[iconsize="small"] > #sync-button[status=active] {
 
 .popup-notification-icon[popupid="indexedDB-permissions-prompt"],
 .popup-notification-icon[popupid="indexedDB-quota-prompt"] {
-  list-style-image: url("moz-icon://stock/gtk-dialog-question?size=dialog");
+  list-style-image: url("%STOCK-ICON gtk-dialog-question dialog-question 48");
 }
 
 .popup-notification-icon[popupid="password-change"],
@@ -304,7 +304,7 @@ toolbar[iconsize="small"] > #sync-button[status=active] {
 }
 
 #default-notification-icon {
-  list-style-image: url("moz-icon://stock/gtk-dialog-info?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-dialog-info dialog-information 16");
   width: 16px;
   height: 16px;
 }
@@ -323,7 +323,7 @@ toolbar[iconsize="small"] > #sync-button[status=active] {
 }
   
 #indexedDB-notification-icon {
-  list-style-image: url("moz-icon://stock/gtk-dialog-question?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-dialog-question dialog-question 16");
   width: 16px;
   height: 16px;
 }
@@ -354,7 +354,7 @@ toolbar[iconsize="small"] > #sync-button[status=active] {
 }
 
 #page-proxy-button {
-  list-style-image: url("moz-icon://stock/gtk-file?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
 }
 
 #page-proxy-favicon {
@@ -362,16 +362,16 @@ toolbar[iconsize="small"] > #sync-button[status=active] {
 }
 
 #page-proxy-button[pageproxystate="valid"]:hover  {
-  list-style-image: url("moz-icon://stock/gtk-file?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
 }
 
 #page-proxy-button[pageproxystate="valid"]:hover:active {
-  list-style-image: url("moz-icon://stock/gtk-file?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
 }
 
 #page-proxy-button[pageproxystate="invalid"] {
   cursor: default;
-  list-style-image: url("moz-icon://stock/gtk-file?size=menu&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16 disabled");
 }
 
 /* ::::: autocomplete ::::: */
@@ -436,7 +436,7 @@ toolbar[iconsize="small"] > #sync-button[status=active] {
 }
 
 #search-button {
-  list-style-image: url("moz-icon://stock/gtk-find?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-find edit-find 16");
 }
 
 #search-button > .button-box > .button-icon {
@@ -468,16 +468,22 @@ toolbar[mode="icons"] #search-button > .button-box > .button-text {
 }
 
 #security-button {
-  list-style-image: url("chrome://global/skin/icons/16x16/changes-allow.png");
+  list-style-image: url("%CUSTOM-ICON changes-allow 16");
 }
 
 /* |high| and |low| styles could be different, to better reflect the secure level... */
 #security-button[level="high"] {
-  list-style-image: url("chrome://global/skin/icons/16x16/changes-prevent.png");
+  list-style-image: url("%CUSTOM-ICON changes-prevent 16");
 }
 
 #security-button[level="broken"] {
   list-style-image: url("chrome://global/skin/icons/16x16/security-broken.png");
+}
+
+#security-button:not([label]) .statusbarpanel-text,
+#security-button[label=""] .statusbarpanel-text {
+  -moz-margin-start: 0;
+  -moz-margin-end: 0;
 }
 
 #ev-button {
@@ -485,7 +491,7 @@ toolbar[mode="icons"] #search-button > .button-box > .button-text {
 }
 
 #popupIcon {
-  list-style-image: url("chrome://global/skin/icons/16x16/lpi-bug.png");
+  list-style-image: url("%CUSTOM-ICON lpi-bug 16");
 }
 
 #invalid-form-popup {
@@ -502,20 +508,20 @@ toolbar[mode="icons"] #search-button > .button-box > .button-text {
 /* ::::: personal toolbar ::::: */
 
 #bookmarks-button {
-  list-style-image: url("moz-icon://stock/gtk-directory?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-directory folder 16");
 }
 
 #bookmarks-button[open="true"] {
-  list-style-image: url("moz-icon://stock/gtk-open?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-open document-open 16");
 }
 
 toolbar[iconsize="large"] > toolbarpaletteitem > #bookmarks-button,
 toolbar[iconsize="large"] > #bookmarks-button {
-  list-style-image: url("moz-icon://stock/gtk-directory?size=toolbar") !important;
+  list-style-image: url("%STOCK-ICON gtk-directory folder 24") !important;
 }
 
 toolbar[iconsize="large"] > #bookmarks-button[open="true"] {
-  list-style-image: url("moz-icon://stock/gtk-open?size=toolbar") !important;
+  list-style-image: url("%STOCK-ICON gtk-open document-open 24") !important;
 }
 
 #PersonalToolbar > .toolbar-prefix {
@@ -525,7 +531,7 @@ toolbar[iconsize="large"] > #bookmarks-button[open="true"] {
 }
 
 #bookmarks-chevron {
-  list-style-image: url("moz-icon://stock/gtk-file?size=menu") !important;
+  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16") !important;
 }
 
 #bookmarks-chevron > .toolbarbutton-menu-dropmarker {

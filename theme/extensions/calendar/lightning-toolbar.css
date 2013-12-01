@@ -135,23 +135,23 @@ toolbar[iconsize="small"] #task-edit-button[disabled] {
 */
 #calendar-delete-button,
 #task-delete-button {
-  list-style-image: url("moz-icon://stock/gtk-delete?size=toolbar") !important;
+  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 24") !important;
   -moz-image-region: auto !important;
 }
 
 #calendar-delete-button[disabled],
 #task-delete-button[disabled] {
-  list-style-image: url("moz-icon://stock/gtk-delete?size=toolbar&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 24 disabled") !important;
 }
 
 toolbar[iconsize="small"] #calendar-delete-button,
 toolbar[iconsize="small"] #task-delete-button {
-  list-style-image: url("moz-icon://stock/gtk-delete?size=menu") !important;
+  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 16") !important;
 }
 
 toolbar[iconsize="small"] #calendar-delete-button[disabled],
 toolbar[iconsize="small"] #task-delete-button[disabled] {
-  list-style-image: url("moz-icon://stock/gtk-delete?size=menu&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 16 disabled") !important;
 }
 /*
 #calendar-goto-today-button {
@@ -172,38 +172,38 @@ toolbar[iconsize="small"] #calendar-goto-today-button[disabled] {
 */
 #calendar-print-button,
 #task-print-button {
-  list-style-image: url("moz-icon://stock/gtk-print?size=toolbar") !important;
+  list-style-image: url("%STOCK-ICON gtk-print document-print 24") !important;
   -moz-image-region: auto !important;
 }
 
 #calendar-print-button[disabled],
 #task-print-button[disabled] {
-  list-style-image: url("moz-icon://stock/gtk-print?size=toolbar&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-print document-print 24 disabled") !important;
 }
 
 toolbar[iconsize="small"] #calendar-print-button,
 toolbar[iconsize="small"] #task-print-button {
-  list-style-image: url("moz-icon://stock/gtk-print?size=menu") !important;
+  list-style-image: url("%STOCK-ICON gtk-print document-print 16") !important;
 }
 
 toolbar[iconsize="small"] #calendar-print-button[disabled],
 toolbar[iconsize="small"] #task-print-button[disabled] {
-  list-style-image: url("moz-icon://stock/gtk-print?size=menu&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-print document-print 16 disabled") !important;
 }
 
 #calendar-unifinder-button {
-  list-style-image: url("moz-icon://stock/gtk-find?size=toolbar") !important;
+  list-style-image: url("%STOCK-ICON gtk-find edit-find 24") !important;
   -moz-image-region: auto !important;
 }
 
 #calendar-unifinder-button[disabled] {
-  list-style-image: url("moz-icon://stock/gtk-find?size=toolbar&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-find edit-find 24 disabled") !important;
 }
 
 toolbar[iconsize="small"] #calendar-unifinder-button {
-  list-style-image: url("moz-icon://stock/gtk-find?size=menu") !important;
+  list-style-image: url("%STOCK-ICON gtk-find edit-find 16") !important;
 }
 
 toolbar[iconsize="small"] #calendar-unifinder-button[disabled] {
-  list-style-image: url("moz-icon://stock/gtk-find?size=menu&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-find edit-find 16 disabled") !important;
 }

@@ -45,51 +45,51 @@
 }
 
 #help-back-button {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 24");
 }
 
 #help-back-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 24 disabled");
 }
 
 #help-back-button[chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 24");
 }
 
 #help-back-button[disabled="true"][chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 24 disabled");
 }
 
 #help-forward-button {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 24");
 }
 
 #help-forward-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 24 disabled");
 }
 
 #help-forward-button[chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 24");
 }
 
 #help-forward-button[disabled="true"][chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 24 disabled");
 }
 
 #help-home-button {
-  list-style-image: url("moz-icon://stock/gtk-home?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-home go-home 24");
 }
 
 #help-home-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-home?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-home go-home 24 disabled");
 }
 
 #help-print-button {
-  list-style-image: url("moz-icon://stock/gtk-print?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-print document-print 24");
 }
 
 #help-print-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-print?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-print document-print 24 disabled");
 }
 
 /* Hide labels for the toolbar because we really don't need them what with the
@@ -108,7 +108,7 @@
 #help-sidebar { min-width: 15em; width: 20em; max-width: 25em; }
 
 #search-sidebar-closebutton {
-  list-style-image: url("moz-icon://stock/gtk-close?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-close window-close 16");
 }
 
 #context-copy[disabled="true"] {
@@ -121,50 +121,50 @@ menuitem:not([type]) {
 }
 
 #context-back {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 16");
 }
 
 #context-back[chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 16");
 }
 
 #context-back[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=menu&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 16 state=disabled");
 }
 
 #context-back[disabled="true"][chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=menu&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 16 disabled");
 }
 
 #context-forward {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 16");
 }
 
 #context-forward[chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 16");
 }
 
 #context-forward[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=menu&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 16 disabled");
 }
 
 #context-forward[disabled="true"][chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=menu&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 16 disabled");
 }
 
 #context-copy {
-  list-style-image: url("moz-icon://stock/gtk-copy?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-copy edit-copy 16");
 }
 
 #context-selectall {
-  list-style-image: url("moz-icon://stock/gtk-select-all?size=menu"); /*FIXME: Not stock!*/
+  list-style-image: url("%STOCK-ICON gtk-select-all edit-select-all 16"); /*FIXME: Not stock!*/
 }
 
 #zoom-in {
-  list-style-image: url("moz-icon://stock/gtk-zoom-in?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-zoom-in zoom-in 16");
 }
 
 #zoom-out {
-  list-style-image: url("moz-icon://stock/gtk-zoom-out?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-zoom-out zoom-out 16");
 }
 

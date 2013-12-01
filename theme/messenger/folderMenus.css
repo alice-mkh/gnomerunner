@@ -45,11 +45,11 @@
 /* ::::: folder icons for menus ::::: */
 
 .folderMenuItem {
-  list-style-image: url("moz-icon://stock/gtk-directory?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-directory folder 16");
 }
 
 .folderMenuItem[open="true"] {
-  list-style-image: url("moz-icon://stock/gtk-open?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-open document-open 16");
 }
 
 /* ..... special folders ..... */
@@ -61,7 +61,7 @@
 
 .folderMenuItem[SpecialFolder="Sent"],
 .folderMenuItem[SpecialFolder="Sent"][open="true"] {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-send.png");
+  list-style-image: url("%CUSTOM-ICON mail-send 16");
 }
 
 .folderMenuItem[SpecialFolder="Outbox"],

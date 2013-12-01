@@ -78,32 +78,33 @@ treeitem[container="true"][open="true"][loading="true"] > treerow > .treecell-in
 
 treeitem[container="true"][open="true"] > treerow > .treecell-indent 
 {
-  list-style-image: url("moz-icon://stock/gtk-open?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-open document-open 16");
 }
 
 /* Uncomment if double-click model is needed
 treeitem[container="true"][open="true"][selected="true"] > treerow > .treecell-indent 
 {
-  list-style-image: url("moz-icon://stock/gtk-open?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-open document-open 16");
 }
 */
 
 treeitem[container="true"] > treerow > .treecell-indent 
 {
-  list-style-image: url("moz-icon://stock/gtk-open?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-open document-open 16");
 }
 
 /* Uncomment if double-click model is needed
 treeitem[container="true"][selected="true"] > treerow > .treecell-indent 
 {
-  list-style-image: url("moz-icon://stock/gtk-directory?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-directory folder 16");
 }
 */
 
 treeitem[container="true"][id="NC:SiteMapRoot"] > treerow > .treecell-indent,
+  %STOCK_ICON gtk-directory folder 16
 treeitem[container="true"][open="true"][id="NC:SiteMapRoot"] > treerow > .treecell-indent 
 {
-    list-style-image: url("chrome://global/skin/icons/16x16/web-browser.png");
+    list-style-image: url("%CUSTOM-ICON web-browser 16");
 }
 
 /* Single click model, so undo regular search tree selection look. */
@@ -113,7 +114,6 @@ treeitem[selected="true"] > treerow.relatedresult
   background-color: transparent;
 }
 
-.treecell-indent 
-{
-  list-style-image: url("moz-icon://stock/gtk-file?size=menu");
+.treecell-indent {
+  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
 }

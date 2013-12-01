@@ -75,7 +75,7 @@
 
 #sidebar-close-button {
   -moz-binding: url("chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton-image");
-  list-style-image: url("moz-icon://stock/gtk-close?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-close window-close 16");
 }
 
 #sidebar-close-button > .toolbarbutton-icon {
@@ -152,9 +152,9 @@
 }
 
 .tab-fwd {
-  list-style-image: url("moz-icon://stock/gtk-go-up?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-go-up go-up 16");
 }
 
 .tab-back {
-  list-style-image: url("moz-icon://stock/gtk-go-down?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-go-down go-down 16");
 }

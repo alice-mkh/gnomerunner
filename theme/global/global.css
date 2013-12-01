@@ -77,23 +77,23 @@ window.dialog {
 }
 
 .message-icon {
-  list-style-image: url("moz-icon://stock/gtk-dialog-info?size=dialog");
+  list-style-image: url("%STOCK-ICON gtk-dialog-info dialog-information 48");
 }
 
 .alert-icon {
-  list-style-image: url("moz-icon://stock/gtk-dialog-warning?size=dialog");
+  list-style-image: url("%STOCK-ICON gtk-dialog-warning dialog-warning 48");
 }
 
 .error-icon {
-  list-style-image: url("moz-icon://stock/gtk-dialog-error?size=dialog");
+  list-style-image: url("%STOCK-ICON gtk-dialog-error dialog-error 48");
 }
 
 .question-icon {
-  list-style-image: url("moz-icon://stock/gtk-dialog-question?size=dialog");
+  list-style-image: url("%STOCK-ICON gtk-dialog-question dialog-question 48");
 }
 
 .authentication-icon {
-  list-style-image: url("moz-icon://stock/gtk-dialog-authentication?size=dialog");
+  list-style-image: url("%STOCK-ICON gtk-dialog-authentication dialog-password 48");
 }
 
 /* ::::: iframe ::::: */

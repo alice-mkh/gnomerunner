@@ -5,7 +5,7 @@
 @import url(chrome://calendar/skin/common/calendar-unifinder.css);
 
 .unifinder-closebutton {
-    list-style-image: url("moz-icon://stock/gtk-close?size=menu") !important;
+    list-style-image: url("%STOCK-ICON gtk-close window-close 16") !important;
     padding: 2px !important;
     -moz-image-region: auto !important;
 }

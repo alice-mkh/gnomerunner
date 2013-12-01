@@ -364,11 +364,11 @@ treechildren::-moz-tree-image(Name) {
 
 treechildren::-moz-tree-image(Name) {
   margin: 0px 2px;
-  list-style-image: url("moz-icon://stock/gtk-file?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
 }
 
 treechildren::-moz-tree-image(Name, container) {
-  list-style-image: url("moz-icon://stock/gtk-directory?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-directory folder 16");
 }
 
 treechildren::-moz-tree-image(Name, separator) {

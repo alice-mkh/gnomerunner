@@ -62,7 +62,7 @@ label {
 }
 
 .alertCloseButton {
-  list-style-image: url("moz-icon://stock/gtk-close?size=button");
+  list-style-image: url("%STOCK-ICON gtk-close window-close 16b");
 }
 
 .alertCloseButton > .toolbarbutton-icon {

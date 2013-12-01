@@ -64,11 +64,11 @@
 /* ::::: online/offline icons ::::: */
 
 #offline-status[offline="true"] {
-  list-style-image: url("moz-icon://stock/gtk-disconnect?size=menu");
+  list-style-image: url("chrome://global/skin/icons/evolution/hicolor_status_32x32_offline.png");
 }
 
 #offline-status {
-  list-style-image: url("moz-icon://stock/gtk-connect?size=menu");
+  list-style-image: url("chrome://global/skin/icons/evolution/hicolor_status_32x32_online.png");
 }
 
 /* ::::: spell checker ::::: */
@@ -110,20 +110,20 @@ menuitem.menuitem-iconic > .menu-iconic-left {
 }
 
 #print-button {
- list-style-image: url("moz-icon://stock/gtk-print?size=toolbar");
+ list-style-image: url("%STOCK-ICON gtk-print document-print 24");
 }
 
 #print-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-print?size=toolbar&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-print document-print 24 disabled") !important;
 }
 
 toolbar[iconsize="small"] > toolbarpaletteitem > #print-button,
 toolbar[iconsize="small"] > #print-button {
-  list-style-image: url("moz-icon://stock/gtk-print?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-print document-print 16");
 }
 
 toolbar[iconsize="small"] > #print-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-print?size=menu&state=disabled") !important;
+  list-style-image: url("%STOCK-ICON gtk-print document-print 16 disabled") !important;
 }
 
 /* ::::: lightweight themes ::::: */
@@ -161,7 +161,7 @@ treecols:-moz-lwtheme {
 
 .messageImage[value="indexedDB-permissions-prompt"],
 .messageImage[value="indexedDB-quota-prompt"] {
-  list-style-image: url("moz-icon://stock/gtk-dialog-question?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-dialog-question dialog-question 16");
 }
 
 .messageImage[value="addon-install-blocked"],
@@ -176,7 +176,7 @@ treecols:-moz-lwtheme {
 }
 
 .messageImage[value="popup-blocked"] {
-  list-style-image: url("chrome://global/skin/icons/16x16/lpi-bug.png");
+  list-style-image: url("%CUSTOM-ICON lpi-bug 16");
 }
 
 

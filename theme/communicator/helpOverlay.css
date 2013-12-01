@@ -52,51 +52,51 @@
 }
 
 #help-back-button {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 24");
 }
 
 #help-back-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 24 disabled");
 }
 
 #help-back-button[chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 24");
 }
 
 #help-back-button[chromedir="rtl"][disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 24 disabled");
 }
 
 #help-forward-button {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 24");
 }
 
 #help-forward-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 24 disabled");
 }
 
 #help-forward-button[chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 24");
 }
 
 #help-forward-button[disabled="true"][chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 24 disabled");
 }
 
 #help-home-button {
-  list-style-image: url("moz-icon://stock/gtk-home?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-home go-home 24");
 }
 
 #help-home-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-home?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-home go-home 24 disabled");
 }
 
 #help-print-button {
-  list-style-image: url("moz-icon://stock/gtk-print?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-print document-print 24");
 }
 
 #help-print-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-print?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-print document-print 24 disabled");
 }
 
 #appcontent{

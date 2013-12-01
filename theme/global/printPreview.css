@@ -29,11 +29,11 @@
 }
 
 .next-arrow {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 16");
 }
 
 .next-arrow:-moz-locale-dir(rtl) {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 16");
 }
 
 /* ..... orientation ..... */

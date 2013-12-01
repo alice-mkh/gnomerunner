@@ -59,6 +59,10 @@ toolbarbutton:-moz-lwtheme {
   text-shadow: none;
 }
 
+toolbar[type=menubar] toolbarbutton:not(:hover){
+    color: -moz-MenubarText !important;
+}
+
 .toolbarbutton-icon {
   -moz-margin-end: 2px;
 }

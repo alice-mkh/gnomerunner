@@ -86,11 +86,11 @@ toolbarbutton.bookmark-item[disabled="true"]:hover:active {
 toolbarbutton.bookmark-item[disabled="true"] {
   cursor: default !important;
   text-decoration: none !important;
-  list-style-image: url("moz-icon://stock/gtk-file?size=menu&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16 disabled");
 }
 
 toolbarbutton.bookmark-item[disabled="true"][container="true"] {
-  list-style-image: url("moz-icon://stock/gtk-directory?size=menu&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-directory folder 16 disabled");
 }
 
 toolbar[iconsize="small"] > toolbarpaletteitem > .bookmark-item > .toolbarbutton-icon,
@@ -147,15 +147,15 @@ menuitem.bookmark-item {
 }
 
 .bookmark-group {
-    list-style-image: url("moz-icon://stock/gtk-copy?size=menu&state=disabled") !important;
+    list-style-image: url("%STOCK-ICON gtk-copy edit-copy 16 disabled") !important;
 }
 
 .menuitem-iconic.bookmark-item[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-file?size=menu&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16 disabled");
 }
 
 .menu-iconic.bookmark-item[disabled="true"][container="true"] {
-  list-style-image: url("moz-icon://stock/gtk-directory?size=menu&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-directory folder 16 disabled");
 }
 
 /* ..... drag and drop styles ..... */

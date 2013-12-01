@@ -53,12 +53,12 @@ treechildren::-moz-tree-image(folderNameCol) {
 
 .icon-holder[type="folder"],
 treechildren::-moz-tree-image(folderNameCol) {
-  list-style-image: url("moz-icon://stock/gtk-directory?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-directory folder 16");
 }
 
 treechildren::-moz-tree-image(folderNameCol, newMessages-true) {
   /*list-style-image: url("chrome://messenger/skin/icons/folder-new.png");*/
-  list-style-image: url("moz-icon://stock/gtk-directory?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-directory folder 16");
 }
 
 /* ..... News and Feeds ..... */
@@ -104,7 +104,7 @@ treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox, newMessages-tr
 
 .icon-holder[type="folder"][SpecialFolder="Sent"],
 treechildren::-moz-tree-image(folderNameCol, specialFolder-Sent) {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-send.png");
+  list-style-image: url("%CUSTOM-ICON mail-send 16");
 }
 
 /* ..... Outbox ..... */
@@ -179,7 +179,7 @@ treechildren::-moz-tree-image(folderNameCol, biffState-NewMail, isServer-true) {
 
 .icon-holder[type="folder"][ImapShared="true"],
 treechildren::-moz-tree-image(folderNameCol, imapShared-true) {
-  list-style-image: url("global://global/skin/icons/16x16/emblem-shared.png");
+  list-style-image: url("%CUSTOM-ICON emblem-shared 16");
 }
 
 /* ..... Server Folders ..... */

@@ -44,114 +44,139 @@
 
 /* ::::: primary toolbar buttons ::::: */
 
-#button-getmsg[disabled="true"],
-#button-newmsg[disabled="true"],
-#button-reply[disabled="true"],
-#button-replyall[disabled="true"],
-#button-forward[disabled="true"],
-#button-mark[disabled="true"],
-#button-junk[disabled="true"] {
-  opacity: 0.5 !important;
+#button-getmsg {
+  list-style-image: url("%CUSTOM-ICON mail-send-receive 24");
 }
 
-#button-getmsg {
-  list-style-image: url("chrome://global/skin/icons/24x24/mail-receive.png");
+#button-getmsg[disabled="true"] {
+  list-style-image: url("%CUSTOM-ICON mail-send-receive 24 disabled");
+  opacity: %DISABLED-OPACITY !important;
 }
 
 #button-newmsg {
-  list-style-image: url("chrome://global/skin/icons/24x24/mail-message-new.png");
+  list-style-image: url("%CUSTOM-ICON mail-message-new 24");
+}
+
+#button-newmsg[disabled="true"] {
+  list-style-image: url("%CUSTOM-ICON mail-message-new 24 disabled");
+  opacity: %DISABLED-OPACITY !important;
 }
 
 #button-reply {
-  list-style-image: url("chrome://global/skin/icons/24x24/mail-reply-sender.png");
+    list-style-image:url("%CUSTOM-ICON mail-reply-sender 24");
+}
+
+#button-reply[disabled="true"] {
+  list-style-image: url("%CUSTOM-ICON mail-reply-sender 24 disabled");
+  opacity: %DISABLED-OPACITY !important;
 }
 
 #button-replyall {
-  list-style-image: url("chrome://global/skin/icons/24x24/mail-reply-all.png");
+    list-style-image:url("%CUSTOM-ICON mail-reply-all 24");
+}
+
+#button-replyall[disabled="true"] {
+  list-style-image: url("%CUSTOM-ICON mail-reply-all 24 disabled");
+  opacity: %DISABLED-OPACITY !important;
 }
 
 #button-forward {
-  list-style-image: url("chrome://global/skin/icons/24x24/mail-forward.png");
+  list-style-image: url("%CUSTOM-ICON mail-forward 24");
+}
+
+#button-forward[disabled="true"] {
+  list-style-image: url("%CUSTOM-ICON mail-forward 24 disabled");
+  opacity: %DISABLED-OPACITY !important;
 }
 
 #button-file {
-  list-style-image: url("moz-icon://stock/gtk-directory?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-directory folder 24");
 }
 
 #button-file[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-directory?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-directory folder 24 disabled");
 } 
 
 #button-goback {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 24");
 }
 
 #button-goback[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 24 disabled");
 }
 
 #button-goback[chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 24");
 }
 
 #button-goback[disabled="true"][chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 24 disabled");
 }
 
 #button-goforward {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 24");
 }
 
 #button-goforward[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 24 sdisabled");
 }
 
 #button-goforward[chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 24");
 }
 
 #button-goforward[disabled="true"][chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 24 disabled");
 }
 
 #button-next {
-  list-style-image: url("moz-icon://stock/gtk-go-down?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-go-down go-down 24");
 }
 
 #button-next[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-go-down?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-down go-down 24 disabled");
 }
 
 #button-delete {
-  list-style-image: url("moz-icon://stock/gtk-delete?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 24");
 }
 
 #button-delete[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-delete?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 24 disabled");
 }
 
 #button-mark {
-  list-style-image: url("chrome://global/skin/icons/24x24/mail-mark-read.png");
+  list-style-image: url("%CUSTOM-ICON mail-mark-read 24");
+}
+
+#button-mark[disabled="true"] {
+  list-style-image: url("%CUSTOM-ICON mail-mark-read 24 disabled");
+  opacity: %DISABLED-OPACITY !important;
 }
 
 #button-junk {
-  list-style-image: url("chrome://global/skin/icons/24x24/mail-mark-junk.png");
+  list-style-image: url("%CUSTOM-ICON mail-mark-junk 24");
+}
+
+#button-junk[disabled="true"] {
+  list-style-image: url("%CUSTOM-ICON mail-mark-junk 24 disabled");
+  opacity: %DISABLED-OPACITY !important;
 }
 
 #button-print {
-  list-style-image: url("moz-icon://stock/gtk-print?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-print document-print 24");
 }
 
 #button-print[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-print?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-print document-print 24 disabled");
 }
 
 #button-stop {
-  list-style-image: url("moz-icon://stock/gtk-stop?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-stop process-stop 24");
 }
 
 #button-stop[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-stop?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-stop process-stop 24 disabled");
 }
 
 #sync-button {
@@ -187,118 +212,146 @@ toolbarpaletteitem[place="palette"] > #mailviews-container > #viewPicker {
 
 toolbar[iconsize="small"] > #button-getmsg,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-getmsg {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-receive.png");
+  list-style-image: url("%CUSTOM-ICON mail-send-receive 16");
+}
+
+toolbar[iconsize="small"] > #button-getmsg[disabled="true"] {
+  list-style-image: url("%CUSTOM-ICON mail-send-receive 16 disabled");
 }
 
 toolbar[iconsize="small"] > #button-newmsg,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-newmsg {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-message-new.png");
+  list-style-image: url("%CUSTOM-ICON mail-message-new 16");
+}
+
+toolbar[iconsize="small"] > #button-newmsg[disabled="true"] {
+  list-style-image: url("%CUSTOM-ICON mail-message-new 16 disabled");
 }
 
 toolbar[iconsize="small"] > #button-reply,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-reply {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-reply-sender.png");
+  list-style-image:url("%CUSTOM-ICON mail-reply-sender 16");
+}
+
+toolbar[iconsize="small"] > #button-reply[disabled="true"] {
+  list-style-image: url("%CUSTOM-ICON mail-reply-sender 16 disabled");
 }
 
 toolbar[iconsize="small"] > #button-replyall,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-replyall {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-reply-all.png");
+  list-style-image:url("%CUSTOM-ICON mail-reply-all 16");
+}
+
+toolbar[iconsize="small"] > #button-replyall[disabled="true"] {
+  list-style-image: url("%CUSTOM-ICON mail-reply-all 16 disabled");
 }
 
 toolbar[iconsize="small"] > #button-forward,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-forward {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-forward.png");
+  list-style-image: url("%CUSTOM-ICON mail-forward 16");
+}
+
+toolbar[iconsize="small"] > #button-forward[disabled="true"] {
+  list-style-image: url("%CUSTOM-ICON mail-forward 16 disabled");
 }
 
 toolbar[iconsize="small"] > #button-file,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-file {
-  list-style-image: url("moz-icon://stock/gtk-directory?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-directory folder 16");
 }
 
 toolbar[iconsize="small"] > #button-file[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-directory?size=menu&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-directory folder 16 disabled");
 }
 
 toolbar[iconsize="small"] > #button-goback,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-goback {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 16");
 }
 
 toolbar[iconsize="small"] > #button-goback[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=menu&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 16 disabled");
 }
 
 toolbar[iconsize="small"] > #button-goback[chromedir="rtl"],
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-goback[chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 16");
 }
 
 toolbar[iconsize="small"] > #button-goback[disabled="true"][chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=menu&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 16 disabled");
 }
 
 toolbar[iconsize="small"] > #button-goforward,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-goforward {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 16");
 }
 
 toolbar[iconsize="small"] > #button-goforward[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=menu&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 16 disabled");
 }
 
 toolbar[iconsize="small"] > #button-goforward[chromedir="rtl"],
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-goforward[chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 16");
 }
 
 toolbar[iconsize="small"] > #button-goforward[disabled="true"][chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=menu&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 16 disabled");
 }
 
 toolbar[iconsize="small"] > #button-next,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-next {
-  list-style-image: url("moz-icon://stock/gtk-go-down?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-go-down go-down 16");
 }
 
 toolbar[iconsize="small"] > #button-next[disabled] {
-  list-style-image: url("moz-icon://stock/gtk-go-down?size=menu&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-go-down go-down 16 disabled");
 }
 
 toolbar[iconsize="small"] > #button-delete,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-delete {
-  list-style-image: url("moz-icon://stock/gtk-delete?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 16");
 }
 
 toolbar[iconsize="small"] > #button-delete[disabled] {
-  list-style-image: url("moz-icon://stock/gtk-delete?size=menu&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 16 disabled");
 }
 
 toolbar[iconsize="small"] > #button-mark,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-mark {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-mark-read.png");
+  list-style-image: url("%CUSTOM-ICON mail-mark-read 16");
+}
+
+toolbar[iconsize="small"] > #button-mark[disabled] {
+  list-style-image: url("%CUSTOM-ICON mail-mark-read 16 disabled");
 }
 
 toolbar[iconsize="small"] > #button-junk,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-junk {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-mark-junk.png");
+  list-style-image: url("%CUSTOM-ICON mail-mark-junk 16");
+}
+
+toolbar[iconsize="small"] > #button-junk[disabled] {
+  list-style-image: url("%CUSTOM-ICON mail-mark-junk 16 disabled");
 }
 
 toolbar[iconsize="small"] > #button-print,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-print {
-  list-style-image: url("moz-icon://stock/gtk-print?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-print document-print 16");
 }
 
 toolbar[iconsize="small"] > #button-print[disabled] {
-  list-style-image: url("moz-icon://stock/gtk-print?size=menu&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-print document-print 16 disabled");
 }
 
 toolbar[iconsize="small"] > #button-stop,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-stop {
-  list-style-image: url("moz-icon://stock/gtk-stop?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-stop process-stop 16");
 }
 
 toolbar[iconsize="small"] > #button-stop[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-stop?size=menu&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-stop process-stop 16 disabled");
 }
 
 toolbar[iconsize="small"] > #sync-button,
@@ -325,7 +378,7 @@ toolbar[iconsize="small"] > #sync-button[status=active] {
 }
 
 #junkBarImage {
-  list-style-image: url("moz-icon://stock/gtk-delete?size=dialog");
+  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 48");
 }
 
 #junkIcon {
@@ -334,12 +387,12 @@ toolbar[iconsize="small"] > #sync-button[status=active] {
 }
 
 #remoteContentImage {
-  list-style-image: url("moz-icon://stock/gtk-missing-image?size=dialog");
+  list-style-image: url("%STOCK-ICON gtk-missing-image image-missing 48");
   padding: 3px;
 }
 
 #mdnBarImage {
-  list-style-image: url("moz-icon://stock/gtk-dialog-question?size=dialog");
+  list-style-image: url("%STOCK-ICON gtk-dialog-question dialog-question 48");
 }
 
 #allowRemoteContentForAuthorDesc {

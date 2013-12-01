@@ -44,20 +44,20 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 #button-security {
-  list-style-image: url("moz-icon://stock/gtk-dialog-authentication?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-dialog-authentication dialog-password 24");
 }
 
 #button-security[disabled] {
-  list-style-image: url("moz-icon://stock/gtk-dialog-authentication?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-dialog-authentication dialog-password 24 disabled");
 }
 
 toolbar[iconsize="small"] > #button-security,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-security {
-  list-style-image: url("moz-icon://stock/gtk-dialog-authentication?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-dialog-authentication dialog-password 16");
 }
 
 toolbar[iconsize="small"] > #button-security[disabled] {
-  list-style-image: url("moz-icon://stock/gtk-dialog-authentication?size=menu&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-dialog-authentication dialog-password 16 disabled");
 }
 
 #msgcomposeWindow #signing-status {

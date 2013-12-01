@@ -54,7 +54,7 @@
 #expandedAttachmentBox {
   width: 20em;
   height: 0;
-  list-style-image: url("chrome://global/skin/icons/24x24/mail-attachment.png");
+  list-style-image: url("%CUSTOM-ICON mail-attachment 24");
 }
 
 #attachmentTree {
@@ -226,6 +226,6 @@
 }
 
 .collapsedAttachmentButton {
-  list-style-image: url("chrome://global/skin/icons/24x24/mail-attachment.png");
+  list-style-image: url("%CUSTOM-ICON mail-attachment 24");
   margin-right: .5em;
 }

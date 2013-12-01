@@ -18,11 +18,11 @@
 }
 
 .statusIcon[status="error"] {
-  list-style-image: url("moz-icon://stock/gtk-dialog-error?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-dialog-error dialog-error 16");
 }
 
 .statusIcon[status="success"] {
-  list-style-image: url("moz-icon://stock/gtk-dialog-info?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-dialog-info dialog-information 16");
 }
 
 /* .data is only used by syncGenericChange.xul, but it seems unnecessary to have

@@ -37,35 +37,29 @@
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-.treecell-panel
-{
-  list-style-image: url("moz-icon://stock/gtk-file?size=menu");
+.treecell-panel{
+  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
 }
 
 .treecell-panel[haslink="true"],
 treeitem[container="true"] > treerow > .treecell-panel
 {
-  list-style-image: url("moz-icon://stock/gtk-directory?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-directory folder 16");
 }
 treeitem[selected="true"] > treerow > .treecell-panel[haslink="true"],
 treeitem[selected="true"][container="true"] > treerow > .treecell-panel
 {
-  list-style-image: url("moz-icon://stock/gtk-directory?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-directory folder 16");
 }
 
 treeitem[container="true"][open="true"] > treerow > .treecell-panel
 {
-  list-style-image: url("moz-icon://stock/gtk-open?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-open document-open 16");
 }
 treeitem[selected="true"][container="true"][open="true"] > treerow > .treecell-panel
 {
-  list-style-image: url("moz-icon://stock/gtk-open?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-open document-open 16");
 }
-
-/*#header {
-  list-style-image: url("moz-icon://stock/gtk-open?size=menu");
-}
-*/
 
 box#reorder {
   -moz-box-pack: center;

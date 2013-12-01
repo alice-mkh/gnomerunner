@@ -48,93 +48,94 @@
 /* ::::: primary toolbar buttons ::::: */
 
 #button-send {
-  list-style-image: url("chrome://global/skin/icons/24x24/mail-send.png");
+  list-style-image: url("%CUSTOM-ICON mail-send 24");
 }
 
 #button-send[disabled="true"] {
-  opacity: 0.5 !important;
+  list-style-image: url("%CUSTOM-ICON mail-send 24 disabled");
+  opacity: %DISABLED-OPACITY !important;
 } 
 
 #button-address {
-  list-style-image: url("chrome://global/skin/icons/24x24/x-office-address-book.png");
+  list-style-image: url("%CUSTOM-ICON x-office-address-book 24");
 }
- 
 
 #button-address[disabled="true"] {
-  opacity: 0.5 !important;
+  list-style-image: url("%CUSTOM-ICON x-office-address-book 24 disabled");
+  opacity: %DISABLED-OPACITY !important;
 } 
 
 #button-attach {
-  list-style-image: url("chrome://global/skin/icons/24x24/mail-attachment.png");
+  list-style-image: url("%CUSTOM-ICON mail-attachment 24");
 }
 
 #button-attach[disabled="true"] {
-  opacity: 0.5 !important;
+  list-style-image: url("%CUSTOM-ICON mail-attachment 24 disabled");
+  opacity: %DISABLED-OPACITY !important;
 } 
 
 #spellingButton {
-  list-style-image: url("moz-icon://stock/gtk-spell-check?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-spell-check tools-check-spelling 24");
 }
 
 #spellingButton[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-spell-check?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-spell-check tools-check-spelling 24 disabled");
 }
 
 #button-save {
-  list-style-image: url("moz-icon://stock/gtk-save?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-save document-save 24");
 }
 
 #button-save[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-save?size=toolbar&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-save document-save 24 state=disabled");
 } 
 
 /* ::::: small primary toolbar buttons ::::: */
 
 toolbar[iconsize="small"] > #button-send,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-send {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-send.png");
+  list-style-image: url("%CUSTOM-ICON mail-send 16");
 }
 
 toolbar[iconsize="small"] > #button-send[disabled="true"] {
-  opacity: 0.5 !important;
+  list-style-image: url("%CUSTOM-ICON mail-send 16 disabled");
 }
 
 toolbar[iconsize="small"] > #button-address,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-address {
-  list-style-image: url("chrome://global/skin/icons/16x16/x-office-address-book.png");
+  list-style-image: url("%CUSTOM-ICON x-office-address-book 16");
 }
 
 toolbar[iconsize="small"] > #button-address[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/16x16/x-office-address-book.png");
-  opacity: 0.5 !important;
+  list-style-image: url("%CUSTOM-ICON x-office-address-book 16 disabled");
 } 
 
 toolbar[iconsize="small"] > #button-attach,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-attach {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-attachment.png");
+  list-style-image: url("%CUSTOM-ICON mail-attachment 16");
 }
 
 toolbar[iconsize="small"] > #button-attach[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-attachment.png");
-  opacity: 0.5 !important;
+  list-style-image: url("%CUSTOM-ICON mail-attachment 16 disabled");
+  opacity: %DISABLED-OPACITY !important;
 } 
 
 toolbar[iconsize="small"] > #spellingButton,
 toolbar[iconsize="small"] > toolbarpaletteitem > #spellingButton {
-  list-style-image: url("moz-icon://stock/gtk-spell-check?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-spell-check tools-check-spelling 16");
 }
 
 toolbar[iconsize="small"] > #spellingButton[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-spell-check?size=menu&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-spell-check tools-check-spelling 16 disabled");
 }
 
 toolbar[iconsize="small"] > #button-save,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-save {
-  list-style-image: url("moz-icon://stock/gtk-save?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-save document-save 16");
 }
 
 toolbar[iconsize="small"] > #button-save[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-save?size=menu&state=disabled");
+  list-style-image: url("%STOCK-ICON gtk-save document-save 16 disabled");
 } 
 
 /* ::::: special toolbar colors ::::: */
@@ -171,7 +172,7 @@ treechildren::-moz-tree-cell-text(default-match) {
 
 treechildren::-moz-tree-image(local-abook) {
   margin: 2px -1px 2px 4px;
-  list-style-image: url("chrome://global/skin/icons/16x16/x-office-adress-book.png");
+  list-style-image: url("%CUSTOM-ICON x-office-address-book 16");
 }
 
 treechildren::-moz-tree-image(remote-abook) {
@@ -181,6 +182,6 @@ treechildren::-moz-tree-image(remote-abook) {
 
 treechildren::-moz-tree-image(remote-err) {
   margin: 2px -3px 2px 2px;
-  list-style-image: url("moz-icon://stock/gtk-dialog-error?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-dialog-error dialog-error 16");
 }
 

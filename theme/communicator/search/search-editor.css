@@ -40,10 +40,10 @@
 
 #add-button
   {
-    list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=menu");
+    list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 16");
   }
   
 #remove-button
   {
-    list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=menu");
+    list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 16");
   }

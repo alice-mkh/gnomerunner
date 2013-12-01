@@ -30,15 +30,15 @@ window {
 }
 
 #button-multiline-expand {
-    list-style-image:url("moz-icon://stock/gtk-go-up?size=menu");
+    list-style-image:url("%STOCK-ICON gtk-go-up go-up 16");
 }
 
 #button-multiline-contract {
-    list-style-image:url("moz-icon://stock/gtk-go-down?size=menu");
+    list-style-image:url("%STOCK-ICON gtk-go-down go-down 16");
 }
 
 #button-input {
-    list-style-image:url("chrome://global/skin/icons/16x16/mail-reply-sender.png")
+    list-style-image:url("%CUSTOM-ICON mail-reply-sender 16");
 }
 
 .highlight-menu-item:hover {
@@ -67,7 +67,7 @@ window {
     margin-bottom: -8px;
     height: 16px;
     width: 16px;
-    background: url("moz-icon://stock/gtk-go-up?size=menu") 50% 50% no-repeat;
+    background: url("%STOCK-ICON gtk-go-up go-up 16") 50% 50% no-repeat;
 }
 
 #view-tabs {
@@ -291,7 +291,7 @@ progressmeter[mode="undetermined"] {
 
 #security-button[level="high"] > image,
 #security-button[level="low"] > image {
-    list-style-image: url("chrome://global/skin/icons/16x16/changes-prevent.png");
+    list-style-image: url("%CUSTOM-ICON changes-prevent 16");
 }
 
 #security-button[level="broken"] > image {
@@ -312,11 +312,11 @@ progressmeter[mode="undetermined"] {
 }
 
 #offline-status[offlinestate="offline"] {
-    list-style-image: url("moz-icon://stock/gtk-disconnect?size=menu");
+    list-style-image: url("chrome://global/skin/icons/evolution/hicolor_status_32x32_offline.png");
 }
 
 #offline-status[offlinestate="online"] {
-    list-style-image: url("moz-icon://stock/gtk-connect?size=menu");
+    list-style-image: url("chrome://global/skin/icons/evolution/hicolor_status_32x32_online.png");
 }
 
 /* Focus styling for a11y reasons */

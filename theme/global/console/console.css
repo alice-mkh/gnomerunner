@@ -120,7 +120,7 @@
 
 .console-row[type="error"],
 .console-row[type="exception"] {
-  list-style-image: url("moz-icon://stock/gtk-dialog-error?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-dialog-error dialog-error 16");
 }
 
 .console-row[type="error"] .console-row-msg,
@@ -129,11 +129,11 @@
 }
 
 .console-row[type="warning"] {
-  list-style-image: url("moz-icon://stock/gtk-dialog-warning?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-dialog-warning dialog-warning 16");
 }
 
 .console-row[type="message"] {
-  list-style-image: url("moz-icon://stock/gtk-dialog-info?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-dialog-info dialog-information 16");
 }
 
 /* ::::: toolbars ::::: */
@@ -156,23 +156,23 @@ toolbar#ToolbarMode toolbarbutton {
 }
 
 #Console\:modeAll {
-  list-style-image: url("chrome://global/skin/icons/24x24/utilities-terminal.png");
+  list-style-image: url("%CUSTOM-ICON utilities-terminal 24");
 }
 
 #Console\:modeErrors {
-  list-style-image: url("moz-icon://stock/gtk-dialog-error?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-dialog-error dialog-error 24");
 }
 
 #Console\:modeWarnings {
-  list-style-image: url("moz-icon://stock/gtk-dialog-warning?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-dialog-warning dialog-warning 24");
 }
 
 #Console\:modeMessages {
-  list-style-image: url("moz-icon://stock/gtk-dialog-info?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-dialog-info dialog-information 24");
 }
 
 #Console\:clear {
-  list-style-image: url("moz-icon://stock/gtk-clear?size=toolbar");
+  list-style-image: url("%STOCK-ICON gtk-clear edit-clear 24");
 }
 
 toolbar#ToolbarMode .toolbarbutton-text {

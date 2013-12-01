@@ -13,7 +13,7 @@
   margin: 3px;
   height: 16px;
   width: 16px;
-  list-style-image: url("moz-icon://stock/gtk-file?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
 }
 
 /* ::::: search-go-button ::::: */
@@ -24,7 +24,7 @@
 
 .search-go-button {
   padding: 3px;
-  list-style-image: url("moz-icon://stock/gtk-find?size=menu");
+  list-style-image: url("%STOCK-ICON gtk-find edit-find 16");
 }
 
 .search-go-button:-moz-system-metric(touch-enabled) {
