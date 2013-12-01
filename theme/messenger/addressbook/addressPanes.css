@@ -55,7 +55,7 @@ treechildren::-moz-tree-image(DirCol, IsMailList-true) {
 }
 
 treechildren::-moz-tree-image(DirCol, IsRemote-true) {
-  list-style-image: url("moz-icon://stock/gtk-network?size=menu");
+  list-style-image: url("chrome://global/skin/icons/16x16/gtk-network.png");
 }
 
 treechildren::-moz-tree-image(DirCol, IsRemote-true, IsSecure-true) {

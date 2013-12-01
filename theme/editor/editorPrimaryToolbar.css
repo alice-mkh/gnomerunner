@@ -73,11 +73,12 @@
 }
 
 #publishButton {
-  list-style-image: url("moz-icon://stock/gtk-network?size=toolbar");
+  list-style-image: url("chrome://global/skin/icons/24x24/gtk-network.png");
 }
 
 #publishButton[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-network?size=toolbar&state=disabled");
+  list-style-image: url("chrome://global/skin/icons/24x24/gtk-network.png");
+  opacity: 0.5 !important;
 }
 
 #previewButton {

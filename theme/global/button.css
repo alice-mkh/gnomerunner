@@ -348,9 +348,10 @@ button[icon="select-color"][disabled="true"] .button-icon {
 }
 
 button[icon="network"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-network?size=button");
+  list-style-image: url("chrome://global/skin/icons/16x16/gtk-network.png");
 }
 
 button[icon="network"][disabled="true"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-network?size=button&state=disabled");
+  list-style-image: url("chrome://global/skin/icons/16x16/gtk-network.png");
+  opacity: 0.5 !important;
 }
