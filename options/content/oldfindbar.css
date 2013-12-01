@@ -1,0 +1,9 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+findbar {
+  -moz-binding: url('chrome://gnomerunner-options/content/bindings/findbar.xml#findbar') !important;
+}
+
+.findbar-textbox {
+  -moz-binding: url("chrome://gnomerunner-options/content/bindings/findbar.xml#findbar-textbox") !important;
+}

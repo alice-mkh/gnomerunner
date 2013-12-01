@@ -38,3 +38,8 @@ NAME=Always display text on Address Book buttons
 Affected buttons: New Contact, Properties.
 DEFAULT=false
 
+TYPE=bool
+PREF=oldfindbar
+NAME=Old findbar
+DEFAULT=false
+
