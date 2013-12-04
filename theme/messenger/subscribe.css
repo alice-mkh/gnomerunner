@@ -49,12 +49,12 @@
 treechildren::-moz-tree-image(subscribedColumn),
 treechildren::-moz-tree-image(subscribedColumn2) {
   margin-right: 2px;
-  list-style-image: url("chrome://messenger/skin/icons/dot.png");
+  list-style-image: url("moz-icon://stock/gtk-yes?size=menu&state=disabled");
 }
 
 treechildren::-moz-tree-image(subscribedColumn, Subscribed-true),
 treechildren::-moz-tree-image(subscribedColumn2, subscribed) {
-  list-style-image: url("chrome://messenger/skin/icons/check.png");
+  list-style-image: url("moz-icon://stock/gtk-yes?size=menu");
 }
 
 treechildren::-moz-tree-image(subscribedColumn, Subscribable-false) {
