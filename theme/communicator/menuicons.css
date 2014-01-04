@@ -37,5 +37,5 @@
 %NATIVE-ICON gtk-directory folder #newfolder
 %NATIVE-ICON gtk-revert-to-saved document-revert #fileRestoreMenu
 %NATIVE-ICON gtk-revert-to-saved document-revert #menu_fileRevert
-%ICON chrome://global/skin/icons/16x16/gtk-network.png #menu_publish
+%ICON "chrome://global/skin/icons/16x16/gtk-network.png" #menu_publish
 %NATIVE-ICON gtk-spell-check tools-check-spelling #menu_checkspelling
