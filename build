@@ -10,8 +10,10 @@ cp icon.png temp/options
 cd temp
 
 #Create Freedesktop theme
-cp -R theme theme-fd
-sed -E "s/((INTERNAL_)?NAME|THEME_(ID|DESC))/\0_FD/g" -i "theme-fd/install.rdf" "theme-fd/chrome.manifest"
+mkdir fd
+cp -R theme fd/theme
+cp install.rdf fd
+sed -E "s/((INTERNAL_)?NAME|THEME_(ID|DESC))/\0_FD/g" -i "fd/theme/install.rdf" "fd/theme/chrome.manifest" "fd/install.rdf"
 
 #Substitute variables
 while read LINE; do
@@ -128,36 +130,42 @@ for F in $FILES; do
     NEW1="moz-icon:\/\/stock\/\1?size=\3\&state=\5"
     NEW2="moz-icon:\/\/stock\/\2?size=\3\&state=\5"
     sed -E "s/$ORIG/$NEW1/g" -i "$F"
-    sed -E "s/$ORIG/$NEW2/g" -i "../theme-fd/$F"
+    sed -E "s/$ORIG/$NEW2/g" -i "../fd/theme/$F"
     ORIG="%CUSTOM-ICON ([^ ]+) ([0-9]+b?)( (disabled))?"
     NEW1="chrome:\/\/global\/skin\/icons\/\2x\2\/\1.png"
     NEW2="moz-icon:\/\/stock\/\1?size=\2\&state=\4"
     sed -E "s/$ORIG/$NEW1/g" -i "$F"
-    sed -E "s/$ORIG/$NEW2/g" -i "../theme-fd/$F"
+    sed -E "s/$ORIG/$NEW2/g" -i "../fd/theme/$F"
 
-    sed -E "s/16bx16b/16x16/g" -i "$F" "../theme-fd/$F"
-    sed -E "s/size=16b/size=button/g" -i "$F" "../theme-fd/$F"
-    sed -E "s/size=16/size=menu/g" -i "$F" "../theme-fd/$F"
-    sed -E "s/size=24/size=toolbar/g" -i "$F" "../theme-fd/$F"
-    sed -E "s/size=48/size=dialog/g" -i "$F" "../theme-fd/$F"
-    sed -E "s/&state=\"/\"/g" -i "$F" "../theme-fd/$F"
+    sed -E "s/16bx16b/16x16/g" -i "$F" "../fd/theme/$F"
+    sed -E "s/size=16b/size=button/g" -i "$F" "../fd/theme/$F"
+    sed -E "s/size=16/size=menu/g" -i "$F" "../fd/theme/$F"
+    sed -E "s/size=24/size=toolbar/g" -i "$F" "../fd/theme/$F"
+    sed -E "s/size=48/size=dialog/g" -i "$F" "../fd/theme/$F"
+    sed -E "s/&state=\"/\"/g" -i "$F" "../fd/theme/$F"
 
     sed -E "s/%DISABLED-OPACITY/0.5/g" -i "$F"
-    sed -E "s/%DISABLED-OPACITY/1.0/g" -i "../theme-fd/$F"
+    sed -E "s/%DISABLED-OPACITY/1.0/g" -i "../fd/theme/$F"
 done
 cd ..
 
+cp -R options fd
+
 #Package
-NAME1="theme.jar"
-NAME2="theme-fd.jar"
-NAME3="options.xpi"
+THEME_JAR="theme.jar"
+OPTIONS_JAR="options.xpi"
 NAME="gnomerunner_gtk_revived-$VERSION-sm-linux.xpi"
+NAME_FD="gnomerunner_gtk_revived_fd-$VERSION-sm-linux.xpi"
 cd theme
-zip ../$NAME1 * -qr
-cd ../theme-fd
-zip ../$NAME2 * -qr
+zip ../$THEME_JAR * -qr
 cd ../options
-zip ../$NAME3 * -qr
+zip ../$OPTIONS_JAR * -qr
 cd ..
-zip ../$NAME *.xpi *.jar *.rdf -q
+zip ../$NAME $THEME_JAR $OPTIONS_JAR install.rdf -q
+cd fd/theme
+zip ../$THEME_JAR * -qr
+cd ../options
+zip ../$OPTIONS_JAR * -qr
 cd ..
+zip ../../$NAME_FD $THEME_JAR $OPTIONS_JAR install.rdf -q
+cd ../..
