@@ -185,3 +185,8 @@ treechildren::-moz-tree-image(remote-err) {
   list-style-image: url("%STOCK-ICON gtk-dialog-error dialog-error 16");
 }
 
+/* ::::: sidebar splitter ::::: */
+
+#sidebar-splitter {
+  padding-right: 3px !important;
+}

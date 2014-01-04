@@ -50,6 +50,10 @@
   height: 400px;
 } 
 
+#sidebar-splitter {
+  padding-right: 3px !important;
+}
+
 .source-editor,
 .source-editor:focus {
   margin-top: 0px;

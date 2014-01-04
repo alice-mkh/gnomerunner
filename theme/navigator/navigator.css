@@ -460,6 +460,12 @@ toolbar[mode="icons"] #search-button > .button-box > .button-text {
   border-top: 1px solid GrayText;
 }
 
+/* ::::: sidebar splitter ::::: */
+
+#sidebar-splitter {
+  padding-right: 3px !important;
+}
+
 /* ::::: content area ::::: */
 
 #status-bar {
