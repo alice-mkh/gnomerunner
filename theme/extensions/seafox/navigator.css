@@ -1,0 +1,68 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/************ IDENTITY BOX ************/
+
+#identity-box {
+  margin: 0px;
+}
+#identity-box[level],
+#identity-box[src="chrome://global/skin/icons/blacklist_favicon.png"],
+#identity-box[src="chrome://global/skin/icons/warning-16.png"] {
+  border-right:1px solid ThreeDShadow;
+}
+#identity-box[level][showing="true"],
+#identity-box[src="chrome://global/skin/icons/blacklist_favicon.png"][showing="true"],
+#identity-box[src="chrome://global/skin/icons/warning-16.png"][showing="true"] {
+  border-left:1px solid ThreeDShadow;
+}
+#identity-icon-label {
+  margin: 4px 3px 2px 3px;
+  color: white;
+}
+#identity-icon-lock {
+  margin: 2px 3px 3px 0px;
+}
+
+/* space between identity box and url */
+#identity-box[src="chrome://global/skin/icons/blacklist_favicon.png"],
+#identity-box[src="chrome://global/skin/icons/warning-16.png"],
+#identity-box[level] {
+  -moz-margin-end: 4px;
+}
+
+.notification-anchor-icon[showing="true"] {
+  -moz-margin-end: 3px!important;
+}
+
+/************ URLBAR ************/
+
+#urlbar .urlbar-security-level[level="high"] {
+  background-color: transparent;
+  color: inherit!important;
+}
+
+/************* GO BUTTON **************/
+
+#urlbar-go-button {
+  list-style-image: url("Go-arrow.png");
+  -moz-image-region: auto !important;
+  padding: 2px 0px !important;
+}
+
+
+/************** TAB CLOSERS ************/
+
+.tab-close-button {
+  -moz-appearance: toolbarbutton !important;
+  list-style-image: url("%STOCK-ICON gtk-close window-close 16");
+  -moz-image-region: auto !important;
+  margin: -2px !important;
+}
+
+.tab-close-button .toolbarbutton-icon {
+  margin: -4px !important;
+}
+
+.tabbrowser-tab[selected="true"] {
+  font-weight: normal !important;
+}

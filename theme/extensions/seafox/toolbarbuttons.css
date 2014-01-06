@@ -1,0 +1,72 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/*************** TOOLBAR BUTTONS ***************/
+
+#seafox-newwindow-button {
+  list-style-image: url("newwindow.png");
+}
+#seafox-newtab-button {
+  list-style-image: url("newtab.png");
+}
+#seafox-paste-button {
+  list-style-image: url("%STOCK-ICON gtk-paste edit-paste 24");
+}
+#seafox-paste-button[disabled="true"] {
+  list-style-image: url("%STOCK-ICON gtk-paste edit-paste 24 disabled");
+}
+#seafox-copy-button {
+  list-style-image: url("%STOCK-ICON gtk-copy edit-copy 24");
+}
+#seafox-copy-button[disabled="true"] {
+  list-style-image: url("%STOCK-ICON gtk-copy edit-copy 24 disabled");
+}
+#seafox-cut-button {
+  list-style-image: url("%STOCK-ICON gtk-cut edit-cut 24");
+}
+#seafox-cut-button[disabled="true"] {
+  list-style-image: url("%STOCK-ICON gtk-cut edit-cut 24 disabled");
+}
+#seafox-sidebar-button {
+  list-style-image: url("sidebar.png");
+}
+#seafox-downloads-button {
+  list-style-image: url("downloads.png");
+}
+
+toolbar[iconsize="small"] > toolbarpaletteitem > #seafox-newwindow-button,
+toolbar[iconsize="small"] > #seafox-newwindow-button {
+  list-style-image: url("newwindow-small.png");
+}
+toolbar[iconsize="small"] > toolbarpaletteitem > #seafox-newtab-button,
+toolbar[iconsize="small"] > #seafox-newtab-button {
+  list-style-image: url("newtab-small.png");
+}
+toolbar[iconsize="small"] > toolbarpaletteitem > #seafox-paste-button,
+toolbar[iconsize="small"] > #seafox-paste-button {
+  list-style-image: url("%STOCK-ICON gtk-paste edit-paste 16");
+}
+toolbar[iconsize="small"] > #seafox-paste-button[disabled="true"] {
+  list-style-image: url("%STOCK-ICON gtk-paste edit-paste 16 disabled");
+}
+toolbar[iconsize="small"] > toolbarpaletteitem > #seafox-copy-button,
+toolbar[iconsize="small"] > #seafox-copy-button {
+  list-style-image: url("%STOCK-ICON gtk-copy edit-copy 16");
+}
+toolbar[iconsize="small"] > #seafox-copy-button[disabled="true"] {
+  list-style-image: url("%STOCK-ICON gtk-copy edit-copy 16 disabled");
+}
+toolbar[iconsize="small"] > toolbarpaletteitem > #seafox-cut-button,
+toolbar[iconsize="small"] > #seafox-cut-button {
+  list-style-image: url("%STOCK-ICON gtk-cut edit-cut 16");
+}
+toolbar[iconsize="small"] > #seafox-cut-button[disabled="true"] {
+  list-style-image: url("%STOCK-ICON gtk-cut edit-cut 16 disabled");
+}
+toolbar[iconsize="small"] > toolbarpaletteitem > #seafox-sidebar-button,
+toolbar[iconsize="small"] > #seafox-sidebar-button {
+  list-style-image: url("sidebar-small.png");
+}
+toolbar[iconsize="small"] > toolbarpaletteitem > #seafox-downloads-button,
+toolbar[iconsize="small"] > #seafox-downloads-button {
+  list-style-image: url("downloads-small.png");
+}

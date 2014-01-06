@@ -182,7 +182,7 @@ tabpanels {
 }
 
 .tab-close-button > .toolbarbutton-icon {
-  margin: -2px !important;
+  margin: -4px !important;
 }
 
 .tabmail-tab[type="message"] .tab-icon {

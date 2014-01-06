@@ -1,0 +1,21 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#categories {
+  -moz-appearance: listview !important;
+}
+
+#categories .category:not([selected]):not(:hover) {
+  color: -moz-FieldText;
+}
+
+#categories .category:not([selected]):hover {
+  background-color: Highlight;
+  box-shadow: inset 0 0 8em -moz-Field;
+  color: -moz-FieldText;
+}
+
+#categories .category[selected="true"] {
+  background-color: Highlight;
+  box-shadow: none;
+  color: HighlightText;
+}

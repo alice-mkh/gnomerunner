@@ -35,3 +35,5 @@ style chrome://lightbird/content/lightbirdOverlay.xul chrome://$CODE_NAME-calend
 style chrome://lightbird/content/sunbird/calendar.xul chrome://$CODE_NAME-calendar/skin/lightning-toolbar.css
 style chrome://lightbird/content/sunbird/calendar.xul chrome://$CODE_NAME-calendar/skin/sunbird-toolbar.css
 style chrome://lightbird/content/tasksOverlay.xul chrome://$CODE_NAME-calendar/skin/lightbird.css
+
+skin seafoxcompatibility $INTERNAL_NAME extensions/seafox/
