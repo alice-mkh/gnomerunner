@@ -34,6 +34,48 @@
   -moz-margin-end: 3px!important;
 }
 
+/* Verified Identity */
+#identity-box[level="high"][label] {
+  background-color: rgba(50, 150, 50, 0.8) !important;
+}
+
+/* Signed Identity */
+#identity-box[level="high"]:not([label]) {
+  background-color: rgba(30, 80, 170, 0.7) !important;
+}
+
+/* Untrusted Connection */
+#urlbar #identity-box[src="chrome://global/skin/icons/warning-16.png"]:hover,
+#urlbar #identity-box[src="chrome://global/skin/icons/warning-16.png"]:hover:active {
+  background-color:rgb(250,220,100) !important
+}
+
+/* Broken/Partially Encrypted SSL */
+#identity-box[level="broken"]:hover,
+#identity-box[level="broken"]:hover:active {
+  background-color:rgb(250,220,100) !important;
+}
+
+#identity-box[level="high"][label]:hover,
+#identity-box[level="high"]:not([label]):hover,
+#urlbar #identity-box[src="chrome://global/skin/icons/blacklist_favicon.png"]:hover,
+#urlbar #identity-box[src="chrome://global/skin/icons/warning-16.png"]:hover,
+#identity-box[level="broken"]:hover {
+  background-image: linear-gradient(to bottom,
+    rgba(255, 255, 255, .2),
+    rgba(255, 255, 255, .2));
+}
+
+#identity-box[level="high"][label]:hover:active,
+#identity-box[level="high"]:not([label]):hover:active,
+#urlbar #identity-box[src="chrome://global/skin/icons/blacklist_favicon.png"]:hover:active,
+#urlbar #identity-box[src="chrome://global/skin/icons/warning-16.png"]:hover:active,
+#identity-box[level="broken"]:hover:active {
+  background-image: linear-gradient(to bottom,
+    rgba(0, 0, 0, .1),
+    rgba(0, 0, 0, .1));
+}
+
 /************ URLBAR ************/
 
 #urlbar .urlbar-security-level[level="high"] {
@@ -61,8 +103,4 @@
 
 .tab-close-button .toolbarbutton-icon {
   margin: -4px !important;
-}
-
-.tabbrowser-tab[selected="true"] {
-  font-weight: normal !important;
 }
