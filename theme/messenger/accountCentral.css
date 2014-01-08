@@ -59,7 +59,7 @@ spacer.big {
 
 .acctCentralLinkText {
   cursor: pointer;
-  color: #212731;
+  color: -moz-fieldtext;
   /*text-decoration: underline;*/
 }
 
