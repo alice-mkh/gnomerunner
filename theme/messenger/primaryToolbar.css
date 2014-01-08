@@ -187,6 +187,11 @@
   list-style-image: url("chrome://communicator/skin/sync/sync-24-throbber.png");
 }
 
+/* Sync icon is 22x22, we should compensate this */
+toolbar:not([iconsize="small"]) #sync-button .toolbarbutton-icon {
+  margin: 1px;
+}
+
 #locationFolders {
   width: 22em;
 }

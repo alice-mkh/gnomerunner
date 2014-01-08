@@ -63,6 +63,12 @@ toolbar[iconsize="small"] .calbar-toolbarbutton-1 {
   -moz-image-region: auto !important;
 }
 
+/* Sync icon is 22x22, we should compensate this */
+toolbar:not([iconsize="small"]) #calendar-synchronize-button .toolbarbutton-icon,
+toolbar:not([iconsize="small"]) #task-synchronize-button .toolbarbutton-icon {
+  margin: 1px;
+}
+
 #calendar-synchronize-button[disabled],
 #task-synchronize-button[disabled] {
   opacity: .5 !important;
