@@ -14,11 +14,17 @@ DEFAULT=1
 <radio value="0" label="Don't hide"/>
 </radiogroup>
 
-TYPE=bool
-PREF=urlbarhighlight
+TYPE=radio
+PREF=httpshighlight
 NAME=Address bar highlight on HTTPS
-Causes address bar to become black with some GTK themes, like Ambiance.
-DEFAULT=false
+MAX=2
+DEFAULT=2
+<radiogroup>
+<radio value="2" label="Yellow"/>
+<radio value="1" label="Tooltip color"/>
+<radio value="0" label="OFF"/>
+</radiogroup>
+Tooltip color causes address bar to become black with some GTK themes, like Ambiance.
 
 TYPE=bool
 PREF=buttontextnav
