@@ -13,8 +13,7 @@
 }
 
 .folder-icon {
-  list-style-image: url("chrome://global/skin/icons/folder-item.png") !important;
-  -moz-image-region: rect(0px, 32px, 16px, 16px) !important;
+  list-style-image: url("%STOCK-ICON gtk-directory folder 16") !important;
 }
 
 
@@ -23,24 +22,15 @@
 .expander-up,
 .expander-down {
   min-width: 0;
-  padding: 2px 0;
   -moz-padding-start: 2px;
 }
 
-.expander-up {
-  list-style-image: url("chrome://global/skin/arrow/arrow-up.gif");
+.expander-up .button-icon {
+  -moz-appearance: button-arrow-up;
 }
 
-.expander-down {
-  list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
-}
-
-.expander-down:hover:active {
-  list-style-image: url("chrome://global/skin/arrow/arrow-dn-hov.gif");
-}
-
-.expander-up:hover:active {
-  list-style-image: url("chrome://global/skin/arrow/arrow-up-hov.gif");
+.expander-down .button-icon {
+  -moz-appearance: button-arrow-down;
 }
 
 #editBookmarkPanelContent {
