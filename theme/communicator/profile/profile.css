@@ -57,7 +57,8 @@ treechildren::-moz-tree-image(rowMigrate-no) {
 }
 
 /* profile selection dialog */
-html#intro {
+#intro,
+#label {
   width: 17em;
 }
 
