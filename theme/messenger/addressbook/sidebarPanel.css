@@ -43,3 +43,7 @@
   
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
+#abResultsTree{
+  margin-left: -1px !important;
+  margin-bottom: -1px !important;
+}

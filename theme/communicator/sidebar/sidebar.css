@@ -92,6 +92,7 @@
 
 .iframe-panel, .browser-sidebar {
  -moz-appearance: listbox;
+    margin-bottom: -1px;
 }
 
 /* ::::: loading info ::::: */

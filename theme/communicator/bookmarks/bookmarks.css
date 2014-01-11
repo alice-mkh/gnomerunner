@@ -169,3 +169,8 @@ treechildren::-moz-tree-cell-text(Name, separator, selected, focus),
 treechildren::-moz-tree-cell-text(title, separator, selected, focus) {
   color: HighlightText;
 }
+
+/* Sidebar panel */
+.sidebar-placesTree {
+     margin: 0 -1px -1px -1px !important
+}
