@@ -177,8 +177,8 @@ tree[seltype="text"] > treechildren::-moz-tree-cell-text(active, selected, curre
 /* ::::: tree separator ::::: */
 
 treechildren::-moz-tree-separator {
- /* border-top: 1px solid ThreeDShadow;
-  border-bottom: 1px solid ThreeDHighlight;*/
+  border-top: 1px solid ThreeDShadow;
+  border-bottom: 1px solid ThreeDHighlight;
 }
 
 
