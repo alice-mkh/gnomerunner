@@ -1,7 +1,7 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 #categories {
-  -moz-appearance: listview !important;
+  -moz-appearance: listbox !important;
 }
 
 #categories .category:not([selected]):not(:hover) {
