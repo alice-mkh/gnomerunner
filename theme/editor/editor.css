@@ -76,7 +76,16 @@
   font-size: initial;
 }
 
-#ContentWindowDeck {
+#ContentWindowDeck > vbox {
+    background: window;
+}
+
+#content-source {
+    border-top: 1px solid ThreeDShadow;
+}
+
+#ContentWindowDeck,
+#content-frame[editortype="text"] {
   margin-left: -1px;
   margin-right: -1px;
   margin-top: -1px;
