@@ -157,6 +157,8 @@ treechildren::-moz-tree-image(title, container, group) {
 treechildren::-moz-tree-image(Name, separator),
 treechildren::-moz-tree-image(title, separator) {
   list-style-image: none;
+  width: 0px;
+  height: 0px;
 }
 
 treechildren::-moz-tree-cell-text(Name, separator),
