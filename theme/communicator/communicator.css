@@ -61,6 +61,20 @@
   max-height: 25em;
 }
 
+textbox[autocompletesearch="history file"] .autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue) {
+  width: 16px;
+  height: 16px;
+  margin-left: 1px;
+}
+
+textbox[autocompletesearch="history file"] .autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue, directory) {
+  list-style-image: url("%STOCK-ICON gtk-directory folder 16");
+}
+
+textbox[autocompletesearch="history file"] .autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue, file) {
+  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
+}
+
 /* ::::: online/offline icons ::::: */
 
 #offline-status[offline="true"] {
