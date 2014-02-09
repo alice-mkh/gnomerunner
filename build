@@ -154,8 +154,8 @@ cp -R options fd
 #Package
 THEME_JAR="theme.jar"
 OPTIONS_JAR="options.xpi"
-NAME="gnomerunner_gtk_revived-$VERSION-sm-linux.xpi"
-NAME_FD="gnomerunner_gtk_revived_fd-$VERSION-sm-linux.xpi"
+NAME="gnomerunnergtk-revived-$VERSION-sm-linux.xpi"
+NAME_FD="gnomerunnerfd-revived-$VERSION-sm-linux.xpi"
 cd theme
 zip ../$THEME_JAR * -qr
 cd ../options
