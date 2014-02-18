@@ -1,0 +1,14 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/************** TAB CLOSERS ************/
+
+.tab-close-button {
+  -moz-appearance: toolbarbutton !important;
+  list-style-image: url("%STOCK-ICON gtk-close window-close 16") !important;
+  -moz-image-region: auto !important;
+  margin: -2px !important;
+}
+
+.tab-close-button .toolbarbutton-icon {
+  margin: -4px !important;
+}

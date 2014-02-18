@@ -39,4 +39,9 @@ style chrome://lightbird/content/sunbird/calendar.xul chrome://$CODE_NAME-calend
 style chrome://lightbird/content/tasksOverlay.xul chrome://$CODE_NAME-calendar/skin/lightbird.css
 style chrome://lightbird/content/sunbird/calendar.xul chrome://$CODE_NAME-calendar/skin/calendar-unifinder.css
 
+#SeaFox
 skin seafoxcompatibility $INTERNAL_NAME extensions/seafox/
+
+#SeaTab-X-2
+skin $CODE_NAME-seatabx2 $INTERNAL_NAME extensions/seatabx2/
+style chrome://seatabx2/content/seatabx2.xul chrome://$CODE_NAME-seatabx2/skin/seatabx2.css
