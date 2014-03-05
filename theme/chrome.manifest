@@ -44,4 +44,5 @@ skin seafoxcompatibility $INTERNAL_NAME extensions/seafox/
 
 #SeaTab-X-2
 skin $CODE_NAME-seatabx2 $INTERNAL_NAME extensions/seatabx2/
-style chrome://seatabx2/content/seatabx2.xul chrome://$CODE_NAME-seatabx2/skin/seatabx2.css
+style chrome://seatabx2/content/navigator.xul chrome://$CODE_NAME-seatabx2/skin/seatabx2.css
+style chrome://seatabx2/content/messenger.xul chrome://$CODE_NAME-seatabx2/skin/seatabx2.css
