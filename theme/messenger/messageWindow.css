@@ -47,10 +47,6 @@
 
 /* ::::: message header borders ::::: */
 
-#msgHeaderView {
-  border: 1px outset ThreeDFace !important;
-}
-
 #messagepanebox {
  margin-left: -1px;
  margin-right: -1px;

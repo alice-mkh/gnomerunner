@@ -150,10 +150,6 @@
  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;*/
 }
 
-#msgHeaderView {
-  border-left: none !important;
-}
-
 #messagepane {
 /*  border: 1px solid -moz-Field;
   border-right: none;*/

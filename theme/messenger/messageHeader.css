@@ -71,9 +71,6 @@
 /* ::::: msg header captions ::::: */
 
 #msgHeaderView {
-  /*border-right: 1px solid ThreeDShadow;
-  border-left: 1px solid ThreeDShadow;*/
-  -moz-appearance: toolbox;
   background-color: -moz-Dialog;
 }
 
