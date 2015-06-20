@@ -128,12 +128,12 @@ toolbar[labelalign="end"] .toolbarbutton-1 > hbox > vbox {
 .taskbutton {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  margin: -2px !important;
+  margin: 0 !important;
 }
 
 .taskbutton > .toolbarbutton-icon {
-    margin-top: -2px !important;
-    margin-bottom: -2px !important;
+    margin-top: -4px !important;
+    margin-bottom: -4px !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
