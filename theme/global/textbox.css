@@ -76,7 +76,7 @@ textbox.plain html|*.textbox-textarea {
   list-style-image: url("%STOCK-ICON gtk-find edit-find 16");
 }
 
-.textbox-search-icon[chromedir="rtl"] {
+.textbox-search-icon:-moz-locale-dir(rtl) {
   transform: scaleX(-1);
 }
 
