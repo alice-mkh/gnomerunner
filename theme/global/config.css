@@ -14,12 +14,14 @@
 
 #warningBox
 {
+  background-repeat: no-repeat;
+  background-position: 30px 3em;
   background-color: -moz-Field;
   color: -moz-FieldText;
   border: 1px solid ThreeDShadow;
   border-radius: 10px;
   padding: 3em;
-  -moz-padding-start: 30px;
+  -moz-padding-start: 78px;
   margin-left: 1em;
   margin-right: 1em;
 }

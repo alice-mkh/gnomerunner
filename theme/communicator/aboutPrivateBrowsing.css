@@ -12,19 +12,18 @@
 }
 
 /* Pick the desired icons depending on the window's context */
-
-#warningBox.private > #warningBoxIcon {
-  list-style-image: url("%STOCK-ICON gtk-dialog-info dialog-information 48");
-  width: 48px;
+#warningBox.private {
+  background-image: url("%STOCK-ICON gtk-dialog-info dialog-information 48");
+/*  width: 48px;
   height: 48px;
-  -moz-margin-end: 3em;
+  -moz-margin-end: 3em;*/
 }
 
-#warningBox.normal > #warningBoxIcon {
-  list-style-image: url("%STOCK-ICON gtk-dialog-question dialog-question 48");
-  width: 48px;
+#warningBox.normal {
+  background-image: url("%STOCK-ICON gtk-dialog-question dialog-question 48");
+/*  width: 48px;
   height: 48px;
-  -moz-margin-end: 3em;
+  -moz-margin-end: 3em;*/
 }
 
 #trackWarnBox {
@@ -41,7 +40,11 @@
 
 /* Define additional styles to look similar to the netError/certError pages */
 
-#warningTitle {
+#privateTitle,
+#normalTitle {
+  -moz-padding-start: 0px;
+  margin: 0 0 .6em;
+  font-size: 160%;
   font-weight: bold;
 }
 
@@ -54,6 +57,15 @@
 
 #warningInnerBox > button {
   margin: 0.8em 0 1em 0;
+}
+
+#warningOuterBox > vbox > label,
+#warningInnerBox > description {
+  -moz-margin-start: 0;
+}
+
+#warningOuterBox {
+  -moz-padding-start: 3em;
 }
 
 #warningOuterBox > vbox > label,
