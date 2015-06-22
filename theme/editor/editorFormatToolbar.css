@@ -10,63 +10,56 @@
   display: none;
 }
 
-toolbarbutton.formatting-button {
-  min-width: 32px;
-}
-
 #DecreaseFontSizeButton {
-  list-style-image: url("chrome://global/skin/icons/24x24/format-text-smaller.png");
+  list-style-image: url("chrome://global/skin/icons/16x16/format-text-smaller.png");
 }
 
 #DecreaseFontSizeButton[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/24x24/format-text-smaller.png");
   opacity: 0.2 !important;
 }
 
 #IncreaseFontSizeButton {
-  list-style-image: url("chrome://global/skin/icons/24x24/format-text-larger.png");
+  list-style-image: url("chrome://global/skin/icons/16x16/format-text-larger.png");
 }
 
 #IncreaseFontSizeButton[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/24x24/format-text-larger.png");
   opacity: 0.2 !important;
 }
 
 #boldButton {
-  list-style-image: url("%STOCK-ICON gtk-bold format-text-bold 24");
+  list-style-image: url("%STOCK-ICON gtk-bold format-text-bold 16");
 }
 
 #boldButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-bold format-text-bold 24 disabled");
+  list-style-image: url("%STOCK-ICON gtk-bold format-text-bold 16 disabled");
 }
 
 #italicButton {
-  list-style-image: url("%STOCK-ICON gtk-italic format-text-italic 24");
+  list-style-image: url("%STOCK-ICON gtk-italic format-text-italic 16");
 }
 
 #italicButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-italic format-text-italic 24 disabled");
+  list-style-image: url("%STOCK-ICON gtk-italic format-text-italic 16 disabled");
 }
 
 #underlineButton {
-  list-style-image: url("%STOCK-ICON gtk-underline format-text-underline 24");
+  list-style-image: url("%STOCK-ICON gtk-underline format-text-underline 16");
 }
 
 #underlineButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-underline format-text-underline 24 disabled");
+  list-style-image: url("%STOCK-ICON gtk-underline format-text-underline 16 disabled");
 }
 
 #ulButton {
-  list-style-image: url("chrome://global/skin/icons/24x24/format_ul.png");
+  list-style-image: url("chrome://global/skin/icons/16x16/format_ul.png");
 }
 
 #ulButton[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/24x24/format_ul.png");
   opacity: 0.2 !important;
 }
 
 #olButton {
-  list-style-image: url("chrome://global/skin/icons/24x24/format_ol.png");
+  list-style-image: url("chrome://global/skin/icons/16x16/format_ol.png");
 }
 
 #olButton[disabled="true"] {
@@ -74,79 +67,75 @@ toolbarbutton.formatting-button {
 }
 
 #outdentButton {
-  list-style-image: url("%STOCK-ICON gtk-unindent format-indent-less 24");
+  list-style-image: url("%STOCK-ICON gtk-unindent format-indent-less 16");
 }
 
 #outdentButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-unindent format-indent-less 24 disabled");
+  list-style-image: url("%STOCK-ICON gtk-unindent format-indent-less 16 disabled");
 }
 
 #indentButton {
-  list-style-image: url("%STOCK-ICON gtk-indent format-indent-more 24");
+  list-style-image: url("%STOCK-ICON gtk-indent format-indent-more 16");
 }
 
 #indentButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-indent format-indent-more 24 disabled");
+  list-style-image: url("%STOCK-ICON gtk-indent format-indent-more 16 disabled");
 }
 
 #align-left-button {
-  list-style-image: url("%STOCK-ICON gtk-justify-left format-justify-left 24");
+  list-style-image: url("%STOCK-ICON gtk-justify-left format-justify-left 16");
 }
 
 #align-left-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-justify-left format-justify-left 24 disabled");
+  list-style-image: url("%STOCK-ICON gtk-justify-left format-justify-left 16 disabled");
 }
 
 #align-center-button {
-  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 24");
+  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 16");
 }
 
 #align-center-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 24 disabled");
+  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 16 disabled");
 }
 
 #align-right-button {
-  list-style-image: url("%STOCK-ICON gtk-justify-right format-justify-right 24");
+  list-style-image: url("%STOCK-ICON gtk-justify-right format-justify-right 16");
 }
 
 #align-right-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-justify-right format-justify-right 24 disabled");
+  list-style-image: url("%STOCK-ICON gtk-justify-right format-justify-right 16 disabled");
 }
 
 #align-justify-button {
-  list-style-image: url("%STOCK-ICON gtk-justify-fill format-justify-fill 24");
+  list-style-image: url("%STOCK-ICON gtk-justify-fill format-justify-fill 16");
 }
 
 #align-justify-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-justify-fill format-justify-fill 24 disabled");
+  list-style-image: url("%STOCK-ICON gtk-justify-fill format-justify-fill 16 disabled");
 }
 
 #AlignPopupButton {
-  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 24");
+  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 16");
 }
 
 #AlignPopupButton[open="true"] {
-  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 24");
+  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 16");
 }
 
 #AlignPopupButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 24 disabled");
+  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 16 disabled");
 }
 
 #InsertPopupButton {
-  list-style-image: url("%CUSTOM-ICON insert-object 24");
+  list-style-image: url("%CUSTOM-ICON insert-object 16");
 }
 
 #InsertPopupButton[disabled="true"] {
-  list-style-image: url("%CUSTOM-ICON insert-object 24 disabled");
+  list-style-image: url("%CUSTOM-ICON insert-object 16 disabled");
   opacity: %DISABLED-OPACITY !important;
 }
 
 #smileButtonMenu {
-  list-style-image: url("chrome://global/skin/icons/emotes/face-smile.png");
-}
-
-#smileButtonMenu[open="true"] {
   list-style-image: url("chrome://global/skin/icons/emotes/face-smile.png");
 }
 
@@ -317,37 +306,35 @@ toolbarbutton.formatting-button {
 }
 
 #HighlightColorButton {
-  list-style-image: url("chrome://global/skin/icons/24x24/format-text-mark.png");
+  list-style-image: url("chrome://global/skin/icons/16x16/format-text-mark.png");
   background-color: transparent;
 }
 
 #HighlightColorButton[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/24x24/format-text-mark.png");
+  opacity: 0.2 !important;
 }
 
 #absolutePositionButton{
-  list-style-image: url("%STOCK-ICON gtk-fullscreen view-fullscreen 24"); /*FIXME: Not stock!*/
+  list-style-image: url("%STOCK-ICON gtk-fullscreen view-fullscreen 16"); /*FIXME: Not stock!*/
 }
 
 #absolutePositionButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-fullscreen view-fullscreen 24 disabled"); /*FIXME: Not stock!*/
+  list-style-image: url("%STOCK-ICON gtk-fullscreen view-fullscreen 16 disabled"); /*FIXME: Not stock!*/
 }
 
 #absolutePositionButton[checked="true"]{
-  list-style-image: url("%STOCK-ICON gtk-leave-fullscreen view-restore 24"); /*FIXME: Not stock!*/
+  list-style-image: url("%STOCK-ICON gtk-leave-fullscreen view-restore 16"); /*FIXME: Not stock!*/
 }
 
 #increaseZIndexButton {
-  list-style-image: url("chrome://global/skin/icons/24x24/stock_bring-forward.png");
+  list-style-image: url("chrome://global/skin/icons/16x16/stock_bring-forward.png");
 }
 #increaseZIndexButton[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/24x24/stock_bring-forward.png");
   opacity: 0.2 !important;
 }
 #decreaseZIndexButton {
-  list-style-image: url("chrome://global/skin/icons/24x24/stock_bring-backward.png");
+  list-style-image: url("chrome://global/skin/icons/16x16/stock_bring-backward.png");
 }
 #decreaseZIndexButton[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/24x24/stock_bring-backward.png");
   opacity: 0.2 !important;
 }
