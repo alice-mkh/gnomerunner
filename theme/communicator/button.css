@@ -80,8 +80,8 @@ toolbar[labelalign="end"] .toolbarbutton-1 > hbox > vbox {
   border-radius: 0;
   min-width: 0;
   background-color: transparent;
-}
-
+}  
+  
 .button-toolbar > .button-box  {
   margin: 0;
   padding: 1px 2px;
@@ -97,9 +97,9 @@ toolbar[labelalign="end"] .toolbarbutton-1 > hbox > vbox {
 .button-toolbar > .button-box > .button-icon,
 .button-toolbar > .button-box > .button-text {
   -moz-margin-end: 2px;
-}
+}  
 
-.button-toolbar,
+.button-toolbar, 
 .button-toolbar[disabled="true"]:hover,
 .button-toolbar[disabled="true"]:hover:active {
   -moz-border-top-colors: transparent ThreeDHighlight;
@@ -107,7 +107,7 @@ toolbar[labelalign="end"] .toolbarbutton-1 > hbox > vbox {
   -moz-border-bottom-colors: transparent ThreeDShadow;
   -moz-border-left-colors: transparent ThreeDHighlight;
 }
-
+  
 .button-toolbar:hover {
   -moz-border-top-colors: ThreeDDarkShadow ThreeDHighlight;
   -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
@@ -121,7 +121,6 @@ toolbar[labelalign="end"] .toolbarbutton-1 > hbox > vbox {
   -moz-border-bottom-colors: ThreeDDarkShadow ThreeDHighlight;
   -moz-border-left-colors: ThreeDDarkShadow ThreeDShadow;
 }
-
 
 /* ::::: taskbuttons ::::: */
 
@@ -145,45 +144,9 @@ toolbar[labelalign="end"] .toolbarbutton-1 > hbox > vbox {
   -moz-padding-end: 0px;
 }
 
-/* override winstripe */
+/* override windows */
 
 .toolbarbutton-icon[label]:not([label=""]),
 .toolbarbutton-icon[type="menu"] {
   -moz-margin-end: 2px;
-}
-
-/**
- * Fix the missing dropmarker bevel in Classic (bug 216266)
- * Not used in Firefox but used elsewhere,
- **/
-
-@media (-moz-windows-classic) {
-
-  .toolbarbutton-menubutton-dropmarker {
-    border: 1px solid;
-    padding: 2px;
-    -moz-border-top-colors: transparent;
-    -moz-border-right-colors: transparent;
-    -moz-border-bottom-colors: transparent;
-    -moz-border-left-colors: transparent;
-  }
-
-  toolbarbutton[type="menu-button"]:hover > .toolbarbutton-menubutton-dropmarker:not([disabled="true"]) {
-    -moz-border-top-colors: ThreeDHighlight;
-    -moz-border-right-colors: ThreeDShadow;
-    -moz-border-bottom-colors: ThreeDShadow;
-    -moz-border-left-colors: ThreeDHighlight;
-  }
-
-  toolbarbutton[type="menu-button"]:hover:active > .toolbarbutton-menubutton-dropmarker:not([disabled="true"]),
-  toolbarbutton[type="menu-button"][open="true"] > .toolbarbutton-menubutton-dropmarker:not([disabled="true"]) {
-    -moz-border-top-colors: ThreeDShadow;
-    -moz-border-right-colors: ThreeDHighlight;
-    -moz-border-bottom-colors: ThreeDHighlight;
-    -moz-border-left-colors: ThreeDShadow;
-    padding-top: 3px;
-    padding-bottom: 1px;
-    -moz-padding-start: 3px;
-    -moz-padding-end: 1px;
-  }
 }

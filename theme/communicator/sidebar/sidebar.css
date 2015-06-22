@@ -93,17 +93,17 @@
 .sbtab-tab {
   -moz-box-align: center;
   cursor: pointer;
-  -moz-appearance: tab !important;
-  padding: 1px !important;
-  color: -moz-DialogText !important;
+  -moz-appearance: tab;
+  padding: 1px;
+  color: -moz-DialogText;
   text-shadow: none;
   -moz-margin-start: -5px;
-  -moz-padding-start: 7px;
+  -moz-padding-start: 8px;
   -moz-padding-end: 2px;
 }
 
 .sbtab-label {
-  margin: 0px 0px 0px 0px !important;
+  margin: 0 !important;
 }
 
 .sbtab-twisty {

@@ -32,10 +32,16 @@ html {
   color: InfoText;
 }
 
-.feedBackground,
-.videoPodcastBackground,
-.audioPodcastBackground {
+.feedBackground {
   background: url("chrome://communicator/skin/icons/feedIcon.png") 0% 10% no-repeat InfoBackground;
+}
+
+.videoPodcastBackground {
+  background: url("chrome://communicator/skin/icons/videoFeedIcon.png") 0% 10% no-repeat InfoBackground;
+}
+
+.audioPodcastBackground {
+  background: url("chrome://communicator/skin/icons/audioFeedIcon.png") 0% 10% no-repeat InfoBackground;
 }
 
 #feedHeader[dir="rtl"] {

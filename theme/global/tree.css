@@ -183,7 +183,7 @@ treechildren::-moz-tree-progressmeter {
 }
 
 treechildren::-moz-tree-progressmeter(progressUndetermined) {
-  opacity; 0.5;
+  opacity: 0.5;
 }
 
 treechildren::-moz-tree-cell-text(progressmeter) {

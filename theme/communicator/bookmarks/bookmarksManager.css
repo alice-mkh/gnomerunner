@@ -20,12 +20,12 @@
 #placesMenu {
   -moz-appearance: none !important;
 }
-
+/*
 #placesMenu > menu {
    -moz-appearance: toolbarbutton !important;
    color: ButtonText !important;
 }
-
+*/
 #back-button, #forward-button {
     visibility: collapse !important;
 }
