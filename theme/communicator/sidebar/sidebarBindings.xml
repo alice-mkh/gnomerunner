@@ -7,10 +7,12 @@
 
   <binding id="sbtab" extends="xul:button">
     <content>
+     <xul:hbox class="sbtab-tab" xbl:inherits="selected,visuallyselected=selected" flex="1">
       <xul:image class="sbtab-twisty" xbl:inherits="selected"/>
       <xul:label class="sbtab-label" xbl:inherits="value=label,accesskey" crop="right"/>
       <xul:spacer flex="1"/>
       <xul:image class="sbtab-texture"/>
+     </xul:hbox>
     </content>
   </binding>
 
