@@ -283,11 +283,11 @@ button[icon="revert"][disabled="true"] .button-icon {
   list-style-image: url("%STOCK-ICON gtk-revert-to-saved-ltr document-revert 16b disabled");
 }
 
-button[icon="revert"][chromedir="rtl"] .button-icon {
+button[icon="revert"]:-moz-locale-dir(rtl) .button-icon {
   list-style-image: url("%STOCK-ICON gtk-revert-to-saved-rtl document-revert 16b");
 }
 
-button[icon="revert"][disabled="true"][chromedir="rtl"] .button-icon {
+button[icon="revert"]:-moz-locale-dir(rtl)[disabled="true"] .button-icon {
   list-style-image: url("%STOCK-ICON gtk-revert-to-saved-rtl document-revert 16b disabled");
 }
 

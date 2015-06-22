@@ -9,8 +9,6 @@
 /* all localizable skin settings shall live here */
 @import url("chrome://global/locale/intl.css");
 
-@import url("chrome://global/skin/formatting.css");
-
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 /* ::::: XBL bindings ::::: */
@@ -23,13 +21,8 @@ radio {
   -moz-binding: url("chrome://global/skin/globalBindings.xml#radio-with-spacing");
 }
 
-menulist > menupopup,
-.menulist-menupopup {
+menulist > menupopup {
   -moz-binding: url("chrome://global/content/bindings/popup.xml#popup-scrollbars");
-}
-
-.menulist-compact {
-  -moz-binding: url("chrome://global/skin/globalBindings.xml#menulist-compact");
 }
 
 progressmeter[mode="undetermined"] {
@@ -61,20 +54,7 @@ window.dialog {
   -moz-padding-end: 10px;
 }
 
-[wait-cursor] {
-  cursor: wait !important;
-}
-
 /* ::::: alert icons :::::*/
-
-.message-icon,
-.alert-icon,
-.error-icon,
-.question-icon,
-.authentication-icon {
-  width: 40px;
-  height: 40px;
-}
 
 .message-icon {
   list-style-image: url("%STOCK-ICON gtk-dialog-info dialog-information 48");
@@ -143,11 +123,6 @@ statusbarpanel {
   padding: 0 1px;
 }
 
-resizer[dir="bottomright"] {
-  -moz-appearance: resizer;
-  cursor: se-resize;
-}
-
 /* XXXBlake yeah, shoot me -- these don't belong here.  I'll move them later. */
 
 sidebarheader {
@@ -176,19 +151,7 @@ statusbarpanel:-moz-lwtheme {
   -moz-appearance: none;
 }
 
-:root:-moz-lwtheme,
-[lwthemefooter="true"],
-statusbar:-moz-lwtheme,
-statusbarpanel:-moz-lwtheme,
-.statusbar-resizerpanel:-moz-lwtheme,
-.statusbarpanel-iconic:-moz-lwtheme,
-.statusbarpanel-iconic-text:-moz-lwtheme,
-.statusbarpanel-menu-iconic:-moz-lwtheme {
-  border-color: transparent;
-}
-
 sidebarheader:-moz-lwtheme {
-  -moz-appearance: none;
   background: none;
 }
 
@@ -245,8 +208,8 @@ separator.groove[orient="vertical"] {
 .small-margin {
   margin: 1px 2px;
 }
-
-.plain.searchbar-engine-button {
+    
+.plain {
   -moz-appearance: none;
   margin: 0 !important;
   border: none;
@@ -300,18 +263,24 @@ label[disabled="true"] {
 
 .text-link {
   color: -moz-nativehyperlinktext;
-  text-decoration: underline;
-  border: 1px solid transparent;
   cursor: pointer;
 }
-  
-.text-link:focus {
-  border: 1px dotted -moz-DialogText;
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.text-link:-moz-focusring {
+  outline: 1px dotted;
 }
 
 notification > button {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+popupnotificationcontent {
+  margin-top: .5em;
 }
 
 /* :::::: autoscroll popup ::::: */
@@ -334,4 +303,17 @@ notification > button {
 
 .autoscroller[scrolldir="EW"] {
   background-position: right bottom;
+}
+
+/* :::::: Close button icons ::::: */
+
+.close-icon {
+  -moz-appearance: toolbarbutton !important;
+  list-style-image: url("%STOCK-ICON gtk-close window-close 16") !important;
+  padding: 2px !important;
+  -moz-image-region: auto !important;
+}
+
+.close-icon > .toolbarbutton-icon {
+  margin: -2px !important;
 }

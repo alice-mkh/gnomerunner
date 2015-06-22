@@ -25,15 +25,16 @@ toolbar {
 
 menubar, toolbar[type="menubar"] {
   -moz-appearance: menubar;
+  color: -moz-menubartext;
   min-width: 1px;
   min-height: 20px;
-  /*padding: 1px 0px;*/
-  padding: 0;
+  padding: 1px 0px;
 }
 
 menubar:-moz-lwtheme,
 toolbar:-moz-lwtheme {
   -moz-appearance: none;
+  color: inherit;
 }
 
 /* in browser.xul, the menubar is inside a toolbar... */
@@ -57,20 +58,13 @@ toolbarspacer {
 /* ::::: toolbarpaletteitem ::::: */
 
 toolbarpaletteitem {
-  cursor: -moz-grab;
+  cursor: grab;
 }
 
 .toolbarpaletteitem-box[type="spacer"],
 .toolbarpaletteitem-box[type="spring"] {
   border: 1px solid #808080;
   background-color: #FFF !important;
-}
-
-toolbarpaletteitem[place="toolbar"] {
-  margin-left: -2px;
-  margin-right: -2px;
-  border-left: 2px solid transparent;
-  border-right: 2px solid transparent;
 }
 
 toolbarpaletteitem[place="toolbar"] > toolbarspacer {
@@ -102,6 +96,13 @@ toolbarpaletteitem[place="toolbar"] > toolbarspacer {
 }
 
 /* ..... drag and drop feedback ..... */
+
+toolbarpaletteitem[place="toolbar"] {
+  margin-left: -2px;
+  margin-right: -2px;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
 
 toolbarpaletteitem[dragover="left"] {
   border-left-color: #000000;

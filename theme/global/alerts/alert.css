@@ -33,6 +33,11 @@
   background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.1));
 }
 
+#alertNotification[clickable="true"]:hover .alertTextBox,
+#alertNotification[clickable="true"]:hover .alertCloseBox {
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.3));
+}
+
 .alertTitle {
   font-weight: bold;
   font-size: 110%;
@@ -41,7 +46,7 @@
 #alertImage {
   max-width: 48px;
   max-height: 48px;
-  list-style-image: url("chrome://global/skin/alerts/notification-48.png");
+  list-style-image: url(chrome://global/skin/alerts/notification-48.png);
 }
 
 #alertNotification[clickable="true"] {
