@@ -90,10 +90,10 @@ iframe {
 
 statusbar {
   -moz-appearance: statusbar;
-  border-top: 1px solid ThreeDLightShadow;
-  border-left: 1px solid ThreeDShadow;
-  border-right: 1px solid ThreeDHighlight;
-  border-bottom: 1px solid ThreeDHighlight;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
   background-color: -moz-Dialog;
   min-height: 22px;
 }
@@ -102,10 +102,10 @@ statusbarpanel {
   -moz-appearance: statusbarpanel;
   -moz-box-align: center;
   -moz-box-pack: center;
-  border-left: 1px solid ThreeDHighlight;
-  border-top: 1px solid ThreeDHighlight;
-  border-right: 1px solid ThreeDShadow;
-  border-bottom: 1px solid ThreeDShadow;
+  border-left: 1px solid transparent;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
   padding: 0 4px;
 }
 

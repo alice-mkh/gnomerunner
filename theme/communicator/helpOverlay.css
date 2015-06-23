@@ -30,11 +30,11 @@
   list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 24 disabled");
 }
 
-#help-back-button[chromedir="rtl"] {
+#help-back-button:-moz-locale-dir(rtl) {
   list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 24");
 }
 
-#help-back-button[chromedir="rtl"][disabled="true"] {
+#help-back-button:-moz-locale-dir(rtl)[disabled="true"] {
   list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 24 disabled");
 }
 
@@ -46,11 +46,11 @@
   list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 24 disabled");
 }
 
-#help-forward-button[chromedir="rtl"] {
+#help-forward-button:-moz-locale-dir(rtl) {
   list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 24");
 }
 
-#help-forward-button[disabled="true"][chromedir="rtl"] {
+#help-forward-button:-moz-locale-dir(rtl)[disabled="true"] {
   list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 24 disabled");
 }
 

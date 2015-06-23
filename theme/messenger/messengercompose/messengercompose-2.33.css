@@ -2,10 +2,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-/* ===== msgReadSecurityInfo.css ========================================
-  == Styles for the security info window when displaying received mail.
+/* ===== messengercompose.css ===========================================
+  == New menulist-compact binding for 2.33.
   ======================================================================= */
 
-@import url("chrome://messenger/skin/");
-
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+.menulist-compact {
+  -moz-binding: url("chrome://messenger/content/messengercompose/menulistCompactBindings.xml#menulist-compact") !important;
+}

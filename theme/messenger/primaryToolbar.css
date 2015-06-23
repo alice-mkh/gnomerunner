@@ -1,40 +1,6 @@
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
- * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
- * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
- * The Original Code is Mozilla Communicator client code, released
- * March 31, 1998.
- *
- * The Initial Developer of the Original Code is
- * Netscape Communications Corporation.
- * Portions created by the Initial Developer are Copyright (C) 1998-1999
- * the Initial Developer. All Rights Reserved.
- *
- * Contributor(s):
- *   Manuel Reimer (Manuel.Reimer@gmx.de)
- *
- * Alternatively, the contents of this file may be used under the terms of
- * either of the GNU General Public License Version 2 or later (the "GPL"),
- * or the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 /* ===== primaryToolbar.css =============================================
   == Images for the Mail primary toolbar.
@@ -48,52 +14,52 @@
   list-style-image: url("%CUSTOM-ICON mail-send-receive 24");
 }
 
-#button-getmsg[disabled="true"] {
+#button-getmsg[disabled] {
   list-style-image: url("%CUSTOM-ICON mail-send-receive 24 disabled");
   opacity: %DISABLED-OPACITY !important;
-}
+} 
 
 #button-newmsg {
   list-style-image: url("%CUSTOM-ICON mail-message-new 24");
 }
 
-#button-newmsg[disabled="true"] {
+#button-newmsg[disabled] {
   list-style-image: url("%CUSTOM-ICON mail-message-new 24 disabled");
   opacity: %DISABLED-OPACITY !important;
-}
+} 
 
 #button-reply {
     list-style-image:url("%CUSTOM-ICON mail-reply-sender 24");
 }
 
-#button-reply[disabled="true"] {
+#button-reply[disabled] {
   list-style-image: url("%CUSTOM-ICON mail-reply-sender 24 disabled");
   opacity: %DISABLED-OPACITY !important;
-}
+} 
 
 #button-replyall {
     list-style-image:url("%CUSTOM-ICON mail-reply-all 24");
 }
 
-#button-replyall[disabled="true"] {
+#button-replyall[disabled] {
   list-style-image: url("%CUSTOM-ICON mail-reply-all 24 disabled");
   opacity: %DISABLED-OPACITY !important;
-}
+} 
 
 #button-forward {
   list-style-image: url("%CUSTOM-ICON mail-forward 24");
 }
 
-#button-forward[disabled="true"] {
+#button-forward[disabled] {
   list-style-image: url("%CUSTOM-ICON mail-forward 24 disabled");
   opacity: %DISABLED-OPACITY !important;
-}
+} 
 
 #button-file {
   list-style-image: url("%STOCK-ICON gtk-directory folder 24");
 }
 
-#button-file[disabled="true"] {
+#button-file[disabled] {
   list-style-image: url("%STOCK-ICON gtk-directory folder 24 disabled");
 } 
 
@@ -103,13 +69,13 @@
 
 #button-goback[disabled="true"] {
   list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 24 disabled");
-}
+} 
 
-#button-goback[chromedir="rtl"] {
+#button-goback:-moz-locale-dir(rtl) {
   list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 24");
 }
 
-#button-goback[disabled="true"][chromedir="rtl"] {
+#button-goback:-moz-locale-dir(rtl)[disabled="true"] {
   list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 24 disabled");
 }
 
@@ -121,11 +87,11 @@
   list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 24 disabled");
 }
 
-#button-goforward[chromedir="rtl"] {
+#button-goforward:-moz-locale-dir(rtl) {
   list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 24");
 }
 
-#button-goforward[disabled="true"][chromedir="rtl"] {
+#button-goforward:-moz-locale-dir(rtl)[disabled="true"] {
   list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 24 disabled");
 }
 
@@ -133,26 +99,30 @@
   list-style-image: url("%STOCK-ICON gtk-go-down go-down 24");
 }
 
-#button-next[disabled="true"] {
+#button-next[disabled] {
   list-style-image: url("%STOCK-ICON gtk-go-down go-down 24 disabled");
-}
+} 
 
 #button-delete {
   list-style-image: url("%STOCK-ICON gtk-delete edit-delete 24");
 }
 
-#button-delete[disabled="true"] {
+#button-delete[disabled] {
   list-style-image: url("%STOCK-ICON gtk-delete edit-delete 24 disabled");
+}
+
+toolbarpaletteitem > #button-delete {
+  display: -moz-box;
 }
 
 #button-mark {
   list-style-image: url("%CUSTOM-ICON mail-mark-read 24");
 }
 
-#button-mark[disabled="true"] {
+#button-mark[disabled] {
   list-style-image: url("%CUSTOM-ICON mail-mark-read 24 disabled");
   opacity: %DISABLED-OPACITY !important;
-}
+} 
 
 #button-junk {
   list-style-image: url("%CUSTOM-ICON mail-mark-junk 24");
@@ -167,7 +137,7 @@
   list-style-image: url("%STOCK-ICON gtk-print document-print 24");
 }
 
-#button-print[disabled="true"] {
+#button-print[disabled] {
   list-style-image: url("%STOCK-ICON gtk-print document-print 24 disabled");
 }
 
@@ -188,10 +158,10 @@
 }
 
 /* Sync icon is 22x22, we should compensate this */
-toolbar:not([iconsize="small"]) #sync-button .toolbarbutton-icon {
+/*toolbar:not([iconsize="small"]) #sync-button .toolbarbutton-icon {
   margin: 1px;
 }
-
+*/
 #locationFolders {
   width: 22em;
 }
@@ -220,7 +190,7 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #button-getmsg {
   list-style-image: url("%CUSTOM-ICON mail-send-receive 16");
 }
 
-toolbar[iconsize="small"] > #button-getmsg[disabled="true"] {
+toolbar[iconsize="small"] > #button-getmsg[disabled] {
   list-style-image: url("%CUSTOM-ICON mail-send-receive 16 disabled");
 }
 
@@ -229,7 +199,7 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #button-newmsg {
   list-style-image: url("%CUSTOM-ICON mail-message-new 16");
 }
 
-toolbar[iconsize="small"] > #button-newmsg[disabled="true"] {
+toolbar[iconsize="small"] > #button-newmsg[disabled] {
   list-style-image: url("%CUSTOM-ICON mail-message-new 16 disabled");
 }
 
@@ -238,7 +208,7 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #button-reply {
   list-style-image:url("%CUSTOM-ICON mail-reply-sender 16");
 }
 
-toolbar[iconsize="small"] > #button-reply[disabled="true"] {
+toolbar[iconsize="small"] > #button-reply[disabled] {
   list-style-image: url("%CUSTOM-ICON mail-reply-sender 16 disabled");
 }
 
@@ -247,7 +217,7 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #button-replyall {
   list-style-image:url("%CUSTOM-ICON mail-reply-all 16");
 }
 
-toolbar[iconsize="small"] > #button-replyall[disabled="true"] {
+toolbar[iconsize="small"] > #button-replyall[disabled] {
   list-style-image: url("%CUSTOM-ICON mail-reply-all 16 disabled");
 }
 
@@ -256,7 +226,7 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #button-forward {
   list-style-image: url("%CUSTOM-ICON mail-forward 16");
 }
 
-toolbar[iconsize="small"] > #button-forward[disabled="true"] {
+toolbar[iconsize="small"] > #button-forward[disabled] {
   list-style-image: url("%CUSTOM-ICON mail-forward 16 disabled");
 }
 
@@ -265,7 +235,7 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #button-file {
   list-style-image: url("%STOCK-ICON gtk-directory folder 16");
 }
 
-toolbar[iconsize="small"] > #button-file[disabled="true"] {
+toolbar[iconsize="small"] > #button-file[disabled] {
   list-style-image: url("%STOCK-ICON gtk-directory folder 16 disabled");
 }
 
@@ -278,12 +248,12 @@ toolbar[iconsize="small"] > #button-goback[disabled="true"] {
   list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 16 disabled");
 }
 
-toolbar[iconsize="small"] > #button-goback[chromedir="rtl"],
-toolbar[iconsize="small"] > toolbarpaletteitem > #button-goback[chromedir="rtl"] {
+toolbar[iconsize="small"] > #button-goback:-moz-locale-dir(rtl),
+toolbar[iconsize="small"] > toolbarpaletteitem > #button-goback:-moz-locale-dir(rtl) {
   list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 16");
 }
 
-toolbar[iconsize="small"] > #button-goback[disabled="true"][chromedir="rtl"] {
+toolbar[iconsize="small"] > #button-goback:-moz-locale-dir(rtl)[disabled="true"] {
   list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 16 disabled");
 }
 
@@ -296,12 +266,12 @@ toolbar[iconsize="small"] > #button-goforward[disabled="true"] {
   list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 16 disabled");
 }
 
-toolbar[iconsize="small"] > #button-goforward[chromedir="rtl"],
-toolbar[iconsize="small"] > toolbarpaletteitem > #button-goforward[chromedir="rtl"] {
+toolbar[iconsize="small"] > #button-goforward:-moz-locale-dir(rtl),
+toolbar[iconsize="small"] > toolbarpaletteitem > #button-goforward:-moz-locale-dir(rtl) {
   list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 16");
 }
 
-toolbar[iconsize="small"] > #button-goforward[disabled="true"][chromedir="rtl"] {
+toolbar[iconsize="small"] > #button-goforward:-moz-locale-dir(rtl)[disabled="true"] {
   list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 16 disabled");
 }
 
@@ -319,7 +289,8 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #button-delete {
   list-style-image: url("%STOCK-ICON gtk-delete edit-delete 16");
 }
 
-toolbar[iconsize="small"] > #button-delete[disabled] {
+toolbar[iconsize="small"] > #button-delete[disabled],
+toolbar[iconsize="small"] > toolbarpaletteitem > #button-delete[disabled] {
   list-style-image: url("%STOCK-ICON gtk-delete edit-delete 16 disabled");
 }
 
@@ -359,47 +330,35 @@ toolbar[iconsize="small"] > #button-stop[disabled="true"] {
   list-style-image: url("%STOCK-ICON gtk-stop process-stop 16 disabled");
 }
 
-toolbar[iconsize="small"] > #sync-button,
-toolbar[iconsize="small"] > toolbarpaletteitem > #sync-button {
+toolbar[iconsize="small"] > toolbarpaletteitem > #sync-button,
+toolbar[iconsize="small"] > #sync-button {
   list-style-image: url("chrome://communicator/skin/sync/sync-16.png");
 }
 
+toolbar[iconsize="small"] > toolbarpaletteitem > #sync-button[status=active],
 toolbar[iconsize="small"] > #sync-button[status=active] {
   list-style-image: url("chrome://communicator/skin/sync/sync-16-throbber.png");
 }
 
 /* ::::: message notification bar style rules ::::: */
 
-.msgNotificationBar {
-  border-bottom: 1px solid;
-  -moz-border-bottom-colors: #000000;
-  -moz-appearance: toolbox;
-  background-color: #C7BC8F;
-  color: black;
+.msgNotificationBar:-moz-lwtheme {
+  text-shadow: none;
 }
 
-.msgNotificationBarText {
-  font-weight: bold;
+.messageImage[value="remoteContent"] {
+  list-style-image: url("%STOCK-ICON gtk-missing-image image-missing 16");
 }
 
-#junkBarImage {
-  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 48");
+.messageImage[value="junkContent"] {
+  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
+  -moz-image-region: rect(80px 16px 96px 0px);
 }
 
-#junkIcon {
-  margin-left: 0.5ex;
-  list-style-image: url("chrome://global/skin/icons/16x16/mail-junk.png");
+.messageImage[value="phishingContent"] {
+  list-style-image: url("chrome://global/skin/icons/16x16/phishing.png");
 }
 
-#remoteContentImage {
-  list-style-image: url("%STOCK-ICON gtk-missing-image image-missing 48");
-  padding: 3px;
-}
-
-#mdnBarImage {
-  list-style-image: url("%STOCK-ICON gtk-dialog-question dialog-question 48");
-}
-
-#allowRemoteContentForAuthorDesc {
-  padding-left: 10px;
+.messageImage[value="mdnContent"] {
+  list-style-image: url("%STOCK-ICON gtk-dialog-question dialog-question 16");
 }

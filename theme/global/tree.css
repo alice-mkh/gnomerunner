@@ -29,11 +29,11 @@ treechildren::-moz-tree-row {
   min-height: 18px;
   height: 1.3em;
 }
-/*
+
 treechildren:not(.autocomplete-treebody)::-moz-tree-row(multicol, odd) {
   background-color: -moz-oddtreerow;
 }
-*/
+
 treechildren:not(.autocomplete-treebody)::-moz-tree-row(selected) {
   background-color: -moz-cellhighlight;
 }

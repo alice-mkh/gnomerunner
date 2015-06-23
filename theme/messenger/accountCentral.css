@@ -11,9 +11,7 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 #acctCentralGrid {
-  -moz-appearance: listbox;
   background-color: -moz-Field;
-  color: -moz-FieldText;
 }
 
 spacer {
@@ -33,14 +31,12 @@ spacer.big {
   -moz-padding-end: 0px;
   font-size: 180%;
   font-weight: bold;
-  /*color: #000000;*/
 }
 
 .acctCentralRow {
   -moz-binding: url("chrome://communicator/skin/communicatorBindings.xml#row-iconic");
   -moz-margin-start: 10px;
   font-size: 125%;
-  /*color: #000000;*/
 }
 
 .row-iconic-icon {
@@ -60,7 +56,6 @@ spacer.big {
 .acctCentralLinkText {
   cursor: pointer;
   color: -moz-fieldtext;
-  /*text-decoration: underline;*/
 }
 
 .acctCentralLinkText:hover {

@@ -1,40 +1,6 @@
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
- * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
- * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
- * The Original Code is Mozilla Communicator client code, released
- * March 31, 1998.
- *
- * The Initial Developer of the Original Code is
- * Netscape Communications Corporation.
- * Portions created by the Initial Developer are Copyright (C) 1998-1999
- * the Initial Developer. All Rights Reserved.
- *
- * Contributor(s):
- *   Manuel Reimer (Manuel.Reimer@gmx.de)
- *
- * Alternatively, the contents of this file may be used under the terms of
- * either of the GNU General Public License Version 2 or later (the "GPL"),
- * or the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 /* ===== messageHeader.css ==============================================
   == Styles for the header toolbars of a mail message.
@@ -57,51 +23,40 @@
   list-style-image: url("%CUSTOM-ICON mail-attachment 24");
 }
 
-#attachmentTree {
-  margin: 3px 0;
-  border: none;
-  height: 0;
-  width: 20em;
-}
-
 #attachmentText {
   font-weight: bold;
 }
 
 /* ::::: msg header captions ::::: */
 
-#msgHeaderView {
-  background-color: -moz-Dialog;
-}
-
 #collapsedHeaderView,
 #expandedHeaderView {
-  /*border-bottom: 1px solid ThreeDDarkShadow;*/
+  background-color: -moz-dialog;
+  border-bottom: 1px solid ThreeDShadow;
   min-width: 1px;
 }
 
 .headerNameBox {
   width: 7.7em;
-  background-color: transparent;
 }
 
 .headerName {
-  margin: 0 .5em 5px 0;
-  min-height: 18px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  -moz-margin-start: 0px;
+  -moz-margin-end: .5em;
   font-weight: bold;
   text-align: right;
-  background-color: transparent;
 }
 
 .headerValue {
   margin: 0;
   min-width: 50px;
   white-space: normal;
-  background-color: transparent;
 }
 
 .headerValueBox {
-  margin: 0 0 5px 0;
+  margin: 0 0 5px;
 }
 
 .headerValueBox[singleline="true"] {
@@ -110,12 +65,11 @@
 
 .subjectvalue {
   font-weight: bold;
-  background-color: transparent;
 }
 
 .tagvalue {
   margin-top: 0;
-  margin-left: 0;
+  -moz-margin-start: 0;
 }
 
 /* ::::: msg header message ids ::::: */
@@ -125,7 +79,6 @@
   color: #0000FF;
   text-decoration: underline;
   margin: 0;
-  background-color: transparent;
 }
 
 .messageIdDisplayButton:hover {
@@ -133,7 +86,7 @@
 }
 
 .messageIdDisplayImage {
-  padding-left: 2px;
+  -moz-padding-start: 2px;
   -moz-box-pack: end;
 }
 
@@ -144,7 +97,6 @@
   color: #0000FF;
   text-decoration: underline;
   margin: 0;
-  background-color: transparent;
 }
 
 .emailDisplayButton:hover {
@@ -152,10 +104,15 @@
 }
 
 .emailDisplayImage {
-  padding-left: 2px;
+  -moz-padding-start: 2px;
   -moz-box-pack: end;
 }
- 
+
+mail-emailaddress:-moz-focusring {
+  outline: 1px dotted;
+  outline-offset: -1px;
+}
+
 /* ::::: email address twisty ::::: */
 
 .addresstwisty {
@@ -171,7 +128,7 @@
 
 .expandHeaderViewButton,
 .collapsedHeaderViewButton  {
-  margin: 2px .5em 0 .5em;
+  margin: 2px .5em 0;
 }
 
 .expandHeaderViewButton {
@@ -184,21 +141,16 @@
 
 /* ::::: collapsed view styles ::::: */
 
-#collapsedsubjectValue {
-    margin-top: -6px !important;
-}
-
 #collapsedAttachmentBox {
   -moz-box-pack: center;
 }
 
 #collapseddateValue {
-  margin: .5em .5em;
+  margin: 0 .5em;
   text-align: right;
-  background-color: transparent;
 }
 
-#collapseddateValue > .textbox-input-box menupopup { 
+#collapseddateValue > .textbox-input-box menupopup {
   text-align: left;
 }
 
@@ -210,19 +162,20 @@
   width: 12em;
 }
 
-.collapsedHeaderDisplayName { 
-  margin: 0 .5em 0 .55em;
+.collapsedHeaderDisplayName {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -moz-margin-start: .55em;
+  -moz-margin-end: .5em;
   min-height: 16px;
   font-weight: bold;
-  background-color: transparent;
 }
 
 .collapsedHeaderValue {
   margin: 0;
-  background-color: transparent;
 }
 
 .collapsedAttachmentButton {
   list-style-image: url("%CUSTOM-ICON mail-attachment 24");
-  margin-right: .5em;
+  -moz-margin-end: .5em;
 }

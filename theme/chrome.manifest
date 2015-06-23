@@ -6,10 +6,15 @@ skin global $INTERNAL_NAME global/
 skin messenger $INTERNAL_NAME messenger/
 skin mozapps $INTERNAL_NAME mozapps/
 
-#Backwards compatibility
+#New findbar in 2.22
 style chrome://navigator/content/navigator.xul chrome://global/skin/findBar-2.21.css appversion<2.22
 style chrome://communicator/content/viewSourceOverlay.xul chrome://global/skin/findBar-2.21.css appversion<2.22
 style chrome://communicator/content/helpOverlay.xul chrome://global/skin/findBar-2.21.css appversion<2.22
+
+#Compact menulist removal from Toolkit in 2.33
+style chrome://messenger/content/messengercompose/messengercompose.xul chrome://messenger/skin/messengercompose/messengercompose-2.33.css appversion>=2.33
+
+#New addon manager in 2.37
 style chrome://mozapps/content/extensions/extensions.xul chrome://global/skin/inContentUI.css appversion<2.37
 style chrome://mozapps/content/extensions/extensions.xul chrome://mozapps/skin/extensions/extensions-new.css appversion>=2.37
 style about:addons chrome://global/skin/inContentUI.css appversion<2.37
