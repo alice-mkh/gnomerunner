@@ -22,66 +22,9 @@ while read LINE; do
     fi
     LINE1=`echo $LINE | grep -oE "^[^=]+"`
     LINE2=`echo $LINE | grep -oE "[^=]+$"`
-    sed "s|\$$LINE1|$LINE2|g" -i `find . -name "*.rdf"` `find . -name "*.js"` `find . -name "*.css"` `find . -name "*.manifest"`
+    sed "s|\$$LINE1|$LINE2|g" -i `find . -name "*.rdf"` `find . -name "*.xul"` `find . -name "*.js"` `find . -name "*.css"` `find . -name "*.manifest"` `find . -name "*.dtd"`
     eval "$LINE1=\"$LINE2\""
 done < "../config.txt"
-
-#Generate options.xul and bootstrap.js pref array
-cd options
-READING=0
-OPTIONS_XUL="<?xml version=\"1.0\"?>\n\n<vbox xmlns=\"http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul\">\n"
-while read -r LINE; do
-    if [[ $LINE == "" ]]; then
-        READING=0
-        OPTIONS_XUL="$OPTIONS_XUL<setting type=\"$TEMP_OPTION_TYPE\" pref=\"$OPTIONS_PREF_BRANCH$TEMP_OPTION_PREF\" title=\"$TEMP_OPTION_NAME\""
-        if [[ $TEMP_OPTION_DESC != "" ]]; then
-            OPTIONS_XUL="$OPTIONS_XUL desc=\"$TEMP_OPTION_DESC\""
-        fi
-        if [[ $TEMP_OPTION_CONTENT == "" ]]; then
-            OPTIONS_XUL="$OPTIONS_XUL />\n"
-        else
-            OPTIONS_XUL="$OPTIONS_XUL>$TEMP_OPTION_CONTENT\n</setting>\n"
-        fi
-        if [[ $PREFS_ARRAY == "" ]]; then
-            PREFS_ARRAY="[\"$TEMP_OPTION_PREF\""
-        else
-            PREFS_ARRAY="$PREFS_ARRAY, \"$TEMP_OPTION_PREF\""
-        fi
-        if [[ $TEMP_OPTION_MAX != "" ]]; then
-            PREFS_MAXVALUE="$PREFS_MAXVALUE\n    if (data == \"$TEMP_OPTION_PREF\"){\n        return $TEMP_OPTION_MAX;\n    }"
-        fi
-        DEFAULTS="${DEFAULTS}pref(\"$OPTIONS_PREF_BRANCH$TEMP_OPTION_PREF\", $TEMP_OPTION_DEFAULT);\n"
-        TEMP_OPTION_CONTENT=""
-        TEMP_OPTION_TYPE=""
-        TEMP_OPTION_PREF=""
-        TEMP_OPTION_NAME=""
-        TEMP_OPTION_DESC=""
-        TEMP_OPTION_MAX=""
-        TEMP_OPTION_DEFAULT=""
-    fi
-    if [[ $LINE == [^\<]*=* ]]; then
-        LINE1=`echo $LINE | grep -oE "^[^=]+"`
-        LINE2=`echo $LINE | grep -oE "[^=]+$"`
-        eval "TEMP_OPTION_$LINE1=\"$LINE2\""
-    else
-        if [[ $READING == "0" ]]; then
-            TEMP_OPTION_CONTENT=$LINE
-            READING=1
-            continue
-        fi
-        TEMP_OPTION_CONTENT="$TEMP_OPTION_CONTENT\n$LINE"
-    fi
-done < "options.txt"
-OPTIONS_XUL="$OPTIONS_XUL</vbox>\n"
-echo -e $OPTIONS_XUL > options.xul
-rm options.txt
-PREFS_ARRAY="$PREFS_ARRAY]"
-sed "s|\$PREFS_ARRAY|$PREFS_ARRAY|g" -i bootstrap.js
-PREFS_MAXVALUE="${PREFS_MAXVALUE:2}"
-sed "s|\$PREFS_MAXVALUE|$PREFS_MAXVALUE|g" -i bootstrap.js
-mkdir -p defaults/preferences
-echo -e $DEFAULTS > defaults/preferences/defaults.js
-cd ..
 
 #Generate menu icon rules
 ORIG="\%NATIVE-ICON (.*) (.*) (.*)"

@@ -1,0 +1,29 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://icons/skin/icon-theme-default.css");
+
+.example-icon {
+    margin: 5px;
+}
+
+#example-1 {
+    list-style-image: var(--icon-go-previous-24);
+}
+
+#example-2 {
+    list-style-image: var(--icon-go-next-24);
+}
+
+#example-3 {
+    list-style-image: var(--icon-view-refresh-24);
+}
+
+#example-4 {
+    list-style-image: var(--icon-process-stop-24);
+}
+
+#example-5 {
+    list-style-image: var(--icon-process-stop-24);
+}

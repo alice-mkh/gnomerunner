@@ -5,12 +5,13 @@
     <Description about="urn:mozilla:install-manifest">
         <em:id>$OPTIONS_ID</em:id>
         <em:type>2</em:type>
-        <em:bootstrap>true</em:bootstrap>
+        <em:bootstrap>false</em:bootstrap>
         <em:strictCompatibility>false</em:strictCompatibility>
 
         <em:name>$OPTIONS_NAME</em:name>
         <em:description>$OPTIONS_DESC</em:description>
         <em:version>$VERSION</em:version>
+        <em:optionsURL>chrome://gnomerunner-options/content/options.xul</em:optionsURL>
 
         <em:creator>Exalm</em:creator>
 
