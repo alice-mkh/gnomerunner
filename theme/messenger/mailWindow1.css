@@ -65,6 +65,7 @@
 /* ..... tree adjustments ..... */
 
 #folderTree {
+  -moz-appearance: listbox;
   border-right: 1px solid;
   -moz-border-right-colors: ThreeDShadow;
   min-width: 1px;
