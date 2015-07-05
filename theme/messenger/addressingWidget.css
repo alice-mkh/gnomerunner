@@ -11,7 +11,7 @@
 
 #typecol-addressingWidget {
   min-width: 9em;
-  border-right: 1px solid Highlight;
+  border-right: 1px dotted ThreeDShadow;
 }
 
 .addressingWidgetItem,
@@ -22,7 +22,7 @@
 }
 
 .addressingWidgetCell {
-  border-bottom: 1px solid Highlight;
+  border-bottom: 1px dotted ThreeDShadow;
   padding: 0px;
 }
 
@@ -32,7 +32,7 @@
 
 .dummy-row-cell:first-child {
   border-top: none;
-  border-bottom: 1px solid Highlight;
+  border-bottom: 1px dotted ThreeDShadow;
 }
 
 .person-icon {
