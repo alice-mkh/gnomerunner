@@ -5,7 +5,6 @@
 @import url("chrome://navigator/content/navigator.css");
 @import url("chrome://communicator/skin/");
 @import url("chrome://communicator/skin/bookmarks/bookmarksToolbar.css");
-@import url("chrome://icons/skin/icon-theme-default.css");
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
  
@@ -13,66 +12,67 @@
 /* ::::: primary toolbar buttons ::::: */
 
 #back-button {
-  list-style-image: var(--icon-go-previous-24);
+  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 24");
 }
 
 #back-button[disabled="true"] {
-  list-style-image: var(--icon-go-previous-24-dis);
-  opacity: var(--icon-go-previous-dis-opacity);
+  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 24 disabled") !important;
 }
 
 #back-button:-moz-locale-dir(rtl) {
-  list-style-image: var(--icon-go-previous-rtl-24);
+  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 24");
 }
 
 #back-button[disabled="true"]:-moz-locale-dir(rtl) {
-  list-style-image: var(--icon-go-previous-rtl-24-dis);
-  opacity: var(--icon-go-previous-rtl-dis-opacity);
+  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 24 disabled") !important;
 }
 
 #forward-button {
-  list-style-image: var(--icon-go-next-24);
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 24");
 }
 
 #forward-button[disabled="true"] {
-  list-style-image: var(--icon-go-next-24-dis);
-  opacity: var(--icon-go-next-dis-opacity);
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 24 disabled") !important;
 }
 
 #forward-button:-moz-locale-dir(rtl) {
-  list-style-image: var(--icon-go-next-rtl-24);
+  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 24");
 }
 
 #forward-button:-moz-locale-dir(rtl)[disabled="true"] {
-  list-style-image: var(--icon-go-next-rtl-24);
-  opacity: var(--icon-go-next-rtl-dis-opacity);
+  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 24 disabled") !important;
 }
 
 #reload-button {
-  list-style-image: var(--icon-view-refresh-24);
+  list-style-image: url("%STOCK-ICON gtk-refresh view-refresh 24");
 }
 
 #reload-button[disabled="true"] {
-  list-style-image: var(--icon-view-refresh-24-dis);
-  opacity: var(--icon-view-refresh-dis-opacity);
+  list-style-image: url("%STOCK-ICON gtk-refresh view-refresh 24 disabled") !important;
 }
 
 #stop-button {
-  list-style-image: var(--icon-process-stop-24);
+  list-style-image: url("%STOCK-ICON gtk-stop process-stop 24");
 }
 
 #stop-button[disabled="true"] {
-  list-style-image: var(--icon-process-stop-24-dis);
-  opacity: var(--icon-process-stop-dis-opacity);
+  list-style-image: url("%STOCK-ICON gtk-stop process-stop 24 disabled") !important;
 }
 
 #home-button {
-  list-style-image: var(--icon-go-home-24);
+  list-style-image: url("%STOCK-ICON gtk-home go-home 24");
 }
 
 #home-button[disabled="true"] {
-  list-style-image: var(--icon-go-home-24-dis);
-  opacity: var(--icon-go-home-dis-opacity);
+  list-style-image: url("%STOCK-ICON gtk-home go-home 24 disabled") !important;
+}
+
+#print-button {
+  list-style-image: url("%STOCK-ICON gtk-print document-print 24");
+}
+
+#print-button[disabled="true"] {
+  list-style-image: url("%STOCK-ICON gtk-print document-print 24 disabled") !important;
 }
 
 #sync-button {
@@ -96,63 +96,72 @@ toolbar:not([iconsize="small"]) #sync-button .toolbarbutton-icon {
 
 toolbar[iconsize="small"] > toolbarpaletteitem > #back-button,
 toolbar[iconsize="small"] > #back-button {
-  list-style-image: var(--icon-go-previous-16);
+  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 16");
 }
 
 toolbar[iconsize="small"] > #back-button[disabled="true"] {
-  list-style-image: var(--icon-go-previous-16-dis);
+  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 16 disabled") !important;
 }
 
 toolbar[iconsize="small"] > #back-button:-moz-locale-dir(rtl) {
-  list-style-image: var(--icon-go-previous-rtl-16);
+  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 16");
 }
 
 toolbar[iconsize="small"] > #back-button[disabled="true"]:-moz-locale-dir(rtl) {
-  list-style-image: var(--icon-go-previous-rtl-16-dis);
+  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 16 disabled") !important;
 }
 
 toolbar[iconsize="small"] > toolbarpaletteitem > #forward-button,
 toolbar[iconsize="small"] > #forward-button {
-  list-style-image: var(--icon-go-next-16);
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 16");
 }
 
 toolbar[iconsize="small"] > #forward-button[disabled="true"] {
-  list-style-image: var(--icon-go-next-16-dis);
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 16 disabled") !important;
 }
 
 toolbar[iconsize="small"] > #forward-button:-moz-locale-dir(rtl) {
-  list-style-image: var(--icon-go-next-rtl-16);
+  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 16");
 }
 
 toolbar[iconsize="small"] > #forward-button[disabled="true"]:-moz-locale-dir(rtl) {
-  list-style-image: var(--icon-go-next-rtl-16-dis);
+  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 16 disabled") !important;
 }
 
 toolbar[iconsize="small"] > toolbarpaletteitem > #reload-button,
 toolbar[iconsize="small"] > #reload-button {
-  list-style-image: var(--icon-view-refresh-16);
+  list-style-image: url("%STOCK-ICON gtk-refresh view-refresh 16");
 }
 
 toolbar[iconsize="small"] > #reload-button[disabled="true"] {
-  list-style-image: var(--icon-view-refresh-16-dis);
+  list-style-image: url("%STOCK-ICON gtk-refresh view-refresh 16 disabled") !important;
 }
 
 toolbar[iconsize="small"] > toolbarpaletteitem > #stop-button,
 toolbar[iconsize="small"] > #stop-button {
-  list-style-image: var(--icon-process-stop-16);
+  list-style-image: url("%STOCK-ICON gtk-stop process-stop 16");
 }
 
 toolbar[iconsize="small"] > #stop-button[disabled="true"] {
-  list-style-image: var(--icon-process-stop-16-dis);
+  list-style-image: url("%STOCK-ICON gtk-stop process-stop 16 disabled") !important;
 }
 
 toolbar[iconsize="small"] > toolbarpaletteitem > #home-button,
 toolbar[iconsize="small"] > #home-button {
-  list-style-image: var(--icon-go-home-16);
+  list-style-image: url("%STOCK-ICON gtk-home go-home 16");
 }
 
 toolbar[iconsize="small"] > #home-button[disabled="true"] {
-  list-style-image: var(--icon-go-home-16-dis);
+  list-style-image: url("%STOCK-ICON gtk-home go-home 16 disabled") !important;
+}
+
+toolbar[iconsize="small"] > toolbarpaletteitem > #print-button,
+toolbar[iconsize="small"] > #print-button {
+  list-style-image: url("%STOCK-ICON gtk-print document-print 16");
+}
+
+toolbar[iconsize="small"] > #print-button[disabled="true"] {
+  list-style-image: url("%STOCK-ICON gtk-print document-print 16 disabled") !important;
 }
 
 toolbar[iconsize="small"] > toolbarpaletteitem > #sync-button,
@@ -193,7 +202,7 @@ toolbar[mode="text"] > #window-controls > toolbarbutton > .toolbarbutton-icon {
 }
 
 #minimize-button {
-  list-style-image: var(--icon-go-bottom-16);
+  list-style-image: url("%STOCK-ICON gtk-goto-bottom go-bottom 16");
 } 
 
 #restore-button {
@@ -201,7 +210,7 @@ toolbar[mode="text"] > #window-controls > toolbarbutton > .toolbarbutton-icon {
 } 
 
 #close-button {
-  list-style-image: var(--icon-window-close-16);
+  list-style-image: url("%STOCK-ICON gtk-close window-close 16");
 } 
   
 /* ::::: nav-bar-inner ::::: */
@@ -249,7 +258,7 @@ toolbar[mode="text"] > #window-controls > toolbarbutton > .toolbarbutton-icon {
 
 .popup-notification-icon[popupid="indexedDB-permissions-prompt"],
 .popup-notification-icon[popupid="indexedDB-quota-prompt"] {
-  list-style-image: var(--icon-dialog-question-48);
+  list-style-image: url("%STOCK-ICON gtk-dialog-question dialog-question 48");
 }
 
 .popup-notification-icon[popupid="password"] {
@@ -278,7 +287,7 @@ toolbar[mode="text"] > #window-controls > toolbarbutton > .toolbarbutton-icon {
 }
 
 #default-notification-icon {
-  list-style-image: var(--icon-dialog-information-16);
+  list-style-image: url("%STOCK-ICON gtk-dialog-info dialog-information 16");
   width: 16px;
   height: 16px;
 }
@@ -297,7 +306,7 @@ toolbar[mode="text"] > #window-controls > toolbarbutton > .toolbarbutton-icon {
 }
   
 #indexedDB-notification-icon {
-  list-style-image: var(--icon-dialog-question-16);
+  list-style-image: url("%STOCK-ICON gtk-dialog-question dialog-question 16");
   width: 16px;
   height: 16px;
 }
@@ -431,7 +440,7 @@ toolbar[mode="text"] > #window-controls > toolbarbutton > .toolbarbutton-icon {
 }
 
 #page-proxy-button {
-  list-style-image: var(--icon-text-x-generic-16);
+  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
 }
 
 #page-proxy-favicon {
@@ -440,8 +449,7 @@ toolbar[mode="text"] > #window-controls > toolbarbutton > .toolbarbutton-icon {
 
 #page-proxy-button[pageproxystate="invalid"] {
   cursor: default;
-  list-style-image: var(--icon-text-x-generic-16-dis);
-  opacity: var(--icon-text-x-generic-dis-opacity);
+  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16 disabled");
 }
 
 /* ::::: autocomplete ::::: */
@@ -500,7 +508,7 @@ panel[nomatch="true"] > .autocomplete-search-box {
 }
 
 #search-button {
-  list-style-image: var(--icon-edit-find-16);
+  list-style-image: url("%STOCK-ICON gtk-find edit-find 16");
 }
 
 #search-button > .button-box > .button-icon {
@@ -582,11 +590,20 @@ toolbar[mode="icons"] #search-button > .button-box > .button-text {
 /* ::::: personal toolbar ::::: */
 
 #bookmarks-button {
-  list-style-image: var(--icon-folder-16);
+  list-style-image: url("%STOCK-ICON gtk-directory folder 16");
 }
 
 #bookmarks-button[open="true"] {
-  list-style-image: var(--icon-document-open-16);
+  list-style-image: url("%STOCK-ICON gtk-open document-open 16");
+}
+
+toolbar[iconsize="large"] > toolbarpaletteitem > #bookmarks-button,
+toolbar[iconsize="large"] > #bookmarks-button {
+  list-style-image: url("%STOCK-ICON gtk-directory folder 24") !important;
+}
+
+toolbar[iconsize="large"] > #bookmarks-button[open="true"] {
+  list-style-image: url("%STOCK-ICON gtk-open document-open 24") !important;
 }
 
 toolbarbutton.chevron {
@@ -606,7 +623,7 @@ toolbar[mode="text"] toolbarbutton.chevron > .toolbarbutton-icon {
 }
 /*
 #bookmarks-chevron {
-  list-style-image: var(--icon-text-x-generic-16);
+  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16") !important;
 }
 */
 #bookmarks-chevron > .toolbarbutton-menu-dropmarker {

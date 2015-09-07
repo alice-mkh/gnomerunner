@@ -9,11 +9,11 @@ const Cu = Components.utils;
 Cu.import("resource://gre/modules/Services.jsm");
 Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 
+const observerService = Cc["@mozilla.org/observer-service;1"].getService(Ci.nsIObserverService);
 const cssService = Cc["@mozilla.org/content/style-sheet-service;1"].getService(Ci.nsIStyleSheetService);
 const prefs = Services.prefs.getBranch("extensions.gnomerunner-options.");
 
-const NATIVE_MODES = ["none", "gtk", "freedesktop"];
-const XUL_NS = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+const nativeModes = ["none", "gtk", "freedesktop"];
 
 var nativeIcons;
 var fallbackTheme;
@@ -29,12 +29,12 @@ GnomerunnerOptions.prototype = {
   QueryInterface: XPCOMUtils.generateQI([Ci.nsISupports, Ci.nsIObserver]),
 
   start: function () {
-    Services.obs.addObserver(this, "final-ui-startup", false);
+    observerService.addObserver(this, "final-ui-startup", false);
     prefs.addObserver("", this, false);
   },
 
   stop : function () {
-    Services.obs.removeObserver(this, "final-ui-startup");
+    observerService.removeObserver(this, "final-ui-startup");
     prefs.removeObserver("", this);
   },
 
@@ -50,19 +50,13 @@ GnomerunnerOptions.prototype = {
       nativeIcons = prefs.getIntPref("native-icons");
       fallbackTheme = prefs.getCharPref("fallback-icon-theme");
       loadTheme();
-
-      let windows = Services.ww.getWindowEnumerator();
-      while (windows.hasMoreElements()) {
-        let win = windows.getNext().QueryInterface(Ci.nsIDOMWindow);
-        refreshDocument(win.document);
-      }
       return;
     }
   }
 };
 
 function loadTheme() {
-  var native = "chrome://icons/skin/layer-" + NATIVE_MODES[nativeIcons] + ".css";
+  var native = "chrome://icons/skin/layer-" + nativeModes[nativeIcons] + ".css";
   var fallback = "chrome://icons/skin/icon-theme-" + fallbackTheme + ".css";
 
   var nativeUri = Services.io.newURI(native, null, null);
@@ -77,7 +71,7 @@ function loadTheme() {
 }
 
 function unloadTheme() {
-  var native = "chrome://icons/skin/layer-" + NATIVE_MODES[nativeIcons] + ".css";
+  var native = "chrome://icons/skin/layer-" + nativeModes[nativeIcons] + ".css";
   var fallback = "chrome://icons/skin/icon-theme-" + fallbackTheme + ".css";
 
   var nativeUri = Services.io.newURI(native, null, null);
@@ -91,19 +85,8 @@ function unloadTheme() {
   }
 }
 
-function refreshDocument(aDoc) {
-  let trees = aDoc.getElementsByTagNameNS(XUL_NS, "tree");
-  for (let i = 0; i < trees.length; i++)
-    trees[i].treeBoxObject.invalidate();
-
-  let iframes = aDoc.getElementsByTagNameNS(XUL_NS, "iframe");
-  let browsers = aDoc.getElementsByTagNameNS(XUL_NS, "browser");
-
-  for (let i = 0; i < iframes.length; i++)
-    refreshDocument(iframes[i].contentDocument);
-  for (let i = 0; i < browsers.length; i++)
-    refreshDocument(browsers[i].contentDocument);
-
+if (XPCOMUtils.generateNSGetFactory) {
+  var NSGetFactory = XPCOMUtils.generateNSGetFactory([GnomerunnerOptions]);
+} else {
+  var NSGetModule = XPCOMUtils.generateNSGetModule([GnomerunnerOptions]);
 }
-
-var NSGetFactory = XPCOMUtils.generateNSGetFactory([GnomerunnerOptions]);

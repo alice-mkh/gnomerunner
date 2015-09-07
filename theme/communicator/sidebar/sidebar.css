@@ -6,8 +6,6 @@
   == Styles used by the Sidebar panel and Sidebar tabs.
   ======================================================================= */
 
-@import url("chrome://icons/skin/icon-theme-default.css");
-
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
   
 #sidebar-box {
@@ -51,7 +49,7 @@
 
 #sidebar-close-button {
   -moz-binding: url("chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton-image");
-  list-style-image: var(--icon-window-close-16);
+  list-style-image: url("%STOCK-ICON gtk-close window-close 16");
 }
 
 #sidebar-close-button > .toolbarbutton-icon {
@@ -136,9 +134,9 @@
 }
 
 .tab-fwd {
-  list-style-image: var(--icon-go-up-16);
+  list-style-image: url("%STOCK-ICON gtk-go-up go-up 16");
 }
 
 .tab-back {
-  list-style-image: var(--icon-go-down-16);
+  list-style-image: url("%STOCK-ICON gtk-go-down go-down 16");
 }

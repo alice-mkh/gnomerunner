@@ -7,7 +7,6 @@
   ======================================================================= */
 
 @import url("chrome://communicator/skin/bookmarks/bookmarks.css");
-@import url("chrome://icons/skin/icon-theme-default.css");
 
 /* ::::: bookmark toolbar buttons ::::: */
 
@@ -49,13 +48,11 @@ toolbarbutton.bookmark-item[disabled="true"]:hover:active {
 toolbarbutton.bookmark-item[disabled="true"] {
   cursor: default !important;
   text-decoration: none !important;
-  list-style-image: var(--icon-text-x-generic-16-dis);
-  opacity: var(--icon-text-x-generic-dis-opacity);
+  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16 disabled");
 }
 
 toolbarbutton.bookmark-item[disabled="true"][container="true"] {
-  list-style-image: var(--icon-folder-16-dis);
-  opacity: var(--icon-folder-dis-opacity);
+  list-style-image: url("%STOCK-ICON gtk-directory folder 16 disabled");
 }
 
 .bookmark-item > .toolbarbutton-icon {
@@ -96,13 +93,11 @@ menuitem.bookmark-item {
 }
 
 .menuitem-iconic.bookmark-item[disabled="true"] {
-  list-style-image: var(--icon-text-x-generic-16-dis);
-  opacity: var(--icon-text-x-generic-dis-opacity);
+  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16 disabled");
 }
 
 .menu-iconic.bookmark-item[disabled="true"][container="true"] {
-  list-style-image: var(--icon-folder-16-dis);
-  opacity: var(--icon-folder-dis-opacity);
+  list-style-image: url("%STOCK-ICON gtk-directory folder 16 disabled");
 }
 
 /* ..... drag and drop styles ..... */

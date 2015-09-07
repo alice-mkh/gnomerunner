@@ -2,8 +2,6 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-@import url("chrome://icons/skin/icon-theme-default.css");
-
 /**** folder menulist ****/
 .folder-icon > .menulist-label-box > .menulist-icon {
   width: 16px;
@@ -15,7 +13,7 @@
 }
 
 .folder-icon {
-  list-style-image: var(--icon-folder-16) !important;
+  list-style-image: url("%STOCK-ICON gtk-directory folder 16") !important;
 }
 
 

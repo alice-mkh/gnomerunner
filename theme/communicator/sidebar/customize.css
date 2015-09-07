@@ -3,34 +3,32 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-@import url("chrome://icons/skin/icon-theme-default.css");
-
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 .treecell-panel
 {
- list-style-image: var(--icon-text-x-generic-16);
+ list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
 }
 
 .treecell-panel[haslink="true"],
 treeitem[container="true"] > treerow > .treecell-panel
 {
- list-style-image: var(--icon-folder-16);
+ list-style-image: url("%STOCK-ICON gtk-directory folder 16");
 }
 treeitem[selected="true"] > treerow > .treecell-panel[haslink="true"],
 treeitem[selected="true"][container="true"] > treerow > .treecell-panel
 {
- list-style-image: var(--icon-folder-16);
+ list-style-image: url("%STOCK-ICON gtk-directory folder 16");
 }
 
 treeitem[container="true"][open="true"] > treerow > .treecell-panel
 {
- list-style-image: var(--icon-document-open-16);
+ list-style-image: url("%STOCK-ICON gtk-open document-open 16");
 }
 
 treeitem[selected="true"][container="true"][open="true"] > treerow > .treecell-panel
 {
-  list-style-image: var(--icon-document-open-16);
+  list-style-image: url("%STOCK-ICON gtk-open document-open 16");
 }
 
 box#reorder {

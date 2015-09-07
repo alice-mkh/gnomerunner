@@ -2,8 +2,6 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-@import url("chrome://icons/skin/icon-theme-default.css");
-
 .searchbar-textbox {
   width: 6em;
   min-width: 6em;
@@ -15,7 +13,7 @@
   margin: 3px;
   height: 16px;
   width: 16px;
-  list-style-image: var(--icon-text-x-generic-16);
+  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
 }
 
 /* ::::: search-go-button ::::: */
@@ -26,11 +24,15 @@
 
 .search-go-button {
   padding: 3px;
-  list-style-image: var(--icon-edit-find-16);
+  list-style-image: url("%STOCK-ICON gtk-find edit-find 16");
 }
 
 .search-go-button:-moz-system-metric(touch-enabled) {
   padding: 3px 5px;
+}
+
+.search-go-button:-moz-locale-dir(rtl) {
+  transform: scaleX(-1);
 }
 
 .searchbar-engine-menuitem[selected="true"] > .menu-iconic-text {

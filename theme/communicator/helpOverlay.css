@@ -7,7 +7,6 @@
    ========================================================================== */
 
 @import url("chrome://communicator/skin/");
-@import url("chrome://icons/skin/icon-theme-default.css");
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
@@ -24,57 +23,51 @@
 }
 
 #help-back-button {
-  list-style-image: var(--icon-go-previous-24);
+  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 24");
 }
 
 #help-back-button[disabled="true"] {
-  list-style-image: var(--icon-go-previous-24-dis);
-  opacity: var(--icon-go-previous-dis-opacity);
+  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 24 disabled");
 }
 
 #help-back-button:-moz-locale-dir(rtl) {
-  list-style-image: var(--icon-go-previous-rtl-24);
+  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 24");
 }
 
 #help-back-button:-moz-locale-dir(rtl)[disabled="true"] {
-  list-style-image: var(--icon-go-previous-rtl-24-dis);
-  opacity: var(--icon-go-previous-rtl-dis-opacity);
+  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 24 disabled");
 }
 
 #help-forward-button {
-  list-style-image: var(--icon-go-next-24);
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 24");
 }
 
 #help-forward-button[disabled="true"] {
-  list-style-image: var(--icon-go-next-24-dis);
-  opacity: var(--icon-go-next-dis-opacity);
+  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 24 disabled");
 }
 
 #help-forward-button:-moz-locale-dir(rtl) {
-  list-style-image: var(--icon-go-next-rtl-24);
+  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 24");
 }
 
 #help-forward-button:-moz-locale-dir(rtl)[disabled="true"] {
-  list-style-image: var(--icon-go-next-rtl-24);
-  opacity: var(--icon-go-next-rtl-dis-opacity);
+  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 24 disabled");
 }
 
 #help-home-button {
-  list-style-image: var(--icon-go-home-24);
+  list-style-image: url("%STOCK-ICON gtk-home go-home 24");
 }
 
 #help-home-button[disabled="true"] {
-  list-style-image: var(--icon-go-home-24-dis);
-  opacity: var(--icon-go-home-dis-opacity);
+  list-style-image: url("%STOCK-ICON gtk-home go-home 24 disabled");
 }
 
 #help-print-button {
-  list-style-image: var(--icon-document-print-24);
+  list-style-image: url("%STOCK-ICON gtk-print document-print 24");
 }
 
 #help-print-button[disabled="true"] {
-  list-style-image: var(--icon-document-print-24-dis) !important;
-  opacity: var(--icon-document-print-dis-opacity);
+  list-style-image: url("%STOCK-ICON gtk-print document-print 24 disabled");
 }
 
 /* make findbar appear above content */
