@@ -5,27 +5,184 @@
 @import url("chrome://icons/skin/icon-theme-base.css");
 
 :root {
-  --icon-go-previous-16:			url("moz-icon://stock/go-previous?size=menu");
-  --icon-go-previous-16-dis:		url("moz-icon://stock/go-previous?size=menu&state=disabled");
-  --icon-go-previous-24:			url("moz-icon://stock/go-previous?size=toolbar");
-  --icon-go-previous-24-dis:		url("moz-icon://stock/go-previous?size=toolbar&state=disabled");
-  --icon-go-previous-dis-opacity:	var(--icon-base-dis-native-opacity);
+/* Actions */
+  --icon-document-new-24:					url("moz-icon://stock/document-new?size=toolbar");
+  --icon-document-new-24-dis:				url("moz-icon://stock/document-new?size=toolbar&state=disabled");
+  --icon-document-new-dis-opacity:			var(--icon-base-dis-native-opacity);
 
-  --icon-go-next-16:				url("moz-icon://stock/go-next?size=menu");
-  --icon-go-next-16-dis:			url("moz-icon://stock/go-next?size=menu&state=disabled");
-  --icon-go-next-24:				url("moz-icon://stock/go-next?size=toolbar");
-  --icon-go-next-24-dis:			url("moz-icon://stock/go-next?size=toolbar&state=disabled");
-  --icon-go-next-dis-opacity:		var(--icon-base-dis-native-opacity);
+  --icon-document-open-16:					url("moz-icon://stock/document-open?size=menu");
+  --icon-document-open-22:					url("moz-icon://stock/document-open?size=button");
+  --icon-document-open-24:					url("moz-icon://stock/document-open?size=toolbar");
+  --icon-document-open-16-dis:				url("moz-icon://stock/document-open?size=menu&state=disabled");
+  --icon-document-open-22-dis:				url("moz-icon://stock/document-open?size=button&state=disabled");
+  --icon-document-open-24-dis:				url("moz-icon://stock/document-open?size=toolbar&state=disabled");
+  --icon-document-open-dis-opacity:			var(--icon-base-dis-native-opacity);
 
-  --icon-process-stop-16:			url("moz-icon://stock/process-stop?size=menu");
-  --icon-process-stop-16-dis:		url("moz-icon://stock/process-stop?size=menu&state=disabled");
-  --icon-process-stop-24:			url("moz-icon://stock/process-stop?size=toolbar");
-  --icon-process-stop-24-dis:		url("moz-icon://stock/process-stop?size=toolbar&state=disabled");
-  --icon-process-stop-dis-opacity:		var(--icon-base-dis-native-opacity);
+  --icon-document-print-16:					url("moz-icon://stock/document-print?size=menu");
+  --icon-document-print-24:					url("moz-icon://stock/document-print?size=toolbar");
+  --icon-document-print-16-dis:				url("moz-icon://stock/document-print?size=menu&state=disabled");
+  --icon-document-print-24-dis:				url("moz-icon://stock/document-print?size=toolbar&state=disabled");
+  --icon-document-print-dis-opacity:		var(--icon-base-dis-native-opacity);
 
-  --icon-view-refresh-16:			url("moz-icon://stock/view-refresh?size=menu");
-  --icon-view-refresh-16-dis:		url("moz-icon://stock/view-refresh?size=menu&state=disabled");
-  --icon-view-refresh-24:			url("moz-icon://stock/view-refresh?size=toolbar");
-  --icon-view-refresh-24-dis:		url("moz-icon://stock/view-refresh?size=toolbar&state=disabled");
-  --icon-view-refresh-dis-opacity:		var(--icon-base-dis-native-opacity);
+  --icon-document-save-16:					url("moz-icon://stock/document-save?size=menu");
+  --icon-document-save-22:					url("moz-icon://stock/document-save?size=button");
+  --icon-document-save-24:					url("moz-icon://stock/document-save?size=toolbar");
+  --icon-document-save-16-dis:				url("moz-icon://stock/document-save?size=menu&state=disabled");
+  --icon-document-save-22-dis:				url("moz-icon://stock/document-save?size=button&state=disabled");
+  --icon-document-save-24-dis:				url("moz-icon://stock/document-save?size=toolbar&state=disabled");
+  --icon-document-save-dis-opacity:			var(--icon-base-dis-native-opacity);
+
+  --icon-edit-copy-16:						url("moz-icon://stock/edit-copy?size=menu");
+  --icon-edit-copy-24:						url("moz-icon://stock/edit-copy?size=toolbar");
+  --icon-edit-copy-16-dis:					url("moz-icon://stock/edit-copy?size=menu&state=disabled");
+  --icon-edit-copy-24-dis:					url("moz-icon://stock/edit-copy?size=toolbar&state=disabled");
+  --icon-edit-copy-dis-opacity:				var(--icon-base-dis-native-opacity);
+
+  --icon-edit-cut-16:						url("moz-icon://stock/edit-cut?size=menu");
+  --icon-edit-cut-24:						url("moz-icon://stock/edit-cut?size=toolbar");
+  --icon-edit-cut-16-dis:					url("moz-icon://stock/edit-cut?size=menu&state=disabled");
+  --icon-edit-cut-24-dis:					url("moz-icon://stock/edit-cut?size=toolbar&state=disabled");
+  --icon-edit-cut-dis-opacity:				var(--icon-base-dis-native-opacity);
+
+  --icon-edit-find-16:						url("moz-icon://stock/edit-find?size=menu");
+  --icon-edit-find-22:						url("moz-icon://stock/edit-find?size=button");
+  --icon-edit-find-24:						url("moz-icon://stock/edit-find?size=toolbar");
+  --icon-edit-find-16-dis:					url("moz-icon://stock/edit-find?size=menu&state=disabled");
+  --icon-edit-find-22-dis:					url("moz-icon://stock/edit-find?size=button&state=disabled");
+  --icon-edit-find-24-dis:					url("moz-icon://stock/edit-find?size=toolbar&state=disabled");
+  --icon-edit-find-dis-opacity:				var(--icon-base-dis-native-opacity);
+
+  --icon-edit-paste-16:						url("moz-icon://stock/edit-paste?size=menu");
+  --icon-edit-paste-24:						url("moz-icon://stock/edit-paste?size=toolbar");
+  --icon-edit-paste-16-dis:					url("moz-icon://stock/edit-paste?size=menu&state=disabled");
+  --icon-edit-paste-24-dis:					url("moz-icon://stock/edit-paste?size=toolbar&state=disabled");
+  --icon-edit-paste-dis-opacity:			var(--icon-base-dis-native-opacity);
+
+  --icon-go-bottom-16:						url("moz-icon://stock/go-bottom?size=menu");
+  --icon-go-bottom-16-dis:					url("moz-icon://stock/go-bottom?size=menu&state=disabled");
+  --icon-go-bottom-dis-opacity:				var(--icon-base-dis-native-opacity);
+
+  --icon-go-down-16:						url("moz-icon://stock/go-down?size=menu");
+  --icon-go-down-24:						url("moz-icon://stock/go-down?size=toolbar");
+  --icon-go-down-16-dis:					url("moz-icon://stock/go-down?size=menu&state=disabled");
+  --icon-go-down-24-dis:					url("moz-icon://stock/go-down?size=toolbar&state=disabled");
+  --icon-go-down-dis-opacity:				var(--icon-base-dis-native-opacity);
+
+  --icon-go-home-16:						url("moz-icon://stock/go-home?size=menu");
+  --icon-go-home-24:						url("moz-icon://stock/go-home?size=toolbar");
+  --icon-go-home-16-dis:					url("moz-icon://stock/go-home?size=menu&state=disabled");
+  --icon-go-home-24-dis:					url("moz-icon://stock/go-home?size=toolbar&state=disabled");
+  --icon-go-home-dis-opacity:				var(--icon-base-dis-native-opacity);
+
+  --icon-go-first-16:						url("moz-icon://stock/go-first?size=menu");
+  --icon-go-first-16-dis:					url("moz-icon://stock/go-first?size=menu&state=disabled");
+  --icon-go-first-dis-opacity:				var(--icon-base-dis-native-opacity);
+
+  --icon-go-last-16:						url("moz-icon://stock/go-last?size=menu");
+  --icon-go-last-16-dis:					url("moz-icon://stock/go-last?size=menu&state=disabled");
+  --icon-go-last-dis-opacity:				var(--icon-base-dis-native-opacity);
+
+  --icon-go-first-rtl-16:					url("moz-icon://stock/go-last?size=menu");
+  --icon-go-first-rtl-16-dis:				url("moz-icon://stock/go-last?size=menu&state=disabled");
+  --icon-go-first-rtl-dis-opacity:			var(--icon-base-dis-native-opacity);
+
+  --icon-go-last-rtl-16:					url("moz-icon://stock/go-first?size=menu");
+  --icon-go-last-rtl-16-dis:				url("moz-icon://stock/go-first?size=menu&state=disabled");
+  --icon-go-last-rtl-dis-opacity:			var(--icon-base-dis-native-opacity);
+
+  --icon-go-next-16:						url("moz-icon://stock/go-next?size=menu");
+  --icon-go-next-24:						url("moz-icon://stock/go-next?size=toolbar");
+  --icon-go-next-16-dis:					url("moz-icon://stock/go-next?size=menu&state=disabled");
+  --icon-go-next-24-dis:					url("moz-icon://stock/go-next?size=toolbar&state=disabled");
+  --icon-go-next-dis-opacity:				var(--icon-base-dis-native-opacity);
+
+  --icon-go-previous-16:					url("moz-icon://stock/go-previous?size=menu");
+  --icon-go-previous-24:					url("moz-icon://stock/go-previous?size=toolbar");
+  --icon-go-previous-16-dis:				url("moz-icon://stock/go-previous?size=menu&state=disabled");
+  --icon-go-previous-24-dis:				url("moz-icon://stock/go-previous?size=toolbar&state=disabled");
+  --icon-go-previous-dis-opacity:			var(--icon-base-dis-native-opacity);
+
+  --icon-go-next-rtl-16:					var(--icon-go-previous-16);
+  --icon-go-next-rtl-24:					var(--icon-go-previous-24);
+  --icon-go-next-rtl-16-dis:				var(--icon-go-previous-16-dis);
+  --icon-go-next-rtl-24-dis:				var(--icon-go-previous-24-dis);
+  --icon-go-next-rtl-dis-opacity:			var(--icon-go-previous-dis-opacity);
+
+  --icon-go-previous-rtl-16:				var(--icon-go-next-16);
+  --icon-go-previous-rtl-24:				var(--icon-go-next-24);
+  --icon-go-previous-rtl-16-dis:			var(--icon-go-next-16-dis);
+  --icon-go-previous-rtl-24-dis:			var(--icon-go-next-24-dis);
+  --icon-go-previous-rtl-dis-opacity:		var(--icon-go-next-dis-opacity);
+
+  --icon-go-top-16:							url("moz-icon://stock/go-top?size=menu");
+  --icon-go-top-16-dis:						url("moz-icon://stock/go-top?size=menu&state=disabled");
+  --icon-go-top-dis-opacity:				var(--icon-base-dis-native-opacity);
+
+  --icon-go-up-16:							url("moz-icon://stock/go-up?size=menu");
+  --icon-go-up-24:							url("moz-icon://stock/go-up?size=toolbar");
+  --icon-go-up-16-dis:						url("moz-icon://stock/go-up?size=menu&state=disabled");
+  --icon-go-up-24-dis:						url("moz-icon://stock/go-up?size=toolbar&state=disabled");
+  --icon-go-up-dis-opacity:					var(--icon-base-dis-native-opacity);
+
+  --icon-list-add-16:						url("moz-icon://stock/list-add?size=menu");
+  --icon-list-add-22:						url("moz-icon://stock/list-add?size=button");
+  --icon-list-add-16-dis:					url("moz-icon://stock/list-add?size=menu&state=disabled");
+  --icon-list-add-22-dis:					url("moz-icon://stock/list-add?size=button&state=disabled");
+  --icon-list-add-dis-opacity:				var(--icon-base-dis-native-opacity);
+
+  --icon-list-remove-22:					url("moz-icon://stock/list-remove?size=button");
+  --icon-list-remove-22-dis:				url("moz-icon://stock/list-remove?size=menu&state=disabled");
+  --icon-list-remove-dis-opacity:			var(--icon-base-dis-native-opacity);
+
+  --icon-process-stop-16:					url("moz-icon://stock/process-stop?size=menu");
+  --icon-process-stop-24:					url("moz-icon://stock/process-stop?size=toolbar");
+  --icon-process-stop-16-dis:				url("moz-icon://stock/process-stop?size=menu&state=disabled");
+  --icon-process-stop-24-dis:				url("moz-icon://stock/process-stop?size=toolbar&state=disabled");
+  --icon-process-stop-dis-opacity:			var(--icon-base-dis-native-opacity);
+
+  --icon-tools-check-spelling-16:			url("moz-icon://stock/tools-check-spelling?size=menu");
+  --icon-tools-check-spelling-24:			url("moz-icon://stock/tools-check-spelling?size=toolbar");
+  --icon-tools-check-spelling-16-dis:		url("moz-icon://stock/tools-check-spelling?size=menu&state=disabled");
+  --icon-tools-check-spelling-24-dis:		url("moz-icon://stock/tools-check-spelling?size=toolbar&state=disabled");
+  --icon-tools-check-spelling-dis-opacity:	var(--icon-base-dis-native-opacity);
+
+  --icon-view-refresh-16:					url("moz-icon://stock/view-refresh?size=menu");
+  --icon-view-refresh-24:					url("moz-icon://stock/view-refresh?size=toolbar");
+  --icon-view-refresh-16-dis:				url("moz-icon://stock/view-refresh?size=menu&state=disabled");
+  --icon-view-refresh-24-dis:				url("moz-icon://stock/view-refresh?size=toolbar&state=disabled");
+  --icon-view-refresh-dis-opacity:			var(--icon-base-dis-native-opacity);
+
+  --icon-window-close-16:					url("moz-icon://stock/window-close?size=menu");
+  --icon-window-close-22:					url("moz-icon://stock/window-close?size=button");
+  --icon-window-close-16-dis:				url("moz-icon://stock/window-close?size=menu&state=disabled");
+  --icon-window-close-22-dis:				url("moz-icon://stock/window-close?size=button&state=disabled");
+  --icon-window-close-dis-opacity:			var(--icon-base-dis-native-opacity);
+
+/* Mimetypes */
+  --icon-text-x-generic-16:					url("moz-icon://stock/text-x-generic?size=menu");
+  --icon-text-x-generic-16-dis:				url("moz-icon://stock/text-x-generic?size=menu&state=disabled");
+  --icon-text-x-generic-dis-opacity:		var(--icon-base-dis-native-opacity);
+
+/* Places */
+  --icon-folder-16:							url("moz-icon://stock/folder?size=menu");
+  --icon-folder-24:							url("moz-icon://stock/folder?size=toolbar");
+  --icon-folder-16-dis:						url("moz-icon://stock/folder?size=menu&state=disabled");
+  --icon-folder-24-dis:						url("moz-icon://stock/folder?size=toolbar&state=disabled");
+  --icon-folder-dis-opacity:				var(--icon-base-dis-native-opacity);
+
+/* Status */
+  --icon-dialog-information-16:				url("moz-icon://stock/dialog-information?size=menu");
+  --icon-dialog-information-24:				url("moz-icon://stock/dialog-information?size=toolbar");
+  --icon-dialog-information-48:				url("moz-icon://stock/dialog-information?size=dialog");
+  --icon-dialog-information-16-dis:			url("moz-icon://stock/dialog-information?size=menu&state=disabled");
+  --icon-dialog-information-24-dis:			url("moz-icon://stock/dialog-information?size=toolbar&state=disabled");
+  --icon-dialog-information-48-dis:			url("moz-icon://stock/dialog-information?size=dialog&state=disabled");
+  --icon-dialog-information-dis-opacity:	var(--icon-base-dis-native-opacity);
+
+  --icon-dialog-question-16:				url("moz-icon://stock/dialog-question?size=menu");
+  --icon-dialog-question-48:				url("moz-icon://stock/dialog-question?size=dialog");
+  --icon-dialog-question-16-dis:			url("moz-icon://stock/dialog-question?size=menu&state=disabled");
+  --icon-dialog-question-48-dis:			url("moz-icon://stock/dialog-question?size=dialog&state=disabled");
+  --icon-dialog-question-dis-opacity:		var(--icon-base-dis-native-opacity);
 }
+

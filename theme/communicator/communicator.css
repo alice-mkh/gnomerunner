@@ -11,6 +11,7 @@
 @import url("chrome://communicator/skin/brand.css");
 @import url("chrome://communicator/skin/button.css");
 @import url("chrome://communicator/skin/toolbar.css");
+@import url("chrome://icons/skin/icon-theme-default.css");
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
@@ -33,11 +34,11 @@ textbox[autocompletesearch="history file"] .autocomplete-treebody::-moz-tree-ima
 }
 
 textbox[autocompletesearch="history file"] .autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue, directory) {
-  list-style-image: url("%STOCK-ICON gtk-directory folder 16");
+  list-style-image: var(--icon-folder-16);
 }
 
 textbox[autocompletesearch="history file"] .autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue, file) {
-  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
+  list-style-image: var(--text-x-generic-16);
 }
 
 /* ::::: online/offline icons ::::: */
@@ -96,20 +97,21 @@ menuitem.menuitem-iconic > .menu-iconic-left {
 
 /* ::::: toolbar print button ::::: */
 #print-button {
- list-style-image: url("%STOCK-ICON gtk-print document-print 24");
+ list-style-image: var(--icon-document-print-24);
 }
 
 #print-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-print document-print 24 disabled") !important;
+  list-style-image: var(--icon-document-print-24-dis) !important;
+  opacity: var(--icon-document-print-dis-opacity);
 }
 
 toolbar[iconsize="small"] > toolbarpaletteitem > #print-button,
 toolbar[iconsize="small"] > #print-button {
-  list-style-image: url("%STOCK-ICON gtk-print document-print 16");
+  list-style-image: var(--icon-document-print-16);
 }
 
 toolbar[iconsize="small"] > #print-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-print document-print 16 disabled") !important;
+  list-style-image: var(--icon-document-print-16-dis) !important;
 }
 
 /* ::::: lightweight themes ::::: */
@@ -152,7 +154,7 @@ treecols:-moz-lwtheme {
 
 .messageImage[value="indexedDB-permissions-prompt"],
 .messageImage[value="indexedDB-quota-prompt"] {
-  list-style-image: url("%STOCK-ICON gtk-dialog-question dialog-question 16");
+  list-style-image: var(--icon-dialog-question-16);
 }
 
 .messageImage[value="addon-install-blocked"],

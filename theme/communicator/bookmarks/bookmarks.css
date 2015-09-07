@@ -3,6 +3,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 /**
@@ -19,19 +21,19 @@ treechildren::-moz-tree-image(title) {
 .bookmark-item,
 treechildren::-moz-tree-image(Name),
 treechildren::-moz-tree-image(title) {
-  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
+  list-style-image: var(--icon-text-x-generic-16);
 }
 
 .bookmark-item[container="true"],
 treechildren::-moz-tree-image(Name, container),
 treechildren::-moz-tree-image(title, container) {
-  list-style-image: url("%STOCK-ICON gtk-directory folder 16");
+  list-style-image: var(--icon-folder-16);
 }
 
 .bookmark-item[open="true"],
 treechildren::-moz-tree-image(Name, open),
 treechildren::-moz-tree-image(title, open) {
-  list-style-image: url("%STOCK-ICON gtk-open document-open 16");
+  list-style-image: var(--icon-document-open-16);
 }
 
 .bookmark-item[container="true"][open="true"][loading="true"] {
@@ -57,12 +59,12 @@ treechildren::-moz-tree-image(title, container, livemark) {
 
 .bookmark-item[container][livemark] .bookmark-item,
 treechildren::-moz-tree-image(title, livemarkItem) {
-  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
+  list-style-image: var(--icon-text-x-generic-16);
 }
 
 .bookmark-item[container][livemark] .bookmark-item[visited],
 treechildren::-moz-tree-image(title, livemarkItem, visited) {
-  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
+  list-style-image: var(--icon-text-x-generic-16);
 }
 
 treechildren::-moz-tree-image(container, OrganizerQuery_AllBookmarks) {

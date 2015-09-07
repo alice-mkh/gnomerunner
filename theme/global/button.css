@@ -176,31 +176,34 @@ button[icon="help"] .button-icon {
 }
 
 button[icon="help"][disabled="true"] .button-icon {
-  list-style-image: url("m%STOCK-ICON gtk-help help-contents 16b disabled");
+  list-style-image: url("%STOCK-ICON gtk-help help-contents 16b disabled");
 }
 
 button[icon="open"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-open document-open 16b");
+  list-style-image: var(--icon-document-open-22);
 }
 
 button[icon="open"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-open document-open 16b disabled");
+  list-style-image: var(--icon-document-open-22-dis);
+  opacity: var(--icon-document-open-dis-opacity);
 }
 
 button[icon="save"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-save document-save 16b");
+  list-style-image: var(--icon-document-save-22);
 }
 
 button[icon="save"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-save document-save 16b disabled");
+  list-style-image: var(--icon-document-save-22-dis);
+  opacity: var(--icon-document-save-dis-opacity);
 }
 
 button[icon="find"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-find edit-find 16b");
+  list-style-image: var(--icon-edit-find-22);
 }
 
 button[icon="find"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-find edit-find 16b disabled");
+  list-style-image: var(--icon-edit-find-22-dis);
+  opacity: var(--icon-edit-find-dis-opacity);
 }
 
 button[icon="clear"] .button-icon {
