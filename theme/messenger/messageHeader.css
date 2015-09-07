@@ -72,6 +72,11 @@
   -moz-margin-start: 0;
 }
 
+/* Fix collapsed header styles */
+#collapsedsubjectBox > hbox {
+  -moz-box-align: start !important;
+}
+
 /* ::::: msg header message ids ::::: */
 
 .messageIdDisplayButton {

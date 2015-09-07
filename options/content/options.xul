@@ -12,8 +12,6 @@
         title="&options.window.title;"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-	<script type="application/javascript" src="chrome://gnomerunner-options/content/icon-theme-overlay.js" />
-
 	<prefpane>
 		<preferences>
 			<preference id="fallback-icon-theme"

@@ -16,19 +16,29 @@ cp install.rdf fd
 sed -E "s/((INTERNAL_)?NAME|THEME_(ID|DESC))/\0_FD/g" -i "fd/theme/install.rdf" "fd/theme/chrome.manifest" "fd/install.rdf"
 
 #Substitute variables
+FILES=`find . -type f -exec grep -Iq . {} \; -and -print`
 while read LINE; do
     if [[ $LINE != [A-Z]* ]]; then
         continue
     fi
     LINE1=`echo $LINE | grep -oE "^[^=]+"`
     LINE2=`echo $LINE | grep -oE "[^=]+$"`
-    sed "s|\$$LINE1|$LINE2|g" -i `find . -name "*.rdf"` `find . -name "*.xul"` `find . -name "*.js"` `find . -name "*.css"` `find . -name "*.manifest"` `find . -name "*.dtd"`
+    sed "s|\$$LINE1|$LINE2|g" -i $FILES
     eval "$LINE1=\"$LINE2\""
 done < "../config.txt"
 
-#Substitute icons
+#Output icons
 cd theme
 FILES=`find . -name "*.css"`
+for F in $FILES; do
+  N=`grep STOCK-ICON $F -c`
+  if (( N > 0 )); then
+    echo $F
+    echo " $N"
+  fi
+done
+
+#Substitute icons
 for F in $FILES; do
     ORIG="%STOCK-ICON ([^ ]+) ([^ ]+) ([0-9]+b?)( (disabled))?"
     NEW1="moz-icon:\/\/stock\/\1?size=\3\&state=\5"
