@@ -1,0 +1,15 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+#button-newcard .toolbarbutton-text,
+#button-editcard .toolbarbutton-text {
+    display: block !important;
+}
+
+toolbar[mode="icons"] #button-newcard,
+toolbar[mode="icons"] #button-newcard > .toolbarbutton-menubutton-button,
+toolbar[mode="icons"] #button-newcard > hbox > vbox,
+toolbar[mode="icons"] #button-editcard,
+toolbar[mode="icons"] #button-editcard > .toolbarbutton-menubutton-button,
+toolbar[mode="icons"] #button-editcard > hbox > vbox {
+  -moz-box-orient: horizontal !important;
+}

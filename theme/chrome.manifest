@@ -6,8 +6,6 @@ skin global $INTERNAL_NAME global/
 skin messenger $INTERNAL_NAME messenger/
 skin mozapps $INTERNAL_NAME mozapps/
 
-skin icons $INTERNAL_NAME icons/
-
 #New findbar in 2.22
 style chrome://navigator/content/navigator.xul chrome://global/skin/findBar-2.21.css appversion<2.22
 style chrome://communicator/content/viewSourceOverlay.xul chrome://global/skin/findBar-2.21.css appversion<2.22

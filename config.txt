@@ -25,5 +25,5 @@ SM_MIN_VERSION=2.17
 SM_MAX_VERSION=2.39
 
 #Options
-OPTIONS_PREF_BRANCH="extensions.gnomerunner-options"
+OPTIONS_PREF_BRANCH="extensions.gnomerunnergtkrevived."
 ENABLE_DEBUG=false
