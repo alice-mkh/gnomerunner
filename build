@@ -85,42 +85,28 @@ cd ..
 
 #Generate menu icon rules
 ORIG="\%NATIVE-ICON (.*) (.*) (.*)"
-NEW="\3:-moz-system-metric(images-in-menus) > label {\n"
-NEW+="    padding-left: 21px !important;\n"
-NEW+="    margin-left: 0px !important;\n"
+NEW="menuitem\3 {\n"
+NEW+="    -moz-binding: url(\"chrome://global/content/bindings/menu.xml#menuitem-iconic\") !important;\n"
+NEW+="}\n\nmenu\3 {\n"
+NEW+="    -moz-binding: url(\"chrome://global/content/bindings/menu.xml#menu-iconic\") !important;\n"
 NEW+="}\n\n\3 {\n"
 NEW+="    list-style-image: url(\"%STOCK-ICON \1 \2 16\") !important;\n"
-NEW+="}\n\n\3:-moz-system-metric(images-in-menus) > label {\n"
-NEW+="    background: url(\"%STOCK-ICON \1 \2 16\") 0% 50% no-repeat !important;\n"
-NEW+="}\n\n\3:-moz-system-metric(images-in-menus)[disabled=\"true\"] > label {\n"
-NEW+="    background: url(\"%STOCK-ICON \1 \2 16 disabled\") 0% 50% no-repeat !important;\n"
+NEW+="}\n\n\3[disabled=\"true\"] {\n"
+NEW+="    list-style-image: url(\"%STOCK-ICON \1 \2 16 disabled\") !important;\n"
 NEW+="}\n"
 sed -E "s|$ORIG|$NEW|g" -i `find . -name "*.css"`
 
 ORIG="\%ICON \"(.*)\" (.*)"
-NEW="\2:-moz-system-metric(images-in-menus) > label {\n"
-NEW+="    padding-left: 21px !important;\n"
-NEW+="    margin-left: 0px !important;\n"
-NEW+="}\n\n\2 {\n"
+NEW="menuitem\2 {\n"
+NEW+="    -moz-binding: url(\"chrome://global/content/bindings/menu.xml#menuitem-iconic\") !important;\n"
+NEW+="}\n\nmenu\2 {\n"
+NEW+="    -moz-binding: url(\"chrome://global/content/bindings/menu.xml#menu-iconic\") !important;\n"
+NEW+="\2 {\n"
 NEW+="    list-style-image: url(\"\1\") !important;\n"
-NEW+="}\n\n\2:-moz-system-metric(images-in-menus) > label {\n"
-NEW+="    background: url(\"\1\") 0% 50% no-repeat !important;\n"
+NEW+="}\n\n\2[disabled=\"true\"] .menu-iconic-icon {\n"
+NEW+="    opacity: .5 !important;\n"
 NEW+="}\n"
 sed -E "s|$ORIG|$NEW|g" -i `find . -name "*.css"`
-
-#ORIG="\%NATIVE-ICON (.*) (.*)"
-#NEW="\2 {\n"
-#NEW+="    -moz-binding: url(\"chrome://global/content/bindings/menu.xml#menuitem-iconic\") !important;\n"
-#NEW+="    list-style-image: url(\"moz-icon://stock/\1?size=menu\") !important;\n"
-#NEW+="}\n"
-#sed -E "s|$ORIG|$NEW|g" -i `find . -name "*.css"`
-
-#ORIG="\%ICON \"(.*)\" (.*)"
-#NEW="\2 {\n"
-#NEW+="    -moz-binding: url(\"chrome://global/content/bindings/menu.xml#menuitem-iconic\") !important;\n"
-#NEW+="    list-style-image: url(\"\1\") !important;\n"
-#NEW+="}\n"
-#sed -E "s|$ORIG|$NEW|g" -i `find . -name "*.css"`
 
 #Substitute icons
 cd theme
