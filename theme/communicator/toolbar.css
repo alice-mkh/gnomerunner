@@ -12,9 +12,20 @@ toolbar[type="menubar"]:not([autohide="true"]):not([xpfe="false"]):not(:-moz-lwt
   -moz-binding: url("chrome://communicator/content/bindings/toolbar.xml#grippytoolbar-drag");
 }
 
-toolbaritem > menubar,
-toolbar > menubar {
-  border-bottom: 0px none;
+.toolbar-holder {
+  -moz-appearance: toolbar;
+}
+
+.toolbar-holder,
+toolbar[xpfe="false"],
+toolbox[xpfe="false"] > toolbar {
+  padding: 2px 0;
+}
+
+toolbar[type="menubar"] .toolbar-holder,
+toolbar[xpfe="false"][type="menubar"],
+toolbox[xpfe="false"] > toolbar[type="menubar"] {
+  padding: 1px 0;
 }
 
 /* ::::: toolbargrippy ::::: */
@@ -24,29 +35,12 @@ toolbargrippy {
   -moz-box-align: center;
   width: 10px;
   padding: 2px 1px;
-}
-
-toolbar[type="menubar"] toolbargrippy:not([tbgrippy-collapsed="true"]),
-menubar toolbargrippy:not([tbgrippy-collapsed="true"]) {
-   margin-top: 0 !important;
-   margin-bottom: 0 !important;
-}
-
-toolbar:not([type="menubar"]) toolbargrippy:not([tbgrippy-collapsed="true"]) {
-   margin-top: -2px;
-   margin-bottom: -2px;
-}
-
-toolbargrippy:hover {
-  background-color: ThreeDHighlight;
-  border-top: 1px solid ThreeDHighlight;
-  border-bottom: 1px solid ThreeDShadow;
-  border-right: 1px solid ThreeDShadow;
+  -moz-appearance: toolbargripper;
 }
 
 .toolbargrippy-texture {
-  margin-top: 2px;
   width: 6px;
+  background: url("chrome://communicator/skin/toolbar/tbgrip-texture.png");
 }
 
 /* ::::: collapsed tray and grippies ::::: */
