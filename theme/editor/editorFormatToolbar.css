@@ -315,15 +315,16 @@
 }
 
 #absolutePositionButton{
-  list-style-image: url("%STOCK-ICON gtk-fullscreen view-fullscreen 16"); /*FIXME: Not stock!*/
+  list-style-image: var(--icon-view-fullscreen-16);
 }
 
 #absolutePositionButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-fullscreen view-fullscreen 16 disabled"); /*FIXME: Not stock!*/
+  list-style-image: var(--icon-view-fullscreen-16-dis);
+  opacity: var(--icon-view-fullscreen-dis-opacity);
 }
 
 #absolutePositionButton[checked="true"]{
-  list-style-image: url("%STOCK-ICON gtk-leave-fullscreen view-restore 16"); /*FIXME: Not stock!*/
+  list-style-image: var(--icon-view-restore-16);
 }
 
 #increaseZIndexButton {

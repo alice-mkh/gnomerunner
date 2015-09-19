@@ -90,7 +90,7 @@
 
 .console-row[type="error"],
 .console-row[type="exception"] {
-  list-style-image: url("%STOCK-ICON gtk-dialog-error dialog-error 16");
+  list-style-image: var(--icon-dialog-error-16);
 }
 
 .console-row[type="error"] .console-row-msg,
@@ -103,7 +103,7 @@
 }
 
 .console-row[type="message"] {
-  list-style-image: url("%STOCK-ICON gtk-dialog-info dialog-information 16");
+  list-style-image: var(--icon-dialog-information-16);
 }
 
 /* ::::: toolbars ::::: */
@@ -130,7 +130,7 @@ toolbar#ToolbarMode toolbarbutton {
 }
 
 #Console\:modeErrors {
-  list-style-image: url("%STOCK-ICON gtk-dialog-error dialog-error 24");
+  list-style-image: var(--icon-dialog-error-24);
 }
 
 #Console\:modeWarnings {
@@ -138,7 +138,7 @@ toolbar#ToolbarMode toolbarbutton {
 }
 
 #Console\:modeMessages {
-  list-style-image: url("%STOCK-ICON gtk-dialog-info dialog-information 24");
+  list-style-image: var(--icon-dialog-information-24);
 }
 
 #Console\:clear {

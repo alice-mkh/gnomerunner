@@ -58,7 +58,7 @@ findbar[hidden] {
 }
 
 .find-status-icon[status="notfound"] {
-  list-style-image: url("%STOCK-ICON gtk-dialog-error dialog-error 16");
+  list-style-image: var(--icon-dialog-error-16);
 }
 
 .find-status-icon[status="pending"] {

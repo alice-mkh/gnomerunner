@@ -58,10 +58,6 @@
   --icon-edit-paste-24-dis:					url("moz-icon://stock/gtk-paste?size=toolbar&state=disabled");
   --icon-edit-paste-dis-opacity:			var(--icon-base-dis-native-opacity);
 
-  --icon-go-bottom-16:						url("moz-icon://stock/gtk-goto-bottom?size=menu");
-  --icon-go-bottom-16-dis:					url("moz-icon://stock/gtk-goto-bottom?size=menu&state=disabled");
-  --icon-go-bottom-dis-opacity:				var(--icon-base-dis-native-opacity);
-
   --icon-go-down-16:						url("moz-icon://stock/gtk-go-down?size=menu");
   --icon-go-down-24:						url("moz-icon://stock/gtk-go-down?size=toolbar");
   --icon-go-down-16-dis:					url("moz-icon://stock/gtk-go-down?size=menu&state=disabled");
@@ -146,11 +142,19 @@
   --icon-tools-check-spelling-24-dis:		url("moz-icon://stock/gtk-spell-check?size=toolbar&state=disabled");
   --icon-tools-check-spelling-dis-opacity:	var(--icon-base-dis-native-opacity);
 
+  --icon-view-fullscreen-16:				url("moz-icon://stock/gtk-fullscreen?size=menu");
+  --icon-view-fullscreen-16-dis:			url("moz-icon://stock/gtk-fullscreen?size=menu&state=disabled");
+  --icon-view-fullscreen-dis-opacity:		var(--icon-base-dis-native-opacity);
+
   --icon-view-refresh-16:					url("moz-icon://stock/gtk-refresh?size=menu");
   --icon-view-refresh-24:					url("moz-icon://stock/gtk-refresh?size=toolbar");
   --icon-view-refresh-16-dis:				url("moz-icon://stock/gtk-refresh?size=menu&state=disabled");
   --icon-view-refresh-24-dis:				url("moz-icon://stock/gtk-refresh?size=toolbar&state=disabled");
   --icon-view-refresh-dis-opacity:			var(--icon-base-dis-native-opacity);
+
+  --icon-view-restore-16:					url("moz-icon://stock/gtk-leave-fullscreen?size=menu");
+  --icon-view-restore-16-dis:				url("moz-icon://stock/gtk-leave-fullscreen?size=menu&state=disabled");
+  --icon-view-restore-dis-opacity:			var(--icon-base-dis-native-opacity);
 
   --icon-window-close-16:					url("moz-icon://stock/gtk-close?size=menu");
   --icon-window-close-22:					url("moz-icon://stock/gtk-close?size=button");
@@ -171,6 +175,14 @@
   --icon-folder-dis-opacity:				var(--icon-base-dis-native-opacity);
 
 /* Status */
+  --icon-dialog-error-16:					url("moz-icon://stock/gtk-dialog-error?size=menu");
+  --icon-dialog-error-24:					url("moz-icon://stock/gtk-dialog-error?size=toolbar");
+  --icon-dialog-error-48:					url("moz-icon://stock/gtk-dialog-error?size=dialog");
+  --icon-dialog-error-16-dis:				url("moz-icon://stock/gtk-dialog-error?size=menu&state=disabled");
+  --icon-dialog-error-24-dis:				url("moz-icon://stock/gtk-dialog-error?size=toolbar&state=disabled");
+  --icon-dialog-error-48-dis:				url("moz-icon://stock/gtk-dialog-error?size=dialog&state=disabled");
+  --icon-dialog-error-dis-opacity:			var(--icon-base-dis-native-opacity);
+
   --icon-dialog-information-16:				url("moz-icon://stock/gtk-dialog-info?size=menu");
   --icon-dialog-information-24:				url("moz-icon://stock/gtk-dialog-info?size=toolbar");
   --icon-dialog-information-48:				url("moz-icon://stock/gtk-dialog-info?size=dialog");

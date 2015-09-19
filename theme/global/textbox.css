@@ -73,7 +73,7 @@ textbox.plain html|*.textbox-textarea {
 /* ::::: search textbox ::::: */
 
 .textbox-search-icon {
-  list-style-image: url("%STOCK-ICON gtk-find edit-find 16");
+  list-style-image: var(--icon-edit-find-16);
 }
 
 .textbox-search-icon:-moz-locale-dir(rtl) {
@@ -110,27 +110,30 @@ menuitem[cmd="cmd_undo"][disabled] {
 }
 
 menuitem[cmd="cmd_cut"] {
-  list-style-image: url("%STOCK-ICON gtk-cut edit-cut 16");
+  list-style-image: var(--icon-edit-cut-16);
 }
 
 menuitem[cmd="cmd_cut"][disabled] {
-  list-style-image: url("%STOCK-ICON gtk-cut edit-cut 16 disabled");
+  list-style-image: var(--icon-edit-cut-16-dis);
+  opacity: var(--icon-edit-cut-dis-opacity);
 }
 
 menuitem[cmd="cmd_copy"] {
-  list-style-image: url("%STOCK-ICON gtk-copy edit-copy 16");
+  list-style-image: var(--icon-edit-copy-16);
 }
 
 menuitem[cmd="cmd_copy"][disabled] {
-  list-style-image: url("%STOCK-ICON gtk-copy edit-copy 16 disabled");
+  list-style-image: var(--icon-edit-copy-16-dis);
+  opacity: var(--icon-edit-copy-dis-opacity);
 }
 
 menuitem[cmd="cmd_paste"] {
-  list-style-image: url("%STOCK-ICON gtk-paste edit-paste 16");
+  list-style-image: var(--icon-edit-paste-16);
 }
 
 menuitem[cmd="cmd_paste"][disabled] {
-  list-style-image: url("%STOCK-ICON gtk-paste edit-paste 16 disabled");
+  list-style-image: var(--icon-edit-paste-16-dis);
+  opacity: var(--icon-edit-paste-dis-opacity);
 }
 
 menuitem[cmd="cmd_delete"] {

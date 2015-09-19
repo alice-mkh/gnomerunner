@@ -58,10 +58,6 @@
   --icon-edit-paste-24-dis:					var(--icon-edit-paste-24);
   --icon-edit-paste-dis-opacity:			var(--icon-base-dis-opacity);
 
-  --icon-go-bottom-16:						url("chrome://icons/skin/gnome/16x16/actions/go-bottom.png");
-  --icon-go-bottom-16-dis:					var(--icon-go-bottom-16);
-  --icon-go-bottom-dis-opacity:				var(--icon-base-dis-opacity);
-
   --icon-go-down-16:						url("chrome://icons/skin/gnome/16x16/actions/go-down.png");
   --icon-go-down-24:						url("chrome://icons/skin/gnome/24x24/actions/go-down.png");
   --icon-go-down-16-dis:					var(--icon-go-down-16);
@@ -146,11 +142,19 @@
   --icon-tools-check-spelling-24-dis:		var(--icon-tools-check-spelling-24);
   --icon-tools-check-spelling-dis-opacity:	var(--icon-base-dis-opacity);
 
+  --icon-view-fullscreen-16:				url("chrome://icons/skin/gnome/16x16/actions/view-fullscreen.png");
+  --icon-view-fullscreen-16-dis:			var(--icon-view-fullscreen-16);
+  --icon-view-fullscreen-dis-opacity:		var(--icon-base-dis-opacity);
+
   --icon-view-refresh-16:					url("chrome://icons/skin/gnome/16x16/actions/view-refresh.png");
   --icon-view-refresh-24:					url("chrome://icons/skin/gnome/24x24/actions/view-refresh.png");
   --icon-view-refresh-16-dis:				var(--icon-view-refresh-16);
   --icon-view-refresh-24-dis:				var(--icon-view-refresh-24);
   --icon-view-refresh-dis-opacity:			var(--icon-base-dis-opacity);
+
+  --icon-view-restore-16:					url("chrome://icons/skin/gnome/16x16/actions/view-restore.png");
+  --icon-view-restore-16-dis:				var(--icon-view-restore-16);
+  --icon-view-restore-dis-opacity:			var(--icon-base-dis-opacity);
 
   --icon-window-close-16:					url("chrome://icons/skin/gnome/16x16/actions/window-close.png");
   --icon-window-close-22:					url("chrome://icons/skin/gnome/22x22/actions/window-close.png");
@@ -171,6 +175,14 @@
   --icon-folder-dis-opacity:				var(--icon-base-dis-opacity);
 
 /* Status */
+  --icon-dialog-error-16:					url("chrome://icons/skin/gnome/16x16/status/dialog-error.png");
+  --icon-dialog-error-24:					url("chrome://icons/skin/gnome/24x24/status/dialog-error.png");
+  --icon-dialog-error-48:					url("chrome://icons/skin/gnome/48x48/status/dialog-error.png");
+  --icon-dialog-error-16-dis:				var(--icon-dialog-error-16);
+  --icon-dialog-error-24-dis:				var(--icon-dialog-error-24);
+  --icon-dialog-error-48-dis:				var(--icon-dialog-error-48);
+  --icon-dialog-error-dis-opacity:			var(--icon-base-dis-opacity);
+
   --icon-dialog-information-16:				url("chrome://icons/skin/gnome/16x16/status/dialog-information.png");
   --icon-dialog-information-24:				url("chrome://icons/skin/gnome/24x24/status/dialog-information.png");
   --icon-dialog-information-48:				url("chrome://icons/skin/gnome/48x48/status/dialog-information.png");

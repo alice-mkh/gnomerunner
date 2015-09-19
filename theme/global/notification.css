@@ -45,7 +45,7 @@ notification[type="critical"] {
 /* Default icons for notifications */
 
 .messageImage[type="info"] {
-  list-style-image: url("%STOCK-ICON gtk-dialog-info dialog-information 16");
+  list-style-image: var(--icon-dialog-information-16);
 }
 
 .messageImage[type="warning"] {
@@ -53,7 +53,7 @@ notification[type="critical"] {
 }
 
 .messageImage[type="critical"] {
-  list-style-image: url("%STOCK-ICON gtk-dialog-error dialog-error 16");
+  list-style-image: var(--icon-dialog-error-16);
 }
 
 .messageCloseButton {

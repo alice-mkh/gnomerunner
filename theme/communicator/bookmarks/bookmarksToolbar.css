@@ -92,7 +92,8 @@ menuitem.bookmark-item {
 }
 
 .bookmark-group {
-    list-style-image: url("%STOCK-ICON gtk-copy edit-copy 16 disabled") !important;
+  list-style-image: var(--icon-edit-copy-16-dis) !important;
+  opacity: var(--icon-edit-copy-dis-opacity);
 }
 
 .menuitem-iconic.bookmark-item[disabled="true"] {

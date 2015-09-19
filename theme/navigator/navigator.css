@@ -193,11 +193,11 @@ toolbar[mode="text"] > #window-controls > toolbarbutton > .toolbarbutton-icon {
 }
 
 #minimize-button {
-  list-style-image: var(--icon-go-bottom-16);
+  list-style-image: var(--icon-go-down-16);
 } 
 
 #restore-button {
-  list-style-image: url("%STOCK-ICON gtk-leave-fullscreen view-restore 16");/*FIXME: Not stock!*/
+  list-style-image: var(--icon-view-restore-16);
 } 
 
 #close-button {
