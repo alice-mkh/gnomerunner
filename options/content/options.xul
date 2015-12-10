@@ -30,31 +30,39 @@
 			<preference id="show-toolbar-grippies"
 			            name="extensions.gnomerunner-options.show-toolbar-grippies"
 			            type="bool"/>
+			<preference id="throbber-style"
+			            name="extensions.gnomerunner-options.throbber-style"
+			            type="string"/>
 		</preferences>
 
 		<tabbox>
 			<tabs>
 				<tab label="&options.tab.icons;" />
 				<tab label="&options.tab.menus-and-toolbars;" />
+				<tab label="&options.tab.throbber;" />
 			</tabs>
 			<tabpanels>
 				<tabpanel orient="vertical">
-					<label value="&options.label.native-icons;" />
-					<radiogroup orient="horizontal"
-					            preference="native-icons">
-						<radio label="&options.icons.freedesktop;" value="2"/>
-						<radio label="&options.icons.stock-gtk;" value="1"/>
-						<radio label="&options.icons.none;" value="0"/>
-					</radiogroup>
-					<label value="&options.label.fallback-icons;" />
-					<menulist preference="fallback-icon-theme">
-						<menupopup>
-							<menuitem label="GNOME" value="gnome"/>
-							<menuitem label="Tango" value="tango"/>
-							<menuitem label="Old GNOME" value="gnome-old"/>
-							<menuitem label="Faenza" value="faenza"/>
-						</menupopup>
-					</menulist>
+					<groupbox>
+						<caption label="&options.label.native-icons;" />
+						<radiogroup orient="horizontal"
+							        preference="native-icons">
+							<radio label="&options.icons.freedesktop;" value="2"/>
+							<radio label="&options.icons.stock-gtk;" value="1"/>
+							<radio label="&options.icons.none;" value="0"/>
+						</radiogroup>
+					</groupbox>
+					<groupbox>
+						<caption label="&options.label.fallback-icons;" />
+						<menulist preference="fallback-icon-theme">
+							<menupopup>
+								<menuitem label="GNOME" value="gnome"/>
+								<menuitem label="Tango" value="tango"/>
+								<menuitem label="Old GNOME" value="gnome-old"/>
+								<menuitem label="Faenza" value="faenza"/>
+							</menupopup>
+						</menulist>
+					</groupbox>
 					<groupbox>
 						<caption label="&options.label.preview;" />
 						<hbox>
@@ -67,12 +75,15 @@
 					</groupbox>
 				</tabpanel>
 				<tabpanel orient="vertical">
-					<checkbox label="&options.label.visible-grippies;"
-                              preference="visible-grippies" />
-					<checkbox label="&options.label.show-menubar-grippies;"
-                              preference="show-menubar-grippies" />
-					<checkbox label="&options.label.show-toolbar-grippies;"
-                              preference="show-toolbar-grippies" />
+					<groupbox>
+						<caption label="&options.label.grippies;" />
+						<checkbox label="&options.label.visible-grippies;"
+		                          preference="visible-grippies" />
+						<checkbox label="&options.label.show-menubar-grippies;"
+		                          preference="show-menubar-grippies" />
+						<checkbox label="&options.label.show-toolbar-grippies;"
+		                          preference="show-toolbar-grippies" />
+					</groupbox>
 					<groupbox>
 						<caption label="&options.label.preview;" />
 						<toolbox id="preview-toolbox">
@@ -108,6 +119,24 @@
 											   label="&options.label.preview.save;" />
 							</toolbar>
 						</toolbox>
+					</groupbox>
+				</tabpanel>
+				<tabpanel orient="vertical">
+					<groupbox>
+						<caption label="&options.label.throbber-style;" />
+						<radiogroup preference="throbber-style">
+							<radio label="&options.label.throbber.generic;" value="generic" />
+							<radio label="&options.label.throbber.seamonkey;" value="seamonkey" />
+							<radio label="&options.label.throbber.mozilla;" value="mozilla" />
+							<radio label="&options.label.throbber.gnome-foot;" value="gnome-foot" />
+						</radiogroup>
+					</groupbox>
+					<groupbox>
+						<caption label="&options.label.preview;" />
+						<hbox>
+							<button id="navigator-throbber" />
+							<button id="navigator-throbber" busy="true" />
+						</hbox>
 					</groupbox>
 				</tabpanel>
 			</tabpanels>

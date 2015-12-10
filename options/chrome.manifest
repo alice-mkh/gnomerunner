@@ -4,6 +4,7 @@ skin     gnomerunner-options classic/1.0 skin/
 locale   gnomerunner-options en-US       locale/en-US/
 
 override chrome://icons/skin/icon-theme-default.css					chrome://gnomerunner-options/skin/empty.css
+override chrome://communicator/skin/brand.css						chrome://gnomerunner-options/skin/empty.css
 
 component {f7a5d193-3649-440f-9872-cbc9b9ec5c8c} components/gnomerunner-options-startup.js
 contract @gnomerunner-options/startup;2 {f7a5d193-3649-440f-9872-cbc9b9ec5c8c}

@@ -20,6 +20,7 @@ var fallbackTheme;
 var visibleGrippies;
 var showMenubarGrippies;
 var showToolbarGrippies;
+var throbberStyle;
 
 function GnomerunnerOptions() {
   this.start();
@@ -99,6 +100,7 @@ function loadTweaks() {
   visibleGrippies = prefs.getBoolPref("visible-grippies");
   showMenubarGrippies = prefs.getBoolPref("show-menubar-grippies");
   showToolbarGrippies = prefs.getBoolPref("show-toolbar-grippies");
+  throbberStyle = prefs.getCharPref("throbber-style");
 
   if (visibleGrippies) {
     loadCss("chrome://gnomerunner-options/content/tweaks/visible-grippies.css");
@@ -111,12 +113,15 @@ function loadTweaks() {
   if (!showToolbarGrippies) {
     loadCss("chrome://gnomerunner-options/content/tweaks/hide-toolbar-grippies.css");
   }
+
+  loadCss("chrome://gnomerunner-options/content/tweaks/throbber/throbber-" + throbberStyle + ".css");
 }
 
 function unloadTweaks() {
   unloadCss("chrome://gnomerunner-options/content/tweaks/visible-grippies.css");
   unloadCss("chrome://gnomerunner-options/content/tweaks/hide-menubar-grippies.css");
   unloadCss("chrome://gnomerunner-options/content/tweaks/hide-toolbar-grippies.css");
+  unloadCss("chrome://gnomerunner-options/content/tweaks/throbber/throbber-" + throbberStyle + ".css");
 }
 
 function refreshDocument(aDoc) {

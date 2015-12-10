@@ -6,17 +6,25 @@
 
 <!ENTITY options.tab.icons						"Icons">
 <!ENTITY options.tab.menus-and-toolbars			"Menus and Toolbars">
+<!ENTITY options.tab.throbber					"Throbber">
 
-<!ENTITY options.label.native-icons				"Native icons:">
+<!ENTITY options.label.native-icons				"Native icons">
 <!ENTITY options.icons.freedesktop				"Freedesktop">
 <!ENTITY options.icons.stock-gtk				"Stock GTK">
 <!ENTITY options.icons.none						"None">
 
-<!ENTITY options.label.fallback-icons			"Fallback icons:">
+<!ENTITY options.label.fallback-icons			"Fallback icons">
 
+<!ENTITY options.label.grippies					"Grippies">
 <!ENTITY options.label.visible-grippies			"Visible grippies">
 <!ENTITY options.label.show-menubar-grippies	"Show menubar grippies">
 <!ENTITY options.label.show-toolbar-grippies	"Show toolbar grippies">
+
+<!ENTITY options.label.throbber-style			"Throbber style">
+<!ENTITY options.label.throbber.generic			"Generic">
+<!ENTITY options.label.throbber.seamonkey		"SeaMonkey">
+<!ENTITY options.label.throbber.mozilla			"Mozilla">
+<!ENTITY options.label.throbber.gnome-foot		"GNOME foot">
 
 <!ENTITY options.label.preview					"Preview">
 
