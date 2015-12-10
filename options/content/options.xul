@@ -8,6 +8,7 @@
 
 <!DOCTYPE window SYSTEM "chrome://gnomerunner-options/locale/options.dtd">
 
+
 <window id="gnomerunner-options-window"
         title="&options.window.title;"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
@@ -20,12 +21,21 @@
 			<preference id="native-icons"
 			            name="extensions.gnomerunner-options.native-icons"
 			            type="int"/>
+			<preference id="visible-grippies"
+			            name="extensions.gnomerunner-options.visible-grippies"
+			            type="bool"/>
+			<preference id="show-menubar-grippies"
+			            name="extensions.gnomerunner-options.show-menubar-grippies"
+			            type="bool"/>
+			<preference id="show-toolbar-grippies"
+			            name="extensions.gnomerunner-options.show-toolbar-grippies"
+			            type="bool"/>
 		</preferences>
 
 		<tabbox>
 			<tabs>
 				<tab label="&options.tab.icons;" />
-				<tab label="&options.tab.toolbar-grippies;" />
+				<tab label="&options.tab.menus-and-toolbars;" />
 			</tabs>
 			<tabpanels>
 				<tabpanel orient="vertical">
@@ -56,7 +66,49 @@
 						</hbox>
 					</groupbox>
 				</tabpanel>
-				<tabpanel>
+				<tabpanel orient="vertical">
+					<checkbox label="&options.label.visible-grippies;"
+                              preference="visible-grippies" />
+					<checkbox label="&options.label.show-menubar-grippies;"
+                              preference="show-menubar-grippies" />
+					<checkbox label="&options.label.show-toolbar-grippies;"
+                              preference="show-toolbar-grippies" />
+					<groupbox>
+						<caption label="&options.label.preview;" />
+						<toolbox id="preview-toolbox">
+							<menubar id="preview-menubar">
+								<menu label="&options.label.preview.file;">
+									<menupopup>
+										<menuitem label="&options.label.preview.new;" />
+										<menuitem label="&options.label.preview.open;" />
+										<menuitem label="&options.label.preview.save;" />
+										<menuseparator />
+										<menuitem label="&options.label.preview.print;" />
+										<menuseparator />
+										<menuitem label="&options.label.preview.exit;" />
+									</menupopup>
+								</menu>
+								<menu label="&options.label.preview.edit;">
+									<menupopup>
+										<menuitem label="&options.label.preview.cut;" />
+										<menuitem label="&options.label.preview.copy;" />
+										<menuitem label="&options.label.preview.paste;" />
+									</menupopup>
+								</menu>
+							</menubar>
+							<toolbar id="preview-toolbar" class="toolbar-primary">
+								<toolbarbutton class="toolbarbutton-1"
+											   id="preview-toolbar-new"
+											   label="&options.label.preview.new;" />
+								<toolbarbutton class="toolbarbutton-1"
+											   id="preview-toolbar-open"
+											   label="&options.label.preview.open;" />
+								<toolbarbutton class="toolbarbutton-1"
+											   id="preview-toolbar-save"
+											   label="&options.label.preview.save;" />
+							</toolbar>
+						</toolbox>
+					</groupbox>
 				</tabpanel>
 			</tabpanels>
 		</tabbox>

@@ -17,6 +17,9 @@ const XUL_NS = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
 var nativeIcons;
 var fallbackTheme;
+var visibleGrippies;
+var showMenubarGrippies;
+var showToolbarGrippies;
 
 function GnomerunnerOptions() {
   this.start();
@@ -40,16 +43,18 @@ GnomerunnerOptions.prototype = {
 
   observe: function(aSubject, aTopic, aData) {
     if (aTopic == "final-ui-startup") {
-      nativeIcons = prefs.getIntPref("native-icons");
-      fallbackTheme = prefs.getCharPref("fallback-icon-theme");
       loadTheme();
+      loadTweaks();
       return;
     }
-    if (aTopic == "nsPref:changed" && (aData == "native-icons" || aData == "fallback-icon-theme")) {
-      unloadTheme();
-      nativeIcons = prefs.getIntPref("native-icons");
-      fallbackTheme = prefs.getCharPref("fallback-icon-theme");
-      loadTheme();
+    if (aTopic == "nsPref:changed") {
+      if (aData == "native-icons" || aData == "fallback-icon-theme") {
+        unloadTheme();
+        loadTheme();
+      } else {
+        unloadTweaks();
+        loadTweaks();
+      }
 
       let windows = Services.ww.getWindowEnumerator();
       while (windows.hasMoreElements()) {
@@ -61,34 +66,57 @@ GnomerunnerOptions.prototype = {
   }
 };
 
-function loadTheme() {
-  var native = "chrome://icons/skin/layer-" + NATIVE_MODES[nativeIcons] + ".css";
-  var fallback = "chrome://icons/skin/icon-theme-" + fallbackTheme + ".css";
+function loadCss(aCss) {
+  var uri = Services.io.newURI(aCss, null, null);
 
-  var nativeUri = Services.io.newURI(native, null, null);
-  var fallbackUri = Services.io.newURI(fallback, null, null);
-
-  if (!cssService.sheetRegistered(fallbackUri, cssService.USER_SHEET)){
-    cssService.loadAndRegisterSheet(fallbackUri, cssService.USER_SHEET);
-  }
-  if (!cssService.sheetRegistered(nativeUri, cssService.USER_SHEET)){
-    cssService.loadAndRegisterSheet(nativeUri, cssService.USER_SHEET);
+  if (!cssService.sheetRegistered(uri, cssService.USER_SHEET)){
+    cssService.loadAndRegisterSheet(uri, cssService.USER_SHEET);
   }
 }
 
+function unloadCss(aCss) {
+  var uri = Services.io.newURI(aCss, null, null);
+
+  if (cssService.sheetRegistered(uri, cssService.USER_SHEET)){
+    cssService.unregisterSheet(uri, cssService.USER_SHEET);
+  }
+}
+
+function loadTheme() {
+  nativeIcons = prefs.getIntPref("native-icons");
+  fallbackTheme = prefs.getCharPref("fallback-icon-theme");
+
+  loadCss("chrome://icons/skin/icon-theme-" + fallbackTheme + ".css");
+  loadCss("chrome://icons/skin/layer-" + NATIVE_MODES[nativeIcons] + ".css");
+}
+
 function unloadTheme() {
-  var native = "chrome://icons/skin/layer-" + NATIVE_MODES[nativeIcons] + ".css";
-  var fallback = "chrome://icons/skin/icon-theme-" + fallbackTheme + ".css";
+  unloadCss("chrome://icons/skin/icon-theme-" + fallbackTheme + ".css");
+  unloadCss("chrome://icons/skin/layer-" + NATIVE_MODES[nativeIcons] + ".css");
+}
 
-  var nativeUri = Services.io.newURI(native, null, null);
-  var fallbackUri = Services.io.newURI(fallback, null, null);
+function loadTweaks() {
+  visibleGrippies = prefs.getBoolPref("visible-grippies");
+  showMenubarGrippies = prefs.getBoolPref("show-menubar-grippies");
+  showToolbarGrippies = prefs.getBoolPref("show-toolbar-grippies");
 
-  if (cssService.sheetRegistered(fallbackUri, cssService.USER_SHEET)){
-    cssService.unregisterSheet(fallbackUri, cssService.USER_SHEET);
+  if (visibleGrippies) {
+    loadCss("chrome://gnomerunner-options/content/tweaks/visible-grippies.css");
   }
-  if (cssService.sheetRegistered(nativeUri, cssService.USER_SHEET)){
-    cssService.unregisterSheet(nativeUri, cssService.USER_SHEET);
+
+  if (!showMenubarGrippies) {
+    loadCss("chrome://gnomerunner-options/content/tweaks/hide-menubar-grippies.css");
   }
+
+  if (!showToolbarGrippies) {
+    loadCss("chrome://gnomerunner-options/content/tweaks/hide-toolbar-grippies.css");
+  }
+}
+
+function unloadTweaks() {
+  unloadCss("chrome://gnomerunner-options/content/tweaks/visible-grippies.css");
+  unloadCss("chrome://gnomerunner-options/content/tweaks/hide-menubar-grippies.css");
+  unloadCss("chrome://gnomerunner-options/content/tweaks/hide-toolbar-grippies.css");
 }
 
 function refreshDocument(aDoc) {
