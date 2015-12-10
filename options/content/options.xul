@@ -46,13 +46,13 @@
 						</menupopup>
 					</menulist>
 					<groupbox>
-						<caption label="&options.label.example;" />
+						<caption label="&options.label.preview;" />
 						<hbox>
-							<image class="example-icon" id="example-1" />
-							<image class="example-icon" id="example-2" />
-							<image class="example-icon" id="example-3" />
-							<image class="example-icon" id="example-4" />
-							<image class="example-icon" id="example-5" />
+							<image class="preview-icon" id="preview-icon-1" />
+							<image class="preview-icon" id="preview-icon-2" />
+							<image class="preview-icon" id="preview-icon-3" />
+							<image class="preview-icon" id="preview-icon-4" />
+							<image class="preview-icon" id="preview-icon-5" />
 						</hbox>
 					</groupbox>
 				</tabpanel>

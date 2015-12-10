@@ -4,26 +4,26 @@
 
 @import url("chrome://icons/skin/icon-theme-default.css");
 
-.example-icon {
+.preview-icon {
     margin: 5px;
 }
 
-#example-1 {
+#preview-icon-1 {
     list-style-image: var(--icon-go-previous-24);
 }
 
-#example-2 {
+#preview-icon-2 {
     list-style-image: var(--icon-go-next-24);
 }
 
-#example-3 {
+#preview-icon-3 {
     list-style-image: var(--icon-view-refresh-24);
 }
 
-#example-4 {
+#preview-icon-4 {
     list-style-image: var(--icon-process-stop-24);
 }
 
-#example-5 {
+#preview-icon-5 {
     list-style-image: var(--icon-go-home-24);
 }
