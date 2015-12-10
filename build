@@ -9,8 +9,41 @@ cp icon.png temp/theme
 cp icon.png temp/options
 cd temp
 
-#Generate icon theme css
+
 cd theme/icons
+
+#Generate layers
+
+SIZES="16 22 24 48"
+
+for F in layer-*; do
+	echo $F
+    echo "/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url(\"chrome://icons/skin/icon-theme-base.css\");
+
+:root {" > $F.css
+
+	while read -r LINE; do
+		LINE1=`echo $LINE | grep -Po "^[\w-]+"`
+		LINE2=`echo $LINE | grep -Po "[\w-]+$"`
+		for S in $SIZES; do
+            echo "  --icon-$LINE1-$S: url(\"moz-icon://stock/$LINE2?size=$S\");" >> $F.css
+            echo "  --icon-$LINE1-$S-dis: url(\"moz-icon://stock/$LINE2?size=$S&state=disabled\");" >> $F.css
+		done
+        echo "  --icon-$LINE1-opacity: var(--icon-base-dis-native-opacity);"  >> $F.css
+        echo ""  >> $F.css
+	done < $F
+
+    echo "}" >> $F.css
+	rm $F
+
+    sed -E "s/(size=)16/\1menu/g;s/(size=)22/\1button/g;s/(size=)24/\1toolbar/g;s/(size=)48/\1dialog/g;" -i $F.css
+done
+
+#Generate icon theme css
 
 SIZES="16 20 22 24 32 48"
 
@@ -79,13 +112,13 @@ done < "../config.txt"
 #Output icons
 cd theme
 FILES=`find . -name "*.css"`
-#for F in $FILES; do
-#  N=`grep STOCK-ICON $F -c`
-#  if (( N > 0 )); then
-#    echo $F
-#    echo " $N"
-#  fi
-#done
+for F in $FILES; do
+  N=`grep STOCK-ICON $F -c`
+  if (( N > 0 )); then
+    echo $F
+    echo " $N"
+  fi
+done
 
 #Substitute icons
 for F in $FILES; do
@@ -103,6 +136,7 @@ for F in $FILES; do
     sed -E "s/16bx16b/16x16/g" -i "$F" "../fd/theme/$F"
     sed -E "s/size=16b/size=button/g" -i "$F" "../fd/theme/$F"
     sed -E "s/size=16/size=menu/g" -i "$F" "../fd/theme/$F"
+    sed -E "s/size=22/size=button/g" -i "$F" "../fd/theme/$F"
     sed -E "s/size=24/size=toolbar/g" -i "$F" "../fd/theme/$F"
     sed -E "s/size=48/size=dialog/g" -i "$F" "../fd/theme/$F"
     sed -E "s/&state=\"/\"/g" -i "$F" "../fd/theme/$F"
@@ -132,3 +166,4 @@ zip ../$OPTIONS_JAR * -qr
 cd ..
 zip ../../$NAME_FD $THEME_JAR $OPTIONS_JAR install.rdf -q
 cd ../..
+
