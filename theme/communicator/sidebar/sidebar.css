@@ -96,16 +96,12 @@
   -moz-box-align: center;
   cursor: pointer;
   -moz-appearance: tab;
-  padding: 1px;
+  padding: 3px;
   color: -moz-DialogText;
   text-shadow: none;
   -moz-margin-start: -5px;
   -moz-padding-start: 8px;
   -moz-padding-end: 2px;
-}
-
-.sbtab-label {
-  margin: 0 !important;
 }
 
 .sbtab-twisty {
