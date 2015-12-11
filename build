@@ -14,10 +14,12 @@ cd theme/icons
 
 #Generate layers
 
+echo "Generating icon layers..."
+
 SIZES="16 22 24 48"
 
 for F in layer-*; do
-	echo $F
+	echo " $F"
     echo "/* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
@@ -33,7 +35,7 @@ for F in layer-*; do
             echo "  --icon-$LINE1-$S: url(\"moz-icon://stock/$LINE2?size=$S\");" >> $F.css
             echo "  --icon-$LINE1-$S-dis: url(\"moz-icon://stock/$LINE2?size=$S&state=disabled\");" >> $F.css
 		done
-        echo "  --icon-$LINE1-opacity: var(--icon-base-dis-native-opacity);"  >> $F.css
+        echo "  --icon-$LINE1-dis-opacity: var(--icon-base-dis-native-opacity);"  >> $F.css
         echo ""  >> $F.css
 	done < $F
 
@@ -45,9 +47,11 @@ done
 
 #Generate icon theme css
 
+echo "Generating icon themes..."
 SIZES="16 20 22 24 32 48"
 
 for THEME in `echo */ | sed -E "s/\///g"`; do
+	echo " $THEME"
     cd $THEME
 
 	BASE=`cat base`
@@ -92,12 +96,14 @@ done
 cd ../..
 
 #Create Freedesktop theme
+echo "Creating -fd theme (deprecated)..."
 mkdir fd
 cp -R theme fd/theme
 cp install.rdf fd
 sed -E "s/((INTERNAL_)?NAME|THEME_(ID|DESC))/\0_FD/g" -i "fd/theme/install.rdf" "fd/theme/chrome.manifest" "fd/install.rdf"
 
 #Substitute variables
+echo "Substituting variables..."
 FILES=`find . -type f -exec grep -Iq . {} \; -and -print`
 while read LINE; do
     if [[ $LINE != [A-Z]* ]]; then
@@ -120,6 +126,7 @@ for F in $FILES; do
   fi
 done
 
+echo "Substituting icons (deprecated)..."
 #Substitute icons
 for F in $FILES; do
     ORIG="%STOCK-ICON ([^ ]+) ([^ ]+) ([0-9]+b?)( (disabled))?"
@@ -148,6 +155,7 @@ cd ..
 
 cp -R options fd
 
+echo "Packaging..."
 #Package
 THEME_JAR="theme.jar"
 OPTIONS_JAR="options.xpi"
