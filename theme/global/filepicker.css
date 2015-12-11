@@ -30,12 +30,12 @@ treechildren::-moz-tree-image(FilenameColumn) {
 
 treechildren::-moz-tree-image(treecolAutoCompleteValue, directory),
 treechildren::-moz-tree-image(FilenameColumn, directory) {
-  list-style-image: url("%STOCK-ICON gtk-directory folder 16");
+  list-style-image: var(--icon-folder-16);
 }
 
 treechildren::-moz-tree-image(treecolAutoCompleteValue, file),
 treechildren::-moz-tree-image(FilenameColumn, file) {
-  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
+  list-style-image: var(--icon-text-x-generic-16);
 }
 
 /* ::::: button items ::::: */
@@ -43,14 +43,14 @@ treechildren::-moz-tree-image(FilenameColumn, file) {
 /* up-button */
 
 .up-button {
-  list-style-image: url("%STOCK-ICON gtk-go-up go-up 24");
+  list-style-image: var(--icon-go-up-24);
   max-width: 36px;
 }
 
 /* home-button */
 
 .home-button {
-  list-style-image: url("%STOCK-ICON gtk-home go-home 24");
+  list-style-image: var(--icon-go-home-24);
   max-width: 36px;
 }
 

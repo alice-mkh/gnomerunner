@@ -3,6 +3,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 @import url("chrome://global/skin/");
+@import url("chrome://icons/skin/icon-theme-default.css");
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 #HelpToolbar toolbarbutton {
@@ -131,14 +132,14 @@ menuitem:not([type]) {
 }
 
 #context-selectall {
-  list-style-image: url("%STOCK-ICON gtk-select-all edit-select-all 16"); /*FIXME: Not stock!*/
+  list-style-image: var(--icon-edit-select-all-16);
 }
 
 #zoom-in {
-  list-style-image: url("%STOCK-ICON gtk-zoom-in zoom-in 16");
+  list-style-image: var(--icon-zoom-in-16);
 }
 
 #zoom-out {
-  list-style-image: url("%STOCK-ICON gtk-zoom-out zoom-out 16");
+  list-style-image: var(--icon-zoom-out-16);
 }
 

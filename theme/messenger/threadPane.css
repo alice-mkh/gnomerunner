@@ -221,7 +221,7 @@ tree[noattachcol="true"] > treechildren::-moz-tree-image(subjectCol, attach, for
 
 .icon-holder[type="message"][IMAPDeleted="true"],
 treechildren::-moz-tree-image(subjectCol, imapdeleted) {
-  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 16");
+  list-style-image: var(--icon-edit-delete-16);
 }
 
 .icon-holder[type="message"][Offline="true"],
@@ -251,7 +251,7 @@ tree[noattachcol="true"] > treechildren::-moz-tree-image(subjectCol, attach, for
 
 .icon-holder[type="message"][IMAPDeleted="true"][Offline="true"],
 treechildren::-moz-tree-image(subjectCol, imapdeleted, offline) {
-  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 16");
+  list-style-image: var(--icon-edit-delete-16);
 }
 
 .icon-holder[type="message"][MessageType="rss"],

@@ -5,7 +5,7 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 .findbar-closebutton {
-  list-style-image: url("%STOCK-ICON gtk-close window-close 16");
+  list-style-image: var(--icon-window-close-16);
 }
 
 findbar {

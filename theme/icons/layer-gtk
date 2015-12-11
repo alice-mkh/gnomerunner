@@ -4,8 +4,10 @@ document-print			gtk-print
 document-save			gtk-save
 edit-copy				gtk-copy
 edit-cut				gtk-cut
+edit-delete				gtk-delete
 edit-find				gtk-find
 edit-paste				gtk-paste
+edit-select-all			gtk-select-all
 go-down					gtk-go-down
 go-home					gtk-home
 go-first				gtk-goto-first-ltr
@@ -26,6 +28,9 @@ view-fullscreen			gtk-fullscreen
 view-refresh			gtk-refresh
 view-restore			gtk-leave-fullscreen
 window-close			gtk-close
+zoom-in					gtk-zoom-in
+zoom-original			gtk-zoom-100
+zoom-out				gtk-zoom-out
 text-x-generic			gtk-file
 folder					gtk-directory
 dialog-error			gtk-dialog-error

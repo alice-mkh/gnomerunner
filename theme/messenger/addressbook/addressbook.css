@@ -57,11 +57,12 @@
 } 
 
 #button-abdelete {
-  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 24");
+  list-style-image: var(--icon-edit-delete-24);
 }
 
 #button-abdelete[disabled] {
-  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 24 disabled") !important;
+  list-style-image: var(--icon-edit-delete-24-dis);
+  opacity: var(--icon-edit-delete-dis-opacity);
 }
 
 /* ::::: small primary toolbar buttons ::::: */
@@ -113,11 +114,12 @@ toolbar[iconsize="small"] > #button-newim[disabled] {
 
 toolbar[iconsize="small"] > #button-abdelete,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-abdelete {
-  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 16");
+  list-style-image: var(--icon-edit-delete-16);
 }
 
 toolbar[iconsize="small"] > #button-abdelete[disabled] {
-    list-style-image: url("%STOCK-ICON gtk-delete edit-delete 16 disabled") !important;
+  list-style-image: var(--icon-edit-delete-16-dis);
+  opacity: var(--icon-edit-delete-dis-opacity);
 }
 
 /* CardView styles - used in the Card View Pane */

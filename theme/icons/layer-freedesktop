@@ -4,8 +4,10 @@ document-print
 document-save
 edit-copy
 edit-cut
+edit-delete
 edit-find
 edit-paste
+edit-select-all
 go-down
 go-home
 go-first
@@ -26,6 +28,9 @@ view-fullscreen
 view-refresh
 view-restore
 window-close
+zoom-in
+zoom-original
+zoom-out
 text-x-generic
 folder
 dialog-error
