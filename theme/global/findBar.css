@@ -28,13 +28,13 @@ findbar[hidden] {
 /* find-next button */
 
 .findbar-find-next > .toolbarbutton-icon {
-  -moz-appearance: button-arrow-up;
+  -moz-appearance: button-arrow-down;
 }
 
 /* find-previous button */
 
 .findbar-find-previous > .toolbarbutton-icon {
-  -moz-appearance: button-arrow-down;
+  -moz-appearance: button-arrow-up;
 }
 
 /* highlight button */
