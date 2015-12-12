@@ -56,7 +56,7 @@
 
 #exclam
 {
-  list-style-image: url("%STOCK-ICON gtk-dialog-warning dialog-warning 48");
+  list-style-image: var(--icon-dialog-warning-48);
   -moz-margin-end: 3em;
 }
 

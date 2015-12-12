@@ -34,7 +34,7 @@ wizardpage {
 }
 
 .remoteLoadingThrobber[state="error"] {
-  list-style-image: url("moz-icon://stock/gtk-dialog-error?size=menu");
+  list-style-image: var(--icon-dialog-error-16);
 }
 
 .wizard-buttons-separator {
@@ -120,7 +120,7 @@ wizardpage {
 
 #verificationFailedIcon {
   margin-left: 5px;
-  list-style-image: url("moz-icon://stock/gtk-dialog-warning?size=menu");
+  list-style-image: var(--icon-dialog-warning-16);
 }
 
 /* Error Page */

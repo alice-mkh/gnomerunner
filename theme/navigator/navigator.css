@@ -44,7 +44,7 @@
 }
 
 #forward-button:-moz-locale-dir(rtl)[disabled="true"] {
-  list-style-image: var(--icon-go-next-rtl-24);
+  list-style-image: var(--icon-go-next-rtl-24-dis);
   opacity: var(--icon-go-next-rtl-dis-opacity);
 }
 

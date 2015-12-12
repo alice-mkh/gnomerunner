@@ -50,7 +50,7 @@ menu.push[disabled="true"]:hover:active {
 
 #convertNo {
   /*list-style-image:url("chrome://global/skin/icons/alert-exclam.gif");*/
-  list-style-image: url("%STOCK-ICON gtk-dialog-warning dialog-warning 48");
+  list-style-image: var(--icon-dialog-warning-48);
 }
 
 /* Workaround for bug 50217. Please remove this rule, when this bug is fixed. */

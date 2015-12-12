@@ -35,7 +35,7 @@
 }
 
 #trackWarnIcon {
-  list-style-image: url("%STOCK-ICON gtk-dialog-warning dialog-warning 24");
+  list-style-image: var(--icon-dialog-warning-24);
   width: 24px;
   height: 24px;
 }

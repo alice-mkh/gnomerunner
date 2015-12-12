@@ -30,11 +30,11 @@ window {
 }
 
 #button-multiline-expand {
-    list-style-image:url("%STOCK-ICON gtk-go-up go-up 16");
+    list-style-image: var(--icon-go-up-16);
 }
 
 #button-multiline-contract {
-    list-style-image:url("%STOCK-ICON gtk-go-down go-down 16");
+    list-style-image: var(--icon-go-down-16);
 }
 
 #button-input {
@@ -67,7 +67,7 @@ window {
     margin-bottom: -8px;
     height: 16px;
     width: 16px;
-    background: url("%STOCK-ICON gtk-go-up go-up 16") 50% 50% no-repeat;
+    background: var(--icon-go-up-16) 50% 50% no-repeat;
 }
 
 #view-tabs {

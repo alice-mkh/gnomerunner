@@ -45,11 +45,11 @@
 /* ::::: folder icons for menus ::::: */
 
 .folderMenuItem {
-  list-style-image: url("%STOCK-ICON gtk-directory folder 16");
+  list-style-image: var(--icon-folder-16);
 }
 
 .folderMenuItem[open="true"] {
-  list-style-image: url("%STOCK-ICON gtk-open document-open 16");
+  list-style-image: var(--icon-document-open-16);
 }
 
 /* ..... special folders ..... */

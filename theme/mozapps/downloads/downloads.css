@@ -56,10 +56,11 @@ menuitem:not([type]) {
 }
 
 #menuitem_open {
-  list-style-image: url("moz-icon://stock/gtk-open?size=menu");
+  list-style-image: var(--icon-document-open-16);
 }
 #menuitem_open[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-open?size=menu&state=disabled");
+  list-style-image: var(--icon-document-open-16-dis);
+  opacity: var(--icon-document-open-dis-opacity);
 }
 
 .pause,
@@ -83,15 +84,15 @@ menuitem:not([type]) {
 }
 
 #menuitem_removeFromList {
-  list-style-image: url("moz-icon://stock/gtk-remove?size=menu");
+  list-style-image: var(--icon-edit-remove-16);
 }
 
 #menuitem_copyLocation {
-  list-style-image: url("moz-icon://stock/gtk-copy?size=menu");
+  list-style-image: var(--icon-edit-copy-16);
 }
 
 .blockedIcon {
-  list-style-image: url("moz-icon://stock/gtk-dialog-error?size=dialog");
+  list-style-image: var(--icon-dialog-error-48);
   width: 32px;
   height: 32px;
 }

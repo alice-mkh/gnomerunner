@@ -96,7 +96,7 @@
 
 .tab-close-button {
   -moz-appearance: toolbarbutton !important;
-  list-style-image: url("%STOCK-ICON gtk-close window-close 16");
+  list-style-image: var(--icon-window-close-16);
   -moz-image-region: auto !important;
   margin: -2px !important;
 }

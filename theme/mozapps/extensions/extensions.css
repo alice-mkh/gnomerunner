@@ -51,14 +51,14 @@
 /*** notification icons ***/
 
 .warning-icon {
-  list-style-image: url("moz-icon://stock/gtk-dialog-warning?size=menu");
+  list-style-image: var(--icon-dialog-warning-16);
   width: 16px;
   height: 16px;
   margin: 3px 0;
 }
 
 .error-icon {
-  list-style-image: url("moz-icon://stock/gtk-dialog-error?size=menu");
+  list-style-image: var(--icon-dialog-error-16);
   width: 16px;
   height: 16px;
   margin: 3px 0;
@@ -66,7 +66,7 @@
 
 .pending-icon,
 .info-icon {
-  list-style-image: url("moz-icon://stock/gtk-dialog-info?size=menu");
+  list-style-image: var(--icon-dialog-information-16);
   width: 16px;
   height: 16px;
   margin: 3px 0;
@@ -248,35 +248,39 @@
 }
 
 #back-btn:-moz-locale-dir(ltr) {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=toolbar");
+  list-style-image: var(--icon-go-previous-24);
 }
 
 #forward-btn:-moz-locale-dir(ltr) {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=toolbar");
+  list-style-image: var(--icon-go-next-24);
 }
 
 #back-btn:-moz-locale-dir(rtl) {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=toolbar");
+  list-style-image: var(--icon-go-previous-rtl-24);
 }
 
 #forward-btn:-moz-locale-dir(rtl) {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=toolbar");
+  list-style-image: var(--icon-go-next-rtl-24);
 }
 
 #back-btn[disabled="true"]:-moz-locale-dir(ltr) {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=toolbar&state=disabled");
+  list-style-image: var(--icon-go-previous-24-dis);
+  opacity: var(--icon-go-previous-dis-opacity);
 }
 
 #forward-btn[disabled="true"]:-moz-locale-dir(ltr) {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=toolbar&state=disabled");
+  list-style-image: var(--icon-go-next-24-dis);
+  opacity: var(--icon-go-next-dis-opacity);
 }
 
 #back-btn[disabled="true"]:-moz-locale-dir(rtl) {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=toolbar&state=disabled");
+  list-style-image: var(--icon-go-previous-rtl-24-dis);
+  opacity: var(--icon-go-previous-rtl-dis-opacity);
 }
 
 #forward-btn[disabled="true"]:-moz-locale-dir(rtl) {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=toolbar&state=disabled");
+  list-style-image: var(--icon-go-next-rtl-24-dis);
+  opacity: var(--icon-go-next-rtl-dis-opacity);
 }
 
 #header-utils-btn {

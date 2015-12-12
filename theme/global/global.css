@@ -61,7 +61,7 @@ window.dialog {
 }
 
 .alert-icon {
-  list-style-image: url("%STOCK-ICON gtk-dialog-warning dialog-warning 48");
+  list-style-image: var(--icon-dialog-warning-48);
 }
 
 .error-icon {
@@ -309,7 +309,7 @@ popupnotificationcontent {
 
 .close-icon {
   -moz-appearance: toolbarbutton !important;
-  list-style-image: url("%STOCK-ICON gtk-close window-close 16") !important;
+  list-style-image: var(--icon-window-close-16) !important;
   padding: 2px !important;
   -moz-image-region: auto !important;
 }

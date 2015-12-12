@@ -53,12 +53,12 @@ treechildren::-moz-tree-image(folderNameCol) {
 
 .icon-holder[type="folder"],
 treechildren::-moz-tree-image(folderNameCol) {
-  list-style-image: url("%STOCK-ICON gtk-directory folder 16");
+  list-style-image: var(--icon-folder-16);
 }
 
 treechildren::-moz-tree-image(folderNameCol, newMessages-true) {
   /*list-style-image: url("chrome://messenger/skin/icons/folder-new.png");*/
-  list-style-image: url("%STOCK-ICON gtk-directory folder 16");
+  list-style-image: var(--icon-folder-16);
 }
 
 /* ..... News and Feeds ..... */

@@ -36,3 +36,4 @@ folder					gtk-directory
 dialog-error			gtk-dialog-error
 dialog-information		gtk-dialog-info
 dialog-question			gtk-dialog-question
+dialog-warning			gtk-dialog-warning
