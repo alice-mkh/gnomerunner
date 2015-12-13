@@ -156,11 +156,12 @@ button[type="disclosure"][open="true"] {
  */
 
 button[icon="accept"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-ok?size=button");
+  list-style-image: var(--icon-gtk-ok-22);
 }
 
 button[icon="accept"][disabled="true"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-ok?size=button&state=disabled");
+  list-style-image: var(--icon-gtk-ok-22-dis);
+  opacity: var(--icon-gtk-yes-opacity);
 }
 
 button[icon="cancel"] .button-icon {
@@ -218,27 +219,30 @@ button[icon="clear"][disabled="true"] .button-icon {
 }
 
 button[icon="yes"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-yes?size=button");
+  list-style-image: var(--icon-gtk-yes-22);
 }
 
 button[icon="yes"][disabled="true"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-yes?size=button&state=disabled");
+  list-style-image: var(--icon-gtk-yes-22-dis);
+  opacity: var(--icon-gtk-yes-dis-opacity);
 }
 
 button[icon="no"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-no?size=button");
+  list-style-image: var(--icon-gtk-no-22);
 }
 
 button[icon="no"][disabled="true"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-no?size=button&state=disabled");
+  list-style-image: var(--icon-gtk-no-22-dis);
+  opacity: var(--icon-gtk-no-dis-opacity);
 }
 
 button[icon="apply"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-apply?size=button");
+  list-style-image: var(--icon-gtk-apply-22);
 }
 
 button[icon="apply"][disabled="true"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-apply?size=button&state=disabled");
+  list-style-image: var(--icon-gtk-apply-22-dis);
+  opacity: var(--icon-gtk-apply-dis-opacity);
 }
 
 button[icon="close"] .button-icon {
@@ -350,19 +354,21 @@ button[icon="properties"][disabled="true"] .button-icon {
 }
 
 button[icon="select-font"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-select-font?size=button");
+  list-style-image: var(--icon-gtk-select-font-22);
 }
 
 button[icon="select-font"][disabled="true"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-select-font?size=button&state=disabled");
+  list-style-image: var(--icon-gtk-select-font-22-dis);
+  opacity: var(--icon-gtk-select-font-dis-opacity);
 }
 
 button[icon="select-color"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-color-picker?size=button");
+  list-style-image: var(--icon-gtk-color-picker-22);
 }
 
 button[icon="select-color"][disabled="true"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-color-picker?size=button&state=disabled");
+  list-style-image: var(--icon-gtk-color-picker-22-dis);
+  opacity: var(--icon-gtk-color-picker-dis-opacity);
 }
 
 button[icon="network"] .button-icon {

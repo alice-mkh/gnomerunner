@@ -30,6 +30,14 @@ go-top
 go-up
 gtk-apply
 gtk-cancel
+gtk-color-picker
+gtk-convert
+gtk-no
+gtk-ok
+gtk-orientation-landscape
+gtk-orientation-portrait
+gtk-select-font
+gtk-yes
 help-about
 help-contents
 list-add

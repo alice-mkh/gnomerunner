@@ -893,11 +893,11 @@ setting[type="radio"] > radiogroup {
 }
 
 .addon-control.enable {
-  list-style-image: url("moz-icon://stock/gtk-yes?size=button");
+  list-style-image: var(--icon-gtk-yes-22);
 }
 
 .addon-control.disable {
-  list-style-image: url("moz-icon://stock/gtk-no?size=button");
+  list-style-image: var(--icon-gtk-no-22);
 }
 
 .addon-control.remove {

@@ -15,12 +15,12 @@
 treechildren::-moz-tree-image(subscribedColumn),
 treechildren::-moz-tree-image(subscribedColumn2) {
   -moz-margin-end: 2px;
-  list-style-image: url("moz-icon://stock/gtk-yes?size=menu&state=disabled");
+  list-style-image: var(--icon-gtk-no-16);
 }
 
 treechildren::-moz-tree-image(subscribedColumn, Subscribed-true),
 treechildren::-moz-tree-image(subscribedColumn2, subscribed) {
-  list-style-image: url("moz-icon://stock/gtk-yes?size=menu");
+  list-style-image: var(--icon-gtk-yes-16);
 }
 
 treechildren::-moz-tree-image(subscribedColumn, Subscribable-false) {

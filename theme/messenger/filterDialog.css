@@ -13,11 +13,11 @@
 /* ::::: columns :::::: */
 
 treechildren::-moz-tree-image(activeColumn) {
-  list-style-image: url("moz-icon://stock/gtk-yes?size=menu&state=disabled");
+  list-style-image: var(--icon-gtk-no-16);
 }
 
 treechildren::-moz-tree-image(activeColumn, Enabled-true) {
- list-style-image: url("moz-icon://stock/gtk-yes?size=menu");
+ list-style-image: var(--icon-gtk-yes-16);
 }
 
 .small-button {
