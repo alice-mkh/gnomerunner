@@ -19,7 +19,7 @@ echo "Generating icon layers..."
 SIZES="16 22 24 48"
 
 for F in layer-*; do
-	echo " $F"
+    echo " $F"
     echo "/* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
@@ -28,19 +28,19 @@ for F in layer-*; do
 
 :root {" > $F.css
 
-	while read -r LINE; do
-		LINE1=`echo $LINE | grep -Po "^[\w-]+"`
-		LINE2=`echo $LINE | grep -Po "[\w-]+$"`
-		for S in $SIZES; do
+    while read -r LINE; do
+        LINE1=`echo $LINE | grep -Po "^[\w-]+"`
+        LINE2=`echo $LINE | grep -Po "[\w-]+$"`
+        for S in $SIZES; do
             echo "  --icon-$LINE1-$S: url(\"moz-icon://stock/$LINE2?size=$S\");" >> $F.css
             echo "  --icon-$LINE1-$S-dis: url(\"moz-icon://stock/$LINE2?size=$S&state=disabled\");" >> $F.css
-		done
+        done
         echo "  --icon-$LINE1-dis-opacity: var(--icon-base-dis-native-opacity);"  >> $F.css
         echo ""  >> $F.css
-	done < $F
+    done < $F
 
     echo "}" >> $F.css
-	rm $F
+    rm $F
 
     sed -E "s/(size=)16/\1menu/g;s/(size=)22/\1button/g;s/(size=)24/\1toolbar/g;s/(size=)48/\1dialog/g;" -i $F.css
 done
@@ -51,27 +51,27 @@ echo "Generating icon themes..."
 SIZES="16 20 22 24 32 48"
 
 for THEME in `echo */ | sed -E "s/\///g"`; do
-	echo " $THEME"
+    echo " $THEME"
     cd $THEME
 
-	BASE=`cat base`
-	rm base
+    BASE=`cat base`
+    rm base
 
     FILES=""
     DIRS=`ls -v`
     for D in $SIZES; do
-		if [ -d ${D}x$D ]; then
+        if [ -d ${D}x$D ]; then
             cd ${D}x$D
             TMP_F=`find * -type f -name "*.png"`
             FILES="$FILES $TMP_F"
             cd ..
-		fi
+        fi
     done
     FILES=`echo $FILES | sed -E "s/\.png//g;s/\s+/\\n/g" | sort | uniq`
     cd ..
 
-	touch icon-theme-$THEME.css
-	echo "/* This Source Code Form is subject to the terms of the Mozilla Public
+    touch icon-theme-$THEME.css
+    echo "/* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
@@ -83,13 +83,13 @@ for THEME in `echo */ | sed -E "s/\///g"`; do
         N=`echo $F | grep -Po "[\w\d-_]+$"`
         for DD in $SIZES; do
             if [ -f $THEME/${DD}x$DD/$D/$N.png ]; then
-        echo "  --icon-$N-$DD: url(\"chrome://icons/skin/$THEME/${DD}x$DD/$D/$N.png\");" >> icon-theme-$THEME.css
-        echo "  --icon-$N-$DD-dis: var(--icon-$N-$DD);" >> icon-theme-$THEME.css
+                echo "  --icon-$N-$DD: url(\"chrome://icons/skin/$THEME/${DD}x$DD/$D/$N.png\");" >> icon-theme-$THEME.css
+                echo "  --icon-$N-$DD-dis: var(--icon-$N-$DD);" >> icon-theme-$THEME.css
             fi
         done
         echo "  --icon-$N-dis-opacity: var(--icon-base-dis-opacity);" >> icon-theme-$THEME.css
         echo "" >> icon-theme-$THEME.css
-	done
+    done
     echo '}' >> icon-theme-$THEME.css
 done
 

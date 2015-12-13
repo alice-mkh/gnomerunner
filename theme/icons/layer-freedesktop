@@ -28,6 +28,8 @@ go-previous
 go-previous-rtl
 go-top
 go-up
+gtk-apply
+gtk-cancel
 help-about
 help-contents
 list-add

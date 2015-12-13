@@ -52,7 +52,7 @@ menuitem:not([type]) {
 
 .cancel,
 #menuitem_cancel {
-  list-style-image: url("moz-icon://stock/gtk-cancel?size=menu");
+  list-style-image: var(--icon-gtk-cancel-16);
 }
 
 #menuitem_open {

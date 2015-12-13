@@ -164,11 +164,12 @@ button[icon="accept"][disabled="true"] .button-icon {
 }
 
 button[icon="cancel"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-cancel?size=button");
+  list-style-image: var(--icon-gtk-cancel-22);
 }
 
 button[icon="cancel"][disabled="true"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-cancel?size=button&state=disabled");
+  list-style-image: var(--icon-gtk-cancel-22-dis);
+  opacity: var(--icon-gtk-cancel-dis-opacity);
 }
 
 button[icon="help"] .button-icon {

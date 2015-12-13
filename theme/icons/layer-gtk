@@ -28,6 +28,8 @@ go-previous				gtk-go-back-ltr
 go-previous-rtl			gtk-go-back-rtl
 go-top					gtk-goto-top
 go-up					gtk-go-up
+gtk-apply
+gtk-cancel
 help-about				gtk-about
 help-contents			gtk-help
 list-add				gtk-add

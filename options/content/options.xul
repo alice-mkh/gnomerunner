@@ -58,8 +58,8 @@
 							<menupopup>
 								<menuitem label="GNOME" value="gnome"/>
 								<menuitem label="Tango" value="tango"/>
+								<menuitem label="Stock GTK" value="gtk-stock"/>
 								<menuitem label="Old GNOME" value="gnome-old"/>
-								<menuitem label="Faenza" value="faenza"/>
 							</menupopup>
 						</menulist>
 					</groupbox>
