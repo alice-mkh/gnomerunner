@@ -15,6 +15,15 @@ edit-paste				gtk-paste
 edit-redo				gtk-redo
 edit-select-all			gtk-select-all
 edit-undo				gtk-undo
+format-indent-less		gtk-unindent
+format-indent-more		gtk-indent
+format-justify-center	gtk-justify-center
+format-justify-fill		gtk-justify-fill
+format-justify-left		gtk-justify-left
+format-justify-right	gtk-justify-right
+format-text-bold		gtk-bold
+format-text-italic		gtk-italic
+format-text-underline	gtk-underline
 go-down					gtk-go-down
 go-home					gtk-home
 go-first				gtk-goto-first-ltr

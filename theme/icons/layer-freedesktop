@@ -15,6 +15,15 @@ edit-paste
 edit-redo
 edit-select-all
 edit-undo
+format-indent-less
+format-indent-more
+format-justify-center
+format-justify-fill
+format-justify-left
+format-justify-right
+format-text-bold
+format-text-italic
+format-text-underline
 go-down
 go-home
 go-first

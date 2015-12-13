@@ -27,27 +27,30 @@
 }
 
 #boldButton {
-  list-style-image: url("%STOCK-ICON gtk-bold format-text-bold 16");
+  list-style-image: var(--icon-format-text-bold-16);
 }
 
 #boldButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-bold format-text-bold 16 disabled");
+  list-style-image: var(--icon-format-text-bold-16-dis);
+  opacity: var(--icon-format-text-bold-dis-opacity);
 }
 
 #italicButton {
-  list-style-image: url("%STOCK-ICON gtk-italic format-text-italic 16");
+  list-style-image: var(--icon-format-text-italic-16);
 }
 
 #italicButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-italic format-text-italic 16 disabled");
+  list-style-image: var(--icon-format-text-italic-16-dis);
+  opacity: var(--icon-format-text-italic-dis-opacity);
 }
 
 #underlineButton {
-  list-style-image: url("%STOCK-ICON gtk-underline format-text-underline 16");
+  list-style-image: var(--icon-format-text-underline-16);
 }
 
 #underlineButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-underline format-text-underline 16 disabled");
+  list-style-image: var(--icon-format-text-underline-16-dis);
+  opacity: var(--icon-format-text-underline-dis-opacity);
 }
 
 #ulButton {
@@ -67,63 +70,70 @@
 }
 
 #outdentButton {
-  list-style-image: url("%STOCK-ICON gtk-unindent format-indent-less 16");
+  list-style-image: var(--icon-format-indent-less-16);
 }
 
 #outdentButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-unindent format-indent-less 16 disabled");
+  list-style-image: var(--icon-format-indent-less-16-dis);
+  opacity: var(--icon-format-indent-less-dis-opacity);
 }
 
 #indentButton {
-  list-style-image: url("%STOCK-ICON gtk-indent format-indent-more 16");
+  list-style-image: var(--icon-format-indent-more-16);
 }
 
 #indentButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-indent format-indent-more 16 disabled");
+  list-style-image: var(--icon-format-indent-more-16-dis);
+  opacity: var(--icon-format-indent-more-dis-opacity);
 }
 
 #align-left-button {
-  list-style-image: url("%STOCK-ICON gtk-justify-left format-justify-left 16");
+  list-style-image: var(--icon-format-justify-left-16);
 }
 
 #align-left-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-justify-left format-justify-left 16 disabled");
+  list-style-image: var(--icon-format-justify-left-16-dis);
+  opacity: var(--icon-format-justify-left-dis-opacity);
 }
 
 #align-center-button {
-  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 16");
+  list-style-image: var(--icon-format-justify-center-16);
 }
 
 #align-center-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 16 disabled");
+  list-style-image: var(--icon-format-justify-center-16-dis);
+  opacity: var(--icon-format-justify-center-dis-opacity);
 }
 
 #align-right-button {
-  list-style-image: url("%STOCK-ICON gtk-justify-right format-justify-right 16");
+  list-style-image: var(--icon-format-justify-right-16);
 }
 
 #align-right-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-justify-right format-justify-right 16 disabled");
+  list-style-image: var(--icon-format-justify-right-16-dis);
+  opacity: var(--icon-format-justify-right-dis-opacity);
 }
 
 #align-justify-button {
-  list-style-image: url("%STOCK-ICON gtk-justify-fill format-justify-fill 16");
+  list-style-image: var(--icon-format-justify-fill-16);
 }
 
 #align-justify-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-justify-fill format-justify-fill 16 disabled");
+  list-style-image: var(--icon-format-justify-fill-16-dis);
+  opacity: var(--icon-format-justify-fill-dis-opacity);
 }
 
 #AlignPopupButton {
-  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 16");
+  list-style-image: var(--icon-format-justify-center-16);
 }
 
 #AlignPopupButton[open="true"] {
-  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 16");
+  list-style-image: var(--icon-format-justify-center-16);
 }
 
 #AlignPopupButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 16 disabled");
+  list-style-image: var(--icon-format-justify-center-16-dis);
+  opacity: var(--icon-format-justify-center-dis-opacity);
 }
 
 #InsertPopupButton {
@@ -152,19 +162,19 @@
 }
 
 #AlignLeftItem {
-  list-style-image: url("%STOCK-ICON gtk-justify-left format-justify-left 16");
+  list-style-image: var(--icon-format-justify-left-16);
 }
 
 #AlignCenterItem {
-  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 16");
+  list-style-image: var(--icon-format-justify-center-16);
 }
 
 #AlignRightItem {
-  list-style-image: url("%STOCK-ICON gtk-justify-right format-justify-right 16");
+  list-style-image: var(--icon-format-justify-right-16);
 }
 
 #AlignJustifyItem {
-  list-style-image: url("%STOCK-ICON gtk-justify-fill format-justify-fill 16");
+  list-style-image: var(--icon-format-justify-fill-16);
 }
 
 /* ..... insert menu ..... */
