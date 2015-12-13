@@ -142,7 +142,7 @@ toolbar#ToolbarMode toolbarbutton {
 }
 
 #Console\:clear {
-  list-style-image: url("%STOCK-ICON gtk-clear edit-clear 24");
+  list-style-image: var(--icon-edit-clear-24);;
 }
 
 toolbar#ToolbarMode .toolbarbutton-text {

@@ -73,7 +73,7 @@ window.dialog {
 }
 
 .authentication-icon {
-  list-style-image: url("%STOCK-ICON gtk-dialog-authentication dialog-password 48");
+  list-style-image: var(--icon-dialog-password-48);
 }
 
 /* ::::: iframe ::::: */

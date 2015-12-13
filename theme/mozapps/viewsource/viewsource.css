@@ -10,11 +10,11 @@ menuitem:not([type]) {
 }
 
 #menu_savePage {
-  list-style-image: url("moz-icon://stock/gtk-save-as?size=menu");
+  list-style-image: var(--icon-document-save-as-16);
 }
 
 #menu_printPreview {
-  list-style-image: url("moz-icon://stock/gtk-print-preview?size=menu");
+  list-style-image: var(--icon-document-print-preview-16);
 }
 
 #menu_print {
@@ -26,19 +26,21 @@ menuitem:not([type]) {
 }
 
 #menu_undo {
-  list-style-image: url("moz-icon://stock/gtk-undo?size=menu");
+  list-style-image: var(--icon-edit-undo-16);
 }
 
 #menu_undo[disabled] {
-  list-style-image: url("moz-icon://stock/gtk-undo?size=menu&state=disabled");
+  list-style-image: var(--icon-edit-undo-16-dis);
+  opacity: var(--icon-edit-cut-undo-dis-opacity);
 }
 
 #menu_redo {
-  list-style-image: url("moz-icon://stock/gtk-redo?size=menu");
+  list-style-image: var(--icon-edit-redo-16);
 }
 
 #menu_redo[disabled] {
-  list-style-image: url("moz-icon://stock/gtk-redo?size=menu&state=disabled");
+  list-style-image: var(--icon-edit-redo-16-dis);
+  opacity: var(--icon-edit-cut-redo-dis-opacity);
 }
 
 #menu_cut {
@@ -93,11 +95,12 @@ menuitem:not([type]) {
 }
 
 #menu_goToLine {
-  list-style-image: url("moz-icon://stock/gtk-jump-to?size=menu");
+  list-style-image: var(--icon-go-jump-16);
 }
 
 #menu_goToLine[disabled] {
-  list-style-image: url("moz-icon://stock/gtk-jump-to?size=menu&state=disabled");
+  list-style-image: var(--icon-go-jump-16-dis);
+  opacity: var(--icon-go-jump-dis-opacity);
 }
 
 #menu_reload {
@@ -122,9 +125,9 @@ menuitem:not([type]) {
 }
 
 #menu_openHelp {
-  list-style-image: url("moz-icon://stock/gtk-help?size=menu");
+  list-style-image: var(--icon-help-contents-16);
 }
 
 #aboutName {
-  list-style-image: url("moz-icon://stock/gtk-about?size=menu");
+  list-style-image: var(--icon-help-about-16);
 }

@@ -65,26 +65,27 @@ menuitem:not([type]) {
 
 .pause,
 #menuitem_pause {
-  list-style-image: url("moz-icon://stock/gtk-media-pause?size=menu");
+  list-style-image: var(--icon-media-playback-pause-16);
 }
 
 .pause[disabled="true"],
 #menuitem_pause[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-media-pause?size=menu&state=disabled");
+  list-style-image: var(--icon-media-playback-pause-16-dis);
+  opacity: var(--icon-media-playback-pause-dis-opacity);
 }
 
 .resume,
 #menuitem_resume {
-  list-style-image: url("moz-icon://stock/gtk-media-play?size=menu");
+  list-style-image: var(--icon-media-playback-start-16);
 }
 
 .retry,
 #menuitem_retry {
-  list-style-image: url("moz-icon://stock/gtk-redo?size=menu");
+  list-style-image: var(--icon-edit-redo-16);
 }
 
 #menuitem_removeFromList {
-  list-style-image: var(--icon-edit-remove-16);
+  list-style-image: var(--icon-list-remove-16);
 }
 
 #menuitem_copyLocation {
@@ -104,10 +105,11 @@ menuitem:not([type]) {
 }
 
 #clearListButton {
-  list-style-image: url(moz-icon://stock/gtk-clear?size=button);
+  list-style-image: var(--icon-edit-clear-22);
   margin-top: 3px;
 }
 
 #clearListButton[disabled="true"] {
-  list-style-image: url(moz-icon://stock/gtk-clear?size=button&state=disabled);
+  list-style-image: var(--icon-edit-clear-22-dis);
+  opacity: var(--icon-edit-clear-dis-opacity);
 }

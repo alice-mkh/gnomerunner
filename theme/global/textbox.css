@@ -81,7 +81,7 @@ textbox.plain html|*.textbox-textarea {
 }
 
 .textbox-search-clear {
-  list-style-image: url("%STOCK-ICON gtk-clear edit-clear 16");
+  list-style-image: var(--icon-edit-clear-16);
 }
 
 .textbox-search-icon[searchbutton]:not([disabled]) ,
@@ -102,11 +102,12 @@ menuitem:not([type]) {
 }
 
 menuitem[cmd="cmd_undo"] {
-  list-style-image: url("%STOCK-ICON gtk-undo edit-undo 16");
+  list-style-image: var(--icon-edit-undo-16);
 }
 
 menuitem[cmd="cmd_undo"][disabled] {
-  list-style-image: url("%STOCK-ICON gtk-undo edit-undo 16 disabled");
+  list-style-image: var(--icon-edit-undo-16-dis);
+  opacity: var(--icon-edit-undo-dis-opacity);
 }
 
 menuitem[cmd="cmd_cut"] {

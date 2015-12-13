@@ -141,23 +141,28 @@ toolbar[iconsize="small"] #task-edit-button[disabled] {
 */
 #calendar-delete-button,
 #task-delete-button {
-  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 24") !important;
+  list-style-image: var(--icon-edit-delete-24) !important;
   -moz-image-region: auto !important;
 }
 
 #calendar-delete-button[disabled],
 #task-delete-button[disabled] {
-  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 24 disabled") !important;
+  list-style-image: var(--icon-edit-delete-24-dis) !important;
+  opacity: var(--icon-edit-delete-dis-opacity);
+  -moz-image-region: auto !important;
 }
 
 toolbar[iconsize="small"] #calendar-delete-button,
 toolbar[iconsize="small"] #task-delete-button {
-  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 16") !important;
+  list-style-image: var(--icon-edit-delete-16) !important;
+  -moz-image-region: auto !important;
 }
 
 toolbar[iconsize="small"] #calendar-delete-button[disabled],
 toolbar[iconsize="small"] #task-delete-button[disabled] {
-  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 16 disabled") !important;
+  list-style-image: var(--icon-edit-delete-16-dis) !important;
+  opacity: var(--icon-edit-delete-dis-opacity);
+  -moz-image-region: auto !important;
 }
 /*
 #calendar-goto-today-button {
@@ -178,38 +183,42 @@ toolbar[iconsize="small"] #calendar-goto-today-button[disabled] {
 */
 #calendar-print-button,
 #task-print-button {
-  list-style-image: url("%STOCK-ICON gtk-print document-print 24") !important;
+  list-style-image: var(--icon-document-print-24) !important;
   -moz-image-region: auto !important;
 }
 
 #calendar-print-button[disabled],
 #task-print-button[disabled] {
-  list-style-image: url("%STOCK-ICON gtk-print document-print 24 disabled") !important;
+  list-style-image: var(--icon-document-print-24-dis) !important;
+  opacity: var(--icon-document-print-dis-opacity);
 }
 
 toolbar[iconsize="small"] #calendar-print-button,
 toolbar[iconsize="small"] #task-print-button {
-  list-style-image: url("%STOCK-ICON gtk-print document-print 16") !important;
+  list-style-image: var(--icon-document-print-16) !important;
 }
 
 toolbar[iconsize="small"] #calendar-print-button[disabled],
 toolbar[iconsize="small"] #task-print-button[disabled] {
-  list-style-image: url("%STOCK-ICON gtk-print document-print 16 disabled") !important;
+  list-style-image: var(--icon-document-print-16-dis) !important;
+  opacity: var(--icon-document-print-dis-opacity);
 }
 
 #calendar-unifinder-button {
-  list-style-image: url("%STOCK-ICON gtk-find edit-find 24") !important;
+  list-style-image: var(--icon-edit-find-24) !important;
   -moz-image-region: auto !important;
 }
 
 #calendar-unifinder-button[disabled] {
-  list-style-image: url("%STOCK-ICON gtk-find edit-find 24 disabled") !important;
+  list-style-image: var(--icon-edit-find-24-dis) !important;
+  opacity: var(--icon-edit-find-dis-opacity);
 }
 
 toolbar[iconsize="small"] #calendar-unifinder-button {
-  list-style-image: url("%STOCK-ICON gtk-find edit-find 16") !important;
+  list-style-image: var(--icon-edit-find-16) !important;
 }
 
 toolbar[iconsize="small"] #calendar-unifinder-button[disabled] {
-  list-style-image: url("%STOCK-ICON gtk-find edit-find 16 disabled") !important;
+  list-style-image: var(--icon-edit-find-16-dis) !important;
+  opacity: var(--icon-edit-find-dis-opacity);
 }

@@ -7,11 +7,12 @@
  *-------------------------------------------------------------------*/
 
 #calendar-cut-button {
-  list-style-image: url("%STOCK-ICON gtk-cut edit-cut 24") !important;
+  list-style-image: var(--icon-edit-cut-24) !important;
   -moz-image-region: auto !important;
 }
 #calendar-cut-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-cut edit-cut 24 disabled") !important;
+  list-style-image: var(--icon-edit-cut-24-dis) !important;
+  opacity: var(--icon-edit-cut-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -19,10 +20,11 @@
  *-------------------------------------------------------------------*/
 
 toolbar[iconsize="small"] #calendar-cut-button {
-  list-style-image: url("%STOCK-ICON gtk-cut edit-cut 16") !important;
+  list-style-image: var(--icon-edit-cut-16) !important;
 }
 toolbar[iconsize="small"] #calendar-cut-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-cut edit-cut 16 disabled") !important;
+  list-style-image: var(--icon-edit-cut-16-dis) !important;
+  opacity: var(--icon-edit-cut-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -30,11 +32,12 @@ toolbar[iconsize="small"] #calendar-cut-button[disabled="true"] {
  *-------------------------------------------------------------------*/
 
 #calendar-copy-button {
-  list-style-image: url("%STOCK-ICON gtk-copy edit-copy 24") !important;
+  list-style-image: var(--icon-edit-copy-24) !important;
   -moz-image-region: auto !important;
 }
 #calendar-copy-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-copy edit-copy 24 disabled") !important;
+  list-style-image: var(--icon-edit-copy-24-dis) !important;
+  opacity: var(--icon-edit-copy-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -42,22 +45,23 @@ toolbar[iconsize="small"] #calendar-cut-button[disabled="true"] {
  *-------------------------------------------------------------------*/
 
 toolbar[iconsize="small"] #calendar-copy-button {
-  list-style-image: url("%STOCK-ICON gtk-copy edit-copy 16") !important;
+  list-style-image: var(--icon-edit-copy-16) !important;
 }
 toolbar[iconsize="small"] #calendar-copy-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-copy edit-copy 16 disabled") !important;
-}
+  list-style-image: var(--icon-edit-copy-16-dis) !important;
+  opacity: var(--icon-edit-copy-dis-opacity);
 
 /*--------------------------------------------------------------------
  *   Paste button
  *-------------------------------------------------------------------*/
 
 #calendar-paste-button {
-  list-style-image: url("%STOCK-ICON gtk-paste edit-paste 24") !important;
+  list-style-image: var(--icon-edit-paste-24) !important;
   -moz-image-region: auto !important;
 }
 #calendar-paste-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-paste edit-paste 24 disabled") !important;
+  list-style-image: var(--icon-edit-paste-24-dis) !important;
+  opacity: var(--icon-edit-paste-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -65,10 +69,11 @@ toolbar[iconsize="small"] #calendar-copy-button[disabled="true"] {
  *-------------------------------------------------------------------*/
 
 toolbar[iconsize="small"] #calendar-paste-button {
-  list-style-image: url("%STOCK-ICON gtk-paste edit-paste 16") !important;
+  list-style-image: var(--icon-edit-paste-16) !important;
 }
 toolbar[iconsize="small"] #calendar-paste-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-paste edit-paste 16 disabled") !important;
+  list-style-image: var(--icon-edit-paste-16-dis) !important;
+  opacity: var(--icon-edit-paste-dis-opacity);
 }
 
 /*--------------------------------------------------------------------

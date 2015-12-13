@@ -356,7 +356,7 @@ toolbar[iconsize="small"] > #sync-button[status=active] {
 }
 
 .messageImage[value="remoteContent"] {
-  list-style-image: url("%STOCK-ICON gtk-missing-image image-missing 16");
+  list-style-image: var(--icon-image-missing-16);
 }
 
 .messageImage[value="junkContent"] {

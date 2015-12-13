@@ -172,11 +172,12 @@ button[icon="cancel"][disabled="true"] .button-icon {
 }
 
 button[icon="help"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-help help-contents 16b");
+  list-style-image: var(--icon-help-contents-22);
 }
 
 button[icon="help"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-help help-contents 16b disabled");
+  list-style-image: var(--icon-help-contents-22-dis);
+  opacity: var(--icon-document-open-dis-opacity);
 }
 
 button[icon="open"] .button-icon {
@@ -207,11 +208,12 @@ button[icon="find"][disabled="true"] .button-icon {
 }
 
 button[icon="clear"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-clear edit-clear 16b");
+  list-style-image: var(--icon-edit-clear-22);
 }
 
 button[icon="clear"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-clear edit-clear 16b disabled");
+  list-style-image: var(--icon-edit-clear-22-dis);
+  opacity: var(--icon-edit-clear-dis-opacity);
 }
 
 button[icon="yes"] .button-icon {
@@ -239,99 +241,111 @@ button[icon="apply"][disabled="true"] .button-icon {
 }
 
 button[icon="close"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-close window-close 16b");
+  list-style-image: var(--icon-window-close-22);
 }
 
 button[icon="close"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-close window-close 16b disabled");
+  list-style-image: var(--icon-window-close-22-dis);
+  opacity: var(--icon-window-close-dis-opacity);
 }
 
 button[icon="print"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-print document-print 16b");
+  list-style-image: var(--icon-document-print-22);
 }
 
 button[icon="print"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-print document-print 16b disabled");
+  list-style-image: var(--icon-document-print-22-dis);
+  opacity: var(--icon-document-print-dis-opacity);
 }
 
 button[icon="add"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-add list-add 16b");
+  list-style-image: var(--icon-list-add-22);
 }
 
 button[icon="add"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-add list-add 16b disabled");
+  list-style-image: var(--icon-list-add-22-dis);
+  opacity: var(--icon-list-add-dis-opacity);
 }
 
 button[icon="remove"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-remove list-remove 16b");
+  list-style-image: var(--icon-list-remove-22);
 }
 
 button[icon="remove"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-remove list-remove 16b disabled");
+  list-style-image: var(--icon-list-remove-22-dis);
+  opacity: var(--icon-list-remove-dis-opacity);
 }
 
 button[icon="refresh"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-refresh view-refresh 16b");
+  list-style-image: var(--icon-view-refresh-22);
 }
 
 button[icon="refresh"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-refresh view-refresh 16b disabled");
+  list-style-image: var(--icon-view-refresh-22-dis);
+  opacity: var(--icon-view-refresh-dis-opacity);
 }
 
 button[icon="revert"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-revert-to-saved-ltr document-revert 16b");
+  list-style-image: var(--icon-document-revert-22);
 }
 
 button[icon="revert"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-revert-to-saved-ltr document-revert 16b disabled");
+  list-style-image: var(--icon-document-revert-22-dis);
+  opacity: var(--icon-document-revert-dis-opacity);
 }
 
 button[icon="revert"]:-moz-locale-dir(rtl) .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-revert-to-saved-rtl document-revert 16b");
+  list-style-image: var(--icon-document-revert-rtl-22);
 }
 
 button[icon="revert"]:-moz-locale-dir(rtl)[disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-revert-to-saved-rtl document-revert 16b disabled");
+  list-style-image: var(--icon-document-revert-rtl-22-dis);
+  opacity: var(--icon-document-revert-rtl-dis-opacity);
 }
 
 button[icon="go-forward"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 16b");
+  list-style-image: var(--icon-go-next-22);
 }
 
 button[icon="go-forward"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 16b disabled");
+  list-style-image: var(--icon-go-next-22-dis);
+  opacity: var(--icon-go-next-dis-opacity);
 }
 
 button[icon="go-forward"]:-moz-locale-dir(rtl) .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 16b");
+  list-style-image: var(--icon-go-next-rtl-22);
 }
 
 button[icon="go-forward"]:-moz-locale-dir(rtl)[disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 16b disabled");
+  list-style-image: var(--icon-go-next-rtl-22-dis);
+  opacity: var(--icon-go-next-rtl-dis-opacity);
 }
 
 button[icon="go-back"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 16b");
+  list-style-image: var(--icon-go-previous-22);
 }
 
 button[icon="go-back"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 16b disabled");
+  list-style-image: var(--icon-go-previous-22-dis);
+  opacity: var(--icon-go-previous-dis-opacity);
 }
 
 button[icon="go-back"]:-moz-locale-dir(rtl) .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 16b");
+  list-style-image: var(--icon-go-previous-rtl-22);
 }
 
 button[icon="go-back"]:-moz-locale-dir(rtl)[disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 16b disabled");
+  list-style-image: var(--icon-go-previous-rtl-22-dis);
+  opacity: var(--icon-go-previous-rtl-dis-opacity);
 }
 
 button[icon="properties"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-properties document-properties 16b");
+  list-style-image: var(--icon-document-properties-22);
 }
 
 button[icon="properties"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-properties document-properties 16b disabled");
+  list-style-image: var(--icon-document-properties-22-dis);
+  opacity: var(--icon-document-properties-dis-opacity);
 }
 
 button[icon="select-font"] .button-icon {

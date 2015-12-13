@@ -33,11 +33,12 @@
 }
 
 #btnFind {
-  list-style-image: url("%STOCK-ICON gtk-find edit-find 24");
+  list-style-image: var(--icon-edit-find-24);
 }
 
 #btnFind[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-find edit-find 24 disabled");
+  list-style-image: var(--icon-edit-find-24-dis);
+  opacity: var(--icon-edit-find-dis-opacity);
 }
 
 .viewer-list, .viewer-menu {
