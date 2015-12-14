@@ -20,7 +20,7 @@ treechildren::-moz-tree-image(DirCol, IsMailList-true) {
 }
 
 treechildren::-moz-tree-image(DirCol, IsRemote-true) {
-  list-style-image: url("chrome://global/skin/icons/16x16/gtk-network.png");
+  list-style-image: var(--icon-network-idle-16);
 }
 
 treechildren::-moz-tree-image(DirCol, IsRemote-true, IsSecure-true) {

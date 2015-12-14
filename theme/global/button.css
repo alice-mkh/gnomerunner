@@ -372,10 +372,10 @@ button[icon="select-color"][disabled="true"] .button-icon {
 }
 
 button[icon="network"] .button-icon {
-  list-style-image: url("chrome://global/skin/icons/16x16/gtk-network.png");
+  list-style-image: var(--icon-network-idle-22);
 }
 
 button[icon="network"][disabled="true"] .button-icon {
-  list-style-image: url("chrome://global/skin/icons/16x16/gtk-network.png");
-  opacity: 0.5 !important;
+  list-style-image: var(--icon-network-idle-22-dis);
+  opacity: var(--icon-network-idle-dis-opacity);
 }

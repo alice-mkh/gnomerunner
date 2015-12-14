@@ -73,3 +73,4 @@ dialog-password			gtk-dialog-authentication
 dialog-question			gtk-dialog-question
 dialog-warning			gtk-dialog-warning
 image-missing			gtk-missing-image
+network-idle			gtk-network

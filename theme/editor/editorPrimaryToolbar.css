@@ -42,12 +42,12 @@
 }
 
 #publishButton {
-  list-style-image: url("chrome://global/skin/icons/24x24/gtk-network.png");
+  list-style-image: var(--icon-network-idle-24);
 }
 
 #publishButton[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/24x24/gtk-network.png");
-  opacity: 0.5 !important;
+  list-style-image: var(--icon-network-idle-24-dis);
+  opacity: var(--icon-network-idle-dis-opacity);
 }
 
 #previewButton {
