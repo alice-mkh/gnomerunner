@@ -33,7 +33,7 @@ treechildren::-moz-tree-image(title, container) {
 .bookmark-item[open="true"],
 treechildren::-moz-tree-image(Name, open),
 treechildren::-moz-tree-image(title, open) {
-  list-style-image: var(--icon-document-open-16);
+  list-style-image: var(--icon-folder-open-16);
 }
 
 .bookmark-item[container="true"][open="true"][loading="true"] {

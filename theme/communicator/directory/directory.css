@@ -26,7 +26,7 @@ treechildren::-moz-tree-image(FilenameColumn, container) {
 }
 
 treechildren::-moz-tree-image(FilenameColumn, container, open) {
-  list-style-image: var(--icon-document-open-16);
+  list-style-image: var(--icon-folder-open-16);
 }
 
 treechildren::-moz-tree-image(FilenameColumn, loading) {

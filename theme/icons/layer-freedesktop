@@ -72,5 +72,6 @@ dialog-information
 dialog-password
 dialog-question
 dialog-warning
+folder-open
 image-missing
 network-idle

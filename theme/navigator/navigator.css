@@ -606,7 +606,7 @@ toolbar[mode="text"] #search-button > .button-box {
 }
 
 #bookmarks-button[open="true"] {
-  list-style-image: var(--icon-document-open-16);
+  list-style-image: var(--icon-folder-open-16);
 }
 
 toolbarbutton.chevron {

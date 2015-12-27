@@ -26,7 +26,7 @@ treechildren::-moz-tree-image(container, noicon) {
 }
 
 treechildren::-moz-tree-image(container, noicon, open) {
-  list-style-image: var(--icon-document-open-16);
+  list-style-image: var(--icon-folder-open-16);
 }
 
 treechildren::-moz-tree-checkbox(checked) {
