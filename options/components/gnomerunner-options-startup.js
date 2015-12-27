@@ -46,22 +46,26 @@ GnomerunnerOptions.prototype = {
     if (aTopic == "final-ui-startup") {
       loadTheme();
       loadTweaks();
+      
       return;
     }
     if (aTopic == "nsPref:changed") {
       if (aData == "native-icons" || aData == "fallback-icon-theme") {
         unloadTheme();
         loadTheme();
+
+        let windows = Services.ww.getWindowEnumerator();
+        while (windows.hasMoreElements()) {
+          let win = windows.getNext().QueryInterface(Ci.nsIDOMWindow);
+          refreshDocument(win.document);
+        }
+      } else if (aData == "toolbar-style") {
+        return;
       } else {
         unloadTweaks();
         loadTweaks();
       }
 
-      let windows = Services.ww.getWindowEnumerator();
-      while (windows.hasMoreElements()) {
-        let win = windows.getNext().QueryInterface(Ci.nsIDOMWindow);
-        refreshDocument(win.document);
-      }
       return;
     }
   }
