@@ -20,7 +20,6 @@
 #expandedAttachmentBox {
   width: 20em;
   height: 0;
-  list-style-image: url("%CUSTOM-ICON mail-attachment 24");
 }
 
 #attachmentText {
@@ -181,6 +180,6 @@ mail-emailaddress:-moz-focusring {
 }
 
 .collapsedAttachmentButton {
-  list-style-image: url("%CUSTOM-ICON mail-attachment 24");
+  list-style-image: var(--icon-mail-attachment-16);
   -moz-margin-end: .5em;
 }

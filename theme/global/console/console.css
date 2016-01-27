@@ -126,7 +126,7 @@ toolbar#ToolbarMode toolbarbutton {
 }
 
 #Console\:modeAll {
-  list-style-image: url("%CUSTOM-ICON utilities-terminal 24");
+  list-style-image: var(--icon-stock_show-all-24);
 }
 
 #Console\:modeErrors {

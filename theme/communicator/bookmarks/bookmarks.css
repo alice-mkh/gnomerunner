@@ -94,7 +94,7 @@ treechildren::-moz-tree-image(container, OrganizerQuery_UnfiledBookmarks) {
 /* query-nodes should be styled even if they're not expandable */
 .bookmark-item[container][query],
 treechildren::-moz-tree-image(title, query) {
-  list-style-image: url("%CUSTOM-ICON folder-saved-search 16");
+  list-style-image: var(--icon-folder-saved-search-16);
   -moz-image-region: auto;
 }
 

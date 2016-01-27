@@ -23,6 +23,7 @@ edit-redo
 edit-select-all
 edit-undo
 folder
+folder-new
 folder-open
 format-indent-less
 format-indent-more
@@ -59,6 +60,9 @@ gtk-yes
 help-about
 help-contents
 image-missing
+insert-image
+insert-link
+insert-object
 list-add
 list-remove
 mail-attachment

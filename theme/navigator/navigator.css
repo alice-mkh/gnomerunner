@@ -558,20 +558,24 @@ toolbar[mode="text"] #search-button > .button-box {
 }
 
 #security-button {
-  list-style-image: url("%CUSTOM-ICON changes-allow 16");
+  list-style-image: var(--icon-lock-insecure-16);
 }
 
 #security-button[label] > .statusbarpanel-contentbox {
   background-color: rgba(98, 196, 65, .8);
 }
 
-/* |high| and |low| styles could be different, to better reflect the secure level... */
-#security-button[level="high"] {
-  list-style-image: url("%CUSTOM-ICON changes-prevent 16");
+#security-button[level="high"],
+#security-button[level="low"] {
+  list-style-image: var(--icon-lock-secure-16);
+}
+
+#security-button[level="high"][label] {
+  list-style-image: var(--icon-lock-secure-checked-16);
 }
 
 #security-button[level="broken"] {
-  list-style-image: url("chrome://global/skin/icons/16x16/security-broken.png");
+  list-style-image: var(--icon-lock-broken-16);
 }
 
 #security-button:not([label]) .statusbarpanel-text,

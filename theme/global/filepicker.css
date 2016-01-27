@@ -57,7 +57,7 @@ treechildren::-moz-tree-image(FilenameColumn, file) {
 /* new-dir-button */
 
 .new-dir-button {
-  list-style-image: url("%CUSTOM-ICON folder-new 24");
+  list-style-image: var(--icon-folder-new-24);
   max-width: 36px;
 }
 

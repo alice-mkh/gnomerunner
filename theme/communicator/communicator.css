@@ -177,18 +177,18 @@ treecols:-moz-lwtheme {
 }
 
 .messageImage[value="EnterInsecureMessage"] {
-  list-style-image: url("%CUSTOM-ICON changes-prevent 16");
+  list-style-image: var(--icon-lock-insecure-16);
 }
 
 .messageImage[value="EnterSecureMessage"],
 .messageImage[value="BlockedActiveContentMessage"],
 .messageImage[value="BlockedDisplayContentMessage"] {
-  list-style-image: url("%CUSTOM-ICON changes-prevent 16");
+  list-style-image: var(--icon-lock-secure-16);
 }
 
 .messageImage[value="MixedContentMessage"],
 .messageImage[value="MixedActiveContentMessage"],
 .messageImage[value="MixedDisplayContentMessage"] {
-  list-style-image: url("chrome://global/skin/icons/16x16/security-broken.png");
+  list-style-image: var(--icon-lock-broken-16);
 }
 

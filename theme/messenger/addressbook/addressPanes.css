@@ -24,7 +24,7 @@ treechildren::-moz-tree-image(DirCol, IsRemote-true) {
 }
 
 treechildren::-moz-tree-image(DirCol, IsRemote-true, IsSecure-true) {
-  list-style-image: url("%CUSTOM-ICON system-lock-screen 16");
+  list-style-image: var(--icon-lock-secure-16);
 }
 
 #dirTree [sortDirection="ascending"] {

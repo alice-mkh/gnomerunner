@@ -38,7 +38,7 @@ window {
 }
 
 #button-input {
-    list-style-image:url("%CUSTOM-ICON mail-reply-sender 16");
+    list-style-image: var(--icon-internet-group-chat-16);
 }
 
 .highlight-menu-item:hover {
@@ -289,13 +289,20 @@ progressmeter[mode="undetermined"] {
     min-width: 20px;
 }
 
-#security-button[level="high"] > image,
+#security-button > image {
+  list-style-image: var(--icon-lock-insecure-16);
+}
+
+#security-button[level="high"] > image {
+  list-style-image: var(--icon-lock-secure-checked-16);
+}
+
 #security-button[level="low"] > image {
-    list-style-image: url("%CUSTOM-ICON changes-prevent 16");
+  list-style-image: var(--icon-lock-secure-16);
 }
 
 #security-button[level="broken"] > image {
-    list-style-image: url("chrome://global/skin/icons/16x16/security-broken.png");
+  list-style-image: var(--icon-lock-broken-16);
 }
 
 /* prevent margins of a value-less label from shifting the image */

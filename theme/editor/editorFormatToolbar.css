@@ -137,12 +137,12 @@
 }
 
 #InsertPopupButton {
-  list-style-image: url("%CUSTOM-ICON insert-object 16");
+  list-style-image: var(--icon-insert-object-16);
 }
 
 #InsertPopupButton[disabled="true"] {
-  list-style-image: url("%CUSTOM-ICON insert-object 16 disabled");
-  opacity: %DISABLED-OPACITY !important;
+  list-style-image: var(--icon-insert-object-16-dis);
+  opacity: var(--icon-insert-object-dis-opacity);
 }
 
 #smileButtonMenu {
@@ -180,23 +180,23 @@
 /* ..... insert menu ..... */
 
 #InsertLinkItem {
-  list-style-image: url("%CUSTOM-ICON insert-link 16");
+  list-style-image: var(--icon-insert-link-16);
 }
 
 #InsertAnchorItem {
-  list-style-image: url("chrome://global/skin/icons/16x16/stock_anchor.png");
+  list-style-image: var(--icon-stock_anchor-16);
 }
 
 #InsertImageItem {
-  list-style-image: url("%CUSTOM-ICON insert-image 16");
+  list-style-image: var(--icon-insert-image-16);
 }
 
 #InsertHRuleItem {
-  list-style-image: url("chrome://global/skin/icons/16x16/stock_form-line-horizontal.png");
+  list-style-image: var(--icon-stock_insert-rule-16);
 }
 
 #InsertTableItem {
-  list-style-image: url("chrome://global/skin/icons/16x16/stock_insert-table.png");
+  list-style-image: var(--icon-stock_insert-table-16);
 }
 
 

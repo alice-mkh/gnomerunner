@@ -6,7 +6,7 @@
 
 treechildren::-moz-tree-image(GeneratedName) {
   -moz-margin-end: 2px;
-  list-style-image: var(--icon-contact-editor-16);
+  list-style-image: var(--icon-stock_contact-16);
 }
 
 treechildren::-moz-tree-image(GeneratedName, MailList) {

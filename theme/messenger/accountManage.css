@@ -21,7 +21,7 @@
 }
 
 .selectForOfflineUseButton {
-  list-style-image: url("chrome://communicator/skin/icons/offline.gif");
+  list-style-image: var(--icon-offline-32);
 }
 
 .selectForOfflineUseButton > .button-box > .button-icon {

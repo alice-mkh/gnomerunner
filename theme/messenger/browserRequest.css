@@ -10,11 +10,11 @@
 
 #security-button[level="high"],
 #security-button[level="low"] {
-  background-image: url("%CUSTOM-ICON changes-prevent 16");
+  list-style-image: var(--icon-lock-secure-16);
 }
 
 #security-button[level="broken"] {
-  background-image: url("chrome://global/skin/icons/16x16/security-broken.png");
+  list-style-image: var(--icon-lock-broken-16);
 }
 
 #security-button[loading="true"] {
