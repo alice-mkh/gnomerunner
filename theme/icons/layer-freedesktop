@@ -1,3 +1,4 @@
+contact-new
 document-new
 document-open
 document-print
@@ -51,6 +52,15 @@ help-about
 help-contents
 list-add
 list-remove
+mail-forward
+mail-mark-junk
+mail-mark-notjunk
+mail-mark-read
+mail-message-new
+mail-reply-all
+mail-reply-sender
+mail-send
+mail-send-receive
 media-playback-pause
 media-playback-start
 process-stop
@@ -77,5 +87,6 @@ dialog-question
 dialog-warning
 folder-open
 image-missing
+mail-attachment
 mail-unread
 network-idle

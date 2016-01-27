@@ -11,48 +11,48 @@
 /* ::::: primary toolbar buttons ::::: */
 
 #button-getmsg {
-  list-style-image: url("%CUSTOM-ICON mail-send-receive 24");
+  list-style-image: var(--icon-mail-send-receive-24);
 }
 
 #button-getmsg[disabled] {
-  list-style-image: url("%CUSTOM-ICON mail-send-receive 24 disabled");
-  opacity: %DISABLED-OPACITY !important;
+  list-style-image: var(--icon-mail-send-receive-24-dis);
+  opacity: var(--icon-mail-send-receive-dis-opacity);
 } 
 
 #button-newmsg {
-  list-style-image: url("%CUSTOM-ICON mail-message-new 24");
+  list-style-image: var(--icon-mail-message-new-24);
 }
 
 #button-newmsg[disabled] {
-  list-style-image: url("%CUSTOM-ICON mail-message-new 24 disabled");
-  opacity: %DISABLED-OPACITY !important;
+  list-style-image: var(--icon-mail-message-new-24-dis);
+  opacity: var(--icon-mail-message-new-dis-opacity);
 } 
 
 #button-reply {
-    list-style-image:url("%CUSTOM-ICON mail-reply-sender 24");
+  list-style-image: var(--icon-mail-reply-sender-24);
 }
 
 #button-reply[disabled] {
-  list-style-image: url("%CUSTOM-ICON mail-reply-sender 24 disabled");
-  opacity: %DISABLED-OPACITY !important;
+  list-style-image: var(--icon-mail-reply-sender-24-dis);
+  opacity: var(--icon-mail-reply-sender-dis-opacity);
 } 
 
 #button-replyall {
-    list-style-image:url("%CUSTOM-ICON mail-reply-all 24");
+  list-style-image: var(--icon-mail-reply-all-24);
 }
 
 #button-replyall[disabled] {
-  list-style-image: url("%CUSTOM-ICON mail-reply-all 24 disabled");
-  opacity: %DISABLED-OPACITY !important;
+  list-style-image: var(--icon-mail-reply-all-24-dis);
+  opacity: var(--icon-mail-reply-all-dis-opacity);
 } 
 
 #button-forward {
-  list-style-image: url("%CUSTOM-ICON mail-forward 24");
+  list-style-image: var(--icon-mail-forward-24);
 }
 
 #button-forward[disabled] {
-  list-style-image: url("%CUSTOM-ICON mail-forward 24 disabled");
-  opacity: %DISABLED-OPACITY !important;
+  list-style-image: var(--icon-mail-forward-24-dis);
+  opacity: var(--icon-mail-forward-dis-opacity);
 } 
 
 #button-file {
@@ -123,21 +123,30 @@ toolbarpaletteitem > #button-delete {
 }
 
 #button-mark {
-  list-style-image: url("%CUSTOM-ICON mail-mark-read 24");
+  list-style-image: var(--icon-mail-mark-read-24);
 }
 
 #button-mark[disabled] {
-  list-style-image: url("%CUSTOM-ICON mail-mark-read 24 disabled");
-  opacity: %DISABLED-OPACITY !important;
+  list-style-image: var(--icon-mail-mark-read-24-dis);
+  opacity: var(--icon-mail-mark-read-dis-opacity);
 } 
 
-#button-junk {
-  list-style-image: url("%CUSTOM-ICON mail-mark-junk 24");
+#button-isJunk {
+  list-style-image: var(--icon-mail-mark-junk-24);
 }
 
-#button-junk[disabled="true"] {
-  list-style-image: url("%CUSTOM-ICON mail-mark-junk 24 disabled");
-  opacity: %DISABLED-OPACITY !important;
+#button-isJunk[disabled="true"] {
+  list-style-image: var(--icon-mail-mark-junk-24-dis);
+  opacity: var(--icon-mail-mark-junk-dis-opacity);
+}
+
+#button-notJunk {
+  list-style-image: var(--icon-mail-mark-notjunk-24);
+}
+
+#button-notJunk[disabled="true"] {
+  list-style-image: var(--icon-mail-mark-notjunk-24-dis);
+  opacity: var(--icon-mail-mark-junk-dis-opacity);
 }
 
 #button-print {
@@ -196,47 +205,52 @@ toolbarpaletteitem[place="palette"] > #mailviews-container > #viewPicker {
 
 toolbar[iconsize="small"] > #button-getmsg,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-getmsg {
-  list-style-image: url("%CUSTOM-ICON mail-send-receive 16");
+  list-style-image: var(--icon-mail-send-receive-16);
 }
 
 toolbar[iconsize="small"] > #button-getmsg[disabled] {
-  list-style-image: url("%CUSTOM-ICON mail-send-receive 16 disabled");
+  list-style-image: var(--icon-mail-send-receive-16-dis);
+  opacity: var(--icon-mail-send-receive-dis-opacity);
 }
 
 toolbar[iconsize="small"] > #button-newmsg,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-newmsg {
-  list-style-image: url("%CUSTOM-ICON mail-message-new 16");
+  list-style-image: var(--icon-mail-message-new-16);
 }
 
 toolbar[iconsize="small"] > #button-newmsg[disabled] {
-  list-style-image: url("%CUSTOM-ICON mail-message-new 16 disabled");
+  list-style-image: var(--icon-mail-message-new-16-dis);
+  opacity: var(--icon-mail-message-new-dis-opacity);
 }
 
 toolbar[iconsize="small"] > #button-reply,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-reply {
-  list-style-image:url("%CUSTOM-ICON mail-reply-sender 16");
+  list-style-image: var(--icon-mail-reply-sender-16);
 }
 
 toolbar[iconsize="small"] > #button-reply[disabled] {
-  list-style-image: url("%CUSTOM-ICON mail-reply-sender 16 disabled");
+  list-style-image: var(--icon-mail-reply-sender-16-dis);
+  opacity: var(--icon-mail-reply-sender-dis-opacity);
 }
 
 toolbar[iconsize="small"] > #button-replyall,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-replyall {
-  list-style-image:url("%CUSTOM-ICON mail-reply-all 16");
+  list-style-image: var(--icon-mail-reply-all-16);
 }
 
 toolbar[iconsize="small"] > #button-replyall[disabled] {
-  list-style-image: url("%CUSTOM-ICON mail-reply-all 16 disabled");
+  list-style-image: var(--icon-mail-reply-all-16-dis);
+  opacity: var(--icon-mail-reply-all-dis-opacity);
 }
 
 toolbar[iconsize="small"] > #button-forward,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-forward {
-  list-style-image: url("%CUSTOM-ICON mail-forward 16");
+  list-style-image: var(--icon-mail-forward-16);
 }
 
 toolbar[iconsize="small"] > #button-forward[disabled] {
-  list-style-image: url("%CUSTOM-ICON mail-forward 16 disabled");
+  list-style-image: var(--icon-mail-forward-16-dis);
+  opacity: var(--icon-mail-forward-dis-opacity);
 }
 
 toolbar[iconsize="small"] > #button-file,
@@ -305,20 +319,32 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #button-delete[disabled] {
 
 toolbar[iconsize="small"] > #button-mark,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-mark {
-  list-style-image: url("%CUSTOM-ICON mail-mark-read 16");
+  list-style-image: var(--icon-mail-mark-read-16);
 }
 
 toolbar[iconsize="small"] > #button-mark[disabled] {
-  list-style-image: url("%CUSTOM-ICON mail-mark-read 16 disabled");
+  list-style-image: var(--icon-mail-mark-read-16-dis);
+  opacity: var(--icon-mail-mark-read-dis-opacity);
 }
 
-toolbar[iconsize="small"] > #button-junk,
-toolbar[iconsize="small"] > toolbarpaletteitem > #button-junk {
-  list-style-image: url("%CUSTOM-ICON mail-mark-junk 16");
+toolbar[iconsize="small"] > #button-isJunk,
+toolbar[iconsize="small"] > toolbarpaletteitem > #button-isJunk {
+  list-style-image: var(--icon-mail-mark-junk-16);
 }
 
-toolbar[iconsize="small"] > #button-junk[disabled] {
-  list-style-image: url("%CUSTOM-ICON mail-mark-junk 16 disabled");
+toolbar[iconsize="small"] > #button-isJunk[disabled] {
+  list-style-image: var(--icon-mail-mark-junk-16-dis);
+  opacity: var(--icon-mail-mark-junk-dis-opacity);
+}
+
+toolbar[iconsize="small"] > #button-notJunk,
+toolbar[iconsize="small"] > toolbarpaletteitem > #button-notJunk {
+  list-style-image: var(--icon-mail-mark-notjunk-16);
+}
+
+toolbar[iconsize="small"] > #button-notJunk[disabled] {
+  list-style-image: var(--icon-mail-mark-notjunk-16-dis);
+  opacity: var(--icon-mail-mark-notjunk-dis-opacity);
 }
 
 toolbar[iconsize="small"] > #button-print,

@@ -13,30 +13,30 @@
 /* ::::: primary toolbar buttons ::::: */
 
 #button-send {
-  list-style-image: url("%CUSTOM-ICON mail-send 24");
+  list-style-image: var(--icon-mail-send-24);
 }
 
 #button-send[disabled="true"] {
-  list-style-image: url("%CUSTOM-ICON mail-send 24 disabled");
-  opacity: %DISABLED-OPACITY !important;
+  list-style-image: var(--icon-mail-send-24-dis);
+  opacity: var(--icon-mail-send-dis-opacity);
 } 
 
 #button-address {
-  list-style-image: url("%CUSTOM-ICON x-office-address-book 24");
+  list-style-image: var(--icon-x-office-address-book-24);
 }
 
 #button-address[disabled="true"] {
-  list-style-image: url("%CUSTOM-ICON x-office-address-book 24 disabled");
-  opacity: %DISABLED-OPACITY !important;
+  list-style-image: var(--icon-x-office-address-book-24-dis);
+  opacity: var(--icon-x-office-address-book-dis-opacity);
 } 
 
 #button-attach {
-  list-style-image: url("%CUSTOM-ICON mail-attachment 24");
+  list-style-image: var(--icon-mail-attachment-24);
 }
 
 #button-attach[disabled="true"] {
-  list-style-image: url("%CUSTOM-ICON mail-attachment 24 disabled");
-  opacity: %DISABLED-OPACITY !important;
+  list-style-image: var(--icon-mail-attachment-24-dis);
+  opacity: var(--icon-mail-attachment-dis-opacity);
 } 
 
 #spellingButton {
@@ -61,30 +61,32 @@
 
 toolbar[iconsize="small"] > #button-send,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-send {
-  list-style-image: url("%CUSTOM-ICON mail-send 16");
+  list-style-image: var(--icon-mail-send-16);
 }
 
 toolbar[iconsize="small"] > #button-send[disabled="true"] {
-  list-style-image: url("%CUSTOM-ICON mail-send 16 disabled");
+  list-style-image: var(--icon-mail-send-16-dis);
+  opacity: var(--icon-mail-send-dis-opacity);
 }
 
 toolbar[iconsize="small"] > #button-address,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-address {
-  list-style-image: url("%CUSTOM-ICON x-office-address-book 16");
+  list-style-image: var(--icon-x-office-address-book-16);
 }
 
 toolbar[iconsize="small"] > #button-address[disabled="true"] {
-  list-style-image: url("%CUSTOM-ICON x-office-address-book 16 disabled");
+  list-style-image: var(--icon-x-office-address-book-16-dis);
+  opacity: var(--icon-x-office-address-book-dis-opacity);
 } 
 
 toolbar[iconsize="small"] > #button-attach,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-attach {
-  list-style-image: url("%CUSTOM-ICON mail-attachment 16");
+  list-style-image: var(--icon-mail-attachment-16);
 }
 
 toolbar[iconsize="small"] > #button-attach[disabled="true"] {
-  list-style-image: url("%CUSTOM-ICON mail-attachment 16 disabled");
-  opacity: %DISABLED-OPACITY !important;
+  list-style-image: var(--icon-mail-attachment-16-dis);
+  opacity: var(--icon-mail-attachment-dis-opacity);
 } 
 
 toolbar[iconsize="small"] > #spellingButton,
@@ -94,6 +96,7 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #spellingButton {
 
 toolbar[iconsize="small"] > #spellingButton[disabled="true"] {
   list-style-image: var(--icon-tools-check-spelling-16-dis);
+  opacity: var(--icon-tools-check-spelling-dis-opacity);
 }
 
 toolbar[iconsize="small"] > #button-save,
@@ -103,6 +106,7 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #button-save {
 
 toolbar[iconsize="small"] > #button-save[disabled="true"] {
   list-style-image: var(--icon-document-save-16-dis);
+  opacity: var(--icon-document-save-dis-opacity);
 } 
 
 /* ::::: special toolbar colors ::::: */
@@ -145,7 +149,7 @@ treechildren::-moz-tree-image(local-abook) {
   margin-bottom: 2px;
   -moz-margin-start: 4px;
   -moz-margin-end: -1px;
-  list-style-image: url("%CUSTOM-ICON x-office-address-book 16");
+  list-style-image: var(--icon-x-office-address-book-16);
 }
 
 treechildren::-moz-tree-image(remote-abook) {
