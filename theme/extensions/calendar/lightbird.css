@@ -3,7 +3,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #mini-cal {
-  list-style-image: url("%CUSTOM-ICON x-office-calendar 16");
+  list-style-image: var(--icon-x-office-calendar-16);
   -moz-image-region: auto !important;
 }
 
@@ -12,5 +12,5 @@
 }
 
 #tasksMenuCalendar {
-  list-style-image: url("%CUSTOM-ICON x-office-calendar 16");
+  list-style-image: var(--icon-x-office-calendar-16);
 }

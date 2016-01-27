@@ -13,31 +13,26 @@
 
 #mini-nav,
 .icon-navigator16 {
-  list-style-image: url("%CUSTOM-ICON emblem-web 16");
+  list-style-image: var(--icon-internet-web-browser-16);
 }
 
 #mini-mail,
 .icon-mail16 {
-  list-style-image: url("%CUSTOM-ICON emblem-mail 16");
+  list-style-image: var(--icon-internet-mail-16);
 }
 
 #mini-mail[BiffState="NewMail"] {
-  list-style-image: url("%CUSTOM-ICON mail-mark-unread 16");
+  list-style-image: var(--icon-mail-unread-16);
 }
 
 #mini-addr,
 .icon-addressbook16 {
-  list-style-image: url("%CUSTOM-ICON x-office-address-book 16");
+  list-style-image: var(--icon-x-office-address-book-16);
 }
 
 #mini-comp,
 .icon-composer16 {
-  list-style-image: url("%CUSTOM-ICON accessories-text-editor 16");
-}
-
-#mini-irc,
-.icon-irc16 {
-  list-style-image: url("chrome://global/skin/icons/16x16/irc.png") !important;
+  list-style-image: var(--icon-accessories-text-editor-16);
 }
 
 /* ::::: component bar ::::: */

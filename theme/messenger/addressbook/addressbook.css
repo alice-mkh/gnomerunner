@@ -49,11 +49,12 @@
 }
 
 #button-newim {
-  list-style-image: url("chrome://global/skin/icons/24x24/irc.png");
+  list-style-image: var(--icon-internet-group-chat-24);
 }
 
 #button-newim[disabled] {
-  opacity: 0.5 !important;
+  list-style-image: var(--icon-internet-group-chat-24-dis);
+  opacity: var(--icon-internet-group-chat-dis-opacity);
 } 
 
 #button-abdelete {
@@ -105,11 +106,12 @@ toolbar[iconsize="small"] > #button-newmessage[disabled] {
 
 toolbar[iconsize="small"] > #button-newim,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-newim {
-  list-style-image: url("chrome://global/skin/icons/16x16/irc.png");
+  list-style-image: var(--icon-internet-group-chat-16);
 }
 
 toolbar[iconsize="small"] > #button-newim[disabled] {
-  list-style-image: url("chrome://global/skin/icons/16x16/irc.png");
+  list-style-image: var(--icon-internet-group-chat-16-dis);
+  opacity: var(--icon-internet-group-chat-dis-opacity);
 } 
 
 toolbar[iconsize="small"] > #button-abdelete,

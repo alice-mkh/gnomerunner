@@ -64,8 +64,11 @@ window-close
 zoom-in
 zoom-original
 zoom-out
+accessories-text-editor
 preferences-desktop
 text-x-generic
+x-office-address-book
+x-office-calendar
 folder
 dialog-error
 dialog-information
@@ -74,4 +77,5 @@ dialog-question
 dialog-warning
 folder-open
 image-missing
+mail-unread
 network-idle
