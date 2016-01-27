@@ -44,11 +44,11 @@ textbox[autocompletesearch="history file"] .autocomplete-treebody::-moz-tree-ima
 /* ::::: online/offline icons ::::: */
 
 #offline-status[offline="true"] {
-  list-style-image: url("chrome://global/skin/icons/evolution/hicolor_status_32x32_offline.png");
+  list-style-image: var(--icon-offline-32);
 }
 
 #offline-status {
-  list-style-image: url("chrome://global/skin/icons/evolution/hicolor_status_32x32_online.png");
+  list-style-image: var(--icon-online-32);
 }
 
 /* ::::: spell checker ::::: */

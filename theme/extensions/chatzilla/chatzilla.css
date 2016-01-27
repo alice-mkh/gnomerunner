@@ -312,11 +312,11 @@ progressmeter[mode="undetermined"] {
 }
 
 #offline-status[offlinestate="offline"] {
-    list-style-image: url("chrome://global/skin/icons/evolution/hicolor_status_32x32_offline.png");
+  list-style-image: var(--icon-offline-32);
 }
 
 #offline-status[offlinestate="online"] {
-    list-style-image: url("chrome://global/skin/icons/evolution/hicolor_status_32x32_online.png");
+  list-style-image: var(--icon-online-32);
 }
 
 /* Focus styling for a11y reasons */
