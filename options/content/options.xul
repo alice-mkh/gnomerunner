@@ -56,6 +56,7 @@
 						<caption label="&options.label.fallback-icons;" />
 						<menulist preference="fallback-icon-theme">
 							<menupopup>
+								<menuitem label="Adwaita" value="adwaita"/>
 								<menuitem label="GNOME" value="gnome"/>
 								<menuitem label="Tango" value="tango"/>
 								<menuitem label="Stock GTK" value="gtk-stock"/>

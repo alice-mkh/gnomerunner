@@ -2,15 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#mini-cal {
+#mini-cal,
+#tasksMenuCalendar {
   list-style-image: var(--icon-x-office-calendar-16);
   -moz-image-region: auto !important;
 }
 
 #mini-cal[BiffState="Alarm"] {
-  list-style-image: url("%CUSTOM-ICON appointment-soon 16");
+  list-style-image: var(--icon-appointment-soon-16);
 }
 
-#tasksMenuCalendar {
-  list-style-image: var(--icon-x-office-calendar-16);
-}

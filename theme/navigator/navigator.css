@@ -588,8 +588,8 @@ toolbar[mode="text"] #search-button > .button-box {
   list-style-image: url("chrome://communicator/skin/icons/identity.png");
 }
 
-#popupIcon {
-  list-style-image: url("%CUSTOM-ICON lpi-bug 16");
+#popupIcon {"] {
+  list-style-image: var(--icon-dialog-warning-16);
 }
 
 #invalid-form-popup {

@@ -169,7 +169,7 @@ treecols:-moz-lwtheme {
 }
 
 .messageImage[value="popup-blocked"] {
-  list-style-image: url("%CUSTOM-ICON lpi-bug 16");
+  list-style-image: var(--icon-dialog-warning-16);
 }
 
 .messageImage[value="blocked-badware-page"] {
