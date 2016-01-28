@@ -48,12 +48,12 @@ treechildren::-moz-tree-image(folderNameCol, serverType-nntp, newMessages-true) 
 
 .icon-holder[type="folder"][ServerType="rss"],
 treechildren::-moz-tree-image(folderNameCol, serverType-rss) {
-  list-style-image: url("chrome://messenger/skin/icons/folder-newsgroup.png");
+  list-style-image: var(--icon-application-rss-xml-16);
 }
 
 .icon-holder[type="folder"][ServerType="rss"][NewMessages="true"],
 treechildren::-moz-tree-image(folderNameCol, serverType-rss, newMessages-true) {
-  list-style-image: url("chrome://messenger/skin/icons/folder-newsgroup.png");
+  list-style-image: var(--icon-application-rss-xml-16);
 }
 
 /* ..... Inbox ..... */
@@ -165,7 +165,7 @@ treechildren::-moz-tree-image(folderNameCol, isServer-true, serverType-nntp, isS
 
 .icon-holder[type="folder"][IsServer="true"][ServerType="rss"],
 treechildren::-moz-tree-image(folderNameCol, isServer-true, serverType-rss) {
-  list-style-image: url("chrome://communicator/skin/icons/feedIcon16.png");
+  list-style-image: var(--icon-application-rss-xml-16);
 }
 
 /* ::::: All Servers ::::: */

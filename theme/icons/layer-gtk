@@ -48,6 +48,7 @@ gtk-apply
 gtk-cancel
 gtk-color-picker
 gtk-convert
+gtk-edit
 gtk-no
 gtk-ok
 gtk-orientation-landscape

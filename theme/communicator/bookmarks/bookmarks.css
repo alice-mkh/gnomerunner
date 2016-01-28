@@ -53,8 +53,7 @@ treechildren::-moz-tree-image(Name, query, dayContainer) {
 
 .bookmark-item[container][livemark],
 treechildren::-moz-tree-image(title, container, livemark) {
-  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
-  -moz-image-region: rect(112px 16px 128px 0px);
+  list-style-image: var(--icon-application-rss-xml-16);
 }
 
 .bookmark-item[container][livemark] .bookmark-item,

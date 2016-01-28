@@ -38,6 +38,25 @@ radio[pane=paneLightning] {
     -moz-image-region: auto !important;
 }
 
+/* ::::: tabs ::::: */
+
+/* ::: new tab buttons ::: */
+#calendar-tab-button,
+#newMsgButton-calendar-menuitem,
+.icon-holder[type="calendar"],
+.tabmail-tab[type="calendar"] {
+  list-style-image: var(--icon-x-office-calendar-16);
+  -moz-image-region: auto !important;
+}
+
+#task-tab-button,
+#newMsgButton-task-menuitem,
+.icon-holder[type="tasks"],
+.tabmail-tab[type="tasks"] {
+  list-style-image: var(--icon-evolution-tasks-16);
+  -moz-image-region: auto !important;
+}
+
 #calendar-tab-button,
 #task-tab-button {
     margin-top: -2px !important;
@@ -58,7 +77,7 @@ radio[pane=paneLightning] {
 
 #calendar-status-todaypane-button > stack > .toolbarbutton-icon-begin {
   margin-top: -3px !important;
-  margin-bottom: -2px !important;
+  margin-bottom: -3px !important;
 }
 
 #calendar-status-todaypane-button > stack > .toolbarbutton-day-text {

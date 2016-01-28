@@ -5,6 +5,7 @@
 @import url(chrome://calendar/skin/common/calendar-unifinder.css);
 
 .unifinder-closebutton {
+    -moz-appearance: toolbarbutton !important;
     list-style-image: var(--icon-window-close-16) !important;
     padding: 2px !important;
     -moz-image-region: auto !important;

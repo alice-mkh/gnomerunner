@@ -386,8 +386,7 @@ toolbar[iconsize="small"] > #sync-button[status=active] {
 }
 
 .messageImage[value="junkContent"] {
-  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
-  -moz-image-region: rect(80px 16px 96px 0px);
+  list-style-image: var(--icon-mail-mark-junk-16);
 }
 
 .messageImage[value="phishingContent"] {

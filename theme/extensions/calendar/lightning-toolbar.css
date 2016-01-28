@@ -3,222 +3,204 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 /* Lightning "Calendar" Toolbarbutton */
-/*
+
 #lightning-button-calendar {
-    list-style-image: url(chrome://lightning/skin/mode-switch-icons.png);
-    -moz-image-region: rect(0px 24px 24px 0px);
+  list-style-image: var(--icon-x-office-calendar-24);
 }
-#lightning-button-calendar:hover {
-    -moz-image-region: rect(24px 24px 48px 0px);
-}
-#lightning-button-calendar[disabled] {
-    -moz-image-region: rect(48px 24px 72px 0px);
-}
-toolbar[iconsize="small"] #lightning-button-calendar {
-    -moz-image-region: rect(0px 64px 16px 48px);
-}
-toolbar[iconsize="small"] #lightning-button-calendar:hover {
-    -moz-image-region: rect(16px 64px 32px 48px);
-}
-toolbar[iconsize="small"] #lightning-button-calendar[disabled] {
-    -moz-image-region: rect(32px 64px 48px 48px);
-}
-*/
-/* Lightning "Tasks" Toolbarbutton */
-/*
+
 #lightning-button-tasks {
-    list-style-image: url(chrome://lightning/skin/mode-switch-icons.png);
-    -moz-image-region: rect(0px 48px 24px 24px);
-}
-#lightning-button-tasks:hover {
-    -moz-image-region: rect(24px 48px 48px 24px);
-}
-#lightning-button-tasks[disabled] {
-    -moz-image-region: rect(48px 48px 72px 24px);
+  list-style-image: var(--icon-evolution-tasks-24);
 }
 
-toolbar[iconsize="small"] #lightning-button-tasks {
-    -moz-image-region: rect(0px 80px 16px 64px);
-}
-toolbar[iconsize="small"] #lightning-button-tasks:hover {
-    -moz-image-region: rect(16px 80px 32px 64px);
-}
-toolbar[iconsize="small"] #lightning-button-tasks[disabled] {
-    -moz-image-region: rect(32px 80px 48px 64px);
-}
-*/
-/* Toolbar buttons */
-/*
-.calbar-toolbarbutton-1 {
-  list-style-image: url(chrome://calendar/skin/toolbar-large.png);
-}
-
-toolbar[iconsize="small"] .calbar-toolbarbutton-1 {
-  list-style-image: url(chrome://calendar/skin/toolbar-small.png);
-}
-*/
 #calendar-synchronize-button,
 #task-synchronize-button {
-  list-style-image: url("chrome://communicator/skin/sync/sync-24.png") !important;
-  -moz-image-region: auto !important;
+  list-style-image: var(--icon-view-refresh-24);
 }
 
-/* Sync icon is 22x22, we should compensate this */
-toolbar:not([iconsize="small"]) #calendar-synchronize-button .toolbarbutton-icon,
-toolbar:not([iconsize="small"]) #task-synchronize-button .toolbarbutton-icon {
-  margin: 1px;
+#calendar-synchronize-button[disabled="true"],
+#task-synchronize-button[disabled="true"] {
+  list-style-image: var(--icon-view-refresh-24-dis);
+  opacity: var(--icon-view-refresh-dis-opacity);
 }
 
-#calendar-synchronize-button[disabled],
-#task-synchronize-button[disabled] {
-  opacity: .5 !important;
+#extractEventButton,
+#task-newevent-button,
+#hdrExtractEventButton,
+#calendar-newevent-button {
+  list-style-image: var(--icon-appointment-new-24);
 }
 
-toolbar[iconsize="small"] #calendar-synchronize-button,
-toolbar[iconsize="small"] #task-synchronize-button {
-  list-style-image: url("chrome://communicator/skin/sync/sync-16.png") !important;
-}
-/*
-#calendar-newevent-button,
-#task-newevent-button {
-  -moz-image-region: rect(0px 24px 24px 0px);
+#extractEventButton[disabled="true"],
+#task-newevent-button[disabled="true"],
+#hdrExtractEventButton[disabled="true"],
+#calendar-newevent-button[disabled="true"] {
+  list-style-image: var(--icon-appointment-new-24-dis);
+  opacity: var(--icon-appoitment-new-dis-opacity);
 }
 
-#calendar-newevent-button[disabled],
-#task-newevent-button[disabled] {
-  -moz-image-region: rect(48px 24px 72px 0px);
+#extractTaskButton,
+#task-newtask-button,
+#hdrExtractTaskButton,
+#calendar-newtask-button {
+  list-style-image: var(--icon-stock_task-24);
 }
 
-toolbar[iconsize="small"] #calendar-newevent-button,
-toolbar[iconsize="small"] #task-newevent-button {
-  -moz-image-region: rect(0px 16px 16px 0px);
-}
-
-toolbar[iconsize="small"] #calendar-newevent-button[disabled],
-toolbar[iconsize="small"] #task-newevent-button[disabled] {
-  -moz-image-region: rect(32px 16px 48px 0px);
-}
-
-#calendar-newtask-button,
-#task-newtask-button {
-  -moz-image-region: rect(0px 384px 24px 360px);
-}
-
-#calendar-newtask-button[disabled],
-#task-newtask-button[disabled] {
-  -moz-image-region: rect(48px 384px 72px 360px);
-}
-
-toolbar[iconsize="small"] #calendar-newtask-button,
-toolbar[iconsize="small"] #task-newtask-button {
-  -moz-image-region: rect(0px 256px 16px 240px);
-}
-
-toolbar[iconsize="small"] #calendar-newtask-button[disabled],
-toolbar[iconsize="small"] #task-newtask-button[disabled] {
-  -moz-image-region: rect(32px 256px 48px 240px);
+#extractTaskButton[disabled="true"],
+#task-newtask-button[disabled="true"],
+#hdrExtractTaskButton[disabled="true"],
+#calendar-newtask-button[disabled="true"] {
+  list-style-image: var(--icon-stock_task-24-dis);
+  opacity: var(--icon-stock_task-dis-opacity);
 }
 
 #calendar-edit-button,
 #task-edit-button {
-  -moz-image-region: rect(0px 48px 24px 24px);
+  list-style-image: var(--icon-gtk-edit-24);
 }
 
-#calendar-edit-button[disabled],
-#task-edit-button[disabled] {
-  -moz-image-region: rect(48px 48px 72px 24px);
+#calendar-edit-button[disabled="true"],
+#task-edit-button[disabled="true"] {
+  list-style-image: var(--icon-gtk-edit-24-dis);
+  opacity: var(--icon-gtk-edit-dis-opacity);
 }
 
-toolbar[iconsize="small"] #calendar-edit-button,
-toolbar[iconsize="small"] #task-edit-button {
-  -moz-image-region: rect(0px 32px 16px 16px);
-}
-
-toolbar[iconsize="small"] #calendar-edit-button[disabled],
-toolbar[iconsize="small"] #task-edit-button[disabled] {
-  -moz-image-region: rect(32px 32px 48px 16px);
-}
-*/
 #calendar-delete-button,
 #task-delete-button {
-  list-style-image: var(--icon-edit-delete-24) !important;
-  -moz-image-region: auto !important;
+  list-style-image: var(--icon-edit-delete-24);
 }
 
-#calendar-delete-button[disabled],
-#task-delete-button[disabled] {
-  list-style-image: var(--icon-edit-delete-24-dis) !important;
+#calendar-delete-button[disabled="true"],
+#task-delete-button[disabled="true"] {
+  list-style-image: var(--icon-edit-delete-24-dis);
   opacity: var(--icon-edit-delete-dis-opacity);
-  -moz-image-region: auto !important;
 }
 
-toolbar[iconsize="small"] #calendar-delete-button,
-toolbar[iconsize="small"] #task-delete-button {
-  list-style-image: var(--icon-edit-delete-16) !important;
-  -moz-image-region: auto !important;
-}
-
-toolbar[iconsize="small"] #calendar-delete-button[disabled],
-toolbar[iconsize="small"] #task-delete-button[disabled] {
-  list-style-image: var(--icon-edit-delete-16-dis) !important;
-  opacity: var(--icon-edit-delete-dis-opacity);
-  -moz-image-region: auto !important;
-}
-/*
 #calendar-goto-today-button {
-  -moz-image-region: rect(0px 408px 24px 384px);
+  list-style-image: var(--icon-go-today-24);
 }
 
-#calendar-goto-today-button[disabled] {
-  -moz-image-region: rect(48px 408px 72px 384px);
+#calendar-goto-today-button[disabled="true"] {
+  list-style-image: var(--icon-go-today-24-dis);
+  opacity: var(--icon-go-today-dis-opacity);
 }
 
-toolbar[iconsize="small"] #calendar-goto-today-button {
-  -moz-image-region: rect(0px 272px 16px 256px);
-}
-
-toolbar[iconsize="small"] #calendar-goto-today-button[disabled] {
-  -moz-image-region: rect(32px 272px 48px 256px);
-}
-*/
 #calendar-print-button,
 #task-print-button {
-  list-style-image: var(--icon-document-print-24) !important;
-  -moz-image-region: auto !important;
+  list-style-image: var(--icon-document-print-24);
 }
 
-#calendar-print-button[disabled],
-#task-print-button[disabled] {
-  list-style-image: var(--icon-document-print-24-dis) !important;
-  opacity: var(--icon-document-print-dis-opacity);
-}
-
-toolbar[iconsize="small"] #calendar-print-button,
-toolbar[iconsize="small"] #task-print-button {
-  list-style-image: var(--icon-document-print-16) !important;
-}
-
-toolbar[iconsize="small"] #calendar-print-button[disabled],
-toolbar[iconsize="small"] #task-print-button[disabled] {
-  list-style-image: var(--icon-document-print-16-dis) !important;
+#calendar-print-button[disabled="true"],
+#task-print-button[disabled="true"] {
+  list-style-image: var(--icon-document-print-24-dis);
   opacity: var(--icon-document-print-dis-opacity);
 }
 
 #calendar-unifinder-button {
-  list-style-image: var(--icon-edit-find-24) !important;
-  -moz-image-region: auto !important;
+  list-style-image: var(--icon-edit-find-24);
 }
 
-#calendar-unifinder-button[disabled] {
-  list-style-image: var(--icon-edit-find-24-dis) !important;
+#calendar-unifinder-button[disabled="true"] {
+  list-style-image: var(--icon-edit-find-24-dis);
   opacity: var(--icon-edit-find-dis-opacity);
+}
+
+toolbar[iconsize="small"] #lightning-button-calendar {
+  list-style-image: var(--icon-x-office-calendar-16);
+}
+
+toolbar[iconsize="small"] #lightning-button-tasks {
+  list-style-image: var(--icon-evolution-tasks-16);
+}
+
+toolbar[iconsize="small"] #calendar-synchronize-button,
+toolbar[iconsize="small"] #task-synchronize-button {
+  list-style-image: var(--icon-view-refresh-16);
+}
+
+toolbar[iconsize="small"] #calendar-synchronize-button[disabled="true"],
+toolbar[iconsize="small"] #task-synchronize-button[disabled="true"] {
+  list-style-image: var(--icon-view-refresh-16-dis);
+  opacity: var(--icon-view-refresh-dis-opacity);
+}
+
+toolbar[iconsize="small"] #extractEventButton,
+toolbar[iconsize="small"] #task-newevent-button,
+toolbar[iconsize="small"] #hdrExtractEventButton,
+toolbar[iconsize="small"] #calendar-newevent-button {
+  list-style-image: var(--icon-appointment-new-16);
+}
+
+toolbar[iconsize="small"] #extractEventButton[disabled="true"],
+toolbar[iconsize="small"] #task-newevent-button[disabled="true"],
+toolbar[iconsize="small"] #hdrExtractEventButton[disabled="true"],
+toolbar[iconsize="small"] #calendar-newevent-button[disabled="true"] {
+  list-style-image: var(--icon-appointment-new-16-dis);
+  opacity: var(--icon-appoitment-new-dis-opacity);
+}
+
+toolbar[iconsize="small"] #extractTaskButton,
+toolbar[iconsize="small"] #task-newtask-button,
+toolbar[iconsize="small"] #hdrExtractTaskButton,
+toolbar[iconsize="small"] #calendar-newtask-button {
+  list-style-image: var(--icon-stock_task-16);
+}
+
+toolbar[iconsize="small"] #extractTaskButton[disabled="true"],
+toolbar[iconsize="small"] #task-newtask-button[disabled="true"],
+toolbar[iconsize="small"] #hdrExtractTaskButton[disabled="true"],
+toolbar[iconsize="small"] #calendar-newtask-button[disabled="true"] {
+  list-style-image: var(--icon-stock_task-16-dis);
+  opacity: var(--icon-stock_task-dis-opacity);
+}
+
+toolbar[iconsize="small"] #calendar-edit-button,
+toolbar[iconsize="small"] #task-edit-button {
+  list-style-image: var(--icon-gtk-edit-16);
+}
+
+toolbar[iconsize="small"] #calendar-edit-button[disabled="true"],
+toolbar[iconsize="small"] #task-edit-button[disabled="true"] {
+  list-style-image: var(--icon-gtk-edit-16-dis);
+  opacity: var(--icon-gtk-edit-dis-opacity);
+}
+
+toolbar[iconsize="small"] #calendar-delete-button,
+toolbar[iconsize="small"] #task-delete-button {
+  list-style-image: var(--icon-edit-delete-16);
+}
+
+toolbar[iconsize="small"] #calendar-delete-button[disabled="true"],
+toolbar[iconsize="small"] #task-delete-button[disabled="true"] {
+  list-style-image: var(--icon-edit-delete-16-dis);
+  opacity: var(--icon-edit-delete-dis-opacity);
+}
+
+toolbar[iconsize="small"] #calendar-goto-today-button {
+  list-style-image: var(--icon-go-today-16);
+}
+
+toolbar[iconsize="small"] #calendar-goto-today-button[disabled="true"] {
+  list-style-image: var(--icon-go-today-16-dis);
+  opacity: var(--icon-go-today-dis-opacity);
+}
+
+toolbar[iconsize="small"] #calendar-print-button,
+toolbar[iconsize="small"] #task-print-button {
+  list-style-image: var(--icon-document-print-16);
+}
+
+toolbar[iconsize="small"] #calendar-print-button[disabled="true"],
+toolbar[iconsize="small"] #task-print-button[disabled="true"] {
+  list-style-image: var(--icon-document-print-16-dis);
+  opacity: var(--icon-document-print-dis-opacity);
 }
 
 toolbar[iconsize="small"] #calendar-unifinder-button {
-  list-style-image: var(--icon-edit-find-16) !important;
+  list-style-image: var(--icon-edit-find-16);
 }
 
-toolbar[iconsize="small"] #calendar-unifinder-button[disabled] {
-  list-style-image: var(--icon-edit-find-16-dis) !important;
+toolbar[iconsize="small"] #calendar-unifinder-button[disabled="true"] {
+  list-style-image: var(--icon-edit-find-16-dis);
   opacity: var(--icon-edit-find-dis-opacity);
 }
+

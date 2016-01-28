@@ -1,0 +1,53 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url(chrome://calendar-common/skin/calendar-task-view.css);
+
+/*
+#task-actions-category {
+  list-style-image: url(chrome://calendar-common/skin/calendar-toolbar.svg#category);
+}
+
+#task-actions-markcompleted {
+  list-style-image: var(--icon-stock_mark-24);
+}
+
+#task-actions-priority {
+  list-style-image: var(--icon-emblem-important-24);
+}
+
+#calendar-delete-task-button {
+  list-style-image: var(--icon-edit-delete-24);
+}
+
+#task-actions-toolbar[iconsize="small"] #task-actions-category {
+  list-style-image: url(chrome://calendar-common/skin/calendar-toolbar.svg#category);
+}
+
+#task-actions-toolbar[iconsize="small"] #task-actions-markcompleted {
+  list-style-image: var(--icon-stock_mark-16);
+}
+
+#task-actions-toolbar[iconsize="small"] #task-actions-priority {
+  list-style-image: var(--icon-emblem-important-16);
+}
+
+#task-actions-toolbar[iconsize="small"] #calendar-delete-task-button {
+  list-style-image: var(--icon-edit-delete-16);
+}
+*/
+#calendar-add-task-button {
+  list-style-image: var(--icon-stock_task-16);
+  moz-image-region: auto 
+}
+
+#calendar-add-task-button[disabled="true"] > .toolbarbutton-icon {
+  list-style-image: var(--icon-stock_task-16-dis);
+  opacity: var(--icon-stock_task-dis-opacity);
+}
+
+#calendar-add-task-button > .toolbarbutton-icon {
+  margin: 0px;
+}
+

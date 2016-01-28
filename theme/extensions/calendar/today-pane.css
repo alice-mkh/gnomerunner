@@ -3,12 +3,28 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 .today-closebutton {
-  -moz-appearance: toolbarbutton !important;
-  list-style-image: var(--icon-window-close-16) !important;
-  padding: 2px !important;
+  -moz-appearance: toolbarbutton;
+  list-style-image: var(--icon-window-close-16);
+  padding: 2px;
   -moz-image-region: auto !important;
 }
 
 .today-closebutton > .toolbarbutton-icon {
-  margin: -2px !important;
+  margin: -2px;
 }
+
+#todaypane-new-event-button {
+  list-style-image: var(--icon-appointment-new-16);
+}
+
+#todaypane-new-event-button[disabled="true"] > .toolbarbutton-icon {
+  list-style-image: var(--icon-appointment-new-16-dis);
+  opacity: var(--icon-appointment-new-dis-opacity);
+}
+
+#todaypane-new-event-button > .toolbarbutton-icon {
+  width: 16px;
+  height: 16px;
+  margin: 0px;
+}
+

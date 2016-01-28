@@ -133,18 +133,11 @@
 
 
 #link-feed {
-  list-style-image: url("chrome://navigator/skin/btn1/feeds.png") !important;
-  -moz-image-region: rect(0px 32px 16px 16px);
-}
-
-#link-feed:hover {
-  -moz-image-region: rect(16px 32px 32px 16px);
+  list-style-image: var(--icon-application-rss-xml-16);
 }
 
 #link-feed[disabled="true"] {
-  -moz-image-region: rect(32px 32px 48px 16px);
+  list-style-image: var(--icon-application-rss-xml-16-dis);
+  opacity: var(--icon-application-rss-xml-dis-opacity);
 }
 
-#link-feed[open="true"] {
-  -moz-image-region: rect(48px 32px 64px 16px);
-}
