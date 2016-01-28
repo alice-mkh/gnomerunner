@@ -11,19 +11,21 @@
 }
 
 #DecreaseFontSizeButton {
-  list-style-image: url("chrome://global/skin/icons/16x16/format-text-smaller.png");
+  list-style-image: var(--icon-stock_decrease-font-16);
 }
 
 #DecreaseFontSizeButton[disabled="true"] {
-  opacity: 0.2 !important;
+  list-style-image: var(--icon-stock_decrease-font-16-dis);
+  opacity: var(--icon-stock_decrease-font-dis-opacity);
 }
 
 #IncreaseFontSizeButton {
-  list-style-image: url("chrome://global/skin/icons/16x16/format-text-larger.png");
+  list-style-image: var(--icon-stock_increase-font-16);
 }
 
 #IncreaseFontSizeButton[disabled="true"] {
-  opacity: 0.2 !important;
+  list-style-image: var(--icon-stock_increase-font-16-dis);
+  opacity: var(--icon-stock_increase-font-dis-opacity);
 }
 
 #boldButton {
@@ -54,19 +56,21 @@
 }
 
 #ulButton {
-  list-style-image: url("chrome://global/skin/icons/16x16/format_ul.png");
+  list-style-image: var(--icon-stock_list_bullet-16);
 }
 
 #ulButton[disabled="true"] {
-  opacity: 0.2 !important;
+  list-style-image: var(--icon-stock_list_bullet-16-dis);
+  opacity: var(--icon-stock_list_bullet-dis-opacity);
 }
 
 #olButton {
-  list-style-image: url("chrome://global/skin/icons/16x16/format_ol.png");
+  list-style-image: var(--icon-stock_list_enum-16);
 }
 
 #olButton[disabled="true"] {
-  opacity: 0.2 !important;
+  list-style-image: var(--icon-stock_list_enum-16-dis);
+  opacity: var(--icon-stock_list_enum-dis-opacity);
 }
 
 #outdentButton {
@@ -316,36 +320,38 @@
 }
 
 #HighlightColorButton {
-  list-style-image: url("chrome://global/skin/icons/16x16/format-text-mark.png");
+  list-style-image: var(--icon-stock_text_color_hilight-16);
   background-color: transparent;
 }
 
 #HighlightColorButton[disabled="true"] {
-  opacity: 0.2 !important;
+  list-style-image: var(--icon-stock_text_color_hilight-16-dis);
+  opacity: var(--icon-stock_text_color_hilight-dis-opacity);
 }
 
 #absolutePositionButton{
-  list-style-image: var(--icon-view-fullscreen-16);
+  list-style-image: var(--icon-stock_insert-floating-frame-16);
 }
 
 #absolutePositionButton[disabled="true"] {
-  list-style-image: var(--icon-view-fullscreen-16-dis);
-  opacity: var(--icon-view-fullscreen-dis-opacity);
-}
-
-#absolutePositionButton[checked="true"]{
-  list-style-image: var(--icon-view-restore-16);
+  list-style-image: var(--icon-stock_insert-floating-frame-16-dis);
+  opacity: var(--icon-stock_insert-floating-frame-dis-opacity);
 }
 
 #increaseZIndexButton {
-  list-style-image: url("chrome://global/skin/icons/16x16/stock_bring-forward.png");
+  list-style-image: var(--icon-stock_bring-forward-16);
 }
+
 #increaseZIndexButton[disabled="true"] {
-  opacity: 0.2 !important;
+  list-style-image: var(--icon-stock_bring-forward-16-dis);
+  opacity: var(--icon-stock_bring-forward-dis-opacity);
 }
+
 #decreaseZIndexButton {
-  list-style-image: url("chrome://global/skin/icons/16x16/stock_bring-backward.png");
+  list-style-image: var(--icon-stock_bring-backward-16);
 }
+
 #decreaseZIndexButton[disabled="true"] {
-  opacity: 0.2 !important;
+  list-style-image: var(--icon-stock_bring-backward-16-dis);
+  opacity: var(--icon-stock_bring-backward-dis-opacity);
 }
