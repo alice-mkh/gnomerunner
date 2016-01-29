@@ -1,5 +1,11 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
+/* undo the fix for the skinny alltabs button. It is not skinny here, and it becomes too fat */
+.tabs-alltabs-button > .toolbarbutton-menu-dropmarker {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
 /************** TAB CLOSERS ************/
 
 .tab-close-button {
@@ -7,8 +13,15 @@
   list-style-image: var(--icon-window-close-16) !important;
   -moz-image-region: auto !important;
   margin: -1px -2px !important;
+  filter: none !important;
+  opacity: 1 !important;
 }
 
-.tab-close-button .toolbarbutton-icon {
+.tab-close-button > .toolbarbutton-icon {
   margin: -4px !important;
 }
+
+#content .tabbrowser-tab:first-of-type:last-of-type:not(:hover) .tab-close-button {
+  opacity: 0 !important;
+}
+
