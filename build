@@ -115,39 +115,6 @@ while read LINE; do
     eval "$LINE1=\"$LINE2\""
 done < "../config.txt"
 
-#Output icons
-cd theme
-FILES=`find . -name "*.css"`
-for F in $FILES; do
-  N=`grep CUSTOM-ICON $F -c`
-  if (( N > 0 )); then
-    echo $F
-    echo " $N"
-  fi
-done
-
-echo "Substituting icons (deprecated)..."
-#Substitute icons
-for F in $FILES; do
-    ORIG="%CUSTOM-ICON ([^ ]+) ([0-9]+b?)( (disabled))?"
-    NEW1="chrome:\/\/global\/skin\/icons\/\2x\2\/\1.png"
-    NEW2="moz-icon:\/\/stock\/\1?size=\2\&state=\4"
-    sed -E "s/$ORIG/$NEW1/g" -i "$F"
-    sed -E "s/$ORIG/$NEW2/g" -i "../fd/theme/$F"
-
-    sed -E "s/16bx16b/16x16/g" -i "$F" "../fd/theme/$F"
-    sed -E "s/size=16b/size=button/g" -i "$F" "../fd/theme/$F"
-    sed -E "s/size=16/size=menu/g" -i "$F" "../fd/theme/$F"
-    sed -E "s/size=22/size=button/g" -i "$F" "../fd/theme/$F"
-    sed -E "s/size=24/size=toolbar/g" -i "$F" "../fd/theme/$F"
-    sed -E "s/size=48/size=dialog/g" -i "$F" "../fd/theme/$F"
-    sed -E "s/&state=\"/\"/g" -i "$F" "../fd/theme/$F"
-
-    sed -E "s/%DISABLED-OPACITY/0.5/g" -i "$F"
-    sed -E "s/%DISABLED-OPACITY/1.0/g" -i "../fd/theme/$F"
-done
-cd ..
-
 cp -R options fd
 
 echo "Packaging..."
