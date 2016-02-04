@@ -42,26 +42,13 @@ treechildren::-moz-tree-image(nameColumn) {
 treechildren::-moz-tree-image(nameColumn, ServerType-nntp),
 treechildren::-moz-tree-image(nameColumn2, nntp) {
   -moz-margin-end: 2px;
-  list-style-image: url("chrome://global/skin/icons/thunderbird/folder-pane.png");
-  -moz-image-region: rect(208px 16px 224px 0px);
+  list-style-image: var(--icon-folder-16);
 }
 
 /* ::::: server icons :::::: */
 
 .subscribeMenuItem {
-  list-style-image: url("chrome://messenger/skin/icons/server-mail.png");
-}
-
-.subscribeMenuItem[ServerType="imap"][IsSecure="true"] {
-  list-style-image: url("chrome://messenger/skin/icons/server-remote-lock.png");
-}
-
-.subscribeMenuItem[ServerType="nntp"] {
-  list-style-image: url("chrome://messenger/skin/icons/server-news.png");
-}
-
-.subscribeMenuItem[ServerType="nntp"][IsSecure="true"] {
-  list-style-image: url("chrome://messenger/skin/icons/server-news-lock.png");
+  list-style-image: var(--icon-network-server-16);
 }
 
 /* ::::: statusbar adjustments :::::: */

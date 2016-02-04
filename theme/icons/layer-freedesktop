@@ -2,6 +2,7 @@ accessories-text-editor
 appointment-new
 appointment-soon
 contact-new
+computer
 dialog-error
 dialog-information
 dialog-password
@@ -72,10 +73,13 @@ list-add
 list-remove
 mail-attachment
 mail-forward
+mail-mark-important
 mail-mark-junk
 mail-mark-notjunk
 mail-mark-read
 mail-message-new
+mail-read
+mail-replied
 mail-reply-all
 mail-reply-sender
 mail-send
@@ -84,10 +88,13 @@ mail-unread
 media-playback-pause
 media-playback-start
 network-idle
+network-server
 preferences-desktop
 process-stop
 text-x-generic
+text-x-generic-template
 tools-check-spelling
+user-trash
 view-fullscreen
 view-refresh
 view-restore
