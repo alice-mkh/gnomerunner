@@ -32,12 +32,12 @@
 } 
 
 #button-editcard {
-  list-style-image: url("%CUSTOM-ICON user-info 24");
+  list-style-image: var(--icon-document-properties-24);
 }
 
 #button-editcard[disabled] {
-  list-style-image: url("%CUSTOM-ICON user-info 24 disabled");
-  opacity: %DISABLED-OPACITY !important;
+  list-style-image: var(--icon-document-properties-24-dis);
+  opacity: var(--icon-document-properties-dis-opacity);
 } 
 
 #button-newmessage {
@@ -91,11 +91,12 @@ toolbar[iconsize="small"] > #button-newlist[disabled] {
 
 toolbar[iconsize="small"] > #button-editcard,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-editcard {
-  list-style-image: url("%CUSTOM-ICON user-info 16");
+  list-style-image: var(--icon-document-properties-16);
 }
 
 toolbar[iconsize="small"] > #button-editcard[disabled] {
-  list-style-image: url("%CUSTOM-ICON user-info 16 disabled");
+  list-style-image: var(--icon-document-properties-16-dis);
+  opacity: var(--icon-document-properties-dis-opacity);
 } 
 
 toolbar[iconsize="small"] > #button-newmessage,
