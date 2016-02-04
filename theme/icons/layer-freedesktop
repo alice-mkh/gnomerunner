@@ -11,6 +11,7 @@ document-new
 document-open
 document-print
 document-print-preview
+document-properties
 document-revert
 document-revert-rtl
 document-save
@@ -93,6 +94,7 @@ view-restore
 view-sort-ascending
 view-sort-descending
 window-close
+window-new
 x-office-address-book
 x-office-calendar
 zoom-in

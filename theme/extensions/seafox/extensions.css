@@ -19,3 +19,21 @@
   box-shadow: none;
   color: HighlightText;
 }
+
+#categories {
+  padding-top: 0px !important;
+}
+
+#addons-page {
+  -moz-appearance: window !important;
+  padding: 0px !important;
+  background-color: -moz-dialog !important;
+  color: -moz-dialogtext !important;
+}
+
+#view-port {
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-top: 0 !important;
+  border-radius: 0 !important;
+}

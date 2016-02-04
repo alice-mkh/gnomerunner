@@ -7,6 +7,7 @@ document-new			gtk-new
 document-open			gtk-open
 document-print			gtk-print
 document-print-preview	gtk-print-preview
+document-properties     gtk-properties
 document-revert			gtk-revert-to-saved-ltr
 document-revert-rtl		gtk-revert-to-saved-rtl
 document-save-as		gtk-save-as
