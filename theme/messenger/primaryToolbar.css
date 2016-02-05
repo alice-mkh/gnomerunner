@@ -11,12 +11,12 @@
 /* ::::: primary toolbar buttons ::::: */
 
 #button-getmsg {
-  list-style-image: var(--icon-mail-send-receive-24);
+  list-style-image: var(--icon-stock_mail-receive-24);
 }
 
 #button-getmsg[disabled] {
-  list-style-image: var(--icon-mail-send-receive-24-dis);
-  opacity: var(--icon-mail-send-receive-dis-opacity);
+  list-style-image: var(--icon-stock_mail-receive-24-dis);
+  opacity: var(--icon-stock_mail-receive-dis-opacity);
 } 
 
 #button-newmsg {
@@ -205,12 +205,12 @@ toolbarpaletteitem[place="palette"] > #mailviews-container > #viewPicker {
 
 toolbar[iconsize="small"] > #button-getmsg,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-getmsg {
-  list-style-image: var(--icon-mail-send-receive-16);
+  list-style-image: var(--icon-stock_mail-receive-16);
 }
 
 toolbar[iconsize="small"] > #button-getmsg[disabled] {
-  list-style-image: var(--icon-mail-send-receive-16-dis);
-  opacity: var(--icon-mail-send-receive-dis-opacity);
+  list-style-image: var(--icon-stock_mail-receive-16-dis);
+  opacity: var(--icon-stock_mail-receive-dis-opacity);
 }
 
 toolbar[iconsize="small"] > #button-newmsg,
@@ -327,22 +327,20 @@ toolbar[iconsize="small"] > #button-mark[disabled] {
   opacity: var(--icon-mail-mark-read-dis-opacity);
 }
 
-toolbar[iconsize="small"] > #button-isJunk,
-toolbar[iconsize="small"] > toolbarpaletteitem > #button-isJunk {
+toolbar[iconsize="small"] #button-isJunk {
   list-style-image: var(--icon-mail-mark-junk-16);
 }
 
-toolbar[iconsize="small"] > #button-isJunk[disabled] {
+toolbar[iconsize="small"] #button-isJunk[disabled] {
   list-style-image: var(--icon-mail-mark-junk-16-dis);
   opacity: var(--icon-mail-mark-junk-dis-opacity);
 }
 
-toolbar[iconsize="small"] > #button-notJunk,
-toolbar[iconsize="small"] > toolbarpaletteitem > #button-notJunk {
+toolbar[iconsize="small"] #button-notJunk {
   list-style-image: var(--icon-mail-mark-notjunk-16);
 }
 
-toolbar[iconsize="small"] > #button-notJunk[disabled] {
+toolbar[iconsize="small"] #button-notJunk[disabled] {
   list-style-image: var(--icon-mail-mark-notjunk-16-dis);
   opacity: var(--icon-mail-mark-notjunk-dis-opacity);
 }

@@ -132,6 +132,10 @@ tabpanels {
   margin: 0;
 }
 
+tab .tab-closebutton > .toolbarbutton-icon {
+  margin: -4px !important;
+}
+
 .tabs-newbutton {
   list-style-image: var(--icon-list-add-16);
 }

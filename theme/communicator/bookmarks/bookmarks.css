@@ -46,11 +46,6 @@ treechildren::-moz-tree-image(title, open) {
   height: 16px;
 }
 
-/* calendar icon for history grouping items by day */
-treechildren::-moz-tree-image(Name, query, dayContainer) {
-  list-style-image: url("chrome://communicator/skin/history/calendar.png");
-}
-
 .bookmark-item[container][livemark],
 treechildren::-moz-tree-image(title, container, livemark) {
   list-style-image: var(--icon-application-rss-xml-16);

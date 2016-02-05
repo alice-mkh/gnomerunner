@@ -10,11 +10,13 @@
 #identity-box[src="chrome://global/skin/icons/warning-16.png"] {
   border-right:1px solid ThreeDShadow;
 }
+
 #identity-box[level][showing="true"],
 #identity-box[src="chrome://global/skin/icons/blacklist_favicon.png"][showing="true"],
 #identity-box[src="chrome://global/skin/icons/warning-16.png"][showing="true"] {
   border-left:1px solid ThreeDShadow;
 }
+
 #identity-icon-label {
   margin: 4px 3px 2px 3px;
   color: white;

@@ -46,7 +46,7 @@ checkbox.nogray-disabled[disabled="true"][nogray="true"] {
 }
 
 .handler-action[appHandlerIcon="app"] {
-  list-style-image: url("chrome://communicator/skin/icons/application.png");
+  list-style-image: var(--icon-stock_insert-floating-frame-16);
 }
 
 .handler-action[appHandlerIcon="ask"] {
@@ -54,11 +54,11 @@ checkbox.nogray-disabled[disabled="true"][nogray="true"] {
 }
 
 .handler-action[appHandlerIcon="save"] {
-  list-style-image: url("chrome://communicator/skin/icons/save.png");
+  list-style-image: var(--icon-document-save-16);
 }
 
 .handler-action[appHandlerIcon="feed"] {
-  list-style-image: url("chrome://communicator/skin/icons/feedIcon16.png");
+  list-style-image: var(--icon-application-rss-xml-16);
 }
 
 .handler-action[appHandlerIcon="plugin"] {
@@ -72,7 +72,7 @@ checkbox.nogray-disabled[disabled="true"][nogray="true"] {
 .handler-type[typeClass="webFeed"],
 .handler-type[typeClass="videoPodcastFeed"],
 .handler-type[typeClass="audioPodcastFeed"] {
-  list-style-image: url("chrome://communicator/skin/icons/feedIcon16.png");
+  list-style-image: var(--icon-application-rss-xml-16);
 }
 
 /* ::::: Search ::::: */

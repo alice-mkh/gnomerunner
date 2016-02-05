@@ -16,38 +16,33 @@ treechildren::-moz-tree-image(Name) {
 #pauseButton,
 treechildren::-moz-tree-image(ActionPlay, downloading, resumable) {
   /* pause */
-  list-style-image: url("chrome://communicator/skin/downloads/downloadButtons.png");
-  -moz-image-region: rect(0px, 48px, 16px, 32px);
+  list-style-image: var(--icon-media-playback-pause-16);
 }
 
 #ActionPlay,
 #resumeButton,
 treechildren::-moz-tree-image(ActionPlay, paused, resumable) {
   /* resume */
-  list-style-image: url("chrome://communicator/skin/downloads/downloadButtons.png");
-  -moz-image-region: rect(0px, 16px, 16px, 0px);
+  list-style-image: var(--icon-media-playback-start-16);
 }
 
 #retryButton,
 treechildren::-moz-tree-image(ActionPlay, failed),
 treechildren::-moz-tree-image(ActionPlay, canceled) {
   /* retry */
-  list-style-image: url("chrome://communicator/skin/downloads/downloadButtons.png");
-  -moz-image-region: rect(0px, 64px, 16px, 48px);
+  list-style-image: var(--icon-view-refresh-16);
 }
 
 #ActionStop,
 #cancelButton,
 treechildren::-moz-tree-image(ActionStop, active) {
   /* cancel */
-  list-style-image: url("chrome://communicator/skin/downloads/downloadButtons.png");
-  -moz-image-region: rect(0px, 32px, 16px, 16px);
+  list-style-image: var(--icon-gtk-cancel-16);
 }
 
 treechildren::-moz-tree-image(ActionStop, inactive) {
   /* remove */
-  list-style-image: url("chrome://communicator/skin/downloads/dl-remove.png");
-  -moz-image-region: auto;
+  list-style-image: var(--icon-edit-delete-16);
 }
 
 /* progress dialogs */

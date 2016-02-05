@@ -674,14 +674,14 @@ toolbar[mode="text"] toolbarbutton.chevron > .toolbarbutton-icon {
 /* ::::: star button ::::: */
 
 #star-button {
-  list-style-image: url("chrome://global/skin/icons/firefox/bookmark.png");
-  -moz-image-region: rect(0px 16px 16px 0px);
+  list-style-image: var(--icon-bookmark-new-16-dis);
+  opacity: var(--icon-bookmark-new-dis-opacity);
 }
 
 #star-button[starred="true"],
 #editBookmarkPanelStarIcon {
-  list-style-image: url("chrome://global/skin/icons/firefox/bookmark.png");
-  -moz-image-region: rect(0px 32px 16px 16px);
+  list-style-image: var(--icon-bookmark-new-16);
+  opacity: 1;
 }
 
 /* ::::: feeds ::::: */
