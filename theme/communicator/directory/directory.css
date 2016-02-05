@@ -7,6 +7,7 @@
   ======================================================================= */
 
 @import url(chrome://communicator/skin/);
+@import url("chrome://icons/skin/icon-theme-default.css");
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
@@ -17,15 +18,15 @@
 
 treechildren::-moz-tree-image(FilenameColumn) {
   -moz-margin-end: 2px;
-  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
+  list-style-image: var(--icon-text-x-generic-16);
 }
 
 treechildren::-moz-tree-image(FilenameColumn, container) {
-  list-style-image: url("%STOCK-ICON gtk-directory folder 16");
+  list-style-image: var(--icon-folder-16);
 }
 
 treechildren::-moz-tree-image(FilenameColumn, container, open) {
-  list-style-image: url("%STOCK-ICON gtk-open document-open 16");
+  list-style-image: var(--icon-folder-open-16);
 }
 
 treechildren::-moz-tree-image(FilenameColumn, loading) {

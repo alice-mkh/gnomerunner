@@ -1,0 +1,42 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://icons/skin/icon-theme-default.css");
+@import url("chrome://communicator/skin/");
+
+.preview-icon {
+    margin: 5px;
+}
+
+#preview-icon-1 {
+    list-style-image: var(--icon-go-previous-24);
+}
+
+#preview-icon-2 {
+    list-style-image: var(--icon-go-next-24);
+}
+
+#preview-icon-3 {
+    list-style-image: var(--icon-view-refresh-24);
+}
+
+#preview-icon-4 {
+    list-style-image: var(--icon-process-stop-24);
+}
+
+#preview-icon-5 {
+    list-style-image: var(--icon-go-home-24);
+}
+
+#preview-toolbar-new {
+    list-style-image: var(--icon-document-new-24);
+}
+
+#preview-toolbar-open {
+    list-style-image: var(--icon-document-open-24);
+}
+
+#preview-toolbar-save {
+    list-style-image: var(--icon-document-save-24);
+}

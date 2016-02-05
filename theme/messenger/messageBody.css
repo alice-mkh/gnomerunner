@@ -108,20 +108,14 @@
 } 
 
 .moz-vcard-badge {
-  height: 30px;
-  width: 30px;
+  height: 24px;
+  width: 24px;
   display: block;
-  background-image: url("chrome://messenger/skin/icons/messengericons.png");
-  background-position: 0px -270px;
+  background-image: var(--icon-stock_contact-24);
 }
 
 .moz-vcard-badge:hover {
-  background-position: -30px -270px;
   outline: 1px dotted;
-}
-
-.moz-vcard-badge:hover:active {
-  background-position: -60px -270px;
 }
 
 /* ::::: attached images ::::: */

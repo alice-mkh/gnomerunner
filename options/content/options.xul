@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://gnomerunner-options/skin/options.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://gnomerunner-options/locale/options.dtd">
+
+
+<window id="gnomerunner-options-window"
+        title="&options.window.title;"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<prefpane>
+		<preferences>
+			<preference id="fallback-icon-theme"
+			            name="extensions.gnomerunner-options.fallback-icon-theme"
+			            type="string"/>
+			<preference id="native-icons"
+			            name="extensions.gnomerunner-options.native-icons"
+			            type="int"/>
+			<preference id="visible-grippies"
+			            name="extensions.gnomerunner-options.visible-grippies"
+			            type="bool"/>
+			<preference id="show-menubar-grippies"
+			            name="extensions.gnomerunner-options.show-menubar-grippies"
+			            type="bool"/>
+			<preference id="show-toolbar-grippies"
+			            name="extensions.gnomerunner-options.show-toolbar-grippies"
+			            type="bool"/>
+			<preference id="throbber-style"
+			            name="extensions.gnomerunner-options.throbber-style"
+			            type="string"/>
+		</preferences>
+
+		<tabbox>
+			<tabs>
+				<tab label="&options.tab.icons;" />
+				<tab label="&options.tab.menus-and-toolbars;" />
+				<tab label="&options.tab.throbber;" />
+			</tabs>
+			<tabpanels>
+				<tabpanel orient="vertical">
+					<groupbox>
+						<caption label="&options.label.native-icons;" />
+						<radiogroup orient="horizontal"
+							        preference="native-icons">
+							<radio label="&options.icons.freedesktop;" value="2"/>
+							<radio label="&options.icons.stock-gtk;" value="1"/>
+							<radio label="&options.icons.none;" value="0"/>
+						</radiogroup>
+					</groupbox>
+					<groupbox>
+						<caption label="&options.label.fallback-icons;" />
+						<menulist preference="fallback-icon-theme">
+							<menupopup>
+								<menuitem label="Adwaita" value="adwaita"/>
+								<menuitem label="GNOME" value="gnome"/>
+								<menuitem label="Tango" value="tango"/>
+								<menuitem label="Stock GTK" value="gtk-stock"/>
+								<menuitem label="Old GNOME" value="gnome-old"/>
+							</menupopup>
+						</menulist>
+					</groupbox>
+					<groupbox>
+						<caption label="&options.label.preview;" />
+						<hbox>
+							<image class="preview-icon" id="preview-icon-1" />
+							<image class="preview-icon" id="preview-icon-2" />
+							<image class="preview-icon" id="preview-icon-3" />
+							<image class="preview-icon" id="preview-icon-4" />
+							<image class="preview-icon" id="preview-icon-5" />
+						</hbox>
+					</groupbox>
+				</tabpanel>
+				<tabpanel orient="vertical">
+					<groupbox>
+						<caption label="&options.label.grippies;" />
+						<checkbox label="&options.label.visible-grippies;"
+		                          preference="visible-grippies" />
+						<checkbox label="&options.label.show-menubar-grippies;"
+		                          preference="show-menubar-grippies" />
+						<checkbox label="&options.label.show-toolbar-grippies;"
+		                          preference="show-toolbar-grippies" />
+					</groupbox>
+					<groupbox>
+						<caption label="&options.label.preview;" />
+						<toolbox id="preview-toolbox">
+							<menubar id="preview-menubar">
+								<menu label="&options.label.preview.file;">
+									<menupopup>
+										<menuitem label="&options.label.preview.new;" />
+										<menuitem label="&options.label.preview.open;" />
+										<menuitem label="&options.label.preview.save;" />
+										<menuseparator />
+										<menuitem label="&options.label.preview.print;" />
+										<menuseparator />
+										<menuitem label="&options.label.preview.exit;" />
+									</menupopup>
+								</menu>
+								<menu label="&options.label.preview.edit;">
+									<menupopup>
+										<menuitem label="&options.label.preview.cut;" />
+										<menuitem label="&options.label.preview.copy;" />
+										<menuitem label="&options.label.preview.paste;" />
+									</menupopup>
+								</menu>
+							</menubar>
+							<toolbar id="preview-toolbar" class="toolbar-primary">
+								<toolbarbutton class="toolbarbutton-1"
+											   id="preview-toolbar-new"
+											   label="&options.label.preview.new;" />
+								<toolbarbutton class="toolbarbutton-1"
+											   id="preview-toolbar-open"
+											   label="&options.label.preview.open;" />
+								<toolbarbutton class="toolbarbutton-1"
+											   id="preview-toolbar-save"
+											   label="&options.label.preview.save;" />
+							</toolbar>
+						</toolbox>
+					</groupbox>
+				</tabpanel>
+				<tabpanel orient="vertical">
+					<groupbox>
+						<caption label="&options.label.throbber-style;" />
+						<radiogroup preference="throbber-style">
+							<radio label="&options.label.throbber.generic;" value="generic" />
+							<radio label="&options.label.throbber.seamonkey;" value="seamonkey" />
+							<radio label="&options.label.throbber.mozilla;" value="mozilla" />
+							<radio label="&options.label.throbber.gnome-foot;" value="gnome-foot" />
+						</radiogroup>
+					</groupbox>
+					<groupbox>
+						<caption label="&options.label.preview;" />
+						<hbox>
+							<button id="navigator-throbber" />
+							<button id="navigator-throbber" busy="true" />
+						</hbox>
+					</groupbox>
+				</tabpanel>
+			</tabpanels>
+		</tabbox>
+	</prefpane>
+</window>

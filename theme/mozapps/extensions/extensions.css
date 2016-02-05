@@ -51,14 +51,14 @@
 /*** notification icons ***/
 
 .warning-icon {
-  list-style-image: url("moz-icon://stock/gtk-dialog-warning?size=menu");
+  list-style-image: var(--icon-dialog-warning-16);
   width: 16px;
   height: 16px;
   margin: 3px 0;
 }
 
 .error-icon {
-  list-style-image: url("moz-icon://stock/gtk-dialog-error?size=menu");
+  list-style-image: var(--icon-dialog-error-16);
   width: 16px;
   height: 16px;
   margin: 3px 0;
@@ -66,7 +66,7 @@
 
 .pending-icon,
 .info-icon {
-  list-style-image: url("moz-icon://stock/gtk-dialog-info?size=menu");
+  list-style-image: var(--icon-dialog-information-16);
   width: 16px;
   height: 16px;
   margin: 3px 0;
@@ -248,35 +248,39 @@
 }
 
 #back-btn:-moz-locale-dir(ltr) {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=toolbar");
+  list-style-image: var(--icon-go-previous-24);
 }
 
 #forward-btn:-moz-locale-dir(ltr) {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=toolbar");
+  list-style-image: var(--icon-go-next-24);
 }
 
 #back-btn:-moz-locale-dir(rtl) {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=toolbar");
+  list-style-image: var(--icon-go-previous-rtl-24);
 }
 
 #forward-btn:-moz-locale-dir(rtl) {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=toolbar");
+  list-style-image: var(--icon-go-next-rtl-24);
 }
 
 #back-btn[disabled="true"]:-moz-locale-dir(ltr) {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=toolbar&state=disabled");
+  list-style-image: var(--icon-go-previous-24-dis);
+  opacity: var(--icon-go-previous-dis-opacity);
 }
 
 #forward-btn[disabled="true"]:-moz-locale-dir(ltr) {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=toolbar&state=disabled");
+  list-style-image: var(--icon-go-next-24-dis);
+  opacity: var(--icon-go-next-dis-opacity);
 }
 
 #back-btn[disabled="true"]:-moz-locale-dir(rtl) {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=toolbar&state=disabled");
+  list-style-image: var(--icon-go-previous-rtl-24-dis);
+  opacity: var(--icon-go-previous-rtl-dis-opacity);
 }
 
 #forward-btn[disabled="true"]:-moz-locale-dir(rtl) {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=toolbar&state=disabled");
+  list-style-image: var(--icon-go-next-rtl-24-dis);
+  opacity: var(--icon-go-next-rtl-dis-opacity);
 }
 
 #header-utils-btn {
@@ -284,7 +288,7 @@
 }
 
 #header-utils-btn .toolbarbutton-icon {
-  list-style-image: url("moz-icon://stock/gtk-preferences?size=toolbar");
+  list-style-image: var(--icon-preferences-desktop-24);
 }
 
 #header-utils-btn:-moz-focusring > .button-box {
@@ -318,12 +322,12 @@
 
 .sorter[checkState="1"] .button-icon {
   display: -moz-box;
-  list-style-image: url("moz-icon://stock/gtk-sort-descending?size=16");
+  list-style-image: var(--icon-view-sort-descending-16);
 }
 
 .sorter[checkState="2"] .button-icon {
   display: -moz-box;
-  list-style-image: url("moz-icon://stock/gtk-sort-ascending?size=16");
+  list-style-image: var(--icon-view-sort-ascending-16);
 }
 
 
@@ -567,7 +571,7 @@
   background: transparent;
   font-weight: bold;
   cursor: pointer;
-  list-style-image: url("moz-icon://stock/gtk-go-down?size=16");
+  list-style-image: var(--icon-go-down-16);
 }
 
 .addon .relnotes-toggle > .button-box > .button-icon {
@@ -575,7 +579,7 @@
 }
 
 .addon[show-relnotes] .relnotes-toggle {
-  list-style-image: url("moz-icon://stock/gtk-go-up?size=16");
+  list-style-image: var(--icon-go-up-16);
 }
 
 
@@ -889,24 +893,24 @@ setting[type="radio"] > radiogroup {
 }
 
 .addon-control.enable {
-  list-style-image: url("moz-icon://stock/gtk-yes?size=button");
+  list-style-image: var(--icon-gtk-yes-22);
 }
 
 .addon-control.disable {
-  list-style-image: url("moz-icon://stock/gtk-no?size=button");
+  list-style-image: var(--icon-gtk-no-22);
 }
 
 .addon-control.remove {
-  list-style-image: url("moz-icon://stock/gtk-remove?size=button");
+  list-style-image: var(--icon-list-remove-22);
 }
 
 .addon-control.preferences {
-  list-style-image: url("moz-icon://stock/gtk-preferences?size=button");
+  list-style-image: var(--icon-preferences-desktop-22);
 }
 
 .addon-control.install,
 .addon-control.update {
-  list-style-image: url("moz-icon://stock/gtk-save?size=button");
+  list-style-image: var(--icon-document-save-22);
 }
 
 .button-link {

@@ -52,46 +52,48 @@ menuitem:not([type]) {
 
 .cancel,
 #menuitem_cancel {
-  list-style-image: url("moz-icon://stock/gtk-cancel?size=menu");
+  list-style-image: var(--icon-gtk-cancel-16);
 }
 
 #menuitem_open {
-  list-style-image: url("moz-icon://stock/gtk-open?size=menu");
+  list-style-image: var(--icon-document-open-16);
 }
 #menuitem_open[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-open?size=menu&state=disabled");
+  list-style-image: var(--icon-document-open-16-dis);
+  opacity: var(--icon-document-open-dis-opacity);
 }
 
 .pause,
 #menuitem_pause {
-  list-style-image: url("moz-icon://stock/gtk-media-pause?size=menu");
+  list-style-image: var(--icon-media-playback-pause-16);
 }
 
 .pause[disabled="true"],
 #menuitem_pause[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-media-pause?size=menu&state=disabled");
+  list-style-image: var(--icon-media-playback-pause-16-dis);
+  opacity: var(--icon-media-playback-pause-dis-opacity);
 }
 
 .resume,
 #menuitem_resume {
-  list-style-image: url("moz-icon://stock/gtk-media-play?size=menu");
+  list-style-image: var(--icon-media-playback-start-16);
 }
 
 .retry,
 #menuitem_retry {
-  list-style-image: url("moz-icon://stock/gtk-redo?size=menu");
+  list-style-image: var(--icon-edit-redo-16);
 }
 
 #menuitem_removeFromList {
-  list-style-image: url("moz-icon://stock/gtk-remove?size=menu");
+  list-style-image: var(--icon-list-remove-16);
 }
 
 #menuitem_copyLocation {
-  list-style-image: url("moz-icon://stock/gtk-copy?size=menu");
+  list-style-image: var(--icon-edit-copy-16);
 }
 
 .blockedIcon {
-  list-style-image: url("moz-icon://stock/gtk-dialog-error?size=dialog");
+  list-style-image: var(--icon-dialog-error-48);
   width: 32px;
   height: 32px;
 }
@@ -103,10 +105,11 @@ menuitem:not([type]) {
 }
 
 #clearListButton {
-  list-style-image: url(moz-icon://stock/gtk-clear?size=button);
+  list-style-image: var(--icon-edit-clear-22);
   margin-top: 3px;
 }
 
 #clearListButton[disabled="true"] {
-  list-style-image: url(moz-icon://stock/gtk-clear?size=button&state=disabled);
+  list-style-image: var(--icon-edit-clear-22-dis);
+  opacity: var(--icon-edit-clear-dis-opacity);
 }

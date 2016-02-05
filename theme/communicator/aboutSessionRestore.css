@@ -2,6 +2,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 #tabList {
   width: 100%;
   height: 12em;
@@ -16,15 +18,15 @@ treechildren::-moz-tree-image(noicon) {
 }
 
 treechildren::-moz-tree-image(noicon) {
-  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
+  list-style-image: var(--icon-text-x-generic-16);
 }
 
 treechildren::-moz-tree-image(container, noicon) {
-  list-style-image: url("%STOCK-ICON gtk-directory folder 16");
+  list-style-image: var(--icon-folder-16);
 }
 
 treechildren::-moz-tree-image(container, noicon, open) {
-  list-style-image: url("%STOCK-ICON gtk-open document-open 16");
+  list-style-image: var(--icon-folder-open-16);
 }
 
 treechildren::-moz-tree-checkbox(checked) {

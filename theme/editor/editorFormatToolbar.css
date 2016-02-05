@@ -11,128 +11,137 @@
 }
 
 #DecreaseFontSizeButton {
-  list-style-image: url("chrome://global/skin/icons/16x16/format-text-smaller.png");
+  list-style-image: var(--icon-stock_decrease-font-16);
 }
 
 #DecreaseFontSizeButton[disabled="true"] {
-  opacity: 0.2 !important;
+  list-style-image: var(--icon-stock_decrease-font-16-dis);
+  opacity: var(--icon-stock_decrease-font-dis-opacity);
 }
 
 #IncreaseFontSizeButton {
-  list-style-image: url("chrome://global/skin/icons/16x16/format-text-larger.png");
+  list-style-image: var(--icon-stock_increase-font-16);
 }
 
 #IncreaseFontSizeButton[disabled="true"] {
-  opacity: 0.2 !important;
+  list-style-image: var(--icon-stock_increase-font-16-dis);
+  opacity: var(--icon-stock_increase-font-dis-opacity);
 }
 
 #boldButton {
-  list-style-image: url("%STOCK-ICON gtk-bold format-text-bold 16");
+  list-style-image: var(--icon-format-text-bold-16);
 }
 
 #boldButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-bold format-text-bold 16 disabled");
+  list-style-image: var(--icon-format-text-bold-16-dis);
+  opacity: var(--icon-format-text-bold-dis-opacity);
 }
 
 #italicButton {
-  list-style-image: url("%STOCK-ICON gtk-italic format-text-italic 16");
+  list-style-image: var(--icon-format-text-italic-16);
 }
 
 #italicButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-italic format-text-italic 16 disabled");
+  list-style-image: var(--icon-format-text-italic-16-dis);
+  opacity: var(--icon-format-text-italic-dis-opacity);
 }
 
 #underlineButton {
-  list-style-image: url("%STOCK-ICON gtk-underline format-text-underline 16");
+  list-style-image: var(--icon-format-text-underline-16);
 }
 
 #underlineButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-underline format-text-underline 16 disabled");
+  list-style-image: var(--icon-format-text-underline-16-dis);
+  opacity: var(--icon-format-text-underline-dis-opacity);
 }
 
 #ulButton {
-  list-style-image: url("chrome://global/skin/icons/16x16/format_ul.png");
+  list-style-image: var(--icon-stock_list_bullet-16);
 }
 
 #ulButton[disabled="true"] {
-  opacity: 0.2 !important;
+  list-style-image: var(--icon-stock_list_bullet-16-dis);
+  opacity: var(--icon-stock_list_bullet-dis-opacity);
 }
 
 #olButton {
-  list-style-image: url("chrome://global/skin/icons/16x16/format_ol.png");
+  list-style-image: var(--icon-stock_list_enum-16);
 }
 
 #olButton[disabled="true"] {
-  opacity: 0.2 !important;
+  list-style-image: var(--icon-stock_list_enum-16-dis);
+  opacity: var(--icon-stock_list_enum-dis-opacity);
 }
 
 #outdentButton {
-  list-style-image: url("%STOCK-ICON gtk-unindent format-indent-less 16");
+  list-style-image: var(--icon-format-indent-less-16);
 }
 
 #outdentButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-unindent format-indent-less 16 disabled");
+  list-style-image: var(--icon-format-indent-less-16-dis);
+  opacity: var(--icon-format-indent-less-dis-opacity);
 }
 
 #indentButton {
-  list-style-image: url("%STOCK-ICON gtk-indent format-indent-more 16");
+  list-style-image: var(--icon-format-indent-more-16);
 }
 
 #indentButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-indent format-indent-more 16 disabled");
+  list-style-image: var(--icon-format-indent-more-16-dis);
+  opacity: var(--icon-format-indent-more-dis-opacity);
 }
 
-#align-left-button {
-  list-style-image: url("%STOCK-ICON gtk-justify-left format-justify-left 16");
-}
-
-#align-left-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-justify-left format-justify-left 16 disabled");
-}
-
-#align-center-button {
-  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 16");
-}
-
-#align-center-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 16 disabled");
-}
-
-#align-right-button {
-  list-style-image: url("%STOCK-ICON gtk-justify-right format-justify-right 16");
-}
-
-#align-right-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-justify-right format-justify-right 16 disabled");
-}
-
-#align-justify-button {
-  list-style-image: url("%STOCK-ICON gtk-justify-fill format-justify-fill 16");
-}
-
-#align-justify-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-justify-fill format-justify-fill 16 disabled");
-}
-
+#align-left-button,
 #AlignPopupButton {
-  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 16");
+  list-style-image: var(--icon-format-justify-left-16);
 }
 
-#AlignPopupButton[open="true"] {
-  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 16");
-}
-
+#align-left-button[disabled="true"],
 #AlignPopupButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 16 disabled");
+  list-style-image: var(--icon-format-justify-left-16-dis);
+  opacity: var(--icon-format-justify-left-dis-opacity);
+}
+
+#align-center-button,
+#AlignPopupButton[state="center"] {
+  list-style-image: var(--icon-format-justify-center-16);
+}
+
+#align-center-button[disabled="true"],
+#AlignPopupButton[state="center"][disabled="true"] {
+  list-style-image: var(--icon-format-justify-center-16-dis);
+  opacity: var(--icon-format-justify-center-dis-opacity);
+}
+
+#align-right-button,
+#AlignPopupButton[state="right"] {
+  list-style-image: var(--icon-format-justify-right-16);
+}
+
+#align-right-button[disabled="true"],
+#AlignPopupButton[state="right"][disabled="true"] {
+  list-style-image: var(--icon-format-justify-right-16-dis);
+  opacity: var(--icon-format-justify-right-dis-opacity);
+}
+
+#align-justify-button,
+#AlignPopupButton[state="justify"] {
+  list-style-image: var(--icon-format-justify-fill-16);
+}
+
+#align-justify-button[disabled="true"],
+#AlignPopupButton[state="justify"][disabled="true"] {
+  list-style-image: var(--icon-format-justify-fill-16-dis);
+  opacity: var(--icon-format-justify-fill-dis-opacity);
 }
 
 #InsertPopupButton {
-  list-style-image: url("%CUSTOM-ICON insert-object 16");
+  list-style-image: var(--icon-insert-object-16);
 }
 
 #InsertPopupButton[disabled="true"] {
-  list-style-image: url("%CUSTOM-ICON insert-object 16 disabled");
-  opacity: %DISABLED-OPACITY !important;
+  list-style-image: var(--icon-insert-object-16-dis);
+  opacity: var(--icon-insert-object-dis-opacity);
 }
 
 #smileButtonMenu {
@@ -152,41 +161,41 @@
 }
 
 #AlignLeftItem {
-  list-style-image: url("%STOCK-ICON gtk-justify-left format-justify-left 16");
+  list-style-image: var(--icon-format-justify-left-16);
 }
 
 #AlignCenterItem {
-  list-style-image: url("%STOCK-ICON gtk-justify-center format-justify-center 16");
+  list-style-image: var(--icon-format-justify-center-16);
 }
 
 #AlignRightItem {
-  list-style-image: url("%STOCK-ICON gtk-justify-right format-justify-right 16");
+  list-style-image: var(--icon-format-justify-right-16);
 }
 
 #AlignJustifyItem {
-  list-style-image: url("%STOCK-ICON gtk-justify-fill format-justify-fill 16");
+  list-style-image: var(--icon-format-justify-fill-16);
 }
 
 /* ..... insert menu ..... */
 
 #InsertLinkItem {
-  list-style-image: url("%CUSTOM-ICON insert-link 16");
+  list-style-image: var(--icon-insert-link-16);
 }
 
 #InsertAnchorItem {
-  list-style-image: url("chrome://global/skin/icons/16x16/stock_anchor.png");
+  list-style-image: var(--icon-stock_anchor-16);
 }
 
 #InsertImageItem {
-  list-style-image: url("%CUSTOM-ICON insert-image 16");
+  list-style-image: var(--icon-insert-image-16);
 }
 
 #InsertHRuleItem {
-  list-style-image: url("chrome://global/skin/icons/16x16/stock_form-line-horizontal.png");
+  list-style-image: var(--icon-stock_insert-rule-16);
 }
 
 #InsertTableItem {
-  list-style-image: url("chrome://global/skin/icons/16x16/stock_insert-table.png");
+  list-style-image: var(--icon-stock_insert-table-16);
 }
 
 
@@ -306,35 +315,38 @@
 }
 
 #HighlightColorButton {
-  list-style-image: url("chrome://global/skin/icons/16x16/format-text-mark.png");
+  list-style-image: var(--icon-stock_text_color_hilight-16);
   background-color: transparent;
 }
 
 #HighlightColorButton[disabled="true"] {
-  opacity: 0.2 !important;
+  list-style-image: var(--icon-stock_text_color_hilight-16-dis);
+  opacity: var(--icon-stock_text_color_hilight-dis-opacity);
 }
 
 #absolutePositionButton{
-  list-style-image: url("%STOCK-ICON gtk-fullscreen view-fullscreen 16"); /*FIXME: Not stock!*/
+  list-style-image: var(--icon-stock_insert-floating-frame-16);
 }
 
 #absolutePositionButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-fullscreen view-fullscreen 16 disabled"); /*FIXME: Not stock!*/
-}
-
-#absolutePositionButton[checked="true"]{
-  list-style-image: url("%STOCK-ICON gtk-leave-fullscreen view-restore 16"); /*FIXME: Not stock!*/
+  list-style-image: var(--icon-stock_insert-floating-frame-16-dis);
+  opacity: var(--icon-stock_insert-floating-frame-dis-opacity);
 }
 
 #increaseZIndexButton {
-  list-style-image: url("chrome://global/skin/icons/16x16/stock_bring-forward.png");
+  list-style-image: var(--icon-stock_bring-forward-16);
 }
+
 #increaseZIndexButton[disabled="true"] {
-  opacity: 0.2 !important;
+  list-style-image: var(--icon-stock_bring-forward-16-dis);
+  opacity: var(--icon-stock_bring-forward-dis-opacity);
 }
+
 #decreaseZIndexButton {
-  list-style-image: url("chrome://global/skin/icons/16x16/stock_bring-backward.png");
+  list-style-image: var(--icon-stock_bring-backward-16);
 }
+
 #decreaseZIndexButton[disabled="true"] {
-  opacity: 0.2 !important;
+  list-style-image: var(--icon-stock_bring-backward-16-dis);
+  opacity: var(--icon-stock_bring-backward-dis-opacity);
 }

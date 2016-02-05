@@ -20,7 +20,6 @@
 #expandedAttachmentBox {
   width: 20em;
   height: 0;
-  list-style-image: url("%CUSTOM-ICON mail-attachment 24");
 }
 
 #attachmentText {
@@ -70,6 +69,11 @@
 .tagvalue {
   margin-top: 0;
   -moz-margin-start: 0;
+}
+
+/* Fix collapsed header styles */
+#collapsedsubjectBox > hbox {
+  -moz-box-align: start !important;
 }
 
 /* ::::: msg header message ids ::::: */
@@ -176,6 +180,6 @@ mail-emailaddress:-moz-focusring {
 }
 
 .collapsedAttachmentButton {
-  list-style-image: url("%CUSTOM-ICON mail-attachment 24");
+  list-style-image: var(--icon-mail-attachment-16);
   -moz-margin-end: .5em;
 }

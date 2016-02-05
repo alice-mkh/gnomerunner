@@ -1,0 +1,55 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+#wrapper-throbber-box > #throbber-box > #navigator-throbber,
+#navigator-throbber {
+  -moz-binding: url("chrome://global/content/bindings/button.xml#button-image");
+  -moz-user-focus: ignore;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  margin: -1px 2px -1px 10px !important;
+  border: 2px solid !important;
+  -moz-border-top-colors: ThreeDDarkShadow ThreeDHighlight !important;
+  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow !important;
+  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow !important;
+  -moz-border-left-colors: ThreeDDarkShadow ThreeDHighlight !important;
+  padding: 1px !important;
+  min-width: 0 !important;
+  list-style-image: url("chrome://gnomerunner-options/content/tweaks/throbber/mozilla/throbber-single.gif");
+  background-color: transparent !important;
+  -moz-appearance:none !important;
+  cursor: pointer !important;
+}
+
+#wrapper-throbber-box > #throbber-box > #navigator-throbber:hover:active,
+#navigator-throbber:hover:active {
+  -moz-border-top-colors: ThreeDDarkShadow ThreeDShadow !important;
+  -moz-border-right-colors: ThreeDDarkShadow ThreeDHighlight !important;
+  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDHighlight !important;
+  -moz-border-left-colors: ThreeDDarkShadow ThreeDShadow !important;
+}
+
+#navigator-throbber[busy="true"] {
+  list-style-image: url("chrome://gnomerunner-options/content/tweaks/throbber/mozilla/throbber-anim.gif");
+}
+
+window[chromehidden~="toolbar"] #navigator-throbber,
+toolbar[mode="icons"] #wrapper-throbber-box > #throbber-box > #navigator-throbber,
+toolbar[mode="text"] #wrapper-throbber-box > #throbber-box > #navigator-throbber,
+toolbar[iconsize="small"] #wrapper-throbber-box > #throbber-box > #navigator-throbber,
+toolbar[mode="icons"] #navigator-throbber,
+toolbar[mode="text"] #navigator-throbber,
+toolbar[iconsize="small"] #navigator-throbber {
+  margin: 0 5px !important;
+  list-style-image: url("chrome://gnomerunner-options/content/tweaks/throbber/mozilla/throbber16-single.gif");
+}
+
+window[chromehidden~="toolbar"] #navigator-throbber[busy="true"],
+toolbar[mode="icons"] #navigator-throbber[busy="true"],
+toolbar[mode="text"] #navigator-throbber[busy="true"],
+toolbar[iconsize="small"] #navigator-throbber[busy="true"] {
+  list-style-image: url("chrome://gnomerunner-options/content/tweaks/throbber/mozilla/throbber16-anim.gif");
+}

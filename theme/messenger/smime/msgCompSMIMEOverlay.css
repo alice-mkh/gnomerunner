@@ -9,20 +9,22 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 #button-security {
-  list-style-image: url("%STOCK-ICON gtk-dialog-authentication dialog-password 24");
+  list-style-image: var(--icon-lock-secure-24);
 }
 
 #button-security[disabled] {
-  list-style-image: url("%STOCK-ICON gtk-dialog-authentication dialog-password 24 disabled");
+  list-style-image: var(--icon-lock-secure-24-dis);
+  opacity: var(--icon-lock-secure-dis-opacity);
 }
 
 toolbar[iconsize="small"] > #button-security,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-security {
-  list-style-image: url("%STOCK-ICON gtk-dialog-authentication dialog-password 16");
+  list-style-image: var(--icon-lock-secure-16);
 }
 
 toolbar[iconsize="small"] > #button-security[disabled] {
-  list-style-image: url("%STOCK-ICON gtk-dialog-authentication dialog-password 16 disabled");
+  list-style-image: var(--icon-lock-secure-16-dis);
+  opacity: var(--icon-lock-secure-dis-opacity);
 }
 
 #msgcomposeWindow #signing-status {

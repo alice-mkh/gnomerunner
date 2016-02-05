@@ -14,7 +14,7 @@ treechildren::-moz-tree-image {
 }
 
 treechildren::-moz-tree-image(rowMigrate-no) {
-  list-style-image: url("moz-icon://stock/gtk-convert?size=menu");
+  list-style-image: var(--icon-gtk-convert-16);
 }
 
 /* profile selection dialog */

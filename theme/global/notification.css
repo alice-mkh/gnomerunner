@@ -45,21 +45,21 @@ notification[type="critical"] {
 /* Default icons for notifications */
 
 .messageImage[type="info"] {
-  list-style-image: url("%STOCK-ICON gtk-dialog-info dialog-information 16");
+  list-style-image: var(--icon-dialog-information-16);
 }
 
 .messageImage[type="warning"] {
-  list-style-image: url("%STOCK-ICON gtk-dialog-warning dialog-warning 16");
+  list-style-image: var(--icon-dialog-warning-16);
 }
 
 .messageImage[type="critical"] {
-  list-style-image: url("%STOCK-ICON gtk-dialog-error dialog-error 16");
+  list-style-image: var(--icon-dialog-error-16);
 }
 
 .messageCloseButton {
   padding-left: 11px;
   padding-right: 11px;
-  list-style-image: url("%STOCK-ICON gtk-close window-close 16");
+  list-style-image: var(--icon-window-close-16);
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -97,5 +97,5 @@ notification[type="critical"] {
 }
 
 .popup-notification-closeitem {
-  list-style-image: url("%STOCK-ICON gtk-close window-close 16");
+  list-style-image: var(--icon-window-close-16);
 }

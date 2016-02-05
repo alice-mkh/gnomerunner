@@ -96,10 +96,10 @@ td:not(:first-child) {
   -moz-margin-end: 4px;
   -moz-margin-start: -20px;
   vertical-align: middle;
-  content: url("%STOCK-ICON gtk-go-up go-up 16");
+  content: var(--icon-go-up-16);
 }
 
 .dir::before {
-  content: url("%STOCK-ICON gtk-directory folder 16");
+  content: var(--icon-folder-16);
 }
 

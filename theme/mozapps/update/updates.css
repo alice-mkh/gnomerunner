@@ -34,7 +34,7 @@ wizardpage {
 }
 
 .remoteLoadingThrobber[state="error"] {
-  list-style-image: url("moz-icon://stock/gtk-dialog-error?size=menu");
+  list-style-image: var(--icon-dialog-error-16);
 }
 
 .wizard-buttons-separator {
@@ -91,7 +91,7 @@ wizardpage {
 }
 
 #pauseButton {
-  list-style-image: url("moz-icon://stock/gtk-media-pause?size=menu");
+  list-style-image: var(--icon-media-playback-pause-16);
   -moz-appearance: none;
   background-color: transparent;
   border: none;
@@ -107,20 +107,22 @@ wizardpage {
 }
 
 #pauseButton[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-media-pause?size=menu&state=disabled");
+  list-style-image: var(--icon-media-playback-pause-16-dis);
+  opacity: var(--icon-media-playback-pause-dis-opacity);
 }
 
 #pauseButton[paused="true"] {
-  list-style-image: url("moz-icon://stock/gtk-media-play?size=menu");
+  list-style-image: var(--icon-media-playback-start-16);
 }
 
 #pauseButton[paused="true"][disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-media-play?size=menu&state=disabled");
+  list-style-image: var(--icon-media-playback-start-16-dis);
+  opacity: var(--icon-media-playback-start-dis-opacity);
 }
 
 #verificationFailedIcon {
   margin-left: 5px;
-  list-style-image: url("moz-icon://stock/gtk-dialog-warning?size=menu");
+  list-style-image: var(--icon-dialog-warning-16);
 }
 
 /* Error Page */

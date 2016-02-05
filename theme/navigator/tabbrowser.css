@@ -2,6 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
@@ -37,7 +38,7 @@ tabpanels {
 .tabbrowser-tab {
   margin-bottom: 1px;
   border-bottom: none;
-  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
+  list-style-image: var(--icon-text-x-generic-16);
 }
 
 .tabbrowser-tab[busy] {
@@ -105,7 +106,7 @@ tabpanels {
 
 /* All tabs menupopup */
 .alltabs-item {
-  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
+  list-style-image: var(--icon-text-x-generic-16);
 }
 
 .alltabs-item[selected="true"] {
@@ -124,15 +125,19 @@ tabpanels {
 
 .tabs-closebutton {
   margin: 0px;
-  list-style-image: url("%STOCK-ICON gtk-close window-close 16");
+  list-style-image: var(--icon-window-close-16);
 }
 
 .tabs-closebutton > .toolbarbutton-icon {
   margin: 0;
 }
 
+tab .tab-closebutton > .toolbarbutton-icon {
+  margin: -4px !important;
+}
+
 .tabs-newbutton {
-  list-style-image: url("%STOCK-ICON gtk-add list-add 16");
+  list-style-image: var(--icon-list-add-16);
 }
 
 .tabs-newbutton > .toolbarbutton-icon {
@@ -151,7 +156,7 @@ tabpanels {
     width: 16px;
     margin-bottom: -10px;
     position: relative;
-    background: url("%STOCK-ICON gtk-go-down go-down 16") 50% 50% no-repeat;
+    background: var(--icon-go-down-16) 50% 50% no-repeat;
 }
 
 tooltip[tabpreview="true"] {

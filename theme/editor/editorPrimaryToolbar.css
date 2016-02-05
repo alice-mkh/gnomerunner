@@ -2,6 +2,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 /* ::::: primary toolbar buttons ::::: */
@@ -13,121 +15,121 @@
 }
 
 #newButton {
-  list-style-image: url("%STOCK-ICON gtk-new document-new 24");
+  list-style-image: var(--icon-document-new-24);
 }
 
 #newButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-new document-new 24 disabled");
+  list-style-image: var(--icon-document-new-24-dis);
+  opacity: var(--icon-document-new-dis-opacity);
 }
 
 #openButton {
-  list-style-image: url("%STOCK-ICON gtk-open document-open 24");
+  list-style-image: var(--icon-document-open-24);
 }
 
 #openButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-open document-open 24 disabled");
+  list-style-image: var(--icon-document-open-24-dis);
+  opacity: var(--icon-document-open-dis-opacity);
 }
 
 #saveButton {
-  list-style-image: url("%STOCK-ICON gtk-save document-save 24");
+  list-style-image: var(--icon-document-save-24);
 }
 
 #saveButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-save document-save 24 disabled");
+  list-style-image: var(--icon-document-save-24-dis);
+  opacity: var(--icon-document-save-dis-opacity);
 }
 
 #publishButton {
-  list-style-image: url("chrome://global/skin/icons/24x24/gtk-network.png");
+  list-style-image: var(--icon-network-idle-24);
 }
 
 #publishButton[disabled="true"] {
-  list-style-image: url("chrome://global/skin/icons/24x24/gtk-network.png");
-  opacity: 0.5 !important;
+  list-style-image: var(--icon-network-idle-24-dis);
+  opacity: var(--icon-network-idle-dis-opacity);
 }
 
 #previewButton {
-  list-style-image: url("%CUSTOM-ICON web-browser 24");
+  list-style-image: var(--icon-internet-web-browser-24);
 }
 
 #previewButton[disabled="true"] {
-  list-style-image: url("%CUSTOM-ICON web-browser 24 disabled");
-  opacity: %DISABLED-OPACITY !important;
-}
-
-#printButton {
-  list-style-image: url("%STOCK-ICON gtk-print document-print 24");
-}
-
-#printButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-print document-print 24 disabled");
+  list-style-image: var(--icon-internet-web-browser-24-dis);
+  opacity: var(--icon-internet-web-browser-dis-opacity);
 }
 
 #linkButton {
-  list-style-image: url("%CUSTOM-ICON insert-link 24");
+  list-style-image: var(--icon-insert-link-24);
 }
 
 #linkButton[disabled="true"] {
-  list-style-image: url("%CUSTOM-ICON insert-link 24 disabled");
-  opacity: %DISABLED-OPACITY !important;
+  list-style-image: var(--icon-insert-link-24-dis);
+  opacity: var(--icon-insert-link-dis-opacity);
 }
 
 #imageButton {
-  list-style-image: url("%CUSTOM-ICON insert-image 24");
+  list-style-image: var(--icon-insert-image-24);
 }
 
 #imageButton[disabled="true"] {
-  list-style-image: url("%CUSTOM-ICON insert-image 24 disabled");
-  opacity: %DISABLED-OPACITY !important;
+  list-style-image: var(--icon-insert-image-24-dis);
+  opacity: var(--icon-insert-image-dis-opacity);
 }
 
 #namedAnchorButton {
-  list-style-image: url("chrome://global/skin/icons/24x24/stock_anchor.png");
+  list-style-image: var(--icon-stock_anchor-24);
 }
 
 #hlineButton {
-  list-style-image: url("chrome://global/skin/icons/24x24/stock_form-line-horizontal.png");
+  list-style-image: var(--icon-stock_insert-rule-24);
 }
 
 #tableButton {
-  list-style-image: url("chrome://global/skin/icons/24x24/stock_insert-table.png");
+  list-style-image: var(--icon-stock_insert-table-24);
 }
 
 #spellingButton {
-  list-style-image: url("%STOCK-ICON gtk-spell-check tools-check-spelling 24");
+  list-style-image: var(--icon-tools-check-spelling-24);
 }
 
 #spellingButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-spell-check tools-check-spelling 24 disabled");
+  list-style-image: var(--icon-tools-check-spelling-24-dis);
+  opacity: var(--icon-tools-check-spelling-dis-opacity);
 }
 
 #cutButton {
-  list-style-image: url("%STOCK-ICON gtk-cut edit-cut 24");
+  list-style-image: var(--icon-edit-cut-24);
 }
 
 #cutButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-cut edit-cut 24 disabled");
+  list-style-image: var(--icon-edit-cut-24-dis);
+  opacity: var(--icon-edit-cut-dis-opacity);
 }
 
 #copyButton {
-  list-style-image: url("%STOCK-ICON gtk-copy edit-copy 24");
+  list-style-image: var(--icon-edit-copy-24);
 }
 
 #copyButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-copy edit-copy 24 disabled");
+  list-style-image: var(--icon-edit-copy-24-dis);
+  opacity: var(--icon-edit-copy-dis-opacity);
 }
 
 #pasteButton {
-  list-style-image: url("%STOCK-ICON gtk-paste edit-paste 24");
+  list-style-image: var(--icon-edit-paste-24);
 }
 
 #pasteButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-paste edit-paste 24 disabled");
+  list-style-image: var(--icon-edit-paste-24-dis);
+  opacity: var(--icon-edit-paste-dis-opacity);
 }
 
 #findButton {
-  list-style-image: url("%STOCK-ICON gtk-find edit-find 24");
+  list-style-image: var(--icon-edit-find-24);
 }
 
 #findButton[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-find edit-find 24 disabled");
+  list-style-image: var(--icon-edit-find-24-dis);
+  opacity: var(--icon-edit-find-dis-opacity);
 }

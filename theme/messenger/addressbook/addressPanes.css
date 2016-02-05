@@ -12,19 +12,19 @@
 
 treechildren::-moz-tree-image(DirCol) {
   -moz-margin-end: 2px;
-  list-style-image: url("%CUSTOM-ICON x-office-address-book 16");
+  list-style-image: var(--icon-x-office-address-book-16);
 }
 
 treechildren::-moz-tree-image(DirCol, IsMailList-true) {
-  list-style-image: url("%CUSTOM-ICON system-users 16");
+  list-style-image: var(--icon-stock_contact-list-16);
 }
 
 treechildren::-moz-tree-image(DirCol, IsRemote-true) {
-  list-style-image: url("chrome://global/skin/icons/16x16/gtk-network.png");
+  list-style-image: var(--icon-network-idle-16);
 }
 
 treechildren::-moz-tree-image(DirCol, IsRemote-true, IsSecure-true) {
-  list-style-image: url("%CUSTOM-ICON system-lock-screen 16");
+  list-style-image: var(--icon-lock-secure-16);
 }
 
 #dirTree [sortDirection="ascending"] {

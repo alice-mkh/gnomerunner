@@ -1,0 +1,40 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY options.window.title					"$NAME options">
+
+<!ENTITY options.tab.icons						"Icons">
+<!ENTITY options.tab.menus-and-toolbars			"Menus and Toolbars">
+<!ENTITY options.tab.throbber					"Throbber">
+
+<!ENTITY options.label.native-icons				"Native icons">
+<!ENTITY options.icons.freedesktop				"Freedesktop">
+<!ENTITY options.icons.stock-gtk				"Stock GTK">
+<!ENTITY options.icons.none						"None">
+
+<!ENTITY options.label.fallback-icons			"Fallback icons">
+
+<!ENTITY options.label.grippies					"Grippies">
+<!ENTITY options.label.visible-grippies			"Visible grippies">
+<!ENTITY options.label.show-menubar-grippies	"Show menubar grippies">
+<!ENTITY options.label.show-toolbar-grippies	"Show toolbar grippies">
+
+<!ENTITY options.label.throbber-style			"Throbber style">
+<!ENTITY options.label.throbber.generic			"Generic">
+<!ENTITY options.label.throbber.seamonkey		"SeaMonkey">
+<!ENTITY options.label.throbber.mozilla			"Mozilla">
+<!ENTITY options.label.throbber.gnome-foot		"GNOME foot">
+
+<!ENTITY options.label.preview					"Preview">
+
+<!ENTITY options.label.preview.file				"File">
+<!ENTITY options.label.preview.new				"New">
+<!ENTITY options.label.preview.open				"Open">
+<!ENTITY options.label.preview.save				"Save">
+<!ENTITY options.label.preview.print			"Print">
+<!ENTITY options.label.preview.exit				"Exit">
+<!ENTITY options.label.preview.edit				"Edit">
+<!ENTITY options.label.preview.cut				"Cut">
+<!ENTITY options.label.preview.copy				"Copy">
+<!ENTITY options.label.preview.paste			"Paste">

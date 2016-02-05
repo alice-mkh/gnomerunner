@@ -1,0 +1,58 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+#wrapper-throbber-box > #throbber-box > #navigator-throbber,
+#navigator-throbber {
+  -moz-binding: url("chrome://global/content/bindings/button.xml#button-image");
+  -moz-user-focus: ignore;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  margin: 0px !important;
+  border: none !important;
+  padding: 0px !important;
+  min-width: 0 !important;
+  width: 48px !important;
+  height: 48px !important;
+  background-image: url("chrome://gnomerunner-options/content/tweaks/throbber/gnome-foot/process-idle-48.png");
+  background-color: transparent !important;
+  -moz-appearance:none !important;
+}
+
+#navigator-throbber[busy="true"] {
+  background-image: url("chrome://gnomerunner-options/content/tweaks/throbber/gnome-foot/process-working-48.png");
+  animation: play48 2.5s steps(35) infinite;
+}
+
+window[chromehidden~="toolbar"] #navigator-throbber,
+toolbar[mode="icons"] #wrapper-throbber-box > #throbber-box > #navigator-throbber,
+toolbar[mode="text"] #wrapper-throbber-box > #throbber-box > #navigator-throbber,
+toolbar[iconsize="small"] #wrapper-throbber-box > #throbber-box > #navigator-throbber,
+toolbar[mode="icons"] #navigator-throbber,
+toolbar[mode="text"] #navigator-throbber,
+toolbar[iconsize="small"] #navigator-throbber {
+  margin: 0px !important;
+  width: 24px !important;
+  height: 24px !important;
+  background-image: url("chrome://gnomerunner-options/content/tweaks/throbber/gnome-foot/process-idle-24.png");
+}
+
+window[chromehidden~="toolbar"] #navigator-throbber[busy="true"],
+toolbar[mode="icons"] #navigator-throbber[busy="true"],
+toolbar[mode="text"] #navigator-throbber[busy="true"],
+toolbar[iconsize="small"] #navigator-throbber[busy="true"] {
+  background-image: url("chrome://gnomerunner-options/content/tweaks/throbber/gnome-foot/process-working-24.png");
+  animation: play24 2.5s steps(35) infinite;
+}
+
+@keyframes play48 {
+   from { background-position:    0px; }
+     to { background-position: -1680px; }
+}
+
+@keyframes play24 {
+   from { background-position:    0px; }
+     to { background-position: -840px; }
+}

@@ -9,134 +9,115 @@ cp icon.png temp/theme
 cp icon.png temp/options
 cd temp
 
+
+cd theme/icons
+
+#Generate layers
+
+echo "Generating icon layers..."
+
+SIZES="16 22 24 48"
+
+for F in layer-*; do
+    echo " $F"
+    echo "/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url(\"chrome://icons/skin/icon-theme-base.css\");
+
+:root {" > $F.css
+
+    while read -r LINE; do
+        LINE1=`echo $LINE | grep -Po "^[\w-]+"`
+        LINE2=`echo $LINE | grep -Po "[\w-]+$"`
+        for S in $SIZES; do
+            echo "  --icon-$LINE1-$S: url(\"moz-icon://stock/$LINE2?size=$S\");" >> $F.css
+            echo "  --icon-$LINE1-$S-dis: url(\"moz-icon://stock/$LINE2?size=$S&state=disabled\");" >> $F.css
+        done
+        echo "  --icon-$LINE1-dis-opacity: var(--icon-base-dis-native-opacity);"  >> $F.css
+        echo ""  >> $F.css
+    done < $F
+
+    echo "}" >> $F.css
+    rm $F
+
+    sed -E "s/(size=)16/\1menu/g;s/(size=)22/\1button/g;s/(size=)24/\1toolbar/g;s/(size=)48/\1dialog/g;" -i $F.css
+done
+
+#Generate icon theme css
+
+echo "Generating icon themes..."
+SIZES="16 20 22 24 32 48"
+
+for THEME in `echo */ | sed -E "s/\///g"`; do
+    echo " $THEME"
+    cd $THEME
+
+    BASE=`cat base`
+    rm base
+
+    FILES=""
+    DIRS=`ls -v`
+    for D in $SIZES; do
+        if [ -d ${D}x$D ]; then
+            cd ${D}x$D
+            TMP_F=`find * -type f -name "*.png"`
+            FILES="$FILES $TMP_F"
+            cd ..
+        fi
+    done
+    FILES=`echo $FILES | sed -E "s/\.png//g;s/\s+/\\n/g" | sort | uniq`
+    cd ..
+
+    touch icon-theme-$THEME.css
+    echo "/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url(\"chrome://icons/skin/icon-theme-$BASE.css\");
+
+:root {" > icon-theme-$THEME.css
+    for F in $FILES; do
+        D=`echo $F | grep -Po "^[\w\d-_\.]+"`
+        N=`echo $F | grep -Po "[\w\d-_]+$"`
+        for DD in $SIZES; do
+            if [ -f $THEME/${DD}x$DD/$D/$N.png ]; then
+                echo "  --icon-$N-$DD: url(\"chrome://icons/skin/$THEME/${DD}x$DD/$D/$N.png\");" >> icon-theme-$THEME.css
+                echo "  --icon-$N-$DD-dis: var(--icon-$N-$DD);" >> icon-theme-$THEME.css
+            fi
+        done
+        echo "  --icon-$N-dis-opacity: var(--icon-base-dis-opacity);" >> icon-theme-$THEME.css
+        echo "" >> icon-theme-$THEME.css
+    done
+    echo '}' >> icon-theme-$THEME.css
+done
+
+cd ../..
+
 #Create Freedesktop theme
+echo "Creating -fd theme (deprecated)..."
 mkdir fd
 cp -R theme fd/theme
 cp install.rdf fd
 sed -E "s/((INTERNAL_)?NAME|THEME_(ID|DESC))/\0_FD/g" -i "fd/theme/install.rdf" "fd/theme/chrome.manifest" "fd/install.rdf"
 
 #Substitute variables
+echo "Substituting variables..."
+FILES=`find . -type f -exec grep -Iq . {} \; -and -print`
 while read LINE; do
     if [[ $LINE != [A-Z]* ]]; then
         continue
     fi
     LINE1=`echo $LINE | grep -oE "^[^=]+"`
     LINE2=`echo $LINE | grep -oE "[^=]+$"`
-    sed "s|\$$LINE1|$LINE2|g" -i `find . -name "*.rdf"` `find . -name "*.js"` `find . -name "*.css"` `find . -name "*.manifest"`
+    sed "s|\$$LINE1|$LINE2|g" -i $FILES
     eval "$LINE1=\"$LINE2\""
 done < "../config.txt"
 
-#Generate options.xul and bootstrap.js pref array
-cd options
-READING=0
-OPTIONS_XUL="<?xml version=\"1.0\"?>\n\n<vbox xmlns=\"http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul\">\n"
-while read -r LINE; do
-    if [[ $LINE == "" ]]; then
-        READING=0
-        OPTIONS_XUL="$OPTIONS_XUL<setting type=\"$TEMP_OPTION_TYPE\" pref=\"$OPTIONS_PREF_BRANCH$TEMP_OPTION_PREF\" title=\"$TEMP_OPTION_NAME\""
-        if [[ $TEMP_OPTION_DESC != "" ]]; then
-            OPTIONS_XUL="$OPTIONS_XUL desc=\"$TEMP_OPTION_DESC\""
-        fi
-        if [[ $TEMP_OPTION_CONTENT == "" ]]; then
-            OPTIONS_XUL="$OPTIONS_XUL />\n"
-        else
-            OPTIONS_XUL="$OPTIONS_XUL>$TEMP_OPTION_CONTENT\n</setting>\n"
-        fi
-        if [[ $PREFS_ARRAY == "" ]]; then
-            PREFS_ARRAY="[\"$TEMP_OPTION_PREF\""
-        else
-            PREFS_ARRAY="$PREFS_ARRAY, \"$TEMP_OPTION_PREF\""
-        fi
-        if [[ $TEMP_OPTION_MAX != "" ]]; then
-            PREFS_MAXVALUE="$PREFS_MAXVALUE\n    if (data == \"$TEMP_OPTION_PREF\"){\n        return $TEMP_OPTION_MAX;\n    }"
-        fi
-        DEFAULTS="${DEFAULTS}pref(\"$OPTIONS_PREF_BRANCH$TEMP_OPTION_PREF\", $TEMP_OPTION_DEFAULT);\n"
-        TEMP_OPTION_CONTENT=""
-        TEMP_OPTION_TYPE=""
-        TEMP_OPTION_PREF=""
-        TEMP_OPTION_NAME=""
-        TEMP_OPTION_DESC=""
-        TEMP_OPTION_MAX=""
-        TEMP_OPTION_DEFAULT=""
-    fi
-    if [[ $LINE == [^\<]*=* ]]; then
-        LINE1=`echo $LINE | grep -oE "^[^=]+"`
-        LINE2=`echo $LINE | grep -oE "[^=]+$"`
-        eval "TEMP_OPTION_$LINE1=\"$LINE2\""
-    else
-        if [[ $READING == "0" ]]; then
-            TEMP_OPTION_CONTENT=$LINE
-            READING=1
-            continue
-        fi
-        TEMP_OPTION_CONTENT="$TEMP_OPTION_CONTENT\n$LINE"
-    fi
-done < "options.txt"
-OPTIONS_XUL="$OPTIONS_XUL</vbox>\n"
-echo -e $OPTIONS_XUL > options.xul
-rm options.txt
-PREFS_ARRAY="$PREFS_ARRAY]"
-sed "s|\$PREFS_ARRAY|$PREFS_ARRAY|g" -i bootstrap.js
-PREFS_MAXVALUE="${PREFS_MAXVALUE:2}"
-sed "s|\$PREFS_MAXVALUE|$PREFS_MAXVALUE|g" -i bootstrap.js
-mkdir -p defaults/preferences
-echo -e $DEFAULTS > defaults/preferences/defaults.js
-cd ..
-
-#Generate menu icon rules
-ORIG="\%NATIVE-ICON (.*) (.*) (.*)"
-NEW="menuitem\3 {\n"
-NEW+="    -moz-binding: url(\"chrome://global/content/bindings/menu.xml#menuitem-iconic\") !important;\n"
-NEW+="}\n\nmenu\3 {\n"
-NEW+="    -moz-binding: url(\"chrome://global/content/bindings/menu.xml#menu-iconic\") !important;\n"
-NEW+="}\n\n\3 {\n"
-NEW+="    list-style-image: url(\"%STOCK-ICON \1 \2 16\") !important;\n"
-NEW+="}\n\n\3[disabled=\"true\"] {\n"
-NEW+="    list-style-image: url(\"%STOCK-ICON \1 \2 16 disabled\") !important;\n"
-NEW+="}\n"
-sed -E "s|$ORIG|$NEW|g" -i `find . -name "*.css"`
-
-ORIG="\%ICON \"(.*)\" (.*)"
-NEW="menuitem\2 {\n"
-NEW+="    -moz-binding: url(\"chrome://global/content/bindings/menu.xml#menuitem-iconic\") !important;\n"
-NEW+="}\n\nmenu\2 {\n"
-NEW+="    -moz-binding: url(\"chrome://global/content/bindings/menu.xml#menu-iconic\") !important;\n"
-NEW+="\2 {\n"
-NEW+="    list-style-image: url(\"\1\") !important;\n"
-NEW+="}\n\n\2[disabled=\"true\"] .menu-iconic-icon {\n"
-NEW+="    opacity: .5 !important;\n"
-NEW+="}\n"
-sed -E "s|$ORIG|$NEW|g" -i `find . -name "*.css"`
-
-#Substitute icons
-cd theme
-FILES=`find . -name "*.css"`
-for F in $FILES; do
-    ORIG="%STOCK-ICON ([^ ]+) ([^ ]+) ([0-9]+b?)( (disabled))?"
-    NEW1="moz-icon:\/\/stock\/\1?size=\3\&state=\5"
-    NEW2="moz-icon:\/\/stock\/\2?size=\3\&state=\5"
-    sed -E "s/$ORIG/$NEW1/g" -i "$F"
-    sed -E "s/$ORIG/$NEW2/g" -i "../fd/theme/$F"
-    ORIG="%CUSTOM-ICON ([^ ]+) ([0-9]+b?)( (disabled))?"
-    NEW1="chrome:\/\/global\/skin\/icons\/\2x\2\/\1.png"
-    NEW2="moz-icon:\/\/stock\/\1?size=\2\&state=\4"
-    sed -E "s/$ORIG/$NEW1/g" -i "$F"
-    sed -E "s/$ORIG/$NEW2/g" -i "../fd/theme/$F"
-
-    sed -E "s/16bx16b/16x16/g" -i "$F" "../fd/theme/$F"
-    sed -E "s/size=16b/size=button/g" -i "$F" "../fd/theme/$F"
-    sed -E "s/size=16/size=menu/g" -i "$F" "../fd/theme/$F"
-    sed -E "s/size=24/size=toolbar/g" -i "$F" "../fd/theme/$F"
-    sed -E "s/size=48/size=dialog/g" -i "$F" "../fd/theme/$F"
-    sed -E "s/&state=\"/\"/g" -i "$F" "../fd/theme/$F"
-
-    sed -E "s/%DISABLED-OPACITY/0.5/g" -i "$F"
-    sed -E "s/%DISABLED-OPACITY/1.0/g" -i "../fd/theme/$F"
-done
-cd ..
-
 cp -R options fd
 
+echo "Packaging..."
 #Package
 THEME_JAR="theme.jar"
 OPTIONS_JAR="options.xpi"
@@ -155,3 +136,4 @@ zip ../$OPTIONS_JAR * -qr
 cd ..
 zip ../../$NAME_FD $THEME_JAR $OPTIONS_JAR install.rdf -q
 cd ../..
+

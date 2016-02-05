@@ -2,6 +2,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 /* The following are used by both syncSetup.xul and syncGenericChange.xul */
 .status {
   color: -moz-dialogtext;
@@ -18,11 +20,11 @@
 }
 
 .statusIcon[status="error"] {
-  list-style-image: url("%STOCK-ICON gtk-dialog-error dialog-error 16");
+  list-style-image: var(--icon-dialog-error-16);
 }
 
 .statusIcon[status="success"] {
-  list-style-image: url("%STOCK-ICON gtk-dialog-info dialog-information 16");
+  list-style-image: var(--icon-dialog-information-16);
 }
 
 /* .data is only used by syncGenericChange.xul, but it seems unnecessary to have

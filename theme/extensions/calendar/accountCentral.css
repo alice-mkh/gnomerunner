@@ -3,5 +3,5 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #lightning-newCalendar-row {
-  list-style-image: url("chrome://global/skin/icons/32x32/x-office-calendar.png") !important;
+  list-style-image: var(--icon-x-office-calendar-32) !important;
 }

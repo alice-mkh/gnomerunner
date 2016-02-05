@@ -2,6 +2,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 /* Hide selected items by default and display them based on the page status */
@@ -13,14 +15,14 @@
 
 /* Pick the desired icons depending on the window's context */
 #warningBox.private {
-  background-image: url("%STOCK-ICON gtk-dialog-info dialog-information 48");
+  background-image: var(--icon-dialog-information-48);
 /*  width: 48px;
   height: 48px;
   -moz-margin-end: 3em;*/
 }
 
 #warningBox.normal {
-  background-image: url("%STOCK-ICON gtk-dialog-question dialog-question 48");
+  background-image: var(--icon-dialog-question-48);
 /*  width: 48px;
   height: 48px;
   -moz-margin-end: 3em;*/
@@ -33,7 +35,7 @@
 }
 
 #trackWarnIcon {
-  list-style-image: url("%STOCK-ICON gtk-dialog-warning dialog-warning 24");
+  list-style-image: var(--icon-dialog-warning-24);
   width: 24px;
   height: 24px;
 }

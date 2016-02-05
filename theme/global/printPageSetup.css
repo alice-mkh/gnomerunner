@@ -3,9 +3,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 .portrait-page {
-  list-style-image: url("moz-icon://stock/gtk-orientation-portrait?size=button"); /*FIXME: Not stock!*/
+  list-style-image: var(--icon-gtk-orientation-portrait-22);
 }
 
 .landscape-page {
-  list-style-image: url("moz-icon://stock/gtk-orientation-landscape?size=button"); /*FIXME: Not stock!*/
+  list-style-image: var(--icon-gtk-orientation-landscape-22);
 }

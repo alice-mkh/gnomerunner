@@ -12,6 +12,7 @@
 @import url("chrome://communicator/skin/button.css");
 @import url("chrome://communicator/skin/menuicons.css");
 @import url("chrome://communicator/skin/toolbar.css");
+@import url("chrome://icons/skin/icon-theme-default.css");
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
@@ -34,21 +35,21 @@ textbox[autocompletesearch="history file"] .autocomplete-treebody::-moz-tree-ima
 }
 
 textbox[autocompletesearch="history file"] .autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue, directory) {
-  list-style-image: url("%STOCK-ICON gtk-directory folder 16");
+  list-style-image: var(--icon-folder-16);
 }
 
 textbox[autocompletesearch="history file"] .autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue, file) {
-  list-style-image: url("%STOCK-ICON gtk-file text-x-generic 16");
+  list-style-image: var(--text-x-generic-16);
 }
 
 /* ::::: online/offline icons ::::: */
 
 #offline-status[offline="true"] {
-  list-style-image: url("chrome://global/skin/icons/evolution/hicolor_status_32x32_offline.png");
+  list-style-image: var(--icon-offline-32);
 }
 
 #offline-status {
-  list-style-image: url("chrome://global/skin/icons/evolution/hicolor_status_32x32_online.png");
+  list-style-image: var(--icon-online-32);
 }
 
 /* ::::: spell checker ::::: */
@@ -97,20 +98,21 @@ menuitem.menuitem-iconic > .menu-iconic-left {
 
 /* ::::: toolbar print button ::::: */
 #print-button {
- list-style-image: url("%STOCK-ICON gtk-print document-print 24");
+ list-style-image: var(--icon-document-print-24);
 }
 
 #print-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-print document-print 24 disabled") !important;
+  list-style-image: var(--icon-document-print-24-dis) !important;
+  opacity: var(--icon-document-print-dis-opacity);
 }
 
 toolbar[iconsize="small"] > toolbarpaletteitem > #print-button,
 toolbar[iconsize="small"] > #print-button {
-  list-style-image: url("%STOCK-ICON gtk-print document-print 16");
+  list-style-image: var(--icon-document-print-16);
 }
 
 toolbar[iconsize="small"] > #print-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-print document-print 16 disabled") !important;
+  list-style-image: var(--icon-document-print-16-dis) !important;
 }
 
 /* ::::: lightweight themes ::::: */
@@ -153,7 +155,7 @@ treecols:-moz-lwtheme {
 
 .messageImage[value="indexedDB-permissions-prompt"],
 .messageImage[value="indexedDB-quota-prompt"] {
-  list-style-image: url("%STOCK-ICON gtk-dialog-question dialog-question 16");
+  list-style-image: var(--icon-dialog-question-16);
 }
 
 .messageImage[value="addon-install-blocked"],
@@ -168,7 +170,7 @@ treecols:-moz-lwtheme {
 }
 
 .messageImage[value="popup-blocked"] {
-  list-style-image: url("%CUSTOM-ICON lpi-bug 16");
+  list-style-image: var(--icon-dialog-warning-16);
 }
 
 .messageImage[value="blocked-badware-page"] {
@@ -176,18 +178,18 @@ treecols:-moz-lwtheme {
 }
 
 .messageImage[value="EnterInsecureMessage"] {
-  list-style-image: url("%CUSTOM-ICON changes-prevent 16");
+  list-style-image: var(--icon-lock-insecure-16);
 }
 
 .messageImage[value="EnterSecureMessage"],
 .messageImage[value="BlockedActiveContentMessage"],
 .messageImage[value="BlockedDisplayContentMessage"] {
-  list-style-image: url("%CUSTOM-ICON changes-prevent 16");
+  list-style-image: var(--icon-lock-secure-16);
 }
 
 .messageImage[value="MixedContentMessage"],
 .messageImage[value="MixedActiveContentMessage"],
 .messageImage[value="MixedDisplayContentMessage"] {
-  list-style-image: url("chrome://global/skin/icons/16x16/security-broken.png");
+  list-style-image: var(--icon-lock-broken-16);
 }
 

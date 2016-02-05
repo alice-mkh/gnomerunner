@@ -1,32 +1,11 @@
-content gnomerunner-options       content/
-locale  gnomerunner-options be    locale/be/
-locale  gnomerunner-options ca    locale/ca/
-locale  gnomerunner-options cs    locale/cs/
-locale  gnomerunner-options de    locale/de/
-locale  gnomerunner-options en-GB locale/en-GB/
-locale  gnomerunner-options en-US locale/en-US/
-locale  gnomerunner-options es-AR locale/es-AR/
-locale  gnomerunner-options es-ES locale/es-ES/
-locale  gnomerunner-options fi    locale/fi/
-locale  gnomerunner-options fr    locale/fr/
-locale  gnomerunner-options gl    locale/gl/
-locale  gnomerunner-options hu    locale/hu/
-locale  gnomerunner-options it    locale/it/
-locale  gnomerunner-options ja    locale/ja/
-locale  gnomerunner-options ja-JP-mac locale/ja-JP-mac/
-locale  gnomerunner-options ka    locale/ka/
-locale  gnomerunner-options lt    locale/lt/
-locale  gnomerunner-options nb-NO locale/nb-NO/
-locale  gnomerunner-options nl    locale/nl/
-locale  gnomerunner-options pl    locale/pl/
-locale  gnomerunner-options pt-BR locale/pt-BR/
-locale  gnomerunner-options pt-PT locale/pt-PT/
-locale  gnomerunner-options ro    locale/ro/
-locale  gnomerunner-options ru    locale/ru/
-locale  gnomerunner-options si    locale/si/
-locale  gnomerunner-options sk    locale/sk/
-locale  gnomerunner-options sv-SE locale/sv-SE/
-locale  gnomerunner-options tr    locale/tr/
-locale  gnomerunner-options uk    locale/uk/
-locale  gnomerunner-options zh-CN locale/zh-CN/
-locale  gnomerunner-options zh-TW locale/zh-TW/
+content  gnomerunner-options             content/
+skin     gnomerunner-options classic/1.0 skin/
+
+locale   gnomerunner-options en-US       locale/en-US/
+
+override chrome://icons/skin/icon-theme-default.css					chrome://gnomerunner-options/skin/empty.css
+override chrome://communicator/skin/brand.css						chrome://gnomerunner-options/skin/empty.css
+
+component {f7a5d193-3649-440f-9872-cbc9b9ec5c8c} components/gnomerunner-options-startup.js
+contract @gnomerunner-options/startup;2 {f7a5d193-3649-440f-9872-cbc9b9ec5c8c}
+category profile-after-change GnomerunnerOptions @gnomerunner-options/startup;2

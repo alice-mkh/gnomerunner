@@ -156,202 +156,226 @@ button[type="disclosure"][open="true"] {
  */
 
 button[icon="accept"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-ok?size=button");
+  list-style-image: var(--icon-gtk-ok-22);
 }
 
 button[icon="accept"][disabled="true"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-ok?size=button&state=disabled");
+  list-style-image: var(--icon-gtk-ok-22-dis);
+  opacity: var(--icon-gtk-yes-opacity);
 }
 
 button[icon="cancel"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-cancel?size=button");
+  list-style-image: var(--icon-gtk-cancel-22);
 }
 
 button[icon="cancel"][disabled="true"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-cancel?size=button&state=disabled");
+  list-style-image: var(--icon-gtk-cancel-22-dis);
+  opacity: var(--icon-gtk-cancel-dis-opacity);
 }
 
 button[icon="help"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-help help-contents 16b");
+  list-style-image: var(--icon-help-contents-22);
 }
 
 button[icon="help"][disabled="true"] .button-icon {
-  list-style-image: url("m%STOCK-ICON gtk-help help-contents 16b disabled");
+  list-style-image: var(--icon-help-contents-22-dis);
+  opacity: var(--icon-document-open-dis-opacity);
 }
 
 button[icon="open"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-open document-open 16b");
+  list-style-image: var(--icon-document-open-22);
 }
 
 button[icon="open"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-open document-open 16b disabled");
+  list-style-image: var(--icon-document-open-22-dis);
+  opacity: var(--icon-document-open-dis-opacity);
 }
 
 button[icon="save"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-save document-save 16b");
+  list-style-image: var(--icon-document-save-22);
 }
 
 button[icon="save"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-save document-save 16b disabled");
+  list-style-image: var(--icon-document-save-22-dis);
+  opacity: var(--icon-document-save-dis-opacity);
 }
 
 button[icon="find"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-find edit-find 16b");
+  list-style-image: var(--icon-edit-find-22);
 }
 
 button[icon="find"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-find edit-find 16b disabled");
+  list-style-image: var(--icon-edit-find-22-dis);
+  opacity: var(--icon-edit-find-dis-opacity);
 }
 
 button[icon="clear"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-clear edit-clear 16b");
+  list-style-image: var(--icon-edit-clear-22);
 }
 
 button[icon="clear"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-clear edit-clear 16b disabled");
+  list-style-image: var(--icon-edit-clear-22-dis);
+  opacity: var(--icon-edit-clear-dis-opacity);
 }
 
 button[icon="yes"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-yes?size=button");
+  list-style-image: var(--icon-gtk-yes-22);
 }
 
 button[icon="yes"][disabled="true"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-yes?size=button&state=disabled");
+  list-style-image: var(--icon-gtk-yes-22-dis);
+  opacity: var(--icon-gtk-yes-dis-opacity);
 }
 
 button[icon="no"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-no?size=button");
+  list-style-image: var(--icon-gtk-no-22);
 }
 
 button[icon="no"][disabled="true"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-no?size=button&state=disabled");
+  list-style-image: var(--icon-gtk-no-22-dis);
+  opacity: var(--icon-gtk-no-dis-opacity);
 }
 
 button[icon="apply"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-apply?size=button");
+  list-style-image: var(--icon-gtk-apply-22);
 }
 
 button[icon="apply"][disabled="true"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-apply?size=button&state=disabled");
+  list-style-image: var(--icon-gtk-apply-22-dis);
+  opacity: var(--icon-gtk-apply-dis-opacity);
 }
 
 button[icon="close"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-close window-close 16b");
+  list-style-image: var(--icon-window-close-22);
 }
 
 button[icon="close"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-close window-close 16b disabled");
+  list-style-image: var(--icon-window-close-22-dis);
+  opacity: var(--icon-window-close-dis-opacity);
 }
 
 button[icon="print"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-print document-print 16b");
+  list-style-image: var(--icon-document-print-22);
 }
 
 button[icon="print"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-print document-print 16b disabled");
+  list-style-image: var(--icon-document-print-22-dis);
+  opacity: var(--icon-document-print-dis-opacity);
 }
 
 button[icon="add"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-add list-add 16b");
+  list-style-image: var(--icon-list-add-22);
 }
 
 button[icon="add"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-add list-add 16b disabled");
+  list-style-image: var(--icon-list-add-22-dis);
+  opacity: var(--icon-list-add-dis-opacity);
 }
 
 button[icon="remove"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-remove list-remove 16b");
+  list-style-image: var(--icon-list-remove-22);
 }
 
 button[icon="remove"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-remove list-remove 16b disabled");
+  list-style-image: var(--icon-list-remove-22-dis);
+  opacity: var(--icon-list-remove-dis-opacity);
 }
 
 button[icon="refresh"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-refresh view-refresh 16b");
+  list-style-image: var(--icon-view-refresh-22);
 }
 
 button[icon="refresh"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-refresh view-refresh 16b disabled");
+  list-style-image: var(--icon-view-refresh-22-dis);
+  opacity: var(--icon-view-refresh-dis-opacity);
 }
 
 button[icon="revert"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-revert-to-saved-ltr document-revert 16b");
+  list-style-image: var(--icon-document-revert-22);
 }
 
 button[icon="revert"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-revert-to-saved-ltr document-revert 16b disabled");
+  list-style-image: var(--icon-document-revert-22-dis);
+  opacity: var(--icon-document-revert-dis-opacity);
 }
 
 button[icon="revert"]:-moz-locale-dir(rtl) .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-revert-to-saved-rtl document-revert 16b");
+  list-style-image: var(--icon-document-revert-rtl-22);
 }
 
 button[icon="revert"]:-moz-locale-dir(rtl)[disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-revert-to-saved-rtl document-revert 16b disabled");
+  list-style-image: var(--icon-document-revert-rtl-22-dis);
+  opacity: var(--icon-document-revert-rtl-dis-opacity);
 }
 
 button[icon="go-forward"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 16b");
+  list-style-image: var(--icon-go-next-22);
 }
 
 button[icon="go-forward"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 16b disabled");
+  list-style-image: var(--icon-go-next-22-dis);
+  opacity: var(--icon-go-next-dis-opacity);
 }
 
 button[icon="go-forward"]:-moz-locale-dir(rtl) .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 16b");
+  list-style-image: var(--icon-go-next-rtl-22);
 }
 
 button[icon="go-forward"]:-moz-locale-dir(rtl)[disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 16b disabled");
+  list-style-image: var(--icon-go-next-rtl-22-dis);
+  opacity: var(--icon-go-next-rtl-dis-opacity);
 }
 
 button[icon="go-back"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 16b");
+  list-style-image: var(--icon-go-previous-22);
 }
 
 button[icon="go-back"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 16b disabled");
+  list-style-image: var(--icon-go-previous-22-dis);
+  opacity: var(--icon-go-previous-dis-opacity);
 }
 
 button[icon="go-back"]:-moz-locale-dir(rtl) .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 16b");
+  list-style-image: var(--icon-go-previous-rtl-22);
 }
 
 button[icon="go-back"]:-moz-locale-dir(rtl)[disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 16b disabled");
+  list-style-image: var(--icon-go-previous-rtl-22-dis);
+  opacity: var(--icon-go-previous-rtl-dis-opacity);
 }
 
 button[icon="properties"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-properties document-properties 16b");
+  list-style-image: var(--icon-document-properties-22);
 }
 
 button[icon="properties"][disabled="true"] .button-icon {
-  list-style-image: url("%STOCK-ICON gtk-properties document-properties 16b disabled");
+  list-style-image: var(--icon-document-properties-22-dis);
+  opacity: var(--icon-document-properties-dis-opacity);
 }
 
 button[icon="select-font"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-select-font?size=button");
+  list-style-image: var(--icon-gtk-select-font-22);
 }
 
 button[icon="select-font"][disabled="true"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-select-font?size=button&state=disabled");
+  list-style-image: var(--icon-gtk-select-font-22-dis);
+  opacity: var(--icon-gtk-select-font-dis-opacity);
 }
 
 button[icon="select-color"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-color-picker?size=button");
+  list-style-image: var(--icon-gtk-color-picker-22);
 }
 
 button[icon="select-color"][disabled="true"] .button-icon {
-  list-style-image: url("moz-icon://stock/gtk-color-picker?size=button&state=disabled");
+  list-style-image: var(--icon-gtk-color-picker-22-dis);
+  opacity: var(--icon-gtk-color-picker-dis-opacity);
 }
 
 button[icon="network"] .button-icon {
-  list-style-image: url("chrome://global/skin/icons/16x16/gtk-network.png");
+  list-style-image: var(--icon-network-idle-22);
 }
 
 button[icon="network"][disabled="true"] .button-icon {
-  list-style-image: url("chrome://global/skin/icons/16x16/gtk-network.png");
-  opacity: 0.5 !important;
+  list-style-image: var(--icon-network-idle-22-dis);
+  opacity: var(--icon-network-idle-dis-opacity);
 }

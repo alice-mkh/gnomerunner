@@ -57,23 +57,23 @@ window.dialog {
 /* ::::: alert icons :::::*/
 
 .message-icon {
-  list-style-image: url("%STOCK-ICON gtk-dialog-info dialog-information 48");
+  list-style-image: var(--icon-dialog-information-48);
 }
 
 .alert-icon {
-  list-style-image: url("%STOCK-ICON gtk-dialog-warning dialog-warning 48");
+  list-style-image: var(--icon-dialog-warning-48);
 }
 
 .error-icon {
-  list-style-image: url("%STOCK-ICON gtk-dialog-error dialog-error 48");
+  list-style-image: var(--icon-dialog-error-48);
 }
 
 .question-icon {
-  list-style-image: url("%STOCK-ICON gtk-dialog-question dialog-question 48");
+  list-style-image: var(--icon-dialog-question-48);
 }
 
 .authentication-icon {
-  list-style-image: url("%STOCK-ICON gtk-dialog-authentication dialog-password 48");
+  list-style-image: var(--icon-dialog-password-48);
 }
 
 /* ::::: iframe ::::: */
@@ -309,7 +309,7 @@ popupnotificationcontent {
 
 .close-icon {
   -moz-appearance: toolbarbutton !important;
-  list-style-image: url("%STOCK-ICON gtk-close window-close 16") !important;
+  list-style-image: var(--icon-window-close-16) !important;
   padding: 2px !important;
   -moz-image-region: auto !important;
 }

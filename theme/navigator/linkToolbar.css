@@ -5,6 +5,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 /**
@@ -13,126 +15,129 @@
 
 #link-top
 {
-  list-style-image: url("%STOCK-ICON gtk-goto-top go-top 16");
+  list-style-image: var(--icon-go-top-16);
 }
 
 #link-top[disabled="true"]
 {
-  list-style-image: url("%STOCK-ICON gtk-goto-top go-top 16 disabled") !important;
+  list-style-image: var(--icon-go-top-16-dis);
+  opacity: var(--icon-go-top-dis-opacity);
 }
 
 
 #link-up
 {
-  list-style-image: url("%STOCK-ICON gtk-go-up go-up 16");
+  list-style-image: var(--icon-go-up-16);
 }
 
 #link-up[disabled="true"]
 {
-  list-style-image: url("%STOCK-ICON gtk-go-up go-up 16 disabled");
+  list-style-image: var(--icon-go-up-16-dis);
+  opacity: var(--icon-go-up-dis-opacity);
 }
 
 
 #link-first
 {
-  list-style-image: url("%STOCK-ICON gtk-goto-first-ltr go-first 16");
+  list-style-image: var(--icon-go-first-16);
 }
 
 #link-first[disabled="true"]
 {
-  list-style-image: url("%STOCK-ICON gtk-goto-first-ltr go-first 16 disabled");
+  list-style-image: var(--icon-go-first-16-dis);
+  opacity: var(--icon-go-first-dis-opacity);
 }
 
 
 #link-first:-moz-locale-dir(rtl)
 {
-  list-style-image: url("%STOCK-ICON gtk-goto-first-rtl go-last 16");
+  list-style-image: var(--icon-go-first-rtl-16);
 }
 
 #link-first[disabled="true"]:-moz-locale-dir(rtl)
 {
-  list-style-image: url("%STOCK-ICON gtk-goto-first-rtl go-last 16 disabled");
+  list-style-image: var(--icon-go-first-rtl-16-dis);
+  opacity: var(--icon-go-first-rtl-dis-opacity);
 }
 
 #link-prev
 {
-  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 16");
+  list-style-image: var(--icon-go-previous-16);
 }
 
 #link-prev[disabled="true"]
 {
-  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 16 disabled") !important;
+  list-style-image: var(--icon-go-previous-16-dis);
+  opacity: var(--icon-go-previous-dis-opacity);
 }
 
 
 #link-prev:-moz-locale-dir(rtl)
 {
-  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 16");
+  list-style-image: var(--icon-go-previous-rtl-16);
 }
 
 #link-prev[disabled="true"]:-moz-locale-dir(rtl)
 {
-  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 16 disabled") !important;
+  list-style-image: var(--icon-go-previous-rtl-16-dis);
+  opacity: var(--icon-go-previous-rtl-dis-opacity);
 }
 
 
 #link-next
 {
-  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 16");
+  list-style-image: var(--icon-go-next-16);
 }
 
 #link-next[disabled="true"]
 {
-  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 16 disabled") !important;
+  list-style-image: var(--icon-go-next-16-dis);
+  opacity: var(--icon-go-next-dis-opacity);
 }
 
 
 #link-next:-moz-locale-dir(rtl)
 {
-  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 16");
+  list-style-image: var(--icon-go-next-rtl-16);
 }
 
 #link-next[disabled="true"]:-moz-locale-dir(rtl)
 {
-  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 16 disabled") !important;
+  list-style-image: var(--icon-go-next-rtl-16-dis);
+  opacity: var(--icon-go-next-rtl-dis-opacity);
 }
 
 
 #link-last
 {
-  list-style-image: url("%STOCK-ICON gtk-goto-last-ltr go-last 16");
+  list-style-image: var(--icon-go-last-16);
 }
 
 #link-last[disabled="true"]
 {
-  list-style-image: url("%STOCK-ICON gtk-goto-last-ltr go-last 16 disabled") !important;
+  list-style-image: var(--icon-go-last-16-dis);
+  opacity: var(--icon-go-last-dis-opacity);
 }
 
 
 #link-last:-moz-locale-dir(rtl)
 {
-  list-style-image: url("%STOCK-ICON gtk-goto-last-rtl go-first 16");
+  list-style-image: var(--icon-go-last-rtl-16);
 }
 
 #link-last[disabled="true"]:-moz-locale-dir(rtl)
 {
-  list-style-image: url("%STOCK-ICON gtk-goto-last-rtl go-first 16 disabled") !important;
+  list-style-image: var(--icon-go-last-rtl-16-dis);
+  opacity: var(--icon-go-last-rtl-dis-opacity);
 }
 
 
 #link-feed {
-  list-style-image: url("chrome://navigator/skin/btn1/feeds.png") !important;
-  -moz-image-region: rect(0px 32px 16px 16px);
-}
-
-#link-feed:hover {
-  -moz-image-region: rect(16px 32px 32px 16px);
+  list-style-image: var(--icon-application-rss-xml-16);
 }
 
 #link-feed[disabled="true"] {
-  -moz-image-region: rect(32px 32px 48px 16px);
+  list-style-image: var(--icon-application-rss-xml-16-dis);
+  opacity: var(--icon-application-rss-xml-dis-opacity);
 }
 
-#link-feed[open="true"] {
-  -moz-image-region: rect(48px 32px 64px 16px);
-}

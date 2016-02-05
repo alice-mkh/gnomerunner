@@ -6,11 +6,11 @@
 
 treechildren::-moz-tree-image(GeneratedName) {
   -moz-margin-end: 2px;
-  list-style-image: url("chrome://global/skin/icons/16x16/stock_person.png");
+  list-style-image: var(--icon-stock_contact-16);
 }
 
 treechildren::-moz-tree-image(GeneratedName, MailList) {
   -moz-margin-end: 2px;
-  list-style-image: url("%CUSTOM-ICON system-users 16");
+  list-style-image: var(--icon-stock_contact-list-16);
 }
 

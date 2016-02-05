@@ -3,6 +3,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 @import url("chrome://global/skin/");
+@import url("chrome://icons/skin/icon-theme-default.css");
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 #HelpToolbar toolbarbutton {
@@ -13,51 +14,57 @@
 }
 
 #help-back-button {
-  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 24");
+  list-style-image: var(--icon-go-previous-24);
 }
 
 #help-back-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 24 disabled");
+  list-style-image: var(--icon-go-previous-24-dis);
+  opacity: var(--icon-go-previous-dis-opacity);
 }
 
 #help-back-button:-moz-locale-dir(rtl) {
-  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 24");
+  list-style-image: var(--icon-go-previous-rtl-24);
 }
 
 #help-back-button[disabled="true"]:-moz-locale-dir(rtl) {
-  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 24 disabled");
+  list-style-image: var(--icon-go-previous-rtl-24-dis);
+  opacity: var(--icon-go-previous-rtl-dis-opacity);
 }
 
 #help-forward-button {
-  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 24");
+  list-style-image: var(--icon-go-next-24);
 }
 
 #help-forward-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 24 disabled");
+  list-style-image: var(--icon-go-next-24-dis);
+  opacity: var(--icon-go-next-dis-opacity);
 }
 
 #help-forward-button:-moz-locale-dir(rtl) {
-  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 24");
+  list-style-image: var(--icon-go-next-rtl-24);
 }
 
 #help-forward-button[disabled="true"]:-moz-locale-dir(rtl) {
-  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 24 disabled");
+  list-style-image: var(--icon-go-next-rtl-24);
+  opacity: var(--icon-go-next-rtl-dis-opacity);
 }
 
 #help-home-button {
-  list-style-image: url("%STOCK-ICON gtk-home go-home 24");
+  list-style-image: var(--icon-go-home-24);
 }
 
 #help-home-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-home go-home 24 disabled");
+  list-style-image: var(--icon-go-home-24-dis);
+  opacity: var(--icon-go-home-dis-opacity);
 }
 
 #help-print-button {
-  list-style-image: url("%STOCK-ICON gtk-print document-print 24");
+  list-style-image: var(--icon-document-print-24);
 }
 
 #help-print-button[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-print document-print 24 disabled");
+  list-style-image: var(--icon-document-print-24-dis) !important;
+  opacity: var(--icon-document-print-dis-opacity);
 }
 
 /* Hide labels for the toolbar because we really don't need them what with the
@@ -85,50 +92,54 @@ menuitem:not([type]) {
 }
 
 #context-back {
-  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 16");
+  list-style-image: var(--icon-go-previous-16);
 }
 
 #context-back:-moz-locale-dir(rtl) {
-  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 16");
+  list-style-image: var(--icon-go-previous-rtl-16);
 }
 
 #context-back[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-go-back-ltr go-previous 16 state=disabled");
+  list-style-image: var(--icon-go-previous-16-dis);
+  opacity: var(--icon-go-previous-dis-opacity);
 }
 
 #context-back[disabled="true"]:-moz-locale-dir(rtl) {
-  list-style-image: url("%STOCK-ICON gtk-go-back-rtl go-next 16 disabled");
+  list-style-image: var(--icon-go-previous-rtl-16-dis);
+  opacity: var(--icon-go-previous-rtl-dis-opacity);
 }
 
 #context-forward {
-  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 16");
+  list-style-image: var(--icon-go-next-16);
 }
 
 #context-forward:-moz-locale-dir(rtl) {
-  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 16");
+  list-style-image: var(--icon-go-next-rtl-16);
 }
 
 #context-forward[disabled="true"] {
-  list-style-image: url("%STOCK-ICON gtk-go-forward-ltr go-next 16 disabled");
+  list-style-image: var(--icon-go-next-16-dis);
+  opacity: var(--icon-go-next-dis-opacity);
 }
 
 #context-forward[disabled="true"]:-moz-locale-dir(rtl) {
-  list-style-image: url("%STOCK-ICON gtk-go-forward-rtl go-previous 16 disabled");
+  list-style-image: var(--icon-go-next-rtl-16-dis);
+  opacity: var(--icon-go-next-rtl-dis-opacity);
 }
 
 #context-copy {
-  list-style-image: url("%STOCK-ICON gtk-copy edit-copy 16");
+  list-style-image: var(--icon-edit-copy-16);
 }
 
 #context-selectall {
-  list-style-image: url("%STOCK-ICON gtk-select-all edit-select-all 16"); /*FIXME: Not stock!*/
+  list-style-image: var(--icon-edit-select-all-16);
 }
 
 #zoom-in {
-  list-style-image: url("%STOCK-ICON gtk-zoom-in zoom-in 16");
+  list-style-image: var(--icon-zoom-in-16);
 }
 
 #zoom-out {
-  list-style-image: url("%STOCK-ICON gtk-zoom-out zoom-out 16");
+  list-style-image: var(--icon-zoom-out-16);
 }
 

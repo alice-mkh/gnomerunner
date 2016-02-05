@@ -60,7 +60,7 @@
 }
 
 #closeButton {
-  list-style-image: url("%STOCK-ICON gtk-close window-close 16");
+  list-style-image: var(--icon-window-close-16);
   -moz-appearance: none;
   border: none !important;
   padding: 2px 0px 0px;

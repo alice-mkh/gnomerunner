@@ -1,0 +1,79 @@
+dialog-error			gtk-dialog-error
+dialog-information		gtk-dialog-info
+dialog-password			gtk-dialog-authentication
+dialog-question			gtk-dialog-question
+dialog-warning			gtk-dialog-warning
+document-new			gtk-new
+document-open			gtk-open
+document-print			gtk-print
+document-print-preview	gtk-print-preview
+document-properties     gtk-properties
+document-revert			gtk-revert-to-saved-ltr
+document-revert-rtl		gtk-revert-to-saved-rtl
+document-save-as		gtk-save-as
+document-save			gtk-save
+edit-clear				gtk-clear
+edit-copy				gtk-copy
+edit-cut				gtk-cut
+edit-delete				gtk-delete
+edit-find				gtk-find
+edit-paste				gtk-paste
+edit-redo				gtk-redo
+edit-select-all			gtk-select-all
+edit-undo				gtk-undo
+folder					gtk-directory
+folder-open				gtk-directory
+format-indent-less		gtk-unindent
+format-indent-more		gtk-indent
+format-justify-center	gtk-justify-center
+format-justify-fill		gtk-justify-fill
+format-justify-left		gtk-justify-left
+format-justify-right	gtk-justify-right
+format-text-bold		gtk-bold
+format-text-italic		gtk-italic
+format-text-underline	gtk-underline
+go-down					gtk-go-down
+go-first				gtk-goto-first-ltr
+go-first-rtl			gtk-goto-first-rtl
+go-home					gtk-home
+go-jump					gtk-jump-to
+go-last					gtk-goto-last-ltr
+go-last-rtl				gtk-goto-last-rtl
+go-next					gtk-go-forward-ltr
+go-next-rtl				gtk-go-forward-rtl
+go-previous				gtk-go-back-ltr
+go-previous-rtl			gtk-go-back-rtl
+go-top					gtk-goto-top
+go-up					gtk-go-up
+gtk-apply
+gtk-cancel
+gtk-color-picker
+gtk-convert
+gtk-edit
+gtk-no
+gtk-ok
+gtk-orientation-landscape
+gtk-orientation-portrait
+gtk-select-font
+gtk-yes
+help-about				gtk-about
+help-contents			gtk-help
+image-missing			gtk-missing-image
+list-add				gtk-add
+list-remove				gtk-remove
+media-playback-pause	gtk-media-pause
+media-playback-start	gtk-media-play
+network-idle			gtk-network
+preferences-desktop		gtk-preferences
+process-stop			gtk-stop
+text-x-generic			gtk-file
+tools-check-spelling	gtk-spell-check
+view-fullscreen			gtk-fullscreen
+view-refresh			gtk-refresh
+view-restore			gtk-leave-fullscreen
+view-sort-ascending		gtk-sort-ascending
+view-sort-descending	gtk-sort-descending
+window-close			gtk-close
+zoom-in					gtk-zoom-in
+zoom-original			gtk-zoom-100
+zoom-out				gtk-zoom-out

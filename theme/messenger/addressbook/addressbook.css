@@ -14,110 +14,119 @@
 /* ::::: primary toolbar buttons ::::: */
 
 #button-newcard {
-  list-style-image: url("chrome://global/skin/icons/24x24/stock_person.png");
+  list-style-image: var(--icon-contact-new-24);
 }
 
 #button-newcard[disabled] {
-  opacity: 0.5 !important;
+  list-style-image: var(--icon-contact-new-24-dis);
+  opacity: var(--icon-contact-new-dis-opacity);
 } 
 
 #button-newlist {
-  list-style-image: url("%CUSTOM-ICON system-users 24");
+  list-style-image: var(--icon-stock_contact-list-24);
 }
 
 #button-newlist[disabled] {
-  list-style-image: url("%CUSTOM-ICON system-users 24 disabled");
-  opacity: %DISABLED-OPACITY !important;
+  list-style-image: var(--icon-stock_contact-list-24-dis);
+  opacity: var(--icon-stock_contact-list-dis-opacity);
 } 
 
 #button-editcard {
-  list-style-image: url("%CUSTOM-ICON user-info 24");
+  list-style-image: var(--icon-document-properties-24);
 }
 
 #button-editcard[disabled] {
-  list-style-image: url("%CUSTOM-ICON user-info 24 disabled");
-  opacity: %DISABLED-OPACITY !important;
+  list-style-image: var(--icon-document-properties-24-dis);
+  opacity: var(--icon-document-properties-dis-opacity);
 } 
 
 #button-newmessage {
-  list-style-image: url("%CUSTOM-ICON mail-message-new 24");
+  list-style-image: var(--icon-mail-message-new-24);
 }
 
 #button-newmessage[disabled] {
-  list-style-image: url("%CUSTOM-ICON mail-message-new 24 disabled");
-  opacity: %DISABLED-OPACITY !important;
+  list-style-image: var(--icon-mail-message-new-24-dis);
+  opacity: var(--icon-mail-message-new-dis-opacity);
 }
 
 #button-newim {
-  list-style-image: url("chrome://global/skin/icons/24x24/irc.png");
+  list-style-image: var(--icon-internet-group-chat-24);
 }
 
 #button-newim[disabled] {
-  opacity: 0.5 !important;
+  list-style-image: var(--icon-internet-group-chat-24-dis);
+  opacity: var(--icon-internet-group-chat-dis-opacity);
 } 
 
 #button-abdelete {
-  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 24");
+  list-style-image: var(--icon-edit-delete-24);
 }
 
 #button-abdelete[disabled] {
-  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 24 disabled") !important;
+  list-style-image: var(--icon-edit-delete-24-dis);
+  opacity: var(--icon-edit-delete-dis-opacity);
 }
 
 /* ::::: small primary toolbar buttons ::::: */
 
 toolbar[iconsize="small"] > #button-newcard,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-newcard {
-  list-style-image: url("chrome://global/skin/icons/16x16/stock_person.png");
+  list-style-image: var(--icon-contact-new-16);
 }
 
 toolbar[iconsize="small"] > #button-newcard[disabled] {
-  list-style-image: url("chrome://global/skin/icons/16x16/stock_person.png");
+  list-style-image: var(--icon-contact-new-16-dis);
+  opacity: var(--icon-contact-new-dis-opacity);
 }
 
 toolbar[iconsize="small"] > #button-newlist,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-newlist {
-  list-style-image: url("%CUSTOM-ICON system-users 16");
+  list-style-image: var(--icon-stock_contact-list-16);
 }
 
 toolbar[iconsize="small"] > #button-newlist[disabled] {
-  list-style-image: url("%CUSTOM-ICON system-users 16 disabled");
+  list-style-image: var(--icon-stock_contact-list-16-dis);
+  opacity: var(--icon-stock_contact-list-dis-opacity);
 }
 
 toolbar[iconsize="small"] > #button-editcard,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-editcard {
-  list-style-image: url("%CUSTOM-ICON user-info 16");
+  list-style-image: var(--icon-document-properties-16);
 }
 
 toolbar[iconsize="small"] > #button-editcard[disabled] {
-  list-style-image: url("%CUSTOM-ICON user-info 16 disabled");
+  list-style-image: var(--icon-document-properties-16-dis);
+  opacity: var(--icon-document-properties-dis-opacity);
 } 
 
 toolbar[iconsize="small"] > #button-newmessage,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-newmessage {
-  list-style-image: url("%CUSTOM-ICON mail-message-new 16");
+  list-style-image: var(--icon-mail-message-new-16);
 }
 
 toolbar[iconsize="small"] > #button-newmessage[disabled] {
-  list-style-image: url("%CUSTOM-ICON mail-message-new 16 disabled");
+  list-style-image: var(--icon-mail-message-new-16-dis);
+  opacity: var(--icon-mail-message-new-dis-opacity);
 }
 
 toolbar[iconsize="small"] > #button-newim,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-newim {
-  list-style-image: url("chrome://global/skin/icons/16x16/irc.png");
+  list-style-image: var(--icon-internet-group-chat-16);
 }
 
 toolbar[iconsize="small"] > #button-newim[disabled] {
-  list-style-image: url("chrome://global/skin/icons/16x16/irc.png");
+  list-style-image: var(--icon-internet-group-chat-16-dis);
+  opacity: var(--icon-internet-group-chat-dis-opacity);
 } 
 
 toolbar[iconsize="small"] > #button-abdelete,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-abdelete {
-  list-style-image: url("%STOCK-ICON gtk-delete edit-delete 16");
+  list-style-image: var(--icon-edit-delete-16);
 }
 
 toolbar[iconsize="small"] > #button-abdelete[disabled] {
-    list-style-image: url("%STOCK-ICON gtk-delete edit-delete 16 disabled") !important;
+  list-style-image: var(--icon-edit-delete-16-dis);
+  opacity: var(--icon-edit-delete-dis-opacity);
 }
 
 /* CardView styles - used in the Card View Pane */

@@ -2,6 +2,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#tasksMenuIRC {
-  list-style-image: url("chrome://global/skin/icons/16x16/irc.png");
+#tasksMenuIRC,
+#mini-irc,
+.icon-irc16 {
+  list-style-image: var(--icon-internet-group-chat-16);
 }

@@ -6,10 +6,7 @@ skin global $INTERNAL_NAME global/
 skin messenger $INTERNAL_NAME messenger/
 skin mozapps $INTERNAL_NAME mozapps/
 
-#New findbar in 2.22
-style chrome://navigator/content/navigator.xul chrome://global/skin/findBar-2.21.css appversion<2.22
-style chrome://communicator/content/viewSourceOverlay.xul chrome://global/skin/findBar-2.21.css appversion<2.22
-style chrome://communicator/content/helpOverlay.xul chrome://global/skin/findBar-2.21.css appversion<2.22
+skin icons $INTERNAL_NAME icons/
 
 #Compact menulist removal from Toolkit in 2.33
 style chrome://messenger/content/messengercompose/messengercompose.xul chrome://messenger/skin/messengercompose/messengercompose-2.33.css appversion>=2.33
@@ -29,22 +26,20 @@ skin inspector $INTERNAL_NAME extensions/inspector/
 # Lightning
 skin $CODE_NAME-calendar $INTERNAL_NAME extensions/calendar/
 style chrome://global/content/customizeToolbar.xul chrome://$CODE_NAME-calendar/skin/lightning-toolbar.css
-style chrome://lightning/content/lightning-toolbar.xul chrome://$CODE_NAME-calendar/skin/lightning-toolbar.css
+style chrome://global/content/customizeToolbar.xul chrome://$CODE_NAME-calendar/skin/calendar-task-view.css
+override chrome://lightning/skin/lightning-toolbar.css chrome://$CODE_NAME-calendar/skin/lightning-toolbar.css
 style chrome://calendar/content/calendar-unifinder.xul chrome://$CODE_NAME-calendar/skin/calendar-unifinder.css
 style chrome://lightning/content/lightning-standalone.xul chrome://$CODE_NAME-calendar/skin/calendar-unifinder.css
 style chrome://calendar/content/today-pane.xul chrome://$CODE_NAME-calendar/skin/today-pane.css
 style chrome://calendar/content/today-pane.xul chrome://$CODE_NAME-calendar/skin/common-today-pane.css
+style chrome://calendar/content/calendar-task-view.xul chrome://$CODE_NAME-calendar/skin/calendar-task-view.css
+style chrome://calendar/content/calendar-unifinder-todo.xul chrome://$CODE_NAME-calendar/skin/calendar-task-view.css
 style chrome://lightning/content/lightning-standalone.xul chrome://$CODE_NAME-calendar/skin/lightning.css
 style chrome://lightning/content/messenger-overlay-sidebar.xul chrome://$CODE_NAME-calendar/skin/lightning.css
 style chrome://lightning/content/messenger-overlay-accountCentral.xul chrome://$CODE_NAME-calendar/skin/accountCentral.css
+
 # Lightbird
 style chrome://global/content/customizeToolbar.xul chrome://$CODE_NAME-calendar/skin/sunbird-toolbar.css
-style chrome://sunbird/content/calendar.xul chrome://$CODE_NAME-calendar/skin/lightning-toolbar.css
-style chrome://sunbird/content/calendar.xul chrome://$CODE_NAME-calendar/skin/sunbird-toolbar.css
-style chrome://sunbird/content/calendar.xul chrome://$CODE_NAME-calendar/skin/calendar-unifinder.css
-style chrome://lightbird/content/lightbirdOverlay.xul chrome://$CODE_NAME-calendar/skin/lightbird.css 
-# Lightbird 0.3
-style chrome://lightbird/content/sunbird/calendar.xul chrome://$CODE_NAME-calendar/skin/lightning-toolbar.css
 style chrome://lightbird/content/sunbird/calendar.xul chrome://$CODE_NAME-calendar/skin/sunbird-toolbar.css
 style chrome://lightbird/content/tasksOverlay.xul chrome://$CODE_NAME-calendar/skin/lightbird.css
 style chrome://lightbird/content/sunbird/calendar.xul chrome://$CODE_NAME-calendar/skin/calendar-unifinder.css
