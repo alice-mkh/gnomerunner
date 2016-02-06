@@ -161,7 +161,7 @@ button[icon="accept"] .button-icon {
 
 button[icon="accept"][disabled="true"] .button-icon {
   list-style-image: var(--icon-gtk-ok-22-dis);
-  opacity: var(--icon-gtk-yes-opacity);
+  opacity: var(--icon-gtk-ok-dis-opacity);
 }
 
 button[icon="cancel"] .button-icon {

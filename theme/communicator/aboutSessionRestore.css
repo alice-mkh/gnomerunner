@@ -22,7 +22,7 @@ treechildren::-moz-tree-image(noicon) {
 }
 
 treechildren::-moz-tree-image(container, noicon) {
-  list-style-image: var(--icon-folder-16);
+  list-style-image: var(--icon-stock_folder-16);
 }
 
 treechildren::-moz-tree-image(container, noicon, open) {

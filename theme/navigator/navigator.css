@@ -1,4 +1,4 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
+~/* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
@@ -606,18 +606,14 @@ toolbar[mode="text"] #search-button > .button-box {
 /* ::::: personal toolbar ::::: */
 
 #bookmarks-button {
-  list-style-image: var(--icon-folder-16);
+  list-style-image: var(--icon-stock_folder-16);
 }
 
 #bookmarks-button[open="true"] {
   list-style-image: var(--icon-folder-open-16);
 }
 
-toolbarbutton.chevron {
-  list-style-image: url("chrome://navigator/skin/icons/chevron.gif") !important;
-}
-
-toolbarbutton.chevron > .toolbarbutton-menu-dropmarker {
+toolbarbutton.chevron .toolbarbutton-icon {
   display: none;
 }
 
@@ -625,9 +621,6 @@ toolbarbutton.chevron > .toolbarbutton-text {
   display: none; /* hide chevron label which has a width even if blank */
 }
 
-toolbar[mode="text"] toolbarbutton.chevron > .toolbarbutton-icon {
-  display: -moz-box; /* display chevron icon in text mode */
-}
 /*
 #bookmarks-chevron {
   list-style-image: var(--icon-text-x-generic-16);

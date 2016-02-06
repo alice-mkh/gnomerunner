@@ -91,6 +91,7 @@ network-idle
 network-server
 preferences-desktop
 process-stop
+stock_folder folder
 text-x-generic
 text-x-generic-template
 tools-check-spelling

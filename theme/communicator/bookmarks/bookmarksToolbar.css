@@ -54,7 +54,7 @@ toolbarbutton.bookmark-item[disabled="true"] {
 }
 
 toolbarbutton.bookmark-item[disabled="true"][container="true"] {
-  list-style-image: var(--icon-folder-16-dis);
+  list-style-image: var(--icon-stock_folder-16-dis);
   opacity: var(--icon-folder-dis-opacity);
 }
 
@@ -102,7 +102,7 @@ menuitem.bookmark-item {
 }
 
 .menu-iconic.bookmark-item[disabled="true"][container="true"] {
-  list-style-image: var(--icon-folder-16-dis);
+  list-style-image: var(--icon-stock_folder-16-dis);
   opacity: var(--icon-folder-dis-opacity);
 }
 

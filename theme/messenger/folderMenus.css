@@ -11,7 +11,7 @@
 /* ::::: folder icons for menus ::::: */
 
 .folderMenuItem {
-  list-style-image: var(--icon-folder-16);
+  list-style-image: var(--icon-stock_folder-16);
 }
 
 .folderMenuItem[open="true"] {

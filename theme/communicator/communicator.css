@@ -35,7 +35,7 @@ textbox[autocompletesearch="history file"] .autocomplete-treebody::-moz-tree-ima
 }
 
 textbox[autocompletesearch="history file"] .autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue, directory) {
-  list-style-image: var(--icon-folder-16);
+  list-style-image: var(--icon-stock_folder-16);
 }
 
 textbox[autocompletesearch="history file"] .autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue, file) {

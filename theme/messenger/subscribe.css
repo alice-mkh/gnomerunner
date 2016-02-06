@@ -36,13 +36,13 @@ treechildren::-moz-tree-cell-text(nameColumn, Subscribable-false) {
 
 treechildren::-moz-tree-image(nameColumn) {
   -moz-margin-end: 2px;
-  list-style-image: var(--icon-folder-16);
+  list-style-image: var(--icon-stock_folder-16);
 }
 
 treechildren::-moz-tree-image(nameColumn, ServerType-nntp),
 treechildren::-moz-tree-image(nameColumn2, nntp) {
   -moz-margin-end: 2px;
-  list-style-image: var(--icon-folder-16);
+  list-style-image: var(--icon-stock_folder-16);
 }
 
 /* ::::: server icons :::::: */

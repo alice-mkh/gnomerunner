@@ -27,7 +27,7 @@ treechildren::-moz-tree-image(title) {
 .bookmark-item[container="true"],
 treechildren::-moz-tree-image(Name, container),
 treechildren::-moz-tree-image(title, container) {
-  list-style-image: var(--icon-folder-16);
+  list-style-image: var(--icon-stock_folder-16);
 }
 
 .bookmark-item[open="true"],

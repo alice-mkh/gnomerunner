@@ -56,12 +56,12 @@
 } 
 
 #button-file {
-  list-style-image: var(--icon-folder-24);
+  list-style-image: var(--icon-stock_folder-24);
 }
 
 #button-file[disabled] {
-  list-style-image: var(--icon-folder-24-dis);
-  opacity: var(--icon-folder-dis-opacity);
+  list-style-image: var(--icon-stock_folder-24-dis);
+  opacity: var(--icon-stock_folder-dis-opacity);
 } 
 
 #button-goback {
@@ -255,11 +255,11 @@ toolbar[iconsize="small"] > #button-forward[disabled] {
 
 toolbar[iconsize="small"] > #button-file,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-file {
-  list-style-image: var(--icon-folder-16);
+  list-style-image: var(--icon-stock_folder-16);
 }
 
 toolbar[iconsize="small"] > #button-file[disabled] {
-  list-style-image: var(--icon-folder-16-dis);
+  list-style-image: var(--icon-stock_folder-16-dis);
 }
 
 toolbar[iconsize="small"] > #button-goback,

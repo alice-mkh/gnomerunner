@@ -16,7 +16,7 @@ treechildren::-moz-tree-image(folderNameCol) {
 
 .icon-holder[type="folder"],
 treechildren::-moz-tree-image(folderNameCol) {
-  list-style-image: var(--icon-folder-16);
+  list-style-image: var(--icon-stock_folder-16);
 }
 
 /* ..... IMAP shared ..... */
@@ -24,13 +24,6 @@ treechildren::-moz-tree-image(folderNameCol) {
 .icon-holder[type="folder"][ImapShared="true"],
 treechildren::-moz-tree-image(folderNameCol, imapShared-true) {
   list-style-image: var(--icon-folder-remote-16);
-}
-
-/* ..... Feeds ..... */
-
-.icon-holder[type="folder"][ServerType="rss"],
-treechildren::-moz-tree-image(folderNameCol, serverType-rss) {
-  list-style-image: var(--icon-folder-16);
 }
 
 /* ..... Inbox ..... */
