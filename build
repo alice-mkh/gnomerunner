@@ -87,7 +87,7 @@ for THEME in $THEMES; do
         N=`echo $F | grep -Po "[\w\d-_]+$"`
         for DD in $SIZES; do
             if [ -f $THEME/${DD}x$DD/$D/$N.png ]; then
-                mogrify -alpha set -channel a -evaluate divide 2 dis/$THEME/${DD}x$DD/$D/$N.png
+                mogrify -alpha set -channel a -evaluate divide 3 dis/$THEME/${DD}x$DD/$D/$N.png
                 echo "  --icon-$N-$DD: url(\"chrome://icons/skin/$THEME/${DD}x$DD/$D/$N.png\");" >> icon-theme-$THEME.css
                 echo "  --icon-$N-$DD-dis: url(\"chrome://icons/skin/dis/$THEME/${DD}x$DD/$D/$N.png\");" >> icon-theme-$THEME.css
             fi
