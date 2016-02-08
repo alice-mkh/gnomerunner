@@ -40,3 +40,36 @@
 #preview-toolbar-save {
     list-style-image: var(--icon-document-save-24);
 }
+
+#preview-menu-new {
+  list-style-image: var(--icon-document-new-16);
+}
+
+#preview-menu-open {
+  list-style-image: var(--icon-document-open-16);
+}
+
+#preview-menu-save {
+  list-style-image: var(--icon-document-save-16);
+}
+
+#preview-menu-print {
+  list-style-image: var(--icon-document-print-16);
+}
+
+#preview-menu-exit {
+  list-style-image: var(--icon-application-exit-16);
+}
+
+#preview-menu-cut {
+  list-style-image: var(--icon-edit-cut-16);
+}
+
+#preview-menu-copy {
+  list-style-image: var(--icon-edit-copy-16);
+}
+
+#preview-menu-paste {
+  list-style-image: var(--icon-edit-paste-16);
+}
+

@@ -91,20 +91,20 @@
 							<menubar id="preview-menubar">
 								<menu label="&options.label.preview.file;">
 									<menupopup>
-										<menuitem label="&options.label.preview.new;" />
-										<menuitem label="&options.label.preview.open;" />
-										<menuitem label="&options.label.preview.save;" />
+										<menuitem class="menuitem-iconic" id="preview-menu-new" label="&options.label.preview.new;" />
+										<menuitem class="menuitem-iconic" id="preview-menu-open" label="&options.label.preview.open;" />
+										<menuitem class="menuitem-iconic" id="preview-menu-save" label="&options.label.preview.save;" />
 										<menuseparator />
-										<menuitem label="&options.label.preview.print;" />
+										<menuitem class="menuitem-iconic" id="preview-menu-print" label="&options.label.preview.print;" />
 										<menuseparator />
-										<menuitem label="&options.label.preview.exit;" />
+										<menuitem class="menuitem-iconic" id="preview-menu-exit" label="&options.label.preview.exit;" />
 									</menupopup>
 								</menu>
 								<menu label="&options.label.preview.edit;">
 									<menupopup>
-										<menuitem label="&options.label.preview.cut;" />
-										<menuitem label="&options.label.preview.copy;" />
-										<menuitem label="&options.label.preview.paste;" />
+										<menuitem class="menuitem-iconic" id="preview-menu-cut" label="&options.label.preview.cut;" />
+										<menuitem class="menuitem-iconic" id="preview-menu-copy" label="&options.label.preview.copy;" />
+										<menuitem class="menuitem-iconic" id="preview-menu-paste" label="&options.label.preview.paste;" />
 									</menupopup>
 								</menu>
 							</menubar>
