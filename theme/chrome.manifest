@@ -32,6 +32,9 @@ style chrome://mozapps/content/extensions/extensions.xul chrome://mozapps/skin/e
 style about:addons chrome://global/skin/inContentUI.css appversion<2.37
 style about:addons chrome://mozapps/skin/extensions/extensions-new.css appversion>=2.37
 
+#New about:privatebrowsing
+override chrome://communicator/skin/aboutPrivateBrowsing.css chrome://communicator/skin/aboutPrivateBrowsing-new.css appversion>=2.39
+
 #Chatzilla
 skin chatzilla $INTERNAL_NAME extensions/chatzilla/
 
