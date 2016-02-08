@@ -50,7 +50,10 @@ done
 echo "Generating icon themes..."
 SIZES="16 20 22 24 32 48"
 
-for THEME in `echo */ | sed -E "s/\///g"`; do
+THEMES=`echo */ | sed -E "s/\///g"`
+mkdir -p dis
+
+for THEME in $THEMES; do
     echo " $THEME"
     cd $THEME
 
@@ -70,6 +73,8 @@ for THEME in `echo */ | sed -E "s/\///g"`; do
     FILES=`echo $FILES | sed -E "s/\.png//g;s/\s+/\\n/g" | sort | uniq`
     cd ..
 
+    cp -r $THEME dis
+
     touch icon-theme-$THEME.css
     echo "/* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -83,8 +88,9 @@ for THEME in `echo */ | sed -E "s/\///g"`; do
         N=`echo $F | grep -Po "[\w\d-_]+$"`
         for DD in $SIZES; do
             if [ -f $THEME/${DD}x$DD/$D/$N.png ]; then
+                mogrify -alpha set -channel a -evaluate divide 2 dis/$THEME/${DD}x$DD/$D/$N.png
                 echo "  --icon-$N-$DD: url(\"chrome://icons/skin/$THEME/${DD}x$DD/$D/$N.png\");" >> icon-theme-$THEME.css
-                echo "  --icon-$N-$DD-dis: var(--icon-$N-$DD);" >> icon-theme-$THEME.css
+                echo "  --icon-$N-$DD-dis: url(\"chrome://icons/skin/dis/$THEME/${DD}x$DD/$D/$N.png\");" >> icon-theme-$THEME.css
             fi
         done
         echo "  --icon-$N-dis-opacity: var(--icon-base-dis-opacity);" >> icon-theme-$THEME.css
