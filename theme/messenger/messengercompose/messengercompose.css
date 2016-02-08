@@ -7,6 +7,7 @@
   ======================================================================= */
 
 @import url("chrome://messenger/skin/");
+@import url("chrome://icons/skin/icon-theme-default.css");
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
@@ -18,8 +19,7 @@
 
 #button-send[disabled="true"] {
   list-style-image: var(--icon-mail-send-24-dis);
-  opacity: var(--icon-mail-send-dis-opacity);
-} 
+}
 
 #button-address {
   list-style-image: var(--icon-x-office-address-book-24);
@@ -27,8 +27,7 @@
 
 #button-address[disabled="true"] {
   list-style-image: var(--icon-x-office-address-book-24-dis);
-  opacity: var(--icon-x-office-address-book-dis-opacity);
-} 
+}
 
 #button-attach {
   list-style-image: var(--icon-mail-attachment-24);
@@ -36,8 +35,7 @@
 
 #button-attach[disabled="true"] {
   list-style-image: var(--icon-mail-attachment-24-dis);
-  opacity: var(--icon-mail-attachment-dis-opacity);
-} 
+}
 
 #spellingButton {
   list-style-image: var(--icon-tools-check-spelling-24);
@@ -45,7 +43,6 @@
 
 #spellingButton[disabled="true"] {
   list-style-image: var(--icon-tools-check-spelling-24-dis);
-  opacity: var(--icon-tools-check-spelling-dis-opacity);
 }
 
 #button-save {
@@ -54,8 +51,7 @@
 
 #button-save[disabled="true"] {
   list-style-image: var(--icon-document-save-24-dis);
-  opacity: var(--icon-document-save-dis-opacity);
-} 
+}
 
 /* ::::: small primary toolbar buttons ::::: */
 
@@ -66,7 +62,6 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #button-send {
 
 toolbar[iconsize="small"] > #button-send[disabled="true"] {
   list-style-image: var(--icon-mail-send-16-dis);
-  opacity: var(--icon-mail-send-dis-opacity);
 }
 
 toolbar[iconsize="small"] > #button-address,
@@ -76,8 +71,7 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #button-address {
 
 toolbar[iconsize="small"] > #button-address[disabled="true"] {
   list-style-image: var(--icon-x-office-address-book-16-dis);
-  opacity: var(--icon-x-office-address-book-dis-opacity);
-} 
+}
 
 toolbar[iconsize="small"] > #button-attach,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-attach {
@@ -86,8 +80,7 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #button-attach {
 
 toolbar[iconsize="small"] > #button-attach[disabled="true"] {
   list-style-image: var(--icon-mail-attachment-16-dis);
-  opacity: var(--icon-mail-attachment-dis-opacity);
-} 
+}
 
 toolbar[iconsize="small"] > #spellingButton,
 toolbar[iconsize="small"] > toolbarpaletteitem > #spellingButton {
@@ -96,7 +89,6 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #spellingButton {
 
 toolbar[iconsize="small"] > #spellingButton[disabled="true"] {
   list-style-image: var(--icon-tools-check-spelling-16-dis);
-  opacity: var(--icon-tools-check-spelling-dis-opacity);
 }
 
 toolbar[iconsize="small"] > #button-save,
@@ -106,8 +98,7 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #button-save {
 
 toolbar[iconsize="small"] > #button-save[disabled="true"] {
   list-style-image: var(--icon-document-save-16-dis);
-  opacity: var(--icon-document-save-dis-opacity);
-} 
+}
 
 /* ::::: special toolbar colors ::::: */
 

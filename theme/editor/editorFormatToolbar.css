@@ -2,6 +2,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 /* ::::: formatting buttons ::::: */
@@ -16,7 +18,6 @@
 
 #DecreaseFontSizeButton[disabled="true"] {
   list-style-image: var(--icon-stock_decrease-font-16-dis);
-  opacity: var(--icon-stock_decrease-font-dis-opacity);
 }
 
 #IncreaseFontSizeButton {
@@ -25,7 +26,6 @@
 
 #IncreaseFontSizeButton[disabled="true"] {
   list-style-image: var(--icon-stock_increase-font-16-dis);
-  opacity: var(--icon-stock_increase-font-dis-opacity);
 }
 
 #boldButton {
@@ -34,7 +34,6 @@
 
 #boldButton[disabled="true"] {
   list-style-image: var(--icon-format-text-bold-16-dis);
-  opacity: var(--icon-format-text-bold-dis-opacity);
 }
 
 #italicButton {
@@ -43,7 +42,6 @@
 
 #italicButton[disabled="true"] {
   list-style-image: var(--icon-format-text-italic-16-dis);
-  opacity: var(--icon-format-text-italic-dis-opacity);
 }
 
 #underlineButton {
@@ -52,7 +50,6 @@
 
 #underlineButton[disabled="true"] {
   list-style-image: var(--icon-format-text-underline-16-dis);
-  opacity: var(--icon-format-text-underline-dis-opacity);
 }
 
 #ulButton {
@@ -61,7 +58,6 @@
 
 #ulButton[disabled="true"] {
   list-style-image: var(--icon-stock_list_bullet-16-dis);
-  opacity: var(--icon-stock_list_bullet-dis-opacity);
 }
 
 #olButton {
@@ -70,7 +66,6 @@
 
 #olButton[disabled="true"] {
   list-style-image: var(--icon-stock_list_enum-16-dis);
-  opacity: var(--icon-stock_list_enum-dis-opacity);
 }
 
 #outdentButton {
@@ -79,7 +74,6 @@
 
 #outdentButton[disabled="true"] {
   list-style-image: var(--icon-format-indent-less-16-dis);
-  opacity: var(--icon-format-indent-less-dis-opacity);
 }
 
 #indentButton {
@@ -88,7 +82,6 @@
 
 #indentButton[disabled="true"] {
   list-style-image: var(--icon-format-indent-more-16-dis);
-  opacity: var(--icon-format-indent-more-dis-opacity);
 }
 
 #align-left-button,
@@ -99,7 +92,6 @@
 #align-left-button[disabled="true"],
 #AlignPopupButton[disabled="true"] {
   list-style-image: var(--icon-format-justify-left-16-dis);
-  opacity: var(--icon-format-justify-left-dis-opacity);
 }
 
 #align-center-button,
@@ -110,7 +102,6 @@
 #align-center-button[disabled="true"],
 #AlignPopupButton[state="center"][disabled="true"] {
   list-style-image: var(--icon-format-justify-center-16-dis);
-  opacity: var(--icon-format-justify-center-dis-opacity);
 }
 
 #align-right-button,
@@ -121,7 +112,6 @@
 #align-right-button[disabled="true"],
 #AlignPopupButton[state="right"][disabled="true"] {
   list-style-image: var(--icon-format-justify-right-16-dis);
-  opacity: var(--icon-format-justify-right-dis-opacity);
 }
 
 #align-justify-button,
@@ -132,7 +122,6 @@
 #align-justify-button[disabled="true"],
 #AlignPopupButton[state="justify"][disabled="true"] {
   list-style-image: var(--icon-format-justify-fill-16-dis);
-  opacity: var(--icon-format-justify-fill-dis-opacity);
 }
 
 #InsertPopupButton {
@@ -141,7 +130,6 @@
 
 #InsertPopupButton[disabled="true"] {
   list-style-image: var(--icon-insert-object-16-dis);
-  opacity: var(--icon-insert-object-dis-opacity);
 }
 
 #smileButtonMenu {
@@ -321,7 +309,6 @@
 
 #HighlightColorButton[disabled="true"] {
   list-style-image: var(--icon-stock_text_color_hilight-16-dis);
-  opacity: var(--icon-stock_text_color_hilight-dis-opacity);
 }
 
 #absolutePositionButton{
@@ -330,7 +317,6 @@
 
 #absolutePositionButton[disabled="true"] {
   list-style-image: var(--icon-stock_insert-floating-frame-16-dis);
-  opacity: var(--icon-stock_insert-floating-frame-dis-opacity);
 }
 
 #increaseZIndexButton {
@@ -339,7 +325,6 @@
 
 #increaseZIndexButton[disabled="true"] {
   list-style-image: var(--icon-stock_bring-forward-16-dis);
-  opacity: var(--icon-stock_bring-forward-dis-opacity);
 }
 
 #decreaseZIndexButton {
@@ -348,5 +333,4 @@
 
 #decreaseZIndexButton[disabled="true"] {
   list-style-image: var(--icon-stock_bring-backward-16-dis);
-  opacity: var(--icon-stock_bring-backward-dis-opacity);
 }

@@ -2,6 +2,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 .today-closebutton {
   -moz-appearance: toolbarbutton;
   list-style-image: var(--icon-window-close-16);
@@ -19,7 +21,6 @@
 
 #todaypane-new-event-button[disabled="true"] > .toolbarbutton-icon {
   list-style-image: var(--icon-appointment-new-16-dis);
-  opacity: var(--icon-appointment-new-dis-opacity);
 }
 
 #todaypane-new-event-button > .toolbarbutton-icon {

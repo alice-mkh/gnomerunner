@@ -16,7 +16,6 @@ menuitem:not([type]) {
 
 #viewSecurityInfo[disabled] {
   list-style-image: var(--icon-lock-secure-16-dis);
-  opacity: var(--icon-lock-secure-dis-opacity);
 }
 
 #viewCertificate {
@@ -25,7 +24,6 @@ menuitem:not([type]) {
 
 #viewCertificate[disabled] {
   list-style-image: var(--icon-application-certificate-16-dis);
-  opacity: var(--icon-application-certificate-dis-opacity);
 }
 
 #viewCertManager {
@@ -34,7 +32,6 @@ menuitem:not([type]) {
 
 #viewCertManager[disabled] {
   list-style-image: var(--icon-document-properties-16-dis);
-  opacity: var(--icon-document-properties-dis-opacity);
 }
 
 /* BMB_bookmarksPopup */
@@ -44,7 +41,6 @@ menuitem[command="Browser:AddBookmark"] {
 
 menuitem[command="Browser:AddBookmark"][disabled] {
   list-style-image: var(--icon-bookmark-new-16-dis);
-  opacity: var(--icon-bookmark-new-dis-opacity);
 }
 
 menuitem[command="Browser:ManageBookmark"] {
@@ -53,6 +49,5 @@ menuitem[command="Browser:ManageBookmark"] {
 
 menuitem[command="Browser:ManageBookmark"][disabled] {
   list-style-image: var(--icon-stock_bookmarks-16-dis);
-  opacity: var(--icon-stock_bookmarks-dis-opacity);
 }
 

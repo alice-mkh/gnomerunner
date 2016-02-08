@@ -7,6 +7,7 @@
   ======================================================================= */
 
 @import url("chrome://messenger/skin/");
+@import url("chrome://icons/skin/icon-theme-default.css");
 @import url("chrome://messenger/skin/addressbook/addressbook-menus.css");
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
@@ -20,8 +21,7 @@
 
 #button-newcard[disabled] {
   list-style-image: var(--icon-contact-new-24-dis);
-  opacity: var(--icon-contact-new-dis-opacity);
-} 
+}
 
 #button-newlist {
   list-style-image: var(--icon-stock_contact-list-24);
@@ -29,8 +29,7 @@
 
 #button-newlist[disabled] {
   list-style-image: var(--icon-stock_contact-list-24-dis);
-  opacity: var(--icon-stock_contact-list-dis-opacity);
-} 
+}
 
 #button-editcard {
   list-style-image: var(--icon-document-properties-24);
@@ -38,8 +37,7 @@
 
 #button-editcard[disabled] {
   list-style-image: var(--icon-document-properties-24-dis);
-  opacity: var(--icon-document-properties-dis-opacity);
-} 
+}
 
 #button-newmessage {
   list-style-image: var(--icon-mail-message-new-24);
@@ -47,7 +45,6 @@
 
 #button-newmessage[disabled] {
   list-style-image: var(--icon-mail-message-new-24-dis);
-  opacity: var(--icon-mail-message-new-dis-opacity);
 }
 
 #button-newim {
@@ -56,7 +53,6 @@
 
 #button-newim[disabled] {
   list-style-image: var(--icon-internet-group-chat-24-dis);
-  opacity: var(--icon-internet-group-chat-dis-opacity);
 } 
 
 #button-abdelete {
@@ -65,7 +61,6 @@
 
 #button-abdelete[disabled] {
   list-style-image: var(--icon-edit-delete-24-dis);
-  opacity: var(--icon-edit-delete-dis-opacity);
 }
 
 /* ::::: small primary toolbar buttons ::::: */
@@ -77,7 +72,6 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #button-newcard {
 
 toolbar[iconsize="small"] > #button-newcard[disabled] {
   list-style-image: var(--icon-contact-new-16-dis);
-  opacity: var(--icon-contact-new-dis-opacity);
 }
 
 toolbar[iconsize="small"] > #button-newlist,
@@ -87,7 +81,6 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #button-newlist {
 
 toolbar[iconsize="small"] > #button-newlist[disabled] {
   list-style-image: var(--icon-stock_contact-list-16-dis);
-  opacity: var(--icon-stock_contact-list-dis-opacity);
 }
 
 toolbar[iconsize="small"] > #button-editcard,
@@ -97,7 +90,6 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #button-editcard {
 
 toolbar[iconsize="small"] > #button-editcard[disabled] {
   list-style-image: var(--icon-document-properties-16-dis);
-  opacity: var(--icon-document-properties-dis-opacity);
 } 
 
 toolbar[iconsize="small"] > #button-newmessage,
@@ -107,7 +99,6 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #button-newmessage {
 
 toolbar[iconsize="small"] > #button-newmessage[disabled] {
   list-style-image: var(--icon-mail-message-new-16-dis);
-  opacity: var(--icon-mail-message-new-dis-opacity);
 }
 
 toolbar[iconsize="small"] > #button-newim,
@@ -117,7 +108,6 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #button-newim {
 
 toolbar[iconsize="small"] > #button-newim[disabled] {
   list-style-image: var(--icon-internet-group-chat-16-dis);
-  opacity: var(--icon-internet-group-chat-dis-opacity);
 } 
 
 toolbar[iconsize="small"] > #button-abdelete,
@@ -127,7 +117,6 @@ toolbar[iconsize="small"] > toolbarpaletteitem > #button-abdelete {
 
 toolbar[iconsize="small"] > #button-abdelete[disabled] {
   list-style-image: var(--icon-edit-delete-16-dis);
-  opacity: var(--icon-edit-delete-dis-opacity);
 }
 
 /* CardView styles - used in the Card View Pane */

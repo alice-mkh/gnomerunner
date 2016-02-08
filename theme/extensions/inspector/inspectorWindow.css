@@ -5,6 +5,7 @@
 @import url("chrome://inspector/skin");
 @import url("chrome://navigator/skin");
 @import url("chrome://browser/skin");
+@import url("chrome://icons/skin/icon-theme-default.css");
 
 #bxURLBar {
   padding: 2px;
@@ -38,7 +39,6 @@
 
 #btnFind[disabled="true"] {
   list-style-image: var(--icon-edit-find-24-dis);
-  opacity: var(--icon-edit-find-dis-opacity);
 }
 
 .viewer-list, .viewer-menu {

@@ -6,6 +6,8 @@
   == Styles for directory pane.
   ======================================================================= */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 /* ::::: directory pane icons ::::: */

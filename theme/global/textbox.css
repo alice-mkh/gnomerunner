@@ -6,6 +6,8 @@
   == Styles used by the XUL textbox element.
   ======================================================================= */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 @namespace html url("http://www.w3.org/1999/xhtml");
 
@@ -107,7 +109,6 @@ menuitem[cmd="cmd_undo"] {
 
 menuitem[cmd="cmd_undo"][disabled] {
   list-style-image: var(--icon-edit-undo-16-dis);
-  opacity: var(--icon-edit-undo-dis-opacity);
 }
 
 menuitem[cmd="cmd_cut"] {
@@ -116,7 +117,6 @@ menuitem[cmd="cmd_cut"] {
 
 menuitem[cmd="cmd_cut"][disabled] {
   list-style-image: var(--icon-edit-cut-16-dis);
-  opacity: var(--icon-edit-cut-dis-opacity);
 }
 
 menuitem[cmd="cmd_copy"] {
@@ -125,7 +125,6 @@ menuitem[cmd="cmd_copy"] {
 
 menuitem[cmd="cmd_copy"][disabled] {
   list-style-image: var(--icon-edit-copy-16-dis);
-  opacity: var(--icon-edit-copy-dis-opacity);
 }
 
 menuitem[cmd="cmd_paste"] {
@@ -134,7 +133,6 @@ menuitem[cmd="cmd_paste"] {
 
 menuitem[cmd="cmd_paste"][disabled] {
   list-style-image: var(--icon-edit-paste-16-dis);
-  opacity: var(--icon-edit-paste-dis-opacity);
 }
 
 menuitem[cmd="cmd_delete"] {
@@ -143,7 +141,6 @@ menuitem[cmd="cmd_delete"] {
 
 menuitem[cmd="cmd_delete"][disabled] {
   list-style-image: var(--icon-edit-delete-16-dis);
-  opacity: var(--icon-edit-delete-dis-opacity);
 }
 
 menuitem[cmd="cmd_selectAll"] {
@@ -152,6 +149,5 @@ menuitem[cmd="cmd_selectAll"] {
 
 menuitem[cmd="cmd_selectAll"][disabled] {
   list-style-image: var(--icon-edit-select-all-16-dis);
-  opacity: var(--icon-edit-select-all-dis-opacity);
 }
 

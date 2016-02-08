@@ -7,6 +7,7 @@
   ======================================================================= */
 
 @import url(chrome://communicator/skin/smileys.css);
+@import url("chrome://icons/skin/icon-theme-default.css");
 
 @namespace url("http://www.w3.org/1999/xhtml");
 

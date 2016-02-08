@@ -14,7 +14,6 @@ menuitem:not([type]) {
 
 #menu_newCard[disabled="true"] {
   list-style-image: var(--icon-contact-new-16-dis);
-  opacity: var(--icon-contact-new-dis-opacity);
 }
 
 #menu_newMessage {
@@ -23,7 +22,6 @@ menuitem:not([type]) {
 
 #menu_newMessage[disabled="true"] {
   list-style-image: var(--icon-mail-message-new-16-dis);
-  opacity: var(--icon-mail-message-new-dis-opacity);
 }
 
 #menu_sendPagee {
@@ -32,6 +30,5 @@ menuitem:not([type]) {
 
 #menu_sendPage[disabled="true"] {
   list-style-image: var(--icon-stock_mail-16-dis);
-  opacity: var(--icon-stock_mail-dis-opacity);
 }
 

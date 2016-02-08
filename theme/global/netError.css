@@ -10,6 +10,8 @@
  *  Updated by: Michael Ventnor <m.ventnor@gmail.com>
  */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 html {
   background: -moz-Dialog;
 }

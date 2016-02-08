@@ -2,6 +2,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 @import "chrome://global/skin/";
 
 /* Misc */
@@ -123,7 +125,6 @@ menuitem:not([type]) {
 
 #menu_selectall[disabled] {
   list-style-image: var(--icon-edit-select-all-16-dis);
-  opacity: var(--icon-edit-select-all-dis-opacity);
 }
 
 #menu_copy {
@@ -132,7 +133,6 @@ menuitem:not([type]) {
 
 #menu_copy[disabled] {
   list-style-image: var(--icon-edit-copy-16-dis);
-  opacity: var(--icon-edit-copy-dis-opacity);
 }
 
 /* piLinksContext menu */
@@ -142,7 +142,6 @@ menuitem:not([type]) {
 
 #menu_openInNewTab[disabled] {
   list-style-image: var(--icon-tab-new-16-dis);
-  opacity: var(--icon-tab-new-dis-opacity);
 }
 
 #menu_openInNewWindow {
@@ -151,7 +150,6 @@ menuitem:not([type]) {
 
 #menu_openInNewWindow[disabled] {
   list-style-image: var(--icon-window-new-16-dis);
-  opacity: var(--icon-window-new-dis-opacity);
 }
 
 #menu_selectall_links {
@@ -160,7 +158,6 @@ menuitem:not([type]) {
 
 #menu_selectall_links[disabled] {
   list-style-image: var(--icon-edit-select-all-16-dis);
-  opacity: var(--icon-edit-select-all-dis-opacity);
 }
 
 #menu_copyLinks {
@@ -169,6 +166,5 @@ menuitem:not([type]) {
 
 #menu_copyLinks[disabled] {
   list-style-image: var(--icon-edit-copy-16-dis);
-  opacity: var(--icon-edit-copy-dis-opacity);
 }
 

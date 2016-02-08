@@ -151,7 +151,6 @@ menuitem:not([type]) {
 
 #switch-ctx-item[disabled] {
   list-style-image: var(--icon-go-jump-16-dis);
-  opacity: var(--icon-go-jump-dis-opacity);
 }
 
 #reload-ctx-item {
@@ -160,7 +159,6 @@ menuitem:not([type]) {
 
 #reload-ctx-item[disabled] {
   list-style-image: var(--icon-view-refresh-16-dis);
-  opacity: var(--icon-view-refresh-dis-opacity);
 }
 
 #stop-ctx-item {
@@ -169,7 +167,6 @@ menuitem:not([type]) {
 
 #stop-ctx-item[disabled] {
   list-style-image: var(--icon-process-stop-16-dis);
-  opacity: var(--icon-view-refresh-dis-opacity);
 }
 
 #hide-ctx-item {
@@ -178,7 +175,6 @@ menuitem:not([type]) {
 
 #hide-ctx-item[disabled] {
   list-style-image: var(--icon-list-remove-16-dis);
-  opacity: var(--icon-list-remove-dis-opacity);
 }
 
 #customize-ctx-item,
@@ -189,5 +185,4 @@ menuitem[oncommand="SidebarCustomize();"] {
 #customize-ctx-item[disabled],
 menuitem[oncommand="SidebarCustomize();"][disabled] {
   list-style-image: var(--icon-document-properties-16-dis);
-  opacity: var(--icon-document-properties-dis-opacity);
 }

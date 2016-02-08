@@ -19,7 +19,6 @@
 
 #back-button[disabled="true"] {
   list-style-image: var(--icon-go-previous-24-dis);
-  opacity: var(--icon-go-previous-dis-opacity);
 }
 
 #back-button:-moz-locale-dir(rtl) {
@@ -28,7 +27,6 @@
 
 #back-button[disabled="true"]:-moz-locale-dir(rtl) {
   list-style-image: var(--icon-go-previous-rtl-24-dis);
-  opacity: var(--icon-go-previous-rtl-dis-opacity);
 }
 
 #forward-button {
@@ -37,7 +35,6 @@
 
 #forward-button[disabled="true"] {
   list-style-image: var(--icon-go-next-24-dis);
-  opacity: var(--icon-go-next-dis-opacity);
 }
 
 #forward-button:-moz-locale-dir(rtl) {
@@ -46,7 +43,6 @@
 
 #forward-button:-moz-locale-dir(rtl)[disabled="true"] {
   list-style-image: var(--icon-go-next-rtl-24-dis);
-  opacity: var(--icon-go-next-rtl-dis-opacity);
 }
 
 #reload-button {
@@ -55,7 +51,6 @@
 
 #reload-button[disabled="true"] {
   list-style-image: var(--icon-view-refresh-24-dis);
-  opacity: var(--icon-view-refresh-dis-opacity);
 }
 
 #stop-button {
@@ -64,7 +59,6 @@
 
 #stop-button[disabled="true"] {
   list-style-image: var(--icon-process-stop-24-dis);
-  opacity: var(--icon-process-stop-dis-opacity);
 }
 
 #home-button {
@@ -73,7 +67,6 @@
 
 #home-button[disabled="true"] {
   list-style-image: var(--icon-go-home-24-dis);
-  opacity: var(--icon-go-home-dis-opacity);
 }
 
 #sync-button {
@@ -442,7 +435,6 @@ toolbar[mode="text"] > #window-controls > toolbarbutton > .toolbarbutton-icon {
 #page-proxy-button[pageproxystate="invalid"] {
   cursor: default;
   list-style-image: var(--icon-text-x-generic-16-dis);
-  opacity: var(--icon-text-x-generic-dis-opacity);
 }
 
 /* ::::: autocomplete ::::: */
@@ -669,13 +661,11 @@ toolbarbutton.chevron > .toolbarbutton-text {
 
 #star-button {
   list-style-image: var(--icon-bookmark-new-16-dis);
-  opacity: var(--icon-bookmark-new-dis-opacity);
 }
 
 #star-button[starred="true"],
 #editBookmarkPanelStarIcon {
   list-style-image: var(--icon-bookmark-new-16);
-  opacity: 1;
 }
 
 /* ::::: feeds ::::: */
@@ -686,7 +676,6 @@ toolbarbutton.chevron > .toolbarbutton-text {
 
 .feedsMenu[disabled="true"] {
   list-style-image: var(--icon-application-rss-xml-16-dis);
-  opacity: var(--icon-application-rss-xml-dis-opacity);
 }
 
 #feedsButton {

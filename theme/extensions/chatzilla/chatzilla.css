@@ -3,6 +3,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 @import url(chrome://communicator/skin/);
+@import url("chrome://icons/skin/icon-theme-default.css");
 
 window {
     width: 640px;

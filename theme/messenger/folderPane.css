@@ -6,6 +6,8 @@
   == Styles for the Folder pane in the Messenger 3-pane window.
   ======================================================================= */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 /* ::::: mail folder ::::: */

@@ -6,6 +6,8 @@
    == Styles used by the Error Console window.
    ====================================================================== */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 .console-box {

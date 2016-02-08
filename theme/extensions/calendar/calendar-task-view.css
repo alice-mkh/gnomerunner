@@ -44,7 +44,6 @@
 
 #calendar-add-task-button[disabled="true"] > .toolbarbutton-icon {
   list-style-image: var(--icon-stock_task-16-dis);
-  opacity: var(--icon-stock_task-dis-opacity);
 }
 
 #calendar-add-task-button > .toolbarbutton-icon {

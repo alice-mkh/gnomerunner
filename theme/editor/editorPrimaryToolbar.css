@@ -14,7 +14,6 @@
 
 #newButton[disabled="true"] {
   list-style-image: var(--icon-document-new-24-dis);
-  opacity: var(--icon-document-new-dis-opacity);
 }
 
 #openButton {
@@ -23,7 +22,6 @@
 
 #openButton[disabled="true"] {
   list-style-image: var(--icon-document-open-24-dis);
-  opacity: var(--icon-document-open-dis-opacity);
 }
 
 #saveButton {
@@ -32,7 +30,6 @@
 
 #saveButton[disabled="true"] {
   list-style-image: var(--icon-document-save-24-dis);
-  opacity: var(--icon-document-save-dis-opacity);
 }
 
 #publishButton {
@@ -41,7 +38,6 @@
 
 #publishButton[disabled="true"] {
   list-style-image: var(--icon-network-idle-24-dis);
-  opacity: var(--icon-network-idle-dis-opacity);
 }
 
 #previewButton {
@@ -50,7 +46,6 @@
 
 #previewButton[disabled="true"] {
   list-style-image: var(--icon-internet-web-browser-24-dis);
-  opacity: var(--icon-internet-web-browser-dis-opacity);
 }
 
 #linkButton {
@@ -59,7 +54,6 @@
 
 #linkButton[disabled="true"] {
   list-style-image: var(--icon-insert-link-24-dis);
-  opacity: var(--icon-insert-link-dis-opacity);
 }
 
 #imageButton {
@@ -68,7 +62,6 @@
 
 #imageButton[disabled="true"] {
   list-style-image: var(--icon-insert-image-24-dis);
-  opacity: var(--icon-insert-image-dis-opacity);
 }
 
 #namedAnchorButton {
@@ -89,7 +82,6 @@
 
 #spellingButton[disabled="true"] {
   list-style-image: var(--icon-tools-check-spelling-24-dis);
-  opacity: var(--icon-tools-check-spelling-dis-opacity);
 }
 
 #cutButton {
@@ -98,7 +90,6 @@
 
 #cutButton[disabled="true"] {
   list-style-image: var(--icon-edit-cut-24-dis);
-  opacity: var(--icon-edit-cut-dis-opacity);
 }
 
 #copyButton {
@@ -107,7 +98,6 @@
 
 #copyButton[disabled="true"] {
   list-style-image: var(--icon-edit-copy-24-dis);
-  opacity: var(--icon-edit-copy-dis-opacity);
 }
 
 #pasteButton {
@@ -116,7 +106,6 @@
 
 #pasteButton[disabled="true"] {
   list-style-image: var(--icon-edit-paste-24-dis);
-  opacity: var(--icon-edit-paste-dis-opacity);
 }
 
 #findButton {
@@ -125,5 +114,4 @@
 
 #findButton[disabled="true"] {
   list-style-image: var(--icon-edit-find-24-dis);
-  opacity: var(--icon-edit-find-dis-opacity);
 }

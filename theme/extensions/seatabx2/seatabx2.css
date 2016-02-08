@@ -1,5 +1,7 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 /* undo the fix for the skinny alltabs button. It is not skinny here, and it becomes too fat */
 .tabs-alltabs-button > .toolbarbutton-menu-dropmarker {
   margin-left: 0px !important;

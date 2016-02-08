@@ -2,6 +2,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 #downloadManager {
   background-color: ThreeDFace;
 }
@@ -60,7 +62,6 @@ menuitem:not([type]) {
 }
 #menuitem_open[disabled="true"] {
   list-style-image: var(--icon-document-open-16-dis);
-  opacity: var(--icon-document-open-dis-opacity);
 }
 
 .pause,
@@ -71,7 +72,6 @@ menuitem:not([type]) {
 .pause[disabled="true"],
 #menuitem_pause[disabled="true"] {
   list-style-image: var(--icon-media-playback-pause-16-dis);
-  opacity: var(--icon-media-playback-pause-dis-opacity);
 }
 
 .resume,
@@ -111,5 +111,4 @@ menuitem:not([type]) {
 
 #clearListButton[disabled="true"] {
   list-style-image: var(--icon-edit-clear-22-dis);
-  opacity: var(--icon-edit-clear-dis-opacity);
 }

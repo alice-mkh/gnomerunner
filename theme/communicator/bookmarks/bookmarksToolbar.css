@@ -50,12 +50,10 @@ toolbarbutton.bookmark-item[disabled="true"] {
   cursor: default !important;
   text-decoration: none !important;
   list-style-image: var(--icon-text-x-generic-16-dis);
-  opacity: var(--icon-text-x-generic-dis-opacity);
 }
 
 toolbarbutton.bookmark-item[disabled="true"][container="true"] {
   list-style-image: var(--icon-stock_folder-16-dis);
-  opacity: var(--icon-folder-dis-opacity);
 }
 
 .bookmark-item > .toolbarbutton-icon {
@@ -93,17 +91,14 @@ menuitem.bookmark-item {
 
 .bookmark-group {
   list-style-image: var(--icon-edit-copy-16-dis) !important;
-  opacity: var(--icon-edit-copy-dis-opacity);
 }
 
 .menuitem-iconic.bookmark-item[disabled="true"] {
   list-style-image: var(--icon-text-x-generic-16-dis);
-  opacity: var(--icon-text-x-generic-dis-opacity);
 }
 
 .menu-iconic.bookmark-item[disabled="true"][container="true"] {
   list-style-image: var(--icon-stock_folder-16-dis);
-  opacity: var(--icon-folder-dis-opacity);
 }
 
 /* ..... drag and drop styles ..... */

@@ -6,6 +6,8 @@
    == Styles used by all preference panels in the Communicator suite.
    ====================================================================== */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 /* ::::: Fonts ::::: */

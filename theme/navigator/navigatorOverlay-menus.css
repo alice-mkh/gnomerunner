@@ -14,7 +14,6 @@ menuitem:not([type]) {
 
 #menu_newNavigatorTab[disabled] {
   list-style-image: var(--icon-tab-new-16-dis);
-  opacity: var(--icon-tab-new-dis-opacity);
 }
 
 #menu_openLocation {
@@ -23,7 +22,6 @@ menuitem:not([type]) {
 
 #menu_openLocation[disabled] {
   list-style-image: var(--icon-text-html-16-dis);
-  opacity: var(--icon-text-html-dis-opacity);
 }
 
 #menu_openFile {
@@ -32,7 +30,6 @@ menuitem:not([type]) {
 
 #menu_openFile[disabled] {
   list-style-image: var(--icon-document-open-16-dis);
-  opacity: var(--icon-document-open-dis-opacity);
 }
 
 #savepage,
@@ -43,7 +40,6 @@ menuitem:not([type]) {
 #savepage[disabled],
 #saveframe[disabled] {
   list-style-image: var(--icon-document-save-as-16-dis);
-  opacity: var(--icon-document-save-as-dis-opacity);
 }
 
 menuitem[command="Browser:EditPage"] {
@@ -52,7 +48,6 @@ menuitem[command="Browser:EditPage"] {
 
 menuitem[command="Browser:EditPage"][disabled] {
   list-style-image: var(--icon-gtk-edit-16-dis);
-  opacity: var(--icon-gtk-edit-dis-opacity);
 }
 
 #menu_preferences {
@@ -61,7 +56,6 @@ menuitem[command="Browser:EditPage"][disabled] {
 
 #menu_preferences[disabled] {
   list-style-image: var(--icon-preferences-desktop-16-dis);
-  opacity: var(--icon-preferences-desktop-dis-opacity);
 }
 
 #menuitem_fullScreen {
@@ -70,7 +64,6 @@ menuitem[command="Browser:EditPage"][disabled] {
 
 #menuitem_fullScreen[disabled] {
   list-style-image: var(--icon-view-fullscreen-16-dis);
-  opacity: var(--icon-view-fullscreen-dis-opacity);
 }
 
 #menuitem-stop {
@@ -79,7 +72,6 @@ menuitem[command="Browser:EditPage"][disabled] {
 
 #menuitem-stop[disabled] {
   list-style-image: var(--icon-process-stop-16-dis);
-  opacity: var(--icon-process-stop-dis-opacity);
 }
 
 #menuitem_reload {
@@ -88,7 +80,6 @@ menuitem[command="Browser:EditPage"][disabled] {
 
 #menuitem_reload[disabled] {
   list-style-image: var(--icon-view-refresh-16-dis);
-  opacity: var(--icon-view-refresh-dis-opacity);
 }
 
 #menuitem_pageInfoCmd {
@@ -97,7 +88,6 @@ menuitem[command="Browser:EditPage"][disabled] {
 
 #menuitem_pageInfoCmd[disabled] {
   list-style-image: var(--icon-document-properties-16-dis);
-  opacity: var(--icon-document-properties-dis-opacity);
 }
 
 #historyMenuBack {
@@ -106,7 +96,6 @@ menuitem[command="Browser:EditPage"][disabled] {
 
 #historyMenuBack[disabled] {
   list-style-image: var(--icon-go-previous-16-dis);
-  opacity: var(--icon-go-previous-dis-opacity);
 }
 
 #historyMenuForward {
@@ -115,7 +104,6 @@ menuitem[command="Browser:EditPage"][disabled] {
 
 #historyMenuForward[disabled] {
   list-style-image: var(--icon-go-next-16-dis);
-  opacity: var(--icon-go-next-dis-opacity);
 }
 
 #historyMenuUp {
@@ -124,7 +112,6 @@ menuitem[command="Browser:EditPage"][disabled] {
 
 #historyMenuUp[disabled] {
   list-style-image: var(--icon-go-up-16-dis);
-  opacity: var(--icon-go-up-dis-opacity);
 }
 
 #historyMenuHome {
@@ -133,7 +120,6 @@ menuitem[command="Browser:EditPage"][disabled] {
 
 #historyMenuHome[disabled] {
   list-style-image: var(--icon-go-home-16-dis);
-  opacity: var(--icon-go-home-dis-opacity);
 }
 
 #historyRestoreLastSession {
@@ -142,7 +128,6 @@ menuitem[command="Browser:EditPage"][disabled] {
 
 #historyRestoreLastSession[disabled] {
   list-style-image: var(--icon-document-revert-16-dis);
-  opacity: var(--icon-document-revert-dis-opacity);
 }
 
 #menu_showAllHistory {
@@ -151,7 +136,6 @@ menuitem[command="Browser:EditPage"][disabled] {
 
 #menu_showAllHistory[disabled] {
   list-style-image: var(--icon-stock_history-16-dis);
-  opacity: var(--icon-stock_history-dis-opacity);
 }
 
 #sync-tabs-menuitem {
@@ -164,7 +148,6 @@ menuitem[command="Browser:EditPage"][disabled] {
 
 #menu_searchWeb[disabled] {
   list-style-image: var(--icon-edit-find-16-dis);
-  opacity: var(--icon-edit-find-dis-opacity);
 }
 
 #sanitizeItem {
@@ -173,7 +156,6 @@ menuitem[command="Browser:EditPage"][disabled] {
 
 #sanitizeItem[disabled] {
   list-style-image: var(--icon-edit-clear-16-dis);
-  opacity: var(--icon-edit-clear-dis-opacity);
 }
 
 

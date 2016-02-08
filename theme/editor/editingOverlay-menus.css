@@ -14,7 +14,6 @@ menuitem:not([type]) {
 
 #menu_openRemote[disabled] {
   list-style-image: var(--icon-text-html-16-dis);
-  opacity: var(--icon-text-html-dis-opacity);
 }
 
 #menu_openFile {
@@ -23,7 +22,6 @@ menuitem:not([type]) {
 
 #menu_openFile[disabled] {
   list-style-image: var(--icon-document-open-16-dis);
-  opacity: var(--icon-document-open-dis-opacity);
 }
 
 #menu_RecentFiles {
@@ -33,7 +31,6 @@ menuitem:not([type]) {
 
 #menu_RecentFiles[disabled] {
   list-style-image: var(--icon-document-open-recent-16-dis);
-  opacity: var(--icon-document-open-recent-dis-opacity);
 }
 
 #menu_saveCmd {
@@ -42,7 +39,6 @@ menuitem:not([type]) {
 
 #menu_saveCmd[disabled] {
   list-style-image: var(--icon-document-save-16-dis);
-  opacity: var(--icon-document-save-dis-opacity);
 }
 
 #menu_saveAsCmd {
@@ -51,7 +47,6 @@ menuitem:not([type]) {
 
 #menu_saveAsCmd[disabled] {
   list-style-image: var(--icon-document-save-as-16-dis);
-  opacity: var(--icon-document-save-as-dis-opacity);
 }
 
 #menu_publish {
@@ -60,7 +55,6 @@ menuitem:not([type]) {
 
 #menu_publish[disabled] {
   list-style-image: var(--icon-network-idle-16-dis);
-  opacity: var(--icon-network-idle-dis-opacity);
 }
 
 #menu_fileRevert {
@@ -69,7 +63,6 @@ menuitem:not([type]) {
 
 #menu_fileRevert[disabled] {
   list-style-image: var(--icon-document-revert-16-dis);
-  opacity: var(--icon-document-revert-dis-opacity);
 }
 
 

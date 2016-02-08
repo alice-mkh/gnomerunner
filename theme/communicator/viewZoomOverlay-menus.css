@@ -14,7 +14,6 @@ menuitem:not([type]) {
 
 #menu_zoomReduce[disabled] {
   list-style-image: var(--icon-zoom-out-16-dis);
-  opacity: var(--icon-zoom-out-dis-opacity);
 }
 
 #menu_zoomEnlarge {
@@ -23,5 +22,4 @@ menuitem:not([type]) {
 
 #menu_zoomEnlarge[disabled] {
   list-style-image: var(--icon-zoom-in-16-dis);
-  opacity: var(--icon-zoom-in-dis-opacity);
 }

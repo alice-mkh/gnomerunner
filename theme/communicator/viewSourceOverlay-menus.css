@@ -14,5 +14,4 @@ menuitem:not([type]) {
 
 #menu_editPage[disabled] {
   list-style-image: var(--icon-gtk-edit-16-dis);
-  opacity: var(--icon-gtk-edit-dis-opacity);
 }

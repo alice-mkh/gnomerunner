@@ -14,7 +14,6 @@ menuitem:not([type]) {
 
 #createLink_cm[disabled] {
   list-style-image: var(--icon-insert-link-16-dis);
-  opacity: var(--icon-insert-link-dis-opacity);
 }
 
 #objectProperties_cm {
@@ -23,7 +22,6 @@ menuitem:not([type]) {
 
 #objectProperties_cm[disabled] {
   list-style-image: var(--icon-document-properties-16-dis);
-  opacity: var(--icon-document-properties-dis-opacity);
 }
 
 #editLink_cm {
@@ -32,7 +30,6 @@ menuitem:not([type]) {
 
 #editLink_cm[disabled] {
   list-style-image: var(--icon-gtk-edit-16-dis);
-  opacity: var(--icon-gtk-edit-dis-opacity);
 }
 
 

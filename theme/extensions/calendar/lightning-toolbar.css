@@ -2,6 +2,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 /* Lightning "Calendar" Toolbarbutton */
 
 #lightning-button-calendar {
@@ -20,7 +22,6 @@
 #calendar-synchronize-button[disabled="true"],
 #task-synchronize-button[disabled="true"] {
   list-style-image: var(--icon-view-refresh-24-dis);
-  opacity: var(--icon-view-refresh-dis-opacity);
 }
 
 #extractEventButton,
@@ -35,7 +36,6 @@
 #hdrExtractEventButton[disabled="true"],
 #calendar-newevent-button[disabled="true"] {
   list-style-image: var(--icon-appointment-new-24-dis);
-  opacity: var(--icon-appoitment-new-dis-opacity);
 }
 
 #extractTaskButton,
@@ -50,7 +50,6 @@
 #hdrExtractTaskButton[disabled="true"],
 #calendar-newtask-button[disabled="true"] {
   list-style-image: var(--icon-stock_task-24-dis);
-  opacity: var(--icon-stock_task-dis-opacity);
 }
 
 #calendar-edit-button,
@@ -61,7 +60,6 @@
 #calendar-edit-button[disabled="true"],
 #task-edit-button[disabled="true"] {
   list-style-image: var(--icon-gtk-edit-24-dis);
-  opacity: var(--icon-gtk-edit-dis-opacity);
 }
 
 #calendar-delete-button,
@@ -72,7 +70,6 @@
 #calendar-delete-button[disabled="true"],
 #task-delete-button[disabled="true"] {
   list-style-image: var(--icon-edit-delete-24-dis);
-  opacity: var(--icon-edit-delete-dis-opacity);
 }
 
 #calendar-goto-today-button {
@@ -81,7 +78,6 @@
 
 #calendar-goto-today-button[disabled="true"] {
   list-style-image: var(--icon-go-today-24-dis);
-  opacity: var(--icon-go-today-dis-opacity);
 }
 
 #calendar-print-button,
@@ -92,7 +88,6 @@
 #calendar-print-button[disabled="true"],
 #task-print-button[disabled="true"] {
   list-style-image: var(--icon-document-print-24-dis);
-  opacity: var(--icon-document-print-dis-opacity);
 }
 
 #calendar-unifinder-button {
@@ -101,7 +96,6 @@
 
 #calendar-unifinder-button[disabled="true"] {
   list-style-image: var(--icon-edit-find-24-dis);
-  opacity: var(--icon-edit-find-dis-opacity);
 }
 
 toolbar[iconsize="small"] #lightning-button-calendar {
@@ -120,7 +114,6 @@ toolbar[iconsize="small"] #task-synchronize-button {
 toolbar[iconsize="small"] #calendar-synchronize-button[disabled="true"],
 toolbar[iconsize="small"] #task-synchronize-button[disabled="true"] {
   list-style-image: var(--icon-view-refresh-16-dis);
-  opacity: var(--icon-view-refresh-dis-opacity);
 }
 
 toolbar[iconsize="small"] #extractEventButton,
@@ -135,7 +128,6 @@ toolbar[iconsize="small"] #task-newevent-button[disabled="true"],
 toolbar[iconsize="small"] #hdrExtractEventButton[disabled="true"],
 toolbar[iconsize="small"] #calendar-newevent-button[disabled="true"] {
   list-style-image: var(--icon-appointment-new-16-dis);
-  opacity: var(--icon-appoitment-new-dis-opacity);
 }
 
 toolbar[iconsize="small"] #extractTaskButton,
@@ -150,7 +142,6 @@ toolbar[iconsize="small"] #task-newtask-button[disabled="true"],
 toolbar[iconsize="small"] #hdrExtractTaskButton[disabled="true"],
 toolbar[iconsize="small"] #calendar-newtask-button[disabled="true"] {
   list-style-image: var(--icon-stock_task-16-dis);
-  opacity: var(--icon-stock_task-dis-opacity);
 }
 
 toolbar[iconsize="small"] #calendar-edit-button,
@@ -161,7 +152,6 @@ toolbar[iconsize="small"] #task-edit-button {
 toolbar[iconsize="small"] #calendar-edit-button[disabled="true"],
 toolbar[iconsize="small"] #task-edit-button[disabled="true"] {
   list-style-image: var(--icon-gtk-edit-16-dis);
-  opacity: var(--icon-gtk-edit-dis-opacity);
 }
 
 toolbar[iconsize="small"] #calendar-delete-button,
@@ -172,7 +162,6 @@ toolbar[iconsize="small"] #task-delete-button {
 toolbar[iconsize="small"] #calendar-delete-button[disabled="true"],
 toolbar[iconsize="small"] #task-delete-button[disabled="true"] {
   list-style-image: var(--icon-edit-delete-16-dis);
-  opacity: var(--icon-edit-delete-dis-opacity);
 }
 
 toolbar[iconsize="small"] #calendar-goto-today-button {
@@ -181,7 +170,6 @@ toolbar[iconsize="small"] #calendar-goto-today-button {
 
 toolbar[iconsize="small"] #calendar-goto-today-button[disabled="true"] {
   list-style-image: var(--icon-go-today-16-dis);
-  opacity: var(--icon-go-today-dis-opacity);
 }
 
 toolbar[iconsize="small"] #calendar-print-button,
@@ -192,7 +180,6 @@ toolbar[iconsize="small"] #task-print-button {
 toolbar[iconsize="small"] #calendar-print-button[disabled="true"],
 toolbar[iconsize="small"] #task-print-button[disabled="true"] {
   list-style-image: var(--icon-document-print-16-dis);
-  opacity: var(--icon-document-print-dis-opacity);
 }
 
 toolbar[iconsize="small"] #calendar-unifinder-button {
@@ -201,6 +188,5 @@ toolbar[iconsize="small"] #calendar-unifinder-button {
 
 toolbar[iconsize="small"] #calendar-unifinder-button[disabled="true"] {
   list-style-image: var(--icon-edit-find-16-dis);
-  opacity: var(--icon-edit-find-dis-opacity);
 }
 

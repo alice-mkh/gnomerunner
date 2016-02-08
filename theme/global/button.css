@@ -6,6 +6,8 @@
   == Styles used by the XUL button element.
   ======================================================================= */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 /* :::::::::: button :::::::::: */
@@ -155,227 +157,202 @@ button[type="disclosure"][open="true"] {
  * GNOME Stock Icon Styles
  */
 
-button[icon="accept"] .button-icon {
+button[icon="accept"] {
   list-style-image: var(--icon-gtk-ok-22);
 }
 
-button[icon="accept"][disabled="true"] .button-icon {
+button[icon="accept"][disabled="true"] {
   list-style-image: var(--icon-gtk-ok-22-dis);
-  opacity: var(--icon-gtk-ok-dis-opacity);
 }
 
-button[icon="cancel"] .button-icon {
+button[icon="cancel"] {
   list-style-image: var(--icon-gtk-cancel-22);
 }
 
-button[icon="cancel"][disabled="true"] .button-icon {
+button[icon="cancel"][disabled="true"] {
   list-style-image: var(--icon-gtk-cancel-22-dis);
-  opacity: var(--icon-gtk-cancel-dis-opacity);
 }
 
-button[icon="help"] .button-icon {
+button[icon="help"] {
   list-style-image: var(--icon-help-contents-22);
 }
 
-button[icon="help"][disabled="true"] .button-icon {
+button[icon="help"][disabled="true"] {
   list-style-image: var(--icon-help-contents-22-dis);
-  opacity: var(--icon-document-open-dis-opacity);
 }
 
-button[icon="open"] .button-icon {
+button[icon="open"] {
   list-style-image: var(--icon-document-open-22);
 }
 
-button[icon="open"][disabled="true"] .button-icon {
+button[icon="open"][disabled="true"] {
   list-style-image: var(--icon-document-open-22-dis);
-  opacity: var(--icon-document-open-dis-opacity);
 }
 
-button[icon="save"] .button-icon {
+button[icon="save"] {
   list-style-image: var(--icon-document-save-22);
 }
 
-button[icon="save"][disabled="true"] .button-icon {
+button[icon="save"][disabled="true"] {
   list-style-image: var(--icon-document-save-22-dis);
-  opacity: var(--icon-document-save-dis-opacity);
 }
 
-button[icon="find"] .button-icon {
+button[icon="find"] {
   list-style-image: var(--icon-edit-find-22);
 }
 
-button[icon="find"][disabled="true"] .button-icon {
+button[icon="find"][disabled="true"] {
   list-style-image: var(--icon-edit-find-22-dis);
-  opacity: var(--icon-edit-find-dis-opacity);
 }
 
-button[icon="clear"] .button-icon {
+button[icon="clear"] {
   list-style-image: var(--icon-edit-clear-22);
 }
 
-button[icon="clear"][disabled="true"] .button-icon {
+button[icon="clear"][disabled="true"] {
   list-style-image: var(--icon-edit-clear-22-dis);
-  opacity: var(--icon-edit-clear-dis-opacity);
 }
 
-button[icon="yes"] .button-icon {
+button[icon="yes"] {
   list-style-image: var(--icon-gtk-yes-22);
 }
 
-button[icon="yes"][disabled="true"] .button-icon {
+button[icon="yes"][disabled="true"] {
   list-style-image: var(--icon-gtk-yes-22-dis);
-  opacity: var(--icon-gtk-yes-dis-opacity);
 }
 
-button[icon="no"] .button-icon {
+button[icon="no"] {
   list-style-image: var(--icon-gtk-no-22);
 }
 
-button[icon="no"][disabled="true"] .button-icon {
+button[icon="no"][disabled="true"] {
   list-style-image: var(--icon-gtk-no-22-dis);
-  opacity: var(--icon-gtk-no-dis-opacity);
 }
 
-button[icon="apply"] .button-icon {
+button[icon="apply"] {
   list-style-image: var(--icon-gtk-apply-22);
 }
 
-button[icon="apply"][disabled="true"] .button-icon {
+button[icon="apply"][disabled="true"] {
   list-style-image: var(--icon-gtk-apply-22-dis);
-  opacity: var(--icon-gtk-apply-dis-opacity);
 }
 
-button[icon="close"] .button-icon {
+button[icon="close"] {
   list-style-image: var(--icon-window-close-22);
 }
 
-button[icon="close"][disabled="true"] .button-icon {
+button[icon="close"][disabled="true"] {
   list-style-image: var(--icon-window-close-22-dis);
-  opacity: var(--icon-window-close-dis-opacity);
 }
 
-button[icon="print"] .button-icon {
+button[icon="print"] {
   list-style-image: var(--icon-document-print-22);
 }
 
-button[icon="print"][disabled="true"] .button-icon {
+button[icon="print"][disabled="true"] {
   list-style-image: var(--icon-document-print-22-dis);
-  opacity: var(--icon-document-print-dis-opacity);
 }
 
-button[icon="add"] .button-icon {
+button[icon="add"] {
   list-style-image: var(--icon-list-add-22);
 }
 
-button[icon="add"][disabled="true"] .button-icon {
+button[icon="add"][disabled="true"] {
   list-style-image: var(--icon-list-add-22-dis);
-  opacity: var(--icon-list-add-dis-opacity);
 }
 
-button[icon="remove"] .button-icon {
+button[icon="remove"] {
   list-style-image: var(--icon-list-remove-22);
 }
 
-button[icon="remove"][disabled="true"] .button-icon {
+button[icon="remove"][disabled="true"] {
   list-style-image: var(--icon-list-remove-22-dis);
-  opacity: var(--icon-list-remove-dis-opacity);
 }
 
-button[icon="refresh"] .button-icon {
+button[icon="refresh"] {
   list-style-image: var(--icon-view-refresh-22);
 }
 
-button[icon="refresh"][disabled="true"] .button-icon {
+button[icon="refresh"][disabled="true"] {
   list-style-image: var(--icon-view-refresh-22-dis);
-  opacity: var(--icon-view-refresh-dis-opacity);
 }
 
-button[icon="revert"] .button-icon {
+button[icon="revert"] {
   list-style-image: var(--icon-document-revert-22);
 }
 
-button[icon="revert"][disabled="true"] .button-icon {
+button[icon="revert"][disabled="true"] {
   list-style-image: var(--icon-document-revert-22-dis);
-  opacity: var(--icon-document-revert-dis-opacity);
 }
 
-button[icon="revert"]:-moz-locale-dir(rtl) .button-icon {
+button[icon="revert"]:-moz-locale-dir(rtl) {
   list-style-image: var(--icon-document-revert-rtl-22);
 }
 
-button[icon="revert"]:-moz-locale-dir(rtl)[disabled="true"] .button-icon {
+button[icon="revert"]:-moz-locale-dir(rtl)[disabled="true"] {
   list-style-image: var(--icon-document-revert-rtl-22-dis);
-  opacity: var(--icon-document-revert-rtl-dis-opacity);
 }
 
-button[icon="go-forward"] .button-icon {
+button[icon="go-forward"] {
   list-style-image: var(--icon-go-next-22);
 }
 
-button[icon="go-forward"][disabled="true"] .button-icon {
+button[icon="go-forward"][disabled="true"] {
   list-style-image: var(--icon-go-next-22-dis);
-  opacity: var(--icon-go-next-dis-opacity);
 }
 
-button[icon="go-forward"]:-moz-locale-dir(rtl) .button-icon {
+button[icon="go-forward"]:-moz-locale-dir(rtl) {
   list-style-image: var(--icon-go-next-rtl-22);
 }
 
-button[icon="go-forward"]:-moz-locale-dir(rtl)[disabled="true"] .button-icon {
+button[icon="go-forward"]:-moz-locale-dir(rtl)[disabled="true"] {
   list-style-image: var(--icon-go-next-rtl-22-dis);
-  opacity: var(--icon-go-next-rtl-dis-opacity);
 }
 
-button[icon="go-back"] .button-icon {
+button[icon="go-back"] {
   list-style-image: var(--icon-go-previous-22);
 }
 
-button[icon="go-back"][disabled="true"] .button-icon {
+button[icon="go-back"][disabled="true"] {
   list-style-image: var(--icon-go-previous-22-dis);
-  opacity: var(--icon-go-previous-dis-opacity);
 }
 
-button[icon="go-back"]:-moz-locale-dir(rtl) .button-icon {
+button[icon="go-back"]:-moz-locale-dir(rtl) {
   list-style-image: var(--icon-go-previous-rtl-22);
 }
 
-button[icon="go-back"]:-moz-locale-dir(rtl)[disabled="true"] .button-icon {
+button[icon="go-back"]:-moz-locale-dir(rtl)[disabled="true"] {
   list-style-image: var(--icon-go-previous-rtl-22-dis);
-  opacity: var(--icon-go-previous-rtl-dis-opacity);
 }
 
-button[icon="properties"] .button-icon {
+button[icon="properties"] {
   list-style-image: var(--icon-document-properties-22);
 }
 
-button[icon="properties"][disabled="true"] .button-icon {
+button[icon="properties"][disabled="true"] {
   list-style-image: var(--icon-document-properties-22-dis);
-  opacity: var(--icon-document-properties-dis-opacity);
 }
 
-button[icon="select-font"] .button-icon {
+button[icon="select-font"] {
   list-style-image: var(--icon-gtk-select-font-22);
 }
 
-button[icon="select-font"][disabled="true"] .button-icon {
+button[icon="select-font"][disabled="true"] {
   list-style-image: var(--icon-gtk-select-font-22-dis);
-  opacity: var(--icon-gtk-select-font-dis-opacity);
 }
 
-button[icon="select-color"] .button-icon {
+button[icon="select-color"] {
   list-style-image: var(--icon-gtk-color-picker-22);
 }
 
-button[icon="select-color"][disabled="true"] .button-icon {
+button[icon="select-color"][disabled="true"] {
   list-style-image: var(--icon-gtk-color-picker-22-dis);
-  opacity: var(--icon-gtk-color-picker-dis-opacity);
 }
 
-button[icon="network"] .button-icon {
+button[icon="network"] {
   list-style-image: var(--icon-network-idle-22);
 }
 
-button[icon="network"][disabled="true"] .button-icon {
+button[icon="network"][disabled="true"] {
   list-style-image: var(--icon-network-idle-22-dis);
-  opacity: var(--icon-network-idle-dis-opacity);
 }

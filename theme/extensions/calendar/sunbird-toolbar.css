@@ -2,6 +2,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 /*--------------------------------------------------------------------
  *   Cut button
  *-------------------------------------------------------------------*/
@@ -12,7 +14,6 @@
 
 #calendar-cut-button[disabled="true"] {
     list-style-image: var(--icon-edit-cut-24-dis);
-    opacity: var(--icon-edit-cut-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -25,7 +26,6 @@ toolbar[iconsize="small"] #calendar-cut-button {
 
 toolbar[iconsize="small"] #calendar-cut-button[disabled="true"] {
     list-style-image: var(--icon-edit-cut-16-dis);
-    opacity: var(--icon-edit-cut-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -38,7 +38,6 @@ toolbar[iconsize="small"] #calendar-cut-button[disabled="true"] {
 
 #calendar-copy-button[disabled="true"] {
     list-style-image: var(--icon-edit-copy-24-dis);
-    opacity: var(--icon-edit-copy-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -51,7 +50,6 @@ toolbar[iconsize="small"] #calendar-copy-button {
 
 toolbar[iconsize="small"] #calendar-copy-button[disabled="true"] {
     list-style-image: var(--icon-edit-copy-16-dis);
-    opacity: var(--icon-edit-copy-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -64,7 +62,6 @@ toolbar[iconsize="small"] #calendar-copy-button[disabled="true"] {
 
 #calendar-paste-button[disabled="true"] {
     list-style-image: var(--icon-edit-paste-24-dis);
-    opacity: var(--icon-edit-paste-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -77,7 +74,6 @@ toolbar[iconsize="small"] #calendar-paste-button {
 
 toolbar[iconsize="small"] #calendar-paste-button[disabled="true"] {
     list-style-image: var(--icon-edit-paste-16-dis);
-    opacity: var(--icon-edit-paste-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -90,7 +86,6 @@ toolbar[iconsize="small"] #calendar-paste-button[disabled="true"] {
 
 #calendar-choose-date-button[disabled="true"] {
     list-style-image: var(--icon-go-jump-24-dis);
-    opacity: var(--icon-go-jump-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -103,7 +98,6 @@ toolbar[iconsize="small"] #calendar-choose-date-button {
 
 toolbar[iconsize="small"] #calendar-choose-date-button[disabled="true"] {
     list-style-image: var(--icon-go-jump-16-dis);
-    opacity: var(--icon-go-jump-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -116,7 +110,6 @@ toolbar[iconsize="small"] #calendar-choose-date-button[disabled="true"] {
 
 #calendar-delete-button[disabled="true"] {
     list-style-image: var(--icon-edit-delete-24-dis);
-    opacity: var(--icon-edit-delete-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -129,7 +122,6 @@ toolbar[iconsize="small"] #calendar-delete-button {
 
 toolbar[iconsize="small"] #calendar-delete-button[disabled="true"] {
     list-style-image: var(--icon-edit-delete-16-dis);
-    opacity: var(--icon-edit-delete-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -142,7 +134,6 @@ toolbar[iconsize="small"] #calendar-delete-button[disabled="true"] {
 
 #calendar-print-button[disabled="true"] {
     list-style-image: var(--icon-document-print-24-dis);
-    opacity: var(--icon-document-print-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -155,7 +146,6 @@ toolbar[iconsize="small"] #calendar-print-button {
 
 toolbar[iconsize="small"] #calendar-print-button[disabled="true"] {
     list-style-image: var(--icon-document-print-16-dis);
-    opacity: var(--icon-document-print-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -168,7 +158,6 @@ toolbar[iconsize="small"] #calendar-print-button[disabled="true"] {
 
 #calendar-go-to-today-button[disabled="true"] {
     list-style-image: var(--icon-go-today-24-dis);
-    opacity: var(--icon-go-today-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -181,7 +170,6 @@ toolbar[iconsize="small"] #calendar-go-to-today-button {
 
 toolbar[iconsize="small"] #calendar-go-to-today-button[disabled="true"] {
     list-style-image: var(--icon-go-today-16-dis);
-    opacity: var(--icon-go-today-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -194,7 +182,6 @@ toolbar[iconsize="small"] #calendar-go-to-today-button[disabled="true"] {
 
 #calendar-remote-reload-button[disabled="true"] {
     list-style-image: var(--icon-view-refresh-24-dis);
-    opacity: var(--icon-view-refresh-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -207,7 +194,6 @@ toolbar[iconsize="small"] #calendar-remote-reload-button {
 
 toolbar[iconsize="small"] #calendar-remote-reload-button[disabled="true"] {
     list-style-image: var(--icon-view-refresh-16-dis);
-    opacity: var(--icon-view-refresh-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -220,7 +206,6 @@ toolbar[iconsize="small"] #calendar-remote-reload-button[disabled="true"] {
 
 #calendar-new-event-button[disabled="true"] {
   list-style-image: var(--icon-appointment-new-24-dis);
-  opacity: var(--icon-appoitment-new-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -233,7 +218,6 @@ toolbar[iconsize="small"] #calendar-new-event-button {
 
 toolbar[iconsize="small"] #calendar-new-event-button[disabled="true"] {
   list-style-image: var(--icon-appointment-new-16-dis);
-  opacity: var(--icon-appoitment-new-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -246,7 +230,6 @@ toolbar[iconsize="small"] #calendar-new-event-button[disabled="true"] {
 
 #calendar-new-task-button[disabled="true"] {
   list-style-image: var(--icon-stock_task-24-dis);
-  opacity: var(--icon-stock_task-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -259,7 +242,6 @@ toolbar[iconsize="small"] #calendar-new-task-button {
 
 toolbar[iconsize="small"] #calendar-new-task-button[disabled="true"] {
   list-style-image: var(--icon-stock_task-16-dis);
-  opacity: var(--icon-stock_task-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -272,7 +254,6 @@ toolbar[iconsize="small"] #calendar-new-task-button[disabled="true"] {
 
 #calendar-edit-button[disabled="true"] {
   list-style-image: var(--icon-gtk-edit-24-dis);
-  opacity: var(--icon-gtk-edit-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -285,7 +266,6 @@ toolbar[iconsize="small"] #calendar-edit-button {
 
 toolbar[iconsize="small"] #calendar-edit-button[disabled="true"] {
   list-style-image: var(--icon-gtk-edit-16-dis);
-  opacity: var(--icon-gtk-edit-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -298,7 +278,6 @@ toolbar[iconsize="small"] #calendar-edit-button[disabled="true"] {
 
 #calendar-unifinder-button[disabled="true"] {
   list-style-image: var(--icon-edit-find-24-dis);
-  opacity: var(--icon-edit-find-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -311,7 +290,6 @@ toolbar[iconsize="small"] #calendar-unifinder-button {
 
 toolbar[iconsize="small"] #calendar-unifinder-button[disabled="true"] {
   list-style-image: var(--icon-edit-find-16-dis);
-  opacity: var(--icon-edit-find-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -324,7 +302,6 @@ toolbar[iconsize="small"] #calendar-unifinder-button[disabled="true"] {
 
 #calendar-import-button[disabled="true"] {
     list-style-image: var(--icon-stock_calendar-import-24-dis);
-    opacity: var(--icon-stock_calendar-import-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -337,7 +314,6 @@ toolbar[iconsize="small"] #calendar-import-button {
 
 toolbar[iconsize="small"] #calendar-import-button[disabled="true"] {
     list-style-image: var(--icon-stock_calendar-import-16-dis);
-    opacity: var(--icon-stock_calendar-import-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -350,7 +326,6 @@ toolbar[iconsize="small"] #calendar-import-button[disabled="true"] {
 
 #calendar-export-button[disabled="true"] {
     list-style-image: var(--icon-stock_calendar-export-24-dis);
-    opacity: var(--icon-stock_calendar-export-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -363,7 +338,6 @@ toolbar[iconsize="small"] #calendar-export-button {
 
 toolbar[iconsize="small"] #calendar-export-button[disabled="true"] {
     list-style-image: var(--icon-stock_calendar-export-16-dis);
-    opacity: var(--icon-stock_calendar-export-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -376,7 +350,6 @@ toolbar[iconsize="small"] #calendar-export-button[disabled="true"] {
 
 #calendar-subscribe-button[disabled="true"] {
     list-style-image: var(--icon-stock_calendar-subscribe-24-dis);
-    opacity: var(--icon-stock_calendar-subscribe-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -389,7 +362,6 @@ toolbar[iconsize="small"] #calendar-subscribe-button {
 
 toolbar[iconsize="small"] #calendar-subscribe-button[disabled="true"] {
     list-style-image: var(--icon-stock_calendar-subscribe-16-dis);
-    opacity: var(--icon-stock_calendar-subscribe-dis-opacity);
 }
 
 /*--------------------------------------------------------------------
@@ -402,7 +374,6 @@ toolbar[iconsize="small"] #calendar-subscribe-button[disabled="true"] {
 
 #calendar-publish-button[disabled="true"] {
     list-style-image: var(--icon-stock_calendar-publish-24-dis);
-    opacity: var(--icon-stock_calendar-publish-dis-opacity);
 }
 
 /*--------------------------------------------------------------------

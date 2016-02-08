@@ -2,8 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-/*@import url("chrome://global/skin/inContentUI.css");*/
-
+@import url("chrome://icons/skin/icon-theme-default.css");
 
 /*** global warnings ***/
 
@@ -265,22 +264,18 @@
 
 #back-btn[disabled="true"]:-moz-locale-dir(ltr) {
   list-style-image: var(--icon-go-previous-24-dis);
-  opacity: var(--icon-go-previous-dis-opacity);
 }
 
 #forward-btn[disabled="true"]:-moz-locale-dir(ltr) {
   list-style-image: var(--icon-go-next-24-dis);
-  opacity: var(--icon-go-next-dis-opacity);
 }
 
 #back-btn[disabled="true"]:-moz-locale-dir(rtl) {
   list-style-image: var(--icon-go-previous-rtl-24-dis);
-  opacity: var(--icon-go-previous-rtl-dis-opacity);
 }
 
 #forward-btn[disabled="true"]:-moz-locale-dir(rtl) {
   list-style-image: var(--icon-go-next-rtl-24-dis);
-  opacity: var(--icon-go-next-rtl-dis-opacity);
 }
 
 #header-utils-btn {

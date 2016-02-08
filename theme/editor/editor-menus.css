@@ -14,7 +14,6 @@ menuitem:not([type]) {
 
 #snapToGrid[disabled] {
   list-style-image: var(--icon-stock_snap-grid-16-dis);
-  opacity: var(--icon-stock_snap-grid-dis-opacity);
 }
 
 #pageProperties {
@@ -23,6 +22,5 @@ menuitem:not([type]) {
 
 #pageProperties[disabled] {
   list-style-image: var(--icon-document-properties-16-dis);
-  opacity: var(--icon-document-properties-dis-opacity);
 }
 

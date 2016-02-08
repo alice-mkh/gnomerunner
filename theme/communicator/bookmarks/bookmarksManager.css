@@ -2,6 +2,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 /* Info box */
 #detailsDeck {
   margin: 5px;
@@ -41,7 +43,6 @@ menuitem:not([type]) {
 
 #newbookmark[disabled] {
   list-style-image: var(--icon-bookmark-new-16-dis);
-  opacity: var(--icon-bookmark-new-dis-opacity);
 }
 
 #newfolder {
@@ -50,7 +51,6 @@ menuitem:not([type]) {
 
 #newfolder[disabled] {
   list-style-image: var(--icon-folder-new-16-dis);
-  opacity: var(--icon-folder-new-dis-opacity);
 }
 
 #orgClose {
@@ -59,7 +59,6 @@ menuitem:not([type]) {
 
 #orgClose[disabled] {
   list-style-image: var(--icon-window-close-16-dis);
-  opacity: var(--icon-window-close-dis-opacity);
 }
 
 #fileImport {
@@ -68,7 +67,6 @@ menuitem:not([type]) {
 
 #fileImport[disabled] {
   list-style-image: var(--icon-document-revert-16-dis);
-  opacity: var(--icon-document-revert-dis-opacity);
 }
 
 #fileExport {
@@ -77,6 +75,5 @@ menuitem:not([type]) {
 
 #fileExport[disabled] {
   list-style-image: var(--icon-document-save-as-16-dis);
-  opacity: var(--icon-document-save-as-dis-opacity);
 }
 

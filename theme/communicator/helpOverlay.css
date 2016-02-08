@@ -29,7 +29,6 @@
 
 #help-back-button[disabled="true"] {
   list-style-image: var(--icon-go-previous-24-dis);
-  opacity: var(--icon-go-previous-dis-opacity);
 }
 
 #help-back-button:-moz-locale-dir(rtl) {
@@ -38,7 +37,6 @@
 
 #help-back-button:-moz-locale-dir(rtl)[disabled="true"] {
   list-style-image: var(--icon-go-previous-rtl-24-dis);
-  opacity: var(--icon-go-previous-rtl-dis-opacity);
 }
 
 #help-forward-button {
@@ -47,7 +45,6 @@
 
 #help-forward-button[disabled="true"] {
   list-style-image: var(--icon-go-next-24-dis);
-  opacity: var(--icon-go-next-dis-opacity);
 }
 
 #help-forward-button:-moz-locale-dir(rtl) {
@@ -56,7 +53,6 @@
 
 #help-forward-button:-moz-locale-dir(rtl)[disabled="true"] {
   list-style-image: var(--icon-go-next-rtl-24);
-  opacity: var(--icon-go-next-rtl-dis-opacity);
 }
 
 #help-home-button {
@@ -65,7 +61,6 @@
 
 #help-home-button[disabled="true"] {
   list-style-image: var(--icon-go-home-24-dis);
-  opacity: var(--icon-go-home-dis-opacity);
 }
 
 #help-print-button {
@@ -74,7 +69,6 @@
 
 #help-print-button[disabled="true"] {
   list-style-image: var(--icon-document-print-24-dis) !important;
-  opacity: var(--icon-document-print-dis-opacity);
 }
 
 /* make findbar appear above content */

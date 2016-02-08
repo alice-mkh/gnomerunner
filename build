@@ -35,7 +35,6 @@ for F in layer-*; do
             echo "  --icon-$LINE1-$S: url(\"moz-icon://stock/$LINE2?size=$S\");" >> $F.css
             echo "  --icon-$LINE1-$S-dis: url(\"moz-icon://stock/$LINE2?size=$S&state=disabled\");" >> $F.css
         done
-        echo "  --icon-$LINE1-dis-opacity: var(--icon-base-dis-native-opacity);"  >> $F.css
         echo ""  >> $F.css
     done < $F
 
@@ -93,7 +92,6 @@ for THEME in $THEMES; do
                 echo "  --icon-$N-$DD-dis: url(\"chrome://icons/skin/dis/$THEME/${DD}x$DD/$D/$N.png\");" >> icon-theme-$THEME.css
             fi
         done
-        echo "  --icon-$N-dis-opacity: var(--icon-base-dis-opacity);" >> icon-theme-$THEME.css
         echo "" >> icon-theme-$THEME.css
     done
     echo '}' >> icon-theme-$THEME.css

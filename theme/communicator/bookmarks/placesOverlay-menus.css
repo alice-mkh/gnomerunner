@@ -14,7 +14,6 @@ menuitem:not([type]) {
 
 #placesContext_open\:newtab[disabled] {
   list-style-image: var(--icon-tab-new-16-dis);
-  opacity: var(--icon-tab-new-dis-opacity);
 }
 
 #placesContext_open\:newwindow {
@@ -23,7 +22,6 @@ menuitem:not([type]) {
 
 #placesContext_open\:newwindow[disabled] {
   list-style-image: var(--icon-window-new-16-dis);
-  opacity: var(--icon-window-new-dis-opacity);
 }
 
 #placesContext_new\:bookmark,
@@ -38,7 +36,6 @@ menuitem:not([type]) {
 #addBookmarkContextItem[disabled],
 #addMultipleBookmarksContextItem[disabled] {
   list-style-image: var(--icon-bookmark-new-16-dis);
-  opacity: var(--icon-bookmark-new-dis-opacity);
 }
 
 #placesContext_new\:folder {
@@ -47,7 +44,6 @@ menuitem:not([type]) {
 
 #placesContext_new\:folder[disabled] {
   list-style-image: var(--icon-folder-new-16-dis);
-  opacity: var(--icon-folder-new-dis-opacity);
 }
 
 #placesContext_cut {
@@ -56,7 +52,6 @@ menuitem:not([type]) {
 
 #placesContext_cut[disabled] {
   list-style-image: var(--icon-edit-cut-16-dis);
-  opacity: var(--icon-edit-cut-dis-opacity);
 }
 
 #placesContext_copy {
@@ -65,7 +60,6 @@ menuitem:not([type]) {
 
 #placesContext_copy[disabled] {
   list-style-image: var(--icon-edit-copy-16-dis);
-  opacity: var(--icon-edit-copy-dis-opacity);
 }
 
 #placesContext_paste {
@@ -74,7 +68,6 @@ menuitem:not([type]) {
 
 #placesContext_paste[disabled] {
   list-style-image: var(--icon-edit-paste-16-dis);
-  opacity: var(--icon-edit-paste-dis-opacity);
 }
 
 #placesContext_delete,
@@ -85,7 +78,6 @@ menuitem:not([type]) {
 #placesContext_delete[disabled],
 #placesContext_delete_history[disabled] {
   list-style-image: var(--icon-edit-delete-16-dis);
-  opacity: var(--icon-edit-delete-dis-opacity);
 }
 
 #placesContext_sortBy\:name {
@@ -94,7 +86,6 @@ menuitem:not([type]) {
 
 #placesContext_sortBy\:name[disabled] {
   list-style-image: var(--icon-view-sort-ascending-16-dis);
-  opacity: var(--icon-view-sort-ascending-dis-opacity);
 }
 
 #placesContext_show\:info {
@@ -103,7 +94,6 @@ menuitem:not([type]) {
 
 #placesContext_sortBy\:info[disabled] {
   list-style-image: var(--icon-document-properties-16-dis);
-  opacity: var(--icon-document-properties-dis-opacity);
 }
 
 #placesContext_selectAll {
@@ -112,6 +102,5 @@ menuitem:not([type]) {
 
 #placesContext_selectAll[disabled] {
   list-style-image: var(--icon-edit-select-all-16-dis);
-  opacity: var(--icon-edit-select-all-dis-opacity);
 }
 

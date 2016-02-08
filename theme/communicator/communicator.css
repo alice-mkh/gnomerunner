@@ -103,7 +103,6 @@ menuitem.menuitem-iconic > .menu-iconic-left {
 
 #print-button[disabled="true"] {
   list-style-image: var(--icon-document-print-24-dis) !important;
-  opacity: var(--icon-document-print-dis-opacity);
 }
 
 toolbar[iconsize="small"] > toolbarpaletteitem > #print-button,

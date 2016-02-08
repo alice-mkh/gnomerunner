@@ -7,6 +7,8 @@
    == content, such as the taskbar and product launcher icons.
    ====================================================================== */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 /* ::::: communicator product icons ::::: */

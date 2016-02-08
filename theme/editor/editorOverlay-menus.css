@@ -14,7 +14,6 @@ menuitem:not([type]) {
 
 #menu_checkspelling[disabled="true"] {
   list-style-image: var(--icon-tools-check-spelling-16-dis);
-  opacity: var(--icon-tools-check-spelling-dis-opacity);
 }
 
 #menu_preferences {
@@ -23,7 +22,6 @@ menuitem:not([type]) {
 
 #menu_preferences[disabled] {
   list-style-image: var(--icon-preferences-desktop-16-dis);
-  opacity: var(--icon-preferences-desktop-dis-opacity);
 }
 
 #insertImage {
@@ -32,7 +30,6 @@ menuitem:not([type]) {
 
 #insertImage[disabled] {
   list-style-image: var(--icon-insert-image-16-dis);
-  opacity: var(--icon-insert-image-dis-opacity);
 }
 
 #insertTable {
@@ -41,7 +38,6 @@ menuitem:not([type]) {
 
 #insertTable[disabled] {
   list-style-image: var(--icon-stock_insert-table-16-dis);
-  opacity: var(--icon-stock_insert-table-dis-opacity);
 }
 
 #insertLink {
@@ -50,7 +46,6 @@ menuitem:not([type]) {
 
 #insertLink[disabled] {
   list-style-image: var(--icon-insert-link-16-dis);
-  opacity: var(--icon-insert-link-dis-opacity);
 }
 
 #insertAnchor {
@@ -59,7 +54,6 @@ menuitem:not([type]) {
 
 #insertAnchor[disabled] {
   list-style-image: var(--icon-stock_anchor-16-dis);
-  opacity: var(--icon-stock_anchor-dis-opacity);
 }
 
 #insertHline {
@@ -68,7 +62,6 @@ menuitem:not([type]) {
 
 #insertHline[disabled] {
   list-style-image: var(--icon-stock_insert-rule-16-dis);
-  opacity: var(--icon-stock_insert-rule-dis-opacity);
 }
 
 #insertHTMLSource {
@@ -77,7 +70,6 @@ menuitem:not([type]) {
 
 #insertHTMLSource[disabled] {
   list-style-image: var(--icon-text-html-16-dis);
-  opacity: var(--icon-text-html-dis-opacity);
 }
 
 #insertMath {
@@ -86,7 +78,6 @@ menuitem:not([type]) {
 
 #insertMath[disabled] {
   list-style-image: var(--icon-stock_insert-math-object-16-dis);
-  opacity: var(--icon-stock_insert-math-object-dis-opacity);
 }
 
 #insertChars {
@@ -95,7 +86,6 @@ menuitem:not([type]) {
 
 #insertChars[disabled] {
   list-style-image: var(--icon-stock_insert_special_character-16-dis);
-  opacity: var(--icon-stock_insert_special_character-dis-opacity);
 }
 /*
 fontFaceMenu

@@ -14,7 +14,6 @@ menuitem:not([type]) {
 
 #spell-add-to-dictionary[disabled="true"] {
   list-style-image: var(--icon-list-add-16-dis);
-  opacity: var(--icon-list-add-dis-opacity);
 }
 
 #spell-undo-add-to-dictionary {
@@ -23,7 +22,6 @@ menuitem:not([type]) {
 
 #spell-undo-add-to-dictionary[disabled="true"] {
   list-style-image: var(--icon-edit-undo-16-dis);
-  opacity:  var(--icon-edit-undo-dis-opacity);
 }
 
 #context-openlinkintab,
@@ -34,7 +32,6 @@ menuitem:not([type]) {
 #context-openlinkintab[disabled="true"],
 #context-openframeintab[disabled="true"] {
   list-style-image: var(--icon-tab-new-16-dis);
-  opacity:  var(--icon-tab-new-dis-opacity);
 }
 
 #context-openlink,
@@ -45,7 +42,6 @@ menuitem:not([type]) {
 #context-openlink[disabled="true"],
 #context-openframe[disabled="true"] {
   list-style-image: var(--icon-window-new-16-dis);
-  opacity:  var(--icon-window-new-dis-opacity);
 }
 
 #context-bookmarklink,
@@ -58,7 +54,6 @@ menuitem:not([type]) {
 #context-bookmarkpage[disabled="true"],
 #context-bookmarkframe[disabled="true"] {
   list-style-image: var(--icon-bookmark-new-16-dis);
-  opacity: var(--icon-bookmark-new-dis-opacity);
 }
 
 #context-savelink,
@@ -77,7 +72,6 @@ menuitem:not([type]) {
 #context-savepage[disabled="true"],
 #context-saveframe[disabled="true"] {
   list-style-image: var(--icon-document-save-as-16-dis);
-  opacity: var(--icon-document-save-as-dis-opacity);
 }
 
 #context-copyemail,
@@ -94,7 +88,6 @@ menuitem:not([type]) {
 #context-copyvideourl[disabled="true"],
 #context-copyaudiourl[disabled="true"] {
   list-style-image: var(--icon-edit-copy-16-dis);
-  opacity: var(--icon-edit-copy-dis-opacity);
 }
 
 #context-media-play {
@@ -103,7 +96,6 @@ menuitem:not([type]) {
 
 #context-media-play[disabled="true"] {
   list-style-image: var(--icon-media-playback-start-16-dis);
-  opacity: var(--icon-media-playback-start-dis-opacity);
 }
 
 #context-media-pause {
@@ -112,7 +104,6 @@ menuitem:not([type]) {
 
 #context-media-pause[disabled="true"] {
   list-style-image: var(--icon-media-playback-pause-16-dis);
-  opacity: var(--icon-media-playback-pause-dis-opacity);
 }
 
 #context-media-mute {
@@ -121,7 +112,6 @@ menuitem:not([type]) {
 
 #context-media-mute[disabled="true"] {
   list-style-image: var(--icon-audio-volume-muted-16-dis);
-  opacity: var(--icon-audio-volume-muted-dis-opacity);
 }
 
 #context-media-unmute {
@@ -130,7 +120,6 @@ menuitem:not([type]) {
 
 #context-media-unmute[disabled="true"] {
   list-style-image: var(--icon-audio-volume-high-16-dis);
-  opacity: var(--icon-audio-volume-high-dis-opacity);
 }
 
 #context-video-fullscreen {
@@ -139,7 +128,6 @@ menuitem:not([type]) {
 
 #context-video-fullscreen[disabled="true"] {
   list-style-image: var(--icon-view-fullscreen-16-dis);
-  opacity: var(--icon-view-fullscreen-dis-opacity);
 }
 
 #context-reloadimage,
@@ -152,7 +140,6 @@ menuitem:not([type]) {
 #context-reload[disabled="true"],
 #context-reloadframe[disabled="true"] {
   list-style-image: var(--icon-view-refresh-16-dis);
-  opacity: var(--icon-view-refresh-dis-opacity);
 }
 
 #context-back {
@@ -161,7 +148,6 @@ menuitem:not([type]) {
 
 #context-back[disabled="true"] {
   list-style-image: var(--icon-go-previous-16-dis);
-  opacity: var(--icon-go-previous-dis-opacity);
 }
 
 #context-forward {
@@ -170,7 +156,6 @@ menuitem:not([type]) {
 
 #context-forward[disabled="true"] {
   list-style-image: var(--icon-go-next-16-dis);
-  opacity: var(--icon-go-next-dis-opacity);
 }
 
 #context-stop {
@@ -179,7 +164,6 @@ menuitem:not([type]) {
 
 #context-stop[disabled="true"] {
   list-style-image: var(--icon-process-stop-16-dis);
-  opacity: var(--icon-process-stop-dis-opacity);
 }
 
 #context-searchselect {
@@ -188,7 +172,6 @@ menuitem:not([type]) {
 
 #context-searchselect[disabled="true"] {
   list-style-image: var(--icon-edit-find-16-dis);
-  opacity: var(--icon-edit-find-dis-opacity);
 }
 
 #context-viewinfo,
@@ -199,7 +182,6 @@ menuitem:not([type]) {
 #context-viewinfo[disabled="true"],
 #context-viewframeinfo[disabled="true"] {
   list-style-image: var(--icon-dialog-information-16-dis);
-  opacity: var(--icon-dialog-information-dis-opacity);
 }
 
 #context-metadata {
@@ -208,7 +190,6 @@ menuitem:not([type]) {
 
 #context-metadata[disabled="true"] {
   list-style-image: var(--icon-document-properties-16-dis);
-  opacity: var(--icon-document-properties-dis-opacity);
 }
 
 #context-printframe {
@@ -217,6 +198,5 @@ menuitem:not([type]) {
 
 #context-printframe[disabled="true"] {
   list-style-image: var(--icon-document-print-16-dis);
-  opacity: var(--icon-document-print-dis-opacity);
 }
 

@@ -1,3 +1,5 @@
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 /* General */
 /* Specify the size for the wizardpage so the billboard has a fixed size. 3rd
    party themes should typically specify the same values. */
@@ -108,7 +110,6 @@ wizardpage {
 
 #pauseButton[disabled="true"] {
   list-style-image: var(--icon-media-playback-pause-16-dis);
-  opacity: var(--icon-media-playback-pause-dis-opacity);
 }
 
 #pauseButton[paused="true"] {
@@ -117,7 +118,6 @@ wizardpage {
 
 #pauseButton[paused="true"][disabled="true"] {
   list-style-image: var(--icon-media-playback-start-16-dis);
-  opacity: var(--icon-media-playback-start-dis-opacity);
 }
 
 #verificationFailedIcon {

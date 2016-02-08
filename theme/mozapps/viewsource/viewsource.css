@@ -35,7 +35,6 @@ menuitem:not([type]) {
 
 #menu_undo[disabled] {
   list-style-image: var(--icon-edit-undo-16-dis);
-  opacity: var(--icon-edit-undo-dis-opacity);
 }
 
 #menu_redo {
@@ -44,7 +43,6 @@ menuitem:not([type]) {
 
 #menu_redo[disabled] {
   list-style-image: var(--icon-edit-redo-16-dis);
-  opacity: var(--icon-edit-redo-dis-opacity);
 }
 
 #menu_cut {
@@ -53,7 +51,6 @@ menuitem:not([type]) {
 
 #menu_cut[disabled] {
   list-style-image: var(--icon-edit-cut-16-dis);
-  opacity: var(--icon-edit-cut-dis-opacity);
 }
 
 #cMenu_copy,
@@ -63,7 +60,6 @@ menuitem:not([type]) {
 
 #menu_copy[disabled] {
   list-style-image: var(--icon-edit-copy-16-dis);
-  opacity: var(--icon-edit-copy-dis-opacity);
 }
 
 #menu_paste {
@@ -72,7 +68,6 @@ menuitem:not([type]) {
 
 #menu_paste[disabled] {
   list-style-image: var(--icon-edit-paste-16-dis);
-  opacity: var(--icon-edit-paste-dis-opacity);
 }
 
 #menu_delete {
@@ -81,7 +76,6 @@ menuitem:not([type]) {
 
 #menu_delete[disabled] {
   list-style-image: var(--icon-edit-delete-16-dis);
-  opacity: var(--icon-edit-delete-dis-opacity);
 }
 
 #cMenu_selectAll,
@@ -95,7 +89,6 @@ menuitem:not([type]) {
 
 #menu_find[disabled] {
   list-style-image: var(--icon-edit-find-16-dis);
-  opacity: var(--icon-edit-find-dis-opacity);
 }
 
 #menu_goToLine {
@@ -104,7 +97,6 @@ menuitem:not([type]) {
 
 #menu_goToLine[disabled] {
   list-style-image: var(--icon-go-jump-16-dis);
-  opacity: var(--icon-go-jump-dis-opacity);
 }
 
 #menu_reload {
@@ -113,7 +105,6 @@ menuitem:not([type]) {
 
 #menu_reload[disabled] {
   list-style-image: var(--icon-view-refresh-16-dis);
-  opacity: var(--icon-view-refresh-dis-opacity);
 }
 
 #menu_textEnlarge {
