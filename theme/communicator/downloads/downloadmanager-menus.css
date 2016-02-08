@@ -30,12 +30,12 @@ menuitem:not([type]) {
 
 #dlContext-retry,
 #dlMenu_retry {
-  list-style-image: var(--icon-view-refresh-16);
+  list-style-image: var(--icon-edit-redo-16);
 }
 
 #dlContext-retry[disabled="true"],
 #dlMenu_retry[disabled="true"] {
-  list-style-image: var(--icon-view-refresh-16-dis);
+  list-style-image: var(--icon-edit-redo-16-dis);
 }
 
 #dlContext-cancel,

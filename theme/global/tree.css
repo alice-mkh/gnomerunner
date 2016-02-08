@@ -6,6 +6,8 @@
   == Styles used by the XUL outline element.
   ======================================================================= */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 /* ::::: tree ::::: */
@@ -345,3 +347,13 @@ treechildren::-moz-tree-cell-text(selected, editing) {
   -moz-margin-start: -4px;
   padding: 1px;
 }
+
+menupopup[anonid="popup"] > menuitem[anonid="menuitem"] {
+  list-style-image: var(--icon-document-revert-16);
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+menupopup[anonid="popup"] > menuitem[anonid="menuitem"][disabled] {
+  list-style-image: var(--icon-document-revert-16-dis);
+}
+

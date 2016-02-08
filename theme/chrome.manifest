@@ -12,6 +12,7 @@ skin icons $INTERNAL_NAME icons/
 style chrome://communicator/content/bookmarks/placesOverlay.xul chrome://communicator/skin/bookmarks/placesOverlay-menus.css
 style chrome://communicator/content/history/placesOverlay.xul chrome://communicator/skin/bookmarks/placesOverlay-menus.css
 style chrome://communicator/content/contentAreaContextOverlay.xul chrome://communicator/skin/contentAreaContextOverlay-menus.css
+style chrome://communicator/content/passwordManager.xul chrome://communicator/skin/passwordManager-menus.css
 style chrome://communicator/content/utilityOverlay.xul chrome://communicator/skin/utilityOverlay-menus.css
 style chrome://communicator/content/viewSourceOverlay.xul chrome://communicator/skin/viewSourceOverlay-menus.css
 style chrome://communicator/content/viewZoomOverlay.xul chrome://communicator/skin/viewZoomOverlay-menus.css

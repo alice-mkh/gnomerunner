@@ -151,3 +151,39 @@ menuitem[cmd="cmd_selectAll"][disabled] {
   list-style-image: var(--icon-edit-select-all-16-dis);
 }
 
+/* search */
+
+menuitem[cmd="cmd_clearhistory"] {
+  list-style-image: var(--icon-edit-clear-16);
+}
+
+menuitem[cmd="cmd_clearhistory"][disabled] {
+  list-style-image: var(--icon-edit-clear-16-dis);
+}
+
+/* urlbar */
+
+menuitem[cmd="cmd_pasteAndGo"] {
+  list-style-image: var(--icon-go-jump-16);
+}
+
+menuitem[cmd="cmd_pasteAndGo"][disabled] {
+  list-style-image: var(--icon-go-jump-16-dis);
+}
+
+menuitem[oncommand*="addToDictionary"] {
+  list-style-image: var(--icon-list-add-16);
+}
+
+menuitem[oncommand*="addToDictionary"][disabled="true"] {
+  list-style-image: var(--icon-list-add-16-dis);
+}
+
+menuitem[oncommand*="undoAddToDictionary"] {
+  list-style-image: var(--icon-edit-undo-16);
+}
+
+menuitem[oncommand*="undoAddToDictionary"][disabled="true"] {
+  list-style-image: var(--icon-edit-undo-16-dis);
+}
+

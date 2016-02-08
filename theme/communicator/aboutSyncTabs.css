@@ -2,6 +2,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 #tabsList {
   background: #FFFFFF url(chrome://communicator/skin/sync/sync-bg.png) repeat-x center -80px;
 }
@@ -86,3 +88,28 @@ richlistitem[type="client"] {
   -moz-padding-start: 2px;
   padding-top: 2px;
 }
+
+/* menus */
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#bookmarkSingleTab,
+#bookmarkSelectedTabs {
+  list-style-image: var(--icon-bookmark-new-16);
+}
+
+#bookmarkSingleTab[disabled="true"],
+#bookmarkSelectedTabs[disabled="true"] {
+  list-style-image: var(--icon-bookmark-new-16-dis);
+}
+
+#buildList {
+  list-style-image: var(--icon-view-refresh-16);
+}
+
+#buildList[disabled="true"] {
+  list-style-image: var(--icon-view-refresh-16-dis);
+}
+

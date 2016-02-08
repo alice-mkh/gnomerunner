@@ -1,0 +1,88 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://icons/skin/icon-theme-default.css");
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#menuitem_enableItem,
+#menuitem_enableTheme {
+  list-style-image: var(--icon-gtk-yes-16);
+}
+
+#menuitem_enableItem[disabled="true"],
+#menuitem_enableTheme[disabled="true"] {
+  list-style-image: var(--icon-gtk-yes-16-dis);
+}
+
+#menuitem_disableItem,
+#menuitem_disableTheme {
+  list-style-image: var(--icon-gtk-no-16);
+}
+
+#menuitem_disableItem[disabled="true"],
+#menuitem_disableTheme[disabled="true"] {
+  list-style-image: var(--icon-gtk-no-16-dis);
+}
+
+#menuitem_installItem {
+  list-style-image: var(--icon-list-add-16);
+}
+
+#menuitem_installItem[disabled="true"] {
+  list-style-image: var(--icon-list-add-16-dis);
+}
+
+#menuitem_uninstallItem {
+  list-style-image: var(--icon-list-remove-16);
+}
+
+#menuitem_uninstallItem[disabled="true"] {
+  list-style-image: var(--icon-list-remove-16-dis);
+}
+
+#menuitem_preferences {
+  list-style-image: var(--icon-preferences-desktop-16);
+}
+
+#menuitem_preferences[disabled="true"] {
+  list-style-image: var(--icon-preferences-desktop-16-dis);
+}
+
+#menuitem_findUpdates,
+#utils-updateNow {
+  list-style-image: var(--icon-view-refresh-16);
+}
+
+#menuitem_findUpdates[disabled="true"],
+#utils-updateNow[disabled="true"] {
+  list-style-image: var(--icon-view-refresh-16-dis);
+}
+
+#menuitem_about {
+  list-style-image: var(--icon-help-about-16);
+}
+
+#menuitem_about[disabled="true"] {
+  list-style-image: var(--icon-help-about-16-dis);
+}
+
+#utils-viewUpdates {
+  list-style-image: var(--icon-document-open-recent-16);
+}
+
+#utils-viewUpdates[disabled="true"] {
+  list-style-image: var(--icon-document-open-recent-16-dis);
+}
+
+#utils-installFromFile {
+  list-style-image: var(--icon-document-open-16);
+}
+
+#utils-installFromFile[disabled="true"] {
+  list-style-image: var(--icon-document-open-16-dis);
+}
+

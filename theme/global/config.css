@@ -16,6 +16,7 @@
 
 #warningBox
 {
+  background-image: var(--icon-dialog-warning-48);
   background-repeat: no-repeat;
   background-position: 30px 3em;
   background-color: -moz-Field;
@@ -26,6 +27,11 @@
   -moz-padding-start: 78px;
   margin-left: 1em;
   margin-right: 1em;
+}
+
+#warningBox > .title,
+#warningBox > .description {
+  -moz-margin-start: 3em;
 }
 
 #warningInnerBox
@@ -82,3 +88,73 @@
 {
   margin-top: 5px;
 }
+
+/* menus */
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#toggleSelected,
+#modifySelected {
+  list-style-image: var(--icon-gtk-edit-16);
+}
+
+#toggleSelected[disabled="true"],
+#modifySelected[disabled="true"] {
+  list-style-image: var(--icon-gtk-edit-16-dis);
+}
+
+#copyPref,
+#copyName,
+#copyValue {
+  list-style-image: var(--icon-edit-copy-16);
+}
+
+#copyPref[disabled="true"],
+#copyName[disabled="true"],
+#copyValue[disabled="true"] {
+  list-style-image: var(--icon-edit-copy-16-dis);
+}
+
+#configContext > menu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-document-new-16);
+}
+
+#configContext > menu[disabled="true"] {
+  list-style-image: var(--icon-document-new-16-dis);
+}
+
+#configContext > menu > menupopup > menuitem[oncommand*="STRING"] {
+  list-style-image: var(--icon-stock_pref-type-string-16);
+}
+
+#configContext > menu > menupopup > menuitem[oncommand*="STRING"][disabled="true"] {
+  list-style-image: var(--icon-stock_pref-type-string-16-dis);
+}
+
+#configContext > menu > menupopup > menuitem[oncommand*="INT"] {
+  list-style-image: var(--icon-stock_pref-type-integer-16);
+}
+
+#configContext > menu > menupopup > menuitem[oncommand*="INT"][disabled="true"] {
+  list-style-image: var(--icon-stock_pref-type-integer-16-dis);
+}
+
+#configContext > menu > menupopup > menuitem[oncommand*="BOOL"] {
+  list-style-image: var(--icon-stock_pref-type-boolean-16);
+}
+
+#configContext > menu > menupopup > menuitem[oncommand*="BOOL"][disabled="true"] {
+  list-style-image: var(--icon-stock_pref-type-boolean-16-dis);
+}
+
+#resetSelected {
+  list-style-image: var(--icon-document-revert-16);
+}
+
+#resetSelected[disabled="true"] {
+  list-style-image: var(--icon-document-revert-16-dis);
+}
+

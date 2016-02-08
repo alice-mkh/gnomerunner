@@ -37,3 +37,11 @@
   font-weight: bold;
 }
 
+.open-engine-manager {
+  list-style-image: var(--icon-document-properties-16);
+}
+
+.open-engine-manager[disabled="true"] {
+  list-style-image: var(--icon-document-properties-16-dis);
+}
+

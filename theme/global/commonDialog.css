@@ -2,6 +2,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+@import url("chrome://icons/skin/icon-theme-default.css");
+
 #filler {
   -moz-margin-start: -8px;
   -moz-margin-end: -10px;
@@ -20,3 +22,22 @@
      what margin values the #iconContainer's min-height and max-height depend on: */
   margin: 3px 5px 4px;
 }
+
+/* menus */
+
+#context-copy {
+  list-style-image: var(--icon-edit-copy-16);
+}
+
+#context-copy[disabled="true"] {
+  list-style-image: var(--icon-edit-copy-16-dis);
+}
+
+#context-selectall {
+  list-style-image: var(--icon-edit-select-all-16);
+}
+
+#context-selectall[disabled="true"] {
+  list-style-image: var(--icon-edit-select-all-16-dis);
+}
+

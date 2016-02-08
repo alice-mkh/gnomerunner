@@ -157,3 +157,15 @@ toolbar#ToolbarMode .toolbarbutton-text {
   -moz-padding-start: 0px;
   -moz-padding-end: 5px;
 }
+
+/* menus */
+
+#menu_copy_cm {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+  list-style-image: var(--icon-edit-copy-16);
+}
+
+#menu_copy_cm[disabled] {
+  list-style-image: var(--icon-edit-copy-16-dis);
+}
+

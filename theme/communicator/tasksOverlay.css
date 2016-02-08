@@ -55,10 +55,6 @@ menuitem:not([type]) {
   list-style-image: url("chrome://mozapps/skin/extensions/extensionGeneric-16.png");
 }
 
-/*tasksDataman*/
-/*menu_passwordManager*/
-/*downloadmgr*/
-
 #sync-setup {
   list-style-image: url("chrome://communicator/skin/sync/sync-16.png");
 }
@@ -67,5 +63,11 @@ menuitem:not([type]) {
   list-style-image: url("chrome://communicator/skin/sync/sync-16.png");
 }
 
-/*cmd_switchprofile*/
+#cmd_switchprofile {
+  list-style-image: var(--icon-stock_person-16);
+}
+
+#cmd_switchprofile[disabled="true"] {
+  list-style-image: var(--icon-stock_person-16-dis);
+}
 

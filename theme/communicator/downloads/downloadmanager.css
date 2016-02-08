@@ -33,7 +33,7 @@ treechildren::-moz-tree-image(ActionPlay, paused, resumable) {
 treechildren::-moz-tree-image(ActionPlay, failed),
 treechildren::-moz-tree-image(ActionPlay, canceled) {
   /* retry */
-  list-style-image: var(--icon-view-refresh-16);
+  list-style-image: var(--icon-edit-redo-16);
 }
 
 #ActionStop,
