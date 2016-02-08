@@ -32,4 +32,206 @@ menuitem:not([type]) {
   list-style-image: var(--icon-gtk-edit-16-dis);
 }
 
+#tableInsertMenu_cm {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-stock_insert-table-16);
+}
+
+#tableInsertMenu_cm[disabled] {
+  list-style-image: var(--icon-stock_insert-table-16-dis);
+}
+
+menuitem[command="cmd_InsertTable"] {
+  list-style-image: var(--icon-stock_insert-table-16);
+}
+
+menuitem[command="cmd_InsertTable"][disabled] {
+  list-style-image: var(--icon-stock_insert-table-16-dis);
+}
+
+menuitem[command="cmd_InsertRowAbove"] {
+  list-style-image: var(--icon-stock_insert-row-above-16);
+}
+
+menuitem[command="cmd_InsertRowAbove"][disabled] {
+  list-style-image: var(--icon-stock_insert-row-above-16-dis);
+}
+
+menuitem[command="cmd_InsertRowBelow"] {
+  list-style-image: var(--icon-stock_insert-row-below-16);
+}
+
+menuitem[command="cmd_InsertRowBelow"][disabled] {
+  list-style-image: var(--icon-stock_insert-row-below-16-dis);
+}
+
+menuitem[command="cmd_InsertColumnBefore"] {
+  list-style-image: var(--icon-stock_insert-column-before-16);
+}
+
+menuitem[command="cmd_InsertColumnBefore"][disabled] {
+  list-style-image: var(--icon-stock_insert-column-before-16-dis);
+}
+
+menuitem[command="cmd_InsertColumnAfter"] {
+  list-style-image: var(--icon-stock_insert-column-after-16);
+}
+
+menuitem[command="cmd_InsertColumnAfter"][disabled] {
+  list-style-image: var(--icon-stock_insert-column-after-16-dis);
+}
+
+menuitem[command="cmd_InsertCellBefore"] {
+  list-style-image: var(--icon-stock_insert-cell-before-16);
+}
+
+menuitem[command="cmd_InsertCellBefore"][disabled] {
+  list-style-image: var(--icon-stock_insert-cell-before-16-dis);
+}
+
+menuitem[command="cmd_InsertCellAfter"] {
+  list-style-image: var(--icon-stock_insert-cell-after-16);
+}
+
+menuitem[command="cmd_InsertCellAfter"][disabled] {
+  list-style-image: var(--icon-stock_insert-cell-after-16-dis);
+}
+
+#tableSelectMenu_cm {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-stock_select-table-16);
+}
+
+#tableSelectMenu_cm[disabled] {
+  list-style-image: var(--icon-stock_select-table-16-dis);
+}
+
+#menu_SelectTable_cm {
+  list-style-image: var(--icon-stock_select-table-16);
+}
+
+#menu_SelectTable_cm[disabled] {
+  list-style-image: var(--icon-stock_select-table-16-dis);
+}
+
+#menu_SelectRow_cm {
+  list-style-image: var(--icon-stock_select-row-16);
+}
+
+#menu_SelectRow_cm[disabled] {
+  list-style-image: var(--icon-stock_select-row-16-dis);
+}
+
+#menu_SelectColumn_cm {
+  list-style-image: var(--icon-stock_select-column-16);
+}
+
+#menu_SelectColumn_cm[disabled] {
+  list-style-image: var(--icon-stock_select-column-16-dis);
+}
+
+#menu_SelectCell_cm {
+  list-style-image: var(--icon-stock_select-cell-16);
+}
+
+#menu_SelectCell_cm[disabled] {
+  list-style-image: var(--icon-stock_select-cell-16-dis);
+}
+
+#menu_SelectAllCells_cm {
+  list-style-image: var(--icon-stock_select-all-cells-16);
+}
+
+#menu_SelectAllCells_cm[disabled] {
+  list-style-image: var(--icon-stock_select-all-cells-16-dis);
+}
+
+#tableDeleteMenu_cm {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-stock_delete-table-16);
+}
+
+#tableDeleteMenu_cm[disabled] {
+  list-style-image: var(--icon-stock_delete-table-16-dis);
+}
+
+#menu_DeleteTable_cm {
+  list-style-image: var(--icon-stock_delete-table-16);
+}
+
+#menu_DeleteTable_cm[disabled] {
+  list-style-image: var(--icon-stock_delete-table-16-dis);
+}
+
+#menu_DeleteRow_cm {
+  list-style-image: var(--icon-stock_delete-row-16);
+}
+
+#menu_DeleteRow_cm[disabled] {
+  list-style-image: var(--icon-stock_delete-row-16-dis);
+}
+
+#menu_DeleteColumn_cm {
+  list-style-image: var(--icon-stock_delete-column-16);
+}
+
+#menu_DeleteColumn_cm[disabled] {
+  list-style-image: var(--icon-stock_delete-column-16-dis);
+}
+
+#menu_DeleteCell_cm {
+  list-style-image: var(--icon-stock_delete-cell-16);
+}
+
+#menu_DeleteCell_cm[disabled] {
+  list-style-image: var(--icon-stock_delete-cell-16-dis);
+}
+
+#joinTableCells_cm {
+  list-style-image: var(--icon-stock_table-combine-16);
+}
+
+#joinTableCells_cm[disabled] {
+  list-style-image: var(--icon-stock_table-combine-16-dis);
+}
+
+#splitTableCell_cm {
+  list-style-image: var(--icon-stock_table-split-16);
+}
+
+#splitTableCell_cm[disabled] {
+  list-style-image: var(--icon-stock_table-split-16-dis);
+}
+
+#structSelect {
+  list-style-image: var(--icon-go-jump-16);
+}
+
+#structSelect[disabled] {
+  list-style-image: var(--icon-go-jump-16-dis);
+}
+
+#structRemoveTag {
+  list-style-image: var(--icon-edit-delete-16);
+}
+
+#structRemoveTag[disabled] {
+  list-style-image: var(--icon-edit-delete-16-dis);
+}
+
+#structChangeTag {
+  list-style-image: var(--icon-gtk-edit-16);
+}
+
+#structChangeTag[disabled] {
+  list-style-image: var(--icon-gtk-edit-16-dis);
+}
+
+#advancedPropsTag {
+  list-style-image: var(--icon-document-properties-16);
+}
+
+#advancedPropsTag[disabled] {
+  list-style-image: var(--icon-document-properties-16-dis);
+}
 

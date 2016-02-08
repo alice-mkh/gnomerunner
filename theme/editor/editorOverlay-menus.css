@@ -87,10 +87,269 @@ menuitem:not([type]) {
 #insertChars[disabled] {
   list-style-image: var(--icon-stock_insert_special_character-16-dis);
 }
-/*
-fontFaceMenu
-fontSizeMenu
-fontStyleMenu
-fontColor
-removeStylesMenuitem
-*/
+
+#fontFaceMenu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-gtk-select-font-16);
+}
+
+#fontFaceMenu[disabled] {
+  list-style-image: var(--icon-gtk-select-font-16-dis);
+}
+
+#fontSizeMenu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-stock_font-size-16);
+}
+
+#fontSizeMenu[disabled] {
+  list-style-image: var(--icon-stock_font-size-dis);
+}
+
+#fontStyleMenu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-stock_styles-16);
+}
+
+#fontStyleMenu[disabled] {
+  list-style-image: var(--icon-stock_styles-16-dis);
+}
+
+#fontColor {
+  list-style-image: var(--icon-stock_text_color_foreground-16);
+}
+
+#fontColor[disabled] {
+  list-style-image: var(--icon-stock_text_color_foreground-16-dis);
+}
+
+#paragraphMenu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-stock_format-paragraph-16);
+}
+
+#paragraphMenu[disabled] {
+  list-style-image: var(--icon-stock_format-paragraph-16-dis);
+}
+
+#listMenu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-stock_format-numbering-bullets-16);
+}
+
+#listProps {
+  list-style-image: var(--icon-document-properties-16);
+}
+
+#listProps[disabled] {
+  list-style-image: var(--icon-document-properties-16-dis);
+}
+
+#listMenu[disabled] {
+  list-style-image: var(--icon-stock_format-numbering-bullets-16-dis);
+}
+
+#increaseIndent {
+  list-style-image: var(--icon-format-indent-more-16);
+}
+
+#increaseIndent[disabled] {
+  list-style-image: var(--icon-format-indent-more-16-dis);
+}
+
+#decreaseIndent {
+  list-style-image: var(--icon-format-indent-less-16);
+}
+
+#decreaseIndent[disabled] {
+  list-style-image: var(--icon-format-indent-less-16-dis);
+}
+
+#alignMenu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-format-justify-left-16);
+}
+
+#alignMenu[disabled] {
+  list-style-image: var(--icon-format-justify-left-16-dis);
+}
+
+#tableInsertMenu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-stock_insert-table-16);
+}
+
+#tableInsertMenu[disabled] {
+  list-style-image: var(--icon-stock_insert-table-16-dis);
+}
+
+#menu_insertTable {
+  list-style-image: var(--icon-stock_insert-table-16);
+}
+
+#menu_insertTable[disabled] {
+  list-style-image: var(--icon-stock_insert-table-16-dis);
+}
+
+#menu_tableRowAbove {
+  list-style-image: var(--icon-stock_insert-row-above-16);
+}
+
+#menu_tableRowAbove[disabled] {
+  list-style-image: var(--icon-stock_insert-row-above-16-dis);
+}
+
+#menu_tableRowBelow {
+  list-style-image: var(--icon-stock_insert-row-below-16);
+}
+
+#menu_tableRowBelow[disabled] {
+  list-style-image: var(--icon-stock_insert-row-below-16-dis);
+}
+
+#menu_tableColumnBefore {
+  list-style-image: var(--icon-stock_insert-column-before-16);
+}
+
+#menu_tableColumnBefore[disabled] {
+  list-style-image: var(--icon-stock_insert-column-before-16-dis);
+}
+
+#menu_tableColumnAfter {
+  list-style-image: var(--icon-stock_insert-column-after-16);
+}
+
+#menu_tableColumnAfter[disabled] {
+  list-style-image: var(--icon-stock_insert-column-after-16-dis);
+}
+
+#menu_tableCellBefore {
+  list-style-image: var(--icon-stock_insert-cell-before-16);
+}
+
+#menu_tableCellBefore[disabled] {
+  list-style-image: var(--icon-stock_insert-cell-before-16-dis);
+}
+
+#menu_tableCellAfter {
+  list-style-image: var(--icon-stock_insert-cell-after-16);
+}
+
+#menu_tableCellAfter[disabled] {
+  list-style-image: var(--icon-stock_insert-cell-after-16-dis);
+}
+
+#tableSelectMenu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-stock_select-table-16);
+}
+
+#tableSelectMenu[disabled] {
+  list-style-image: var(--icon-stock_select-table-16-dis);
+}
+
+#menu_SelectTable {
+  list-style-image: var(--icon-stock_select-table-16);
+}
+
+#menu_SelectTable[disabled] {
+  list-style-image: var(--icon-stock_select-table-16-dis);
+}
+
+#menu_SelectRow {
+  list-style-image: var(--icon-stock_select-row-16);
+}
+
+#menu_SelectRow[disabled] {
+  list-style-image: var(--icon-stock_select-row-16-dis);
+}
+
+#menu_SelectColumn {
+  list-style-image: var(--icon-stock_select-column-16);
+}
+
+#menu_SelectColumn[disabled] {
+  list-style-image: var(--icon-stock_select-column-16-dis);
+}
+
+#menu_SelectCell {
+  list-style-image: var(--icon-stock_select-cell-16);
+}
+
+#menu_SelectCell[disabled] {
+  list-style-image: var(--icon-stock_select-cell-16-dis);
+}
+
+#menu_SelectAllCells {
+  list-style-image: var(--icon-stock_select-all-cells-16);
+}
+
+#menu_SelectAllCells[disabled] {
+  list-style-image: var(--icon-stock_select-all-cells-16-dis);
+}
+
+#tableDeleteMenu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-stock_delete-table-16);
+}
+
+#tableDeleteMenu[disabled] {
+  list-style-image: var(--icon-stock_delete-table-16-dis);
+}
+
+#menu_DeleteTable {
+  list-style-image: var(--icon-stock_delete-table-16);
+}
+
+#menu_DeleteTable[disabled] {
+  list-style-image: var(--icon-stock_delete-table-16-dis);
+}
+
+#menu_DeleteRow {
+  list-style-image: var(--icon-stock_delete-row-16);
+}
+
+#menu_DeleteRow[disabled] {
+  list-style-image: var(--icon-stock_delete-row-16-dis);
+}
+
+#menu_DeleteColumn {
+  list-style-image: var(--icon-stock_delete-column-16);
+}
+
+#menu_DeleteColumn[disabled] {
+  list-style-image: var(--icon-stock_delete-column-16-dis);
+}
+
+#menu_DeleteCell {
+  list-style-image: var(--icon-stock_delete-cell-16);
+}
+
+#menu_DeleteCell[disabled] {
+  list-style-image: var(--icon-stock_delete-cell-16-dis);
+}
+
+#menu_JoinTableCells {
+  list-style-image: var(--icon-stock_table-combine-16);
+}
+
+#menu_JoinTableCells[disabled] {
+  list-style-image: var(--icon-stock_table-combine-16-dis);
+}
+
+#menu_SlitTableCell {
+  list-style-image: var(--icon-stock_table-split-16);
+}
+
+#menu_SlitTableCell[disabled] {
+  list-style-image: var(--icon-stock_table-split-16-dis);
+}
+
+#menu_tableProperties {
+  list-style-image: var(--icon-document-properties-16);
+}
+
+#menu_tableProperties[disabled] {
+  list-style-image: var(--icon-document-properties-16-dis);
+}
+
