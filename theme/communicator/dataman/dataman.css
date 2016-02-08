@@ -29,3 +29,53 @@
 .permissionLabel {
   font-weight: bold;
 }
+
+/* menus */
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#cookies-context-remove,
+#prefs-context-remove,
+#pwd-context-remove,
+#storage-context-remove,
+#fdata-context-remove {
+  list-style-image: var(--icon-edit-delete-16);
+}
+
+#cookies-context-remove[disabled],
+#prefs-context-remove[disabled],
+#pwd-context-remove[disabled],
+#storage-context-remove[disabled],
+#fdata-context-remove[disabled] {
+  list-style-image: var(--icon-edit-delete-16-dis);
+  opacity: var(--icon-edit-delete-dis-opacity);
+}
+
+#cookies-context-selectall,
+#prefs-context-selectall,
+#pwd-context-selectall,
+#storage-context-selectall,
+#fdata-context-selectall {
+  list-style-image: var(--icon-edit-select-all-16);
+}
+
+#cookies-context-selectall[disabled],
+#prefs-context-selectall[disabled],
+#pwd-context-selectall[disabled],
+#storage-context-selectall[disabled],
+#fdata-context-selectall[disabled] {
+  list-style-image: var(--icon-edit-select-all-16-dis);
+  opacity: var(--icon-edit-select-all-dis-opacity);
+}
+
+#pwd-context-copypassword {
+  list-style-image: var(--icon-edit-copy-16);
+}
+
+#pwd-context-copypassword[disabled] {
+  list-style-image: var(--icon-edit-copy-16-dis);
+  opacity: var(--icon-edit-copy-dis-opacity);
+}
+

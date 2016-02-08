@@ -1,4 +1,6 @@
 accessories-text-editor
+address-book-new
+application-exit
 appointment-new
 appointment-soon
 contact-new
@@ -10,6 +12,8 @@ dialog-question
 dialog-warning
 document-new
 document-open
+document-open-recent
+document-page-setup
 document-print
 document-print-preview
 document-properties
@@ -22,6 +26,7 @@ edit-copy
 edit-cut
 edit-delete
 edit-find
+edit-find-replace
 edit-paste
 edit-redo
 edit-select-all
@@ -92,6 +97,7 @@ network-server
 preferences-desktop
 process-stop
 stock_folder folder
+text-html
 text-x-generic
 text-x-generic-template
 tools-check-spelling

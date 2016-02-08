@@ -62,8 +62,7 @@ treechildren::-moz-tree-image(title, livemarkItem, visited) {
 }
 
 treechildren::-moz-tree-image(container, OrganizerQuery_AllBookmarks) {
-  list-style-image: url("chrome://global/skin/icons/firefox/allBookmarks.png");
-  -moz-image-region: auto;
+  list-style-image: var(--icon-stock_bookmarks-16);
 }
 
 #bookmarksToolbarFolderMenu,

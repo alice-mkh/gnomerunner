@@ -1,4 +1,4 @@
-~/* This Source Code Form is subject to the terms of the Mozilla Public
+/* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
@@ -6,6 +6,7 @@
 @import url("chrome://communicator/skin/");
 @import url("chrome://communicator/skin/bookmarks/bookmarksToolbar.css");
 @import url("chrome://icons/skin/icon-theme-default.css");
+@import url("chrome://navigator/skin/navigator-menus.css");
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
  
@@ -588,7 +589,7 @@ toolbar[mode="text"] #search-button > .button-box {
   list-style-image: url("chrome://communicator/skin/icons/identity.png");
 }
 
-#popupIcon {"] {
+#popupIcon {
   list-style-image: var(--icon-dialog-warning-16);
 }
 

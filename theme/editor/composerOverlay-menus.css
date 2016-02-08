@@ -1,0 +1,27 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://icons/skin/icon-theme-default.css");
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#fileExportToText {
+  list-style-image: var(--icon-text-x-generic-16);
+}
+
+#fileExportToText[disabled] {
+  list-style-image: var(--icon-text-x-generic-16-dis);
+  opacity: var(--icon-text-x-generic-dis-opacity);
+}
+
+#previewInBrowser {
+  list-style-image: var(--icon-internet-web-browser-16);
+}
+
+#previewInBrowser[disabled] {
+  list-style-image: var(--icon-internet-web-browser-16-dis);
+  opacity: var(--icon-internet-web-browser-dis-opacity);
+}

@@ -1,0 +1,222 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://icons/skin/icon-theme-default.css");
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#spell-add-to-dictionary {
+  list-style-image: var(--icon-list-add-16);
+}
+
+#spell-add-to-dictionary[disabled="true"] {
+  list-style-image: var(--icon-list-add-16-dis);
+  opacity: var(--icon-list-add-dis-opacity);
+}
+
+#spell-undo-add-to-dictionary {
+  list-style-image: var(--icon-edit-undo-16);
+}
+
+#spell-undo-add-to-dictionary[disabled="true"] {
+  list-style-image: var(--icon-edit-undo-16-dis);
+  opacity:  var(--icon-edit-undo-dis-opacity);
+}
+
+#context-openlinkintab,
+#context-openframeintab {
+  list-style-image: var(--icon-tab-new-16);
+}
+
+#context-openlinkintab[disabled="true"],
+#context-openframeintab[disabled="true"] {
+  list-style-image: var(--icon-tab-new-16-dis);
+  opacity:  var(--icon-tab-new-dis-opacity);
+}
+
+#context-openlink,
+#context-openframe {
+  list-style-image: var(--icon-window-new-16);
+}
+
+#context-openlink[disabled="true"],
+#context-openframe[disabled="true"] {
+  list-style-image: var(--icon-window-new-16-dis);
+  opacity:  var(--icon-window-new-dis-opacity);
+}
+
+#context-bookmarklink,
+#context-bookmarkpage,
+#context-bookmarkframe {
+  list-style-image: var(--icon-bookmark-new-16);
+}
+
+#context-bookmarklink[disabled="true"],
+#context-bookmarkpage[disabled="true"],
+#context-bookmarkframe[disabled="true"] {
+  list-style-image: var(--icon-bookmark-new-16-dis);
+  opacity: var(--icon-bookmark-new-dis-opacity);
+}
+
+#context-savelink,
+#context-saveimage,
+#context-savevideo,
+#context-saveaudio,
+#context-savepage,
+#context-saveframe {
+  list-style-image: var(--icon-document-save-as-16);
+}
+
+#context-savelink[disabled="true"],
+#context-saveimage[disabled="true"],
+#context-savevideo[disabled="true"],
+#context-saveaudio[disabled="true"],
+#context-savepage[disabled="true"],
+#context-saveframe[disabled="true"] {
+  list-style-image: var(--icon-document-save-as-16-dis);
+  opacity: var(--icon-document-save-as-dis-opacity);
+}
+
+#context-copyemail,
+#context-copylink,
+#context-copyimage,
+#context-copyvideourl,
+#context-copyaudiourl {
+  list-style-image: var(--icon-edit-copy-16);
+}
+
+#context-copyemail[disabled="true"],
+#context-copylink[disabled="true"],
+#context-copyimage[disabled="true"],
+#context-copyvideourl[disabled="true"],
+#context-copyaudiourl[disabled="true"] {
+  list-style-image: var(--icon-edit-copy-16-dis);
+  opacity: var(--icon-edit-copy-dis-opacity);
+}
+
+#context-media-play {
+  list-style-image: var(--icon-media-playback-start-16);
+}
+
+#context-media-play[disabled="true"] {
+  list-style-image: var(--icon-media-playback-start-16-dis);
+  opacity: var(--icon-media-playback-start-dis-opacity);
+}
+
+#context-media-pause {
+  list-style-image: var(--icon-media-playback-pause-16);
+}
+
+#context-media-pause[disabled="true"] {
+  list-style-image: var(--icon-media-playback-pause-16-dis);
+  opacity: var(--icon-media-playback-pause-dis-opacity);
+}
+
+#context-media-mute {
+  list-style-image: var(--icon-audio-volume-muted-16);
+}
+
+#context-media-mute[disabled="true"] {
+  list-style-image: var(--icon-audio-volume-muted-16-dis);
+  opacity: var(--icon-audio-volume-muted-dis-opacity);
+}
+
+#context-media-unmute {
+  list-style-image: var(--icon-audio-volume-high-16);
+}
+
+#context-media-unmute[disabled="true"] {
+  list-style-image: var(--icon-audio-volume-high-16-dis);
+  opacity: var(--icon-audio-volume-high-dis-opacity);
+}
+
+#context-video-fullscreen {
+  list-style-image: var(--icon-view-fullscreen-16);
+}
+
+#context-video-fullscreen[disabled="true"] {
+  list-style-image: var(--icon-view-fullscreen-16-dis);
+  opacity: var(--icon-view-fullscreen-dis-opacity);
+}
+
+#context-reloadimage,
+#context-reload,
+#context-reloadframe {
+  list-style-image: var(--icon-view-refresh-16);
+}
+
+#context-reloadimage[disabled="true"],
+#context-reload[disabled="true"],
+#context-reloadframe[disabled="true"] {
+  list-style-image: var(--icon-view-refresh-16-dis);
+  opacity: var(--icon-view-refresh-dis-opacity);
+}
+
+#context-back {
+  list-style-image: var(--icon-go-previous-16);
+}
+
+#context-back[disabled="true"] {
+  list-style-image: var(--icon-go-previous-16-dis);
+  opacity: var(--icon-go-previous-dis-opacity);
+}
+
+#context-forward {
+  list-style-image: var(--icon-go-next-16);
+}
+
+#context-forward[disabled="true"] {
+  list-style-image: var(--icon-go-next-16-dis);
+  opacity: var(--icon-go-next-dis-opacity);
+}
+
+#context-stop {
+  list-style-image: var(--icon-process-stop-16);
+}
+
+#context-stop[disabled="true"] {
+  list-style-image: var(--icon-process-stop-16-dis);
+  opacity: var(--icon-process-stop-dis-opacity);
+}
+
+#context-searchselect {
+  list-style-image: var(--icon-edit-find-16);
+}
+
+#context-searchselect[disabled="true"] {
+  list-style-image: var(--icon-edit-find-16-dis);
+  opacity: var(--icon-edit-find-dis-opacity);
+}
+
+#context-viewinfo,
+#context-viewframeinfo {
+  list-style-image: var(--icon-dialog-information-16);
+}
+
+#context-viewinfo[disabled="true"],
+#context-viewframeinfo[disabled="true"] {
+  list-style-image: var(--icon-dialog-information-16-dis);
+  opacity: var(--icon-dialog-information-dis-opacity);
+}
+
+#context-metadata {
+  list-style-image: var(--icon-document-properties-16);
+}
+
+#context-metadata[disabled="true"] {
+  list-style-image: var(--icon-document-properties-16-dis);
+  opacity: var(--icon-document-properties-dis-opacity);
+}
+
+#context-printframe {
+  list-style-image: var(--icon-document-print-16);
+}
+
+#context-printframe[disabled="true"] {
+  list-style-image: var(--icon-document-print-16-dis);
+  opacity: var(--icon-document-print-dis-opacity);
+}
+

@@ -138,3 +138,56 @@
 .tab-back {
   list-style-image: var(--icon-go-down-16);
 }
+
+/* ::::: menus ::::: */
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#switch-ctx-item {
+  list-style-image: var(--icon-go-jump-16);
+}
+
+#switch-ctx-item[disabled] {
+  list-style-image: var(--icon-go-jump-16-dis);
+  opacity: var(--icon-go-jump-dis-opacity);
+}
+
+#reload-ctx-item {
+  list-style-image: var(--icon-view-refresh-16);
+}
+
+#reload-ctx-item[disabled] {
+  list-style-image: var(--icon-view-refresh-16-dis);
+  opacity: var(--icon-view-refresh-dis-opacity);
+}
+
+#stop-ctx-item {
+  list-style-image: var(--icon-process-stop-16);
+}
+
+#stop-ctx-item[disabled] {
+  list-style-image: var(--icon-process-stop-16-dis);
+  opacity: var(--icon-view-refresh-dis-opacity);
+}
+
+#hide-ctx-item {
+  list-style-image: var(--icon-list-remove-16);
+}
+
+#hide-ctx-item[disabled] {
+  list-style-image: var(--icon-list-remove-16-dis);
+  opacity: var(--icon-list-remove-dis-opacity);
+}
+
+#customize-ctx-item,
+menuitem[oncommand="SidebarCustomize();"] {
+  list-style-image: var(--icon-document-properties-16);
+}
+
+#customize-ctx-item[disabled],
+menuitem[oncommand="SidebarCustomize();"][disabled] {
+  list-style-image: var(--icon-document-properties-16-dis);
+  opacity: var(--icon-document-properties-dis-opacity);
+}

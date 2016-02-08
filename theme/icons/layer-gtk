@@ -1,3 +1,4 @@
+application-exit        gtk-quit
 dialog-error			gtk-dialog-error
 dialog-information		gtk-dialog-info
 dialog-password			gtk-dialog-authentication
@@ -5,6 +6,7 @@ dialog-question			gtk-dialog-question
 dialog-warning			gtk-dialog-warning
 document-new			gtk-new
 document-open			gtk-open
+document-page-setup     gtk-page-setup
 document-print			gtk-print
 document-print-preview	gtk-print-preview
 document-properties     gtk-properties
@@ -17,6 +19,7 @@ edit-copy				gtk-copy
 edit-cut				gtk-cut
 edit-delete				gtk-delete
 edit-find				gtk-find
+edit-find-replace		gtk-find-and-replace
 edit-paste				gtk-paste
 edit-redo				gtk-redo
 edit-select-all			gtk-select-all

@@ -8,12 +8,6 @@
 
 /* ::::: primary toolbar buttons ::::: */
 
-#namedAnchorButton[disabled="true"],
-#hlineButton[disabled="true"],
-#tableButton[disabled="true"] {
-  opacity: %DISABLED-OPACITY !important;
-}
-
 #newButton {
   list-style-image: var(--icon-document-new-24);
 }

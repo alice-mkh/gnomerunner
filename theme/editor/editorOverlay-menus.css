@@ -1,0 +1,106 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://icons/skin/icon-theme-default.css");
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#menu_checkspelling {
+  list-style-image: var(--icon-tools-check-spelling-16);
+}
+
+#menu_checkspelling[disabled="true"] {
+  list-style-image: var(--icon-tools-check-spelling-16-dis);
+  opacity: var(--icon-tools-check-spelling-dis-opacity);
+}
+
+#menu_preferences {
+  list-style-image: var(--icon-preferences-desktop-16);
+}
+
+#menu_preferences[disabled] {
+  list-style-image: var(--icon-preferences-desktop-16-dis);
+  opacity: var(--icon-preferences-desktop-dis-opacity);
+}
+
+#insertImage {
+  list-style-image: var(--icon-insert-image-16);
+}
+
+#insertImage[disabled] {
+  list-style-image: var(--icon-insert-image-16-dis);
+  opacity: var(--icon-insert-image-dis-opacity);
+}
+
+#insertTable {
+  list-style-image: var(--icon-stock_insert-table-16);
+}
+
+#insertTable[disabled] {
+  list-style-image: var(--icon-stock_insert-table-16-dis);
+  opacity: var(--icon-stock_insert-table-dis-opacity);
+}
+
+#insertLink {
+  list-style-image: var(--icon-insert-link-16);
+}
+
+#insertLink[disabled] {
+  list-style-image: var(--icon-insert-link-16-dis);
+  opacity: var(--icon-insert-link-dis-opacity);
+}
+
+#insertAnchor {
+  list-style-image: var(--icon-stock_anchor-16);
+}
+
+#insertAnchor[disabled] {
+  list-style-image: var(--icon-stock_anchor-16-dis);
+  opacity: var(--icon-stock_anchor-dis-opacity);
+}
+
+#insertHline {
+  list-style-image: var(--icon-stock_insert-rule-16);
+}
+
+#insertHline[disabled] {
+  list-style-image: var(--icon-stock_insert-rule-16-dis);
+  opacity: var(--icon-stock_insert-rule-dis-opacity);
+}
+
+#insertHTMLSource {
+  list-style-image: var(--icon-text-html-16);
+}
+
+#insertHTMLSource[disabled] {
+  list-style-image: var(--icon-text-html-16-dis);
+  opacity: var(--icon-text-html-dis-opacity);
+}
+
+#insertMath {
+  list-style-image: var(--icon-stock_insert-math-object-16);
+}
+
+#insertMath[disabled] {
+  list-style-image: var(--icon-stock_insert-math-object-16-dis);
+  opacity: var(--icon-stock_insert-math-object-dis-opacity);
+}
+
+#insertChars {
+  list-style-image: var(--icon-stock_insert_special_character-16);
+}
+
+#insertChars[disabled] {
+  list-style-image: var(--icon-stock_insert_special_character-16-dis);
+  opacity: var(--icon-stock_insert_special_character-dis-opacity);
+}
+/*
+fontFaceMenu
+fontSizeMenu
+fontStyleMenu
+fontColor
+removeStylesMenuitem
+*/

@@ -2,7 +2,6 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-
 /* Info box */
 #detailsDeck {
   margin: 5px;
@@ -29,3 +28,55 @@
 #back-button, #forward-button {
     visibility: collapse !important;
 }
+
+/* menus */
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#newbookmark {
+  list-style-image: var(--icon-bookmark-new-16);
+}
+
+#newbookmark[disabled] {
+  list-style-image: var(--icon-bookmark-new-16-dis);
+  opacity: var(--icon-bookmark-new-dis-opacity);
+}
+
+#newfolder {
+  list-style-image: var(--icon-folder`-new-16);
+}
+
+#newfolder[disabled] {
+  list-style-image: var(--icon-folder-new-16-dis);
+  opacity: var(--icon-folder-new-dis-opacity);
+}
+
+#orgClose {
+  list-style-image: var(--icon-window-close-16);
+}
+
+#orgClose[disabled] {
+  list-style-image: var(--icon-window-close-16-dis);
+  opacity: var(--icon-window-close-dis-opacity);
+}
+
+#fileImport {
+  list-style-image: var(--icon-document-revert-16);
+}
+
+#fileImport[disabled] {
+  list-style-image: var(--icon-document-revert-16-dis);
+  opacity: var(--icon-document-revert-dis-opacity);
+}
+
+#fileExport {
+  list-style-image: var(--icon-document-save-as-16);
+}
+
+#fileExport[disabled] {
+  list-style-image: var(--icon-document-save-as-16-dis);
+  opacity: var(--icon-document-save-as-dis-opacity);
+}
+

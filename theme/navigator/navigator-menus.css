@@ -1,0 +1,58 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://icons/skin/icon-theme-default.css");
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+/* security-context-menu */
+
+#viewSecurityInfo {
+  list-style-image: var(--icon-lock-secure-16);
+}
+
+#viewSecurityInfo[disabled] {
+  list-style-image: var(--icon-lock-secure-16-dis);
+  opacity: var(--icon-lock-secure-dis-opacity);
+}
+
+#viewCertificate {
+  list-style-image: var(--icon-application-certificate-16);
+}
+
+#viewCertificate[disabled] {
+  list-style-image: var(--icon-application-certificate-16-dis);
+  opacity: var(--icon-application-certificate-dis-opacity);
+}
+
+#viewCertManager {
+  list-style-image: var(--icon-document-properties-16);
+}
+
+#viewCertManager[disabled] {
+  list-style-image: var(--icon-document-properties-16-dis);
+  opacity: var(--icon-document-properties-dis-opacity);
+}
+
+/* BMB_bookmarksPopup */
+menuitem[command="Browser:AddBookmark"] {
+  list-style-image: var(--icon-bookmark-new-16);
+}
+
+menuitem[command="Browser:AddBookmark"][disabled] {
+  list-style-image: var(--icon-bookmark-new-16-dis);
+  opacity: var(--icon-bookmark-new-dis-opacity);
+}
+
+menuitem[command="Browser:ManageBookmark"] {
+  list-style-image: var(--icon-stock_bookmarks-16);
+}
+
+menuitem[command="Browser:ManageBookmark"][disabled] {
+  list-style-image: var(--icon-stock_bookmarks-16-dis);
+  opacity: var(--icon-stock_bookmarks-dis-opacity);
+}
+

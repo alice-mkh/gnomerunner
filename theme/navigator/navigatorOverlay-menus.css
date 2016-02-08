@@ -1,0 +1,179 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://icons/skin/icon-theme-default.css");
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#menu_newNavigatorTab {
+  list-style-image: var(--icon-tab-new-16);
+}
+
+#menu_newNavigatorTab[disabled] {
+  list-style-image: var(--icon-tab-new-16-dis);
+  opacity: var(--icon-tab-new-dis-opacity);
+}
+
+#menu_openLocation {
+  list-style-image: var(--icon-text-html-16);
+}
+
+#menu_openLocation[disabled] {
+  list-style-image: var(--icon-text-html-16-dis);
+  opacity: var(--icon-text-html-dis-opacity);
+}
+
+#menu_openFile {
+  list-style-image: var(--icon-document-open-16);
+}
+
+#menu_openFile[disabled] {
+  list-style-image: var(--icon-document-open-16-dis);
+  opacity: var(--icon-document-open-dis-opacity);
+}
+
+#savepage,
+#saveframe {
+  list-style-image: var(--icon-document-save-as-16);
+}
+
+#savepage[disabled],
+#saveframe[disabled] {
+  list-style-image: var(--icon-document-save-as-16-dis);
+  opacity: var(--icon-document-save-as-dis-opacity);
+}
+
+menuitem[command="Browser:EditPage"] {
+  list-style-image: var(--icon-gtk-edit-16);
+}
+
+menuitem[command="Browser:EditPage"][disabled] {
+  list-style-image: var(--icon-gtk-edit-16-dis);
+  opacity: var(--icon-gtk-edit-dis-opacity);
+}
+
+#menu_preferences {
+  list-style-image: var(--icon-preferences-desktop-16);
+}
+
+#menu_preferences[disabled] {
+  list-style-image: var(--icon-preferences-desktop-16-dis);
+  opacity: var(--icon-preferences-desktop-dis-opacity);
+}
+
+#menuitem_fullScreen {
+  list-style-image: var(--icon-view-fullscreen-16);
+}
+
+#menuitem_fullScreen[disabled] {
+  list-style-image: var(--icon-view-fullscreen-16-dis);
+  opacity: var(--icon-view-fullscreen-dis-opacity);
+}
+
+#menuitem-stop {
+  list-style-image: var(--icon-process-stop-16);
+}
+
+#menuitem-stop[disabled] {
+  list-style-image: var(--icon-process-stop-16-dis);
+  opacity: var(--icon-process-stop-dis-opacity);
+}
+
+#menuitem_reload {
+  list-style-image: var(--icon-view-refresh-16);
+}
+
+#menuitem_reload[disabled] {
+  list-style-image: var(--icon-view-refresh-16-dis);
+  opacity: var(--icon-view-refresh-dis-opacity);
+}
+
+#menuitem_pageInfoCmd {
+  list-style-image: var(--icon-document-properties-16);
+}
+
+#menuitem_pageInfoCmd[disabled] {
+  list-style-image: var(--icon-document-properties-16-dis);
+  opacity: var(--icon-document-properties-dis-opacity);
+}
+
+#historyMenuBack {
+  list-style-image: var(--icon-go-previous-16);
+}
+
+#historyMenuBack[disabled] {
+  list-style-image: var(--icon-go-previous-16-dis);
+  opacity: var(--icon-go-previous-dis-opacity);
+}
+
+#historyMenuForward {
+  list-style-image: var(--icon-go-next-16);
+}
+
+#historyMenuForward[disabled] {
+  list-style-image: var(--icon-go-next-16-dis);
+  opacity: var(--icon-go-next-dis-opacity);
+}
+
+#historyMenuUp {
+  list-style-image: var(--icon-go-up-16);
+}
+
+#historyMenuUp[disabled] {
+  list-style-image: var(--icon-go-up-16-dis);
+  opacity: var(--icon-go-up-dis-opacity);
+}
+
+#historyMenuHome {
+  list-style-image: var(--icon-go-home-16);
+}
+
+#historyMenuHome[disabled] {
+  list-style-image: var(--icon-go-home-16-dis);
+  opacity: var(--icon-go-home-dis-opacity);
+}
+
+#historyRestoreLastSession {
+  list-style-image: var(--icon-document-revert-16);
+}
+
+#historyRestoreLastSession[disabled] {
+  list-style-image: var(--icon-document-revert-16-dis);
+  opacity: var(--icon-document-revert-dis-opacity);
+}
+
+#menu_showAllHistory {
+  list-style-image: var(--icon-stock_history-16);
+}
+
+#menu_showAllHistory[disabled] {
+  list-style-image: var(--icon-stock_history-16-dis);
+  opacity: var(--icon-stock_history-dis-opacity);
+}
+
+#sync-tabs-menuitem {
+  list-style-image: url("chrome://communicator/skin/sync/sync-16.png");
+}
+
+#menu_searchWeb {
+  list-style-image: var(--icon-edit-find-16);
+}
+
+#menu_searchWeb[disabled] {
+  list-style-image: var(--icon-edit-find-16-dis);
+  opacity: var(--icon-edit-find-dis-opacity);
+}
+
+#sanitizeItem {
+  list-style-image: var(--icon-edit-clear-16);
+}
+
+#sanitizeItem[disabled] {
+  list-style-image: var(--icon-edit-clear-16-dis);
+  opacity: var(--icon-edit-clear-dis-opacity);
+}
+
+

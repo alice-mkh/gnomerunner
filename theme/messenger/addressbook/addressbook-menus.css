@@ -1,0 +1,173 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://icons/skin/icon-theme-default.css");
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#menu_newContact,
+#dirTreeContext-newcard,
+#composeMail > menuitem[oncommand="AbPanelNewCard();"] {
+  list-style-image: var(--icon-contact-new-16);
+}
+
+#menu_newContact[disabled],
+#dirTreeContext-newcard[disabled],
+#composeMail > menuitem[oncommand="AbPanelNewCard();"][disabled] {
+  list-style-image: var(--icon-contact-new-16-dis);
+  opacity: var(--icon-contact-new-dis-opacity);
+}
+
+#menu_newList,
+#dirTreeContext-newlist,
+menuitem[command="cmd_newlist"] {
+  list-style-image: var(--icon-stock_contact-list-16);
+}
+
+#menu_newList[disabled],
+#dirTreeContext-newlist[disabled],
+menuitem[command="cmd_newlist"][disabled] {
+  list-style-image: var(--icon-stock_contact-list-16-dis);
+  opacity: var(--icon-stock_contact-list-dis-opacity);
+}
+
+#menu_newAddrbook {
+  list-style-image: var(--icon-address-book-new-16);
+}
+
+#menu_newAddrbook[disabled] {
+  list-style-image: var(--icon-address-book-new-16-dis);
+  opacity: var(--icon-address-book-new-dis-opacity);
+}
+
+#menu_newMessage,
+#abResultsTreeContext-newmessage,
+#composeMail > menuitem[oncommand="AbNewMessage();"] {
+  list-style-image: var(--icon-mail-message-new-16);
+}
+
+#menu_newMessage[disabled="true"],
+#abResultsTreeContext-newmessage[disabled="true"],
+#composeMail > menuitem[oncommand="AbNewMessage();"][disabled="true"] {
+  list-style-image: var(--icon-mail-message-new-16-dis);
+  opacity: var(--icon-mail-message-new-dis-opacity);
+}
+
+#printPreviewMenuItem,
+#printPreviewAddressBook {
+  list-style-image: var(--icon-document-print-preview-16);
+}
+
+#printPreviewMenuItem[disabled],
+#printPreviewAddressBook[disabled] {
+  list-style-image: var(--icon-document-print-preview-16-dis);
+  opacity:  var(--icon-document-print-preview-dis-opacity);
+}
+
+#printMenuItem,
+#printAddressBook {
+  list-style-image: var(--icon-document-print-16);
+}
+
+#printMenuItem[disabled],
+#printAddressBook[disabled] {
+  list-style-image: var(--icon-document-print-16-dis);
+  opacity:  var(--icon-document-print-dis-opacity);
+}
+
+menuitem[command="cmd_properties"],
+#dirTreeContext-properties,
+#abResultsTreeContext-properties {
+  list-style-image: var(--icon-document-properties-16);
+}
+
+menuitem[command="cmd_properties"][disabled],
+#dirTreeContext-properties[disabled],
+#abResultsTreeContext-properties[disabled] {
+  list-style-image: var(--icon-document-properties-16-dis);
+  opacity:  var(--icon-document-properties-dis-opacity);
+}
+
+#menu_preferences {
+  list-style-image: var(--icon-preferences-desktop-16);
+}
+
+#menu_preferences[disabled] {
+  list-style-image: var(--icon-preferences-desktop-16-dis);
+  opacity: var(--icon-preferences-desktop-dis-opacity);
+}
+
+#menu_search_addresses {
+  list-style-image: var(--icon-edit-find-16);
+}
+
+#menu_search_addresses[disabled] {
+  list-style-image: var(--icon-edit-find-16-dis);
+  opacity: var(--icon-edit-find-dis-opacity);
+}
+
+#taskPopup > menuitem[oncommand="toImport()"] {
+  list-style-image: var(--icon-document-revert-16);
+}
+
+#taskPopup > menuitem[oncommand="toImport()"][disabled] {
+  list-style-image: var(--icon-document-revert-16-dis);
+  opacity: var(--icon-document-revert-dis-opacity);
+}
+
+#taskPopup > menuitem[oncommand="AbExport()"] {
+  list-style-image: var(--icon-document-save-as-16);
+}
+
+#taskPopup > menuitem[oncommand="AbExport()"][disabled] {
+  list-style-image: var(--icon-document-save-as-16-dis);
+  opacity: var(--icon-document-save-as-dis-opacity);
+}
+
+#dirTreeContext-delete,
+#abResultsTreeContext-delete,
+#composeMail > menuitem[oncommand="AbDelete();"] {
+  list-style-image: var(--icon-edit-delete-16);
+}
+
+#dirTreeContext-delete[disabled],
+#abResultsTreeContext-delete[disabled],
+#composeMail > menuitem[oncommand="AbDelete();"][disabled] {
+  list-style-image: var(--icon-edit-delete-16-dis);
+  opacity: var(--icon-edit-delete-dis-opacity);
+}
+
+#abResultsTreeContext-newim {
+  list-style-image: var(--icon-internet-group-chat-16);
+}
+
+#abResultsTreeContext-newim[disabled] {
+  list-style-image: var(--icon-internet-group-chat-16-dis);
+  opacity: var(--icon-internet-group-chat-dis-opacity);
+}
+
+#composeMail > menuitem[oncommand="AbCopyAddress();"] {
+  list-style-image: var(--icon-edit-copy-16);
+}
+
+#composeMail > menuitem[oncommand="AbCopyAddress();"][disabled] {
+  list-style-image: var(--icon-edit-copy-16-dis);
+  opacity: var(--icon-edit-copy-dis-opacity);
+}
+
+#composeMail > menuitem[oncommand="AbPanelAdd('addr_to');"],
+#composeMail > menuitem[oncommand="AbPanelAdd('addr_cc');"],
+#composeMail > menuitem[oncommand="AbPanelAdd('addr_bcc');"] {
+  list-style-image: var(--icon-list-add-16);
+}
+
+#composeMail > menuitem[oncommand="AbPanelAdd('addr_to');"][disabled],
+#composeMail > menuitem[oncommand="AbPanelAdd('addr_cc');"][disabled],
+#composeMail > menuitem[oncommand="AbPanelAdd('addr_bcc');"][disabled] {
+  list-style-image: var(--icon-list-add-16-dis);
+  opacity: var(--icon-list-add-dis-opacity);
+}
+

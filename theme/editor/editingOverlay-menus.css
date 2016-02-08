@@ -1,0 +1,75 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://icons/skin/icon-theme-default.css");
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#menu_openRemote {
+  list-style-image: var(--icon-text-html-16);
+}
+
+#menu_openRemote[disabled] {
+  list-style-image: var(--icon-text-html-16-dis);
+  opacity: var(--icon-text-html-dis-opacity);
+}
+
+#menu_openFile {
+  list-style-image: var(--icon-document-open-16);
+}
+
+#menu_openFile[disabled] {
+  list-style-image: var(--icon-document-open-16-dis);
+  opacity: var(--icon-document-open-dis-opacity);
+}
+
+#menu_RecentFiles {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-document-open-recent-16);
+}
+
+#menu_RecentFiles[disabled] {
+  list-style-image: var(--icon-document-open-recent-16-dis);
+  opacity: var(--icon-document-open-recent-dis-opacity);
+}
+
+#menu_saveCmd {
+  list-style-image: var(--icon-document-save-16);
+}
+
+#menu_saveCmd[disabled] {
+  list-style-image: var(--icon-document-save-16-dis);
+  opacity: var(--icon-document-save-dis-opacity);
+}
+
+#menu_saveAsCmd {
+  list-style-image: var(--icon-document-save-as-16);
+}
+
+#menu_saveAsCmd[disabled] {
+  list-style-image: var(--icon-document-save-as-16-dis);
+  opacity: var(--icon-document-save-as-dis-opacity);
+}
+
+#menu_publish {
+  list-style-image: var(--icon-network-idle-16);
+}
+
+#menu_publish[disabled] {
+  list-style-image: var(--icon-network-idle-16-dis);
+  opacity: var(--icon-network-idle-dis-opacity);
+}
+
+#menu_fileRevert {
+  list-style-image: var(--icon-document-revert-16);
+}
+
+#menu_fileRevert[disabled] {
+  list-style-image: var(--icon-document-revert-16-dis);
+  opacity: var(--icon-document-revert-dis-opacity);
+}
+
+

@@ -13,6 +13,10 @@ menuitem:not([type]) {
   list-style-image: var(--icon-document-save-as-16);
 }
 
+#menu_pageSetup {
+  list-style-image: var(--icon-document-page-setup-16);
+}
+
 #menu_printPreview {
   list-style-image: var(--icon-document-print-preview-16);
 }
@@ -31,7 +35,7 @@ menuitem:not([type]) {
 
 #menu_undo[disabled] {
   list-style-image: var(--icon-edit-undo-16-dis);
-  opacity: var(--icon-edit-cut-undo-dis-opacity);
+  opacity: var(--icon-edit-undo-dis-opacity);
 }
 
 #menu_redo {
@@ -40,7 +44,7 @@ menuitem:not([type]) {
 
 #menu_redo[disabled] {
   list-style-image: var(--icon-edit-redo-16-dis);
-  opacity: var(--icon-edit-cut-redo-dis-opacity);
+  opacity: var(--icon-edit-redo-dis-opacity);
 }
 
 #menu_cut {

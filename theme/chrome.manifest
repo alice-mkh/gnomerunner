@@ -8,6 +8,21 @@ skin mozapps $INTERNAL_NAME mozapps/
 
 skin icons $INTERNAL_NAME icons/
 
+#Additional styles for menu icons
+style chrome://communicator/content/bookmarks/placesOverlay.xul chrome://communicator/skin/bookmarks/placesOverlay-menus.css
+style chrome://communicator/content/history/placesOverlay.xul chrome://communicator/skin/bookmarks/placesOverlay-menus.css
+style chrome://communicator/content/contentAreaContextOverlay.xul chrome://communicator/skin/contentAreaContextOverlay-menus.css
+style chrome://communicator/content/utilityOverlay.xul chrome://communicator/skin/utilityOverlay-menus.css
+style chrome://communicator/content/viewSourceOverlay.xul chrome://communicator/skin/viewSourceOverlay-menus.css
+style chrome://communicator/content/viewZoomOverlay.xul chrome://communicator/skin/viewZoomOverlay-menus.css
+style chrome://editor/content/composerOverlay.xul chrome://editor/skin/composerOverlay-menus.css
+style chrome://editor/content/editingOverlay.xul chrome://editor/skin/editingOverlay-menus.css
+style chrome://editor/content/editorOverlay.xul chrome://editor/skin/editorOverlay-menus.css
+style chrome://editor/content/EditorContextMenuOverlay.xul chrome://editor/skin/EditorContextMenuOverlay.css
+style chrome://messenger/content/mailOverlay.xul chrome://messenger/skin/mailOverlay-menus.css
+style chrome://navigator/content/mailNavigatorOverlay.xul chrome://navigator/skin/mailNavigatorOverlay-menus.css
+style chrome://navigator/content/navigatorOverlay.xul chrome://navigator/skin/navigatorOverlay-menus.css
+
 #Compact menulist removal from Toolkit in 2.33
 style chrome://messenger/content/messengercompose/messengercompose.xul chrome://messenger/skin/messengercompose/messengercompose-2.33.css appversion>=2.33
 

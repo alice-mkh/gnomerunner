@@ -1,0 +1,136 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://icons/skin/icon-theme-default.css");
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#dlContext-pause,
+#dlMenu_pause {
+  list-style-image: var(--icon-media-playback-pause-16);
+}
+
+#dlContext-pause[disabled="true"],
+#dlMenu_pause[disabled="true"] {
+  list-style-image: var(--icon-media-playback-pause-16-dis);
+  opacity: var(--icon-media-playback-pause-dis-opacity);
+}
+
+#dlContext-resume,
+#dlMenu_resume {
+  list-style-image: var(--icon-media-playback-start-16);
+}
+
+#dlContext-resume[disabled="true"],
+#dlMenu_resume[disabled="true"] {
+  list-style-image: var(--icon-media-playback-start-16-dis);
+  opacity: var(--icon-media-playback-start-dis-opacity);
+}
+
+#dlContext-retry,
+#dlMenu_retry {
+  list-style-image: var(--icon-view-refresh-16);
+}
+
+#dlContext-retry[disabled="true"],
+#dlMenu_retry[disabled="true"] {
+  list-style-image: var(--icon-view-refresh-16-dis);
+  opacity: var(--icon-view-refresh-dis-opacity);
+}
+
+#dlContext-cancel,
+#dlMenu_cancel {
+  list-style-image: var(--icon-gtk-cancel-16);
+}
+
+#dlContext-cancel[disabled="true"],
+#dlMenu_cancel[disabled="true"] {
+  list-style-image: var(--icon-gtk-cancel-16-dis);
+  opacity: var(--icon-gtk-cancel-dis-opacity);
+}
+
+#dlContext-remove,
+#dlMenu_remove {
+  list-style-image: var(--icon-edit-delete-16);
+}
+
+#dlContext-remove[disabled="true"],
+#dlMenu_remove[disabled="true"] {
+  list-style-image: var(--icon-edit-delete-16-dis);
+  opacity: var(--icon-edit-delete-dis-opacity);
+}
+
+#dlContext-open,
+#dlMenu_open {
+  list-style-image: var(--icon-document-open-16);
+}
+
+#dlContext-open[disabled="true"],
+#dlMenu_open[disabled="true"] {
+  list-style-image: var(--icon-document-open-16-dis);
+  opacity: var(--icon-document-open-dis-opacity);
+}
+
+#dlContext-openReferrer,
+#dlMenu_openReferrer {
+  list-style-image: var(--icon-go-jump-16);
+}
+
+#dlContext-openReferrer[disabled="true"],
+#dlMenu_openReferrer[disabled="true"] {
+  list-style-image: var(--icon-go-jump-16-dis);
+  opacity: var(--icon-go-jump-dis-opacity);
+}
+
+#dlContext-copyLocation,
+#dlMenu_copyLocation {
+  list-style-image: var(--icon-edit-copy-16);
+}
+
+#dlContext-copyLocation[disabled="true"],
+#dlMenu_copyLocation[disabled="true"] {
+  list-style-image: var(--icon-edit-copy-16-dis);
+  opacity: var(--icon-edit-copy-dis-opacity);
+}
+
+#dlContext-properties,
+#dlMenu_properties {
+  list-style-image: var(--icon-document-properties-16);
+}
+
+#dlContext-properties[disabled="true"],
+#dlMenu_properties[disabled="true"] {
+  list-style-image: var(--icon-document-properties-16-dis);
+  opacity: var(--icon-document-properties-dis-opacity);
+}
+
+#cMenu_selectAll {
+  list-style-image: var(--icon-edit-select-all-16);
+}
+
+#cMenu_selectAll[disabled="true"] {
+  list-style-image: var(--icon-edit-select-all-16-dis);
+  opacity: var(--icon-edit-select-all-dis-opacity);
+}
+
+#dlMenu_clearList {
+  list-style-image: var(--icon-edit-clear-16);
+}
+
+#dlMenu_clearList[disabled="true"] {
+  list-style-image: var(--icon-edit-clear-16-dis);
+  opacity: var(--icon-edit-clear-dis-opacity);
+}
+
+#dlMenu_find {
+  list-style-image: var(--icon-edit-find-16);
+}
+
+#dlMenu_find[disabled="true"] {
+  list-style-image: var(--icon-edit-find-16-dis);
+  opacity: var(--icon-edit-find-dis-opacity);
+}
+

@@ -1,0 +1,117 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://icons/skin/icon-theme-default.css");
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#placesContext_open\:newtab {
+  list-style-image: var(--icon-tab-new-16);
+}
+
+#placesContext_open\:newtab[disabled] {
+  list-style-image: var(--icon-tab-new-16-dis);
+  opacity: var(--icon-tab-new-dis-opacity);
+}
+
+#placesContext_open\:newwindow {
+  list-style-image: var(--icon-window-new-16);
+}
+
+#placesContext_open\:newwindow[disabled] {
+  list-style-image: var(--icon-window-new-16-dis);
+  opacity: var(--icon-window-new-dis-opacity);
+}
+
+#placesContext_new\:bookmark,
+#placesContext_createBookmark,
+#addBookmarkContextItem,
+#addMultipleBookmarksContextItem {
+  list-style-image: var(--icon-bookmark-new-16);
+}
+
+#placesContext_new\:bookmark[disabled],
+#placesContext_createBookmark[disabled],
+#addBookmarkContextItem[disabled],
+#addMultipleBookmarksContextItem[disabled] {
+  list-style-image: var(--icon-bookmark-new-16-dis);
+  opacity: var(--icon-bookmark-new-dis-opacity);
+}
+
+#placesContext_new\:folder {
+  list-style-image: var(--icon-folder-new-16);
+}
+
+#placesContext_new\:folder[disabled] {
+  list-style-image: var(--icon-folder-new-16-dis);
+  opacity: var(--icon-folder-new-dis-opacity);
+}
+
+#placesContext_cut {
+  list-style-image: var(--icon-edit-cut-16);
+}
+
+#placesContext_cut[disabled] {
+  list-style-image: var(--icon-edit-cut-16-dis);
+  opacity: var(--icon-edit-cut-dis-opacity);
+}
+
+#placesContext_copy {
+  list-style-image: var(--icon-edit-copy-16);
+}
+
+#placesContext_copy[disabled] {
+  list-style-image: var(--icon-edit-copy-16-dis);
+  opacity: var(--icon-edit-copy-dis-opacity);
+}
+
+#placesContext_paste {
+  list-style-image: var(--icon-edit-paste-16);
+}
+
+#placesContext_paste[disabled] {
+  list-style-image: var(--icon-edit-paste-16-dis);
+  opacity: var(--icon-edit-paste-dis-opacity);
+}
+
+#placesContext_delete,
+#placesContext_delete_history {
+  list-style-image: var(--icon-edit-delete-16);
+}
+
+#placesContext_delete[disabled],
+#placesContext_delete_history[disabled] {
+  list-style-image: var(--icon-edit-delete-16-dis);
+  opacity: var(--icon-edit-delete-dis-opacity);
+}
+
+#placesContext_sortBy\:name {
+  list-style-image: var(--icon-view-sort-ascending-16);
+}
+
+#placesContext_sortBy\:name[disabled] {
+  list-style-image: var(--icon-view-sort-ascending-16-dis);
+  opacity: var(--icon-view-sort-ascending-dis-opacity);
+}
+
+#placesContext_show\:info {
+  list-style-image: var(--icon-document-properties-16);
+}
+
+#placesContext_sortBy\:info[disabled] {
+  list-style-image: var(--icon-document-properties-16-dis);
+  opacity: var(--icon-document-properties-dis-opacity);
+}
+
+#placesContext_selectAll {
+  list-style-image: var(--icon-edit-select-all-16);
+}
+
+#placesContext_selectAll[disabled] {
+  list-style-image: var(--icon-edit-select-all-16-dis);
+  opacity: var(--icon-edit-select-all-dis-opacity);
+}
+

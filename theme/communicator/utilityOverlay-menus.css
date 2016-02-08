@@ -1,0 +1,203 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://icons/skin/icon-theme-default.css");
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#customize_toolbars {
+  list-style-image: var(--icon-document-properties-16);
+}
+
+#customize_toolbars[disabled] {
+  list-style-image: var(--icon-document-properties-16-dis);
+  opacity: var(--icon-document-properties-dis-opacity);
+}
+
+#menu_newEditor {
+  list-style-image: var(--icon-document-new-16);
+}
+
+#menu_newEditor[disabled] {
+  list-style-image: var(--icon-document-new-16-dis);
+  opacity: var(--icon-document-new-dis-opacity);
+}
+
+#menu_New {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-document-new-16);
+}
+
+#menu_newNavigator {
+  list-style-image: var(--icon-window-new-16);
+}
+
+#menu_newNavigator[disabled] {
+  list-style-image: var(--icon-window-new-16-dis);
+  opacity: var(--icon-window-new-dis-opacity);
+}
+
+#menu_printSetup {
+  list-style-image: var(--icon-document-page-setup-16);
+}
+
+#menu_printSetup[disabled] {
+  list-style-image: var(--icon-document-page-setup-16-dis);
+  opacity:  var(--icon-document-page-setup-dis-opacity);
+}
+
+#menu_printPreview,
+#printPreviewMenuItemToolbar {
+  list-style-image: var(--icon-document-print-preview-16);
+}
+
+#menu_printPreview[disabled],
+#printPreviewMenuItemToolbar[disabled] {
+  list-style-image: var(--icon-document-print-preview-16-dis);
+  opacity:  var(--icon-document-print-preview-dis-opacity);
+}
+
+#menu_print,
+#printMenuItemToolbar {
+  list-style-image: var(--icon-document-print-16);
+}
+
+#menu_print[disabled],
+#printMenuItemToolbar[disabled] {
+  list-style-image: var(--icon-document-print-16-dis);
+  opacity:  var(--icon-document-print-dis-opacity);
+}
+
+#menu_close {
+  list-style-image: var(--icon-window-close-16);
+}
+
+#menu_close[disabled] {
+  list-style-image: var(--icon-window-close-16-dis);
+  opacity:  var(--icon-window-close-dis-opacity);
+}
+
+#menu_FileQuitItem {
+  list-style-image: var(--icon-application-exit-16);
+}
+
+#menu_FileQuitItem[disabled] {
+  list-style-image: var(--icon-application-exit-16-dis);
+  opacity:  var(--icon-application-exit-dis-opacity);
+}
+
+#menu_undo,
+#context-undo {
+  list-style-image: var(--icon-edit-undo-16);
+}
+
+#menu_undo[disabled],
+#context-undo[disabled] {
+  list-style-image: var(--icon-edit-undo-16-dis);
+  opacity:  var(--icon-edit-undo-dis-opacity);
+}
+
+#menu_redo,
+#context-redo {
+  list-style-image: var(--icon-edit-redo-16);
+}
+
+#menu_redo[disabled],
+#context-redo[disabled] {
+  list-style-image: var(--icon-edit-redo-16-dis);
+  opacity:  var(--icon-edit-redo-dis-opacity);
+}
+
+#menu_cut,
+#context-cut {
+  list-style-image: var(--icon-edit-cut-16);
+}
+
+#menu_cut[disabled],
+#context-cut[disabled] {
+  list-style-image: var(--icon-edit-cut-16-dis);
+  opacity: var(--icon-edit-cut-dis-opacity);
+}
+
+#menu_copy,
+#context-copy {
+  list-style-image: var(--icon-edit-copy-16);
+}
+
+#menu_copy[disabled],
+#context-copy[disabled] {
+  list-style-image: var(--icon-edit-copy-16-dis);
+  opacity: var(--icon-edit-copy-dis-opacity);
+}
+
+#menu_paste,
+#context-paste {
+  list-style-image: var(--icon-edit-paste-16);
+}
+
+#menu_paste[disabled],
+#context-paste[disabled] {
+  list-style-image: var(--icon-edit-paste-16-dis);
+  opacity: var(--icon-edit-paste-dis-opacity);
+}
+
+#menu_delete,
+#context-delete {
+  list-style-image: var(--icon-edit-delete-16);
+}
+
+#menu_delete[disabled],
+#context-delete[disabled] {
+  list-style-image: var(--icon-edit-delete-16-dis);
+  opacity: var(--icon-edit-delete-dis-opacity);
+}
+
+#menu_selectAll,
+#context-selectall {
+  list-style-image: var(--icon-edit-select-all-16);
+}
+
+#menu_selectAll[disabled],
+#context-selectall[disabled] {
+  list-style-image: var(--icon-edit-select-all-16-dis);
+  opacity: var(--icon-edit-select-all-dis-opacity);
+}
+
+#menu_find {
+  list-style-image: var(--icon-edit-find-16);
+}
+
+#menu_find[disabled] {
+  list-style-image: var(--icon-edit-find-16-dis);
+  opacity: var(--icon-edit-find-dis-opacity);
+}
+
+#menu_findReplace {
+  list-style-image: var(--icon-edit-find-replace-16);
+}
+
+#menu_findReplace[disabled] {
+  list-style-image: var(--icon-edit-find-replace-16-dis);
+  opacity: var(--icon-edit-find-replace-dis-opacity);
+}
+
+#help {
+  list-style-image: var(--icon-help-contents-16);
+}
+
+#help[disabled] {
+  list-style-image: var(--icon-help-contents-16-dis);
+  opacity: var(--icon-help-contents-dis-opacity);
+}
+
+#aboutName {
+  list-style-image: var(--icon-help-about-16);
+}
+
+#aboutName[disabled] {
+  list-style-image: var(--icon-help-about-16-dis);
+  opacity: var(--icon-help-about-dis-opacity);
+}

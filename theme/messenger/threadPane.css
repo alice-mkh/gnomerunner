@@ -83,12 +83,16 @@ treechildren::-moz-tree-image(threadCol, container, hasUnread) {
 
 /* ..... read column ..... */
 
-	.readColumnHeader {
-	  list-style-image: var(--icon-mail-mark-unread-16);
+.readColumnHeader {
+  list-style-image: var(--icon-mail-unread-16);
+}
+
+treechildren::-moz-tree-image(unreadButtonColHeader) {
+  list-style-image: var(--icon-mail-read-16);
 }
 
 treechildren::-moz-tree-image(unreadButtonColHeader, unread) {
-  list-style-image: var(--icon-mail-mark-unread-16);
+  list-style-image: var(--icon-mail-unread-16);
 }
 
 /* ..... attachment column ..... */
