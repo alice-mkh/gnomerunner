@@ -100,9 +100,7 @@ preferences-desktop
 process-stop
 stock_folder folder
 stock_next go-next
-stock_next-msg go-down
 stock_previous go-previous
-stock_previous-msg go-up
 text-html
 text-x-generic
 text-x-generic-template

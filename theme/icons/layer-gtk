@@ -73,9 +73,7 @@ preferences-desktop		gtk-preferences
 process-stop			gtk-stop
 stock_foler             gtk-directory
 stock_next              gtk-go-forward
-stock_next-msg          gtk-go-down
 stock_previous          gtk-go-back
-stock_previous-msg      gtk-go-up
 text-x-generic			gtk-file
 tools-check-spelling	gtk-spell-check
 view-fullscreen			gtk-fullscreen
