@@ -42,7 +42,8 @@ spacer.big {
 
 .row-iconic-icon {
   list-style-image: inherit;
-  -moz-margin-end: 10px;
+  -moz-margin-start: 5px;
+  -moz-margin-end: 5px;
 }
 
 .acctCentralRowTitleBox {
@@ -71,49 +72,49 @@ spacer.big {
 /* ::::: row icons ::::: */
 
 #ReadMessages {
-  list-style-image: url("chrome://global/skin/icons/32x32/mail-mark-read.png");
+  list-style-image: var(--icon-mail-mark-read-24);
 }
 
 #ComposeMessage {
-  list-style-image: var(--icon-mail-message-new-32);
+  list-style-image: var(--icon-mail-message-new-24);
 }
 
 #SubscribeNewsgroups {
-  list-style-image: url("chrome://global/skin/icons/32x32/alacarte.png");
+  list-style-image: var(--icon-stock_folder-24);
 }
 
 #SubscribeImapFolders {
-  list-style-image: url("chrome://global/skin/icons/32x32/folder.png");
+  list-style-image: var(--icon-stock_folder-24);
 }
 
 #SubscribeRSS {
-  list-style-image: url("chrome://global/skin/icons/32x32/internet-news-reader.png");
+  list-style-image: var(--icon-internet-news-reader-24);
 }
 
 #SearchMessages {
-  list-style-image: url("chrome://global/skin/icons/32x32/system-search.png");
+  list-style-image: var(--icon-edit-find-24);
 }
 
 #AccountSettings {
-  list-style-image: url("chrome://global/skin/icons/32x32/preferences-desktop-personal.png");
+  list-style-image: var(--icon-document-properties-24);
 }
 
 #CreateAccount {
-  list-style-image: url("chrome://global/skin/icons/32x32/contact-new.png");
+  list-style-image: var(--icon-document-new-24);
 }
 
 #CreateFilters {
-  list-style-image: url("chrome://global/skin/icons/32x32/mail-forward.png");
+  list-style-image: var(--icon-stock_mail-filters-apply-24);
 }
 
 #OfflineSettings {
-  list-style-image: url("chrome://global/skin/icons/32x32/network-wired-disconnected.png");
+  list-style-image: var(--icon-gtk-disconnect-24);
 }
 
 #JunkSettingsMail {
-  list-style-image: url("chrome://global/skin/icons/32x32/mail-mark-junk.png");
+  list-style-image: var(--icon-mail-mark-junk-24);
 }
 
 #JunkSettingsNews {
-  list-style-image: url("chrome://global/skin/icons/32x32/mail-mark-junk.png");
+  list-style-image: var(--icon-mail-mark-junk-24);
 }

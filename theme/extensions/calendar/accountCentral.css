@@ -5,5 +5,5 @@
 @import url("chrome://icons/skin/icon-theme-default.css");
 
 #lightning-newCalendar-row {
-  list-style-image: var(--icon-x-office-calendar-32) !important;
+  list-style-image: var(--icon-x-office-calendar-24) !important;
 }

@@ -53,6 +53,7 @@ gtk-cancel
 gtk-color-picker
 gtk-connect
 gtk-convert
+gtk-disconnect
 gtk-edit
 gtk-no
 gtk-ok

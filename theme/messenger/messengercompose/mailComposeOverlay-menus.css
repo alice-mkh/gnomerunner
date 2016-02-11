@@ -9,10 +9,10 @@ menuitem:not([type]) {
 }
 
 #menu_accountmgr {
-  list-style-image: var(--icon-stock_mail-accounts-16);
+  list-style-image: var(--icon-system-users-16);
 }
 
 #menu_accountmgr[disabled="true"] {
-  list-style-image: var(--icon-stock_mail-accounts-16-dis);
+  list-style-image: var(--icon-system-users-16-dis);
 }
 
