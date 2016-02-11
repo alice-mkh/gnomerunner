@@ -1,0 +1,227 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://icons/skin/icon-theme-default.css");
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#mailContext-calendar-convert-menu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-gtk-convert-16);
+}
+
+#mailContext-calendar-convert-menu[disabled="true"] {
+  list-style-image: var(--icon-gtk-convert-16-dis);
+}
+
+#mailContext-calendar-convert-event-menuitem {
+  list-style-image: var(--icon-appointment-new-16);
+}
+
+#mailContext-calendar-convert-event-menuitem[disabled="true"] {
+  list-style-image: var(--icon-appointment-new-16-dis);
+}
+
+#mailContext-calendar-convert-task-menuitem {
+  list-style-image: var(--icon-stock_task-16);
+}
+
+#mailContext-calendar-convert-task-menuitem[disabled="true"] {
+  list-style-image: var(--icon-stock_task-16-dis);
+}
+
+#calendar-new-event-menu {
+  list-style-image: var(--icon-appointment-new-16);
+}
+
+#calendar-new-event-menu[disabled="true"] {
+  list-style-image: var(--icon-appointment-new-16-dis);
+}
+
+#calendar-new-todo-menu {
+  list-style-image: var(--icon-stock_task-16);
+}
+
+#calendar-new-todo-menu[disabled="true"] {
+  list-style-image: var(--icon-stock_task-16-dis);
+}
+
+#calendar-new-calendar-menu {
+  list-style-image: var(--icon-x-office-calendar-16);
+}
+
+#calendar-new-calendar-menu[disabled="true"] {
+  list-style-image: var(--icon-x-office-calendar-16-dis);
+}
+
+#calendar-open-calendar-menu {
+  list-style-image: var(--icon-document-open-16);
+}
+
+#calendar-open-calendar-menu[disabled="true"] {
+  list-style-image: var(--icon-document-open-16-dis);
+}
+
+#calendar-addserver-menu {
+  list-style-image: var(--icon-stock_calendar-subscribe-16);
+}
+
+#calendar-addserver-menu[disabled="true"] {
+  list-style-image: var(--icon-stock_calendar-subscribe-16-dis);
+}
+
+#calendar-import-menu {
+  list-style-image: var(--icon-stock_calendar-import-16);
+}
+
+#calendar-import-menu[disabled="true"] {
+  list-style-image: var(--icon-stock_calendar-import-16-dis);
+}
+
+#calendar-export-calendar-menu {
+  list-style-image: var(--icon-stock_calendar-export-16);
+}
+
+#calendar-export-calendar-menu[disabled="true"] {
+  list-style-image: var(--icon-stock_calendar-export-16-dis);
+}
+
+#calendar-publish-calendar-menu {
+  list-style-image: var(--icon-stock_calendar-publish-16);
+}
+
+#calendar-publish-calendar-menu[disabled="true"] {
+  list-style-image: var(--icon-stock_calendar-publish-16-dis);
+}
+
+#calendar-synccalendars-menu {
+  list-style-image: var(--icon-view-refresh-16);
+}
+
+#calendar-synccalendars-menu[disabled="true"] {
+  list-style-image: var(--icon-view-refresh-16-dis);
+}
+
+#calendar-page-setup-menu {
+  list-style-image: var(--icon-document-page-setup-16);
+}
+
+#calendar-page-setup-menu[disabled="true"] {
+  list-style-image: var(--icon-document-page-setup-16-dis);
+}
+
+#calendar-print-menu {
+  list-style-image: var(--icon-document-print-16);
+}
+
+#calendar-print-menu[disabled="true"] {
+  list-style-image: var(--icon-document-print-16-dis);
+}
+
+#calendar-undo-menu {
+  list-style-image: var(--icon-edit-undo-16);
+}
+
+#calendar-undo-menu[disabled="true"] {
+  list-style-image: var(--icon-edit-undo-16-dis);
+}
+
+#calendar-redo-menu {
+  list-style-image: var(--icon-edit-redo-16);
+}
+
+#calendar-redo-menu[disabled="true"] {
+  list-style-image: var(--icon-edit-redo-16-dis);
+}
+
+#calendar-cut-menu {
+  list-style-image: var(--icon-edit-cut-16);
+}
+
+#calendar-cut-menu[disabled="true"] {
+  list-style-image: var(--icon-edit-cut-16-dis);
+}
+
+#calendar-copy-menu {
+  list-style-image: var(--icon-edit-copy-16);
+}
+
+#calendar-copy-menu[disabled="true"] {
+  list-style-image: var(--icon-edit-copy-16-dis);
+}
+
+#calendar-paste-menu {
+  list-style-image: var(--icon-edit-paste-16);
+}
+
+#calendar-paste-menu[disabled="true"] {
+  list-style-image: var(--icon-edit-paste-16-dis);
+}
+
+#unifinder-modify-menu {
+  list-style-image: var(--icon-gtk-edit-16);
+}
+
+#unifinder-modify-menu[disabled="true"] {
+  list-style-image: var(--icon-gtk-edit-16-dis);
+}
+
+#unifinder-remove-event-menu {
+  list-style-image: var(--icon-edit-delete-16);
+}
+
+#unifinder-remove-event-menu[disabled="true"] {
+  list-style-image: var(--icon-edit-delete-16-dis);
+}
+
+#calendar-selectall-menu {
+  list-style-image: var(--icon-edit-select-all-16);
+}
+
+#calendar-selectall-menu[disabled="true"] {
+  list-style-image: var(--icon-edit-select-all-16-dis);
+}
+
+#menu_preferences {
+  list-style-image: var(--icon-preferences-desktop-16);
+}
+
+#menu_preferences[disabled] {
+  list-style-image: var(--icon-preferences-desktop-16-dis);
+}
+
+#calendar-go-menu-today {
+  list-style-image: var(--icon-go-today-16);
+}
+
+#calendar-go-menu-today[disabled="true"] {
+  list-style-image: var(--icon-go-today-16-dis);
+}
+
+#calendar-go-menu-date {
+  list-style-image: var(--icon-go-jump-16);
+}
+
+#calendar-go-menu-date[disabled="true"] {
+  list-style-image: var(--icon-go-jump-16-dis);
+}
+
+#calendar-go-menu-previous {
+  list-style-image: var(--icon-stock_previous-16);
+}
+
+#calendar-go-menu-previous[disabled="true"] {
+  list-style-image: var(--icon-stock_previous-16-dis);
+}
+
+#calendar-go-menu-next {
+  list-style-image: var(--icon-stock_next-16);
+}
+
+#calendar-go-menu-next[disabled="true"] {
+  list-style-image: var(--icon-stock_next-16-dis);
+}
+

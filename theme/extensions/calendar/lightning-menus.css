@@ -1,0 +1,164 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://icons/skin/icon-theme-default.css");
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#CustomizeCalendarToolbar,
+#CustomizeTaskToolbar {
+  list-style-image: var(--icon-document-properties-16);
+}
+
+#CustomizeCalendarToolbar[disabled="true"],
+#CustomizeTaskToolbar[disabled="true"] {
+  list-style-image: var(--icon-document-properties-16-dis);
+}
+
+#newMsgButton-calendar-menuitem,
+#ltnNewEvent,
+#ltnNewEvent2 {
+  list-style-image: var(--icon-appointment-new-16);
+}
+
+#newMsgButton-calendar-menuitem[disabled="true"],
+#ltnNewEvent[disabled="true"],
+#ltnNewEvent2[disabled="true"] {
+  list-style-image: var(--icon-appointment-new-16-dis);
+}
+
+#newMsgButton-task-menuitem,
+#ltnNewTask,
+#ltnNewTask2 {
+  list-style-image: var(--icon-stock_task-16);
+}
+
+#newMsgButton-task-menuitem[disabled="true"],
+#ltnNewTask[disabled="true"],
+#ltnNewTask2[disabled="true"] {
+  list-style-image: var(--icon-stock_task-16-dis);
+}
+
+#menu_Open {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-document-open-16);
+}
+
+#menu_Open[disabled="true"] {
+  list-style-image: var(--icon-document-open-16-dis);
+}
+
+#ltnOpenMessageFileMenuitem {
+  list-style-image: var(--icon-stock_mail-16);
+}
+
+#ltnOpenMessageFileMenuitem[disabled="true"] {
+  list-style-image: var(--icon-stock_mail-16-dis);
+}
+
+#ltnOpenCalendarFileMenuitem,
+#ltnNewCalendar,
+#ltnCalendarProperties,
+#ltnCalendarMenu {
+  list-style-image: var(--icon-x-office-calendar-16);
+}
+
+#ltnOpenCalendarFileMenuitem[disabled="true"],
+#ltnNewCalendar[disabled="true"],
+#ltnCalendarProperties[disabled="true"],
+#ltnCalendarMenu[disabled="true"] {
+  list-style-image: var(--icon-x-office-calendar-16-dis);
+}
+
+#ltnTasksMenu {
+  list-style-image: var(--icon-evolution-tasks-16);
+}
+
+#ltnTasksMenu[disabled="true"] {
+  list-style-image: var(--icon-evolution-tasks-16-dis);
+}
+
+#ltnGoToToday {
+  list-style-image: var(--icon-go-today-16);
+}
+
+#ltnGoToToday[disabled="true"] {
+  list-style-image: var(--icon-go-today-16-dis);
+}
+
+#calendar-go-menu-previous {
+  list-style-image: var(--icon-stock_previous-16);
+}
+
+#calendar-go-menu-previous[disabled="true"] {
+  list-style-image: var(--icon-stock_previous-16-dis);
+}
+
+#calendar-go-menu-next {
+  list-style-image: var(--icon-stock_next-16);
+}
+
+#calendar-go-menu-next[disabled="true"] {
+  list-style-image: var(--icon-stock_next-16-dis);
+}
+
+#calendar-export-menu {
+  list-style-image: var(--icon-stock_calendar-export-16);
+}
+
+#calendar-export-menu[disabled="true"] {
+  list-style-image: var(--icon-stock_calendar-export-16-dis);
+}
+
+#calendar-import-menu {
+  list-style-image: var(--icon-stock_calendar-import-16);
+}
+
+#calendar-import-menu[disabled="true"] {
+  list-style-image: var(--icon-stock_calendar-import-16-dis);
+}
+
+#ltnPublishCalendar {
+  list-style-image: var(--icon-stock_calendar-publish-16);
+}
+
+#ltnPublishCalendar[disabled="true"] {
+  list-style-image: var(--icon-stock_calendar-publish-16-dis);
+}
+
+#ltnDeleteSelectedCalendar {
+  list-style-image: var(--icon-edit-delete-16);
+}
+
+#ltnDeleteSelectedCalendar[disabled="true"] {
+  list-style-image: var(--icon-edit-delete-16-dis);
+}
+
+#mailContext-calendar-convert-menu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-gtk-convert-16);
+}
+
+#mailContext-calendar-convert-menu[disabled="true"] {
+  list-style-image: var(--icon-gtk-convert-16-dis);
+}
+
+#mailContext-calendar-convert-event-menuitem {
+  list-style-image: var(--icon-appointment-new-16);
+}
+
+#mailContext-calendar-convert-event-menuitem[disabled="true"] {
+  list-style-image: var(--icon-appointment-new-16-dis);
+}
+
+#mailContext-calendar-convert-task-menuitem {
+  list-style-image: var(--icon-stock_task-16);
+}
+
+#mailContext-calendar-convert-task-menuitem[disabled="true"] {
+  list-style-image: var(--icon-stock_task-16-dis);
+}
+

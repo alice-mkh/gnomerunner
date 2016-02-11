@@ -54,11 +54,21 @@ style chrome://lightning/content/lightning-standalone.xul chrome://$CODE_NAME-ca
 style chrome://lightning/content/messenger-overlay-sidebar.xul chrome://$CODE_NAME-calendar/skin/lightning.css
 style chrome://lightning/content/messenger-overlay-accountCentral.xul chrome://$CODE_NAME-calendar/skin/accountCentral.css
 
+style chrome://calendar/content/calendar-calendars-list.xul chrome://$CODE_NAME-calendar/skin/calendar-menus.css
+style chrome://calendar/content/calendar-common-sets.xul chrome://$CODE_NAME-calendar/skin/calendar-menus.css
+style chrome://calendar/content/calendar-event-dialog.xul chrome://$CODE_NAME-calendar/skin/calendar-menus.css
+style chrome://calendar/content/calendar-task-view.xul chrome://$CODE_NAME-calendar/skin/calendar-menus.css
+style chrome://calendar/content/today-pane.xul chrome://$CODE_NAME-calendar/skin/calendar-menus.css
+style chrome://lightning/content/lightning-toolbar.xul chrome://$CODE_NAME-calendar/skin/lightning-menus.css
+
 # Lightbird
 style chrome://global/content/customizeToolbar.xul chrome://$CODE_NAME-calendar/skin/sunbird-toolbar.css
 style chrome://lightbird/content/sunbird/calendar.xul chrome://$CODE_NAME-calendar/skin/sunbird-toolbar.css
 style chrome://lightbird/content/tasksOverlay.xul chrome://$CODE_NAME-calendar/skin/lightbird.css
 style chrome://lightbird/content/sunbird/calendar.xul chrome://$CODE_NAME-calendar/skin/calendar-unifinder.css
+
+style chrome://lightbird/content/messengerOverlay.xul chrome://$CODE_NAME-calendar/skin/lightbird-menus.css
+style chrome://lightbird/content/sunbird/calendar.xul chrome://$CODE_NAME-calendar/skin/lightbird-menus.css
 
 #SeaFox
 skin seafoxcompatibility $INTERNAL_NAME extensions/seafox/

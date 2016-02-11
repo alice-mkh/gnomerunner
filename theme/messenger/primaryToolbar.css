@@ -93,11 +93,11 @@
 }
 
 #button-next {
-  list-style-image: var(--icon-stock_next-24);
+  list-style-image: var(--icon-stock_next-msg-24);
 }
 
 #button-next[disabled] {
-  list-style-image: var(--icon-stock_next-24-dis);
+  list-style-image: var(--icon-stock_next-msg-24-dis);
 } 
 
 #button-delete {
@@ -280,11 +280,11 @@ toolbar[iconsize="small"] > #button-goforward:-moz-locale-dir(rtl)[disabled="tru
 
 toolbar[iconsize="small"] > #button-next,
 toolbar[iconsize="small"] > toolbarpaletteitem > #button-next {
-  list-style-image: var(--icon-stock_next-16);
+  list-style-image: var(--icon-stock_next-msg-16);
 }
 
 toolbar[iconsize="small"] > #button-next[disabled] {
-  list-style-image: var(--icon-stock_next-16-dis);
+  list-style-image: var(--icon-stock_next-msg-16-dis);
 }
 
 toolbar[iconsize="small"] > #button-delete,

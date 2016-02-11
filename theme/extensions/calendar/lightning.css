@@ -44,7 +44,6 @@ radio[pane=paneLightning] {
 
 /* ::: new tab buttons ::: */
 #calendar-tab-button,
-#newMsgButton-calendar-menuitem,
 .icon-holder[type="calendar"],
 .tabmail-tab[type="calendar"] {
   list-style-image: var(--icon-x-office-calendar-16);
@@ -52,7 +51,6 @@ radio[pane=paneLightning] {
 }
 
 #task-tab-button,
-#newMsgButton-task-menuitem,
 .icon-holder[type="tasks"],
 .tabmail-tab[type="tasks"] {
   list-style-image: var(--icon-evolution-tasks-16);
@@ -106,3 +104,11 @@ radio[pane=paneLightning] {
 #calMinimonthBox {
     margin-top: 3px !important;
 }
+
+#newMsgButton-calendar-menuitem > .menu-iconic-left > .menu-iconic-icon,
+#newMsgButton-task-menuitem > .menu-iconic-left > .menu-iconic-icon {
+  width: 16px !important;
+  height: 16px !important;
+  margin: 0px !important;
+}
+

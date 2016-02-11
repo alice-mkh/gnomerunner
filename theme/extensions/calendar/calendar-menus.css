@@ -1,0 +1,352 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://icons/skin/icon-theme-default.css");
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#list-calendars-context-new {
+  list-style-image: var(--icon-x-office-calendar-16);
+}
+
+#list-calendars-context-new[disabled="true"] {
+  list-style-image: var(--icon-x-office-calendar-16-dis);
+}
+
+#list-calendars-context-find {
+  list-style-image: var(--icon-edit-find-16);
+}
+
+#list-calendars-context-find[disabled="true"] {
+  list-style-image: var(--icon-edit-find-16-dis);
+}
+
+#list-calendars-context-delete,
+#calendar-item-context-menu-delete-menuitem,
+#task-context-menu-delete,
+#agenda-menupopup > menuitem[observes="agenda_delete_event_command"],
+#item-delete-menuitem,
+#attachment-popup-delete {
+  list-style-image: var(--icon-edit-delete-16);
+}
+
+#list-calendars-context-delete[disabled="true"],
+#calendar-item-context-menu-delete-menuitem[disabled="true"],
+#task-context-menu-delete[disabled="true"],
+#agenda-menupopup > menuitem[observes="agenda_delete_event_command"][disabled="true"],
+#item-delete-menuitem[disabled="true"],
+#attachment-popup-delete[disabled="true"] {
+  list-style-image: var(--icon-edit-delete-16-dis);
+}
+
+#list-calendars-context-export {
+  list-style-image: var(--icon-stock_calendar-export-16);
+}
+
+#list-calendars-context-export[disabled="true"] {
+  list-style-image: var(--icon-stock_calendar-export-16-dis);
+}
+
+#list-calendars-context-publish {
+  list-style-image: var(--icon-stock_calendar-publish-16);
+}
+
+#list-calendars-context-publish[disabled="true"] {
+  list-style-image: var(--icon-stock_calendar-publish-16-dis);
+}
+
+#list-calendars-context-reload {
+  list-style-image: var(--icon-view-refresh-16);
+}
+
+#list-calendars-context-reload[disabled="true"] {
+  list-style-image: var(--icon-view-refresh-16-dis);
+}
+
+#list-calendars-context-edit,
+#calendar-item-context-menu-modify-menuitem,
+#task-context-menu-modify,
+#task-context-menu-modify-todaypane,
+#agenda-menupopup > menuitem[observes="agenda_edit_event_command"] {
+  list-style-image: var(--icon-gtk-edit-16);
+}
+
+#list-calendars-context-edit[disabled="true"],
+#calendar-item-context-menu-modify-menuitem[disabled="true"],
+#task-context-menu-modify[disabled="true"],
+#task-context-menu-modify-todaypane[disabled="true"],
+#agenda-menupopup > menuitem[observes="agenda_edit_event_command"][disabled="true"] {
+  list-style-image: var(--icon-gtk-edit-16-dis);
+}
+
+#calendar-item-context-menu-newevent-menutitem,
+#calendar-item-context-menu-convert-event-menuitem,
+#calendar-view-context-menu-newevent,
+#calendar-context-converttoevent,
+#item-new-event-menuitem {
+  list-style-image: var(--icon-appointment-new-16);
+}
+
+#calendar-item-context-menu-newevent-menutitem[disabled="true"],
+#calendar-item-context-menu-convert-event-menuitem[disabled="true"],
+#calendar-view-context-menu-newevent[disabled="true"],
+#calendar-context-converttoevent[disabled="true"],
+#item-new-event-menuitem[disabled="true"] {
+  list-style-image: var(--icon-appointment-new-16-dis);
+}
+
+#calendar-item-context-menu-newtodo-menuitem,
+#calendar-item-context-menu-convert-task-menuitem,
+#calendar-view-context-menu-newtodo,
+#task-context-menu-new,
+#task-context-menu-new-todaypane,
+#agenda-context-menu-convert-task-menuitem,
+#item-new-task-menuitem {
+  list-style-image: var(--icon-stock_task-16);
+}
+
+#calendar-item-context-menu-newtodo-menuitem[disabled="true"],
+#calendar-item-context-menu-convert-task-menuitem[disabled="true"],
+#calendar-view-context-menu-newtodo[disabled="true"],
+#task-context-menu-new[disabled="true"],
+#task-context-menu-new-todaypane[disabled="true"],
+#agenda-context-menu-convert-task-menuitem[disabled="true"],
+#item-new-task-menuitem[disabled="true"] {
+  list-style-image: var(--icon-stock_task-16-dis);
+}
+
+#calendar-item-context-menu-cut-menuitem,
+#calendar-view-context-menu-cut-menuitem,
+#task-context-menu-cut-menuitem {
+  list-style-image: var(--icon-edit-cut-16);
+}
+
+#calendar-item-context-menu-cut-menuitem[disabled="true"],
+#calendar-view-context-menu-cut-menuitem[disabled="true"],
+#task-context-menu-cut-menuitem[disabled="true"] {
+  list-style-image: var(--icon-edit-cut-16-dis);
+}
+
+#calendar-item-context-menu-copy-menuitem,
+#calendar-view-context-menu-copy-menuitem,
+#task-context-menu-copy-menuitem,
+#taskview-link-context-menu-copy,
+#attachment-popup-copy {
+  list-style-image: var(--icon-edit-copy-16);
+}
+
+#calendar-item-context-menu-copy-menuitem[disabled="true"],
+#calendar-view-context-menu-copy-menuitem[disabled="true"],
+#task-context-menu-copy-menuitem[disabled="true"],
+#taskview-link-context-menu-copy[disabled="true"],
+#attachment-popup-copy[disabled="true"] {
+  list-style-image: var(--icon-edit-copy-16-dis);
+}
+
+#calendar-item-context-menu-paste-menuitem,
+#calendar-view-context-menu-paste-menuitem,
+#task-context-menu-paste-menuitem {
+  list-style-image: var(--icon-edit-paste-16);
+}
+
+#calendar-item-context-menu-paste-menuitem[disabled="true"],
+#calendar-view-context-menu-paste-menuitem[disabled="true"],
+#task-context-menu-paste-menuitem[disabled="true"] {
+  list-style-image: var(--icon-edit-paste-16-dis);
+}
+
+#calendar-item-context-menu-convert-menu,
+#task-context-menu-convert,
+#agenda-context-menu-convert-menu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-gtk-convert-16);
+}
+
+#calendar-item-context-menu-convert-menu[disabled="true"],
+#task-context-menu-convert[disabled="true"],
+#agenda-context-menu-convert-menu[disabled="true"] {
+  list-style-image: var(--icon-gtk-convert-16-dis);
+}
+
+#calendar-view-context-menu-convert-message-menuitem,
+#calendar-context-converttomessage,
+#agenda-context-menu-convert-message-menuitem,
+#item-new-message-menuitem,
+#attendee-popup-sendemail-menuitem {
+  list-style-image: var(--icon-mail-message-new-16);
+}
+
+#calendar-view-context-menu-convert-message-menuitem[disabled="true"],
+#calendar-context-converttomessage[disabled="true"],
+#agenda-context-menu-convert-message-menuitem[disabled="true"],
+#item-new-message-menuitem[disabled="true"],
+#attendee-popup-sendemail-menuitem[disabled="true"] {
+  list-style-image: var(--icon-mail-message-new-16-dis);
+}
+
+#calendar-view-context-menu-previous {
+  list-style-image: var(--icon-stock_previous-16);
+}
+
+#calendar-view-context-menu-previous[disabled="true"] {
+  list-style-image: var(--icon-stock_previous-16-dis);
+}
+
+#calendar-view-context-menu-next {
+  list-style-image: var(--icon-stock_next-16);
+}
+
+#calendar-view-context-menu-next[disabled="true"] {
+  list-style-image: var(--icon-stock_next-16-dis);
+}
+
+#calendar-context-calendar-menu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-x-office-calendar-16);
+}
+
+#calendar-context-calendar-menu[disabled="true"] {
+  list-style-image: var(--icon-x-office-calendar-16-dis);
+}
+
+#CustomizeTaskActionsToolbar,
+#CustomizeDialogToolbar,
+#view-toolbars-customize-menuitem {
+  list-style-image: var(--icon-document-properties-16);
+}
+
+#CustomizeTaskActionsToolbar[disabled="true"],
+#CustomizeDialogToolbar[disabled="true"],
+#view-toolbars-customize-menuitem[disabled="true"] {
+  list-style-image: var(--icon-document-properties-16-dis);
+}
+
+#item-new-menu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-document-new-16);
+}
+
+#item-new-menu[disabled="true"] {
+  list-style-image: var(--icon-document-new-16-dis);
+}
+
+#item-new-address-menuitem {
+  list-style-image: var(--icon-contact-new-16);
+}
+
+#item-new-address-menuitem[disabled="true"] {
+  list-style-image: var(--icon-contact-new-16-dis);
+}
+
+#item-save-menuitem {
+  list-style-image: var(--icon-document-save-16);
+}
+
+#item-save-menuitem[disabled="true"] {
+  list-style-image: var(--icon-document-save-16-dis);
+}
+
+#item-pagesetup-menuitem {
+  list-style-image: var(--icon-document-page-setup-16);
+}
+
+#item-pagesetup-menuitem[disabled="true"] {
+  list-style-image: var(--icon-document-page-setup-16-dis);
+}
+
+#item-print-menuitem {
+  list-style-image: var(--icon-document-print-16);
+}
+
+#item-print-menuitem[disabled="true"] {
+  list-style-image: var(--icon-document-print-16-dis);
+}
+
+#item-close-menuitem {
+  list-style-image: var(--icon-window-close-16);
+}
+
+#item-close-menuitem[disabled="true"] {
+  list-style-image: var(--icon-window-close-16-dis);
+}
+
+#edit-undo-menuitem {
+  list-style-image: var(--icon-edit-undo-16);
+}
+
+#edit-undo-menuitem[disabled="true"] {
+  list-style-image: var(--icon-edit-undo-16-dis);
+}
+
+#edit-redo-menuitem {
+  list-style-image: var(--icon-edit-redo-16);
+}
+
+#edit-redo-menuitem[disabled="true"] {
+  list-style-image: var(--icon-edit-redo-16-dis);
+}
+
+#edit-cut-menuitem {
+  list-style-image: var(--icon-edit-cut-16);
+}
+
+#edit-cut-menuitem[disabled="true"] {
+  list-style-image: var(--icon-edit-cut-16-dis);
+}
+
+#edit-copy-menuitem {
+  list-style-image: var(--icon-edit-copy-16);
+}
+
+#edit-copy-menuitem[disabled="true"] {
+  list-style-image: var(--icon-edit-copy-16-dis);
+}
+
+#edit-paste-menuitem {
+  list-style-image: var(--icon-edit-paste-16);
+}
+
+#edit-paste-menuitem[disabled="true"] {
+  list-style-image: var(--icon-edit-paste-16-dis);
+}
+
+#edit-selectall-menuitem {
+  list-style-image: var(--icon-edit-select-all-16);
+}
+
+#edit-selectall-menuitem[disabled="true"] {
+  list-style-image: var(--icon-edit-select-all-16-dis);
+}
+
+#options-attachments-menu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-mail-attachment-16);
+}
+
+#options-attachments-menu[disabled="true"] {
+  list-style-image: var(--icon-mail-attachment-16-dis);
+}
+
+#options-attachments-url-menuitem,
+#button-attach-url,
+#attachment-popup-attachPage {
+  list-style-image: var(--icon-text-html-16);
+}
+
+#options-attachments-url-menuitem[disabled="true"],
+#button-attach-url[disabled="true"],
+#attachment-popup-attachPage[disabled="true"] {
+  list-style-image: var(--icon-text-html-16-dis);
+}
+
+#attachment-popup-open {
+  list-style-image: var(--icon-internet-web-browser-16);
+}
+
+#attachment-popup-open[disabled="true"] {
+  list-style-image: var(--icon-internet-web-browser-16);
+}
+
