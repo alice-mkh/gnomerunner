@@ -29,14 +29,9 @@
     padding-bottom: 5px !important;
 }
 
-/* Lightning preferences icon */
-radio[pane=paneLightning] {
-    list-style-image: var(--icon-x-office-calendar-32) !important;
-}
-
 /* iMIP notification bar */
 #imip-bar > image {
-    list-style-image: var(--icon-x-office-calendar-32) !important;
+    list-style-image: var(--icon-x-office-calendar-24) !important;
     -moz-image-region: auto !important;
 }
 
