@@ -37,6 +37,12 @@
   list-style-image: var(--icon-accessories-text-editor-16);
 }
 
+#tasksMenuIRC,
+#mini-irc,
+.icon-irc16 {
+  list-style-image: var(--icon-internet-group-chat-16) !important;
+}
+
 /* ::::: component bar ::::: */
 
 #component-bar {

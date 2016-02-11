@@ -681,3 +681,14 @@ toolbarbutton.chevron > .toolbarbutton-text {
 #feedsButton {
   list-style-image: var(--icon-application-rss-xml-16);
 }
+
+/* chatzilla (temporarily) */
+
+#tb-chatzilla-open {
+  list-style-image: var(--icon-internet-group-chat-24) !important;
+}
+
+toolbar[iconsize="small"] #tb-chatzilla-open {
+  list-style-image: var(--icon-internet-group-chat-16) !important;
+}
+
