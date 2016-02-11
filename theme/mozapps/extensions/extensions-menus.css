@@ -8,6 +8,14 @@ menuitem:not([type]) {
   -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
 }
 
+#menuitem_showDetails {
+  list-style-image: var(--icon-dialog-information-16);
+}
+
+#menuitem_showDetails[disabled="true"] {
+  list-style-image: var(--icon-dialog-information-16);
+}
+
 #menuitem_enableItem,
 #menuitem_enableTheme {
   list-style-image: var(--icon-gtk-yes-16);

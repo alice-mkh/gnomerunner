@@ -51,6 +51,10 @@ menuitem:not([type]) {
   -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
 }
 
+#downloadmgr {
+  list-style-image: var(--icon-stock_downloads-16);
+}
+
 #addonsmgr {
   list-style-image: url("chrome://mozapps/skin/extensions/extensionGeneric-16.png");
 }

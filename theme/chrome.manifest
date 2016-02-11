@@ -20,7 +20,10 @@ style chrome://editor/content/composerOverlay.xul chrome://editor/skin/composerO
 style chrome://editor/content/editingOverlay.xul chrome://editor/skin/editingOverlay-menus.css
 style chrome://editor/content/editorOverlay.xul chrome://editor/skin/editorOverlay-menus.css
 style chrome://editor/content/EditorContextMenuOverlay.xul chrome://editor/skin/EditorContextMenuOverlay-menus.css
+style chrome://messenger/content/messengercompose/mailComposeOverlay.xul chrome://messenger/skin/messengercompose/mailComposeOverlay-menus.css
 style chrome://messenger/content/mailOverlay.xul chrome://messenger/skin/mailOverlay-menus.css
+style chrome://messenger/content/mailWindowOverlay.xul chrome://messenger/skin/mailWindowOverlay-menus.css
+style chrome://messenger/content/msgHdrViewOverlay.xul chrome://messenger/skin/msgHdrViewOverlay-menus.css
 style chrome://navigator/content/mailNavigatorOverlay.xul chrome://navigator/skin/mailNavigatorOverlay-menus.css
 style chrome://navigator/content/navigatorOverlay.xul chrome://navigator/skin/navigatorOverlay-menus.css
 

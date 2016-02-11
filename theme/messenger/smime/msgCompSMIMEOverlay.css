@@ -57,3 +57,20 @@ toolbar[iconsize="small"] > #button-security[disabled] {
   list-style-image: url("chrome://messenger/skin/smime/icons/sbCryptoNotOk.gif");
   visibility: visible;
 }
+
+/* menus */
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#menu_securityStatus2,
+#menu_viewSecurityStatus {
+  list-style-image: var(--icon-lock-secure-16);
+}
+
+#menu_securityStatus2[disabled="true"],
+#menu_viewSecurityStatus[disabled="true"] {
+  list-style-image: var(--icon-lock-secure-16-dis);
+}
+

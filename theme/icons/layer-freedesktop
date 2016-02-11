@@ -60,6 +60,7 @@ go-up
 gtk-apply
 gtk-cancel
 gtk-color-picker
+gtk-connect
 gtk-convert
 gtk-edit
 gtk-no
@@ -97,6 +98,8 @@ network-server
 preferences-desktop
 process-stop
 stock_folder folder
+stock_next go-down
+stock_previous go-up
 text-html
 text-x-generic
 text-x-generic-template

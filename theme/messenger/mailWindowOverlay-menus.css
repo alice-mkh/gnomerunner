@@ -1,0 +1,581 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://icons/skin/icon-theme-default.css");
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#folderPaneContext-getMessages,
+#menu_getNewMsg,
+#menu_getAllNewMsgPopupMenu,
+#button-getAllNewMsg {
+  list-style-image: var(--icon-stock_mail-receive-16);
+}
+
+#folderPaneContext-getMessages[disabled="true"],
+#menu_getNewMsg[disabled="true"],
+#menu_getAllNewMsgPopupMenu[disabled="true"],
+#button-getAllNewMsg[disabled="true"] {
+  list-style-image: var(--icon-stock_mail-receive-16-dis);
+}
+
+#folderPaneContext-openNewTab,
+#context-openlinkintab,
+#mailContext-openNewTab,
+#menu_newTab {
+  list-style-image: var(--icon-tab-new-16);
+}
+
+#folderPaneContext-openNewTab[disabled="true"],
+#context-openlinkintab[disabled="true"],
+#mailContext-openNewTab[disabled="true"],
+#menu_newTab[disabled="true"] {
+  list-style-image: var(--icon-tab-new-16-dis);
+}
+
+#folderPaneContext-openNewWindow,
+#context-openlink,
+#mailContext-openNewWindow,
+#openMessageWindowMenuitem {
+  list-style-image: var(--icon-window-new-16);
+}
+
+#folderPaneContext-openNewWindow[disabled="true"],
+#context-openlink[disabled="true"],
+#mailContext-openNewWindow[disabled="true"],
+#openMessageWindowMenuitem[disabled="true"] {
+  list-style-image: var(--icon-window-new-16-dis);
+}
+
+#folderPaneContext-searchMessages,
+#menu_SearchMail {
+  list-style-image: var(--icon-edit-find-16);
+}
+
+#folderPaneContext-searchMessages[disabled="true"],
+#menu_SearchMail[disabled="true"] {
+  list-style-image: var(--icon-edit-find-16-dis);
+}
+
+#folderPaneContext-new,
+#menu_newFolder {
+  list-style-image: var(--icon-folder-new-16);
+}
+
+#folderPaneContext-new[disabled="true"],
+#menu_newFolder[disabled="true"] {
+  list-style-image: var(--icon-folder-new-16-dis);
+}
+
+#folderPaneContext-remove,
+#mailContext-delete,
+#deleteJunk {
+  list-style-image: var(--icon-edit-delete-16);
+}
+
+#folderPaneContext-remove[disabled="true"],
+#mailContext-delete[disabled="true"],
+#deleteJunk[disabled="true"] {
+  list-style-image: var(--icon-edit-delete-16-dis);
+}
+
+#folderPaneContext-rename,
+#menu_renameFolder {
+  list-style-image: var(--icon-gtk-edit-16);
+}
+
+#folderPaneContext-rename[disabled="true"],
+#menu_renameFolder[disabled="true"] {
+  list-style-image: var(--icon-gtk-edit-16-dis);
+}
+
+#folderPaneContext-markMailFolderAllRead,
+#folderPaneContext-markNewsgroupAllRead {
+  list-style-image: var(--icon-mail-mark-read-16);
+}
+
+#folderPaneContext-markMailFolderAllRead[disabled="true"],
+#folderPaneContext-markNewsgroupAllRead[disabled="true"] {
+  list-style-image: var(--icon-mail-mark-read-16-dis);
+}
+
+#folderPaneContext-sendUnsentMessages {
+  list-style-image: var(--icon-mail-send-16);
+}
+
+#folderPaneContext-sendUnsentMessages[disabled="true"] {
+  list-style-image: var(--icon-mail-send-16-dis);
+}
+
+#folderPaneContext-properties,
+#folderPaneContext-settings,
+#mailContext-tagCustomize,
+#editRemoteContentSettings,
+#menu_settingsOffline,
+#menu_properties,
+#viewMessageCustomize,
+#tagMenu-tagCustomize {
+  list-style-image: var(--icon-document-properties-16);
+}
+
+#folderPaneContext-properties[disabled="true"],
+#folderPaneContext-settings[disabled="true"],
+#mailContext-tagCustomize[disabled="true"],
+#editRemoteContentSettings[disabled="true"],
+#menu_settingsOffline[disabled="true"],
+#menu_properties[disabled="true"],
+#viewMessageCustomize[disabled="true"],
+#tagMenu-tagCustomize[disabled="true"] {
+  list-style-image: var(--icon-document-properties-16-dis);
+}
+
+#mailContext-replySender,
+#replyMainMenu,
+#replySenderMainMenu,
+#button-replyPopup > menuitem[command="cmd_reply"],
+#button-replyPopup > menuitem[command="cmd_replySender"] {
+  list-style-image: var(--icon-mail-reply-sender-16);
+}
+
+#mailContext-replySender[disabled="true"],
+#replyMainMenu[disabled="true"],
+#replySenderMainMenu[disabled="true"],
+#button-replyPopup > menuitem[command="cmd_reply"][disabled="true"],
+#button-replyPopup > menuitem[command="cmd_replySender"][disabled="true"] {
+  list-style-image: var(--icon-mail-reply-sender-16-dis);
+}
+
+#mailContext-replyAll,
+#replyallMainMenu,
+#replyAllRecipientsMainMenu,
+#button-replyallPopup > menuitem[command="cmd_replyAllRecipients"] {
+  list-style-image: var(--icon-mail-reply-all-16);
+}
+
+#mailContext-replyAll[disabled="true"],
+#replyallMainMenu[disabled="true"],
+#replyAllRecipientsMainMenu[disabled="true"],
+#button-replyallPopup > menuitem[command="cmd_replyAllRecipients"][disabled="true"] {
+  list-style-image: var(--icon-mail-reply-all-16-dis);
+}
+
+#mailContext-forward,
+#menu_forwardMsg {
+  list-style-image: var(--icon-mail-forward-16);
+}
+
+#mailContext-forward[disabled="true"],
+#menu_forwardMsg[disabled="true"] {
+  list-style-image: var(--icon-mail-forward-16-dis);
+}
+
+#mailContext-editAsNew,
+#context-composeemailto,
+#newNewMsgCmd,
+#newMsgCmd,
+#menu_editMsgAsNew {
+  list-style-image: var(--icon-mail-message-new-16);
+}
+
+#mailContext-editAsNew[disabled="true"],
+#context-composeemailto[disabled="true"],
+#newNewMsgCmd[disabled="true"],
+#newMsgCmd[disabled="true"],
+#menu_editMsgAsNew[disabled="true"] {
+  list-style-image: var(--icon-mail-message-new-16-dis);
+}
+
+#mailContext-tagRemoveAll,
+#tagMenu-tagRemoveAll {
+  list-style-image: var(--icon-edit-clear-16);
+}
+
+#mailContext-tagRemoveAll[disabled="true"],
+#tagMenu-tagRemoveAll[disabled="true"] {
+  list-style-image: var(--icon-edit-clear-16-dis);
+}
+
+#mailContext-mark,
+#markMenu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-mail-mark-read-16);
+}
+
+#mailContext-mark[disabled="true"],
+#markMenu[disabled="true"] {
+  list-style-image: var(--icon-mail-mark-read-16);
+}
+
+#mailContext-markThreadAsRead,
+#markThreadReadMenuItem,
+#button-markThreadAsRead {
+  list-style-image: var(--icon-stock_mail-open-multiple-16);
+}
+
+#mailContext-markThreadAsRead[disabled="true"],
+#markThreadReadMenuItem[disabled="true"],
+#button-markThreadAsRead[disabled="true"] {
+  list-style-image: var(--icon-stock_mail-open-multiple-16-dis);
+}
+
+#mailContext-markAsJunk,
+#markAsJunkMenuItem {
+  list-style-image: var(--icon-mail-mark-junk-16);
+}
+
+#mailContext-markAsJunk[disabled="true"],
+#markAsJunkMenuItem[disabled="true"] {
+  list-style-image: var(--icon-mail-mark-junk-16-dis);
+}
+
+#mailContext-markAsNotJunk,
+#markAsNotJunkMenuItem {
+  list-style-image: var(--icon-mail-mark-notjunk-16);
+}
+
+#mailContext-markAsNotJunk[disabled="true"],
+#markAsNotJunkMenuItem[disabled="true"] {
+  list-style-image: var(--icon-mail-mark-notjunk-16-dis);
+}
+
+#mailContext-moveMenu,
+#moveMenu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-stock_mail-move-16);
+}
+
+#mailContext-moveMenu[disabled="true"],
+#moveMenu[disabled="true"] {
+  list-style-image: var(--icon-stock_mail-move-16-dis);
+}
+
+#mailContext-copyMenu,
+#copyMenu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-stock_mail-copy-16);
+}
+
+#mailContext-copyMenu[disabled="true"],
+#copyMenu[disabled="true"] {
+  list-style-image: var(--icon-stock_mail-move-16-dis);
+}
+
+menu[ref*="mailnewsrecentfolders"] {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-document-open-recent-16);
+}
+
+menu[ref*="mailnewsrecentfolders"][disabled="true"] {
+  list-style-image: var(--icon-document-open-recent-16-dis);
+}
+
+#mailContext-saveAs {
+  list-style-image: var(--icon-document-save-as-16);
+}
+
+#mailContext-saveAs[disabled="true"] {
+  list-style-image: var(--icon-document-save-as-16-dis);
+}
+
+#mailContext-printpreview {
+  list-style-image: var(--icon-document-print-preview-16);
+}
+
+#mailContext-printpreview[disabled="true"] {
+  list-style-image: var(--icon-document-print-preview-16-dis);
+}
+
+#mailContext-print {
+  list-style-image: var(--icon-document-print-16);
+}
+
+#mailContext-print[disabled="true"] {
+  list-style-image: var(--icon-document-print-16-dis);
+}
+
+#context-addemail {
+  list-style-image: var(--icon-contact-new-16);
+}
+
+#context-addemail[disabled="true"] {
+  list-style-image: var(--icon-contact-new-16-dis);
+}
+
+#context-createfilterfrom,
+#createFilter,
+#menu_Filters {
+  list-style-image: var(--icon-stock_mail-filters-apply-16);
+}
+
+#context-createfilterfrom[disabled="true"],
+#createFilter[disabled="true"],
+#menu_Filters[disabled="true"] {
+  list-style-image: var(--icon-stock_mail-filters-apply-16-dis);
+}
+
+#menu_newVirtualFolder,
+#viewMessageVirtualFolder {
+  list-style-image: var(--icon-folder-saved-search-16);
+}
+
+#menu_newVirtualFolder[disabled="true"],
+#viewMessageVirtualFolder[disabled="true"] {
+  list-style-image: var(--icon-folder-saved-search-16);
+}
+
+#openMessageFileMenuitem {
+  list-style-image: var(--icon-document-open-16);
+}
+
+#openMessageFileMenuitem[disabled="true"] {
+  list-style-image: var(--icon-document-open-16-dis);
+}
+
+#menu_saveAs {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-document-save-as-16);
+}
+
+#menu_saveAs[disabled="true"] {
+  list-style-image: var(--icon-document-save-as-16-dis);
+}
+
+#menu_saveAsFile,
+#button-newMsgPlain {
+  list-style-image: var(--icon-text-x-generic-16);
+}
+
+#menu_saveAsFile[disabled="true"],
+#button-newMsgPlain[disabled="true"] {
+  list-style-image: var(--icon-text-x-generic-16-dis);
+}
+
+#menu_saveAsTemplate {
+  list-style-image: var(--icon-text-x-generic-template-16);
+}
+
+#menu_saveAsTemplate[disabled="true"] {
+  list-style-image: var(--icon-text-x-generic-template-16-dis);
+}
+
+#menu_sendunsentmsgs {
+  list-style-image: var(--icon-mail-send-16);
+}
+
+#menu_sendunsentmsgs[disabled="true"] {
+  list-style-image: var(--icon-mail-send-16-dis);
+}
+
+#menu_Offline {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-gtk-connect-16);
+}
+
+#menu_Offline[disabled="true"] {
+  list-style-image: var(--icon-gtk-connect-16-dis);
+}
+
+#menu_mailSelectAll {
+  list-style-image: var(--icon-edit-select-all-16);
+}
+
+#menu_mailSelectAll[disabled="true"] {
+  list-style-image: var(--icon-edit-select-all-16-dis);
+}
+
+#menu_accountmgr {
+  list-style-image: var(--icon-stock_mail-accounts-16);
+}
+
+#menu_accountmgr[disabled="true"] {
+  list-style-image: var(--icon-stock_mail-accounts-16-dis);
+}
+
+#menu_preferences {
+  list-style-image: var(--icon-preferences-desktop-16);
+}
+
+#menu_preferences[disabled] {
+  list-style-image: var(--icon-preferences-desktop-16-dis);
+}
+
+#viewMessageViewMenu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-stock_mail-16);
+}
+
+#viewMessageViewMenu[disabled="true"] {
+  list-style-image: var(--icon-stock_mail-16-dis);
+}
+
+#viewMessagesMenu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-stock_mail-copy-16);
+}
+
+#viewMessagesMenu[disabled="true"] {
+  list-style-image: var(--icon-stock_mail-copy-16);
+}
+
+#stopMenuitem {
+  list-style-image: var(--icon-process-stop-16);
+}
+
+#stopMenuitem[disabled="true"] {
+  list-style-image: var(--icon-process-stop-16-dis);
+}
+
+#menu_Stop {
+  list-style-image: var(--icon-view-refresh-16);
+}
+
+#menu_Stop[disabled="true"] {
+  list-style-image: var(--icon-view-refresh-16-dis);
+}
+
+#goNextMenu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-stock_next-16);
+}
+
+#goNextMenu[disabled="true"] {
+  list-style-image: var(--icon-stock_next-16-dis);
+}
+
+#goPreviousMenu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-stock_previous-16);
+}
+
+#goPreviousMenu[disabled="true"] {
+  list-style-image: var(--icon-stock_previous-16-dis);
+}
+
+#nextMsgMenuItem,
+#prevMsgMenuItem,
+#menu_forwardAsInline,
+#button-nextPopup > menuitem[command="cmd_nextMsg"],
+#button-forwardPopup > menuitem[command="cmd_forwardInline"] {
+  list-style-image: var(--icon-stock_mail-16);
+}
+
+#nextMsgMenuItem[disabled="true"],
+#prevMsgMenuItem[disabled="true"],
+#menu_forwardAsInline[disabled="true"],
+#button-nextPopup > menuitem[command="cmd_nextMsg"][disabled="true"],
+#button-forwardPopup > menuitem[command="cmd_forwardInline"][disabled="true"] {
+  list-style-image: var(--icon-stock_mail-16-dis);
+}
+
+#nextUnreadMsgMenuItem,
+#prevUnreadMsgMenuItem,
+#button-nextPopup > menuitem[command="cmd_nextUnreadMsg"] {
+  list-style-image: var(--icon-mail-unread-16);
+}
+
+#nextUnreadMsgMenuItem[disabled="true"],
+#prevUnreadMsgMenuItem[disabled="true"],
+#button-nextPopup > menuitem[command="cmd_nextUnreadMsg"][disabled="true"] {
+  list-style-image: var(--icon-mail-unread-16-dis);
+}
+
+#nextFlaggedMenuItem,
+#prevFlaggedMenuItem,
+#button-nextPopup > menuitem[command="cmd_nextFlaggedMsg"] {
+  list-style-image: var(--icon-mail-mark-important-16);
+}
+
+#nextFlaggedMenuItem[disabled="true"],
+#prevFlaggedMenuItem[disabled="true"],
+#button-nextPopup > menuitem[command="cmd_nextFlaggedMsg"][disabled="true"] {
+  list-style-image: var(--icon-mail-mark-important-16-dis);
+}
+
+#nextUnreadThreadMenuItem,
+#button-nextPopup > menuitem[command="cmd_nextUnreadThread"] {
+  list-style-image: var(--icon-stock_mail-unread-multiple-16);
+}
+
+#nextUnreadThreadMenuItem[disabled="true"],
+#button-nextPopup > menuitem[command="cmd_nextUnreadThread"][disabled="true"] {
+  list-style-image: var(--icon-stock_mail-unread-multiple-16-dis);
+}
+
+#menu_goBack {
+  list-style-image: var(--icon-go-previous-16);
+}
+
+#menu_goBack[disabled="true"] {
+  list-style-image: var(--icon-go-previous-16-dis);
+}
+
+#menu_goForward {
+  list-style-image: var(--icon-go-next-16);
+}
+
+#menu_goForward[disabled="true"] {
+  list-style-image: var(--icon-go-next-16-dis);
+}
+
+#goStartPage {
+  list-style-image: var(--icon-go-home-16);
+}
+
+#goStartPage[disabled="true"] {
+  list-style-image: var(--icon-go-home-16-dis);
+}
+
+#menu_forwardAsAttachment,
+#button-forwardPopup > menuitem[command="cmd_forwardAttachment"] {
+  list-style-image: var(--icon-mail-attachment-16);
+}
+
+#menu_forwardAsAttachment[disabled="true"],
+#button-forwardPopup > menuitem[command="cmd_forwardAttachment"][disabled="true"] {
+  list-style-image: var(--icon-mail-attachment-16-dis);
+}
+
+#msgAttachmentMenu {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic") !important;
+  list-style-image: var(--icon-mail-attachment-16);
+}
+
+#msgAttachmentMenu[disabled="true"] {
+  list-style-image: var(--icon-mail-attachment-16-dis);
+}
+
+#menu_cancel {
+  list-style-image: var(--icon-gtk-cancel-16);
+}
+
+#menu_cancel[disabled="true"] {
+  list-style-image: var(--icon-gtk-cancel-16-dis);
+}
+
+#watchThread {
+  list-style-image: var(--icon-stock_show-all-16);
+}
+
+#watchThread[disabled="true"] {
+  list-style-image: var(--icon-stock_show-all-16-dis);
+}
+
+#menu_import {
+  list-style-image: var(--icon-stock_mail-import-16);
+}
+
+#menu_import[disabled="true"] {
+  list-style-image: var(--icon-stock_mail-import-16-dis);
+}
+
+#button-newMsgHTML {
+  list-style-image: var(--icon-text-html-16);
+}
+
+#button-newMsgHTML[disabled="true"] {
+  list-style-image: var(--icon-text-html-16);
+}
+

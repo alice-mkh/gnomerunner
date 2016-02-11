@@ -49,7 +49,7 @@
 }
 
 #seafox-downloads-button {
-  list-style-image: url("downloads.png");
+  list-style-image: var(--icon-stock_downloads-24);
 }
 
 toolbar[iconsize="small"] #seafox-newwindow-button {
@@ -97,5 +97,6 @@ toolbar[iconsize="small"]  #seafox-sidebar-button {
 }
 
 toolbar[iconsize="small"] #seafox-downloads-button {
-  list-style-image: url("downloads-small.png");
+  list-style-image: var(--icon-stock_downloads-16);
 }
+

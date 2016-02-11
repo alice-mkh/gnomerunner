@@ -25,7 +25,7 @@ edit-redo				gtk-redo
 edit-select-all			gtk-select-all
 edit-undo				gtk-undo
 folder					gtk-directory
-folder-open				gtk-directory
+folder-open				gtk-open
 format-indent-less		gtk-unindent
 format-indent-more		gtk-indent
 format-justify-center	gtk-justify-center
@@ -51,6 +51,7 @@ go-up					gtk-go-up
 gtk-apply
 gtk-cancel
 gtk-color-picker
+gtk-connect
 gtk-convert
 gtk-edit
 gtk-no
@@ -69,6 +70,9 @@ media-playback-start	gtk-media-play
 network-idle			gtk-network
 preferences-desktop		gtk-preferences
 process-stop			gtk-stop
+stock_foler             gtk-directory
+stock_next              gtk-go-down
+stock_previous          gtk-go-up
 text-x-generic			gtk-file
 tools-check-spelling	gtk-spell-check
 view-fullscreen			gtk-fullscreen

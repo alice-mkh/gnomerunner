@@ -108,3 +108,14 @@
 .tab-close-button .toolbarbutton-icon {
   margin: -4px !important;
 }
+
+/* menus */
+
+#menu_pageInfoCmd_seafox {
+  list-style-image: var(--icon-document-properties-16);
+}
+
+#menu_pageInfoCmd_seafox[disabled="true"] {
+  list-style-image: var(--icon-document-properties-16-dis);
+}
+

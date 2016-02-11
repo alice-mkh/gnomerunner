@@ -78,16 +78,16 @@ treechildren::-moz-tree-image(ActionStop, inactive) {
 }
 
 .mini-button {
-  -moz-appearance: none;
-  background-color: transparent;
-  border: none;
-  padding: 0;
+  -moz-appearance: toolbarbutton;
   margin: 0;
   min-width: 0;
   min-height: 0;
 }
 
 .mini-button > .button-box {
-  -moz-appearance: none;
   padding: 0 !important;
+}
+
+.mini-button > .button-box > .button-icon {
+  margin: -3px;
 }

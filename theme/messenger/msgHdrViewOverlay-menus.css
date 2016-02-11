@@ -1,0 +1,120 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://icons/skin/icon-theme-default.css");
+
+menuitem:not([type]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#messageIdContext-openMessageForMsgId {
+  list-style-image: var(--icon-internet-mail-16);
+}
+
+#messageIdContext-openMessageForMsgId[disabled="true"] {
+  list-style-image: var(--icon-internet-mail-16-dis);
+}
+
+#messageIdContext-openBrowserWithMsgId,
+#copyUrlPopup > menuitem[oncommand*="openAsExternal"] {
+  list-style-image: var(--icon-internet-web-browser-16);
+}
+
+#messageIdContext-openBrowserWithMsgId[disabled="true"],
+#copyUrlPopup > menuitem[oncommand*="openAsExternal"][disabled="true"] {
+  list-style-image: var(--icon-internet-web-browser-16-dis);
+}
+
+#messageIdContext-copyMessageId,
+#copyEmailAddressItem,
+#copyUrlPopup > menuitem[oncommand*="CopyWebsiteAddress"] {
+  list-style-image: var(--icon-edit-copy-16);
+}
+
+#messageIdContext-copyMessageId[disabled="true"],
+#copyEmailAddressItem[disabled="true"],
+#copyUrlPopup > menuitem[oncommand*="CopyWebsiteAddress"][disabled="true"] {
+  list-style-image: var(--icon-edit-copy-16-dis);
+}
+
+#sendMailToItem {
+  list-style-image: var(--icon-mail-message-new-16);
+}
+
+#sendMailToItem[disabled="true"] {
+  list-style-image: var(--icon-mail-message-new-16-dis);
+}
+
+#createFilterFromItem {
+  list-style-image: var(--icon-stock_mail-filters-apply-16);
+}
+
+#createFilterFromItem[disabled="true"] {
+  list-style-image: var(--icon-stock_mail-filters-apply-16-dis);
+}
+
+#addToAddressBookItem {
+  list-style-image: var(--icon-contact-new-16);
+}
+
+#addToAddressBookItem[disabled="true"] {
+  list-style-image: var(--icon-contact-new-16-dis);
+}
+
+#editContactItem,
+#viewContactItem {
+  list-style-image: var(--icon-document-properties-16);
+}
+
+#editContactItem[disabled="true"],
+#viewContactItem[disabled="true"] {
+  list-style-image: var(--icon-document-properties-16-dis);
+}
+
+#context-openAttachment {
+  list-style-image: var(--icon-document-open-16);
+}
+
+#context-openAttachment[disabled="true"] {
+  list-style-image: var(--icon-document-open-16-dis);
+}
+
+#context-saveAttachment {
+  list-style-image: var(--icon-document-save-as-16);
+}
+
+#context-saveAttachment[disabled="true"] {
+  list-style-image: var(--icon-document-save-as-16-dis);
+}
+
+#context-saveAllAttachments,
+#file-saveAllAttachments {
+  list-style-image: var(--icon-document-save-16);
+}
+
+#context-saveAllAttachments[disabled="true"],
+#file-saveAllAttachments[disabled="true"] {
+  list-style-image: var(--icon-document-save-16-dis);
+}
+
+#context-deleteAttachment,
+#context-deleteAllAttachments,
+#file-deleteAllAttachments {
+  list-style-image: var(--icon-edit-delete-16);
+}
+
+#context-deleteAttachment[disabled="true"],
+#context-deleteAllAttachments[disabled="true"],
+#file-deleteAllAttachments[disabled="true"] {
+  list-style-image: var(--icon-edit-delete-16-dis);
+}
+
+#copyUrlPopup > menuitem[oncommand*="BookmarkWebsite"] {
+  list-style-image: var(--icon-bookmark-new-16);
+}
+
+#copyUrlPopup > menuitem[oncommand*="BookmarkWebsite"][disabled="true"] {
+  list-style-image: var(--icon-bookmark-new-16-dis);
+}
+

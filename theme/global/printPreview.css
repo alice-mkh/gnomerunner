@@ -28,6 +28,7 @@
 
 .previous-arrow:-moz-locale-dir(rtl) {
   list-style-image: var(--icon-go-previous-rtl-16);
+}
 
 .next-arrow {
   list-style-image: var(--icon-go-next-16);

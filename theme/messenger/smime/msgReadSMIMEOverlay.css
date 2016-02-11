@@ -35,3 +35,12 @@
 #status-bar[encrypted="notok"] #encrypted-status {
   list-style-image: url("chrome://messenger/skin/smime/icons/sbCryptoNotOk.gif");
 }
+
+#menu_View_Popup > menuitem[command="cmd_viewSecurityStatus"] {
+  list-style-image: var(--icon-lock-secure-16);
+}
+
+#menu_View_Popup > menuitem[command="cmd_viewSecurityStatus"][disabled="true"] {
+  list-style-image: var(--icon-lock-secure-16-dis);
+}
+
