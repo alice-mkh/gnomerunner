@@ -18,7 +18,9 @@ http://www.gtk.org/
 Tango icons are in Public Domain.
 http://tango.freedesktop.org/
 
-Some of the icons were also taken from Epiphany and other GNOME applications, and also from LibreOffice.
+Icons were also taken from Epiphany and other GNOME applications, and also from LibreOffice.
+
+Some icons from Firefox, Thunderbird and Lightning are also present.
 
 Icon modifications are by Michael -mld- Doering and Exalm.
 
