@@ -1,20 +1,15 @@
 #Theme ID
-THEME_ID_FD={af01d686-dac6-4daf-8132-d49c67ff8da8}
 THEME_ID={ed492c7d-322b-4da5-bdf1-aeec9fea8bda}
-OPTIONS_ID={1ddafb32-9812-42a4-94e0-db9cc4fc0238}
-INTERNAL_NAME_FD=fd-$CODE_NAME/1.0
+OPTIONS_ID={8707c6ea-fa48-4353-be61-0d8e3ce0c475}
 INTERNAL_NAME=$CODE_NAME/1.0
-CODE_NAME_FD=gnomerunner
 CODE_NAME=gnomerunner
 
 #Theme description
-THEME_DESC_FD=Uses Freedesktop items and icons from the updated GNOME iconset.
 THEME_DESC=Uses gtk+-stock items and icons from the updated GNOME iconset.
 OPTIONS_DESC=Allows to customize $NAME theme.
 
 #Theme name
 OPTIONS_NAME=$NAME Options
-NAME_FD=GNOMErunner/GTK Revived (Freedesktop)
 NAME=GNOMErunner
 
 #Theme version

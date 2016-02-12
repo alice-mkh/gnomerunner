@@ -98,11 +98,6 @@ done
 
 cd ../..
 
-#Create Freedesktop theme
-echo "Creating -fd theme (deprecated)..."
-cp -R theme fd
-sed -E "s/((INTERNAL_)?NAME|THEME_(ID|DESC))/\0_FD/g" -i "fd/install.rdf" "fd/chrome.manifest"
-
 #Substitute variables
 echo "Substituting variables..."
 FILES=`find . -type f -exec grep -Iq . {} \; -and -print`
@@ -119,12 +114,9 @@ done < "../config.txt"
 echo "Packaging..."
 #Package
 THEME="gnomerunner-$VERSION-sm-linux.xpi"
-THEME_FD="gnomerunnerfd-revived-$VERSION-sm-linux.xpi"
 OPTIONS="gnomerunner-options-$VERSION-sm-linux.xpi"
 cd theme
 zip ../../$THEME * -qr
-cd ../fd
-zip ../../$THEME_FD * -qr
 cd ../options
 zip ../../$OPTIONS * -qr
 cd ../..
