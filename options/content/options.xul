@@ -33,6 +33,9 @@
 			<preference id="throbber-style"
 			            name="extensions.gnomerunner-options.throbber-style"
 			            type="string"/>
+			<preference id="alt-secure-highlight"
+			            name="extensions.gnomerunner-options.alt-secure-highlight"
+			            type="bool"/>
 		</preferences>
 
 		<tabbox>
@@ -40,6 +43,7 @@
 				<tab label="&options.tab.icons;" />
 				<tab label="&options.tab.menus-and-toolbars;" />
 				<tab label="&options.tab.throbber;" />
+				<tab label="&options.tab.misc;" />
 			</tabs>
 			<tabpanels>
 				<tabpanel orient="vertical">
@@ -138,6 +142,12 @@
 							<button id="navigator-throbber" />
 							<button id="navigator-throbber" busy="true" />
 						</hbox>
+					</groupbox>
+				</tabpanel>
+				<tabpanel orient="vertical">
+					<groupbox>
+						<caption label="&options.label.location-bar;" />
+						<checkbox label="&options.label.alt-secure-highlight;" preference="alt-secure-highlight" />
 					</groupbox>
 				</tabpanel>
 			</tabpanels>

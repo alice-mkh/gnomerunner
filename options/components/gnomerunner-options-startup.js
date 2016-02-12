@@ -21,6 +21,7 @@ var visibleGrippies;
 var showMenubarGrippies;
 var showToolbarGrippies;
 var throbberStyle;
+var altSecureHighlight;
 
 function GnomerunnerOptions() {
   this.start();
@@ -46,7 +47,6 @@ GnomerunnerOptions.prototype = {
     if (aTopic == "final-ui-startup") {
       loadTheme();
       loadTweaks();
-      
       return;
     }
     if (aTopic == "nsPref:changed") {
@@ -105,6 +105,7 @@ function loadTweaks() {
   showMenubarGrippies = prefs.getBoolPref("show-menubar-grippies");
   showToolbarGrippies = prefs.getBoolPref("show-toolbar-grippies");
   throbberStyle = prefs.getCharPref("throbber-style");
+  altSecureHighlight = prefs.getBoolPref("alt-secure-highlight");
 
   if (visibleGrippies) {
     loadCss("chrome://gnomerunner-options/content/tweaks/visible-grippies.css");
@@ -118,6 +119,10 @@ function loadTweaks() {
     loadCss("chrome://gnomerunner-options/content/tweaks/hide-toolbar-grippies.css");
   }
 
+  if (altSecureHighlight) {
+    loadCss("chrome://gnomerunner-options/content/tweaks/alt-secure-highlight.css");
+  }
+
   loadCss("chrome://gnomerunner-options/content/tweaks/throbber/throbber-" + throbberStyle + ".css");
 }
 
@@ -126,6 +131,7 @@ function unloadTweaks() {
   unloadCss("chrome://gnomerunner-options/content/tweaks/hide-menubar-grippies.css");
   unloadCss("chrome://gnomerunner-options/content/tweaks/hide-toolbar-grippies.css");
   unloadCss("chrome://gnomerunner-options/content/tweaks/throbber/throbber-" + throbberStyle + ".css");
+  unloadCss("chrome://gnomerunner-options/content/tweaks/alt-secure-highlight.css");
 }
 
 function refreshDocument(aDoc) {

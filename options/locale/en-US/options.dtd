@@ -7,6 +7,7 @@
 <!ENTITY options.tab.icons						"Icons">
 <!ENTITY options.tab.menus-and-toolbars			"Menus and Toolbars">
 <!ENTITY options.tab.throbber					"Throbber">
+<!ENTITY options.tab.misc						"Misc">
 
 <!ENTITY options.label.native-icons				"Native icons">
 <!ENTITY options.icons.freedesktop				"Freedesktop">
@@ -25,6 +26,9 @@
 <!ENTITY options.label.throbber.seamonkey		"SeaMonkey">
 <!ENTITY options.label.throbber.mozilla			"Mozilla">
 <!ENTITY options.label.throbber.gnome-foot		"GNOME foot">
+
+<!ENTITY options.label.location-bar				"Location bar">
+<!ENTITY options.label.alt-secure-highlight		"Alternative highlight colors">
 
 <!ENTITY options.label.preview					"Preview">
 
