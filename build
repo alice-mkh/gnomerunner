@@ -2,7 +2,6 @@
 
 rm temp -rf
 mkdir temp
-cp install.rdf temp
 cp theme temp -r
 cp options temp -r
 cp icon.png temp/theme
@@ -101,10 +100,8 @@ cd ../..
 
 #Create Freedesktop theme
 echo "Creating -fd theme (deprecated)..."
-mkdir fd
-cp -R theme fd/theme
-cp install.rdf fd
-sed -E "s/((INTERNAL_)?NAME|THEME_(ID|DESC))/\0_FD/g" -i "fd/theme/install.rdf" "fd/theme/chrome.manifest" "fd/install.rdf"
+cp -R theme fd
+sed -E "s/((INTERNAL_)?NAME|THEME_(ID|DESC))/\0_FD/g" -i "fd/install.rdf" "fd/chrome.manifest"
 
 #Substitute variables
 echo "Substituting variables..."
@@ -119,25 +116,15 @@ while read LINE; do
     eval "$LINE1=\"$LINE2\""
 done < "../config.txt"
 
-cp -R options fd
-
 echo "Packaging..."
 #Package
-THEME_JAR="theme.jar"
-OPTIONS_JAR="options.xpi"
-NAME="gnomerunnergtk-revived-$VERSION-sm-linux.xpi"
-NAME_FD="gnomerunnerfd-revived-$VERSION-sm-linux.xpi"
+THEME="gnomerunner-$VERSION-sm-linux.xpi"
+THEME_FD="gnomerunnerfd-revived-$VERSION-sm-linux.xpi"
+OPTIONS="gnomerunner-options-$VERSION-sm-linux.xpi"
 cd theme
-zip ../$THEME_JAR * -qr
+zip ../../$THEME * -qr
+cd ../fd
+zip ../../$THEME_FD * -qr
 cd ../options
-zip ../$OPTIONS_JAR * -qr
-cd ..
-zip ../$NAME $THEME_JAR $OPTIONS_JAR install.rdf -q
-cd fd/theme
-zip ../$THEME_JAR * -qr
-cd ../options
-zip ../$OPTIONS_JAR * -qr
-cd ..
-zip ../../$NAME_FD $THEME_JAR $OPTIONS_JAR install.rdf -q
+zip ../../$OPTIONS * -qr
 cd ../..
-

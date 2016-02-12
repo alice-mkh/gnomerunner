@@ -4,6 +4,7 @@ THEME_ID={ed492c7d-322b-4da5-bdf1-aeec9fea8bda}
 OPTIONS_ID={1ddafb32-9812-42a4-94e0-db9cc4fc0238}
 INTERNAL_NAME_FD=fd-$CODE_NAME/1.0
 INTERNAL_NAME=$CODE_NAME/1.0
+CODE_NAME_FD=gnomerunner
 CODE_NAME=gnomerunner
 
 #Theme description
@@ -13,8 +14,8 @@ OPTIONS_DESC=Allows to customize $NAME theme.
 
 #Theme name
 OPTIONS_NAME=$NAME Options
-NAME_FD=$NAME (Freedesktop)
-NAME=GNOMErunner/GTK Revived
+NAME_FD=GNOMErunner/GTK Revived (Freedesktop)
+NAME=GNOMErunner
 
 #Theme version
 VERSION=0.4
