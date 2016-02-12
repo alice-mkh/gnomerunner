@@ -43,7 +43,7 @@ override chrome://communicator/skin/aboutPrivateBrowsing.css chrome://communicat
 skin $CODE_NAME-calendar $INTERNAL_NAME extensions/calendar/
 style chrome://global/content/customizeToolbar.xul chrome://$CODE_NAME-calendar/skin/lightning-toolbar.css
 style chrome://global/content/customizeToolbar.xul chrome://$CODE_NAME-calendar/skin/calendar-task-view.css
-override chrome://lightning/skin/lightning-toolbar.css chrome://$CODE_NAME-calendar/skin/lightning-toolbar.css
+style chrome://lightning/content/lightning-toolbar.xul chrome://$CODE_NAME-calendar/skin/lightning-toolbar.css
 style chrome://calendar/content/calendar-unifinder.xul chrome://$CODE_NAME-calendar/skin/calendar-unifinder.css
 style chrome://lightning/content/lightning-standalone.xul chrome://$CODE_NAME-calendar/skin/calendar-unifinder.css
 style chrome://calendar/content/today-pane.xul chrome://$CODE_NAME-calendar/skin/today-pane.css
