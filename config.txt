@@ -18,7 +18,7 @@ NAME_FD=GNOMErunner/GTK Revived (Freedesktop)
 NAME=GNOMErunner
 
 #Theme version
-VERSION=0.4
+VERSION=0.4.0
 
 #SeaMonkey version
 SM_ID={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
