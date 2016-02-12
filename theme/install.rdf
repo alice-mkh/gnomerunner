@@ -13,8 +13,7 @@
         <em:description>$THEME_DESC</em:description>
         <em:version>$VERSION</em:version>
 
-        <em:creator>Michael -mld- Doering</em:creator>
-        <em:contributor>Exalm</em:contributor>
+        <em:creator>Exalm</em:contributor>
 
         <em:targetApplication>
             <Description>
