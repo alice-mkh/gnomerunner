@@ -8,8 +8,8 @@
         <em:bootstrap>false</em:bootstrap>
         <em:strictCompatibility>false</em:strictCompatibility>
 
-        <em:name>$OPTIONS_NAME</em:name>
-        <em:description>$OPTIONS_DESC</em:description>
+        <em:name>GNOMErunner Options</em:name>
+        <em:description>Allows to customize GNOMErunner theme.</em:description>
         <em:version>$VERSION</em:version>
         <em:optionsURL>chrome://gnomerunner-options/content/options.xul</em:optionsURL>
 

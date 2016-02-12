@@ -8,10 +8,7 @@ cp icon.png temp/theme
 cp icon.png temp/options
 cd temp
 
-
 cd theme/icons
-
-#Generate layers
 
 echo "Generating icon layers..."
 
@@ -42,8 +39,6 @@ for F in layer-*; do
 
     sed -E "s/(size=)16/\1menu/g;s/(size=)22/\1button/g;s/(size=)24/\1toolbar/g;s/(size=)48/\1dialog/g;" -i $F.css
 done
-
-#Generate icon theme css
 
 echo "Generating icon themes..."
 SIZES="16 20 22 24 32 48"
@@ -98,25 +93,21 @@ done
 
 cd ../..
 
-#Substitute variables
 echo "Substituting variables..."
-FILES=`find . -type f -exec grep -Iq . {} \; -and -print`
+FILES="theme/install.rdf options/install.rdf"
 while read LINE; do
     if [[ $LINE != [A-Z]* ]]; then
         continue
     fi
     LINE1=`echo $LINE | grep -oE "^[^=]+"`
     LINE2=`echo $LINE | grep -oE "[^=]+$"`
-    sed "s|\$$LINE1|$LINE2|g" -i $FILES
+    sed "s|\$$LINE1|$LINE2|g" -i theme/install.rdf options/install.rdf
     eval "$LINE1=\"$LINE2\""
 done < "../config.txt"
 
 echo "Packaging..."
-#Package
-THEME="gnomerunner-$VERSION-sm-linux.xpi"
-OPTIONS="gnomerunner-options-$VERSION-sm-linux.xpi"
 cd theme
-zip ../../$THEME * -qr
+zip ../../gnomerunner-$VERSION-sm-linux.xpi * -qr
 cd ../options
-zip ../../$OPTIONS * -qr
+zip ../../gnomerunner-options-$VERSION-sm-linux.xpi * -qr
 cd ../..

@@ -4,13 +4,13 @@
      xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <Description about="urn:mozilla:install-manifest">
         <em:id>$THEME_ID</em:id>
-        <em:internalName>$INTERNAL_NAME</em:internalName>
+        <em:internalName>gnomerunner/1.0</em:internalName>
         <em:skinnable>true</em:skinnable>
         <em:type>4</em:type>
         <em:strictCompatibility>false</em:strictCompatibility>
 
-        <em:name>$NAME</em:name>
-        <em:description>$THEME_DESC</em:description>
+        <em:name>GNOMErunner</em:name>
+        <em:description>Uses gtk+-stock items and icons from the updated GNOME iconset.</em:description>
         <em:version>$VERSION</em:version>
 
         <em:creator>Exalm</em:creator>
