@@ -1,12 +1,10 @@
 <?xml version="1.0"?>
-<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+<RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
      xmlns:NC="http://home.netscape.com/NC-rdf#"
-     xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <Description about="urn:mozilla:install-manifest">
         <em:id>$OPTIONS_ID</em:id>
         <em:type>2</em:type>
-        <em:bootstrap>false</em:bootstrap>
-        <em:strictCompatibility>false</em:strictCompatibility>
 
         <em:name>GNOMErunner Options</em:name>
         <em:description>Allows to customize GNOMErunner theme.</em:description>
@@ -23,4 +21,4 @@
             </Description>
         </em:targetApplication>
     </Description>
-</RDF:RDF>
+</RDF>

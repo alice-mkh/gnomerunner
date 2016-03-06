@@ -3,7 +3,7 @@ THEME_ID={ed492c7d-322b-4da5-bdf1-aeec9fea8bda}
 OPTIONS_ID={8707c6ea-fa48-4353-be61-0d8e3ce0c475}
 
 #Theme version
-VERSION=0.4.0
+VERSION=0.4.0.2
 
 #SeaMonkey version
 SM_ID={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
