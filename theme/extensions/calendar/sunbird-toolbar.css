@@ -4,6 +4,10 @@
 
 @import url("chrome://icons/skin/icon-theme-default.css");
 
+.cal-toolbarbutton-1 {
+  -moz-image-region: auto !important;
+}
+
 /*--------------------------------------------------------------------
  *   Cut button
  *-------------------------------------------------------------------*/
@@ -394,11 +398,11 @@ toolbar[iconsize="small"] #calendar-publish-button[disabled="true"] {
 
 #calendar-multiweek-view-tbutton {
     list-style-image: url("chrome://lightbird/skin/sunbird/toolbar-large.png");
-    -moz-image-region: rect(0px 144px 24px 120px);
+    -moz-image-region: rect(0px 144px 24px 120px) !important;
 }
 
 #calendar-multiweek-view-tbutton[disabled="true"] {
-    -moz-image-region: rect(72px 144px 96px 120px);
+    -moz-image-region: rect(72px 144px 96px 120px) !important;
 }
 
 /*--------------------------------------------------------------------
@@ -407,11 +411,11 @@ toolbar[iconsize="small"] #calendar-publish-button[disabled="true"] {
 
 toolbar[iconsize="small"] #calendar-multiweek-view-tbutton {
     list-style-image: url("chrome://lightbird/skin/sunbird/toolbar-small.png");
-    -moz-image-region: rect(0px 96px 16px 80px);
+    -moz-image-region: rect(0px 96px 16px 80px) !important;
 }
 
 toolbar[iconsize="small"] #calendar-multiweek-view-tbutton[disabled="true"] {
-    -moz-image-region: rect(48px 96px 64px 80px);
+    -moz-image-region: rect(48px 96px 64px 80px) !important;
 }
 
 /*--------------------------------------------------------------------
@@ -420,11 +424,11 @@ toolbar[iconsize="small"] #calendar-multiweek-view-tbutton[disabled="true"] {
 
 #calendar-month-view-tbutton {
     list-style-image: url("chrome://lightbird/skin/sunbird/toolbar-large.png");
-    -moz-image-region: rect(0px 168px 24px 144px);
+    -moz-image-region: rect(0px 168px 24px 144px) !important;
 }
 
 #calendar-month-view-tbutton[disabled="true"] {
-    -moz-image-region: rect(72px 168px 96px 144px);
+    -moz-image-region: rect(72px 168px 96px 144px) !important;
 }
 
 /*--------------------------------------------------------------------
@@ -433,11 +437,11 @@ toolbar[iconsize="small"] #calendar-multiweek-view-tbutton[disabled="true"] {
 
 toolbar[iconsize="small"] #calendar-month-view-tbutton {
     list-style-image: url("chrome://lightbird/skin/sunbird/toolbar-small.png");
-    -moz-image-region: rect(0px 112px 16px 96px);
+    -moz-image-region: rect(0px 112px 16px 96px) !important;
 }
 
 toolbar[iconsize="small"] #calendar-month-view-tbutton[disabled="true"] {
-    -moz-image-region: rect(48px 112px 64px 96px);
+    -moz-image-region: rect(48px 112px 64px 96px) !important;
 }
 
 /*--------------------------------------------------------------------
@@ -446,11 +450,11 @@ toolbar[iconsize="small"] #calendar-month-view-tbutton[disabled="true"] {
 
 #calendar-week-view-tbutton {
     list-style-image: url("chrome://lightbird/skin/sunbird/toolbar-large.png");
-    -moz-image-region: rect(0px 120px 24px 96px);
+    -moz-image-region: rect(0px 120px 24px 96px) !important;
 }
 
 #calendar-week-view-tbutton[disabled="true"] {
-    -moz-image-region: rect(72px 120px 96px 96px);
+    -moz-image-region: rect(72px 120px 96px 96px) !important;
 }
 
 /*--------------------------------------------------------------------
@@ -459,11 +463,11 @@ toolbar[iconsize="small"] #calendar-month-view-tbutton[disabled="true"] {
 
 toolbar[iconsize="small"] #calendar-week-view-tbutton {
     list-style-image: url("chrome://lightbird/skin/sunbird/toolbar-small.png");
-    -moz-image-region: rect(0px 80px 16px 64px);
+    -moz-image-region: rect(0px 80px 16px 64px) !important;
 }
 
 toolbar[iconsize="small"] #calendar-week-view-tbutton[disabled="true"] {
-    -moz-image-region: rect(48px 80px 64px 64px);
+    -moz-image-region: rect(48px 80px 64px 64px) !important;
 }
 
 /*--------------------------------------------------------------------
@@ -472,11 +476,11 @@ toolbar[iconsize="small"] #calendar-week-view-tbutton[disabled="true"] {
 
 #calendar-day-view-tbutton {
     list-style-image: url("chrome://lightbird/skin/sunbird/toolbar-large.png");
-    -moz-image-region: rect(0px 96px 24px 72px);
+    -moz-image-region: rect(0px 96px 24px 72px) !important;
 }
 
 #calendar-day-view-tbutton[disabled="true"] {
-    -moz-image-region: rect(72px 96px 96px 72px);
+    -moz-image-region: rect(72px 96px 96px 72px) !important;
 }
 
 /*--------------------------------------------------------------------
@@ -485,9 +489,9 @@ toolbar[iconsize="small"] #calendar-week-view-tbutton[disabled="true"] {
 
 toolbar[iconsize="small"] #calendar-day-view-tbutton {
     list-style-image: url("chrome://lightbird/skin/sunbird/toolbar-small.png");
-    -moz-image-region: rect(0px 64px 16px 48px);
+    -moz-image-region: rect(0px 64px 16px 48px) !important;
 }
 
 toolbar[iconsize="small"] #calendar-day-view-tbutton[disabled="true"] {
-    -moz-image-region: rect(48px 64px 64px 48px);
+    -moz-image-region: rect(48px 64px 64px 48px) !important;
 }
