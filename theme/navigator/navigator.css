@@ -497,7 +497,6 @@ panel[nomatch="true"] > .autocomplete-search-box {
   font-weight: bold;
 }
 
-
 #search-button {
   list-style-image: var(--icon-edit-find-22);
 }
