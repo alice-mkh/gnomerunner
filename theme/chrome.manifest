@@ -1,84 +1,84 @@
-skin help gnomerunner/1.0 help/
-skin navigator gnomerunner/1.0 navigator/
-skin editor gnomerunner/1.0 editor/
-skin communicator gnomerunner/1.0 communicator/
-skin global gnomerunner/1.0 global/
-skin messenger gnomerunner/1.0 messenger/
-skin mozapps gnomerunner/1.0 mozapps/
+skin	help			gnomerunner/1.0	help/
+skin	navigator		gnomerunner/1.0	navigator/
+skin	editor			gnomerunner/1.0	editor/
+skin	communicator	gnomerunner/1.0	communicator/
+skin	global			gnomerunner/1.0	global/
+skin	messenger		gnomerunner/1.0	messenger/
+skin	mozapps			gnomerunner/1.0	mozapps/
 
-skin icons gnomerunner/1.0 icons/
+skin	icons			gnomerunner/1.0	icons/
 
 #Additional styles for menu icons
-style chrome://communicator/content/bookmarks/placesOverlay.xul chrome://communicator/skin/bookmarks/placesOverlay-menus.css
-style chrome://communicator/content/history/placesOverlay.xul chrome://communicator/skin/bookmarks/placesOverlay-menus.css
-style chrome://communicator/content/contentAreaContextOverlay.xul chrome://communicator/skin/contentAreaContextOverlay-menus.css
-style chrome://communicator/content/passwordManager.xul chrome://communicator/skin/passwordManager-menus.css
-style chrome://communicator/content/utilityOverlay.xul chrome://communicator/skin/utilityOverlay-menus.css
-style chrome://communicator/content/viewSourceOverlay.xul chrome://communicator/skin/viewSourceOverlay-menus.css
-style chrome://communicator/content/viewZoomOverlay.xul chrome://communicator/skin/viewZoomOverlay-menus.css
-style chrome://editor/content/composerOverlay.xul chrome://editor/skin/composerOverlay-menus.css
-style chrome://editor/content/editingOverlay.xul chrome://editor/skin/editingOverlay-menus.css
-style chrome://editor/content/editorOverlay.xul chrome://editor/skin/editorOverlay-menus.css
-style chrome://editor/content/EditorContextMenuOverlay.xul chrome://editor/skin/EditorContextMenuOverlay-menus.css
-style chrome://messenger/content/messengercompose/mailComposeOverlay.xul chrome://messenger/skin/messengercompose/mailComposeOverlay-menus.css
-style chrome://messenger/content/mailOverlay.xul chrome://messenger/skin/mailOverlay-menus.css
-style chrome://messenger/content/mailWindowOverlay.xul chrome://messenger/skin/mailWindowOverlay-menus.css
-style chrome://messenger/content/msgHdrViewOverlay.xul chrome://messenger/skin/msgHdrViewOverlay-menus.css
-style chrome://navigator/content/mailNavigatorOverlay.xul chrome://navigator/skin/mailNavigatorOverlay-menus.css
-style chrome://navigator/content/navigatorOverlay.xul chrome://navigator/skin/navigatorOverlay-menus.css
+style	chrome://communicator/content/bookmarks/placesOverlay.xul			chrome://communicator/skin/bookmarks/placesOverlay-menus.css
+style	chrome://communicator/content/history/placesOverlay.xul				chrome://communicator/skin/bookmarks/placesOverlay-menus.css
+style	chrome://communicator/content/contentAreaContextOverlay.xul			chrome://communicator/skin/contentAreaContextOverlay-menus.css
+style	chrome://communicator/content/passwordManager.xul					chrome://communicator/skin/passwordManager-menus.css
+style	chrome://communicator/content/utilityOverlay.xul					chrome://communicator/skin/utilityOverlay-menus.css
+style	chrome://communicator/content/viewSourceOverlay.xul					chrome://communicator/skin/viewSourceOverlay-menus.css
+style	chrome://communicator/content/viewZoomOverlay.xul					chrome://communicator/skin/viewZoomOverlay-menus.css
+style	chrome://editor/content/composerOverlay.xul							chrome://editor/skin/composerOverlay-menus.css
+style	chrome://editor/content/editingOverlay.xul							chrome://editor/skin/editingOverlay-menus.css
+style	chrome://editor/content/editorOverlay.xul							chrome://editor/skin/editorOverlay-menus.css
+style	chrome://editor/content/EditorContextMenuOverlay.xul				chrome://editor/skin/EditorContextMenuOverlay-menus.css
+style	chrome://messenger/content/messengercompose/mailComposeOverlay.xul	chrome://messenger/skin/messengercompose/mailComposeOverlay-menus.css
+style	chrome://messenger/content/mailOverlay.xul							chrome://messenger/skin/mailOverlay-menus.css
+style	chrome://messenger/content/mailWindowOverlay.xul					chrome://messenger/skin/mailWindowOverlay-menus.css
+style	chrome://messenger/content/msgHdrViewOverlay.xul					chrome://messenger/skin/msgHdrViewOverlay-menus.css
+style	chrome://navigator/content/mailNavigatorOverlay.xul					chrome://navigator/skin/mailNavigatorOverlay-menus.css
+style	chrome://navigator/content/navigatorOverlay.xul						chrome://navigator/skin/navigatorOverlay-menus.css
 
 #Compact menulist removal from Toolkit in 2.33
-style chrome://messenger/content/messengercompose/messengercompose.xul chrome://messenger/skin/messengercompose/messengercompose-2.33.css appversion>=2.33
+style	chrome://messenger/content/messengercompose/messengercompose.xul	chrome://messenger/skin/messengercompose/messengercompose-2.33.css	appversion>=2.33
 
 #New addon manager in 2.37
-style chrome://mozapps/content/extensions/extensions.xul chrome://global/skin/inContentUI.css appversion<2.37
-style chrome://mozapps/content/extensions/extensions.xul chrome://mozapps/skin/extensions/extensions-new.css appversion>=2.37
-style chrome://mozapps/content/extensions/extensions.xul chrome://mozapps/skin/extensions/extensions-new2.css appversion>=2.46
-style about:addons chrome://global/skin/inContentUI.css appversion<2.37
-style about:addons chrome://mozapps/skin/extensions/extensions-new.css appversion>=2.37
-style about:addons chrome://mozapps/skin/extensions/extensions-new2.css appversion>=2.46
+style	chrome://mozapps/content/extensions/extensions.xul	chrome://global/skin/inContentUI.css					appversion<2.37
+style	chrome://mozapps/content/extensions/extensions.xul	chrome://mozapps/skin/extensions/extensions-new.css		appversion>=2.37
+style	chrome://mozapps/content/extensions/extensions.xul	chrome://mozapps/skin/extensions/extensions-new2.css	appversion>=2.46
+style	about:addons										chrome://global/skin/inContentUI.css					appversion<2.37
+style	about:addons										chrome://mozapps/skin/extensions/extensions-new.css		appversion>=2.37
+style	about:addons										chrome://mozapps/skin/extensions/extensions-new2.css	appversion>=2.46
 
 #New about:privatebrowsing
-style chrome://communicator/content/aboutPrivateBrowsing.xul chrome://communicator/skin/aboutPrivateBrowsing-new.css appversion>=2.37
-style chrome://communicator/content/aboutPrivateBrowsing.xul chrome://communicator/skin/aboutPrivateBrowsing-old.css appversion<2.37
-style about:privatebrowsing chrome://communicator/skin/aboutPrivateBrowsing-new.css appversion>=2.37
-style about:privatebrowsing chrome://communicator/skin/aboutPrivateBrowsing-old.css appversion<2.37
+style	chrome://communicator/content/aboutPrivateBrowsing.xul	chrome://communicator/skin/aboutPrivateBrowsing-new.css	appversion>=2.37
+style	chrome://communicator/content/aboutPrivateBrowsing.xul	chrome://communicator/skin/aboutPrivateBrowsing-old.css	appversion<2.37
+style	about:privatebrowsing									chrome://communicator/skin/aboutPrivateBrowsing-new.css	appversion>=2.37
+style	about:privatebrowsing									chrome://communicator/skin/aboutPrivateBrowsing-old.css	appversion<2.37
 
 # Lightning
-skin gnomerunner-calendar gnomerunner/1.0 extensions/calendar/
-style chrome://global/content/customizeToolbar.xul chrome://gnomerunner-calendar/skin/lightning-toolbar.css
-style chrome://global/content/customizeToolbar.xul chrome://gnomerunner-calendar/skin/calendar-task-view.css
-style chrome://lightning/content/lightning-toolbar.xul chrome://gnomerunner-calendar/skin/lightning-toolbar.css
-style chrome://calendar/content/calendar-unifinder.xul chrome://gnomerunner-calendar/skin/calendar-unifinder.css
-style chrome://lightning/content/lightning-standalone.xul chrome://gnomerunner-calendar/skin/calendar-unifinder.css
-style chrome://calendar/content/today-pane.xul chrome://gnomerunner-calendar/skin/today-pane.css
-style chrome://calendar/content/today-pane.xul chrome://gnomerunner-calendar/skin/common-today-pane.css
-style chrome://calendar/content/calendar-task-view.xul chrome://gnomerunner-calendar/skin/calendar-task-view.css
-style chrome://calendar/content/calendar-unifinder-todo.xul chrome://gnomerunner-calendar/skin/calendar-task-view.css
-style chrome://lightning/content/lightning-standalone.xul chrome://gnomerunner-calendar/skin/lightning.css
-style chrome://lightning/content/messenger-overlay-sidebar.xul chrome://gnomerunner-calendar/skin/lightning.css
-style chrome://lightning/content/messenger-overlay-accountCentral.xul chrome://gnomerunner-calendar/skin/accountCentral.css
+skin	gnomerunner-calendar	gnomerunner/1.0 extensions/calendar/
+style	chrome://global/content/customizeToolbar.xul					chrome://gnomerunner-calendar/skin/lightning-toolbar.css
+style	chrome://global/content/customizeToolbar.xul					chrome://gnomerunner-calendar/skin/calendar-task-view.css
+style	chrome://lightning/content/lightning-toolbar.xul				chrome://gnomerunner-calendar/skin/lightning-toolbar.css
+style	chrome://calendar/content/calendar-unifinder.xul				chrome://gnomerunner-calendar/skin/calendar-unifinder.css
+style	chrome://lightning/content/lightning-standalone.xul				chrome://gnomerunner-calendar/skin/calendar-unifinder.css
+style	chrome://calendar/content/today-pane.xul						chrome://gnomerunner-calendar/skin/today-pane.css
+style	chrome://calendar/content/today-pane.xul						chrome://gnomerunner-calendar/skin/common-today-pane.css
+style	chrome://calendar/content/calendar-task-view.xul				chrome://gnomerunner-calendar/skin/calendar-task-view.css
+style	chrome://calendar/content/calendar-unifinder-todo.xul			chrome://gnomerunner-calendar/skin/calendar-task-view.css
+style	chrome://lightning/content/lightning-standalone.xul				chrome://gnomerunner-calendar/skin/lightning.css
+style	chrome://lightning/content/messenger-overlay-sidebar.xul		chrome://gnomerunner-calendar/skin/lightning.css
+style	chrome://lightning/content/messenger-overlay-accountCentral.xul	chrome://gnomerunner-calendar/skin/accountCentral.css
 
-style chrome://calendar/content/calendar-calendars-list.xul chrome://gnomerunner-calendar/skin/calendar-menus.css
-style chrome://calendar/content/calendar-common-sets.xul chrome://gnomerunner-calendar/skin/calendar-menus.css
-style chrome://calendar/content/calendar-event-dialog.xul chrome://gnomerunner-calendar/skin/calendar-menus.css
-style chrome://calendar/content/calendar-task-view.xul chrome://gnomerunner-calendar/skin/calendar-menus.css
-style chrome://calendar/content/today-pane.xul chrome://gnomerunner-calendar/skin/calendar-menus.css
-style chrome://lightning/content/lightning-toolbar.xul chrome://gnomerunner-calendar/skin/lightning-menus.css
+style	chrome://calendar/content/calendar-calendars-list.xul	chrome://gnomerunner-calendar/skin/calendar-menus.css
+style	chrome://calendar/content/calendar-common-sets.xul		chrome://gnomerunner-calendar/skin/calendar-menus.css
+style	chrome://calendar/content/calendar-event-dialog.xul		chrome://gnomerunner-calendar/skin/calendar-menus.css
+style	chrome://calendar/content/calendar-task-view.xul		chrome://gnomerunner-calendar/skin/calendar-menus.css
+style	chrome://calendar/content/today-pane.xul				chrome://gnomerunner-calendar/skin/calendar-menus.css
+style	chrome://lightning/content/lightning-toolbar.xul		chrome://gnomerunner-calendar/skin/lightning-menus.css
 
 # Lightbird
-style chrome://global/content/customizeToolbar.xul chrome://gnomerunner-calendar/skin/sunbird-toolbar.css
-style chrome://lightbird/content/sunbird/calendar.xul chrome://gnomerunner-calendar/skin/sunbird-toolbar.css
-style chrome://lightbird/content/tasksOverlay.xul chrome://gnomerunner-calendar/skin/lightbird.css
-style chrome://lightbird/content/sunbird/calendar.xul chrome://gnomerunner-calendar/skin/calendar-unifinder.css
+style	chrome://global/content/customizeToolbar.xul	chrome://gnomerunner-calendar/skin/sunbird-toolbar.css
+style	chrome://lightbird/content/sunbird/calendar.xul	chrome://gnomerunner-calendar/skin/sunbird-toolbar.css
+style	chrome://lightbird/content/tasksOverlay.xul		chrome://gnomerunner-calendar/skin/lightbird.css
+style	chrome://lightbird/content/sunbird/calendar.xul	chrome://gnomerunner-calendar/skin/calendar-unifinder.css
 
-style chrome://lightbird/content/messengerOverlay.xul chrome://gnomerunner-calendar/skin/lightbird-menus.css
-style chrome://lightbird/content/sunbird/calendar.xul chrome://gnomerunner-calendar/skin/lightbird-menus.css
+style	chrome://lightbird/content/messengerOverlay.xul	chrome://gnomerunner-calendar/skin/lightbird-menus.css
+style	chrome://lightbird/content/sunbird/calendar.xul	chrome://gnomerunner-calendar/skin/lightbird-menus.css
 
 #SeaFox
-skin seafoxcompatibility gnomerunner/1.0 extensions/seafox/
+skin	seafoxcompatibility	gnomerunner/1.0	extensions/seafox/
 
 #SeaTab-X-2
-skin gnomerunner-seatabx2 gnomerunner/1.0 extensions/seatabx2/
-style chrome://seatabx2/content/navigator.xul chrome://gnomerunner-seatabx2/skin/seatabx2.css
-style chrome://seatabx2/content/messenger.xul chrome://gnomerunner-seatabx2/skin/seatabx2.css
+skin	gnomerunner-seatabx2	gnomerunner/1.0	extensions/seatabx2/
+style	chrome://seatabx2/content/navigator.xul	chrome://gnomerunner-seatabx2/skin/seatabx2.css
+style	chrome://seatabx2/content/messenger.xul	chrome://gnomerunner-seatabx2/skin/seatabx2.css
