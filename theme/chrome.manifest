@@ -72,6 +72,9 @@ style	chrome://lightbird/content/sunbird/calendar.xul	chrome://gnomerunner-calen
 style	chrome://lightbird/content/tasksOverlay.xul		chrome://gnomerunner-calendar/skin/lightbird.css
 style	chrome://lightbird/content/sunbird/calendar.xul	chrome://gnomerunner-calendar/skin/calendar-unifinder.css
 
+style	chrome://lightbird/content/messengerOverlay.xul	chrome://gnomerunner-calendar/skin/messenger-toolbar.css
+style	chrome://global/content/customizeToolbar.xul	chrome://gnomerunner-calendar/skin/messenger-toolbar.css
+
 style	chrome://lightbird/content/messengerOverlay.xul	chrome://gnomerunner-calendar/skin/lightbird-menus.css
 style	chrome://lightbird/content/sunbird/calendar.xul	chrome://gnomerunner-calendar/skin/lightbird-menus.css
 

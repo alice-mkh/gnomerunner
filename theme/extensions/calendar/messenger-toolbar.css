@@ -1,0 +1,58 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://icons/skin/icon-theme-default.css");
+
+#extractEventButton,
+#extractTaskButton {
+  -moz-image-region: auto !important;
+}
+
+/*--------------------------------------------------------------------
+ *   new event button
+ *-------------------------------------------------------------------*/
+
+#extractEventButton {
+  list-style-image: var(--icon-appointment-new-24);
+}
+
+#extractEventButton[disabled="true"] {
+  list-style-image: var(--icon-appointment-new-24-dis);
+}
+
+/*--------------------------------------------------------------------
+ *   new event button - small
+ *-------------------------------------------------------------------*/
+
+toolbar[iconsize="small"] #extractEventButton {
+  list-style-image: var(--icon-appointment-new-16);
+}
+
+toolbar[iconsize="small"] #extractEventButton[disabled="true"] {
+  list-style-image: var(--icon-appointment-new-16-dis);
+}
+
+/*--------------------------------------------------------------------
+ *   New Task button
+ *-------------------------------------------------------------------*/
+
+#extractTaskButton {
+  list-style-image: var(--icon-stock_task-24);
+}
+
+#extractTaskButton[disabled="true"] {
+  list-style-image: var(--icon-stock_task-24-dis);
+}
+
+/*--------------------------------------------------------------------
+ *   New Task button - small
+ *-------------------------------------------------------------------*/
+
+toolbar[iconsize="small"] #extractTaskButton {
+  list-style-image: var(--icon-stock_task-16);
+}
+
+toolbar[iconsize="small"] #extractTaskButton[disabled="true"] {
+  list-style-image: var(--icon-stock_task-16-dis);
+}
