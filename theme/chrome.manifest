@@ -1,4 +1,3 @@
-skin	help			gnomerunner/1.0	help/
 skin	navigator		gnomerunner/1.0	navigator/
 skin	editor			gnomerunner/1.0	editor/
 skin	communicator	gnomerunner/1.0	communicator/
@@ -43,6 +42,9 @@ style	chrome://communicator/content/aboutPrivateBrowsing.xul	chrome://communicat
 style	chrome://communicator/content/aboutPrivateBrowsing.xul	chrome://communicator/skin/aboutPrivateBrowsing-old.css	appversion<2.37
 style	about:privatebrowsing									chrome://communicator/skin/aboutPrivateBrowsing-new.css	appversion>=2.37
 style	about:privatebrowsing									chrome://communicator/skin/aboutPrivateBrowsing-old.css	appversion<2.37
+
+#Help styling
+skin	help			gnomerunner/1.0	help/	appversion<2.47
 
 # Lightning
 skin	gnomerunner-calendar	gnomerunner/1.0 extensions/calendar/
