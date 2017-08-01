@@ -9,9 +9,7 @@ html {
 }
 
 body {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 40px 48px;
 }
 
 .page-subtitle {
@@ -26,6 +24,11 @@ body {
   font-weight: bold;
 }
 
+button {
+  margin-inline-start: 0;
+  margin-inline-end: 8px;
+}
+
 table {
   background-color: -moz-Dialog;
   color: -moz-DialogText;
@@ -37,8 +40,8 @@ table {
 }
 
 th, td {
-  border: 1px dotted ThreeDShadow;
-  padding: 3px;
+  border: 1px solid ThreeDShadow;
+  padding: 4px;
 }
 
 thead th {
@@ -51,6 +54,12 @@ th {
   color: HighlightText;
 }
 
+th.title-column {
+  white-space: nowrap;
+  width: 0px;
+  font-size: medium;
+}
+
 th.column {
   white-space: nowrap;
   width: 0px;
@@ -58,7 +67,7 @@ th.column {
 
 td {
   text-align: start;
-  border-top: 1px dotted ThreeDShadow;
+  border-color: ThreeDShadow;
 }
 
 .prefs-table {
@@ -78,20 +87,26 @@ td {
   overflow: hidden;
 }
 
-#reset-box {
+#action-box {
   background-color: -moz-Dialog;
   border: 1px solid ThreeDShadow;
   color: -moz-DialogText;
   float: right;
   margin-top: 2em;
   margin-bottom: 20px;
-  -moz-margin-start: 20px;
-  -moz-margin-end: 0;
+  margin-inline-start: 20px;
+  margin-inline-end: 0;
   padding: 16px;
   width: 30%;
 }
 
-#reset-box:-moz-dir(rtl) {
+#action-box,
+#reset-box,
+#safe-mode-box {
+  display: none;
+}
+
+#action-box:dir(rtl) {
   float: left;
 }
 
@@ -99,8 +114,19 @@ td {
   margin-top: 0;
 }
 
-#reset-box > button {
+#action-box button {
   display: block;
-  margin: auto;
 }
 
+#verify-place-result {
+  max-height: 200px;
+  overflow: auto;
+}
+
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
