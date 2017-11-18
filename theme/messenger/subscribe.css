@@ -15,7 +15,7 @@
 
 treechildren::-moz-tree-image(subscribedColumn),
 treechildren::-moz-tree-image(subscribedColumn2) {
-  -moz-margin-end: 2px;
+  margin-inline-end: 2px;
   list-style-image: var(--icon-gtk-no-16);
 }
 
@@ -36,13 +36,13 @@ treechildren::-moz-tree-cell-text(nameColumn, Subscribable-false) {
 /* ::::: folder icons :::::: */
 
 treechildren::-moz-tree-image(nameColumn) {
-  -moz-margin-end: 2px;
+  margin-inline-end: 2px;
   list-style-image: var(--icon-stock_folder-16);
 }
 
 treechildren::-moz-tree-image(nameColumn, ServerType-nntp),
 treechildren::-moz-tree-image(nameColumn2, nntp) {
-  -moz-margin-end: 2px;
+  margin-inline-end: 2px;
   list-style-image: var(--icon-stock_folder-16);
 }
 

@@ -10,7 +10,7 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 treechildren::-moz-tree-image {
-  -moz-margin-end: 2px;
+  margin-inline-end: 2px;
   list-style-image: var(--icon-stock_person-16);
 }
 
@@ -19,6 +19,12 @@ treechildren::-moz-tree-image(rowMigrate-no) {
 }
 
 /* profile selection dialog */
+
+/* Override global.css */
+hbox.wizard-box {
+  padding: 10px 10px 10px 10px;
+}
+
 #intro,
 #label {
   width: 17em;

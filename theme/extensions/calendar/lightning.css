@@ -9,13 +9,13 @@
   -moz-appearance: splitter !important;
   border-left: none !important;
   width: 6px !important;
-  -moz-margin-end: 0 !important;
+  margin-inline-end: 0 !important;
   transition: none !important;
 }
 
 #today-splitter {
-  -moz-margin-start: 1px !important;
-  -moz-margin-end: 1px !important;
+  margin-inline-start: 1px !important;
+  margin-inline-end: 1px !important;
 }
 
 #calsidebar_splitter:-moz-locale-dir(rtl),

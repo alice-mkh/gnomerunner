@@ -148,7 +148,7 @@ tab .tab-closebutton > .toolbarbutton-icon {
 .tab-drop-indicator-bar {
     height: 16px;
     margin-top: -16px;
-    -moz-margin-start: -7px;
+    margin-inline-start: -7px;
     position: relative;
 }
 

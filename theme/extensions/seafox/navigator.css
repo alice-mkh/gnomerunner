@@ -31,11 +31,11 @@
 #identity-box[src="chrome://global/skin/icons/blacklist_favicon.png"],
 #identity-box[src="chrome://global/skin/icons/warning-16.png"],
 #identity-box[level] {
-  -moz-margin-end: 4px;
+  margin-inline-end: 4px;
 }
 
 .notification-anchor-icon[showing="true"] {
-  -moz-margin-end: 3px!important;
+  margin-inline-end: 3px!important;
 }
 
 /* Verified Identity */

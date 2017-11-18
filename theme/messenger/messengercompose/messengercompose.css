@@ -131,38 +131,38 @@ toolbar[iconsize="small"] > #button-save[disabled="true"] {
 treechildren::-moz-tree-cell-text(default-match) {
   margin-top: 2px;
   margin-bottom: 2px;
-  -moz-margin-start: 15px;
-  -moz-margin-end: -3px;
+  margin-inline-start: 15px;
+  margin-inline-end: -3px;
   border: none;
 }
 
 treechildren::-moz-tree-image(local-abook) {
   margin-top: 2px;
   margin-bottom: 2px;
-  -moz-margin-start: 4px;
-  -moz-margin-end: -1px;
+  margin-inline-start: 4px;
+  margin-inline-end: -1px;
   list-style-image: var(--icon-x-office-address-book-16);
 }
 
 treechildren::-moz-tree-image(remote-abook) {
   margin-top: 2px;
   margin-bottom: 2px;
-  -moz-margin-start: 2px;
-  -moz-margin-end: -3px;
+  margin-inline-start: 2px;
+  margin-inline-end: -3px;
   list-style-image: var(--icon-network-idle-16);
 }
 
 treechildren::-moz-tree-image(remote-err) {
   margin-top: 2px;
   margin-bottom: 2px;
-  -moz-margin-start: 2px;
-  -moz-margin-end: -3px;
+  margin-inline-start: 2px;
+  margin-inline-end: -3px;
   list-style-image: var(--icon-dialog-error-16);
 }
 
 treechildren::-moz-tree-image(subscribed-news) {
-  -moz-margin-start: 2px;
-  -moz-margin-end: -3px;
+  margin-inline-start: 2px;
+  margin-inline-end: -3px;
   list-style-image: var(--icon-internet-group-chat-16);
 }
 
@@ -183,8 +183,12 @@ treechildren::-moz-tree-image(subscribed-news) {
 }
 
 .menulist-compact > .menulist-label-box > .menulist-icon {
-  -moz-margin-start: 2px;
+  margin-inline-start: 2px;
   -moz-appearance: toolbarbutton-dropdown;
+}
+
+#FontFaceSelect {
+  max-width: 35ch;
 }
 
 /* ::::: lightweight themes ::::: */

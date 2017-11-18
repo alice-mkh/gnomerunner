@@ -13,7 +13,7 @@
 /* ::::: directory pane icons ::::: */
 
 treechildren::-moz-tree-image(DirCol) {
-  -moz-margin-end: 2px;
+  margin-inline-end: 2px;
   list-style-image: var(--icon-x-office-address-book-16);
 }
 

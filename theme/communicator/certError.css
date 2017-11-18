@@ -32,7 +32,7 @@ h2 {
   border: 1px solid #FFBD09;
   border-radius: 10px;
   padding: 3em;
-  -moz-padding-start: 30px;
+  padding-inline-start: 30px;
   background: url("chrome://global/skin/icons/sslWarning.png") left 0 no-repeat -moz-Field;
   background-origin: content-box;
 }
@@ -42,16 +42,16 @@ body[dir="rtl"] #errorPageContainer {
 }
 
 #errorTitle {
-  -moz-margin-start: 80px;
+  margin-inline-start: 80px;
 }
 
 #errorLongContent {
-  -moz-margin-start: 80px;
+  margin-inline-start: 80px;
 }
 
 #technicalContent > h2, #expertContent > h2 {
   cursor: pointer;
-  -moz-padding-start: 20px;
+  padding-inline-start: 20px;
   position: relative;
   left: -20px;
   background: url("chrome://communicator/skin/aboutCertError_sectionExpanded.png") left center no-repeat;
@@ -62,8 +62,8 @@ body[dir="rtl"] #errorPageContainer {
   background-image: url("chrome://communicator/skin/aboutCertError_sectionCollapsed.png");
 }
 
-#technicalContent[collapsed] > h2:-moz-dir(rtl),
-#expertContent[collapsed] > h2:-moz-dir(rtl) {
+#technicalContent[collapsed] > h2:dir(rtl),
+#expertContent[collapsed] > h2:dir(rtl) {
   background-position: right center;
   background-image: url("chrome://communicator/skin/aboutCertError_sectionCollapsed-rtl.png");
 }

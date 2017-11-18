@@ -28,22 +28,22 @@ spacer.big {
 #acctCentralHeaderRow {
   padding-top: 10px;
   padding-bottom: 10px;
-  -moz-padding-start: 10px;
-  -moz-padding-end: 0px;
+  padding-inline-start: 10px;
+  padding-inline-end: 0px;
   font-size: 180%;
   font-weight: bold;
 }
 
 .acctCentralRow {
   -moz-binding: url("chrome://communicator/skin/communicatorBindings.xml#row-iconic");
-  -moz-margin-start: 10px;
+  margin-inline-start: 10px;
   font-size: 125%;
 }
 
 .row-iconic-icon {
   list-style-image: inherit;
-  -moz-margin-start: 5px;
-  -moz-margin-end: 5px;
+  margin-inline-start: 5px;
+  margin-inline-end: 5px;
 }
 
 .acctCentralRowTitleBox {

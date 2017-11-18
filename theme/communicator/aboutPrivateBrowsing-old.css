@@ -18,19 +18,19 @@
   background-image: var(--icon-dialog-information-48);
 /*  width: 48px;
   height: 48px;
-  -moz-margin-end: 3em;*/
+  margin-inline-end: 3em;*/
 }
 
 #warningBox.normal {
   background-image: var(--icon-dialog-question-48);
 /*  width: 48px;
   height: 48px;
-  -moz-margin-end: 3em;*/
+  margin-inline-end: 3em;*/
 }
 
 #trackWarnBox {
   margin-top: 0.6em;
-  -moz-margin-end: 7em;
+  margin-inline-end: 7em;
   -moz-box-align: center;
 }
 
@@ -44,7 +44,7 @@
 
 #privateTitle,
 #normalTitle {
-  -moz-padding-start: 0px;
+  padding-inline-start: 0px;
   margin: 0 0 .6em;
   font-size: 160%;
   font-weight: bold;
@@ -63,14 +63,14 @@
 
 #warningOuterBox > vbox > label,
 #warningInnerBox > description {
-  -moz-margin-start: 0;
+  margin-inline-start: 0;
 }
 
 #warningOuterBox {
-  -moz-padding-start: 3em;
+  padding-inline-start: 3em;
 }
 
 #warningOuterBox > vbox > label,
 #warningInnerBox > description {
-  -moz-margin-start: 0;
+  margin-inline-start: 0;
 }

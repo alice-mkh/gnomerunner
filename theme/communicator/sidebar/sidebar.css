@@ -99,9 +99,9 @@
   padding: 3px;
   color: -moz-DialogText;
   text-shadow: none;
-  -moz-margin-start: -5px;
-  -moz-padding-start: 8px;
-  -moz-padding-end: 2px;
+  margin-inline-start: -5px;
+  padding-inline-start: 8px;
+  padding-inline-end: 2px;
 }
 
 .sbtab-twisty {

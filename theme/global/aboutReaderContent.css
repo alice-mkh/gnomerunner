@@ -85,7 +85,7 @@ pre {
 
 blockquote {
   padding: 0;
-  -moz-padding-start: 16px;
+  padding-inline-start: 16px;
 }
 
 ul,
@@ -94,12 +94,12 @@ ol {
 }
 
 ul {
-  -moz-padding-start: 30px;
+  padding-inline-start: 30px;
   list-style: disc;
 }
 
 ol {
-  -moz-padding-start: 30px;
+  padding-inline-start: 30px;
   list-style: decimal;
 }
 
